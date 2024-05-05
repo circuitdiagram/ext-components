@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Q PNP Darlington BEC"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="8a507b47-17c6-4e08-8f7a-4d345e22a67f"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="canresize" value="false"/>
+    <meta name="minsize" value="40"/>
+    <meta name="additionalinformation" value="PNP Darlington transistor, base/emitter/collector"/>
+    <meta name="keywords" value="transistor PNP Darlington"/>
+    <property name="Reference" type="string" default="Q" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="Q_PNP_Darlington_BEC" serialize="value" display="Value"/>
+    <flags>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin1" start="_Middle-20x+0y" end="_Middle+2.5x+0y" edge="start"/>
+    <connection name="pin2" start="_Middle+10x+10y" end="_Middle+10x+20y" edge="end"/>
+    <connection name="pin3" start="_Middle+10x-20y" end="_Middle+10x-10y" edge="start"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M2.5,-2.5 L10,-10"/>
+    <path start="_Middle+0x+0y" data="M2.5,2.5 L10,10 L10,10"/>
+    <path start="_Middle+0x+0y" data="M2.5,-0 L10,-7.5 L10,-10"/>
+    <path start="_Middle+0x+0y" data="M2.5,-7.5 L2.5,7.5 L2.5,7.5"/>
+    <path start="_Middle+0x+0y" data="M9,7 L7,9 L5,5 L9,7 L9,7" fill="true"/>
+    <ellipse centre="_Middle+5x+0y" rx="11.1" ry="11.1"/>
+    <text x="_Middle+18" y="_Middle-5" value="$Reference" align="CentreLeft" size="small"/>
+    <text x="_Middle+18" y="_Middle+5" value="$Value" align="CentreLeft" size="small"/>
+    <line start="_Middle-20x+0y" end="_Middle+2.5x+0y" sym:connection="pin1"/>
+    <text x="_Middle-8.75" y="_Middle-4" value="1" align="CentreCentre" size="small" sym:connection="pin1" sym:connection_attr="number"/>
+    <line start="_Middle+10x+10y" end="_Middle+10x+20y" sym:connection="pin2"/>
+    <text x="_Middle+6" y="_Middle+15" value="2" align="CentreCentre" size="small" rotate="270" sym:connection="pin2" sym:connection_attr="number"/>
+    <line start="_Middle+10x-20y" end="_Middle+10x-10y" sym:connection="pin3"/>
+    <text x="_Middle+6" y="_Middle-15" value="3" align="CentreCentre" size="small" rotate="270" sym:connection="pin3" sym:connection_attr="number"/>
+  </render>
+</component>

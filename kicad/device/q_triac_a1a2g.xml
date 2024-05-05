@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Q TRIAC A1A2G"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="177f7768-e3f7-48de-8695-f3294b7786ff"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="canresize" value="false"/>
+    <meta name="minsize" value="30"/>
+    <meta name="additionalinformation" value="Triode for alternating current, anode1/anode2/gate"/>
+    <meta name="keywords" value="TRIAC"/>
+    <property name="Reference" type="string" default="D" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="Q_TRIAC_A1A2G" serialize="value" display="Value"/>
+    <flags>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="a1" start="_Middle+0x+5y" end="_Middle+0x+15y" edge="end"/>
+    <connection name="a2" start="_Middle+0x-15y" end="_Middle+0x-5y" edge="start"/>
+    <connection name="g" start="_Middle-15x+10y" end="_Middle-5x+10y" edge="start"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-10,5 L10,5"/>
+    <path start="_Middle+0x+0y" data="M-10,-5 L10,-5"/>
+    <path start="_Middle+0x+0y" data="M-5,10 L-2.5,5"/>
+    <path start="_Middle+0x+0y" data="M-10,-5 L-5,5 L0,-5"/>
+    <path start="_Middle+0x+0y" data="M0,5 L5,-5 L10,5"/>
+    <text x="_Middle+12.5" y="_Middle-2.5" value="$Reference" align="CentreLeft" size="small"/>
+    <text x="_Middle+12.5" y="_Middle+5" value="$Value" align="CentreLeft" size="small"/>
+    <line start="_Middle+0x+5y" end="_Middle+0x+15y" sym:connection="a1"/>
+    <text x="_Middle+0" y="_Middle+1" value="a1" align="CentreLeft" size="small" rotate="270" sym:connection="a1" sym:connection_attr="name"/>
+    <text x="_Middle-4" y="_Middle+10" value="1" align="CentreCentre" size="small" rotate="270" sym:connection="a1" sym:connection_attr="number"/>
+    <line start="_Middle+0x-15y" end="_Middle+0x-5y" sym:connection="a2"/>
+    <text x="_Middle+0" y="_Middle-1" value="a2" align="CentreRight" size="small" rotate="270" sym:connection="a2" sym:connection_attr="name"/>
+    <text x="_Middle-4" y="_Middle-10" value="2" align="CentreCentre" size="small" rotate="270" sym:connection="a2" sym:connection_attr="number"/>
+    <line start="_Middle-15x+10y" end="_Middle-5x+10y" sym:connection="g"/>
+    <text x="_Middle-1" y="_Middle+10" value="g" align="CentreLeft" size="small" sym:connection="g" sym:connection_attr="name"/>
+    <text x="_Middle-10" y="_Middle+6" value="3" align="CentreCentre" size="small" sym:connection="g" sym:connection_attr="number"/>
+  </render>
+</component>

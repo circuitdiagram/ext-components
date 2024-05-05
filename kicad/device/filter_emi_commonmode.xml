@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Filter EMI CommonMode"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="7e2de9be-c318-49f2-a6ff-b75855b569ef"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="canresize" value="false"/>
+    <meta name="minsize" value="10"/>
+    <meta name="additionalinformation" value="EMI 2-inductor common mode filter"/>
+    <meta name="keywords" value="EMI common mode filter"/>
+    <meta name="ki_fp_filters" value="L_* L_CommonMode*"/>
+    <property name="Reference" type="string" default="FL" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="Filter_EMI_CommonMode" serialize="value" display="Value"/>
+    <flags>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+  </connections>
+  <render>
+    <text x="_Middle+0" y="_Middle-17.5" value="$Reference" align="CentreCentre" size="small"/>
+    <text x="_Middle+0" y="_Middle+17.5" value="$Value" align="CentreCentre" size="small"/>
+  </render>
+</component>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Polyfuse"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="eecc5b31-c6c2-4d8e-9c23-48626490c150"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="canresize" value="false"/>
+    <meta name="minsize" value="30"/>
+    <meta name="additionalinformation" value="Resettable fuse, polymeric positive temperature coefficient"/>
+    <meta name="keywords" value="resettable fuse PTC PPTC polyfuse polyswitch"/>
+    <meta name="ki_fp_filters" value="*polyfuse* *PTC*"/>
+    <property name="Reference" type="string" default="F" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="Polyfuse" serialize="value" display="Value"/>
+    <flags>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin_idx_1" start="_Middle+0x-15y" end="_Middle+0x-10y" edge="start"/>
+    <connection name="pin_idx_2" start="_Middle+0x+10y" end="_Middle+0x+15y" edge="end"/>
+  </connections>
+  <render>
+    <rect location="_Middle-3x-10y" width="6" height="20"/>
+    <path start="_Middle+0x+0y" data="M0,-10 L0,10"/>
+    <path start="_Middle+0x+0y" data="M-6,-10 L-6,-6 L6,6 L6,10"/>
+    <text x="_Middle-10" y="_Middle+0" value="$Reference" align="CentreCentre" size="small" rotate="90"/>
+    <text x="_Middle+10" y="_Middle+0" value="$Value" align="CentreCentre" size="small" rotate="90"/>
+    <line start="_Middle+0x-15y" end="_Middle+0x-10y" sym:connection="pin_idx_1"/>
+    <line start="_Middle+0x+10y" end="_Middle+0x+15y" sym:connection="pin_idx_2"/>
+  </render>
+</component>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="D Laser Photo NType"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="3365ea81-dd2e-4646-abdd-625d7706cbb2"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="canresize" value="false"/>
+    <meta name="minsize" value="50"/>
+    <meta name="datasheet" value="http://www.egismos.disonhu.com/laser/diode-package.htm"/>
+    <meta name="additionalinformation" value="Laser diode with photodiode, center on pin 2, LD cathode on pin 1"/>
+    <meta name="keywords" value="opto laserdiode photodiode"/>
+    <meta name="ki_fp_filters" value="*LaserDiode*"/>
+    <property name="Reference" type="string" default="LD" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="D_Laser_Photo_NType" serialize="value" display="Value"/>
+    <flags>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin1" start="_Middle+20x-10y" end="_Middle+30x-10y" edge="end"/>
+    <connection name="pin2" start="_Middle-20x+0y" end="_Middle-10x+0y" edge="start"/>
+    <connection name="pin3" start="_Middle+20x+10y" end="_Middle+30x+10y" edge="end"/>
+  </connections>
+  <render>
+    <ellipse centre="_Middle-6x+0y" rx="1" ry="1" fill="true"/>
+    <path start="_Middle+0x+0y" data="M-10,-0 L-6,-0"/>
+    <path start="_Middle+0x+0y" data="M-6,-15 L0,-21"/>
+    <path start="_Middle+0x+0y" data="M-6,-17 L0,-19"/>
+    <path start="_Middle+0x+0y" data="M-6,-19 L0,-17"/>
+    <path start="_Middle+0x+0y" data="M-6,-21 L0,-15"/>
+    <path start="_Middle+0x+0y" data="M-4,-21 L-2,-15"/>
+    <path start="_Middle+0x+0y" data="M-3,-18 L-3,-14"/>
+    <path start="_Middle+0x+0y" data="M-3,-18 L-3,-22"/>
+    <path start="_Middle+0x+0y" data="M-2.5,5.5 L-2.5,8.5"/>
+    <path start="_Middle+0x+0y" data="M-2,-21 L-4,-15"/>
+    <path start="_Middle+0x+0y" data="M0,5.5 L0,8.5"/>
+    <path start="_Middle+0x+0y" data="M0,-8 L0,-5"/>
+    <path start="_Middle+0x+0y" data="M3,-18 L-7,-18"/>
+    <path start="_Middle+0x+0y" data="M3,-22 L5,-22"/>
+    <path start="_Middle+0x+0y" data="M4,5 L4,15"/>
+    <path start="_Middle+0x+0y" data="M4,3 L6,3"/>
+    <path start="_Middle+0x+0y" data="M14,-15 L14,-5"/>
+    <path start="_Middle+0x+0y" data="M-2.5,-8 L-2.5,-5 L-1,-5"/>
+    <path start="_Middle+0x+0y" data="M9,-16 L3,-22 L3,-20"/>
+    <path start="_Middle+0x+0y" data="M10,-3 L4,3 L4,1"/>
+    <path start="_Middle+0x+0y" data="M14,5 L14,15 L4,10 L14,5"/>
+    <path start="_Middle+0x+0y" data="M20,-10 L-6,-10 L-6,10 L20,10"/>
+    <path start="_Middle+0x+0y" data="M14,-16 L8,-22 L8,-20 L8,-22 L10,-22"/>
+    <path start="_Middle+0x+0y" data="M15,-3 L9,3 L9,1 L9,3 L11,3"/>
+    <rect location="_Middle-9x-24y" width="26" height="41"/>
+    <path start="_Middle+0x+0y" data="M4,-15 L4,-5 L14,-10 L4,-15"/>
+    <text x="_Middle+4" y="_Middle-28" value="$Reference" align="CentreCentre" size="small"/>
+    <text x="_Middle+4" y="_Middle+22" value="$Value" align="CentreCentre" size="small"/>
+    <line start="_Middle+20x-10y" end="_Middle+30x-10y" sym:connection="pin1"/>
+    <text x="_Middle+25" y="_Middle-14" value="1" align="CentreCentre" size="small" sym:connection="pin1" sym:connection_attr="number"/>
+    <line start="_Middle-20x+0y" end="_Middle-10x+0y" sym:connection="pin2"/>
+    <text x="_Middle-15" y="_Middle-4" value="2" align="CentreCentre" size="small" sym:connection="pin2" sym:connection_attr="number"/>
+    <line start="_Middle+20x+10y" end="_Middle+30x+10y" sym:connection="pin3"/>
+    <text x="_Middle+25" y="_Middle+6" value="3" align="CentreCentre" size="small" sym:connection="pin3" sym:connection_attr="number"/>
+  </render>
+</component>

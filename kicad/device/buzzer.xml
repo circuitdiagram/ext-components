@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Buzzer"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="d48efb18-9a9b-4d39-aadc-fee9134f6986"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="canresize" value="false"/>
+    <meta name="minsize" value="30"/>
+    <meta name="additionalinformation" value="Buzzer, polarized"/>
+    <meta name="keywords" value="quartz resonator ceramic"/>
+    <meta name="ki_fp_filters" value="*Buzzer*"/>
+    <property name="Reference" type="string" default="BZ" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="Buzzer" serialize="value" display="Value"/>
+    <flags>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin1" start="_Middle-10x-10y" end="_Middle+0x-10y" edge="start"/>
+    <connection name="pin2" start="_Middle-10x+10y" end="_Middle+0x+10y" edge="start"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-6.5,-7.5 L-4.5,-7.5"/>
+    <path start="_Middle+0x+0y" data="M-5.5,-8.5 L-5.5,-6.5"/>
+    <path start="_Middle+0x+0y" data="M0,-12.5 L0,12.5"/>
+    <text x="_Middle+15" y="_Middle-5" value="$Reference" align="CentreLeft" size="small"/>
+    <text x="_Middle+15" y="_Middle+5" value="$Value" align="CentreLeft" size="small"/>
+    <line start="_Middle-10x-10y" end="_Middle+0x-10y" sym:connection="pin1"/>
+    <text x="_Middle-5" y="_Middle-14" value="1" align="CentreCentre" size="small" sym:connection="pin1" sym:connection_attr="number"/>
+    <line start="_Middle-10x+10y" end="_Middle+0x+10y" sym:connection="pin2"/>
+    <text x="_Middle-5" y="_Middle+6" value="2" align="CentreCentre" size="small" sym:connection="pin2" sym:connection_attr="number"/>
+  </render>
+</component>

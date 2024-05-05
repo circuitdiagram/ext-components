@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="RFShield TwoPieces"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="6b4ceadc-3216-483f-ae4e-781c925485c6"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="canresize" value="false"/>
+    <meta name="minsize" value="140"/>
+    <meta name="additionalinformation" value="Two-piece EMI RF shielding cabinet"/>
+    <meta name="keywords" value="RF EMI shielding cabinet"/>
+    <property name="Reference" type="string" default="J" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="RFShield_TwoPieces" serialize="value" display="Value"/>
+    <flags>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="shield" start="_Middle+0x+30y" end="_Middle+0x+40y" edge="end"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-60,20 L-60,10"/>
+    <path start="_Middle+0x+0y" data="M-60,5 L-60,-5"/>
+    <path start="_Middle+0x+0y" data="M-60,-10 L-60,-20"/>
+    <path start="_Middle+0x+0y" data="M-50,-30 L-40,-30"/>
+    <path start="_Middle+0x+0y" data="M-40,30 L-50,30"/>
+    <path start="_Middle+0x+0y" data="M-25,30 L-35,30"/>
+    <path start="_Middle+0x+0y" data="M-25,-30 L-35,-30"/>
+    <path start="_Middle+0x+0y" data="M-10,30 L-20,30"/>
+    <path start="_Middle+0x+0y" data="M-10,-30 L-20,-30"/>
+    <path start="_Middle+0x+0y" data="M-5,30 L5,30"/>
+    <path start="_Middle+0x+0y" data="M5,-30 L-5,-30"/>
+    <path start="_Middle+0x+0y" data="M10,30 L20,30"/>
+    <path start="_Middle+0x+0y" data="M20,-30 L10,-30"/>
+    <path start="_Middle+0x+0y" data="M25,30 L35,30"/>
+    <path start="_Middle+0x+0y" data="M35,-30 L25,-30"/>
+    <path start="_Middle+0x+0y" data="M40,30 L50,30"/>
+    <path start="_Middle+0x+0y" data="M50,-30 L40,-30"/>
+    <path start="_Middle+0x+0y" data="M60,20 L60,10"/>
+    <path start="_Middle+0x+0y" data="M60,5 L60,-5"/>
+    <path start="_Middle+0x+0y" data="M60,-10 L60,-20"/>
+    <path start="_Middle+0x+0y" data="M-60,-25 L-60,-30 L-55.00000000000001,-30"/>
+    <path start="_Middle+0x+0y" data="M-55.00000000000001,30 L-60,30 L-60,25"/>
+    <path start="_Middle+0x+0y" data="M55.00000000000001,30 L60,30 L60,25"/>
+    <path start="_Middle+0x+0y" data="M60,-25 L60,-30 L55.00000000000001,-30"/>
+    <path start="_Middle+0x+0y" data="M-70,-20 L-70,-45 L70,-45 L70,-20"/>
+    <text x="_Middle+0" y="_Middle-20" value="$Reference" align="CentreCentre" size="small"/>
+    <text x="_Middle+0" y="_Middle-10" value="$Value" align="CentreCentre" size="small"/>
+    <line start="_Middle+0x+30y" end="_Middle+0x+40y" sym:connection="shield"/>
+    <text x="_Middle+0" y="_Middle+26" value="shield" align="CentreLeft" size="small" rotate="270" sym:connection="shield" sym:connection_attr="name"/>
+    <text x="_Middle-4" y="_Middle+35" value="1" align="CentreCentre" size="small" rotate="270" sym:connection="shield" sym:connection_attr="number"/>
+  </render>
+</component>

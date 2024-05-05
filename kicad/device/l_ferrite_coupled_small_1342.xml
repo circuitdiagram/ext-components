@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="L Ferrite Coupled Small 1342"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="131c9db7-57c4-4eb7-ac7e-6033b61e7486"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="canresize" value="false"/>
+    <meta name="minsize" value="20"/>
+    <meta name="additionalinformation" value="Coupled inductor with ferrite core, small symbol"/>
+    <meta name="keywords" value="inductor choke coil reactor magnetic coupled"/>
+    <meta name="ki_fp_filters" value="Choke_* *Coil* Inductor_* L_*"/>
+    <property name="Reference" type="string" default="L" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="L_Ferrite_Coupled_Small_1342" serialize="value" display="Value"/>
+    <flags>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin1" start="_Middle-10x-5y" end="_Middle-8x-5y" edge="start"/>
+    <connection name="pin2" start="_Middle+8x+5y" end="_Middle+10x+5y" edge="end"/>
+    <connection name="pin3" start="_Middle+8x-5y" end="_Middle+10x-5y" edge="end"/>
+    <connection name="pin4" start="_Middle-10x+5y" end="_Middle-8x+5y" edge="start"/>
+  </connections>
+  <render>
+    <ellipse centre="_Middle-6x+5y" rx="1" ry="1" fill="true"/>
+    <ellipse centre="_Middle-6x-5y" rx="1" ry="1" fill="true"/>
+    <path start="_Middle+0x+0y" data="M-6.5,-1 L-5.5,-1"/>
+    <path start="_Middle+0x+0y" data="M-5.5,1 L-6.5,1"/>
+    <path start="_Middle+0x+0y" data="M-4.5,-1 L-3.5,-1"/>
+    <path start="_Middle+0x+0y" data="M-3.5,1 L-4.5,1"/>
+    <path start="_Middle+0x+0y" data="M-2.5,-1 L-1.5,-1"/>
+    <path start="_Middle+0x+0y" data="M-1.5,1 L-2.5,1"/>
+    <path start="_Middle+0x+0y" data="M-0.5,-1 L0.5,-1"/>
+    <path start="_Middle+0x+0y" data="M0.5,1 L-0.5,1"/>
+    <path start="_Middle+0x+0y" data="M1.5,-1 L2.5,-1"/>
+    <path start="_Middle+0x+0y" data="M2.5,1 L1.5,1"/>
+    <path start="_Middle+0x+0y" data="M3.5,-1 L4.5,-1"/>
+    <path start="_Middle+0x+0y" data="M4.5,1 L3.5,1"/>
+    <path start="_Middle+0x+0y" data="M5.5,-1 L6.5,-1"/>
+    <path start="_Middle+0x+0y" data="M6.5,1 L5.5,1"/>
+    <text x="_Middle+0" y="_Middle-12.5" value="$Reference" align="CentreCentre" size="small"/>
+    <text x="_Middle+0" y="_Middle+12.5" value="$Value" align="CentreCentre" size="small"/>
+    <line start="_Middle-10x-5y" end="_Middle-8x-5y" sym:connection="pin1"/>
+    <text x="_Middle-9" y="_Middle-9" value="1" align="CentreCentre" size="small" sym:connection="pin1" sym:connection_attr="number"/>
+    <line start="_Middle+8x+5y" end="_Middle+10x+5y" sym:connection="pin2"/>
+    <text x="_Middle+9" y="_Middle+1" value="2" align="CentreCentre" size="small" sym:connection="pin2" sym:connection_attr="number"/>
+    <line start="_Middle+8x-5y" end="_Middle+10x-5y" sym:connection="pin3"/>
+    <text x="_Middle+9" y="_Middle-9" value="3" align="CentreCentre" size="small" sym:connection="pin3" sym:connection_attr="number"/>
+    <line start="_Middle-10x+5y" end="_Middle-8x+5y" sym:connection="pin4"/>
+    <text x="_Middle-9" y="_Middle+1" value="4" align="CentreCentre" size="small" sym:connection="pin4" sym:connection_attr="number"/>
+  </render>
+</component>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Filter EMI LCL"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="00ce81fa-b051-49b5-aa75-55e8419014a0"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="canresize" value="false"/>
+    <meta name="minsize" value="60"/>
+    <meta name="datasheet" value="http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb"/>
+    <meta name="additionalinformation" value="EMI T-filter (LCL)"/>
+    <meta name="keywords" value="EMI T-filter"/>
+    <meta name="ki_fp_filters" value="Filter* Resonator*"/>
+    <property name="Reference" type="string" default="FL" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="Filter_EMI_LCL" serialize="value" display="Value"/>
+    <flags>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin1" start="_Middle-30x-10y" end="_Middle-20x-10y" edge="start"/>
+    <connection name="pin2" start="_Middle+0x+0y" end="_Middle+0x+10y" edge="end"/>
+    <connection name="pin3" start="_Middle+20x-10y" end="_Middle+30x-10y" edge="end"/>
+  </connections>
+  <render>
+    <rect location="_Middle-22.5x-15y" width="45" height="15"/>
+    <rect location="_Middle-4x-4y" width="8" height="1"/>
+    <path start="_Middle+0x+0y" data="M-4,-10 L4,-10"/>
+    <path start="_Middle+0x+0y" data="M0,-3 L0,-0"/>
+    <path start="_Middle+0x+0y" data="M0,-10 L0,-7"/>
+    <ellipse centre="_Middle+0x-10y" rx="1" ry="1" fill="true"/>
+    <rect location="_Middle-4x-7y" width="8" height="1"/>
+    <text x="_Middle+0" y="_Middle-27.500000000000004" value="$Reference" align="CentreCentre" size="small"/>
+    <text x="_Middle+0" y="_Middle-20" value="$Value" align="CentreCentre" size="small"/>
+    <line start="_Middle-30x-10y" end="_Middle-20x-10y" sym:connection="pin1"/>
+    <text x="_Middle-25" y="_Middle-14" value="1" align="CentreCentre" size="small" sym:connection="pin1" sym:connection_attr="number"/>
+    <line start="_Middle+0x+0y" end="_Middle+0x+10y" sym:connection="pin2"/>
+    <text x="_Middle-4" y="_Middle+5" value="2" align="CentreCentre" size="small" rotate="270" sym:connection="pin2" sym:connection_attr="number"/>
+    <line start="_Middle+20x-10y" end="_Middle+30x-10y" sym:connection="pin3"/>
+    <text x="_Middle+25" y="_Middle-14" value="3" align="CentreCentre" size="small" sym:connection="pin3" sym:connection_attr="number"/>
+  </render>
+</component>

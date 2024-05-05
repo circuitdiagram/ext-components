@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="C Polarized Small"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="7b30e314-1547-4401-b01b-9c53400d9c60"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="canresize" value="false"/>
+    <meta name="minsize" value="20"/>
+    <meta name="additionalinformation" value="Polarized capacitor, small symbol"/>
+    <meta name="keywords" value="cap capacitor"/>
+    <meta name="ki_fp_filters" value="CP_*"/>
+    <property name="Reference" type="string" default="C" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="C_Polarized_Small" serialize="value" display="Value"/>
+    <flags>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin_idx_1" start="_Middle+0x-10y" end="_Middle+0x-2.7y" edge="start"/>
+    <connection name="pin_idx_2" start="_Middle+0x+2.7y" end="_Middle+0x+10y" edge="end"/>
+  </connections>
+  <render>
+    <rect location="_Middle-6x+1.2y" width="12" height="1.4999999999999996"/>
+    <rect location="_Middle-6x-2.7y" width="12" height="1.4999999999999996"/>
+    <path start="_Middle+0x+0y" data="M-5,-6 L-3,-6"/>
+    <path start="_Middle+0x+0y" data="M-4,-5 L-4,-7"/>
+    <text x="_Middle+1" y="_Middle-7" value="$Reference" align="CentreLeft" size="small"/>
+    <text x="_Middle+1" y="_Middle+8" value="$Value" align="CentreLeft" size="small"/>
+    <line start="_Middle+0x-10y" end="_Middle+0x-2.7y" sym:connection="pin_idx_1"/>
+    <line start="_Middle+0x+2.7y" end="_Middle+0x+10y" sym:connection="pin_idx_2"/>
+  </render>
+</component>

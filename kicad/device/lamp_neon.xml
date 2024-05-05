@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Lamp Neon"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="fc6f373b-60fa-44ad-a196-b2c317d0c1cc"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="canresize" value="false"/>
+    <meta name="minsize" value="20"/>
+    <meta name="additionalinformation" value="Neon lamp"/>
+    <meta name="keywords" value="neon lamp"/>
+    <property name="Reference" type="string" default="NE" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="Lamp_Neon" serialize="value" display="Value"/>
+    <flags>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin1" start="_Middle+0x+10y" end="_Middle+0x+20y" edge="end"/>
+    <connection name="pin2" start="_Middle+0x-20y" end="_Middle+0x-10y" edge="start"/>
+  </connections>
+  <render>
+    <rect location="_Middle-6x+2y" width="12" height="1"/>
+    <rect location="_Middle-6x-3y" width="12" height="1"/>
+    <path start="_Middle+0x+0y" data="M0,10 L0,3"/>
+    <path start="_Middle+0x+0y" data="M0,-3 L0,-10"/>
+    <ellipse centre="_Middle+0x+0y" rx="10" ry="10"/>
+    <ellipse centre="_Middle+4x+5y" rx="1" ry="1" fill="true"/>
+    <text x="_Middle+2.5" y="_Middle-15" value="$Reference" align="CentreLeft" size="small"/>
+    <text x="_Middle+2.5" y="_Middle+15" value="$Value" align="CentreLeft" size="small"/>
+    <line start="_Middle+0x+10y" end="_Middle+0x+20y" sym:connection="pin1"/>
+    <text x="_Middle-4" y="_Middle+15" value="1" align="CentreCentre" size="small" rotate="270" sym:connection="pin1" sym:connection_attr="number"/>
+    <line start="_Middle+0x-20y" end="_Middle+0x-10y" sym:connection="pin2"/>
+    <text x="_Middle-4" y="_Middle-15" value="2" align="CentreCentre" size="small" rotate="270" sym:connection="pin2" sym:connection_attr="number"/>
+  </render>
+</component>

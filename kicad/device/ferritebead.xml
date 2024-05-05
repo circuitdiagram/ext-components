@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="FerriteBead"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="a75b1a45-52a0-443b-ae51-82bcdff3c16a"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="canresize" value="false"/>
+    <meta name="minsize" value="40"/>
+    <meta name="additionalinformation" value="Ferrite bead"/>
+    <meta name="keywords" value="L ferrite bead inductor filter"/>
+    <meta name="ki_fp_filters" value="Inductor_* L_* *Ferrite*"/>
+    <property name="Reference" type="string" default="FB" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="FerriteBead" serialize="value" display="Value"/>
+    <flags>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin_idx_1" start="_Middle+0x-15y" end="_Middle+0x-5y" edge="start"/>
+    <connection name="pin_idx_2" start="_Middle+0x+5y" end="_Middle+0x+15y" edge="end"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M0,5 L0,4.800000000000001"/>
+    <path start="_Middle+0x+0y" data="M0,-5 L0,-5.1000000000000005"/>
+    <path start="_Middle+0x+0y" data="M-10.9,-1.6 L-6.7,-8.9 L10.9,1.2000000000000002 L6.6,8.5 L-10.9,-1.6"/>
+    <text x="_Middle-15" y="_Middle-2.5" value="$Reference" align="CentreCentre" size="small" rotate="90"/>
+    <text x="_Middle+15" y="_Middle+0" value="$Value" align="CentreCentre" size="small" rotate="90"/>
+    <line start="_Middle+0x-15y" end="_Middle+0x-5y" sym:connection="pin_idx_1"/>
+    <line start="_Middle+0x+5y" end="_Middle+0x+15y" sym:connection="pin_idx_2"/>
+  </render>
+</component>

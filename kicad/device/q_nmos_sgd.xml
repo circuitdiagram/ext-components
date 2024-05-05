@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Q NMOS SGD"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="4911c934-b404-44c0-9261-b260c97220e3"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="canresize" value="false"/>
+    <meta name="minsize" value="50"/>
+    <meta name="additionalinformation" value="N-MOSFET transistor, source/gate/drain"/>
+    <meta name="keywords" value="transistor NMOS N-MOS N-MOSFET"/>
+    <property name="Reference" type="string" default="Q" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="Q_NMOS_SGD" serialize="value" display="Value"/>
+    <flags>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin1" start="_Middle+10x+10y" end="_Middle+10x+20y" edge="end"/>
+    <connection name="pin2" start="_Middle-20x+0y" end="_Middle+0x+0y" edge="start"/>
+    <connection name="pin3" start="_Middle+10x-20y" end="_Middle+10x-10y" edge="start"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M1,-0 L-10,-0"/>
+    <path start="_Middle+0x+0y" data="M1,-7.5 L1,7.5"/>
+    <path start="_Middle+0x+0y" data="M3,5 L3,9"/>
+    <path start="_Middle+0x+0y" data="M3,-2 L3,2"/>
+    <path start="_Middle+0x+0y" data="M3,-9 L3,-5"/>
+    <path start="_Middle+0x+0y" data="M10,-10 L10,-7"/>
+    <path start="_Middle+0x+0y" data="M10,10 L10,-0 L3,-0"/>
+    <path start="_Middle+0x+0y" data="M3,7 L13,7 L13,-7 L3,-7"/>
+    <path start="_Middle+0x+0y" data="M4,-0 L8,-1.5 L8,1.5 L4,-0" fill="true"/>
+    <path start="_Middle+0x+0y" data="M11,-2 L11.5,-1.5 L14.5,-1.5 L15,-1"/>
+    <path start="_Middle+0x+0y" data="M13,-1.5 L11.5,1 L14.5,1 L13,-1.5"/>
+    <ellipse centre="_Middle+6.5x+0y" rx="11" ry="11"/>
+    <ellipse centre="_Middle+10x+7y" rx="1" ry="1" fill="true"/>
+    <ellipse centre="_Middle+10x-7y" rx="1" ry="1" fill="true"/>
+    <text x="_Middle+20" y="_Middle-5" value="$Reference" align="CentreLeft" size="small"/>
+    <text x="_Middle+20" y="_Middle+5" value="$Value" align="CentreLeft" size="small"/>
+    <line start="_Middle+10x+10y" end="_Middle+10x+20y" sym:connection="pin1"/>
+    <text x="_Middle+6" y="_Middle+15" value="1" align="CentreCentre" size="small" rotate="270" sym:connection="pin1" sym:connection_attr="number"/>
+    <line start="_Middle-20x+0y" end="_Middle+0x+0y" sym:connection="pin2"/>
+    <text x="_Middle-10" y="_Middle-4" value="2" align="CentreCentre" size="small" sym:connection="pin2" sym:connection_attr="number"/>
+    <line start="_Middle+10x-20y" end="_Middle+10x-10y" sym:connection="pin3"/>
+    <text x="_Middle+6" y="_Middle-15" value="3" align="CentreCentre" size="small" rotate="270" sym:connection="pin3" sym:connection_attr="number"/>
+  </render>
+</component>

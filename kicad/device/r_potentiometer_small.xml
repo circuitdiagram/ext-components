@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="R Potentiometer Small"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="b511f279-9eae-4614-8019-b0ebf04e50d4"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="canresize" value="false"/>
+    <meta name="minsize" value="30"/>
+    <meta name="additionalinformation" value="Potentiometer"/>
+    <meta name="keywords" value="resistor variable"/>
+    <meta name="ki_fp_filters" value="Potentiometer*"/>
+    <property name="Reference" type="string" default="RV" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="R_Potentiometer_Small" serialize="value" display="Value"/>
+    <flags>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin1" start="_Middle+0x-10y" end="_Middle+0x-7.5y" edge="start"/>
+    <connection name="pin2" start="_Middle+6.1x+0y" end="_Middle+10x+0y" edge="end"/>
+    <connection name="pin3" start="_Middle+0x+7.5y" end="_Middle+0x+10y" edge="end"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M3.5,-0 L2.5,-0 L6.5,-1.5 L6.5,1.5 L2.5,-0 L3.5,-0" fill="true"/>
+    <rect location="_Middle-3x-7.1y" width="6" height="14.2"/>
+    <text x="_Middle-17.5" y="_Middle+0" value="$Reference" align="CentreCentre" size="small" rotate="90"/>
+    <text x="_Middle-10" y="_Middle+0" value="$Value" align="CentreCentre" size="small" rotate="90"/>
+    <line start="_Middle+0x-10y" end="_Middle+0x-7.5y" sym:connection="pin1"/>
+    <text x="_Middle-4" y="_Middle-8.75" value="1" align="CentreCentre" size="small" rotate="270" sym:connection="pin1" sym:connection_attr="number"/>
+    <line start="_Middle+6.1x+0y" end="_Middle+10x+0y" sym:connection="pin2"/>
+    <text x="_Middle+8.05" y="_Middle-4" value="2" align="CentreCentre" size="small" sym:connection="pin2" sym:connection_attr="number"/>
+    <line start="_Middle+0x+7.5y" end="_Middle+0x+10y" sym:connection="pin3"/>
+    <text x="_Middle-4" y="_Middle+8.75" value="3" align="CentreCentre" size="small" rotate="270" sym:connection="pin3" sym:connection_attr="number"/>
+  </render>
+</component>

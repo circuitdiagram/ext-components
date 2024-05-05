@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="R Network Dividers x07 SIP"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="63eaed03-c7be-4d0c-ab10-2b48de69c1fe"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="canresize" value="false"/>
+    <meta name="minsize" value="160"/>
+    <meta name="footprint" value="Resistor_THT:R_Array_SIP9"/>
+    <meta name="datasheet" value="http://www.vishay.com/docs/31509/csc.pdf"/>
+    <meta name="additionalinformation" value="7 voltage divider network, dual terminator, SIP package"/>
+    <meta name="keywords" value="R network divider topology"/>
+    <meta name="ki_fp_filters" value="R?Array?SIP*"/>
+    <property name="Reference" type="string" default="RN" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="R_Network_Dividers_x07_SIP" serialize="value" display="Value"/>
+    <flags>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin1" start="_Middle-60x-30y" end="_Middle-60x-20y" edge="start"/>
+    <connection name="pin2" start="_Middle-60x+20y" end="_Middle-60x+30y" edge="end"/>
+    <connection name="pin3" start="_Middle-40x+20y" end="_Middle-40x+30y" edge="end"/>
+    <connection name="pin4" start="_Middle-20x+20y" end="_Middle-20x+30y" edge="end"/>
+    <connection name="pin5" start="_Middle+0x+20y" end="_Middle+0x+30y" edge="end"/>
+    <connection name="pin6" start="_Middle+20x+20y" end="_Middle+20x+30y" edge="end"/>
+    <connection name="pin7" start="_Middle+40x+20y" end="_Middle+40x+30y" edge="end"/>
+    <connection name="pin8" start="_Middle+60x+20y" end="_Middle+60x+30y" edge="end"/>
+    <connection name="pin9" start="_Middle+70x-30y" end="_Middle+70x-20y" edge="start"/>
+  </connections>
+  <render>
+    <rect location="_Middle-65x-20y" width="140" height="40"/>
+    <rect location="_Middle-62x-13.3y" width="4" height="10"/>
+    <ellipse centre="_Middle-60x+0y" rx="1" ry="1" fill="true"/>
+    <ellipse centre="_Middle-60x-16.6y" rx="1" ry="1" fill="true"/>
+    <rect location="_Middle-56x+3.3y" width="4" height="10"/>
+    <rect location="_Middle-42x-13.3y" width="4" height="10"/>
+    <ellipse centre="_Middle-40x+0y" rx="1" ry="1" fill="true"/>
+    <ellipse centre="_Middle-40x-16.6y" rx="1" ry="1" fill="true"/>
+    <rect location="_Middle-36x+3.3y" width="4" height="10"/>
+    <ellipse centre="_Middle-34x+16.6y" rx="1" ry="1" fill="true"/>
+    <rect location="_Middle-22x-13.3y" width="4" height="10"/>
+    <ellipse centre="_Middle-20x+0y" rx="1" ry="1" fill="true"/>
+    <ellipse centre="_Middle-20x-16.6y" rx="1" ry="1" fill="true"/>
+    <rect location="_Middle-16x+3.3y" width="4" height="10"/>
+    <ellipse centre="_Middle-14x+16.6y" rx="1" ry="1" fill="true"/>
+    <rect location="_Middle-2x-13.3y" width="4" height="10"/>
+    <path start="_Middle+0x+0y" data="M-60,20 L-60,-3.3"/>
+    <path start="_Middle+0x+0y" data="M-60,-20 L-60,-13.3"/>
+    <path start="_Middle+0x+0y" data="M-40,20 L-40,-3.3"/>
+    <path start="_Middle+0x+0y" data="M-20,20 L-20,-3.3"/>
+    <path start="_Middle+0x+0y" data="M0,20 L0,-3.3"/>
+    <path start="_Middle+0x+0y" data="M20,20 L20,-3.3"/>
+    <path start="_Middle+0x+0y" data="M40,20 L40,-3.3"/>
+    <path start="_Middle+0x+0y" data="M60,20 L60,-3.3"/>
+    <path start="_Middle+0x+0y" data="M70,16.6 L70,-20"/>
+    <path start="_Middle+0x+0y" data="M-60,-0 L-54,-0 L-54,3.3"/>
+    <path start="_Middle+0x+0y" data="M-60,-16.6 L-40,-16.6 L-40,-13.3"/>
+    <path start="_Middle+0x+0y" data="M-54,13.3 L-54,16.6 L70,16.6"/>
+    <path start="_Middle+0x+0y" data="M-40,-0 L-34,-0 L-34,3.3"/>
+    <path start="_Middle+0x+0y" data="M-40,-16.6 L-20,-16.6 L-20,-13.3"/>
+    <path start="_Middle+0x+0y" data="M-34,13.3 L-34,16.6 L70,16.6"/>
+    <path start="_Middle+0x+0y" data="M-20,-0 L-14,-0 L-14,3.3"/>
+    <path start="_Middle+0x+0y" data="M-20,-16.6 L0,-16.6 L0,-13.3"/>
+    <path start="_Middle+0x+0y" data="M-14,13.3 L-14,16.6 L70,16.6"/>
+    <path start="_Middle+0x+0y" data="M0,-0 L6,-0 L6,3.3"/>
+    <path start="_Middle+0x+0y" data="M0,-16.6 L20,-16.6 L20,-13.3"/>
+    <path start="_Middle+0x+0y" data="M6,13.3 L6,16.6 L70,16.6"/>
+    <path start="_Middle+0x+0y" data="M20,-0 L26,-0 L26,3.3"/>
+    <path start="_Middle+0x+0y" data="M20,-16.6 L40,-16.6 L40,-13.3"/>
+    <path start="_Middle+0x+0y" data="M26,13.3 L26,16.6 L70,16.6"/>
+    <path start="_Middle+0x+0y" data="M40,-0 L46,-0 L46,3.3"/>
+    <path start="_Middle+0x+0y" data="M40,-16.6 L60,-16.6 L60,-13.3"/>
+    <path start="_Middle+0x+0y" data="M46,13.3 L46,16.6 L70,16.6"/>
+    <path start="_Middle+0x+0y" data="M60,-0 L66,-0 L66,3.3"/>
+    <path start="_Middle+0x+0y" data="M66,13.3 L66,16.6 L70,16.6"/>
+    <ellipse centre="_Middle+0x+0y" rx="1" ry="1" fill="true"/>
+    <ellipse centre="_Middle+0x-16.6y" rx="1" ry="1" fill="true"/>
+    <rect location="_Middle+4x+3.3y" width="4" height="10"/>
+    <ellipse centre="_Middle+6x+16.6y" rx="1" ry="1" fill="true"/>
+    <rect location="_Middle+18x-13.3y" width="4" height="10"/>
+    <ellipse centre="_Middle+20x+0y" rx="1" ry="1" fill="true"/>
+    <ellipse centre="_Middle+20x-16.6y" rx="1" ry="1" fill="true"/>
+    <rect location="_Middle+24x+3.3y" width="4" height="10"/>
+    <ellipse centre="_Middle+26x+16.6y" rx="1" ry="1" fill="true"/>
+    <rect location="_Middle+38x-13.3y" width="4" height="10"/>
+    <ellipse centre="_Middle+40x+0y" rx="1" ry="1" fill="true"/>
+    <ellipse centre="_Middle+40x-16.6y" rx="1" ry="1" fill="true"/>
+    <rect location="_Middle+44x+3.3y" width="4" height="10"/>
+    <ellipse centre="_Middle+46x+16.6y" rx="1" ry="1" fill="true"/>
+    <rect location="_Middle+58x-13.3y" width="4" height="10"/>
+    <ellipse centre="_Middle+60x+0y" rx="1" ry="1" fill="true"/>
+    <rect location="_Middle+64x+3.3y" width="4" height="10"/>
+    <ellipse centre="_Middle+66x+16.6y" rx="1" ry="1" fill="true"/>
+    <text x="_Middle-70" y="_Middle+0" value="$Reference" align="CentreCentre" size="small" rotate="90"/>
+    <text x="_Middle+80" y="_Middle+0" value="$Value" align="CentreCentre" size="small" rotate="90"/>
+    <line start="_Middle-60x-30y" end="_Middle-60x-20y" sym:connection="pin1"/>
+    <text x="_Middle-64" y="_Middle-25" value="1" align="CentreCentre" size="small" rotate="270" sym:connection="pin1" sym:connection_attr="number"/>
+    <line start="_Middle-60x+20y" end="_Middle-60x+30y" sym:connection="pin2"/>
+    <text x="_Middle-64" y="_Middle+25" value="2" align="CentreCentre" size="small" rotate="270" sym:connection="pin2" sym:connection_attr="number"/>
+    <line start="_Middle-40x+20y" end="_Middle-40x+30y" sym:connection="pin3"/>
+    <text x="_Middle-44" y="_Middle+25" value="3" align="CentreCentre" size="small" rotate="270" sym:connection="pin3" sym:connection_attr="number"/>
+    <line start="_Middle-20x+20y" end="_Middle-20x+30y" sym:connection="pin4"/>
+    <text x="_Middle-24" y="_Middle+25" value="4" align="CentreCentre" size="small" rotate="270" sym:connection="pin4" sym:connection_attr="number"/>
+    <line start="_Middle+0x+20y" end="_Middle+0x+30y" sym:connection="pin5"/>
+    <text x="_Middle-4" y="_Middle+25" value="5" align="CentreCentre" size="small" rotate="270" sym:connection="pin5" sym:connection_attr="number"/>
+    <line start="_Middle+20x+20y" end="_Middle+20x+30y" sym:connection="pin6"/>
+    <text x="_Middle+16" y="_Middle+25" value="6" align="CentreCentre" size="small" rotate="270" sym:connection="pin6" sym:connection_attr="number"/>
+    <line start="_Middle+40x+20y" end="_Middle+40x+30y" sym:connection="pin7"/>
+    <text x="_Middle+36" y="_Middle+25" value="7" align="CentreCentre" size="small" rotate="270" sym:connection="pin7" sym:connection_attr="number"/>
+    <line start="_Middle+60x+20y" end="_Middle+60x+30y" sym:connection="pin8"/>
+    <text x="_Middle+56" y="_Middle+25" value="8" align="CentreCentre" size="small" rotate="270" sym:connection="pin8" sym:connection_attr="number"/>
+    <line start="_Middle+70x-30y" end="_Middle+70x-20y" sym:connection="pin9"/>
+    <text x="_Middle+66" y="_Middle-25" value="9" align="CentreCentre" size="small" rotate="270" sym:connection="pin9" sym:connection_attr="number"/>
+  </render>
+</component>

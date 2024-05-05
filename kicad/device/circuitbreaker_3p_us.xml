@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="CircuitBreaker 3P US"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="04e16672-f772-4dc7-8461-7e4a7dddca22"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="canresize" value="false"/>
+    <meta name="minsize" value="70"/>
+    <meta name="additionalinformation" value="Triple pole circuit breaker, US symbol"/>
+    <meta name="keywords" value="CB 3P"/>
+    <property name="Reference" type="string" default="CB" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="CircuitBreaker_3P_US" serialize="value" display="Value"/>
+    <flags>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin1" start="_Middle-20x-30y" end="_Middle-20x-20y" edge="start"/>
+    <connection name="pin2" start="_Middle-20x+20y" end="_Middle-20x+30y" edge="end"/>
+    <connection name="pin3" start="_Middle+0x-30y" end="_Middle+0x-20y" edge="start"/>
+    <connection name="pin4" start="_Middle+0x+20y" end="_Middle+0x+30y" edge="end"/>
+    <connection name="pin5" start="_Middle+20x-30y" end="_Middle+20x-20y" edge="start"/>
+    <connection name="pin6" start="_Middle+20x+20y" end="_Middle+20x+30y" edge="end"/>
+  </connections>
+  <render>
+    <ellipse centre="_Middle+0x+17.5y" rx="2.5" ry="2.5"/>
+    <path start="_Middle+0x+0y" data="M-9,-0 L-5,-0"/>
+    <path start="_Middle+0x+0y" data="M-3,-0 L1,-0"/>
+    <path start="_Middle+0x+0y" data="M3,-0 L7,-0"/>
+    <path start="_Middle+0x+0y" data="M9,-0 L13,-0"/>
+    <path start="_Middle+0x+0y" data="M15,-0 L19,-0"/>
+    <path start="_Middle+0x+0y" data="M21,-0 L25,-0"/>
+    <path start="_Middle+0x+0y" data="M27,-0 L31,-0"/>
+    <ellipse centre="_Middle+0x-17.5y" rx="2.5" ry="2.5"/>
+    <ellipse centre="_Middle-20x+17.5y" rx="2.5" ry="2.5"/>
+    <ellipse centre="_Middle-20x-17.5y" rx="2.5" ry="2.5"/>
+    <ellipse centre="_Middle+20x+17.5y" rx="2.5" ry="2.5"/>
+    <ellipse centre="_Middle+20x-17.5y" rx="2.5" ry="2.5"/>
+    <text x="_Middle+40" y="_Middle+0" value="$Reference" align="CentreLeft" size="small"/>
+    <text x="_Middle+40" y="_Middle-10" value="$Value" align="CentreLeft" size="small"/>
+    <line start="_Middle-20x-30y" end="_Middle-20x-20y" sym:connection="pin1"/>
+    <text x="_Middle-24" y="_Middle-25" value="1" align="CentreCentre" size="small" rotate="270" sym:connection="pin1" sym:connection_attr="number"/>
+    <line start="_Middle-20x+20y" end="_Middle-20x+30y" sym:connection="pin2"/>
+    <text x="_Middle-24" y="_Middle+25" value="2" align="CentreCentre" size="small" rotate="270" sym:connection="pin2" sym:connection_attr="number"/>
+    <line start="_Middle+0x-30y" end="_Middle+0x-20y" sym:connection="pin3"/>
+    <text x="_Middle-4" y="_Middle-25" value="3" align="CentreCentre" size="small" rotate="270" sym:connection="pin3" sym:connection_attr="number"/>
+    <line start="_Middle+0x+20y" end="_Middle+0x+30y" sym:connection="pin4"/>
+    <text x="_Middle-4" y="_Middle+25" value="4" align="CentreCentre" size="small" rotate="270" sym:connection="pin4" sym:connection_attr="number"/>
+    <line start="_Middle+20x-30y" end="_Middle+20x-20y" sym:connection="pin5"/>
+    <text x="_Middle+16" y="_Middle-25" value="5" align="CentreCentre" size="small" rotate="270" sym:connection="pin5" sym:connection_attr="number"/>
+    <line start="_Middle+20x+20y" end="_Middle+20x+30y" sym:connection="pin6"/>
+    <text x="_Middle+16" y="_Middle+25" value="6" align="CentreCentre" size="small" rotate="270" sym:connection="pin6" sym:connection_attr="number"/>
+  </render>
+</component>

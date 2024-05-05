@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Q Dual NPN NPN BRT No R2 E1B1C2E2B2C1"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="2c598828-1baa-481a-836a-b6f886d5357f"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="canresize" value="false"/>
+    <meta name="minsize" value="60"/>
+    <meta name="additionalinformation" value="Dual NPN bias resistor transistor without a base-emitter resistor, 6 pin package"/>
+    <meta name="keywords" value="transistor NPN"/>
+    <meta name="ki_fp_filters" value="SC?70* SC?88* SOT?26* SOT?363* SOT?457* SOT?563* SOT?666*"/>
+    <property name="Reference" type="string" default="Q" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="Q_Dual_NPN_NPN_BRT_No_R2_E1B1C2E2B2C1" serialize="value" display="Value"/>
+    <flags>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin3" start="_Middle+5x-20y" end="_Middle+5x-10y" edge="start"/>
+    <connection name="pin4" start="_Middle+5x+10y" end="_Middle+5x+20y" edge="end"/>
+    <connection name="pin5" start="_Middle-35x+0y" end="_Middle-25x+0y" edge="start"/>
+    <connection name="pin1" start="_Middle+5x+10y" end="_Middle+5x+20y" edge="end"/>
+    <connection name="pin2" start="_Middle-35x+0y" end="_Middle-25x+0y" edge="start"/>
+    <connection name="pin6" start="_Middle+5x-20y" end="_Middle+5x-10y" edge="start"/>
+  </connections>
+  <render>
+    <rect location="_Middle-25x-2y" width="6" height="4"/>
+    <path start="_Middle+0x+0y" data="M-3,-0 L-19,-0"/>
+    <path start="_Middle+0x+0y" data="M-2.5,-6 L-2.5,6"/>
+    <path start="_Middle+0x+0y" data="M-2.5,-2.5 L5,-10"/>
+    <path start="_Middle+0x+0y" data="M-2.5,2.5 L5,10 L5,10"/>
+    <path start="_Middle+0x+0y" data="M0,7 L2,5 L4,9 L0,7 L0,7" fill="true"/>
+    <ellipse centre="_Middle+0x+0y" rx="11.1" ry="11.1"/>
+    <path start="_Middle+0x+0y" data="M-2.5,-2.5 L5,-10"/>
+    <path start="_Middle+0x+0y" data="M-2.5,2.5 L5,10 L5,10"/>
+    <path start="_Middle+0x+0y" data="M0,7 L2,5 L4,9 L0,7 L0,7" fill="true"/>
+    <ellipse centre="_Middle+0x+0y" rx="11.1" ry="11.1"/>
+    <text x="_Middle+15" y="_Middle-5" value="$Reference" align="CentreLeft" size="small"/>
+    <text x="_Middle+15" y="_Middle+5" value="$Value" align="CentreLeft" size="small"/>
+    <line start="_Middle+5x-20y" end="_Middle+5x-10y" sym:connection="pin3"/>
+    <text x="_Middle+1" y="_Middle-15" value="3" align="CentreCentre" size="small" rotate="270" sym:connection="pin3" sym:connection_attr="number"/>
+    <line start="_Middle+5x+10y" end="_Middle+5x+20y" sym:connection="pin4"/>
+    <text x="_Middle+1" y="_Middle+15" value="4" align="CentreCentre" size="small" rotate="270" sym:connection="pin4" sym:connection_attr="number"/>
+    <line start="_Middle-35x+0y" end="_Middle-25x+0y" sym:connection="pin5"/>
+    <text x="_Middle-30" y="_Middle-4" value="5" align="CentreCentre" size="small" sym:connection="pin5" sym:connection_attr="number"/>
+    <line start="_Middle+5x+10y" end="_Middle+5x+20y" sym:connection="pin1"/>
+    <text x="_Middle+1" y="_Middle+15" value="1" align="CentreCentre" size="small" rotate="270" sym:connection="pin1" sym:connection_attr="number"/>
+    <line start="_Middle-35x+0y" end="_Middle-25x+0y" sym:connection="pin2"/>
+    <text x="_Middle-30" y="_Middle-4" value="2" align="CentreCentre" size="small" sym:connection="pin2" sym:connection_attr="number"/>
+    <line start="_Middle+5x-20y" end="_Middle+5x-10y" sym:connection="pin6"/>
+    <text x="_Middle+1" y="_Middle-15" value="6" align="CentreCentre" size="small" rotate="270" sym:connection="pin6" sym:connection_attr="number"/>
+  </render>
+</component>

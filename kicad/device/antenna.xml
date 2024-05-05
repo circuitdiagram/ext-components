@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Antenna"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="a893e3ea-7b17-482c-ae49-b5d4ed3425fd"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="canresize" value="false"/>
+    <meta name="minsize" value="20"/>
+    <meta name="additionalinformation" value="Antenna"/>
+    <meta name="keywords" value="antenna"/>
+    <property name="Reference" type="string" default="AE" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="Antenna" serialize="value" display="Value"/>
+    <flags>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin_idx_1" start="_Middle+0x+10y" end="_Middle+0x+20y" edge="end"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M0,-10 L0,15"/>
+    <path start="_Middle+0x+0y" data="M5,-10 L0,10 L-5,-10"/>
+    <text x="_Middle-7.5" y="_Middle-7.5" value="$Reference" align="CentreRight" size="small"/>
+    <text x="_Middle-7.5" y="_Middle+0" value="$Value" align="CentreRight" size="small"/>
+    <line start="_Middle+0x+10y" end="_Middle+0x+20y" sym:connection="pin_idx_1"/>
+  </render>
+</component>

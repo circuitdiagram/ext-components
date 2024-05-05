@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="CircuitBreaker 2P"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="bcfad3d8-f242-48e1-ad1c-834b561d5b78"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="canresize" value="false"/>
+    <meta name="minsize" value="40"/>
+    <meta name="additionalinformation" value="Double pole circuit breaker"/>
+    <meta name="keywords" value="CB 2P"/>
+    <property name="Reference" type="string" default="CB" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="CircuitBreaker_2P" serialize="value" display="Value"/>
+    <flags>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin1" start="_Middle-10x-30y" end="_Middle-10x-20y" edge="start"/>
+    <connection name="pin2" start="_Middle-10x+20y" end="_Middle-10x+30y" edge="end"/>
+    <connection name="pin3" start="_Middle+10x-30y" end="_Middle+10x-20y" edge="start"/>
+    <connection name="pin4" start="_Middle+10x+20y" end="_Middle+10x+30y" edge="end"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-15,-0 L-9,-0"/>
+    <path start="_Middle+0x+0y" data="M-10,15 L-20,-15"/>
+    <path start="_Middle+0x+0y" data="M-7,-0 L-2,-0"/>
+    <path start="_Middle+0x+0y" data="M0,-0 L5,-0"/>
+    <path start="_Middle+0x+0y" data="M10,20 L10,15"/>
+    <path start="_Middle+0x+0y" data="M10,15 L0,-15"/>
+    <path start="_Middle+0x+0y" data="M-12.5,-17.5 L-7.5,-12.5"/>
+    <path start="_Middle+0x+0y" data="M-10,15 L-10,20"/>
+    <path start="_Middle+0x+0y" data="M-10,-20 L-10,-15"/>
+    <path start="_Middle+0x+0y" data="M-7.5,-17.5 L-12.5,-12.5"/>
+    <path start="_Middle+0x+0y" data="M7.5,-17.5 L12.5,-12.5"/>
+    <path start="_Middle+0x+0y" data="M10,-20 L10,-15"/>
+    <path start="_Middle+0x+0y" data="M12.5,-17.5 L7.5,-12.5"/>
+    <text x="_Middle+15" y="_Middle+0" value="$Reference" align="CentreLeft" size="small"/>
+    <text x="_Middle+15" y="_Middle-10" value="$Value" align="CentreLeft" size="small"/>
+    <line start="_Middle-10x-30y" end="_Middle-10x-20y" sym:connection="pin1"/>
+    <text x="_Middle-14" y="_Middle-25" value="1" align="CentreCentre" size="small" rotate="270" sym:connection="pin1" sym:connection_attr="number"/>
+    <line start="_Middle-10x+20y" end="_Middle-10x+30y" sym:connection="pin2"/>
+    <text x="_Middle-14" y="_Middle+25" value="2" align="CentreCentre" size="small" rotate="270" sym:connection="pin2" sym:connection_attr="number"/>
+    <line start="_Middle+10x-30y" end="_Middle+10x-20y" sym:connection="pin3"/>
+    <text x="_Middle+6" y="_Middle-25" value="3" align="CentreCentre" size="small" rotate="270" sym:connection="pin3" sym:connection_attr="number"/>
+    <line start="_Middle+10x+20y" end="_Middle+10x+30y" sym:connection="pin4"/>
+    <text x="_Middle+6" y="_Middle+25" value="4" align="CentreCentre" size="small" rotate="270" sym:connection="pin4" sym:connection_attr="number"/>
+  </render>
+</component>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="LED BRKG"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="ccd88793-0678-460b-8f62-0d421898f925"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="canresize" value="false"/>
+    <meta name="minsize" value="40"/>
+    <meta name="additionalinformation" value="RGB LED, blue/red/cathode/green"/>
+    <meta name="keywords" value="LED RGB diode"/>
+    <meta name="ki_fp_filters" value="LED* LED_SMD:* LED_THT:*"/>
+    <property name="Reference" type="string" default="D" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="LED_BRKG" serialize="value" display="Value"/>
+    <flags>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin1" start="_Middle+10x+20y" end="_Middle+20x+20y" edge="end"/>
+    <connection name="pin2" start="_Middle+10x-20y" end="_Middle+20x-20y" edge="end"/>
+    <connection name="pin3" start="_Middle-20x+0y" end="_Middle-10x+0y" edge="start"/>
+    <connection name="pin4" start="_Middle+10x+0y" end="_Middle+20x+0y" edge="end"/>
+  </connections>
+  <render>
+    <ellipse centre="_Middle-8x+0y" rx="1" ry="1" fill="true"/>
+    <path start="_Middle+0x+0y" data="M-5,20 L5,20"/>
+    <path start="_Middle+0x+0y" data="M-5,15 L-5,25"/>
+    <path start="_Middle+0x+0y" data="M-5,-0 L-10,-0"/>
+    <path start="_Middle+0x+0y" data="M-5,-5 L-5,5"/>
+    <path start="_Middle+0x+0y" data="M-5,-20 L5,-20"/>
+    <path start="_Middle+0x+0y" data="M-5,-25 L-5,-15"/>
+    <path start="_Middle+0x+0y" data="M5,20 L10,20"/>
+    <path start="_Middle+0x+0y" data="M5,-0 L-5,-0"/>
+    <path start="_Middle+0x+0y" data="M5,-0 L10,-0"/>
+    <path start="_Middle+0x+0y" data="M5,-20 L10,-20"/>
+    <path start="_Middle+0x+0y" data="M-5,-5 L-5,5 L-5,5"/>
+    <path start="_Middle+0x+0y" data="M-5,-25 L-5,-15 L-5,-15"/>
+    <path start="_Middle+0x+0y" data="M-5,-20 L-8,-20 L-8,20 L-4,20"/>
+    <path start="_Middle+0x+0y" data="M5,15 L5,25 L-5,20 L5,15"/>
+    <path start="_Middle+0x+0y" data="M5,-5 L5,5 L-5,-0 L5,-5"/>
+    <path start="_Middle+0x+0y" data="M5,-25 L5,-15 L-5,-20 L5,-25"/>
+    <path start="_Middle+0x+0y" data="M-4,15 L2,9 L-1,9 L2,9 L2,12"/>
+    <path start="_Middle+0x+0y" data="M-4,-5 L2,-11 L-1,-11 L2,-11 L2,-8"/>
+    <path start="_Middle+0x+0y" data="M-4,-25 L2,-31 L-1,-31 L2,-31 L2,-28"/>
+    <path start="_Middle+0x+0y" data="M0,15 L6,9 L3,9 L6,9 L6,12"/>
+    <path start="_Middle+0x+0y" data="M0,-5 L6,-11 L3,-11 L6,-11 L6,-8"/>
+    <path start="_Middle+0x+0y" data="M0,-25 L6,-31 L3,-31 L6,-31 L6,-28"/>
+    <rect location="_Middle+5x-5y" width="0" height="10"/>
+    <rect location="_Middle+5x-5y" width="0" height="0"/>
+    <rect location="_Middle+5x-25y" width="0" height="10"/>
+    <rect location="_Middle+5x-25y" width="0" height="0"/>
+    <rect location="_Middle-11x-33y" width="22" height="63"/>
+    <text x="_Middle+0" y="_Middle-37" value="$Reference" align="CentreCentre" size="small"/>
+    <text x="_Middle+0" y="_Middle+35" value="$Value" align="CentreCentre" size="small"/>
+    <line start="_Middle+10x+20y" end="_Middle+20x+20y" sym:connection="pin1"/>
+    <text x="_Middle+15" y="_Middle+16" value="1" align="CentreCentre" size="small" sym:connection="pin1" sym:connection_attr="number"/>
+    <line start="_Middle+10x-20y" end="_Middle+20x-20y" sym:connection="pin2"/>
+    <text x="_Middle+15" y="_Middle-24" value="2" align="CentreCentre" size="small" sym:connection="pin2" sym:connection_attr="number"/>
+    <line start="_Middle-20x+0y" end="_Middle-10x+0y" sym:connection="pin3"/>
+    <text x="_Middle-15" y="_Middle-4" value="3" align="CentreCentre" size="small" sym:connection="pin3" sym:connection_attr="number"/>
+    <line start="_Middle+10x+0y" end="_Middle+20x+0y" sym:connection="pin4"/>
+    <text x="_Middle+15" y="_Middle-4" value="4" align="CentreCentre" size="small" sym:connection="pin4" sym:connection_attr="number"/>
+  </render>
+</component>

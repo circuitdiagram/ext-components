@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="LED Dual AKAK"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="d41bad0d-adc3-4d25-b189-5fe2c91fb9fa"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="canresize" value="false"/>
+    <meta name="minsize" value="60"/>
+    <meta name="additionalinformation" value="Dual LED, cathodes on pins 2 and 4"/>
+    <meta name="keywords" value="LED diode bicolor dual"/>
+    <meta name="ki_fp_filters" value="LED* LED_SMD:* LED_THT:*"/>
+    <property name="Reference" type="string" default="D" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="LED_Dual_AKAK" serialize="value" display="Value"/>
+    <flags>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin1" start="_Middle-30x-10y" end="_Middle-18x-10y" edge="start"/>
+    <connection name="pin2" start="_Middle+15x-10y" end="_Middle+30x-10y" edge="end"/>
+    <connection name="pin3" start="_Middle-30x+10y" end="_Middle-18x+10y" edge="start"/>
+    <connection name="pin4" start="_Middle+15x+10y" end="_Middle+30x+10y" edge="end"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-20,10 L8,10"/>
+    <path start="_Middle+0x+0y" data="M-20,-10 L8,-10"/>
+    <path start="_Middle+0x+0y" data="M5,5 L5,15"/>
+    <path start="_Middle+0x+0y" data="M5,-15 L5,-5"/>
+    <path start="_Middle+0x+0y" data="M15,10 L7.5,10"/>
+    <path start="_Middle+0x+0y" data="M15,-10 L7.5,-10"/>
+    <path start="_Middle+0x+0y" data="M-5,5 L-5,15 L5,10 L-5,5"/>
+    <path start="_Middle+0x+0y" data="M-5,-15 L-5,-5 L5,-10 L-5,-15"/>
+    <path start="_Middle+0x+0y" data="M8,-20 L14,-26 L11,-26 L14,-26 L14,-23"/>
+    <path start="_Middle+0x+0y" data="M13,-16 L19,-22 L16,-22 L19,-22 L19,-19"/>
+    <ellipse centre="_Middle+0x+0y" rx="18" ry="18"/>
+    <text x="_Middle+0" y="_Middle-22.5" value="$Reference" align="CentreCentre" size="small"/>
+    <text x="_Middle+0" y="_Middle+25" value="$Value" align="CentreCentre" size="small"/>
+    <line start="_Middle-30x-10y" end="_Middle-18x-10y" sym:connection="pin1"/>
+    <text x="_Middle-24" y="_Middle-14" value="1" align="CentreCentre" size="small" sym:connection="pin1" sym:connection_attr="number"/>
+    <line start="_Middle+15x-10y" end="_Middle+30x-10y" sym:connection="pin2"/>
+    <text x="_Middle+22.5" y="_Middle-14" value="2" align="CentreCentre" size="small" sym:connection="pin2" sym:connection_attr="number"/>
+    <line start="_Middle-30x+10y" end="_Middle-18x+10y" sym:connection="pin3"/>
+    <text x="_Middle-24" y="_Middle+6" value="3" align="CentreCentre" size="small" sym:connection="pin3" sym:connection_attr="number"/>
+    <line start="_Middle+15x+10y" end="_Middle+30x+10y" sym:connection="pin4"/>
+    <text x="_Middle+22.5" y="_Middle+6" value="4" align="CentreCentre" size="small" sym:connection="pin4" sym:connection_attr="number"/>
+  </render>
+</component>

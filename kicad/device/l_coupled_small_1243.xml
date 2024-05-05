@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="L Coupled Small 1243"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="942a5f07-feb5-48fb-8139-e4ce319ef4f4"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="canresize" value="false"/>
+    <meta name="minsize" value="20"/>
+    <meta name="additionalinformation" value="Coupled inductor, small symbol"/>
+    <meta name="keywords" value="inductor choke coil reactor magnetic coupled"/>
+    <meta name="ki_fp_filters" value="Choke_* *Coil* Inductor_* L_*"/>
+    <property name="Reference" type="string" default="L" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="L_Coupled_Small_1243" serialize="value" display="Value"/>
+    <flags>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin1" start="_Middle-10x-5y" end="_Middle-8x-5y" edge="start"/>
+    <connection name="pin2" start="_Middle+8x-5y" end="_Middle+10x-5y" edge="end"/>
+    <connection name="pin3" start="_Middle+8x+5y" end="_Middle+10x+5y" edge="end"/>
+    <connection name="pin4" start="_Middle-10x+5y" end="_Middle-8x+5y" edge="start"/>
+  </connections>
+  <render>
+    <ellipse centre="_Middle-6x+5y" rx="1" ry="1" fill="true"/>
+    <ellipse centre="_Middle-6x-5y" rx="1" ry="1" fill="true"/>
+    <text x="_Middle+0" y="_Middle-12.5" value="$Reference" align="CentreCentre" size="small"/>
+    <text x="_Middle+0" y="_Middle+12.5" value="$Value" align="CentreCentre" size="small"/>
+    <line start="_Middle-10x-5y" end="_Middle-8x-5y" sym:connection="pin1"/>
+    <text x="_Middle-9" y="_Middle-9" value="1" align="CentreCentre" size="small" sym:connection="pin1" sym:connection_attr="number"/>
+    <line start="_Middle+8x-5y" end="_Middle+10x-5y" sym:connection="pin2"/>
+    <text x="_Middle+9" y="_Middle-9" value="2" align="CentreCentre" size="small" sym:connection="pin2" sym:connection_attr="number"/>
+    <line start="_Middle+8x+5y" end="_Middle+10x+5y" sym:connection="pin3"/>
+    <text x="_Middle+9" y="_Middle+1" value="3" align="CentreCentre" size="small" sym:connection="pin3" sym:connection_attr="number"/>
+    <line start="_Middle-10x+5y" end="_Middle-8x+5y" sym:connection="pin4"/>
+    <text x="_Middle-9" y="_Middle+1" value="4" align="CentreCentre" size="small" sym:connection="pin4" sym:connection_attr="number"/>
+  </render>
+</component>

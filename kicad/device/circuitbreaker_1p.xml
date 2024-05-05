@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="CircuitBreaker 1P"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="9e9d7d30-aa04-4053-b864-c0f26ed5ac94"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="canresize" value="false"/>
+    <meta name="minsize" value="20"/>
+    <meta name="additionalinformation" value="Single pole circuit breaker"/>
+    <meta name="keywords" value="CB"/>
+    <property name="Reference" type="string" default="CB" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="CircuitBreaker_1P" serialize="value" display="Value"/>
+    <flags>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin1" start="_Middle+0x-30y" end="_Middle+0x-20y" edge="start"/>
+    <connection name="pin2" start="_Middle+0x+20y" end="_Middle+0x+30y" edge="end"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M0,20 L0,15"/>
+    <path start="_Middle+0x+0y" data="M0,15 L-10,-15"/>
+    <path start="_Middle+0x+0y" data="M-2.5,-17.5 L2.5,-12.5"/>
+    <path start="_Middle+0x+0y" data="M0,-20 L0,-15"/>
+    <path start="_Middle+0x+0y" data="M2.5,-17.5 L-2.5,-12.5"/>
+    <text x="_Middle+7.5" y="_Middle+0" value="$Reference" align="CentreLeft" size="small"/>
+    <text x="_Middle+7.5" y="_Middle-7.5" value="$Value" align="CentreLeft" size="small"/>
+    <line start="_Middle+0x-30y" end="_Middle+0x-20y" sym:connection="pin1"/>
+    <text x="_Middle-4" y="_Middle-25" value="1" align="CentreCentre" size="small" rotate="270" sym:connection="pin1" sym:connection_attr="number"/>
+    <line start="_Middle+0x+20y" end="_Middle+0x+30y" sym:connection="pin2"/>
+    <text x="_Middle-4" y="_Middle+25" value="2" align="CentreCentre" size="small" rotate="270" sym:connection="pin2" sym:connection_attr="number"/>
+  </render>
+</component>

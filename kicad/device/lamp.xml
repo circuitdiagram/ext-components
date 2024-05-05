@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Lamp"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="c1179c74-b139-47b6-b37e-09620ad05fc4"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="canresize" value="false"/>
+    <meta name="minsize" value="20"/>
+    <meta name="additionalinformation" value="Lamp"/>
+    <meta name="keywords" value="lamp"/>
+    <property name="Reference" type="string" default="LA" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="Lamp" serialize="value" display="Value"/>
+    <flags>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin_idx_1" start="_Middle+0x+10y" end="_Middle+0x+20y" edge="end"/>
+    <connection name="pin_idx_2" start="_Middle+0x-20y" end="_Middle+0x-10y" edge="start"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-7,-7 L7,7"/>
+    <path start="_Middle+0x+0y" data="M7,-7 L-7,7"/>
+    <ellipse centre="_Middle+0x+0y" rx="10" ry="10"/>
+    <text x="_Middle+2.5" y="_Middle-15" value="$Reference" align="CentreLeft" size="small"/>
+    <text x="_Middle+2.5" y="_Middle+15" value="$Value" align="CentreLeft" size="small"/>
+    <line start="_Middle+0x+10y" end="_Middle+0x+20y" sym:connection="pin_idx_1"/>
+    <line start="_Middle+0x-20y" end="_Middle+0x-10y" sym:connection="pin_idx_2"/>
+  </render>
+</component>

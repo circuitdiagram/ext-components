@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="RotaryEncoder Switch MP"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="f33888da-2227-40ab-9d76-9d741e74b144"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="canresize" value="false"/>
+    <meta name="minsize" value="60"/>
+    <meta name="additionalinformation" value="Rotary encoder, dual channel, incremental quadrate outputs, with switch and MP Pin"/>
+    <meta name="keywords" value="rotary switch encoder switch push button"/>
+    <meta name="ki_fp_filters" value="RotaryEncoder*Switch*"/>
+    <property name="Reference" type="string" default="SW" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="RotaryEncoder_Switch_MP" serialize="value" display="Value"/>
+    <flags>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pinA" start="_Middle-30x-10y" end="_Middle-20x-10y" edge="start"/>
+    <connection name="pinB" start="_Middle-30x+10y" end="_Middle-20x+10y" edge="start"/>
+    <connection name="pinC" start="_Middle-30x+0y" end="_Middle-20x+0y" edge="start"/>
+    <connection name="pinMP" start="_Middle+0x+20y" end="_Middle+0x+30y" edge="end"/>
+    <connection name="pinS1" start="_Middle+20x-10y" end="_Middle+30x-10y" edge="end"/>
+    <connection name="pinS2" start="_Middle+20x+10y" end="_Middle+30x+10y" edge="end"/>
+  </connections>
+  <render>
+    <rect location="_Middle-20x-20y" width="40" height="40"/>
+    <ellipse centre="_Middle-15x+0y" rx="1" ry="1" fill="true"/>
+    <ellipse centre="_Middle-1.5x+0y" rx="7.5" ry="7.5"/>
+    <path start="_Middle+0x+0y" data="M-2.5,7 L-2.5,-7"/>
+    <path start="_Middle+0x+0y" data="M-1.5,7 L-1.5,-7"/>
+    <path start="_Middle+0x+0y" data="M-0.5,-7 L-0.5,7"/>
+    <path start="_Middle+0x+0y" data="M15,-0 L13.5,-0"/>
+    <path start="_Middle+0x+0y" data="M15,-4 L15,4"/>
+    <path start="_Middle+0x+0y" data="M-20,10 L-15,10 L-15,8"/>
+    <path start="_Middle+0x+0y" data="M-20,-10 L-15,-10 L-15,-8"/>
+    <path start="_Middle+0x+0y" data="M1,12 L-2,11 L0.5,9.5"/>
+    <path start="_Middle+0x+0y" data="M1,-11.5 L-2,-10.5 L0.5,-9"/>
+    <path start="_Middle+0x+0y" data="M20,10 L17,10 L17,4"/>
+    <path start="_Middle+0x+0y" data="M20,-10 L17,-10 L17,-4"/>
+    <path start="_Middle+0x+0y" data="M-20,-0 L-15,-0 L-15,4 L-13,8"/>
+    <path start="_Middle+0x+0y" data="M-17,-0 L-15,-0 L-15,-4 L-13,-8"/>
+    <ellipse centre="_Middle+17x+4y" rx="0.5" ry="0.5"/>
+    <ellipse centre="_Middle+17x-4y" rx="0.5" ry="0.5"/>
+    <text x="_Middle+0" y="_Middle-35" value="$Reference" align="CentreCentre" size="small"/>
+    <text x="_Middle+0" y="_Middle-25" value="$Value" align="CentreCentre" size="small"/>
+    <line start="_Middle-30x-10y" end="_Middle-20x-10y" sym:connection="pinA"/>
+    <text x="_Middle-25" y="_Middle-14" value="A" align="CentreCentre" size="small" sym:connection="pinA" sym:connection_attr="number"/>
+    <line start="_Middle-30x+10y" end="_Middle-20x+10y" sym:connection="pinB"/>
+    <text x="_Middle-25" y="_Middle+6" value="B" align="CentreCentre" size="small" sym:connection="pinB" sym:connection_attr="number"/>
+    <line start="_Middle-30x+0y" end="_Middle-20x+0y" sym:connection="pinC"/>
+    <text x="_Middle-25" y="_Middle-4" value="C" align="CentreCentre" size="small" sym:connection="pinC" sym:connection_attr="number"/>
+    <line start="_Middle+0x+20y" end="_Middle+0x+30y" sym:connection="pinMP"/>
+    <text x="_Middle-4" y="_Middle+25" value="MP" align="CentreCentre" size="small" rotate="270" sym:connection="pinMP" sym:connection_attr="number"/>
+    <line start="_Middle+20x-10y" end="_Middle+30x-10y" sym:connection="pinS1"/>
+    <text x="_Middle+25" y="_Middle-14" value="S1" align="CentreCentre" size="small" sym:connection="pinS1" sym:connection_attr="number"/>
+    <line start="_Middle+20x+10y" end="_Middle+30x+10y" sym:connection="pinS2"/>
+    <text x="_Middle+25" y="_Middle+6" value="S2" align="CentreCentre" size="small" sym:connection="pinS2" sym:connection_attr="number"/>
+  </render>
+</component>

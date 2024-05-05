@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Transformer 1P 1S"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="3d2b9cbe-94ac-42ab-b4e1-f7df104b584b"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="canresize" value="false"/>
+    <meta name="minsize" value="80"/>
+    <meta name="additionalinformation" value="Transformer, single primary, single secondary"/>
+    <meta name="keywords" value="transformer coil magnet"/>
+    <property name="Reference" type="string" default="T" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="Transformer_1P_1S" serialize="value" display="Value"/>
+    <flags>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin1" start="_Middle-40x-20y" end="_Middle-10x-20y" edge="start"/>
+    <connection name="pin2" start="_Middle-40x+20y" end="_Middle-10x+20y" edge="start"/>
+    <connection name="pin3" start="_Middle+10x+20y" end="_Middle+40x+20y" edge="end"/>
+    <connection name="pin4" start="_Middle+10x-20y" end="_Middle+40x-20y" edge="end"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-2.5,-20 L-2.5,20"/>
+    <path start="_Middle+0x+0y" data="M2.5,20 L2.5,-20"/>
+    <text x="_Middle+0" y="_Middle-25" value="$Reference" align="CentreCentre" size="small"/>
+    <text x="_Middle+0" y="_Middle+30" value="$Value" align="CentreCentre" size="small"/>
+    <line start="_Middle-40x-20y" end="_Middle-10x-20y" sym:connection="pin1"/>
+    <text x="_Middle-25" y="_Middle-24" value="1" align="CentreCentre" size="small" sym:connection="pin1" sym:connection_attr="number"/>
+    <line start="_Middle-40x+20y" end="_Middle-10x+20y" sym:connection="pin2"/>
+    <text x="_Middle-25" y="_Middle+16" value="2" align="CentreCentre" size="small" sym:connection="pin2" sym:connection_attr="number"/>
+    <line start="_Middle+10x+20y" end="_Middle+40x+20y" sym:connection="pin3"/>
+    <text x="_Middle+25" y="_Middle+16" value="3" align="CentreCentre" size="small" sym:connection="pin3" sym:connection_attr="number"/>
+    <line start="_Middle+10x-20y" end="_Middle+40x-20y" sym:connection="pin4"/>
+    <text x="_Middle+25" y="_Middle-24" value="4" align="CentreCentre" size="small" sym:connection="pin4" sym:connection_attr="number"/>
+  </render>
+</component>

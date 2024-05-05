@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Opamp Quad"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="61cd5093-6956-4631-9d18-0674f846191f"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="canresize" value="false"/>
+    <meta name="minsize" value="60"/>
+    <meta name="additionalinformation" value="Quad operational amplifier"/>
+    <meta name="Sim.Library" value="${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp"/>
+    <meta name="Sim.Name" value="kicad_builtin_opamp_quad"/>
+    <meta name="Sim.Device" value="SUBCKT"/>
+    <meta name="Sim.Pins" value="1=out1 2=in1- 3=in1+ 4=vcc 5=in2+ 6=in2- 7=out2 8=out3 9=in3- 10=in3+ 11=vee 12=in4+ 13=in4- 14=out4"/>
+    <meta name="keywords" value="quad opamp"/>
+    <meta name="ki_fp_filters" value="SOIC*3.9x8.7mm*P1.27mm* DIP*W7.62mm* TSSOP*4.4x5mm*P0.65mm* SSOP*5.3x6.2mm*P0.65mm*"/>
+    <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="Opamp_Quad" serialize="value" display="Value"/>
+    <property name="ki_locked" type="string" default="" serialize="ki_locked" display="ki_locked"/>
+    <flags>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin1" start="_Middle+20x+0y" end="_Middle+30x+0y" edge="end"/>
+    <connection name="-" start="_Middle-30x+10y" end="_Middle-20x+10y" edge="start"/>
+    <connection name="+" start="_Middle-30x-10y" end="_Middle-20x-10y" edge="start"/>
+    <connection name="+" start="_Middle-30x-10y" end="_Middle-20x-10y" edge="start"/>
+    <connection name="-" start="_Middle-30x+10y" end="_Middle-20x+10y" edge="start"/>
+    <connection name="pin7" start="_Middle+20x+0y" end="_Middle+30x+0y" edge="end"/>
+    <connection name="+" start="_Middle-30x-10y" end="_Middle-20x-10y" edge="start"/>
+    <connection name="pin8" start="_Middle+20x+0y" end="_Middle+30x+0y" edge="end"/>
+    <connection name="-" start="_Middle-30x+10y" end="_Middle-20x+10y" edge="start"/>
+    <connection name="+" start="_Middle-30x-10y" end="_Middle-20x-10y" edge="start"/>
+    <connection name="-" start="_Middle-30x+10y" end="_Middle-20x+10y" edge="start"/>
+    <connection name="pin14" start="_Middle+20x+0y" end="_Middle+30x+0y" edge="end"/>
+    <connection name="v-" start="_Middle-10x+15y" end="_Middle-10x+30y" edge="end"/>
+    <connection name="v+" start="_Middle-10x-30y" end="_Middle-10x-15y" edge="start"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-20,-20 L20,-0 L-20,20 L-20,-20"/>
+    <path start="_Middle+0x+0y" data="M-20,-20 L20,-0 L-20,20 L-20,-20"/>
+    <path start="_Middle+0x+0y" data="M-20,-20 L20,-0 L-20,20 L-20,-20"/>
+    <path start="_Middle+0x+0y" data="M-20,-20 L20,-0 L-20,20 L-20,-20"/>
+    <text x="_Middle+0" y="_Middle-20" value="$Reference" align="CentreLeft" size="small"/>
+    <text x="_Middle+0" y="_Middle+20" value="$Value" align="CentreLeft" size="small"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_locked" align="CentreCentre" size="small"/>
+    <line start="_Middle+20x+0y" end="_Middle+30x+0y" sym:connection="pin1"/>
+    <text x="_Middle+25" y="_Middle-4" value="1" align="CentreCentre" size="small" sym:connection="pin1" sym:connection_attr="number"/>
+    <line start="_Middle-30x+10y" end="_Middle-20x+10y" sym:connection="-"/>
+    <text x="_Middle-16" y="_Middle+10" value="-" align="CentreLeft" size="small" sym:connection="-" sym:connection_attr="name"/>
+    <text x="_Middle-25" y="_Middle+6" value="2" align="CentreCentre" size="small" sym:connection="-" sym:connection_attr="number"/>
+    <line start="_Middle-30x-10y" end="_Middle-20x-10y" sym:connection="+"/>
+    <text x="_Middle-16" y="_Middle-10" value="+" align="CentreLeft" size="small" sym:connection="+" sym:connection_attr="name"/>
+    <text x="_Middle-25" y="_Middle-14" value="3" align="CentreCentre" size="small" sym:connection="+" sym:connection_attr="number"/>
+    <line start="_Middle-30x-10y" end="_Middle-20x-10y" sym:connection="+"/>
+    <text x="_Middle-16" y="_Middle-10" value="+" align="CentreLeft" size="small" sym:connection="+" sym:connection_attr="name"/>
+    <text x="_Middle-25" y="_Middle-14" value="5" align="CentreCentre" size="small" sym:connection="+" sym:connection_attr="number"/>
+    <line start="_Middle-30x+10y" end="_Middle-20x+10y" sym:connection="-"/>
+    <text x="_Middle-16" y="_Middle+10" value="-" align="CentreLeft" size="small" sym:connection="-" sym:connection_attr="name"/>
+    <text x="_Middle-25" y="_Middle+6" value="6" align="CentreCentre" size="small" sym:connection="-" sym:connection_attr="number"/>
+    <line start="_Middle+20x+0y" end="_Middle+30x+0y" sym:connection="pin7"/>
+    <text x="_Middle+25" y="_Middle-4" value="7" align="CentreCentre" size="small" sym:connection="pin7" sym:connection_attr="number"/>
+    <line start="_Middle-30x-10y" end="_Middle-20x-10y" sym:connection="+"/>
+    <text x="_Middle-16" y="_Middle-10" value="+" align="CentreLeft" size="small" sym:connection="+" sym:connection_attr="name"/>
+    <text x="_Middle-25" y="_Middle-14" value="10" align="CentreCentre" size="small" sym:connection="+" sym:connection_attr="number"/>
+    <line start="_Middle+20x+0y" end="_Middle+30x+0y" sym:connection="pin8"/>
+    <text x="_Middle+25" y="_Middle-4" value="8" align="CentreCentre" size="small" sym:connection="pin8" sym:connection_attr="number"/>
+    <line start="_Middle-30x+10y" end="_Middle-20x+10y" sym:connection="-"/>
+    <text x="_Middle-16" y="_Middle+10" value="-" align="CentreLeft" size="small" sym:connection="-" sym:connection_attr="name"/>
+    <text x="_Middle-25" y="_Middle+6" value="9" align="CentreCentre" size="small" sym:connection="-" sym:connection_attr="number"/>
+    <line start="_Middle-30x-10y" end="_Middle-20x-10y" sym:connection="+"/>
+    <text x="_Middle-16" y="_Middle-10" value="+" align="CentreLeft" size="small" sym:connection="+" sym:connection_attr="name"/>
+    <text x="_Middle-25" y="_Middle-14" value="12" align="CentreCentre" size="small" sym:connection="+" sym:connection_attr="number"/>
+    <line start="_Middle-30x+10y" end="_Middle-20x+10y" sym:connection="-"/>
+    <text x="_Middle-16" y="_Middle+10" value="-" align="CentreLeft" size="small" sym:connection="-" sym:connection_attr="name"/>
+    <text x="_Middle-25" y="_Middle+6" value="13" align="CentreCentre" size="small" sym:connection="-" sym:connection_attr="number"/>
+    <line start="_Middle+20x+0y" end="_Middle+30x+0y" sym:connection="pin14"/>
+    <text x="_Middle+25" y="_Middle-4" value="14" align="CentreCentre" size="small" sym:connection="pin14" sym:connection_attr="number"/>
+    <line start="_Middle-10x+15y" end="_Middle-10x+30y" sym:connection="v-"/>
+    <text x="_Middle-10" y="_Middle+11" value="v-" align="CentreLeft" size="small" rotate="270" sym:connection="v-" sym:connection_attr="name"/>
+    <text x="_Middle-14" y="_Middle+22.5" value="11" align="CentreCentre" size="small" rotate="270" sym:connection="v-" sym:connection_attr="number"/>
+    <line start="_Middle-10x-30y" end="_Middle-10x-15y" sym:connection="v+"/>
+    <text x="_Middle-10" y="_Middle-11" value="v+" align="CentreRight" size="small" rotate="270" sym:connection="v+" sym:connection_attr="name"/>
+    <text x="_Middle-14" y="_Middle-22.5" value="4" align="CentreCentre" size="small" rotate="270" sym:connection="v+" sym:connection_attr="number"/>
+  </render>
+</component>

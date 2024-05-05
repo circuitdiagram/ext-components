@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="R Network04 US"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="ede754f2-4542-4190-bc68-aec3fb30c80c"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="canresize" value="false"/>
+    <meta name="minsize" value="60"/>
+    <meta name="footprint" value="Resistor_THT:R_Array_SIP5"/>
+    <meta name="datasheet" value="http://www.vishay.com/docs/31509/csc.pdf"/>
+    <meta name="additionalinformation" value="4 resistor network, star topology, bussed resistors, small US symbol"/>
+    <meta name="keywords" value="R network star-topology"/>
+    <meta name="ki_fp_filters" value="R?Array?SIP*"/>
+    <property name="Reference" type="string" default="RN" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="R_Network04_US" serialize="value" display="Value"/>
+    <flags>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin1" start="_Middle-20x-20y" end="_Middle-20x-10y" edge="start"/>
+    <connection name="pin2" start="_Middle-20x+15y" end="_Middle-20x+20y" edge="end"/>
+    <connection name="pin3" start="_Middle-10x+15y" end="_Middle-10x+20y" edge="end"/>
+    <connection name="pin4" start="_Middle+0x+15y" end="_Middle+0x+20y" edge="end"/>
+    <connection name="pin5" start="_Middle+10x+15y" end="_Middle+10x+20y" edge="end"/>
+  </connections>
+  <render>
+    <rect location="_Middle-25x-12.5y" width="40" height="25"/>
+    <ellipse centre="_Middle-20x-9y" rx="1" ry="1" fill="true"/>
+    <ellipse centre="_Middle-10x-9y" rx="1" ry="1" fill="true"/>
+    <path start="_Middle+0x+0y" data="M-20,-9 L10,-9"/>
+    <path start="_Middle+0x+0y" data="M-20,-9 L-20,-6 L-17,-4.6000000000000005 L-23,-2 L-17,0.6000000000000001 L-23,3.3 L-17,6 L-23,8.600000000000001 L-20,10 L-20,15"/>
+    <path start="_Middle+0x+0y" data="M-10,-9 L-10,-6 L-7,-4.6000000000000005 L-13,-2 L-7,0.6000000000000001 L-13,3.3 L-7,6 L-13,8.600000000000001 L-10,10 L-10,15"/>
+    <path start="_Middle+0x+0y" data="M0,-9 L0,-6 L3,-4.6000000000000005 L-3,-2 L3,0.6000000000000001 L-3,3.3 L3,6 L-3,8.600000000000001 L0,10 L0,15"/>
+    <path start="_Middle+0x+0y" data="M10,-9 L10,-6 L13,-4.6000000000000005 L7,-2 L13,0.6000000000000001 L7,3.3 L13,6 L7,8.600000000000001 L10,10 L10,15"/>
+    <ellipse centre="_Middle+0x-9y" rx="1" ry="1" fill="true"/>
+    <text x="_Middle-30" y="_Middle+0" value="$Reference" align="CentreCentre" size="small" rotate="90"/>
+    <text x="_Middle+20" y="_Middle+0" value="$Value" align="CentreCentre" size="small" rotate="90"/>
+    <line start="_Middle-20x-20y" end="_Middle-20x-10y" sym:connection="pin1"/>
+    <text x="_Middle-24" y="_Middle-15" value="1" align="CentreCentre" size="small" rotate="270" sym:connection="pin1" sym:connection_attr="number"/>
+    <line start="_Middle-20x+15y" end="_Middle-20x+20y" sym:connection="pin2"/>
+    <text x="_Middle-24" y="_Middle+17.5" value="2" align="CentreCentre" size="small" rotate="270" sym:connection="pin2" sym:connection_attr="number"/>
+    <line start="_Middle-10x+15y" end="_Middle-10x+20y" sym:connection="pin3"/>
+    <text x="_Middle-14" y="_Middle+17.5" value="3" align="CentreCentre" size="small" rotate="270" sym:connection="pin3" sym:connection_attr="number"/>
+    <line start="_Middle+0x+15y" end="_Middle+0x+20y" sym:connection="pin4"/>
+    <text x="_Middle-4" y="_Middle+17.5" value="4" align="CentreCentre" size="small" rotate="270" sym:connection="pin4" sym:connection_attr="number"/>
+    <line start="_Middle+10x+15y" end="_Middle+10x+20y" sym:connection="pin5"/>
+    <text x="_Middle+6" y="_Middle+17.5" value="5" align="CentreCentre" size="small" rotate="270" sym:connection="pin5" sym:connection_attr="number"/>
+  </render>
+</component>

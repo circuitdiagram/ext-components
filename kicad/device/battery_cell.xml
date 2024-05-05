@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Battery Cell"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="55e8fb3b-6703-4f44-b1b7-0ec9883c99ef"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="canresize" value="false"/>
+    <meta name="minsize" value="20"/>
+    <meta name="additionalinformation" value="Single-cell battery"/>
+    <meta name="keywords" value="battery cell"/>
+    <property name="Reference" type="string" default="BT" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="Battery_Cell" serialize="value" display="Value"/>
+    <flags>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin_idx_1" start="_Middle+0x-20y" end="_Middle+0x-10y" edge="start"/>
+    <connection name="pin_idx_2" start="_Middle+0x+0y" end="_Middle+0x+10y" edge="end"/>
+  </connections>
+  <render>
+    <rect location="_Middle-9x-7y" width="18" height="1"/>
+    <rect location="_Middle-6x-4y" width="12" height="2"/>
+    <path start="_Middle+0x+0y" data="M0,-3 L0,-0"/>
+    <path start="_Middle+0x+0y" data="M0,-7 L0,-10"/>
+    <path start="_Middle+0x+0y" data="M3,-12 L7,-12"/>
+    <path start="_Middle+0x+0y" data="M5,-14 L5,-10"/>
+    <text x="_Middle+10" y="_Middle-10" value="$Reference" align="CentreLeft" size="small"/>
+    <text x="_Middle+10" y="_Middle+0" value="$Value" align="CentreLeft" size="small"/>
+    <line start="_Middle+0x-20y" end="_Middle+0x-10y" sym:connection="pin_idx_1"/>
+    <line start="_Middle+0x+0y" end="_Middle+0x+10y" sym:connection="pin_idx_2"/>
+  </render>
+</component>

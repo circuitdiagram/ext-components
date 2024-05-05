@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Crystal GND24 Small"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="6f1f0862-caea-4933-a2f0-758ac567d422"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="canresize" value="false"/>
+    <meta name="minsize" value="20"/>
+    <meta name="additionalinformation" value="Four pin crystal, GND on pins 2 and 4, small symbol"/>
+    <meta name="keywords" value="quartz ceramic resonator oscillator"/>
+    <meta name="ki_fp_filters" value="Crystal*"/>
+    <property name="Reference" type="string" default="Y" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="Crystal_GND24_Small" serialize="value" display="Value"/>
+    <flags>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin1" start="_Middle-10x+0y" end="_Middle-5x+0y" edge="start"/>
+    <connection name="pin2" start="_Middle+0x+7.5y" end="_Middle+0x+10y" edge="end"/>
+    <connection name="pin3" start="_Middle+5x+0y" end="_Middle+10x+0y" edge="end"/>
+    <connection name="pin4" start="_Middle+0x-10y" end="_Middle+0x-7.5y" edge="start"/>
+  </connections>
+  <render>
+    <rect location="_Middle-3x-6y" width="6" height="12"/>
+    <path start="_Middle+0x+0y" data="M-5,3 L-5,-3"/>
+    <path start="_Middle+0x+0y" data="M5,3 L5,-3"/>
+    <path start="_Middle+0x+0y" data="M-5,5 L-5,7.5 L5,7.5 L5,5"/>
+    <path start="_Middle+0x+0y" data="M-5,-5 L-5,-7.5 L5,-7.5 L5,-5"/>
+    <text x="_Middle+5" y="_Middle-17.5" value="$Reference" align="CentreLeft" size="small"/>
+    <text x="_Middle+5" y="_Middle-10" value="$Value" align="CentreLeft" size="small"/>
+    <line start="_Middle-10x+0y" end="_Middle-5x+0y" sym:connection="pin1"/>
+    <text x="_Middle-7.5" y="_Middle-4" value="1" align="CentreCentre" size="small" sym:connection="pin1" sym:connection_attr="number"/>
+    <line start="_Middle+0x+7.5y" end="_Middle+0x+10y" sym:connection="pin2"/>
+    <text x="_Middle-4" y="_Middle+8.75" value="2" align="CentreCentre" size="small" rotate="270" sym:connection="pin2" sym:connection_attr="number"/>
+    <line start="_Middle+5x+0y" end="_Middle+10x+0y" sym:connection="pin3"/>
+    <text x="_Middle+7.5" y="_Middle-4" value="3" align="CentreCentre" size="small" sym:connection="pin3" sym:connection_attr="number"/>
+    <line start="_Middle+0x-10y" end="_Middle+0x-7.5y" sym:connection="pin4"/>
+    <text x="_Middle-4" y="_Middle-8.75" value="4" align="CentreCentre" size="small" rotate="270" sym:connection="pin4" sym:connection_attr="number"/>
+  </render>
+</component>

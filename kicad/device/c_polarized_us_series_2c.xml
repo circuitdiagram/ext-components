@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="C Polarized US Series 2C"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="3f879cbc-9525-4da1-9d97-0bcb987bfe48"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="canresize" value="false"/>
+    <meta name="minsize" value="20"/>
+    <meta name="additionalinformation" value="Polarized capacitor, US symbol"/>
+    <meta name="keywords" value="cap capacitor"/>
+    <meta name="ki_fp_filters" value="CP*"/>
+    <property name="Reference" type="string" default="C" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="C_Polarized_US_Series_2C" serialize="value" display="Value"/>
+    <flags>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin_idx_1" start="_Middle+0x-30y" end="_Middle+0x-20y" edge="start"/>
+    <connection name="pin_idx_2" start="_Middle+0x+0y" end="_Middle+10x+0y" edge="end"/>
+    <connection name="pin_idx_3" start="_Middle+0x+20y" end="_Middle+0x+30y" edge="end"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-8,12 L8,12"/>
+    <path start="_Middle+0x+0y" data="M-8,-18 L8,-18"/>
+    <path start="_Middle+0x+0y" data="M-7,6 L-3,6"/>
+    <path start="_Middle+0x+0y" data="M-7,-24 L-3,-24"/>
+    <path start="_Middle+0x+0y" data="M-5,8 L-5,4"/>
+    <path start="_Middle+0x+0y" data="M-5,-22 L-5,-26"/>
+    <path start="_Middle+0x+0y" data="M0,20 L0,18"/>
+    <path start="_Middle+0x+0y" data="M0,11 L0,-12"/>
+    <path start="_Middle+0x+0y" data="M0,-20 L0,-19"/>
+    <ellipse centre="_Middle+0x+0y" rx="1" ry="1" fill="true"/>
+    <text x="_Middle+10" y="_Middle-10" value="$Reference" align="CentreLeft" size="small"/>
+    <text x="_Middle+10" y="_Middle+10" value="$Value" align="CentreLeft" size="small"/>
+    <line start="_Middle+0x-30y" end="_Middle+0x-20y" sym:connection="pin_idx_1"/>
+    <line start="_Middle+0x+0y" end="_Middle+10x+0y" sym:connection="pin_idx_2"/>
+    <line start="_Middle+0x+20y" end="_Middle+0x+30y" sym:connection="pin_idx_3"/>
+  </render>
+</component>

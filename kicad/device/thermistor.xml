@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Thermistor"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="50957cdf-0a3b-427a-b3f4-57010ec8c71a"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="canresize" value="false"/>
+    <meta name="minsize" value="30"/>
+    <meta name="additionalinformation" value="Temperature dependent resistor"/>
+    <meta name="keywords" value="R res thermistor"/>
+    <meta name="ki_fp_filters" value="R_*"/>
+    <property name="Reference" type="string" default="TH" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="Thermistor" serialize="value" display="Value"/>
+    <flags>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin_idx_1" start="_Middle+0x-20y" end="_Middle+0x-10y" edge="start"/>
+    <connection name="pin_idx_2" start="_Middle+0x+10y" end="_Middle+0x+20y" edge="end"/>
+  </connections>
+  <render>
+    <rect location="_Middle-4x-10y" width="8" height="20"/>
+    <path start="_Middle+0x+0y" data="M-7.5,-12.5 L-7.5,-7.5 L7.5,7.5 L7.5,12.5 L7.5,12.5"/>
+    <text x="_Middle+10" y="_Middle-5" value="$Reference" align="CentreCentre" size="small" rotate="90"/>
+    <text x="_Middle-10" y="_Middle+0" value="$Value" align="CentreCentre" size="small" rotate="90"/>
+    <line start="_Middle+0x-20y" end="_Middle+0x-10y" sym:connection="pin_idx_1"/>
+    <line start="_Middle+0x+10y" end="_Middle+0x+20y" sym:connection="pin_idx_2"/>
+  </render>
+</component>

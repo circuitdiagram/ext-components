@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Q Dual PNP C2C1E1E2"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="34e0e223-f7ca-41b8-8719-8797c98f9102"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="canresize" value="false"/>
+    <meta name="minsize" value="60"/>
+    <meta name="additionalinformation" value="Double PNP transistors, current mirror configuration"/>
+    <meta name="keywords" value="transistor PNP"/>
+    <meta name="ki_fp_filters" value="SOT?143*"/>
+    <property name="Reference" type="string" default="Q" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="Q_Dual_PNP_C2C1E1E2" serialize="value" display="Value"/>
+    <flags>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="c2" start="_Middle-20x+10y" end="_Middle-20x+20y" edge="end"/>
+    <connection name="c1" start="_Middle+20x+10y" end="_Middle+20x+20y" edge="end"/>
+    <connection name="e1" start="_Middle+20x-20y" end="_Middle+20x-10y" edge="start"/>
+    <connection name="e2" start="_Middle-20x-20y" end="_Middle-20x-10y" edge="start"/>
+  </connections>
+  <render>
+    <ellipse centre="_Middle-20x+12y" rx="1" ry="1" fill="true"/>
+    <path start="_Middle+0x+0y" data="M-20,10 L-12.5,2.5"/>
+    <path start="_Middle+0x+0y" data="M-20,-10 L-12.5,-2.5"/>
+    <path start="_Middle+0x+0y" data="M-20,-10 L-12.5,-2.5"/>
+    <path start="_Middle+0x+0y" data="M12.5,-0 L-12.5,-0"/>
+    <path start="_Middle+0x+0y" data="M20,10 L12.5,2.5"/>
+    <path start="_Middle+0x+0y" data="M20,-10 L12.5,-2.5"/>
+    <path start="_Middle+0x+0y" data="M-12.5,7.5 L-12.5,-7.5 L-12.5,-7.5" fill="true"/>
+    <path start="_Middle+0x+0y" data="M0,-0 L0,12 L-20,12"/>
+    <path start="_Middle+0x+0y" data="M12.5,7.5 L12.5,-7.5 L12.5,-7.5" fill="true"/>
+    <path start="_Middle+0x+0y" data="M-15.5,-7.5 L-17.5,-5.5 L-13.5,-3.5 L-15.5,-7.5 L-15.5,-7.5" fill="true"/>
+    <path start="_Middle+0x+0y" data="M15.5,-7.5 L17.5,-5.5 L13.5,-3.5 L15.5,-7.5 L15.5,-7.5" fill="true"/>
+    <ellipse centre="_Middle+0x+0y" rx="1" ry="1" fill="true"/>
+    <text x="_Middle+30" y="_Middle-5" value="$Reference" align="CentreLeft" size="small"/>
+    <text x="_Middle+30" y="_Middle+5" value="$Value" align="CentreLeft" size="small"/>
+    <line start="_Middle-20x+10y" end="_Middle-20x+20y" sym:connection="c2"/>
+    <text x="_Middle-20" y="_Middle+6" value="c2" align="CentreLeft" size="small" rotate="270" sym:connection="c2" sym:connection_attr="name"/>
+    <text x="_Middle-24" y="_Middle+15" value="1" align="CentreCentre" size="small" rotate="270" sym:connection="c2" sym:connection_attr="number"/>
+    <line start="_Middle+20x+10y" end="_Middle+20x+20y" sym:connection="c1"/>
+    <text x="_Middle+20" y="_Middle+6" value="c1" align="CentreLeft" size="small" rotate="270" sym:connection="c1" sym:connection_attr="name"/>
+    <text x="_Middle+16" y="_Middle+15" value="2" align="CentreCentre" size="small" rotate="270" sym:connection="c1" sym:connection_attr="number"/>
+    <line start="_Middle+20x-20y" end="_Middle+20x-10y" sym:connection="e1"/>
+    <text x="_Middle+20" y="_Middle-6" value="e1" align="CentreRight" size="small" rotate="270" sym:connection="e1" sym:connection_attr="name"/>
+    <text x="_Middle+16" y="_Middle-15" value="3" align="CentreCentre" size="small" rotate="270" sym:connection="e1" sym:connection_attr="number"/>
+    <line start="_Middle-20x-20y" end="_Middle-20x-10y" sym:connection="e2"/>
+    <text x="_Middle-20" y="_Middle-6" value="e2" align="CentreRight" size="small" rotate="270" sym:connection="e2" sym:connection_attr="name"/>
+    <text x="_Middle-24" y="_Middle-15" value="4" align="CentreCentre" size="small" rotate="270" sym:connection="e2" sym:connection_attr="number"/>
+  </render>
+</component>

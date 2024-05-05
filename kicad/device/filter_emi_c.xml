@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Filter EMI C"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="1924bd42-41f7-49c5-98b5-dd2dcdc37a95"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="canresize" value="false"/>
+    <meta name="minsize" value="10"/>
+    <meta name="datasheet" value="http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb"/>
+    <meta name="additionalinformation" value="EMI filter, single capacitor"/>
+    <meta name="keywords" value="EMI filter feedthrough capacitor"/>
+    <property name="Reference" type="string" default="C" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="Filter_EMI_C" serialize="value" display="Value"/>
+    <flags>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+  </connections>
+  <render>
+    <text x="_Middle+0" y="_Middle-30" value="$Reference" align="CentreCentre" size="small"/>
+    <text x="_Middle+0" y="_Middle-22.5" value="$Value" align="CentreCentre" size="small"/>
+  </render>
+</component>

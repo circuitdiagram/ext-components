@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Antenna Chip"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="a9a56339-e1a1-4502-9bc1-209111ee97d1"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="canresize" value="false"/>
+    <meta name="minsize" value="30"/>
+    <meta name="additionalinformation" value="Ceramic chip antenna with pin for PCB trace"/>
+    <meta name="keywords" value="antenna"/>
+    <property name="Reference" type="string" default="AE" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="Antenna_Chip" serialize="value" display="Value"/>
+    <flags>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin_idx_1" start="_Middle-10x+0y" end="_Middle-10x+10y" edge="end"/>
+    <connection name="pin_idx_2" start="_Middle+10x+0y" end="_Middle+10x+10y" edge="end"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-10,-0 L-10,2.5"/>
+    <path start="_Middle+0x+0y" data="M-10,-0 L-5,-0"/>
+    <path start="_Middle+0x+0y" data="M5,-0 L10,-0"/>
+    <path start="_Middle+0x+0y" data="M5,-5 L5,5"/>
+    <path start="_Middle+0x+0y" data="M10,2.5 L10,-0"/>
+    <path start="_Middle+0x+0y" data="M10,-27.500000000000004 L10,7.5"/>
+    <path start="_Middle+0x+0y" data="M-5,-5 L-5,5 L-5,-0"/>
+    <path start="_Middle+0x+0y" data="M15,-27.500000000000004 L10,-7.5 L5,-27.500000000000004"/>
+    <path start="_Middle+0x+0y" data="M-2.5,-5 L2.5,-5 L2.5,5 L-2.5,5 L-2.5,-5"/>
+    <text x="_Middle+0" y="_Middle-20" value="$Reference" align="CentreRight" size="small"/>
+    <text x="_Middle+0" y="_Middle-12.5" value="$Value" align="CentreRight" size="small"/>
+    <line start="_Middle-10x+0y" end="_Middle-10x+10y" sym:connection="pin_idx_1"/>
+    <line start="_Middle+10x+0y" end="_Middle+10x+10y" sym:connection="pin_idx_2"/>
+  </render>
+</component>

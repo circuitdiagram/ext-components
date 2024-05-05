@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="GDT 2Pin"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="9677833f-d77a-4e9e-b4e4-044e4faf000b"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="canresize" value="false"/>
+    <meta name="minsize" value="40"/>
+    <meta name="additionalinformation" value="Gas Discharge Tube with 2 Pins"/>
+    <meta name="keywords" value="gdt"/>
+    <property name="Reference" type="string" default="GD" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="GDT_2Pin" serialize="value" display="Value"/>
+    <flags>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin_idx_1" start="_Middle+0x+10y" end="_Middle+0x+20y" edge="end"/>
+    <connection name="pin_idx_2" start="_Middle+0x-20y" end="_Middle+0x-10y" edge="start"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M0,10 L0,5"/>
+    <path start="_Middle+0x+0y" data="M0,5 L-5,10"/>
+    <path start="_Middle+0x+0y" data="M0,5 L5,10"/>
+    <path start="_Middle+0x+0y" data="M0,-5 L-5,-10"/>
+    <path start="_Middle+0x+0y" data="M0,-5 L5,-10"/>
+    <path start="_Middle+0x+0y" data="M0,-10 L0,-5"/>
+    <ellipse centre="_Middle+0x+0y" rx="14.1" ry="14.1"/>
+    <ellipse centre="_Middle+7.5x+0y" rx="0.5" ry="0.5"/>
+    <ellipse centre="_Middle+7.5x+0y" rx="0.5" ry="0.5"/>
+    <ellipse centre="_Middle+7.5x+0y" rx="1.0999999999999999" ry="1.0999999999999999"/>
+    <ellipse centre="_Middle+8x+0y" rx="0.5" ry="0.5"/>
+    <text x="_Middle+20" y="_Middle+0" value="$Reference" align="CentreCentre" size="small" rotate="90"/>
+    <text x="_Middle+30" y="_Middle+0" value="$Value" align="CentreCentre" size="small" rotate="90"/>
+    <line start="_Middle+0x+10y" end="_Middle+0x+20y" sym:connection="pin_idx_1"/>
+    <line start="_Middle+0x-20y" end="_Middle+0x-10y" sym:connection="pin_idx_2"/>
+  </render>
+</component>

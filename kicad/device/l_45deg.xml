@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="L 45deg"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="0bbae8ba-8062-4d7d-87c3-94874da87010"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="canresize" value="false"/>
+    <meta name="minsize" value="50"/>
+    <meta name="additionalinformation" value="Inductor, rotated by 45°"/>
+    <meta name="keywords" value="inductor choke coil reactor magnetic inductor"/>
+    <meta name="ki_fp_filters" value="L_* Choke_* Inductor_* *Coil*"/>
+    <property name="Reference" type="string" default="L" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="L_45deg" serialize="value" display="Value"/>
+    <flags>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin_idx_1" start="_Middle+10x+10y" end="_Middle+10x+10y" edge="end"/>
+    <connection name="pin_idx_2" start="_Middle-10x-10y" end="_Middle-10x-10y" edge="start"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-5,-5 L-10,-10"/>
+    <path start="_Middle+0x+0y" data="M10,10 L5,5"/>
+    <text x="_Middle+20" y="_Middle-10" value="$Reference" align="CentreCentre" size="small"/>
+    <text x="_Middle+32.50000000000001" y="_Middle-2.5" value="$Value" align="CentreCentre" size="small"/>
+    <line start="_Middle+10x+10y" end="_Middle+10x+10y" sym:connection="pin_idx_1"/>
+    <line start="_Middle-10x-10y" end="_Middle-10x-10y" sym:connection="pin_idx_2"/>
+  </render>
+</component>

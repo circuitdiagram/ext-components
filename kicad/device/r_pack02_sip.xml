@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="R Pack02 SIP"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="2b097a87-db5a-41fa-adc0-5b5edbd366f8"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="canresize" value="false"/>
+    <meta name="minsize" value="70"/>
+    <meta name="footprint" value="Resistor_THT:R_Array_SIP4"/>
+    <meta name="datasheet" value="http://www.vishay.com/docs/31509/csc.pdf"/>
+    <meta name="additionalinformation" value="2 resistor network, parallel topology, SIP package"/>
+    <meta name="keywords" value="R network parallel topology isolated"/>
+    <meta name="ki_fp_filters" value="R?Array?SIP*"/>
+    <property name="Reference" type="string" default="RN" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="R_Pack02_SIP" serialize="value" display="Value"/>
+    <flags>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin1" start="_Middle-20x+5y" end="_Middle-20x+20y" edge="end"/>
+    <connection name="pin2" start="_Middle-10x+5y" end="_Middle-10x+20y" edge="end"/>
+    <connection name="pin3" start="_Middle+10x+5y" end="_Middle+10x+20y" edge="end"/>
+    <connection name="pin4" start="_Middle+20x+5y" end="_Middle+20x+20y" edge="end"/>
+  </connections>
+  <render>
+    <rect location="_Middle-25x-17.5y" width="50" height="25"/>
+    <rect location="_Middle-23x-11y" width="6" height="16"/>
+    <path start="_Middle+0x+0y" data="M-20,-11 L-20,-14 L-10,-14 L-10,5"/>
+    <path start="_Middle+0x+0y" data="M10,-11 L10,-14 L20,-14 L20,5"/>
+    <rect location="_Middle+7x-11y" width="6" height="16"/>
+    <text x="_Middle-30" y="_Middle+0" value="$Reference" align="CentreCentre" size="small" rotate="90"/>
+    <text x="_Middle+30" y="_Middle+0" value="$Value" align="CentreCentre" size="small" rotate="90"/>
+    <line start="_Middle-20x+5y" end="_Middle-20x+20y" sym:connection="pin1"/>
+    <text x="_Middle-24" y="_Middle+12.5" value="1" align="CentreCentre" size="small" rotate="270" sym:connection="pin1" sym:connection_attr="number"/>
+    <line start="_Middle-10x+5y" end="_Middle-10x+20y" sym:connection="pin2"/>
+    <text x="_Middle-14" y="_Middle+12.5" value="2" align="CentreCentre" size="small" rotate="270" sym:connection="pin2" sym:connection_attr="number"/>
+    <line start="_Middle+10x+5y" end="_Middle+10x+20y" sym:connection="pin3"/>
+    <text x="_Middle+6" y="_Middle+12.5" value="3" align="CentreCentre" size="small" rotate="270" sym:connection="pin3" sym:connection_attr="number"/>
+    <line start="_Middle+20x+5y" end="_Middle+20x+20y" sym:connection="pin4"/>
+    <text x="_Middle+16" y="_Middle+12.5" value="4" align="CentreCentre" size="small" rotate="270" sym:connection="pin4" sym:connection_attr="number"/>
+  </render>
+</component>

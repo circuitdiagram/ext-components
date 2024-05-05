@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Thermistor PTC 3Wire"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="89be7fa1-3a2a-4e34-8ac2-845391c6210b"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="canresize" value="false"/>
+    <meta name="minsize" value="30"/>
+    <meta name="additionalinformation" value="Temperature dependent resistor, positive temperature coefficient, 3-wire interface"/>
+    <meta name="keywords" value="resistor PTC thermistor sensor RTD"/>
+    <meta name="ki_fp_filters" value="PIN_ARRAY_3X1 bornier3 TerminalBlock*3pol"/>
+    <property name="Reference" type="string" default="TH" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="Thermistor_PTC_3Wire" serialize="value" display="Value"/>
+    <flags>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin1" start="_Middle+0x-25y" end="_Middle+0x-15y" edge="start"/>
+    <connection name="pin2" start="_Middle+10x-25y" end="_Middle+10x-15y" edge="start"/>
+    <connection name="pin3" start="_Middle+0x+15y" end="_Middle+0x+25y" edge="end"/>
+  </connections>
+  <render>
+    <rect location="_Middle-4x-10y" width="8" height="20"/>
+    <path start="_Middle+0x+0y" data="M-10,-8.5 L-10,-11"/>
+    <path start="_Middle+0x+0y" data="M0,15 L0,10"/>
+    <path start="_Middle+0x+0y" data="M0,-15 L0,-10"/>
+    <path start="_Middle+0x+0y" data="M10,-15 L2.5,-15 L0,-12.5"/>
+    <path start="_Middle+0x+0y" data="M-7,-10 L-7,-6 L7,6 L7,10"/>
+    <path start="_Middle+0x+0y" data="M-10,14.5 L-10,5.5 L-11,8.5 L-9,8.5 L-10,5.5 L-10,6.5" fill="true"/>
+    <path start="_Middle+0x+0y" data="M-7,14.5 L-7,5.5 L-8,8.5 L-6,8.5 L-7,5.5 L-7,6.5" fill="true"/>
+    <ellipse centre="_Middle+0x-12.5y" rx="1.0999999999999999" ry="1.0999999999999999" fill="true"/>
+    <text x="_Middle+7.5" y="_Middle-5" value="$Reference" align="CentreLeft" size="small"/>
+    <text x="_Middle+7.5" y="_Middle+5" value="$Value" align="CentreLeft" size="small"/>
+    <line start="_Middle+0x-25y" end="_Middle+0x-15y" sym:connection="pin1"/>
+    <text x="_Middle-4" y="_Middle-20" value="1" align="CentreCentre" size="small" rotate="270" sym:connection="pin1" sym:connection_attr="number"/>
+    <line start="_Middle+10x-25y" end="_Middle+10x-15y" sym:connection="pin2"/>
+    <text x="_Middle+6" y="_Middle-20" value="2" align="CentreCentre" size="small" rotate="270" sym:connection="pin2" sym:connection_attr="number"/>
+    <line start="_Middle+0x+15y" end="_Middle+0x+25y" sym:connection="pin3"/>
+    <text x="_Middle-4" y="_Middle+20" value="3" align="CentreCentre" size="small" rotate="270" sym:connection="pin3" sym:connection_attr="number"/>
+  </render>
+</component>
