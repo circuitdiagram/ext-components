@@ -2,7 +2,7 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="Thermocouple"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.2.0"/>
     <meta name="guid" value="79e11b47-5430-43b1-8f52-65f1032e80d7"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
@@ -19,8 +19,8 @@
     </flags>
   </declaration>
   <connections>
-    <connection name="+" start="_Middle+0x-10y" end="_Middle+10x-10y" edge="end"/>
-    <connection name="-" start="_Middle+0x+10y" end="_Middle+10x+10y" edge="end"/>
+    <connection name="+" start="_Middle+0x-10y" end="_Middle+10x-10y" edge="end" sym:connection_id="0"/>
+    <connection name="-" start="_Middle+0x+10y" end="_Middle+10x+10y" edge="end" sym:connection_id="1"/>
   </connections>
   <render>
     <ellipse centre="_Middle-12x+0y" rx="1" ry="1" fill="true"/>
@@ -38,8 +38,8 @@
     <text x="_Middle-12" y="_Middle-15" value="$Reference" align="CentreCentre" size="small"/>
     <text x="_Middle-20" y="_Middle+16" value="$Value" align="CentreLeft" size="small"/>
     <line start="_Middle+0x-10y" end="_Middle+10x-10y" sym:connection="+"/>
-    <text x="_Middle-4" y="_Middle-10" value="+" align="CentreRight" size="small" sym:connection="+" sym:connection_attr="name"/>
+    <text x="_Middle-4" y="_Middle-10" value="+" align="CentreRight" size="small" sym:connection_id="0" sym:connection_attr="name"/>
     <line start="_Middle+0x+10y" end="_Middle+10x+10y" sym:connection="-"/>
-    <text x="_Middle-4" y="_Middle+10" value="-" align="CentreRight" size="small" sym:connection="-" sym:connection_attr="name"/>
+    <text x="_Middle-4" y="_Middle+10" value="-" align="CentreRight" size="small" sym:connection_id="1" sym:connection_attr="name"/>
   </render>
 </component>

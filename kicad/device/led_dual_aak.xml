@@ -2,7 +2,7 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="LED Dual AAK"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.2.0"/>
     <meta name="guid" value="eaec37d2-4ef4-4098-b1ec-311820d550b0"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
@@ -19,9 +19,9 @@
     </flags>
   </declaration>
   <connections>
-    <connection name="pin1" start="_Middle+15x-10y" end="_Middle+30x-10y" edge="end"/>
-    <connection name="pin2" start="_Middle+15x+10y" end="_Middle+30x+10y" edge="end"/>
-    <connection name="pin3" start="_Middle-30x+0y" end="_Middle-18x+0y" edge="start"/>
+    <connection name="pin1" start="_Middle+15x-10y" end="_Middle+30x-10y" edge="end" sym:connection_id="0"/>
+    <connection name="pin2" start="_Middle+15x+10y" end="_Middle+30x+10y" edge="end" sym:connection_id="1"/>
+    <connection name="pin3" start="_Middle-30x+0y" end="_Middle-18x+0y" edge="start" sym:connection_id="2"/>
   </connections>
   <render>
     <ellipse centre="_Middle-10x+0y" rx="1.0999999999999999" ry="1.0999999999999999" fill="true"/>
@@ -39,10 +39,10 @@
     <text x="_Middle+0" y="_Middle-22.5" value="$Reference" align="CentreCentre" size="small"/>
     <text x="_Middle+0" y="_Middle+25" value="$Value" align="CentreCentre" size="small"/>
     <line start="_Middle+15x-10y" end="_Middle+30x-10y" sym:connection="pin1"/>
-    <text x="_Middle+22.5" y="_Middle-14" value="1" align="CentreCentre" size="small" sym:connection="pin1" sym:connection_attr="number"/>
+    <text x="_Middle+22.5" y="_Middle-14" value="1" align="CentreCentre" size="small" sym:connection_id="0" sym:connection_attr="number"/>
     <line start="_Middle+15x+10y" end="_Middle+30x+10y" sym:connection="pin2"/>
-    <text x="_Middle+22.5" y="_Middle+6" value="2" align="CentreCentre" size="small" sym:connection="pin2" sym:connection_attr="number"/>
+    <text x="_Middle+22.5" y="_Middle+6" value="2" align="CentreCentre" size="small" sym:connection_id="1" sym:connection_attr="number"/>
     <line start="_Middle-30x+0y" end="_Middle-18x+0y" sym:connection="pin3"/>
-    <text x="_Middle-24" y="_Middle-4" value="3" align="CentreCentre" size="small" sym:connection="pin3" sym:connection_attr="number"/>
+    <text x="_Middle-24" y="_Middle-4" value="3" align="CentreCentre" size="small" sym:connection_id="2" sym:connection_attr="number"/>
   </render>
 </component>
