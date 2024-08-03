@@ -2,14 +2,14 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="D Laser Photo NType"/>
-    <meta name="version" value="0.2.0"/>
+    <meta name="version" value="0.2.1"/>
     <meta name="guid" value="3365ea81-dd2e-4646-abdd-625d7706cbb2"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
     <meta name="canresize" value="false"/>
     <meta name="minsize" value="50"/>
     <meta name="datasheet" value="http://www.egismos.disonhu.com/laser/diode-package.htm"/>
-    <meta name="additionalinformation" value="Laser diode with photodiode, center on pin 2, LD cathode on pin 1"/>
+    <meta name="description" value="Laser diode with photodiode, center on pin 2, LD cathode on pin 1"/>
     <meta name="keywords" value="opto laserdiode photodiode"/>
     <meta name="ki_fp_filters" value="*LaserDiode*"/>
     <property name="Reference" type="string" default="LD" serialize="reference" display="Reference"/>
@@ -26,6 +26,8 @@
   </connections>
   <render>
     <ellipse centre="_Middle-6x+0y" rx="1" ry="1" fill="true"/>
+    <path start="_Middle+0x+0y" data="M-2,7 C-1.605152094811727,6.973676806320783 -1.2983351810813524,6.645724372205 -1.2983351810813524,6.25 C-1.2983351810813524,5.854275627795 -1.605152094811727,5.526323193679217 -1.9999999999999998,5.5"/>
+    <path start="_Middle+0x+0y" data="M0,8.5 C0.8259630295368998,8.496524074964846 1.4937007874015897,7.825970343424402 1.4937007874015897,7 C1.4937007874015897,6.174029656575598 0.8259630295368998,5.503475925035155 -0.0000000000000000026020852139652106,5.5"/>
     <path start="_Middle+0x+0y" data="M-10,-0 L-6,-0"/>
     <path start="_Middle+0x+0y" data="M-6,-15 L0,-21"/>
     <path start="_Middle+0x+0y" data="M-6,-17 L0,-19"/>
@@ -50,6 +52,7 @@
     <path start="_Middle+0x+0y" data="M20,-10 L-6,-10 L-6,10 L20,10"/>
     <path start="_Middle+0x+0y" data="M14,-16 L8,-22 L8,-20 L8,-22 L10,-22"/>
     <path start="_Middle+0x+0y" data="M15,-3 L9,3 L9,1 L9,3 L11,3"/>
+    <path start="_Middle+0x+0y" data="M0,-5 C0.8259630295368023,-5.003475925035293 1.4937007874013404,-5.674029656575696 1.4937007874013404,-6.5 C1.4937007874013404,-7.325970343424304 0.8259630295368023,-7.996524074964707 0.000000000000000004336808689942018,-8"/>
     <rect location="_Middle-9x-24y" width="26" height="41"/>
     <path start="_Middle+0x+0y" data="M4,-15 L4,-5 L14,-10 L4,-15"/>
     <text x="_Middle+4" y="_Middle-28" value="$Reference" align="CentreCentre" size="xxs"/>

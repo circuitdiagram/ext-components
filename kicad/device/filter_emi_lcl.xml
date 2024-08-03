@@ -2,14 +2,14 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="Filter EMI LCL"/>
-    <meta name="version" value="0.2.0"/>
+    <meta name="version" value="0.2.1"/>
     <meta name="guid" value="00ce81fa-b051-49b5-aa75-55e8419014a0"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
     <meta name="canresize" value="false"/>
     <meta name="minsize" value="60"/>
     <meta name="datasheet" value="http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb"/>
-    <meta name="additionalinformation" value="EMI T-filter (LCL)"/>
+    <meta name="description" value="EMI T-filter (LCL)"/>
     <meta name="keywords" value="EMI T-filter"/>
     <meta name="ki_fp_filters" value="Filter* Resonator*"/>
     <property name="Reference" type="string" default="FL" serialize="reference" display="Reference"/>
@@ -26,12 +26,20 @@
   </connections>
   <render>
     <rect location="_Middle-22.5x-15y" width="45" height="15"/>
+    <path start="_Middle+0x+0y" data="M-16,-10 C-16.004779266189963,-11.101181192409392 -16.89880843632841,-11.991338582677157 -18,-11.991338582677157 C-19.10119156367159,-11.991338582677157 -19.995220733810037,-11.101181192409392 -20,-10"/>
+    <path start="_Middle+0x+0y" data="M-12,-10 C-12.004779266189962,-11.101181192409392 -12.898808436328409,-11.991338582677157 -14,-11.991338582677157 C-15.10119156367159,-11.991338582677157 -15.995220733810038,-11.101181192409392 -16,-10"/>
+    <path start="_Middle+0x+0y" data="M-8,-10 C-8.004779266189962,-11.101181192409392 -8.898808436328409,-11.991338582677157 -10,-11.991338582677157 C-11.10119156367159,-11.991338582677157 -11.995220733810038,-11.101181192409392 -12,-10"/>
     <rect location="_Middle-4x-4y" width="8" height="1"/>
+    <path start="_Middle+0x+0y" data="M-4,-10 C-4.004779266189962,-11.101181192409392 -4.89880843632841,-11.991338582677157 -6,-11.991338582677157 C-7.101191563671589,-11.991338582677157 -7.995220733810038,-11.101181192409392 -8,-10"/>
     <path start="_Middle+0x+0y" data="M-4,-10 L4,-10"/>
     <path start="_Middle+0x+0y" data="M0,-3 L0,-0"/>
     <path start="_Middle+0x+0y" data="M0,-10 L0,-7"/>
     <ellipse centre="_Middle+0x-10y" rx="1" ry="1" fill="true"/>
     <rect location="_Middle-4x-7y" width="8" height="1"/>
+    <path start="_Middle+0x+0y" data="M8,-10 C7.995220733810038,-11.101181192409392 7.10119156367159,-11.991338582677157 6,-11.991338582677157 C4.898808436328411,-11.991338582677157 4.004779266189962,-11.101181192409392 4,-10"/>
+    <path start="_Middle+0x+0y" data="M12,-10 C11.995220733810038,-11.101181192409392 11.101191563671591,-11.991338582677157 10,-11.991338582677157 C8.89880843632841,-11.991338582677157 8.004779266189962,-11.101181192409392 8,-10"/>
+    <path start="_Middle+0x+0y" data="M16,-10 C15.995220733810038,-11.101181192409392 15.101191563671591,-11.991338582677157 14,-11.991338582677157 C12.89880843632841,-11.991338582677157 12.004779266189962,-11.101181192409392 12,-10"/>
+    <path start="_Middle+0x+0y" data="M20,-10 C19.995220733810037,-11.101181192409392 19.10119156367159,-11.991338582677157 18,-11.991338582677157 C16.89880843632841,-11.991338582677157 16.004779266189963,-11.101181192409392 16,-10"/>
     <text x="_Middle+0" y="_Middle-27.500000000000004" value="$Reference" align="CentreCentre" size="xxs"/>
     <text x="_Middle+0" y="_Middle-20" value="$Value" align="CentreCentre" size="xxs"/>
     <line start="_Middle-30x-10y" end="_Middle-20x-10y" sym:connection_id="0"/>

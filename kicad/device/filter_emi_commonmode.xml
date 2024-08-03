@@ -2,13 +2,13 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="Filter EMI CommonMode"/>
-    <meta name="version" value="0.1.1"/>
+    <meta name="version" value="0.1.2"/>
     <meta name="guid" value="7e2de9be-c318-49f2-a6ff-b75855b569ef"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
     <meta name="canresize" value="false"/>
     <meta name="minsize" value="40"/>
-    <meta name="additionalinformation" value="EMI 2-inductor common mode filter"/>
+    <meta name="description" value="EMI 2-inductor common mode filter"/>
     <meta name="keywords" value="EMI common mode filter"/>
     <meta name="ki_fp_filters" value="L_* L_CommonMode*"/>
     <property name="Reference" type="string" default="FL" serialize="reference" display="Reference"/>
@@ -27,12 +27,22 @@
   <render>
     <ellipse centre="_Middle-12x+5y" rx="1" ry="1" fill="true"/>
     <ellipse centre="_Middle-12x-6y" rx="1" ry="1" fill="true"/>
+    <path start="_Middle+0x+0y" data="M-10,-8 C-9.995220733810038,-6.898818807590609 -9.10119156367159,-6.008661417322843 -8,-6.008661417322843 C-6.89880843632841,-6.008661417322843 -6.004779266189962,-6.898818807590609 -6,-7.999999999999999"/>
+    <path start="_Middle+0x+0y" data="M-6,8 C-6.004779266189962,6.898818807590609 -6.89880843632841,6.008661417322843 -8,6.008661417322843 C-9.10119156367159,6.008661417322843 -9.995220733810038,6.898818807590609 -10,7.999999999999999"/>
+    <path start="_Middle+0x+0y" data="M-6,-8 C-5.995220733810038,-6.898818807590609 -5.101191563671589,-6.008661417322843 -4,-6.008661417322843 C-2.8988084363284097,-6.008661417322843 -2.0047792661899617,-6.898818807590609 -2,-7.999999999999999"/>
+    <path start="_Middle+0x+0y" data="M-2,8 C-2.0047792661899617,6.898818807590609 -2.8988084363284097,6.008661417322843 -4,6.008661417322843 C-5.101191563671589,6.008661417322843 -5.995220733810038,6.898818807590609 -6,7.999999999999999"/>
+    <path start="_Middle+0x+0y" data="M-2,-8 C-1.995220733810038,-6.898818807590609 -1.1011915636715899,-6.008661417322843 0.00000000000000012246583332465035,-6.008661417322843 C1.1011915636715903,-6.008661417322843 1.9952207338100385,-6.898818807590609 1.9999999999999998,-7.999999999999999"/>
     <path start="_Middle+0x+0y" data="M-10,8 L-10,10"/>
     <path start="_Middle+0x+0y" data="M-10,-2 L10,-2"/>
     <path start="_Middle+0x+0y" data="M-10,-8 L-10,-10"/>
     <path start="_Middle+0x+0y" data="M10,8 L10,10"/>
     <path start="_Middle+0x+0y" data="M10,2 L-10,2"/>
     <path start="_Middle+0x+0y" data="M10,-10 L10,-8"/>
+    <path start="_Middle+0x+0y" data="M2,8 C1.9952207338100383,6.898818807590609 1.1011915636715903,6.008661417322843 0.00000000000000012246583332465035,6.008661417322843 C-1.1011915636715899,6.008661417322843 -1.9952207338100383,6.898818807590609 -1.9999999999999998,7.999999999999999"/>
+    <path start="_Middle+0x+0y" data="M2,-8 C2.0047792661899617,-6.898818807590609 2.89880843632841,-6.008661417322843 4,-6.008661417322843 C5.10119156367159,-6.008661417322843 5.995220733810038,-6.898818807590609 6,-7.999999999999999"/>
+    <path start="_Middle+0x+0y" data="M6,8 C5.995220733810038,6.898818807590609 5.10119156367159,6.008661417322843 4,6.008661417322843 C2.89880843632841,6.008661417322843 2.0047792661899617,6.898818807590609 2,7.999999999999999"/>
+    <path start="_Middle+0x+0y" data="M6,-8 C6.004779266189962,-6.898818807590609 6.898808436328411,-6.008661417322843 8,-6.008661417322843 C9.101191563671591,-6.008661417322843 9.995220733810038,-6.898818807590609 10,-7.999999999999999"/>
+    <path start="_Middle+0x+0y" data="M10,8 C9.995220733810038,6.898818807590609 9.101191563671591,6.008661417322843 8,6.008661417322843 C6.898808436328411,6.008661417322843 6.004779266189962,6.898818807590609 6,7.999999999999999"/>
     <text x="_Middle+0" y="_Middle-17.5" value="$Reference" align="CentreCentre" size="xxs"/>
     <text x="_Middle+0" y="_Middle+17.5" value="$Value" align="CentreCentre" size="xxs"/>
     <line start="_Middle-20x-10y" end="_Middle-10x-10y" sym:connection_id="0"/>

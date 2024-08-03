@@ -2,13 +2,13 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="L Trim"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.1.1"/>
     <meta name="guid" value="85620513-3090-4083-9e86-fa1337ab18ab"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
     <meta name="canresize" value="false"/>
     <meta name="minsize" value="30"/>
-    <meta name="additionalinformation" value="Variable inductor"/>
+    <meta name="description" value="Variable inductor"/>
     <meta name="keywords" value="inductor choke coil reactor magnetic"/>
     <meta name="ki_fp_filters" value="Inductor_* L_*"/>
     <property name="Reference" type="string" default="L" serialize="reference" display="Reference"/>
@@ -23,9 +23,13 @@
     <connection name="pin_idx_2" start="_Middle+0x+10y" end="_Middle+0x+15y" edge="end" sym:connection_id="1"/>
   </connections>
   <render>
+    <path start="_Middle+0x+0y" data="M0,10 C1.3765536273463166,9.994134440678133 2.4893700787402078,8.876566124000753 2.4893700787402078,7.5 C2.4893700787402078,6.123433875999246 1.3765536273463166,5.005865559321867 0.0000000000000002688821387764051,5"/>
+    <path start="_Middle+0x+0y" data="M0,5 C1.3765536273463166,4.994134440678133 2.4893700787402078,3.876566124000754 2.4893700787402078,2.5 C2.4893700787402078,1.123433875999246 1.3765536273463166,0.005865559321867053 0.0000000000000002688821387764051,0"/>
     <path start="_Middle+0x+0y" data="M-5,7.5 L7.5,-10"/>
     <path start="_Middle+0x+0y" data="M7.5,-10 L4,-8.5"/>
     <path start="_Middle+0x+0y" data="M7.5,-10 L7,-6.5"/>
+    <path start="_Middle+0x+0y" data="M0,-0 C1.3765536273463166,-0.005865559321867053 2.4893700787402078,-1.123433875999246 2.4893700787402078,-2.5 C2.4893700787402078,-3.876566124000754 1.3765536273463166,-4.994134440678133 0.0000000000000002688821387764051,-5"/>
+    <path start="_Middle+0x+0y" data="M0,-5 C1.3765536273463166,-5.005865559321867 2.4893700787402078,-6.123433875999246 2.4893700787402078,-7.5 C2.4893700787402078,-8.876566124000753 1.3765536273463166,-9.994134440678133 0.0000000000000002688821387764051,-10"/>
     <text x="_Middle-7.5" y="_Middle+0" value="$Reference" align="CentreCentre" size="xxs" rotate="90"/>
     <text x="_Middle+12.5" y="_Middle+0" value="$Value" align="CentreCentre" size="xxs" rotate="90"/>
     <line start="_Middle+0x-15y" end="_Middle+0x-10y" sym:connection_id="0"/>

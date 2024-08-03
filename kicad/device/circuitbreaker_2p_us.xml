@@ -2,13 +2,13 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="CircuitBreaker 2P US"/>
-    <meta name="version" value="0.2.0"/>
+    <meta name="version" value="0.2.1"/>
     <meta name="guid" value="37d1ca9d-b06b-4578-9f4a-6840ba263f22"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
     <meta name="canresize" value="false"/>
     <meta name="minsize" value="40"/>
-    <meta name="additionalinformation" value="Double pole circuit breaker, US symbol"/>
+    <meta name="description" value="Double pole circuit breaker, US symbol"/>
     <meta name="keywords" value="CB 2P"/>
     <property name="Reference" type="string" default="CB" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="CircuitBreaker_2P_US" serialize="value" display="Value"/>
@@ -26,6 +26,7 @@
   <render>
     <ellipse centre="_Middle-10x+17.5y" rx="2.5" ry="2.5"/>
     <ellipse centre="_Middle-10x-17.5y" rx="2.5" ry="2.5"/>
+    <path start="_Middle+0x+0y" data="M-2.5,15 C2.221259842519679,5.557257362514724 2.221259842519679,-5.557257362514726 -2.500000000000007,-14.999999999999998"/>
     <path start="_Middle+0x+0y" data="M1,-0 L1,-0"/>
     <path start="_Middle+0x+0y" data="M1,-0 L5,-0"/>
     <path start="_Middle+0x+0y" data="M7,-0 L11,-0"/>
@@ -33,6 +34,7 @@
     <path start="_Middle+0x+0y" data="M19,-0 L21,-0"/>
     <ellipse centre="_Middle+10x+17.5y" rx="2.5" ry="2.5"/>
     <ellipse centre="_Middle+10x-17.5y" rx="2.5" ry="2.5"/>
+    <path start="_Middle+0x+0y" data="M17.5,15 C22.221259842519682,5.557257362514724 22.221259842519682,-5.557257362514726 17.499999999999996,-14.999999999999998"/>
     <text x="_Middle+25" y="_Middle+5" value="$Reference" align="CentreLeft" size="xxs"/>
     <text x="_Middle+25" y="_Middle-5" value="$Value" align="CentreLeft" size="xxs"/>
     <line start="_Middle-10x-30y" end="_Middle-10x-20y" sym:connection_id="0"/>

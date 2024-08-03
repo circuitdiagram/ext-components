@@ -2,13 +2,13 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="L 45deg"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.1.1"/>
     <meta name="guid" value="0bbae8ba-8062-4d7d-87c3-94874da87010"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
     <meta name="canresize" value="false"/>
     <meta name="minsize" value="50"/>
-    <meta name="additionalinformation" value="Inductor, rotated by 45°"/>
+    <meta name="description" value="Inductor, rotated by 45°"/>
     <meta name="keywords" value="inductor choke coil reactor magnetic inductor"/>
     <meta name="ki_fp_filters" value="L_* Choke_* Inductor_* *Coil*"/>
     <property name="Reference" type="string" default="L" serialize="reference" display="Reference"/>
@@ -25,6 +25,10 @@
   <render>
     <path start="_Middle+0x+0y" data="M-5,-5 L-10,-10"/>
     <path start="_Middle+0x+0y" data="M10,10 L5,5"/>
+    <path start="_Middle+0x+0y" data="M-2.5,-2.5 C-1.8512775388530476,-3.19706381004241 -1.870767380882507,-4.282578404504551 -2.5440944881889784,-4.955905511811022 C-3.21742159549545,-5.629232619117493 -4.30293618995759,-5.648722461146952 -5,-5"/>
+    <path start="_Middle+0x+0y" data="M0,-0 C0.6673235637854706,-0.6941750658561745 0.6564722445903699,-1.7947088577718193 -0.02440944881890572,-2.475590551181095 C-0.7052911422281813,-3.15647224459037 -1.8058249341438257,-3.1673235637854704 -2.5,-2.5"/>
+    <path start="_Middle+0x+0y" data="M2.5,2.5 C3.1554215092285367,1.8039562326116656 3.139029950695093,0.7130456987266086 2.462992125984242,0.03700787401575778 C1.786954301273391,-0.6390299506950932 0.6960437673883342,-0.6554215092285363 0,0.0000000000000002220446049250313"/>
+    <path start="_Middle+0x+0y" data="M5,5 C5.662710606503425,4.30509213155606 5.649706605104251,3.2082936110941387 4.9707064970050565,2.5292935029949435 C4.291706388905861,1.8502933948957483 3.1949078684439396,1.837289393496575 2.5,2.5"/>
     <text x="_Middle+20" y="_Middle-10" value="$Reference" align="CentreCentre" size="xxs"/>
     <text x="_Middle+32.50000000000001" y="_Middle-2.5" value="$Value" align="CentreCentre" size="xxs"/>
     <line start="_Middle+10x+10y" end="_Middle+10x+10y" sym:connection_id="0"/>

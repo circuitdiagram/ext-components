@@ -2,13 +2,13 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="DelayLine"/>
-    <meta name="version" value="0.2.0"/>
+    <meta name="version" value="0.2.1"/>
     <meta name="guid" value="66e3ceaa-fb48-42be-aa2f-281c719593e0"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
     <meta name="canresize" value="false"/>
     <meta name="minsize" value="40"/>
-    <meta name="additionalinformation" value="Delay line"/>
+    <meta name="description" value="Delay line"/>
     <meta name="keywords" value="delay propagation retard impedance"/>
     <property name="Reference" type="string" default="L" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="DelayLine" serialize="value" display="Value"/>
@@ -23,7 +23,15 @@
     <connection name="pin3" start="_Middle-20x+0y" end="_Middle-10x+0y" edge="start" sym:connection_id="2"/>
   </connections>
   <render>
+    <path start="_Middle+0x+0y" data="M0,19.9 C2.706778739942214,19.86160232812678 4.906933342698824,17.7054508174253 5,15"/>
+    <path start="_Middle+0x+0y" data="M0,9.9 C2.706778739942213,9.861602328126777 4.906933342698822,7.7054508174253 5,5"/>
     <path start="_Middle+0x+0y" data="M-10,-20 L-10,20"/>
+    <path start="_Middle+0x+0y" data="M0,-0.1 C2.7067787399422123,-0.13839767187322494 4.906933342698821,-2.2945491825747006 5,-5"/>
+    <path start="_Middle+0x+0y" data="M0,-10.1 C2.7067787399422114,-10.138397671873228 4.906933342698819,-12.294549182574704 5,-15.000000000000002"/>
+    <path start="_Middle+0x+0y" data="M5,15 C4.999809866286402,12.238655010643354 2.761344989356646,10.000190133713598 0.0000000000000005327227374507526,10"/>
+    <path start="_Middle+0x+0y" data="M5,5 C4.9998098662864,2.2386550106433543 2.761344989356646,0.00019013371360010467 0.000000000000000532993787993874,-0.0000000000000008881784197001252"/>
+    <path start="_Middle+0x+0y" data="M5,-5 C4.999809866286403,-7.761344989356647 2.761344989356647,-9.999809866286402 0.000000000000000532397476799007,-10"/>
+    <path start="_Middle+0x+0y" data="M5,-15 C4.999809866286406,-17.761344989356648 2.761344989356648,-19.999809866286405 0.00000000000000008744090521095593,-20"/>
     <text x="_Middle+10" y="_Middle-5" value="$Reference" align="CentreLeft" size="xxs"/>
     <text x="_Middle+10" y="_Middle+5" value="$Value" align="CentreLeft" size="xxs"/>
     <line start="_Middle+0x-30y" end="_Middle+0x-20y" sym:connection_id="0"/>
