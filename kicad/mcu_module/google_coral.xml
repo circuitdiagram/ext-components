@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Google Coral"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="1d332ca0-69d3-4ec5-8d99-83352b72a2d5"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="canresize" value="false"/>
+    <meta name="minsize" value="160"/>
+    <meta name="footprint" value="Module:Google_Coral_SMT_TPU_Module"/>
+    <meta name="datasheet" value="https://coral.ai/static/files/Coral-Accelerator-Module-datasheet.pdf"/>
+    <meta name="description" value="Edge TPU, 4 TOPS, 2W, 120-LGA"/>
+    <meta name="keywords" value="TPU Coral"/>
+    <meta name="ki_fp_filters" value="Google*Coral*SMT*TPU*Module*"/>
+    <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="Google_Coral" serialize="value" display="Value"/>
+    <flags>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="gnd" start="_Middle+0x+60y" end="_Middle+0x+70y" edge="end" sym:connection_id="0"/>
+    <connection name="pcie_refclk_n" start="_Middle+70x+0y" end="_Middle+80x+0y" edge="end" sym:connection_id="1"/>
+    <connection name="pcie_refclk_p" start="_Middle+70x+10y" end="_Middle+80x+10y" edge="end" sym:connection_id="2"/>
+    <connection name="usb2_d_p" start="_Middle+70x+50y" end="_Middle+80x+50y" edge="end" sym:connection_id="3"/>
+    <connection name="usb2_d_n" start="_Middle+70x+40y" end="_Middle+80x+40y" edge="end" sym:connection_id="4"/>
+    <connection name="pgood4" start="_Middle-80x-10y" end="_Middle-70x-10y" edge="start" sym:connection_id="5"/>
+    <connection name="pmic_en" start="_Middle-80x-30y" end="_Middle-70x-30y" edge="start" sym:connection_id="6"/>
+    <connection name="aon" start="_Middle+10x-70y" end="_Middle+10x-60y" edge="start" sym:connection_id="7"/>
+    <connection name="vin" start="_Middle+0x-70y" end="_Middle+0x-60y" edge="start" sym:connection_id="8"/>
+    <connection name="rst_l" start="_Middle-80x-40y" end="_Middle-70x-40y" edge="start" sym:connection_id="9"/>
+    <connection name="intr" start="_Middle-80x+20y" end="_Middle-70x+20y" edge="start" sym:connection_id="10"/>
+    <connection name="clkreq_l" start="_Middle-80x+0y" end="_Middle-70x+0y" edge="start" sym:connection_id="11"/>
+    <connection name="sd_alarm" start="_Middle-80x+10y" end="_Middle-70x+10y" edge="start" sym:connection_id="12"/>
+    <connection name="usb_sel" start="_Middle-80x+40y" end="_Middle-70x+40y" edge="start" sym:connection_id="13"/>
+    <connection name="pcie_tx_n" start="_Middle+70x-10y" end="_Middle+80x-10y" edge="end" sym:connection_id="14"/>
+    <connection name="pcie_tx_p" start="_Middle+70x-20y" end="_Middle+80x-20y" edge="end" sym:connection_id="15"/>
+    <connection name="pcie_rx_p" start="_Middle+70x-40y" end="_Middle+80x-40y" edge="end" sym:connection_id="16"/>
+    <connection name="pcie_rx_n" start="_Middle+70x-30y" end="_Middle+80x-30y" edge="end" sym:connection_id="17"/>
+  </connections>
+  <render>
+    <rect location="_Middle-70x-60y" width="140" height="120"/>
+    <text x="_Middle-70" y="_Middle-70" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle-45" y="_Middle+70" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle+0x+60y" end="_Middle+0x+70y" sym:connection_id="0"/>
+    <text x="_Middle+0" y="_Middle+56" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+66" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+70x+0y" end="_Middle+80x+0y" sym:connection_id="1"/>
+    <text x="_Middle+66" y="_Middle+0" value="PCIE_REFCLK_N" align="CentreRight" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle+76" y="_Middle-2" value="10" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+70x+10y" end="_Middle+80x+10y" sym:connection_id="2"/>
+    <text x="_Middle+66" y="_Middle+10" value="PCIE_REFCLK_P" align="CentreRight" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle+76" y="_Middle+8" value="11" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+70x+50y" end="_Middle+80x+50y" sym:connection_id="3"/>
+    <text x="_Middle+66" y="_Middle+50" value="USB2_D_P" align="CentreRight" size="xxs" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle+76" y="_Middle+48" value="13" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle+70x+40y" end="_Middle+80x+40y" sym:connection_id="4"/>
+    <text x="_Middle+66" y="_Middle+40" value="USB2_D_N" align="CentreRight" size="xxs" sym:connection_id="4" sym:connection_attr="name"/>
+    <text x="_Middle+76" y="_Middle+38" value="14" align="BottomCentre" size="xxs" sym:connection_id="4" sym:connection_attr="number"/>
+    <line start="_Middle-80x-10y" end="_Middle-70x-10y" sym:connection_id="5"/>
+    <text x="_Middle-66" y="_Middle-10" value="PGOOD4" align="CentreLeft" size="xxs" sym:connection_id="5" sym:connection_attr="name"/>
+    <text x="_Middle-76" y="_Middle-12" value="37" align="BottomCentre" size="xxs" sym:connection_id="5" sym:connection_attr="number"/>
+    <line start="_Middle-80x-30y" end="_Middle-70x-30y" sym:connection_id="6"/>
+    <text x="_Middle-66" y="_Middle-30" value="PMIC_EN" align="CentreLeft" size="xxs" sym:connection_id="6" sym:connection_attr="name"/>
+    <text x="_Middle-76" y="_Middle-32" value="53" align="BottomCentre" size="xxs" sym:connection_id="6" sym:connection_attr="number"/>
+    <line start="_Middle+10x-70y" end="_Middle+10x-60y" sym:connection_id="7"/>
+    <text x="_Middle+10" y="_Middle-56" value="AON" align="CentreRight" size="xxs" rotate="270" sym:connection_id="7" sym:connection_attr="name"/>
+    <text x="_Middle+8" y="_Middle-66" value="54" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="7" sym:connection_attr="number"/>
+    <line start="_Middle+0x-70y" end="_Middle+0x-60y" sym:connection_id="8"/>
+    <text x="_Middle+0" y="_Middle-56" value="VIN" align="CentreRight" size="xxs" rotate="270" sym:connection_id="8" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle-66" value="56" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="8" sym:connection_attr="number"/>
+    <line start="_Middle-80x-40y" end="_Middle-70x-40y" sym:connection_id="9"/>
+    <text x="_Middle-66" y="_Middle-40" value="RST_L" align="CentreLeft" size="xxs" sym:connection_id="9" sym:connection_attr="name"/>
+    <text x="_Middle-76" y="_Middle-42" value="76" align="BottomCentre" size="xxs" sym:connection_id="9" sym:connection_attr="number"/>
+    <line start="_Middle-80x+20y" end="_Middle-70x+20y" sym:connection_id="10"/>
+    <text x="_Middle-66" y="_Middle+20" value="INTR" align="CentreLeft" size="xxs" sym:connection_id="10" sym:connection_attr="name"/>
+    <text x="_Middle-76" y="_Middle+18" value="77" align="BottomCentre" size="xxs" sym:connection_id="10" sym:connection_attr="number"/>
+    <line start="_Middle-80x+0y" end="_Middle-70x+0y" sym:connection_id="11"/>
+    <text x="_Middle-66" y="_Middle+0" value="CLKREQ_L" align="CentreLeft" size="xxs" sym:connection_id="11" sym:connection_attr="name"/>
+    <text x="_Middle-76" y="_Middle-2" value="78" align="BottomCentre" size="xxs" sym:connection_id="11" sym:connection_attr="number"/>
+    <line start="_Middle-80x+10y" end="_Middle-70x+10y" sym:connection_id="12"/>
+    <text x="_Middle-66" y="_Middle+10" value="SD_ALARM" align="CentreLeft" size="xxs" sym:connection_id="12" sym:connection_attr="name"/>
+    <text x="_Middle-76" y="_Middle+8" value="82" align="BottomCentre" size="xxs" sym:connection_id="12" sym:connection_attr="number"/>
+    <line start="_Middle-80x+40y" end="_Middle-70x+40y" sym:connection_id="13"/>
+    <text x="_Middle-66" y="_Middle+40" value="USB_SEL" align="CentreLeft" size="xxs" sym:connection_id="13" sym:connection_attr="name"/>
+    <text x="_Middle-76" y="_Middle+38" value="83" align="BottomCentre" size="xxs" sym:connection_id="13" sym:connection_attr="number"/>
+    <line start="_Middle+70x-10y" end="_Middle+80x-10y" sym:connection_id="14"/>
+    <text x="_Middle+66" y="_Middle-10" value="PCIE_TX_N" align="CentreRight" size="xxs" sym:connection_id="14" sym:connection_attr="name"/>
+    <text x="_Middle+76" y="_Middle-12" value="4" align="BottomCentre" size="xxs" sym:connection_id="14" sym:connection_attr="number"/>
+    <line start="_Middle+70x-20y" end="_Middle+80x-20y" sym:connection_id="15"/>
+    <text x="_Middle+66" y="_Middle-20" value="PCIE_TX_P" align="CentreRight" size="xxs" sym:connection_id="15" sym:connection_attr="name"/>
+    <text x="_Middle+76" y="_Middle-22" value="5" align="BottomCentre" size="xxs" sym:connection_id="15" sym:connection_attr="number"/>
+    <line start="_Middle+70x-40y" end="_Middle+80x-40y" sym:connection_id="16"/>
+    <text x="_Middle+66" y="_Middle-40" value="PCIE_RX_P" align="CentreRight" size="xxs" sym:connection_id="16" sym:connection_attr="name"/>
+    <text x="_Middle+76" y="_Middle-42" value="7" align="BottomCentre" size="xxs" sym:connection_id="16" sym:connection_attr="number"/>
+    <line start="_Middle+70x-30y" end="_Middle+80x-30y" sym:connection_id="17"/>
+    <text x="_Middle+66" y="_Middle-30" value="PCIE_RX_N" align="CentreRight" size="xxs" sym:connection_id="17" sym:connection_attr="name"/>
+    <text x="_Middle+76" y="_Middle-32" value="8" align="BottomCentre" size="xxs" sym:connection_id="17" sym:connection_attr="number"/>
+  </render>
+</component>

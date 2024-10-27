@@ -2,7 +2,7 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="NUCLEO144-F207ZG"/>
-    <meta name="version" value="0.2.1"/>
+    <meta name="version" value="0.3.1"/>
     <meta name="guid" value="a5f44a2b-75ec-4571-a3cd-ff216b8fdf03"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
@@ -29,7 +29,7 @@
     <connection name="agnd" start="_Middle+80x+360y" end="_Middle+80x+380y" edge="end" sym:connection_id="5"/>
     <connection name="usb_id/pa10" start="_Middle+110x-230y" end="_Middle+130x-230y" edge="end" sym:connection_id="6"/>
     <connection name="eth_rxd0/pc4" start="_Middle+110x+50y" end="_Middle+130x+50y" edge="end" sym:connection_id="7"/>
-    <connection name="pa2" start="_Middle+110x-310y" end="_Middle+130x-310y" edge="end" sym:connection_id="8"/>
+    <connection name="eth_mdio/pa2" start="_Middle+110x-310y" end="_Middle+130x-310y" edge="end" sym:connection_id="8"/>
     <connection name="pf5" start="_Middle-130x+60y" end="_Middle-110x+60y" edge="start" sym:connection_id="9"/>
     <connection name="pa3" start="_Middle+110x-300y" end="_Middle+130x-300y" edge="end" sym:connection_id="10"/>
     <connection name="pf7" start="_Middle-130x+80y" end="_Middle-110x+80y" edge="start" sym:connection_id="11"/>
@@ -84,10 +84,10 @@
     <connection name="vin" start="_Middle-30x-380y" end="_Middle-30x-360y" edge="start" sym:connection_id="60"/>
     <connection name="rtc_crystal/pc14" start="_Middle+110x+150y" end="_Middle+130x+150y" edge="end" sym:connection_id="61"/>
     <connection name="rtc_crystal/pc15" start="_Middle+110x+160y" end="_Middle+130x+160y" edge="end" sym:connection_id="62"/>
-    <connection name="eth_ref_clk/pa0" start="_Middle+110x-330y" end="_Middle+130x-330y" edge="end" sym:connection_id="63"/>
+    <connection name="pa0" start="_Middle+110x-330y" end="_Middle+130x-330y" edge="end" sym:connection_id="63"/>
     <connection name="ph0" start="_Middle-130x-190y" end="_Middle-110x-190y" edge="start" sym:connection_id="64"/>
     <connection name="pc12" start="_Middle+110x+130y" end="_Middle+130x+130y" edge="end" sym:connection_id="65"/>
-    <connection name="eth_mdio/pa1" start="_Middle+110x-320y" end="_Middle+130x-320y" edge="end" sym:connection_id="66"/>
+    <connection name="eth_ref_clk/pa1" start="_Middle+110x-320y" end="_Middle+130x-320y" edge="end" sym:connection_id="66"/>
     <connection name="ph1" start="_Middle-130x-180y" end="_Middle-110x-180y" edge="start" sym:connection_id="67"/>
     <connection name="pa4" start="_Middle+110x-290y" end="_Middle+130x-290y" edge="end" sym:connection_id="68"/>
     <connection name="vbat" start="_Middle-20x-380y" end="_Middle-20x-360y" edge="start" sym:connection_id="69"/>
@@ -192,7 +192,7 @@
     <text x="_Middle+106.00000000000003" y="_Middle+50" value="ETH_RXD0/PC4" align="CentreRight" size="xxs" sym:connection_id="7" sym:connection_attr="name"/>
     <text x="_Middle+121.00000000000003" y="_Middle+48" value="106" align="BottomCentre" size="xxs" sym:connection_id="7" sym:connection_attr="number"/>
     <line start="_Middle+110x-310y" end="_Middle+130x-310y" sym:connection_id="8"/>
-    <text x="_Middle+106.00000000000003" y="_Middle-310" value="PA2" align="CentreRight" size="xxs" sym:connection_id="8" sym:connection_attr="name"/>
+    <text x="_Middle+106.00000000000003" y="_Middle-310" value="ETH_MDIO/PA2" align="CentreRight" size="xxs" sym:connection_id="8" sym:connection_attr="name"/>
     <text x="_Middle+121.00000000000003" y="_Middle-312" value="107" align="BottomCentre" size="xxs" sym:connection_id="8" sym:connection_attr="number"/>
     <line start="_Middle-130x+60y" end="_Middle-110x+60y" sym:connection_id="9"/>
     <text x="_Middle-106.00000000000003" y="_Middle+60" value="PF5" align="CentreLeft" size="xxs" sym:connection_id="9" sym:connection_attr="name"/>
@@ -357,7 +357,7 @@
     <text x="_Middle+106.00000000000003" y="_Middle+160" value="RTC_CRYSTAL/PC15" align="CentreRight" size="xxs" sym:connection_id="62" sym:connection_attr="name"/>
     <text x="_Middle+121.00000000000003" y="_Middle+158" value="27" align="BottomCentre" size="xxs" sym:connection_id="62" sym:connection_attr="number"/>
     <line start="_Middle+110x-330y" end="_Middle+130x-330y" sym:connection_id="63"/>
-    <text x="_Middle+106.00000000000003" y="_Middle-330" value="ETH_REF_CLK/PA0" align="CentreRight" size="xxs" sym:connection_id="63" sym:connection_attr="name"/>
+    <text x="_Middle+106.00000000000003" y="_Middle-330" value="PA0" align="CentreRight" size="xxs" sym:connection_id="63" sym:connection_attr="name"/>
     <text x="_Middle+121.00000000000003" y="_Middle-332" value="28" align="BottomCentre" size="xxs" sym:connection_id="63" sym:connection_attr="number"/>
     <line start="_Middle-130x-190y" end="_Middle-110x-190y" sym:connection_id="64"/>
     <text x="_Middle-106.00000000000003" y="_Middle-190" value="PH0" align="CentreLeft" size="xxs" sym:connection_id="64" sym:connection_attr="name"/>
@@ -366,7 +366,7 @@
     <text x="_Middle+106.00000000000003" y="_Middle+130.00000000000003" value="PC12" align="CentreRight" size="xxs" sym:connection_id="65" sym:connection_attr="name"/>
     <text x="_Middle+121.00000000000003" y="_Middle+128.00000000000003" value="3" align="BottomCentre" size="xxs" sym:connection_id="65" sym:connection_attr="number"/>
     <line start="_Middle+110x-320y" end="_Middle+130x-320y" sym:connection_id="66"/>
-    <text x="_Middle+106.00000000000003" y="_Middle-320" value="ETH_MDIO/PA1" align="CentreRight" size="xxs" sym:connection_id="66" sym:connection_attr="name"/>
+    <text x="_Middle+106.00000000000003" y="_Middle-320" value="ETH_REF_CLK/PA1" align="CentreRight" size="xxs" sym:connection_id="66" sym:connection_attr="name"/>
     <text x="_Middle+121.00000000000003" y="_Middle-322" value="30" align="BottomCentre" size="xxs" sym:connection_id="66" sym:connection_attr="number"/>
     <line start="_Middle-130x-180y" end="_Middle-110x-180y" sym:connection_id="67"/>
     <text x="_Middle-106.00000000000003" y="_Middle-180" value="PH1" align="CentreLeft" size="xxs" sym:connection_id="67" sym:connection_attr="name"/>
