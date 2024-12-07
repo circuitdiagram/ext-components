@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
-    <meta name="name" value="Sipeed-M1"/>
-    <meta name="version" value="0.3.1"/>
-    <meta name="guid" value="27ee0543-8bbf-481f-b9f2-84a5d35d28bc"/>
+    <meta name="name" value="Sipeed-M1W"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="1e3490af-3571-4893-a175-fdee9c46cfe0"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
     <meta name="canresize" value="false"/>
     <meta name="minsize" value="120"/>
-    <meta name="footprint" value="Module:Sipeed-M1"/>
+    <meta name="footprint" value="Module:Sipeed-M1W"/>
     <meta name="datasheet" value="https://dl.sipeed.com/MAIX/HDK/Sipeed-M1&amp;M1W/Specifications"/>
-    <meta name="description" value="AI accelerated RISC-V microcontroller"/>
-    <meta name="keywords" value="AI Kendryte K210 RISC-V"/>
-    <meta name="ki_fp_filters" value="Sipeed?*M1*"/>
+    <meta name="description" value="AI Accelerated RISC-V MCU with WiFi"/>
+    <meta name="keywords" value="WiFi K210 Kendryte"/>
+    <meta name="ki_fp_filters" value="Sipeed?*M1W*"/>
     <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
-    <property name="Value" type="string" default="Sipeed-M1" serialize="value" display="Value"/>
+    <property name="Value" type="string" default="Sipeed-M1W" serialize="value" display="Value"/>
     <flags>
       <option>HorizontalOnly</option>
       <option>MiddleMustAlign</option>
@@ -93,8 +93,8 @@
   </connections>
   <render>
     <rect location="_Middle-50x-190y" width="100" height="380"/>
-    <text x="_Middle-54" y="_Middle-202" value="$Reference" align="CentreCentre" size="xxs"/>
-    <text x="_Middle-47.00000000000001" y="_Middle-195" value="$Value" align="CentreCentre" size="xxs"/>
+    <text x="_Middle-53" y="_Middle-204.00000000000003" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle-50" y="_Middle-195" value="$Value" align="CentreCentre" size="xxs"/>
     <line start="_Middle+50x-170y" end="_Middle+60x-170y" sym:connection_id="0"/>
     <text x="_Middle+46" y="_Middle-170" value="IO0/JTAG_TCK" align="CentreRight" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle+56" y="_Middle-172" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
@@ -228,7 +228,7 @@
     <text x="_Middle+0" y="_Middle+186" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="43" sym:connection_attr="name"/>
     <text x="_Middle-2" y="_Middle+196" value="49" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="43" sym:connection_attr="number"/>
     <line start="_Middle+50x-130y" end="_Middle+60x-130y" sym:connection_id="44"/>
-    <text x="_Middle+46" y="_Middle-130.00000000000003" value="IO4/ISP_Rx" align="CentreRight" size="xxs" sym:connection_id="44" sym:connection_attr="name"/>
+    <text x="_Middle+46" y="_Middle-130.00000000000003" value="IO4/ISP_RX" align="CentreRight" size="xxs" sym:connection_id="44" sym:connection_attr="name"/>
     <text x="_Middle+56" y="_Middle-132.00000000000003" value="5" align="BottomCentre" size="xxs" sym:connection_id="44" sym:connection_attr="number"/>
     <line start="_Middle-10x-200y" end="_Middle-10x-190y" sym:connection_id="45"/>
     <text x="_Middle-10" y="_Middle-186" value="5V" align="CentreRight" size="xxs" rotate="270" sym:connection_id="45" sym:connection_attr="name"/>
@@ -255,7 +255,7 @@
     <text x="_Middle-46" y="_Middle-100" value="LCD_D4" align="CentreLeft" size="xxs" sym:connection_id="52" sym:connection_attr="name"/>
     <text x="_Middle-56" y="_Middle-102" value="59" align="BottomCentre" size="xxs" sym:connection_id="52" sym:connection_attr="number"/>
     <line start="_Middle+50x-120y" end="_Middle+60x-120y" sym:connection_id="53"/>
-    <text x="_Middle+46" y="_Middle-120" value="IO5/ISP_Tx" align="CentreRight" size="xxs" sym:connection_id="53" sym:connection_attr="name"/>
+    <text x="_Middle+46" y="_Middle-120" value="IO5/ISP_TX" align="CentreRight" size="xxs" sym:connection_id="53" sym:connection_attr="name"/>
     <text x="_Middle+56" y="_Middle-122" value="6" align="BottomCentre" size="xxs" sym:connection_id="53" sym:connection_attr="number"/>
     <line start="_Middle-60x-110y" end="_Middle-50x-110y" sym:connection_id="54"/>
     <text x="_Middle-46" y="_Middle-110.00000000000001" value="LCD_D3" align="CentreLeft" size="xxs" sym:connection_id="54" sym:connection_attr="name"/>
