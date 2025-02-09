@@ -2,7 +2,7 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="LED 45deg"/>
-    <meta name="version" value="0.1.1"/>
+    <meta name="version" value="0.1.2"/>
     <meta name="guid" value="7d07609c-873d-44c7-bbd3-55e369ae5a3a"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
@@ -13,6 +13,7 @@
     <meta name="ki_fp_filters" value="LED* LED_SMD:* LED_THT:*"/>
     <property name="Reference" type="string" default="D" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="LED_45deg" serialize="value" display="Value"/>
+    <property name="Sim.Pins" type="string" default="1=K 2=A" serialize="sim.pins" display="Sim.Pins"/>
     <flags>
       <option>HorizontalOnly</option>
       <option>MiddleMustAlign</option>
@@ -33,6 +34,7 @@
     <path start="_Middle+0x+0y" data="M-5,-0 L0,-5 L2.5,2.5 L-5,-0"/>
     <text x="_Middle+5" y="_Middle-10" value="$Reference" align="CentreLeft" size="xxs"/>
     <text x="_Middle+5" y="_Middle+0" value="$Value" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Sim.Pins" align="CentreCentre" size="xxs"/>
     <line start="_Middle+10x+10y" end="_Middle+10x+10y" sym:connection_id="0"/>
     <line start="_Middle-10x-10y" end="_Middle-10x-10y" sym:connection_id="1"/>
   </render>
