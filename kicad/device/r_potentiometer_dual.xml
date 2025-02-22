@@ -2,11 +2,10 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="R Potentiometer Dual"/>
-    <meta name="version" value="0.2.1"/>
+    <meta name="version" value="0.3.1"/>
     <meta name="guid" value="bb3f2dc1-85d4-42ef-9238-fc1b4ce8272a"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
-    <meta name="canresize" value="false"/>
     <meta name="minsize" value="80"/>
     <meta name="description" value="Dual potentiometer"/>
     <meta name="keywords" value="resistor variable"/>
@@ -14,23 +13,25 @@
     <property name="Reference" type="string" default="RV" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="R_Potentiometer_Dual" serialize="value" display="Value"/>
     <flags>
+      <option>NoResize</option>
       <option>HorizontalOnly</option>
       <option>MiddleMustAlign</option>
     </flags>
   </declaration>
   <connections>
-    <connection name="pin1" start="_Middle-40x+10y" end="_Middle-35x+10y" edge="start" sym:connection_id="0"/>
-    <connection name="pin2" start="_Middle-25x-10y" end="_Middle-25x+0y" edge="start" sym:connection_id="1"/>
-    <connection name="pin3" start="_Middle-15x+10y" end="_Middle-10x+10y" edge="end" sym:connection_id="2"/>
-    <connection name="pin4" start="_Middle+10x+10y" end="_Middle+15x+10y" edge="start" sym:connection_id="3"/>
-    <connection name="pin5" start="_Middle+25x-10y" end="_Middle+25x+0y" edge="start" sym:connection_id="4"/>
-    <connection name="pin6" start="_Middle+35x+10y" end="_Middle+40x+10y" edge="end" sym:connection_id="5"/>
+    <connection name="1" start="_Middle-40x+10y" end="_Middle-35x+10y" edge="start" sym:connection_id="0"/>
+    <connection name="2" start="_Middle-25x-10y" end="_Middle-25x+0y" edge="start" sym:connection_id="1"/>
+    <connection name="3" start="_Middle-15x+10y" end="_Middle-10x+10y" edge="end" sym:connection_id="2"/>
+    <connection name="4" start="_Middle+10x+10y" end="_Middle+15x+10y" edge="start" sym:connection_id="3"/>
+    <connection name="5" start="_Middle+25x-10y" end="_Middle+25x+0y" edge="start" sym:connection_id="4"/>
+    <connection name="6" start="_Middle+35x+10y" end="_Middle+40x+10y" edge="end" sym:connection_id="5"/>
   </connections>
   <render>
     <rect location="_Middle-35x+6y" width="20" height="8"/>
     <path start="_Middle+0x+0y" data="M-25,-0 L-25,4"/>
     <path start="_Middle+0x+0y" data="M-25,-0 L-25,4"/>
     <path start="_Middle+0x+0y" data="M-25,-0 L-23,-2"/>
+    <path start="_Middle+0x+0y" data="M-25,5.5 L-27,1 L-23,1 L-25,5.5" fill="true"/>
     <path start="_Middle+0x+0y" data="M-22,-2 L-20,-2"/>
     <path start="_Middle+0x+0y" data="M-18,-2 L-16,-2"/>
     <path start="_Middle+0x+0y" data="M-14,-2 L-12,-2"/>
@@ -41,27 +42,32 @@
     <path start="_Middle+0x+0y" data="M6,-2 L8,-2"/>
     <path start="_Middle+0x+0y" data="M10,-2 L12,-2"/>
     <path start="_Middle+0x+0y" data="M14,-2 L16,-2"/>
+    <rect location="_Middle+15x+6y" width="20" height="8"/>
     <path start="_Middle+0x+0y" data="M18,-2 L20,-2"/>
     <path start="_Middle+0x+0y" data="M22,-2 L24,-2"/>
     <path start="_Middle+0x+0y" data="M25,-0 L25,4"/>
     <path start="_Middle+0x+0y" data="M25,-0 L25,4"/>
-    <path start="_Middle+0x+0y" data="M26,-2 L27,-2 L25,-0"/>
-    <path start="_Middle+0x+0y" data="M-25,5.5 L-27,1 L-23,1 L-25,5.5" fill="true"/>
     <path start="_Middle+0x+0y" data="M25,5.5 L23,1 L27,1 L25,5.5" fill="true"/>
-    <rect location="_Middle+15x+6y" width="20" height="8"/>
+    <path start="_Middle+0x+0y" data="M26,-2 L27,-2 L25,-0"/>
     <text x="_Middle+0" y="_Middle-15" value="$Reference" align="CentreCentre" size="xxs"/>
     <text x="_Middle+0" y="_Middle-7.5" value="$Value" align="CentreCentre" size="xxs"/>
     <line start="_Middle-40x+10y" end="_Middle-35x+10y" sym:connection_id="0"/>
+    <text x="_Middle-31" y="_Middle+10" value="1" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-38.5" y="_Middle+8" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
     <line start="_Middle-25x-10y" end="_Middle-25x+0y" sym:connection_id="1"/>
+    <text x="_Middle-25" y="_Middle+4" value="2" align="CentreRight" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
     <text x="_Middle-27" y="_Middle-6" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
     <line start="_Middle-15x+10y" end="_Middle-10x+10y" sym:connection_id="2"/>
+    <text x="_Middle-19" y="_Middle+10" value="3" align="CentreRight" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
     <text x="_Middle-11.5" y="_Middle+8" value="3" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
     <line start="_Middle+10x+10y" end="_Middle+15x+10y" sym:connection_id="3"/>
+    <text x="_Middle+19" y="_Middle+10" value="4" align="CentreLeft" size="xxs" sym:connection_id="3" sym:connection_attr="name"/>
     <text x="_Middle+11.5" y="_Middle+8" value="4" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
     <line start="_Middle+25x-10y" end="_Middle+25x+0y" sym:connection_id="4"/>
+    <text x="_Middle+25" y="_Middle+4" value="5" align="CentreRight" size="xxs" rotate="270" sym:connection_id="4" sym:connection_attr="name"/>
     <text x="_Middle+23" y="_Middle-6" value="5" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="4" sym:connection_attr="number"/>
     <line start="_Middle+35x+10y" end="_Middle+40x+10y" sym:connection_id="5"/>
+    <text x="_Middle+31" y="_Middle+10" value="6" align="CentreRight" size="xxs" sym:connection_id="5" sym:connection_attr="name"/>
     <text x="_Middle+38.5" y="_Middle+8" value="6" align="BottomCentre" size="xxs" sym:connection_id="5" sym:connection_attr="number"/>
   </render>
 </component>

@@ -6,13 +6,13 @@
     <meta name="guid" value="10336d3a-d12d-46da-a87c-9f4c17c4e6f9"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
-    <meta name="canresize" value="false"/>
     <meta name="minsize" value="120"/>
     <meta name="description" value="One-piece EMI RF shielding cabinet"/>
     <meta name="keywords" value="RF EMI shielding cabinet"/>
     <property name="Reference" type="string" default="J" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="RFShield_OnePiece" serialize="value" display="Value"/>
     <flags>
+      <option>NoResize</option>
       <option>HorizontalOnly</option>
       <option>MiddleMustAlign</option>
     </flags>
@@ -21,15 +21,17 @@
     <connection name="shield" start="_Middle+0x+30y" end="_Middle+0x+40y" edge="end" sym:connection_id="0"/>
   </connections>
   <render>
-    <path start="_Middle+0x+0y" data="M-60,20 L-60,10"/>
-    <path start="_Middle+0x+0y" data="M-60,5 L-60,-5"/>
+    <path start="_Middle+0x+0y" data="M-60,-25 L-60,-30 L-55.00000000000001,-30"/>
     <path start="_Middle+0x+0y" data="M-60,-10 L-60,-20"/>
+    <path start="_Middle+0x+0y" data="M-60,5 L-60,-5"/>
+    <path start="_Middle+0x+0y" data="M-60,20 L-60,10"/>
+    <path start="_Middle+0x+0y" data="M-55.00000000000001,30 L-60,30 L-60,25"/>
     <path start="_Middle+0x+0y" data="M-50,-30 L-40,-30"/>
     <path start="_Middle+0x+0y" data="M-40,30 L-50,30"/>
-    <path start="_Middle+0x+0y" data="M-25,30 L-35,30"/>
     <path start="_Middle+0x+0y" data="M-25,-30 L-35,-30"/>
-    <path start="_Middle+0x+0y" data="M-10,30 L-20,30"/>
+    <path start="_Middle+0x+0y" data="M-25,30 L-35,30"/>
     <path start="_Middle+0x+0y" data="M-10,-30 L-20,-30"/>
+    <path start="_Middle+0x+0y" data="M-10,30 L-20,30"/>
     <path start="_Middle+0x+0y" data="M-5,30 L5,30"/>
     <path start="_Middle+0x+0y" data="M5,-30 L-5,-30"/>
     <path start="_Middle+0x+0y" data="M10,30 L20,30"/>
@@ -38,13 +40,11 @@
     <path start="_Middle+0x+0y" data="M35,-30 L25,-30"/>
     <path start="_Middle+0x+0y" data="M40,30 L50,30"/>
     <path start="_Middle+0x+0y" data="M50,-30 L40,-30"/>
-    <path start="_Middle+0x+0y" data="M60,20 L60,10"/>
-    <path start="_Middle+0x+0y" data="M60,5 L60,-5"/>
-    <path start="_Middle+0x+0y" data="M60,-10 L60,-20"/>
-    <path start="_Middle+0x+0y" data="M-60,-25 L-60,-30 L-55.00000000000001,-30"/>
-    <path start="_Middle+0x+0y" data="M-55.00000000000001,30 L-60,30 L-60,25"/>
     <path start="_Middle+0x+0y" data="M55.00000000000001,30 L60,30 L60,25"/>
     <path start="_Middle+0x+0y" data="M60,-25 L60,-30 L55.00000000000001,-30"/>
+    <path start="_Middle+0x+0y" data="M60,-10 L60,-20"/>
+    <path start="_Middle+0x+0y" data="M60,5 L60,-5"/>
+    <path start="_Middle+0x+0y" data="M60,20 L60,10"/>
     <text x="_Middle+0" y="_Middle-20" value="$Reference" align="CentreCentre" size="xxs"/>
     <text x="_Middle+0" y="_Middle-10" value="$Value" align="CentreCentre" size="xxs"/>
     <line start="_Middle+0x+30y" end="_Middle+0x+40y" sym:connection_id="0"/>

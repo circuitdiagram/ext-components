@@ -2,43 +2,46 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="DelayLine"/>
-    <meta name="version" value="0.2.1"/>
+    <meta name="version" value="0.3.1"/>
     <meta name="guid" value="66e3ceaa-fb48-42be-aa2f-281c719593e0"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
-    <meta name="canresize" value="false"/>
     <meta name="minsize" value="40"/>
     <meta name="description" value="Delay line"/>
     <meta name="keywords" value="delay propagation retard impedance"/>
     <property name="Reference" type="string" default="L" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="DelayLine" serialize="value" display="Value"/>
     <flags>
+      <option>NoResize</option>
       <option>HorizontalOnly</option>
       <option>MiddleMustAlign</option>
     </flags>
   </declaration>
   <connections>
-    <connection name="pin1" start="_Middle+0x-30y" end="_Middle+0x-20y" edge="start" sym:connection_id="0"/>
-    <connection name="pin2" start="_Middle+0x+20y" end="_Middle+0x+30y" edge="end" sym:connection_id="1"/>
-    <connection name="pin3" start="_Middle-20x+0y" end="_Middle-10x+0y" edge="start" sym:connection_id="2"/>
+    <connection name="commun" start="_Middle-20x+0y" end="_Middle-10x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="1" start="_Middle+0x-30y" end="_Middle+0x-20y" edge="start" sym:connection_id="1"/>
+    <connection name="2" start="_Middle+0x+20y" end="_Middle+0x+30y" edge="end" sym:connection_id="2"/>
   </connections>
   <render>
-    <path start="_Middle+0x+0y" data="M0,19.9 C2.706778739942214,19.86160232812678 4.906933342698824,17.7054508174253 5,15"/>
-    <path start="_Middle+0x+0y" data="M0,9.9 C2.706778739942213,9.861602328126777 4.906933342698822,7.7054508174253 5,5"/>
     <path start="_Middle+0x+0y" data="M-10,-20 L-10,20"/>
-    <path start="_Middle+0x+0y" data="M0,-0.1 C2.7067787399422123,-0.13839767187322494 4.906933342698821,-2.2945491825747006 5,-5"/>
-    <path start="_Middle+0x+0y" data="M0,-10.1 C2.7067787399422114,-10.138397671873228 4.906933342698819,-12.294549182574704 5,-15.000000000000002"/>
-    <path start="_Middle+0x+0y" data="M5,15 C4.999809866286402,12.238655010643354 2.761344989356646,10.000190133713598 0.0000000000000005327227374507526,10"/>
-    <path start="_Middle+0x+0y" data="M5,5 C4.9998098662864,2.2386550106433543 2.761344989356646,0.00019013371360010467 0.000000000000000532993787993874,-0.0000000000000008881784197001252"/>
-    <path start="_Middle+0x+0y" data="M5,-5 C4.999809866286403,-7.761344989356647 2.761344989356647,-9.999809866286402 0.000000000000000532397476799007,-10"/>
-    <path start="_Middle+0x+0y" data="M5,-15 C4.999809866286406,-17.761344989356648 2.761344989356648,-19.999809866286405 0.00000000000000008744090521095593,-20"/>
+    <path start="_Middle+0x+0y" data="M5,-15 C2.293056301465059,-14.9619983255133 0.09267407287079976,-12.805623741490926 0,-10.1"/>
+    <path start="_Middle+0x+0y" data="M5,-5 C2.2930563014650582,-4.961998325513301 0.09267407287079799,-2.8056237414909257 0,-0.09999999999999912"/>
+    <path start="_Middle+0x+0y" data="M5,5 C2.2930563014650582,5.038001674486701 0.09267407287079976,7.194376258509074 -0.0000000000000008881784197001252,9.9"/>
+    <path start="_Middle+0x+0y" data="M5,15 C2.293056301465056,15.038001674486694 0.09267407287079266,17.19437625850907 0,19.9"/>
+    <path start="_Middle+0x+0y" data="M0,-20 C0.00019013371359299924,-17.238655010643352 2.2386550106433516,-15.000190133713595 5.000000000000001,-15"/>
+    <path start="_Middle+0x+0y" data="M0,-10 C0.00019013371359744013,-7.2386550106433525 2.2386550106433534,-5.000190133713596 5,-4.999999999999998"/>
+    <path start="_Middle+0x+0y" data="M0,-0 C0.00019013371360099285,2.7613449893566453 2.2386550106433547,4.9998098662864 5,5"/>
+    <path start="_Middle+0x+0y" data="M0,10 C0.00019013371360099285,12.761344989356644 2.2386550106433547,14.9998098662864 5,15"/>
     <text x="_Middle+10" y="_Middle-5" value="$Reference" align="CentreLeft" size="xxs"/>
     <text x="_Middle+10" y="_Middle+5" value="$Value" align="CentreLeft" size="xxs"/>
-    <line start="_Middle+0x-30y" end="_Middle+0x-20y" sym:connection_id="0"/>
-    <text x="_Middle-2" y="_Middle-26" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
-    <line start="_Middle+0x+20y" end="_Middle+0x+30y" sym:connection_id="1"/>
-    <text x="_Middle-2" y="_Middle+26" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
-    <line start="_Middle-20x+0y" end="_Middle-10x+0y" sym:connection_id="2"/>
-    <text x="_Middle-16" y="_Middle-2" value="3" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle-20x+0y" end="_Middle-10x+0y" sym:connection_id="0"/>
+    <text x="_Middle-6" y="_Middle+0" value="COMMUN" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-16" y="_Middle-2" value="3" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+0x-30y" end="_Middle+0x-20y" sym:connection_id="1"/>
+    <text x="_Middle+0" y="_Middle-16" value="1" align="CentreRight" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle-26" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+0x+20y" end="_Middle+0x+30y" sym:connection_id="2"/>
+    <text x="_Middle+0" y="_Middle+16" value="2" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+26" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
   </render>
 </component>

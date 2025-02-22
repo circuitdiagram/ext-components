@@ -6,13 +6,13 @@
     <meta name="guid" value="9e9d7d30-aa04-4053-b864-c0f26ed5ac94"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
-    <meta name="canresize" value="false"/>
     <meta name="minsize" value="20"/>
     <meta name="description" value="Single pole circuit breaker"/>
     <meta name="keywords" value="CB"/>
     <property name="Reference" type="string" default="CB" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="CircuitBreaker_1P" serialize="value" display="Value"/>
     <flags>
+      <option>NoResize</option>
       <option>HorizontalOnly</option>
       <option>MiddleMustAlign</option>
     </flags>
@@ -22,8 +22,8 @@
     <connection name="pin2" start="_Middle+0x+20y" end="_Middle+0x+30y" edge="end" sym:connection_id="1"/>
   </connections>
   <render>
-    <path start="_Middle+0x+0y" data="M0,20 L0,15"/>
     <path start="_Middle+0x+0y" data="M0,15 L-10,-15"/>
+    <path start="_Middle+0x+0y" data="M0,20 L0,15"/>
     <path start="_Middle+0x+0y" data="M-2.5,-17.5 L2.5,-12.5"/>
     <path start="_Middle+0x+0y" data="M0,-20 L0,-15"/>
     <path start="_Middle+0x+0y" data="M2.5,-17.5 L-2.5,-12.5"/>

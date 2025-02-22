@@ -2,11 +2,10 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="R Potentiometer Trim"/>
-    <meta name="version" value="0.2.1"/>
+    <meta name="version" value="0.3.1"/>
     <meta name="guid" value="dc5edbab-e0f9-4f70-9f42-7ca3a9c2c2fb"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
-    <meta name="canresize" value="false"/>
     <meta name="minsize" value="40"/>
     <meta name="description" value="Trim-potentiometer"/>
     <meta name="keywords" value="resistor variable trimpot trimmer"/>
@@ -14,26 +13,30 @@
     <property name="Reference" type="string" default="RV" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="R_Potentiometer_Trim" serialize="value" display="Value"/>
     <flags>
+      <option>NoResize</option>
       <option>HorizontalOnly</option>
       <option>MiddleMustAlign</option>
     </flags>
   </declaration>
   <connections>
-    <connection name="pin1" start="_Middle+0x-15y" end="_Middle+0x-10y" edge="start" sym:connection_id="0"/>
-    <connection name="pin2" start="_Middle+10x+0y" end="_Middle+15x+0y" edge="end" sym:connection_id="1"/>
-    <connection name="pin3" start="_Middle+0x+10y" end="_Middle+0x+15y" edge="end" sym:connection_id="2"/>
+    <connection name="1" start="_Middle+0x-15y" end="_Middle+0x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="3" start="_Middle+0x+10y" end="_Middle+0x+15y" edge="end" sym:connection_id="1"/>
+    <connection name="2" start="_Middle+10x+0y" end="_Middle+15x+0y" edge="end" sym:connection_id="2"/>
   </connections>
   <render>
+    <rect location="_Middle-4x-10y" width="8" height="20"/>
     <path start="_Middle+0x+0y" data="M6,-3 L6,3"/>
     <path start="_Middle+0x+0y" data="M10,-0 L6,-0"/>
-    <rect location="_Middle-4x-10y" width="8" height="20"/>
     <text x="_Middle-17.5" y="_Middle+0" value="$Reference" align="CentreCentre" size="xxs" rotate="90"/>
     <text x="_Middle-10" y="_Middle+0" value="$Value" align="CentreCentre" size="xxs" rotate="90"/>
     <line start="_Middle+0x-15y" end="_Middle+0x-10y" sym:connection_id="0"/>
+    <text x="_Middle+0" y="_Middle-6" value="1" align="CentreRight" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-2" y="_Middle-13.5" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
-    <line start="_Middle+10x+0y" end="_Middle+15x+0y" sym:connection_id="1"/>
-    <text x="_Middle+13.5" y="_Middle-2" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
-    <line start="_Middle+0x+10y" end="_Middle+0x+15y" sym:connection_id="2"/>
-    <text x="_Middle-2" y="_Middle+13.5" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+0x+10y" end="_Middle+0x+15y" sym:connection_id="1"/>
+    <text x="_Middle+0" y="_Middle+6" value="3" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+13.5" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+10x+0y" end="_Middle+15x+0y" sym:connection_id="2"/>
+    <text x="_Middle+6" y="_Middle+0" value="2" align="CentreRight" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle+13.5" y="_Middle-2" value="2" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
   </render>
 </component>

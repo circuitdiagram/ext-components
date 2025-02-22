@@ -2,33 +2,35 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="Earphone"/>
-    <meta name="version" value="0.2.1"/>
+    <meta name="version" value="0.3.1"/>
     <meta name="guid" value="14db59cf-84b7-4eb6-9618-c5e91600f2dc"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
-    <meta name="canresize" value="false"/>
     <meta name="minsize" value="20"/>
     <meta name="description" value="Earphone, polarized"/>
     <meta name="keywords" value="earphone speaker headphone"/>
     <property name="Reference" type="string" default="LS" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="Earphone" serialize="value" display="Value"/>
     <flags>
+      <option>NoResize</option>
       <option>HorizontalOnly</option>
       <option>MiddleMustAlign</option>
     </flags>
   </declaration>
   <connections>
-    <connection name="pin1" start="_Middle+0x+0y" end="_Middle+0x+10y" edge="end" sym:connection_id="0"/>
-    <connection name="pin2" start="_Middle+0x-20y" end="_Middle+0x-10y" edge="start" sym:connection_id="1"/>
+    <connection name="pos" start="_Middle+0x-20y" end="_Middle+0x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="neg" start="_Middle+0x+0y" end="_Middle+0x+10y" edge="end" sym:connection_id="1"/>
   </connections>
   <render>
-    <rect location="_Middle+5x-12.5y" width="2.5" height="15"/>
     <rect location="_Middle-5x-10y" width="10" height="10"/>
+    <rect location="_Middle+5x-12.5y" width="2.5" height="15"/>
     <text x="_Middle+10" y="_Middle-15" value="$Reference" align="CentreLeft" size="xxs"/>
     <text x="_Middle+10" y="_Middle-7.5" value="$Value" align="CentreLeft" size="xxs"/>
-    <line start="_Middle+0x+0y" end="_Middle+0x+10y" sym:connection_id="0"/>
-    <text x="_Middle-2" y="_Middle+6" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
-    <line start="_Middle+0x-20y" end="_Middle+0x-10y" sym:connection_id="1"/>
-    <text x="_Middle-2" y="_Middle-16" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+0x-20y" end="_Middle+0x-10y" sym:connection_id="0"/>
+    <text x="_Middle+0" y="_Middle-6" value="+" align="CentreRight" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle-16" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+0x+0y" end="_Middle+0x+10y" sym:connection_id="1"/>
+    <text x="_Middle+0" y="_Middle-4" value="-" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+6" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
   </render>
 </component>

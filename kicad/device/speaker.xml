@@ -2,24 +2,24 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="Speaker"/>
-    <meta name="version" value="0.2.1"/>
+    <meta name="version" value="0.3.1"/>
     <meta name="guid" value="f48e806e-b312-4056-9c5f-4979ca258ee5"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
-    <meta name="canresize" value="false"/>
     <meta name="minsize" value="40"/>
     <meta name="description" value="Speaker"/>
     <meta name="keywords" value="speaker sound"/>
     <property name="Reference" type="string" default="LS" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="Speaker" serialize="value" display="Value"/>
     <flags>
+      <option>NoResize</option>
       <option>HorizontalOnly</option>
       <option>MiddleMustAlign</option>
     </flags>
   </declaration>
   <connections>
-    <connection name="pin1" start="_Middle-20x+0y" end="_Middle-10x+0y" edge="start" sym:connection_id="0"/>
-    <connection name="pin2" start="_Middle-20x+10y" end="_Middle-10x+10y" edge="start" sym:connection_id="1"/>
+    <connection name="1" start="_Middle-20x+0y" end="_Middle-10x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="2" start="_Middle-20x+10y" end="_Middle-10x+10y" edge="start" sym:connection_id="1"/>
   </connections>
   <render>
     <rect location="_Middle-10x-5y" width="14" height="20"/>
@@ -27,8 +27,10 @@
     <text x="_Middle+5" y="_Middle-22.5" value="$Reference" align="CentreRight" size="xxs"/>
     <text x="_Middle+5" y="_Middle-15" value="$Value" align="CentreRight" size="xxs"/>
     <line start="_Middle-20x+0y" end="_Middle-10x+0y" sym:connection_id="0"/>
+    <text x="_Middle-6" y="_Middle+0" value="1" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-16" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
     <line start="_Middle-20x+10y" end="_Middle-10x+10y" sym:connection_id="1"/>
+    <text x="_Middle-6" y="_Middle+10" value="2" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
     <text x="_Middle-16" y="_Middle+8" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
   </render>
 </component>

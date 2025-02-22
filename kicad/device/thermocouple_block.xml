@@ -2,11 +2,10 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="Thermocouple Block"/>
-    <meta name="version" value="0.2.1"/>
+    <meta name="version" value="0.3.1"/>
     <meta name="guid" value="d41b6f5e-c841-4c8e-84cd-a3c4ce12edfe"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
-    <meta name="canresize" value="false"/>
     <meta name="minsize" value="40"/>
     <meta name="description" value="Thermocouple with isothermal block"/>
     <meta name="keywords" value="thermocouple temperature sensor cold junction"/>
@@ -14,6 +13,7 @@
     <property name="Reference" type="string" default="TC" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="Thermocouple_Block" serialize="value" display="Value"/>
     <flags>
+      <option>NoResize</option>
       <option>HorizontalOnly</option>
       <option>MiddleMustAlign</option>
     </flags>
@@ -23,26 +23,28 @@
     <connection name="neg" start="_Middle+10x+10y" end="_Middle+20x+10y" edge="end" sym:connection_id="1"/>
   </connections>
   <render>
-    <ellipse centre="_Middle-7x+0y" rx="1" ry="1" fill="true"/>
     <path start="_Middle+0x+0y" data="M-11,4 L-12,5"/>
     <path start="_Middle+0x+0y" data="M-9,2 L-10,3"/>
+    <ellipse centre="_Middle-7x+0y" rx="1" ry="1" fill="true"/>
     <path start="_Middle+0x+0y" data="M-7,-0 L-8,1"/>
     <path start="_Middle+0x+0y" data="M-5,-2 L-6,-1"/>
     <path start="_Middle+0x+0y" data="M-3,-4 L-4,-3"/>
     <path start="_Middle+0x+0y" data="M-1,-6 L-2,-5"/>
     <path start="_Middle+0x+0y" data="M1,-8 L0,-7"/>
     <path start="_Middle+0x+0y" data="M3,-10 L2,-9"/>
-    <path start="_Middle+0x+0y" data="M5,10 L4,10"/>
-    <path start="_Middle+0x+0y" data="M5,-10 L3,-10"/>
-    <path start="_Middle+0x+0y" data="M6,10 L3,10 L-12,-5"/>
     <rect location="_Middle+4x-14y" width="8" height="28"/>
-    <ellipse centre="_Middle+8x+10y" rx="2" ry="2"/>
+    <path start="_Middle+0x+0y" data="M5,-10 L3,-10"/>
+    <path start="_Middle+0x+0y" data="M5,10 L4,10"/>
+    <path start="_Middle+0x+0y" data="M6,10 L3,10 L-12,-5"/>
     <ellipse centre="_Middle+8x-10y" rx="2" ry="2"/>
+    <ellipse centre="_Middle+8x+10y" rx="2" ry="2"/>
     <text x="_Middle-12" y="_Middle-15" value="$Reference" align="CentreCentre" size="xxs"/>
     <text x="_Middle-20" y="_Middle+16" value="$Value" align="CentreLeft" size="xxs"/>
     <line start="_Middle+10x-10y" end="_Middle+20x-10y" sym:connection_id="0"/>
     <text x="_Middle+6" y="_Middle-10" value="+" align="CentreRight" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle+16" y="_Middle-12" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
     <line start="_Middle+10x+10y" end="_Middle+20x+10y" sym:connection_id="1"/>
     <text x="_Middle+6" y="_Middle+10" value="-" align="CentreRight" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle+16" y="_Middle+8" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
   </render>
 </component>

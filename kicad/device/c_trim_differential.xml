@@ -6,13 +6,13 @@
     <meta name="guid" value="c5a59ebc-8bc1-4244-814a-8fd37aabe5f3"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
-    <meta name="canresize" value="false"/>
     <meta name="minsize" value="40"/>
     <meta name="description" value="Differential variable capacitor with two stators"/>
     <meta name="keywords" value="trimmer capacitor"/>
     <property name="Reference" type="string" default="C" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="C_Trim_Differential" serialize="value" display="Value"/>
     <flags>
+      <option>NoResize</option>
       <option>HorizontalOnly</option>
       <option>MiddleMustAlign</option>
     </flags>
@@ -23,14 +23,14 @@
     <connection name="pin3" start="_Middle+10x-15y" end="_Middle+10x-5y" edge="start" sym:connection_id="2"/>
   </connections>
   <render>
-    <path start="_Middle+0x+0y" data="M-16,3 L16,3"/>
     <path start="_Middle+0x+0y" data="M-16,-3 L-4,-3"/>
+    <path start="_Middle+0x+0y" data="M-16,3 L16,3"/>
     <path start="_Middle+0x+0y" data="M-10,-5 L-10,-3"/>
     <path start="_Middle+0x+0y" data="M-6,-9 L11,8"/>
+    <path start="_Middle+0x+0y" data="M-3,-9 L-6,-9 L-6,-6"/>
     <path start="_Middle+0x+0y" data="M0,5 L0,3"/>
     <path start="_Middle+0x+0y" data="M4,-3 L16,-3"/>
     <path start="_Middle+0x+0y" data="M10,-5 L10,-3"/>
-    <path start="_Middle+0x+0y" data="M-3,-9 L-6,-9 L-6,-6"/>
     <text x="_Middle+20" y="_Middle-5" value="$Reference" align="CentreLeft" size="xxs"/>
     <text x="_Middle+20" y="_Middle+2.5" value="$Value" align="CentreLeft" size="xxs"/>
     <line start="_Middle-10x-15y" end="_Middle-10x-5y" sym:connection_id="0"/>

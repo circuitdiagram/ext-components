@@ -6,13 +6,13 @@
     <meta name="guid" value="04e16672-f772-4dc7-8461-7e4a7dddca22"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
-    <meta name="canresize" value="false"/>
     <meta name="minsize" value="70"/>
     <meta name="description" value="Triple pole circuit breaker, US symbol"/>
     <meta name="keywords" value="CB 3P"/>
     <property name="Reference" type="string" default="CB" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="CircuitBreaker_3P_US" serialize="value" display="Value"/>
     <flags>
+      <option>NoResize</option>
       <option>HorizontalOnly</option>
       <option>MiddleMustAlign</option>
     </flags>
@@ -26,22 +26,22 @@
     <connection name="pin6" start="_Middle+20x+20y" end="_Middle+20x+30y" edge="end" sym:connection_id="5"/>
   </connections>
   <render>
-    <ellipse centre="_Middle+0x+17.5y" rx="2.5" ry="2.5"/>
+    <path start="_Middle+0x+0y" data="M7.5,-15 C2.7787401574803283,-5.557257362514726 2.778740157480321,5.557257362514719 7.5,14.99999999999999"/>
     <path start="_Middle+0x+0y" data="M-9,-0 L-5,-0"/>
     <path start="_Middle+0x+0y" data="M-3,-0 L1,-0"/>
+    <ellipse centre="_Middle+0x-17.5y" rx="2.5" ry="2.5"/>
+    <ellipse centre="_Middle+0x+17.5y" rx="2.5" ry="2.5"/>
     <path start="_Middle+0x+0y" data="M3,-0 L7,-0"/>
     <path start="_Middle+0x+0y" data="M9,-0 L13,-0"/>
     <path start="_Middle+0x+0y" data="M15,-0 L19,-0"/>
     <path start="_Middle+0x+0y" data="M21,-0 L25,-0"/>
     <path start="_Middle+0x+0y" data="M27,-0 L31,-0"/>
-    <ellipse centre="_Middle+0x-17.5y" rx="2.5" ry="2.5"/>
-    <path start="_Middle+0x+0y" data="M7.5,15 C12.221259842519682,5.5572573625147275 12.221259842519682,-5.5572573625147275 7.4999999999999964,-15"/>
-    <ellipse centre="_Middle-20x+17.5y" rx="2.5" ry="2.5"/>
+    <path start="_Middle+0x+0y" data="M-12.5,-15 C-17.221259842519682,-5.557257362514731 -17.221259842519682,5.55725736251472 -12.5,14.999999999999995"/>
     <ellipse centre="_Middle-20x-17.5y" rx="2.5" ry="2.5"/>
-    <path start="_Middle+0x+0y" data="M-12.5,15 C-7.778740157480321,5.557257362514724 -7.778740157480321,-5.557257362514726 -12.500000000000007,-14.999999999999998"/>
-    <ellipse centre="_Middle+20x+17.5y" rx="2.5" ry="2.5"/>
+    <ellipse centre="_Middle-20x+17.5y" rx="2.5" ry="2.5"/>
+    <path start="_Middle+0x+0y" data="M27.500000000000004,-15 C22.77874015748032,-5.5572573625147275 22.77874015748032,5.557257362514719 27.5,14.999999999999991"/>
     <ellipse centre="_Middle+20x-17.5y" rx="2.5" ry="2.5"/>
-    <path start="_Middle+0x+0y" data="M27.500000000000004,15 C32.221259842519686,5.557257362514726 32.221259842519686,-5.557257362514726 27.500000000000004,-15"/>
+    <ellipse centre="_Middle+20x+17.5y" rx="2.5" ry="2.5"/>
     <text x="_Middle+40" y="_Middle+0" value="$Reference" align="CentreLeft" size="xxs"/>
     <text x="_Middle+40" y="_Middle-10" value="$Value" align="CentreLeft" size="xxs"/>
     <line start="_Middle-20x-30y" end="_Middle-20x-20y" sym:connection_id="0"/>

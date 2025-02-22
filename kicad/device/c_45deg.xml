@@ -2,11 +2,10 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="C 45deg"/>
-    <meta name="version" value="0.1.1"/>
+    <meta name="version" value="0.2.1"/>
     <meta name="guid" value="8e04e2bb-e7d5-4d75-9d5b-95375dbdb5cd"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
-    <meta name="canresize" value="false"/>
     <meta name="minsize" value="40"/>
     <meta name="description" value="Unpolarized capacitor, rotated by 45°"/>
     <meta name="keywords" value="capacitor cap"/>
@@ -14,13 +13,14 @@
     <property name="Reference" type="string" default="C" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="C_45deg" serialize="value" display="Value"/>
     <flags>
+      <option>NoResize</option>
       <option>HorizontalOnly</option>
       <option>MiddleMustAlign</option>
     </flags>
   </declaration>
   <connections>
-    <connection name="pin_idx_1" start="_Middle+10x+10y" end="_Middle+10x+10y" edge="end" sym:connection_id="0"/>
-    <connection name="pin_idx_2" start="_Middle-10x-10y" end="_Middle-10x-10y" edge="start" sym:connection_id="1"/>
+    <connection name="pin2" start="_Middle-10x-10y" end="_Middle-10x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="pin1" start="_Middle+10x+10y" end="_Middle+10x+10y" edge="end" sym:connection_id="1"/>
   </connections>
   <render>
     <path start="_Middle+0x+0y" data="M-10,-10 L-1.5,-1.5"/>
@@ -29,7 +29,9 @@
     <path start="_Middle+0x+0y" data="M5,-2.5 L-2.5,5"/>
     <text x="_Middle+15" y="_Middle-10" value="$Reference" align="CentreCentre" size="xxs"/>
     <text x="_Middle+25" y="_Middle+0" value="$Value" align="CentreCentre" size="xxs"/>
-    <line start="_Middle+10x+10y" end="_Middle+10x+10y" sym:connection_id="0"/>
-    <line start="_Middle-10x-10y" end="_Middle-10x-10y" sym:connection_id="1"/>
+    <line start="_Middle-10x-10y" end="_Middle-10x-10y" sym:connection_id="0"/>
+    <text x="_Middle-11" y="_Middle-12" value="2" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+10x+10y" end="_Middle+10x+10y" sym:connection_id="1"/>
+    <text x="_Middle+11" y="_Middle+8" value="1" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
   </render>
 </component>

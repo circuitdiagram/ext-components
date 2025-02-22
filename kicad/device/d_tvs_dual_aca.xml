@@ -2,41 +2,44 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="D TVS Dual ACA"/>
-    <meta name="version" value="0.2.1"/>
+    <meta name="version" value="0.3.1"/>
     <meta name="guid" value="4239591a-05d5-4ed9-b5f5-2ec63f1a4cff"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
-    <meta name="canresize" value="false"/>
     <meta name="minsize" value="70"/>
     <meta name="description" value="Bidirectional dual transient-voltage-suppression diode, center on pin 2"/>
     <meta name="keywords" value="diode TVS thyrector"/>
     <property name="Reference" type="string" default="D" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="D_TVS_Dual_ACA" serialize="value" display="Value"/>
     <flags>
+      <option>NoResize</option>
       <option>HorizontalOnly</option>
       <option>MiddleMustAlign</option>
     </flags>
   </declaration>
   <connections>
-    <connection name="pin1" start="_Middle-35x+0y" end="_Middle-25x+0y" edge="start" sym:connection_id="0"/>
-    <connection name="pin2" start="_Middle+0x+5y" end="_Middle+0x+15y" edge="end" sym:connection_id="1"/>
-    <connection name="pin3" start="_Middle+25x+0y" end="_Middle+35x+0y" edge="end" sym:connection_id="2"/>
+    <connection name="a1" start="_Middle-35x+0y" end="_Middle-25x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="common" start="_Middle+0x+5y" end="_Middle+0x+15y" edge="end" sym:connection_id="1"/>
+    <connection name="a2" start="_Middle+25x+0y" end="_Middle+35x+0y" edge="end" sym:connection_id="2"/>
   </connections>
   <render>
     <path start="_Middle+0x+0y" data="M-25,5 L-5,-5 L-5,5 L-25,-5 L-25,5"/>
     <path start="_Middle+0x+0y" data="M5,-5 L5,5 L25,-5 L25,5 L5,-5"/>
     <path start="_Middle+0x+0y" data="M-25,-0 L25,-0"/>
-    <path start="_Middle+0x+0y" data="M0,-0 L0,5"/>
     <path start="_Middle+0x+0y" data="M-13,-5 L-15,-5 L-15,5 L-17,5"/>
-    <path start="_Middle+0x+0y" data="M17,-5 L15,-5 L15,5 L13,5"/>
+    <path start="_Middle+0x+0y" data="M0,-0 L0,5"/>
     <ellipse centre="_Middle+0x+0y" rx="1" ry="1" fill="true"/>
+    <path start="_Middle+0x+0y" data="M17,-5 L15,-5 L15,5 L13,5"/>
     <text x="_Middle+0" y="_Middle-17.5" value="$Reference" align="CentreCentre" size="xxs"/>
     <text x="_Middle+0" y="_Middle-10" value="$Value" align="CentreCentre" size="xxs"/>
     <line start="_Middle-35x+0y" end="_Middle-25x+0y" sym:connection_id="0"/>
+    <text x="_Middle-21" y="_Middle+0" value="A1" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-31" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
     <line start="_Middle+0x+5y" end="_Middle+0x+15y" sym:connection_id="1"/>
+    <text x="_Middle+0" y="_Middle+1" value="common" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
     <text x="_Middle-2" y="_Middle+11" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
     <line start="_Middle+25x+0y" end="_Middle+35x+0y" sym:connection_id="2"/>
+    <text x="_Middle+21" y="_Middle+0" value="A2" align="CentreRight" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
     <text x="_Middle+31" y="_Middle-2" value="3" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
   </render>
 </component>

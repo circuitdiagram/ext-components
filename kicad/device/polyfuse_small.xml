@@ -2,11 +2,10 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="Polyfuse Small"/>
-    <meta name="version" value="0.1.1"/>
+    <meta name="version" value="0.2.1"/>
     <meta name="guid" value="e75a8d92-40da-46d9-bf3e-e7d1c03a0337"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
-    <meta name="canresize" value="false"/>
     <meta name="minsize" value="20"/>
     <meta name="description" value="Resettable fuse, polymeric positive temperature coefficient, small symbol"/>
     <meta name="keywords" value="resettable fuse PTC PPTC polyfuse polyswitch"/>
@@ -14,21 +13,24 @@
     <property name="Reference" type="string" default="F" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="Polyfuse_Small" serialize="value" display="Value"/>
     <flags>
+      <option>NoResize</option>
       <option>HorizontalOnly</option>
       <option>MiddleMustAlign</option>
     </flags>
   </declaration>
   <connections>
-    <connection name="pin_idx_1" start="_Middle+0x-10y" end="_Middle+0x-7.5y" edge="start" sym:connection_id="0"/>
-    <connection name="pin_idx_2" start="_Middle+0x+7.5y" end="_Middle+0x+10y" edge="end" sym:connection_id="1"/>
+    <connection name="pin1" start="_Middle+0x-10y" end="_Middle+0x-7.5y" edge="start" sym:connection_id="0"/>
+    <connection name="pin2" start="_Middle+0x+7.5y" end="_Middle+0x+10y" edge="end" sym:connection_id="1"/>
   </connections>
   <render>
+    <path start="_Middle+0x+0y" data="M-4,-5 L-4,-3 L4,3 L4,5"/>
     <rect location="_Middle-2x-5y" width="4" height="10"/>
     <path start="_Middle+0x+0y" data="M0,-10 L0,10"/>
-    <path start="_Middle+0x+0y" data="M-4,-5 L-4,-3 L4,3 L4,5"/>
     <text x="_Middle-7.5" y="_Middle+0" value="$Reference" align="CentreCentre" size="xxs" rotate="90"/>
     <text x="_Middle+7.5" y="_Middle+0" value="$Value" align="CentreCentre" size="xxs" rotate="90"/>
     <line start="_Middle+0x-10y" end="_Middle+0x-7.5y" sym:connection_id="0"/>
+    <text x="_Middle-2" y="_Middle-9.75" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
     <line start="_Middle+0x+7.5y" end="_Middle+0x+10y" sym:connection_id="1"/>
+    <text x="_Middle-2" y="_Middle+9.75" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
   </render>
 </component>

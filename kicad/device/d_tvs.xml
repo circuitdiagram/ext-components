@@ -2,11 +2,10 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="D TVS"/>
-    <meta name="version" value="0.1.1"/>
+    <meta name="version" value="0.2.1"/>
     <meta name="guid" value="139302a3-6596-4a3a-828f-4e7ab697c17f"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
-    <meta name="canresize" value="false"/>
     <meta name="minsize" value="30"/>
     <meta name="description" value="Bidirectional transient-voltage-suppression diode"/>
     <meta name="keywords" value="diode TVS thyrector"/>
@@ -14,21 +13,26 @@
     <property name="Reference" type="string" default="D" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="D_TVS" serialize="value" display="Value"/>
     <flags>
+      <option>NoResize</option>
       <option>HorizontalOnly</option>
       <option>MiddleMustAlign</option>
     </flags>
   </declaration>
   <connections>
-    <connection name="pin_idx_1" start="_Middle-15x+0y" end="_Middle-5x+0y" edge="start" sym:connection_id="0"/>
-    <connection name="pin_idx_2" start="_Middle+5x+0y" end="_Middle+15x+0y" edge="end" sym:connection_id="1"/>
+    <connection name="a1" start="_Middle-15x+0y" end="_Middle-5x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="a2" start="_Middle+5x+0y" end="_Middle+15x+0y" edge="end" sym:connection_id="1"/>
   </connections>
   <render>
-    <path start="_Middle+0x+0y" data="M5,-0 L-5,-0"/>
-    <path start="_Middle+0x+0y" data="M2,-5 L0,-5 L0,5 L-2,5"/>
     <path start="_Middle+0x+0y" data="M-10,-5 L-10,5 L10,-5 L10,5 L-10,-5"/>
+    <path start="_Middle+0x+0y" data="M2,-5 L0,-5 L0,5 L-2,5"/>
+    <path start="_Middle+0x+0y" data="M5,-0 L-5,-0"/>
     <text x="_Middle+0" y="_Middle-10" value="$Reference" align="CentreCentre" size="xxs"/>
     <text x="_Middle+0" y="_Middle+10" value="$Value" align="CentreCentre" size="xxs"/>
     <line start="_Middle-15x+0y" end="_Middle-5x+0y" sym:connection_id="0"/>
+    <text x="_Middle-1" y="_Middle+0" value="A1" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-11" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
     <line start="_Middle+5x+0y" end="_Middle+15x+0y" sym:connection_id="1"/>
+    <text x="_Middle+1" y="_Middle+0" value="A2" align="CentreRight" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle+11" y="_Middle-2" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
   </render>
 </component>

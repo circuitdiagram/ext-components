@@ -2,11 +2,10 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="D Laser 1A3C"/>
-    <meta name="version" value="0.2.1"/>
+    <meta name="version" value="0.3.1"/>
     <meta name="guid" value="fb879839-5b20-49af-bd5b-37c086c409bd"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
-    <meta name="canresize" value="false"/>
     <meta name="minsize" value="50"/>
     <meta name="description" value="Laser diode, cathode on pin 3, anode on pin 1"/>
     <meta name="keywords" value="opto laserdiode"/>
@@ -14,35 +13,38 @@
     <property name="Reference" type="string" default="LD" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="D_Laser_1A3C" serialize="value" display="Value"/>
     <flags>
+      <option>NoResize</option>
       <option>HorizontalOnly</option>
       <option>MiddleMustAlign</option>
     </flags>
   </declaration>
   <connections>
-    <connection name="pin1" start="_Middle+10x+0y" end="_Middle+20x+0y" edge="end" sym:connection_id="0"/>
-    <connection name="pin3" start="_Middle-30x+0y" end="_Middle-20x+0y" edge="start" sym:connection_id="1"/>
+    <connection name="k" start="_Middle-30x+0y" end="_Middle-20x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="a" start="_Middle+10x+0y" end="_Middle+20x+0y" edge="end" sym:connection_id="1"/>
   </connections>
   <render>
-    <path start="_Middle+0x+0y" data="M-16,-5 L-10,-11"/>
-    <path start="_Middle+0x+0y" data="M-16,-7 L-10,-9"/>
-    <path start="_Middle+0x+0y" data="M-16,-9 L-10,-7"/>
     <path start="_Middle+0x+0y" data="M-16,-11 L-10,-5"/>
+    <path start="_Middle+0x+0y" data="M-16,-9 L-10,-7"/>
+    <path start="_Middle+0x+0y" data="M-16,-7 L-10,-9"/>
+    <path start="_Middle+0x+0y" data="M-16,-5 L-10,-11"/>
     <path start="_Middle+0x+0y" data="M-14,-11 L-12,-5"/>
-    <path start="_Middle+0x+0y" data="M-13,-8 L-13,-4"/>
     <path start="_Middle+0x+0y" data="M-13,-8 L-13,-12"/>
+    <path start="_Middle+0x+0y" data="M-13,-8 L-13,-4"/>
     <path start="_Middle+0x+0y" data="M-12,-11 L-14,-5"/>
     <path start="_Middle+0x+0y" data="M-7,-8 L-17,-8"/>
+    <path start="_Middle+0x+0y" data="M-6,-6 L0,-12 L0,-10 L0,-12 L-2,-12"/>
     <path start="_Middle+0x+0y" data="M-6,-5 L-6,5"/>
-    <path start="_Middle+0x+0y" data="M5,-12 L3,-12"/>
-    <path start="_Middle+0x+0y" data="M10,-0 L-20,-0"/>
     <path start="_Middle+0x+0y" data="M-1,-6 L5,-12 L5,-10"/>
     <path start="_Middle+0x+0y" data="M4,-5 L4,5 L-6,-0 L4,-5"/>
-    <path start="_Middle+0x+0y" data="M-6,-6 L0,-12 L0,-10 L0,-12 L-2,-12"/>
+    <path start="_Middle+0x+0y" data="M5,-12 L3,-12"/>
+    <path start="_Middle+0x+0y" data="M10,-0 L-20,-0"/>
     <text x="_Middle-5" y="_Middle-17.5" value="$Reference" align="CentreCentre" size="xxs"/>
     <text x="_Middle-5" y="_Middle+10" value="$Value" align="CentreCentre" size="xxs"/>
-    <line start="_Middle+10x+0y" end="_Middle+20x+0y" sym:connection_id="0"/>
-    <text x="_Middle+16" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
-    <line start="_Middle-30x+0y" end="_Middle-20x+0y" sym:connection_id="1"/>
-    <text x="_Middle-26" y="_Middle-2" value="3" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle-30x+0y" end="_Middle-20x+0y" sym:connection_id="0"/>
+    <text x="_Middle-16" y="_Middle+0" value="K" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-26" y="_Middle-2" value="3" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+10x+0y" end="_Middle+20x+0y" sym:connection_id="1"/>
+    <text x="_Middle+6" y="_Middle+0" value="A" align="CentreRight" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle+16" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
   </render>
 </component>

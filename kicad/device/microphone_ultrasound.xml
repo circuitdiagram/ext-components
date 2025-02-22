@@ -6,38 +6,38 @@
     <meta name="guid" value="8dc41e0c-3b97-4a41-b2cc-003671a86219"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
-    <meta name="canresize" value="false"/>
     <meta name="minsize" value="20"/>
     <meta name="description" value="Ultrasound receiver"/>
     <meta name="keywords" value="microphone ultrasound crystal"/>
     <property name="Reference" type="string" default="MK" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="Microphone_Ultrasound" serialize="value" display="Value"/>
     <flags>
+      <option>NoResize</option>
       <option>HorizontalOnly</option>
       <option>MiddleMustAlign</option>
     </flags>
   </declaration>
   <connections>
-    <connection name="neg" start="_Middle+0x+10y" end="_Middle+0x+20y" edge="end" sym:connection_id="0"/>
-    <connection name="pos" start="_Middle+0x-20y" end="_Middle+0x-10y" edge="start" sym:connection_id="1"/>
+    <connection name="pos" start="_Middle+0x-20y" end="_Middle+0x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="neg" start="_Middle+0x+10y" end="_Middle+0x+20y" edge="end" sym:connection_id="1"/>
   </connections>
   <render>
-    <rect location="_Middle-5x-2y" width="10" height="4"/>
     <path start="_Middle+0x+0y" data="M-10,-10 L-10,10"/>
-    <path start="_Middle+0x+0y" data="M-3,4 L3,4"/>
+    <rect location="_Middle-5x-2y" width="10" height="4"/>
     <path start="_Middle+0x+0y" data="M-3,-4 L3,-4"/>
-    <path start="_Middle+0x+0y" data="M0,4 L0,7"/>
+    <path start="_Middle+0x+0y" data="M-3,4 L3,4"/>
     <path start="_Middle+0x+0y" data="M0,-4 L0,-7"/>
+    <ellipse centre="_Middle+0x+0y" rx="10" ry="10"/>
+    <path start="_Middle+0x+0y" data="M0,4 L0,7"/>
     <path start="_Middle+0x+0y" data="M1,-15 L3,-15"/>
     <path start="_Middle+0x+0y" data="M2,-16 L2,-14"/>
-    <ellipse centre="_Middle+0x+0y" rx="10" ry="10"/>
     <text x="_Middle-15" y="_Middle-4.5" value="$Reference" align="CentreRight" size="xxs"/>
     <text x="_Middle-15" y="_Middle+3" value="$Value" align="CentreRight" size="xxs"/>
-    <line start="_Middle+0x+10y" end="_Middle+0x+20y" sym:connection_id="0"/>
-    <text x="_Middle+0" y="_Middle+6" value="-" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="name"/>
-    <text x="_Middle-2" y="_Middle+16" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
-    <line start="_Middle+0x-20y" end="_Middle+0x-10y" sym:connection_id="1"/>
-    <text x="_Middle+0" y="_Middle-6" value="+" align="CentreRight" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
-    <text x="_Middle-2" y="_Middle-16" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+0x-20y" end="_Middle+0x-10y" sym:connection_id="0"/>
+    <text x="_Middle+0" y="_Middle-6" value="+" align="CentreRight" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle-16" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+0x+10y" end="_Middle+0x+20y" sym:connection_id="1"/>
+    <text x="_Middle+0" y="_Middle+6" value="-" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+16" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
   </render>
 </component>

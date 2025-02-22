@@ -2,11 +2,10 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="R 45deg"/>
-    <meta name="version" value="0.1.1"/>
+    <meta name="version" value="0.2.1"/>
     <meta name="guid" value="1226cf75-def8-45f2-b5c9-8cbb85fb8c46"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
-    <meta name="canresize" value="false"/>
     <meta name="minsize" value="50"/>
     <meta name="description" value="Resistor, rotated by 45°"/>
     <meta name="keywords" value="R res resistor diagonal"/>
@@ -14,13 +13,14 @@
     <property name="Reference" type="string" default="R" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="R_45deg" serialize="value" display="Value"/>
     <flags>
+      <option>NoResize</option>
       <option>HorizontalOnly</option>
       <option>MiddleMustAlign</option>
     </flags>
   </declaration>
   <connections>
-    <connection name="pin_idx_1" start="_Middle-10x-10y" end="_Middle-10x-10y" edge="start" sym:connection_id="0"/>
-    <connection name="pin_idx_2" start="_Middle+10x+10y" end="_Middle+10x+10y" edge="end" sym:connection_id="1"/>
+    <connection name="pin1" start="_Middle-10x-10y" end="_Middle-10x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="pin2" start="_Middle+10x+10y" end="_Middle+10x+10y" edge="end" sym:connection_id="1"/>
   </connections>
   <render>
     <path start="_Middle+0x+0y" data="M-10,-10 L-5,-5"/>
@@ -29,6 +29,8 @@
     <text x="_Middle+20" y="_Middle-10" value="$Reference" align="CentreCentre" size="xxs"/>
     <text x="_Middle+32.50000000000001" y="_Middle-2.5" value="$Value" align="CentreCentre" size="xxs"/>
     <line start="_Middle-10x-10y" end="_Middle-10x-10y" sym:connection_id="0"/>
+    <text x="_Middle-11" y="_Middle-12" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
     <line start="_Middle+10x+10y" end="_Middle+10x+10y" sym:connection_id="1"/>
+    <text x="_Middle+11" y="_Middle+8" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
   </render>
 </component>

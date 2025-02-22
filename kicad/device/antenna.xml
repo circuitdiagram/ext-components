@@ -2,23 +2,23 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="Antenna"/>
-    <meta name="version" value="0.1.1"/>
+    <meta name="version" value="0.2.1"/>
     <meta name="guid" value="a893e3ea-7b17-482c-ae49-b5d4ed3425fd"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
-    <meta name="canresize" value="false"/>
     <meta name="minsize" value="20"/>
     <meta name="description" value="Antenna"/>
     <meta name="keywords" value="antenna"/>
     <property name="Reference" type="string" default="AE" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="Antenna" serialize="value" display="Value"/>
     <flags>
+      <option>NoResize</option>
       <option>HorizontalOnly</option>
       <option>MiddleMustAlign</option>
     </flags>
   </declaration>
   <connections>
-    <connection name="pin_idx_1" start="_Middle+0x+10y" end="_Middle+0x+20y" edge="end" sym:connection_id="0"/>
+    <connection name="a" start="_Middle+0x+10y" end="_Middle+0x+20y" edge="end" sym:connection_id="0"/>
   </connections>
   <render>
     <path start="_Middle+0x+0y" data="M0,-10 L0,15"/>
@@ -26,5 +26,7 @@
     <text x="_Middle-7.5" y="_Middle-7.5" value="$Reference" align="CentreRight" size="xxs"/>
     <text x="_Middle-7.5" y="_Middle+0" value="$Value" align="CentreRight" size="xxs"/>
     <line start="_Middle+0x+10y" end="_Middle+0x+20y" sym:connection_id="0"/>
+    <text x="_Middle+0" y="_Middle+6" value="A" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+16" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
   </render>
 </component>

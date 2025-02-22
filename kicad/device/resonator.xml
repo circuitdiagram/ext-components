@@ -2,11 +2,10 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="Resonator"/>
-    <meta name="version" value="0.2.1"/>
+    <meta name="version" value="0.3.1"/>
     <meta name="guid" value="58cfc85d-f57f-4154-af5d-f0176b9a0360"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
-    <meta name="canresize" value="false"/>
     <meta name="minsize" value="30"/>
     <meta name="description" value="Three pin ceramic resonator"/>
     <meta name="keywords" value="ceramic resonator"/>
@@ -14,38 +13,42 @@
     <property name="Reference" type="string" default="Y" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="Resonator" serialize="value" display="Value"/>
     <flags>
+      <option>NoResize</option>
       <option>HorizontalOnly</option>
       <option>MiddleMustAlign</option>
     </flags>
   </declaration>
   <connections>
-    <connection name="pin1" start="_Middle-15x+0y" end="_Middle-10x+0y" edge="start" sym:connection_id="0"/>
-    <connection name="pin2" start="_Middle+0x+15y" end="_Middle+0x+20y" edge="end" sym:connection_id="1"/>
-    <connection name="pin3" start="_Middle+10x+0y" end="_Middle+15x+0y" edge="end" sym:connection_id="2"/>
+    <connection name="1" start="_Middle-15x+0y" end="_Middle-10x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="2" start="_Middle+0x+15y" end="_Middle+0x+20y" edge="end" sym:connection_id="1"/>
+    <connection name="3" start="_Middle+10x+0y" end="_Middle+15x+0y" edge="end" sym:connection_id="2"/>
   </connections>
   <render>
-    <rect location="_Middle-13.5x+12.5y" width="8" height="1"/>
     <rect location="_Middle-13.5x+9.5y" width="8" height="1"/>
+    <rect location="_Middle-13.5x+12.5y" width="8" height="1"/>
     <ellipse centre="_Middle-9.5x+0y" rx="1" ry="1" fill="true"/>
-    <rect location="_Middle-4x-8y" width="8" height="16"/>
-    <ellipse centre="_Middle+0x+15y" rx="1" ry="1" fill="true"/>
     <path start="_Middle+0x+0y" data="M-9.5,9.5 L-9.5,-0"/>
     <path start="_Middle+0x+0y" data="M-7.5,-0 L-12.5,-0"/>
     <path start="_Middle+0x+0y" data="M-7,5 L-7,-5"/>
+    <rect location="_Middle-4x-8y" width="8" height="16"/>
+    <ellipse centre="_Middle+0x+15y" rx="1" ry="1" fill="true"/>
+    <rect location="_Middle+5.5x+9.5y" width="8" height="1"/>
+    <rect location="_Middle+5.5x+12.5y" width="8" height="1"/>
     <path start="_Middle+0x+0y" data="M7,5 L7,-5"/>
     <path start="_Middle+0x+0y" data="M7.5,-0 L10,-0"/>
     <path start="_Middle+0x+0y" data="M9.5,-0 L9.5,10"/>
-    <path start="_Middle+0x+0y" data="M9.5,13 L9.5,15 L-9.5,15 L-9.5,13"/>
-    <rect location="_Middle+5.5x+12.5y" width="8" height="1"/>
-    <rect location="_Middle+5.5x+9.5y" width="8" height="1"/>
     <ellipse centre="_Middle+9.5x+0y" rx="1" ry="1" fill="true"/>
+    <path start="_Middle+0x+0y" data="M9.5,13 L9.5,15 L-9.5,15 L-9.5,13"/>
     <text x="_Middle+0" y="_Middle-22.5" value="$Reference" align="CentreCentre" size="xxs"/>
     <text x="_Middle+0" y="_Middle-15" value="$Value" align="CentreCentre" size="xxs"/>
     <line start="_Middle-15x+0y" end="_Middle-10x+0y" sym:connection_id="0"/>
+    <text x="_Middle-6" y="_Middle+0" value="1" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-13.5" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
     <line start="_Middle+0x+15y" end="_Middle+0x+20y" sym:connection_id="1"/>
+    <text x="_Middle+0" y="_Middle+11" value="2" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
     <text x="_Middle-2" y="_Middle+18.5" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
     <line start="_Middle+10x+0y" end="_Middle+15x+0y" sym:connection_id="2"/>
+    <text x="_Middle+6" y="_Middle+0" value="3" align="CentreRight" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
     <text x="_Middle+13.5" y="_Middle-2" value="3" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
   </render>
 </component>

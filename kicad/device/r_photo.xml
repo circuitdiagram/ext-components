@@ -2,11 +2,10 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="R Photo"/>
-    <meta name="version" value="0.1.1"/>
+    <meta name="version" value="0.2.1"/>
     <meta name="guid" value="11d758de-6e8c-41d5-b147-a1297aacd490"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
-    <meta name="canresize" value="false"/>
     <meta name="minsize" value="30"/>
     <meta name="description" value="Photoresistor"/>
     <meta name="keywords" value="resistor variable light sensitive opto LDR"/>
@@ -14,25 +13,28 @@
     <property name="Reference" type="string" default="R" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="R_Photo" serialize="value" display="Value"/>
     <flags>
+      <option>NoResize</option>
       <option>HorizontalOnly</option>
       <option>MiddleMustAlign</option>
     </flags>
   </declaration>
   <connections>
-    <connection name="pin_idx_1" start="_Middle+0x-15y" end="_Middle+0x-10y" edge="start" sym:connection_id="0"/>
-    <connection name="pin_idx_2" start="_Middle+0x+10y" end="_Middle+0x+15y" edge="end" sym:connection_id="1"/>
+    <connection name="pin1" start="_Middle+0x-15y" end="_Middle+0x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="pin2" start="_Middle+0x+10y" end="_Middle+0x+15y" edge="end" sym:connection_id="1"/>
   </connections>
   <render>
-    <rect location="_Middle-4x-10y" width="8" height="20"/>
-    <path start="_Middle+0x+0y" data="M-6,9 L-16,-1"/>
-    <path start="_Middle+0x+0y" data="M-6,9 L-9,9"/>
-    <path start="_Middle+0x+0y" data="M-6,9 L-6,6"/>
     <path start="_Middle+0x+0y" data="M-6,3 L-16,-7"/>
     <path start="_Middle+0x+0y" data="M-6,3 L-9,3"/>
     <path start="_Middle+0x+0y" data="M-6,3 L-6,-0"/>
+    <path start="_Middle+0x+0y" data="M-6,9 L-16,-1"/>
+    <path start="_Middle+0x+0y" data="M-6,9 L-9,9"/>
+    <path start="_Middle+0x+0y" data="M-6,9 L-6,6"/>
+    <rect location="_Middle-4x-10y" width="8" height="20"/>
     <text x="_Middle+5" y="_Middle-5" value="$Reference" align="CentreLeft" size="xxs"/>
     <text x="_Middle+5" y="_Middle+0" value="$Value" align="CentreLeft" size="xxs"/>
     <line start="_Middle+0x-15y" end="_Middle+0x-10y" sym:connection_id="0"/>
+    <text x="_Middle-2" y="_Middle-13.5" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
     <line start="_Middle+0x+10y" end="_Middle+0x+15y" sym:connection_id="1"/>
+    <text x="_Middle-2" y="_Middle+13.5" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
   </render>
 </component>

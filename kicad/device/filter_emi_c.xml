@@ -6,7 +6,6 @@
     <meta name="guid" value="1924bd42-41f7-49c5-98b5-dd2dcdc37a95"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
-    <meta name="canresize" value="false"/>
     <meta name="minsize" value="40"/>
     <meta name="datasheet" value="http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb"/>
     <meta name="description" value="EMI filter, single capacitor"/>
@@ -14,6 +13,7 @@
     <property name="Reference" type="string" default="C" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="Filter_EMI_C" serialize="value" display="Value"/>
     <flags>
+      <option>NoResize</option>
       <option>HorizontalOnly</option>
       <option>MiddleMustAlign</option>
     </flags>
@@ -24,8 +24,8 @@
     <connection name="3" start="_Middle+10x-10y" end="_Middle+20x-10y" edge="end" sym:connection_id="2"/>
   </connections>
   <render>
-    <rect location="_Middle-6.5x-8y" width="12.5" height="2"/>
     <path start="_Middle+0x+0y" data="M-10,-10 L10,-10"/>
+    <rect location="_Middle-6.5x-8y" width="12.5" height="2"/>
     <path start="_Middle+0x+0y" data="M0,-0 L0,-7"/>
     <rect location="_Middle-6.5x-14y" width="12.5" height="2"/>
     <text x="_Middle+0" y="_Middle-30" value="$Reference" align="CentreCentre" size="xxs"/>

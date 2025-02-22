@@ -6,7 +6,6 @@
     <meta name="guid" value="ebcba4fd-eaaf-49fb-95b1-a92f61a930e8"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
-    <meta name="canresize" value="false"/>
     <meta name="minsize" value="40"/>
     <meta name="description" value="Voltage divider, center on pin 3"/>
     <meta name="keywords" value="R network voltage divider"/>
@@ -14,6 +13,7 @@
     <property name="Reference" type="string" default="RN" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="VoltageDivider_CenterPin3" serialize="value" display="Value"/>
     <flags>
+      <option>NoResize</option>
       <option>HorizontalOnly</option>
       <option>MiddleMustAlign</option>
     </flags>
@@ -25,13 +25,13 @@
   </connections>
   <render>
     <rect location="_Middle-5x-15y" width="10" height="30"/>
-    <rect location="_Middle-2x+3.3y" width="4" height="10"/>
     <rect location="_Middle-2x-13.3y" width="4" height="10"/>
-    <path start="_Middle+0x+0y" data="M0,20 L0,13.5"/>
-    <path start="_Middle+0x+0y" data="M0,-3.5 L0,3.5"/>
+    <rect location="_Middle-2x+3.3y" width="4" height="10"/>
     <path start="_Middle+0x+0y" data="M0,-20 L0,-13.3"/>
-    <path start="_Middle+0x+0y" data="M5,-0 L0,-0"/>
+    <path start="_Middle+0x+0y" data="M0,-3.5 L0,3.5"/>
     <ellipse centre="_Middle+0x-0.1y" rx="1" ry="1" fill="true"/>
+    <path start="_Middle+0x+0y" data="M0,20 L0,13.5"/>
+    <path start="_Middle+0x+0y" data="M5,-0 L0,-0"/>
     <text x="_Middle-17.5" y="_Middle+0" value="$Reference" align="CentreCentre" size="xxs" rotate="90"/>
     <text x="_Middle-10" y="_Middle+0" value="$Value" align="CentreCentre" size="xxs" rotate="90"/>
     <line start="_Middle+0x-25y" end="_Middle+0x-15y" sym:connection_id="0"/>
