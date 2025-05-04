@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="CJ432"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="f4f9d894-a0fa-46ff-b4c5-1ea6d4062002"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="20"/>
+    <meta name="footprint" value="Package_TO_SOT_SMD:SOT-23"/>
+    <meta name="datasheet" value="http://www.cj-elec.com/txUpfile/20134181474991806.pdf"/>
+    <meta name="description" value="Shunt Regulator, SOT-23"/>
+    <meta name="keywords" value="diode device shunt regulator"/>
+    <meta name="ki_fp_filters" value="SOT?23*"/>
+    <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="CJ432" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="a" start="_Middle-10x+0y" end="_Middle-5x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="ref" start="_Middle+0x-10y" end="_Middle+0x+0y" edge="start" sym:connection_id="1"/>
+    <connection name="k" start="_Middle+5x+0y" end="_Middle+10x+0y" edge="end" sym:connection_id="2"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-5,-0 L0,-0 L5,-0"/>
+    <path start="_Middle+0x+0y" data="M-3,-3 L3,-0 L-3,3" fill="true"/>
+    <path start="_Middle+0x+0y" data="M2,4 L3,3 L3,-3 L3,-3"/>
+    <text x="_Middle-10" y="_Middle-10" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+10" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-10x+0y" end="_Middle-5x+0y" sym:connection_id="0"/>
+    <text x="_Middle-1" y="_Middle+0" value="A" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-8.5" y="_Middle-2" value="3" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+0x-10y" end="_Middle+0x+0y" sym:connection_id="1"/>
+    <text x="_Middle+0" y="_Middle+4" value="REF" align="CentreRight" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle-6" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+5x+0y" end="_Middle+10x+0y" sym:connection_id="2"/>
+    <text x="_Middle+1" y="_Middle+0" value="K" align="CentreRight" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle+8.5" y="_Middle-2" value="2" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+  </render>
+</component>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="XLR3 AudioJack2 Combo Ground"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="300e6a57-34cd-41db-befd-1e7bb7300d84"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="60"/>
+    <meta name="description" value="XLR (Male or Female) and Audio Jack (Mono / TS) Combo Connector, Discrete Ground Pin"/>
+    <meta name="keywords" value="xlr connector"/>
+    <meta name="ki_fp_filters" value="Jack*XLR*6.35mm*"/>
+    <property name="Reference" type="string" default="J" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="XLR3_AudioJack2_Combo_Ground" serialize="value" display="Value"/>
+    <property name="Unit" type="enum" default="Unit_A" serialize="unit" display="Unit">
+      <option>Unit_A</option>
+      <option>Unit_B</option>
+    </property>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin1" start="_Middle-30x+0y" end="_Middle-20x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="pinG" start="_Middle-10x+20y" end="_Middle-10x+30y" edge="end" sym:connection_id="1"/>
+    <connection name="pin3" start="_Middle+0x+20y" end="_Middle+0x+30y" edge="end" sym:connection_id="2"/>
+    <connection name="pin2" start="_Middle+20x+0y" end="_Middle+30x+0y" edge="end" sym:connection_id="3"/>
+    <connection name="pinS" start="_Middle+10x-10y" end="_Middle+20x-10y" edge="end" sym:connection_id="4"/>
+    <connection name="pinT" start="_Middle+10x+0y" end="_Middle+20x+0y" edge="end" sym:connection_id="5"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-20,-0 L-18,-0"/>
+    <ellipse centre="_Middle-14x+0y" rx="4" ry="4"/>
+    <path start="_Middle+0x+0y" data="M-10,20 L-10,17.5"/>
+    <ellipse centre="_Middle+0x+0y" rx="20" ry="20"/>
+    <ellipse centre="_Middle+0x+14y" rx="4" ry="4"/>
+    <path start="_Middle+0x+0y" data="M0,20 L0,18"/>
+    <ellipse centre="_Middle+14x+0y" rx="4" ry="4"/>
+    <path start="_Middle+0x+0y" data="M20,-0 L18,-0"/>
+    <g conditions="$Unit==Unit_A">
+      <text x="_Middle-14" y="_Middle-7" value="1" align="CentreCentre" size="base"/>
+    </g>
+    <g conditions="$Unit==Unit_A">
+      <text x="_Middle+0" y="_Middle+7" value="3" align="CentreCentre" size="base"/>
+    </g>
+    <g conditions="$Unit==Unit_A">
+      <text x="_Middle+14" y="_Middle-7" value="2" align="CentreCentre" size="base"/>
+    </g>
+    <rect location="_Middle-15x+0y" width="5" height="10"/>
+    <path start="_Middle+0x+0y" data="M0,-0 L2.5,2.5 L5,-0 L10,-0"/>
+    <rect location="_Middle-10x-15y" width="20" height="25"/>
+    <path start="_Middle+0x+0y" data="M10,-10 L-2.5,-10 L-2.5,-0 L-5,2.5 L-7.5,-0"/>
+    <text x="_Middle+0" y="_Middle-40" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle-30" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-30x+0y" end="_Middle-20x+0y" sym:connection_id="0"/>
+    <g conditions="$Unit==Unit_A">
+      <text x="_Middle-26" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    </g>
+    <line start="_Middle-10x+20y" end="_Middle-10x+30y" sym:connection_id="1"/>
+    <g conditions="$Unit==Unit_A">
+      <text x="_Middle-12" y="_Middle+26" value="G" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    </g>
+    <line start="_Middle+0x+20y" end="_Middle+0x+30y" sym:connection_id="2"/>
+    <g conditions="$Unit==Unit_A">
+      <text x="_Middle-2" y="_Middle+26" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+    </g>
+    <line start="_Middle+20x+0y" end="_Middle+30x+0y" sym:connection_id="3"/>
+    <g conditions="$Unit==Unit_A">
+      <text x="_Middle+26" y="_Middle-2" value="2" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+    </g>
+    <line start="_Middle+10x-10y" end="_Middle+20x-10y" sym:connection_id="4"/>
+    <g conditions="$Unit==Unit_B">
+      <text x="_Middle+16" y="_Middle-12" value="S" align="BottomCentre" size="xxs" sym:connection_id="4" sym:connection_attr="number"/>
+    </g>
+    <line start="_Middle+10x+0y" end="_Middle+20x+0y" sym:connection_id="5"/>
+    <g conditions="$Unit==Unit_B">
+      <text x="_Middle+16" y="_Middle-2" value="T" align="BottomCentre" size="xxs" sym:connection_id="5" sym:connection_attr="number"/>
+    </g>
+  </render>
+</component>

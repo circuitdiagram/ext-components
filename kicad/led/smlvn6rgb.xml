@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="SMLVN6RGB"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="467e64c0-0260-462b-acdc-4fa7fa7965dc"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="40"/>
+    <meta name="footprint" value="LED_SMD:LED_ROHM_SMLVN6"/>
+    <meta name="datasheet" value="https://www.rohm.com/datasheet/SMLVN6RGB1U"/>
+    <meta name="description" value="High Brightness Tri-Color LED, RGB, 3.5x2.8mm"/>
+    <meta name="keywords" value="LED RGB Diode"/>
+    <meta name="ki_fp_filters" value="LED*ROHM*SMLVN6*"/>
+    <property name="Reference" type="string" default="D" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="SMLVN6RGB" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="ba" start="_Middle-20x-20y" end="_Middle-10x-20y" edge="start" sym:connection_id="0"/>
+    <connection name="ra" start="_Middle-20x+0y" end="_Middle-10x+0y" edge="start" sym:connection_id="1"/>
+    <connection name="ga" start="_Middle-20x+20y" end="_Middle-10x+20y" edge="start" sym:connection_id="2"/>
+    <connection name="bk" start="_Middle+10x-20y" end="_Middle+20x-20y" edge="end" sym:connection_id="3"/>
+    <connection name="rk" start="_Middle+10x+0y" end="_Middle+20x+0y" edge="end" sym:connection_id="4"/>
+    <connection name="gk" start="_Middle+10x+20y" end="_Middle+20x+20y" edge="end" sym:connection_id="5"/>
+  </connections>
+  <render>
+    <text x="_Middle+7.5" y="_Middle-15" value="B" align="CentreCentre" size="base"/>
+    <text x="_Middle+7.5" y="_Middle+5" value="R" align="CentreCentre" size="base"/>
+    <text x="_Middle+7.5" y="_Middle+25" value="G" align="CentreCentre" size="base"/>
+    <rect location="_Middle-11x-33y" width="22" height="63"/>
+    <rect location="_Middle-5x-25y" width="0" height="0"/>
+    <path start="_Middle+0x+0y" data="M-5,-25 L-5,-15 L5,-20 L-5,-25"/>
+    <path start="_Middle+0x+0y" data="M-5,-20 L-10,-20"/>
+    <rect location="_Middle-5x-25y" width="0" height="10"/>
+    <rect location="_Middle-5x-5y" width="0" height="0"/>
+    <path start="_Middle+0x+0y" data="M-5,-5 L-5,5 L5,-0 L-5,-5"/>
+    <path start="_Middle+0x+0y" data="M-5,-0 L-10,-0"/>
+    <path start="_Middle+0x+0y" data="M-5,-0 L5,-0"/>
+    <rect location="_Middle-5x-5y" width="0" height="10"/>
+    <path start="_Middle+0x+0y" data="M-5,15 L-5,25 L5,20 L-5,15"/>
+    <path start="_Middle+0x+0y" data="M-5,20 L-10,20"/>
+    <path start="_Middle+0x+0y" data="M0,-25 L-6,-31 L-3,-31 L-6,-31 L-6,-28"/>
+    <path start="_Middle+0x+0y" data="M0,-5 L-6,-11 L-3,-11 L-6,-11 L-6,-8"/>
+    <path start="_Middle+0x+0y" data="M0,15 L-6,9 L-3,9 L-6,9 L-6,12"/>
+    <path start="_Middle+0x+0y" data="M4,-25 L-2,-31 L1,-31 L-2,-31 L-2,-28"/>
+    <path start="_Middle+0x+0y" data="M4,-5 L-2,-11 L1,-11 L-2,-11 L-2,-8"/>
+    <path start="_Middle+0x+0y" data="M4,15 L-2,9 L1,9 L-2,9 L-2,12"/>
+    <path start="_Middle+0x+0y" data="M5,-25 L5,-15"/>
+    <path start="_Middle+0x+0y" data="M5,-25 L5,-15 L5,-15"/>
+    <path start="_Middle+0x+0y" data="M5,-20 L-5,-20"/>
+    <path start="_Middle+0x+0y" data="M5,-20 L10,-20"/>
+    <path start="_Middle+0x+0y" data="M5,-5 L5,5"/>
+    <path start="_Middle+0x+0y" data="M5,-5 L5,5 L5,5"/>
+    <path start="_Middle+0x+0y" data="M5,-0 L10,-0"/>
+    <path start="_Middle+0x+0y" data="M5,15 L5,25"/>
+    <path start="_Middle+0x+0y" data="M5,20 L-5,20"/>
+    <path start="_Middle+0x+0y" data="M5,20 L10,20"/>
+    <text x="_Middle+0" y="_Middle-50" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle-40" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-20x-20y" end="_Middle-10x-20y" sym:connection_id="0"/>
+    <text x="_Middle-6" y="_Middle-20" value="BA" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-16" y="_Middle-22" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-20x+0y" end="_Middle-10x+0y" sym:connection_id="1"/>
+    <text x="_Middle-6" y="_Middle+0" value="RA" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-16" y="_Middle-2" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle-20x+20y" end="_Middle-10x+20y" sym:connection_id="2"/>
+    <text x="_Middle-6" y="_Middle+20" value="GA" align="CentreLeft" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-16" y="_Middle+18" value="3" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+10x-20y" end="_Middle+20x-20y" sym:connection_id="3"/>
+    <text x="_Middle+6" y="_Middle-20" value="BK" align="CentreRight" size="xxs" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle+16" y="_Middle-22" value="6" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle+10x+0y" end="_Middle+20x+0y" sym:connection_id="4"/>
+    <text x="_Middle+6" y="_Middle+0" value="RK" align="CentreRight" size="xxs" sym:connection_id="4" sym:connection_attr="name"/>
+    <text x="_Middle+16" y="_Middle-2" value="5" align="BottomCentre" size="xxs" sym:connection_id="4" sym:connection_attr="number"/>
+    <line start="_Middle+10x+20y" end="_Middle+20x+20y" sym:connection_id="5"/>
+    <text x="_Middle+6" y="_Middle+20" value="GK" align="CentreRight" size="xxs" sym:connection_id="5" sym:connection_attr="name"/>
+    <text x="_Middle+16" y="_Middle+18" value="4" align="BottomCentre" size="xxs" sym:connection_id="5" sym:connection_attr="number"/>
+  </render>
+</component>

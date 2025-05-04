@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="OLED-128O064D"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="c4d36e8f-25ab-42fb-a70a-daffbd5d0d31"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="110"/>
+    <meta name="footprint" value="Display:OLED-128O064D"/>
+    <meta name="datasheet" value="https://www.vishay.com/docs/37902/oled128o064dbpp3n00000.pdf"/>
+    <meta name="description" value="OLED display 128x64"/>
+    <meta name="keywords" value="display oled"/>
+    <meta name="ki_fp_filters" value="OLED?128O064D*"/>
+    <property name="Reference" type="string" default="DS" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="OLED-128O064D" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="c2n" start="_Middle-50x-130y" end="_Middle-40x-130y" edge="start" sym:connection_id="0"/>
+    <connection name="c2p" start="_Middle-50x-120y" end="_Middle-40x-120y" edge="start" sym:connection_id="1"/>
+    <connection name="c1p" start="_Middle-50x-110y" end="_Middle-40x-110y" edge="start" sym:connection_id="2"/>
+    <connection name="c1n" start="_Middle-50x-100y" end="_Middle-40x-100y" edge="start" sym:connection_id="3"/>
+    <connection name="bs0" start="_Middle-50x-80y" end="_Middle-40x-80y" edge="start" sym:connection_id="4"/>
+    <connection name="bs1" start="_Middle-50x-70y" end="_Middle-40x-70y" edge="start" sym:connection_id="5"/>
+    <connection name="bs2" start="_Middle-50x-60y" end="_Middle-40x-60y" edge="start" sym:connection_id="6"/>
+    <connection name="not_cs" start="_Middle-50x-40y" end="_Middle-40x-40y" edge="start" sym:connection_id="7"/>
+    <connection name="not_res" start="_Middle-50x-30y" end="_Middle-40x-30y" edge="start" sym:connection_id="8"/>
+    <connection name="d_c" start="_Middle-50x-20y" end="_Middle-40x-20y" edge="start" sym:connection_id="9"/>
+    <connection name="r_w" start="_Middle-50x-10y" end="_Middle-40x-10y" edge="start" sym:connection_id="10"/>
+    <connection name="e_rd" start="_Middle-50x+0y" end="_Middle-40x+0y" edge="start" sym:connection_id="11"/>
+    <connection name="d0" start="_Middle-50x+20y" end="_Middle-40x+20y" edge="start" sym:connection_id="12"/>
+    <connection name="d1" start="_Middle-50x+30y" end="_Middle-40x+30y" edge="start" sym:connection_id="13"/>
+    <connection name="d2" start="_Middle-50x+40y" end="_Middle-40x+40y" edge="start" sym:connection_id="14"/>
+    <connection name="d3" start="_Middle-50x+50y" end="_Middle-40x+50y" edge="start" sym:connection_id="15"/>
+    <connection name="d4" start="_Middle-50x+60y" end="_Middle-40x+60y" edge="start" sym:connection_id="16"/>
+    <connection name="d5" start="_Middle-50x+70y" end="_Middle-40x+70y" edge="start" sym:connection_id="17"/>
+    <connection name="d6" start="_Middle-50x+80y" end="_Middle-40x+80y" edge="start" sym:connection_id="18"/>
+    <connection name="d7" start="_Middle-50x+90y" end="_Middle-40x+90y" edge="start" sym:connection_id="19"/>
+    <connection name="iref" start="_Middle-50x+110y" end="_Middle-40x+110y" edge="start" sym:connection_id="20"/>
+    <connection name="vcomh" start="_Middle-50x+120y" end="_Middle-40x+120y" edge="start" sym:connection_id="21"/>
+    <connection name="vbat" start="_Middle-10x-150y" end="_Middle-10x-140y" edge="start" sym:connection_id="22"/>
+    <connection name="gnd" start="_Middle-10x+140y" end="_Middle-10x+150y" edge="end" sym:connection_id="23"/>
+    <connection name="gnd" start="_Middle-10x+140y" end="_Middle-10x+150y" edge="end" sym:connection_id="24"/>
+    <connection name="vdd" start="_Middle+0x-150y" end="_Middle+0x-140y" edge="start" sym:connection_id="25"/>
+    <connection name="vss" start="_Middle+0x+140y" end="_Middle+0x+150y" edge="end" sym:connection_id="26"/>
+    <connection name="vcc" start="_Middle+10x-150y" end="_Middle+10x-140y" edge="start" sym:connection_id="27"/>
+    <connection name="vlss" start="_Middle+10x+140y" end="_Middle+10x+150y" edge="end" sym:connection_id="28"/>
+    <connection name="nc" start="_Middle+30x+0y" end="_Middle+40x+0y" edge="end" sym:connection_id="29"/>
+  </connections>
+  <render>
+    <rect location="_Middle-40x-140y" width="80" height="280"/>
+    <text x="_Middle-40" y="_Middle-150" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+50" y="_Middle-150" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-50x-130y" end="_Middle-40x-130y" sym:connection_id="0"/>
+    <text x="_Middle-36" y="_Middle-130.00000000000003" value="C2N" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-46" y="_Middle-132.00000000000003" value="2" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-50x-120y" end="_Middle-40x-120y" sym:connection_id="1"/>
+    <text x="_Middle-36" y="_Middle-120" value="C2P" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-46" y="_Middle-122" value="3" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle-50x-110y" end="_Middle-40x-110y" sym:connection_id="2"/>
+    <text x="_Middle-36" y="_Middle-110.00000000000001" value="C1P" align="CentreLeft" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-46" y="_Middle-112.00000000000001" value="4" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle-50x-100y" end="_Middle-40x-100y" sym:connection_id="3"/>
+    <text x="_Middle-36" y="_Middle-100" value="C1N" align="CentreLeft" size="xxs" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle-46" y="_Middle-102" value="5" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle-50x-80y" end="_Middle-40x-80y" sym:connection_id="4"/>
+    <text x="_Middle-36" y="_Middle-80" value="BS0" align="CentreLeft" size="xxs" sym:connection_id="4" sym:connection_attr="name"/>
+    <text x="_Middle-46" y="_Middle-82" value="10" align="BottomCentre" size="xxs" sym:connection_id="4" sym:connection_attr="number"/>
+    <line start="_Middle-50x-70y" end="_Middle-40x-70y" sym:connection_id="5"/>
+    <text x="_Middle-36" y="_Middle-70" value="BS1" align="CentreLeft" size="xxs" sym:connection_id="5" sym:connection_attr="name"/>
+    <text x="_Middle-46" y="_Middle-72" value="11" align="BottomCentre" size="xxs" sym:connection_id="5" sym:connection_attr="number"/>
+    <line start="_Middle-50x-60y" end="_Middle-40x-60y" sym:connection_id="6"/>
+    <text x="_Middle-36" y="_Middle-60" value="BS2" align="CentreLeft" size="xxs" sym:connection_id="6" sym:connection_attr="name"/>
+    <text x="_Middle-46" y="_Middle-62" value="12" align="BottomCentre" size="xxs" sym:connection_id="6" sym:connection_attr="number"/>
+    <line start="_Middle-50x-40y" end="_Middle-40x-40y" sym:connection_id="7"/>
+    <text x="_Middle-36" y="_Middle-40" value="~{CS}" align="CentreLeft" size="xxs" sym:connection_id="7" sym:connection_attr="name"/>
+    <text x="_Middle-46" y="_Middle-42" value="13" align="BottomCentre" size="xxs" sym:connection_id="7" sym:connection_attr="number"/>
+    <line start="_Middle-50x-30y" end="_Middle-40x-30y" sym:connection_id="8"/>
+    <text x="_Middle-36" y="_Middle-30" value="~{RES}" align="CentreLeft" size="xxs" sym:connection_id="8" sym:connection_attr="name"/>
+    <text x="_Middle-46" y="_Middle-32" value="14" align="BottomCentre" size="xxs" sym:connection_id="8" sym:connection_attr="number"/>
+    <line start="_Middle-50x-20y" end="_Middle-40x-20y" sym:connection_id="9"/>
+    <text x="_Middle-36" y="_Middle-20" value="D/~{C}" align="CentreLeft" size="xxs" sym:connection_id="9" sym:connection_attr="name"/>
+    <text x="_Middle-46" y="_Middle-22" value="15" align="BottomCentre" size="xxs" sym:connection_id="9" sym:connection_attr="number"/>
+    <line start="_Middle-50x-10y" end="_Middle-40x-10y" sym:connection_id="10"/>
+    <text x="_Middle-36" y="_Middle-10" value="R/~{W}" align="CentreLeft" size="xxs" sym:connection_id="10" sym:connection_attr="name"/>
+    <text x="_Middle-46" y="_Middle-12" value="16" align="BottomCentre" size="xxs" sym:connection_id="10" sym:connection_attr="number"/>
+    <line start="_Middle-50x+0y" end="_Middle-40x+0y" sym:connection_id="11"/>
+    <text x="_Middle-36" y="_Middle+0" value="E/~{RD}" align="CentreLeft" size="xxs" sym:connection_id="11" sym:connection_attr="name"/>
+    <text x="_Middle-46" y="_Middle-2" value="17" align="BottomCentre" size="xxs" sym:connection_id="11" sym:connection_attr="number"/>
+    <line start="_Middle-50x+20y" end="_Middle-40x+20y" sym:connection_id="12"/>
+    <text x="_Middle-36" y="_Middle+20" value="D0" align="CentreLeft" size="xxs" sym:connection_id="12" sym:connection_attr="name"/>
+    <text x="_Middle-46" y="_Middle+18" value="18" align="BottomCentre" size="xxs" sym:connection_id="12" sym:connection_attr="number"/>
+    <line start="_Middle-50x+30y" end="_Middle-40x+30y" sym:connection_id="13"/>
+    <text x="_Middle-36" y="_Middle+30" value="D1" align="CentreLeft" size="xxs" sym:connection_id="13" sym:connection_attr="name"/>
+    <text x="_Middle-46" y="_Middle+28" value="19" align="BottomCentre" size="xxs" sym:connection_id="13" sym:connection_attr="number"/>
+    <line start="_Middle-50x+40y" end="_Middle-40x+40y" sym:connection_id="14"/>
+    <text x="_Middle-36" y="_Middle+40" value="D2" align="CentreLeft" size="xxs" sym:connection_id="14" sym:connection_attr="name"/>
+    <text x="_Middle-46" y="_Middle+38" value="20" align="BottomCentre" size="xxs" sym:connection_id="14" sym:connection_attr="number"/>
+    <line start="_Middle-50x+50y" end="_Middle-40x+50y" sym:connection_id="15"/>
+    <text x="_Middle-36" y="_Middle+50" value="D3" align="CentreLeft" size="xxs" sym:connection_id="15" sym:connection_attr="name"/>
+    <text x="_Middle-46" y="_Middle+48" value="21" align="BottomCentre" size="xxs" sym:connection_id="15" sym:connection_attr="number"/>
+    <line start="_Middle-50x+60y" end="_Middle-40x+60y" sym:connection_id="16"/>
+    <text x="_Middle-36" y="_Middle+60" value="D4" align="CentreLeft" size="xxs" sym:connection_id="16" sym:connection_attr="name"/>
+    <text x="_Middle-46" y="_Middle+58" value="22" align="BottomCentre" size="xxs" sym:connection_id="16" sym:connection_attr="number"/>
+    <line start="_Middle-50x+70y" end="_Middle-40x+70y" sym:connection_id="17"/>
+    <text x="_Middle-36" y="_Middle+70" value="D5" align="CentreLeft" size="xxs" sym:connection_id="17" sym:connection_attr="name"/>
+    <text x="_Middle-46" y="_Middle+68" value="23" align="BottomCentre" size="xxs" sym:connection_id="17" sym:connection_attr="number"/>
+    <line start="_Middle-50x+80y" end="_Middle-40x+80y" sym:connection_id="18"/>
+    <text x="_Middle-36" y="_Middle+80" value="D6" align="CentreLeft" size="xxs" sym:connection_id="18" sym:connection_attr="name"/>
+    <text x="_Middle-46" y="_Middle+78" value="24" align="BottomCentre" size="xxs" sym:connection_id="18" sym:connection_attr="number"/>
+    <line start="_Middle-50x+90y" end="_Middle-40x+90y" sym:connection_id="19"/>
+    <text x="_Middle-36" y="_Middle+90" value="D7" align="CentreLeft" size="xxs" sym:connection_id="19" sym:connection_attr="name"/>
+    <text x="_Middle-46" y="_Middle+88" value="25" align="BottomCentre" size="xxs" sym:connection_id="19" sym:connection_attr="number"/>
+    <line start="_Middle-50x+110y" end="_Middle-40x+110y" sym:connection_id="20"/>
+    <text x="_Middle-36" y="_Middle+110.00000000000001" value="IREF" align="CentreLeft" size="xxs" sym:connection_id="20" sym:connection_attr="name"/>
+    <text x="_Middle-46" y="_Middle+108.00000000000001" value="26" align="BottomCentre" size="xxs" sym:connection_id="20" sym:connection_attr="number"/>
+    <line start="_Middle-50x+120y" end="_Middle-40x+120y" sym:connection_id="21"/>
+    <text x="_Middle-36" y="_Middle+120" value="VCOMH" align="CentreLeft" size="xxs" sym:connection_id="21" sym:connection_attr="name"/>
+    <text x="_Middle-46" y="_Middle+118" value="27" align="BottomCentre" size="xxs" sym:connection_id="21" sym:connection_attr="number"/>
+    <line start="_Middle-10x-150y" end="_Middle-10x-140y" sym:connection_id="22"/>
+    <text x="_Middle-10" y="_Middle-136" value="VBAT" align="CentreRight" size="xxs" rotate="270" sym:connection_id="22" sym:connection_attr="name"/>
+    <text x="_Middle-12" y="_Middle-146" value="6" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="22" sym:connection_attr="number"/>
+    <line start="_Middle-10x+140y" end="_Middle-10x+150y" sym:connection_id="23"/>
+    <text x="_Middle-10" y="_Middle+136" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="23" sym:connection_attr="name"/>
+    <text x="_Middle-12" y="_Middle+146" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="23" sym:connection_attr="number"/>
+    <line start="_Middle-10x+140y" end="_Middle-10x+150y" sym:connection_id="24"/>
+    <text x="_Middle-10" y="_Middle+136" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="24" sym:connection_attr="name"/>
+    <text x="_Middle-12" y="_Middle+146" value="30" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="24" sym:connection_attr="number"/>
+    <line start="_Middle+0x-150y" end="_Middle+0x-140y" sym:connection_id="25"/>
+    <text x="_Middle+0" y="_Middle-136" value="VDD" align="CentreRight" size="xxs" rotate="270" sym:connection_id="25" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle-146" value="9" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="25" sym:connection_attr="number"/>
+    <line start="_Middle+0x+140y" end="_Middle+0x+150y" sym:connection_id="26"/>
+    <text x="_Middle+0" y="_Middle+136" value="VSS" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="26" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+146" value="8" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="26" sym:connection_attr="number"/>
+    <line start="_Middle+10x-150y" end="_Middle+10x-140y" sym:connection_id="27"/>
+    <text x="_Middle+10" y="_Middle-136" value="VCC" align="CentreRight" size="xxs" rotate="270" sym:connection_id="27" sym:connection_attr="name"/>
+    <text x="_Middle+8" y="_Middle-146" value="28" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="27" sym:connection_attr="number"/>
+    <line start="_Middle+10x+140y" end="_Middle+10x+150y" sym:connection_id="28"/>
+    <text x="_Middle+10" y="_Middle+136" value="VLSS" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="28" sym:connection_attr="name"/>
+    <text x="_Middle+8" y="_Middle+146" value="29" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="28" sym:connection_attr="number"/>
+    <line start="_Middle+30x+0y" end="_Middle+40x+0y" sym:connection_id="29"/>
+    <text x="_Middle+26" y="_Middle+0" value="NC" align="CentreRight" size="xxs" sym:connection_id="29" sym:connection_attr="name"/>
+    <text x="_Middle+36" y="_Middle-2" value="7" align="BottomCentre" size="xxs" sym:connection_id="29" sym:connection_attr="number"/>
+  </render>
+</component>

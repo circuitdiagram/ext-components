@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="SiT9366xx-xBx-xxN"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="4846ff9e-297d-43ba-a332-844aa34670e3"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="70"/>
+    <meta name="footprint" value="Oscillator:Oscillator_SMD_SiTime_PQFD-6L_3.2x2.5mm"/>
+    <meta name="datasheet" value="https://www.sitime.com/datasheet/SiT9366"/>
+    <meta name="description" value="SiTime Standard Frequency Ultra-low Jitter Differential Oscillator, 1 MHz and 220MHz, PQFD-6, 3.2x2.5mm"/>
+    <meta name="keywords" value="LVDS LVPECL HCSL differential MEMS oscillatior"/>
+    <meta name="ki_fp_filters" value="*PQFD*3.2x2.5mm*"/>
+    <property name="Reference" type="string" default="Y" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="SiT9366xx-xBx-xxN" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="nc" start="_Middle-30x-10y" end="_Middle-20x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="nc" start="_Middle-30x+0y" end="_Middle-20x+0y" edge="start" sym:connection_id="1"/>
+    <connection name="vdd" start="_Middle+0x-30y" end="_Middle+0x-20y" edge="start" sym:connection_id="2"/>
+    <connection name="gnd" start="_Middle+0x+20y" end="_Middle+0x+30y" edge="end" sym:connection_id="3"/>
+    <connection name="out_pos" start="_Middle+30x-10y" end="_Middle+40x-10y" edge="end" sym:connection_id="4"/>
+    <connection name="out_neg" start="_Middle+30x+10y" end="_Middle+40x+10y" edge="end" sym:connection_id="5"/>
+  </connections>
+  <render>
+    <rect location="_Middle-30x-20y" width="60" height="40"/>
+    <path start="_Middle+0x+0y" data="M5,3 L7.5,3 L7.5,-2.5 L12.5,-2.5 L12.5,3 L17.5,3 L17.5,-2.5 L22.5,-2.5 L22.5,3 L24.5,3"/>
+    <text x="_Middle-25" y="_Middle-25" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+35" y="_Middle+25" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-30x-10y" end="_Middle-20x-10y" sym:connection_id="0"/>
+    <text x="_Middle-16" y="_Middle-10" value="NC" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-26" y="_Middle-12" value="2" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-30x+0y" end="_Middle-20x+0y" sym:connection_id="1"/>
+    <text x="_Middle-16" y="_Middle+0" value="NC" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-26" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+0x-30y" end="_Middle+0x-20y" sym:connection_id="2"/>
+    <text x="_Middle+0" y="_Middle-16" value="VDD" align="CentreRight" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle-26" value="6" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+0x+20y" end="_Middle+0x+30y" sym:connection_id="3"/>
+    <text x="_Middle+0" y="_Middle+16" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+26" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle+30x-10y" end="_Middle+40x-10y" sym:connection_id="4"/>
+    <text x="_Middle+26" y="_Middle-10" value="OUT+" align="CentreRight" size="xxs" sym:connection_id="4" sym:connection_attr="name"/>
+    <text x="_Middle+36" y="_Middle-12" value="4" align="BottomCentre" size="xxs" sym:connection_id="4" sym:connection_attr="number"/>
+    <line start="_Middle+30x+10y" end="_Middle+40x+10y" sym:connection_id="5"/>
+    <text x="_Middle+26" y="_Middle+10" value="OUT-" align="CentreRight" size="xxs" sym:connection_id="5" sym:connection_attr="name"/>
+    <text x="_Middle+36" y="_Middle+8" value="5" align="BottomCentre" size="xxs" sym:connection_id="5" sym:connection_attr="number"/>
+  </render>
+</component>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="TPD2E2U06DCK"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="dd6082d2-17fb-4470-ac6c-90d38627b9dc"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="40"/>
+    <meta name="footprint" value="Package_TO_SOT_SMD:SOT-323_SC-70"/>
+    <meta name="datasheet" value="http://www.ti.com/lit/ds/symlink/tpd2e2u06.pdf"/>
+    <meta name="description" value="Dual-Channel High-Speed ESD Protection, SC-70"/>
+    <meta name="keywords" value="TVS"/>
+    <meta name="ki_fp_filters" value="*SC?70*"/>
+    <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="TPD2E2U06DCK" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin1" start="_Middle-30x-10y" end="_Middle-20x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="pin2" start="_Middle-30x+10y" end="_Middle-20x+10y" edge="start" sym:connection_id="1"/>
+    <connection name="pin3" start="_Middle+0x+20y" end="_Middle+0x+30y" edge="end" sym:connection_id="2"/>
+  </connections>
+  <render>
+    <rect location="_Middle-20x-20y" width="30" height="40"/>
+    <rect location="_Middle-14x-17y" width="14" height="34"/>
+    <path start="_Middle+0x+0y" data="M-14,-15 L-16,-12 L-12,-12 L-14,-15"/>
+    <ellipse centre="_Middle-14x-10y" rx="1" ry="1" fill="true"/>
+    <path start="_Middle+0x+0y" data="M-14,-10 L-20,-10"/>
+    <path start="_Middle+0x+0y" data="M-14,-8 L-16,-5 L-12,-5 L-14,-8"/>
+    <path start="_Middle+0x+0y" data="M-12,-15 L-16,-15"/>
+    <path start="_Middle+0x+0y" data="M-12,-8 L-16,-8"/>
+    <ellipse centre="_Middle-8x-17y" rx="1" ry="1" fill="true"/>
+    <path start="_Middle+0x+0y" data="M-8,5 L-10,8 L-6,8 L-8,5"/>
+    <ellipse centre="_Middle-8x+10y" rx="1" ry="1" fill="true"/>
+    <path start="_Middle+0x+0y" data="M-8,10 L-20,10"/>
+    <path start="_Middle+0x+0y" data="M-8,12 L-10,15 L-6,15 L-8,12"/>
+    <ellipse centre="_Middle-8x+17y" rx="1" ry="1" fill="true"/>
+    <path start="_Middle+0x+0y" data="M-8,17 L-8,-17"/>
+    <path start="_Middle+0x+0y" data="M-6,5 L-10,5"/>
+    <path start="_Middle+0x+0y" data="M-6,12 L-10,12"/>
+    <path start="_Middle+0x+0y" data="M0,-4 L4,4 L-4,4 L0,-4"/>
+    <path start="_Middle+0x+0y" data="M0,17 L0,20"/>
+    <ellipse centre="_Middle+0x+17y" rx="1" ry="1" fill="true"/>
+    <path start="_Middle+0x+0y" data="M4,-4 L-4,-4 L-4,-2"/>
+    <text x="_Middle-15" y="_Middle-25" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+2" y="_Middle+25" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle-30x-10y" end="_Middle-20x-10y" sym:connection_id="0"/>
+    <text x="_Middle-26" y="_Middle-12" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-30x+10y" end="_Middle-20x+10y" sym:connection_id="1"/>
+    <text x="_Middle-26" y="_Middle+8" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+0x+20y" end="_Middle+0x+30y" sym:connection_id="2"/>
+    <text x="_Middle-2" y="_Middle+26" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+  </render>
+</component>

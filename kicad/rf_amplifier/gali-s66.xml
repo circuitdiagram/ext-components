@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="GALI-S66"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="e7ada437-ebe9-43f0-bc6d-4df42045d011"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="60"/>
+    <meta name="footprint" value="Package_TO_SOT_SMD:SOT-89-3"/>
+    <meta name="datasheet" value="https://www.minicircuits.com/pdfs/GALI-S66+.pdf"/>
+    <meta name="description" value="DC-3000MHz +18.2dB Low Noise Amplifier, SOT-89"/>
+    <meta name="keywords" value="RF amplifier"/>
+    <meta name="ki_fp_filters" value="SOT?89*"/>
+    <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="GALI-S66" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin1" start="_Middle-30x+0y" end="_Middle-20x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="gnd" start="_Middle-10x+15y" end="_Middle-10x+30y" edge="end" sym:connection_id="1"/>
+    <connection name="pin3" start="_Middle+20x+0y" end="_Middle+30x+0y" edge="end" sym:connection_id="2"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M20,-0 L-20,-20 L-20,20 L20,-0"/>
+    <text x="_Middle-5" y="_Middle-30" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+10" y="_Middle-20" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-30x+0y" end="_Middle-20x+0y" sym:connection_id="0"/>
+    <text x="_Middle-26" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-10x+15y" end="_Middle-10x+30y" sym:connection_id="1"/>
+    <text x="_Middle-10" y="_Middle+11" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-12" y="_Middle+23.5" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+20x+0y" end="_Middle+30x+0y" sym:connection_id="2"/>
+    <text x="_Middle+26" y="_Middle-2" value="3" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+  </render>
+</component>

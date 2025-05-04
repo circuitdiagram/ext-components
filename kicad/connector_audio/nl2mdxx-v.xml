@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="NL2MDXX-V"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="178dd6c3-77e1-40ee-8343-5e16641bb17f"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="70"/>
+    <meta name="footprint" value="Connector_Audio:Jack_speakON_Neutrik_NL2MDXX-V_Vertical"/>
+    <meta name="datasheet" value="https://www.neutrik.com/en/product/nl2mdxx-v"/>
+    <meta name="description" value="speakON Chassis Connectors, 2 pole chassis connector, black D-size flange, countersunk thru holes, vertical PCB mount. Replaces NL2MD-V"/>
+    <meta name="keywords" value="speakon connector neutrik"/>
+    <meta name="ki_fp_filters" value="Jack*speakON*"/>
+    <property name="Reference" type="string" default="J" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="NL2MDXX-V" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="1_neg" start="_Middle-30x+0y" end="_Middle-20x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="1_pos" start="_Middle+0x-30y" end="_Middle+0x-20y" edge="start" sym:connection_id="1"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-20,-0 L-10,-0"/>
+    <rect location="_Middle-10x-5y" width="2.5" height="10"/>
+    <rect location="_Middle-5x-10y" width="10" height="2.5"/>
+    <path start="_Middle+0x+0y" data="M0,-20 L0,-10"/>
+    <ellipse centre="_Middle+0x+0y" rx="20" ry="20"/>
+    <text x="_Middle+10" y="_Middle-35" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+30" y="_Middle-25" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-30x+0y" end="_Middle-20x+0y" sym:connection_id="0"/>
+    <text x="_Middle-16" y="_Middle+0" value="1-" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-26" y="_Middle-2" value="1-" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+0x-30y" end="_Middle+0x-20y" sym:connection_id="1"/>
+    <text x="_Middle+0" y="_Middle-16" value="1+" align="CentreRight" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle-26" value="1+" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+  </render>
+</component>

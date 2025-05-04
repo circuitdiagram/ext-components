@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="LPT80A"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="341e23c6-cfa5-4c8c-b956-795383f3bba3"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="40"/>
+    <meta name="footprint" value="OptoDevice:Osram_LPT80A"/>
+    <meta name="datasheet" value="http://www.osram-os.com/Graphics/XPic4/00209607_0.pdf/LPT%2080A.pdf"/>
+    <meta name="description" value="NPN phototransistor"/>
+    <meta name="keywords" value="NPN phototransistor"/>
+    <meta name="ki_fp_filters" value="Osram*LPT80A*"/>
+    <property name="Reference" type="string" default="Q" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="LPT80A" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="c" start="_Middle+0x-20y" end="_Middle+0x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="e" start="_Middle+0x+10y" end="_Middle+0x+20y" edge="end" sym:connection_id="1"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-25,-12.5 L-17.5,-5 L-17.5,-7.5"/>
+    <path start="_Middle+0x+0y" data="M-22.5,-17.5 L-15,-10 L-15,-12.5"/>
+    <path start="_Middle+0x+0y" data="M-17.5,-5 L-20,-5"/>
+    <path start="_Middle+0x+0y" data="M-15,-10 L-17.5,-10"/>
+    <path start="_Middle+0x+0y" data="M-7.5,-7.5 L-7.5,7.5 L-7.5,7.5"/>
+    <path start="_Middle+0x+0y" data="M-7.5,-2.5 L0,-10"/>
+    <path start="_Middle+0x+0y" data="M-7.5,2.5 L0,10 L0,10"/>
+    <ellipse centre="_Middle-5x+0y" rx="11.1" ry="11.1"/>
+    <path start="_Middle+0x+0y" data="M-5,7 L-3,5 L-1,9 L-5,7 L-5,7" fill="true"/>
+    <text x="_Middle-20" y="_Middle-25" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle-35" y="_Middle+15" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle+0x-20y" end="_Middle+0x-10y" sym:connection_id="0"/>
+    <text x="_Middle+0" y="_Middle-6" value="C" align="CentreRight" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle-16" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+0x+10y" end="_Middle+0x+20y" sym:connection_id="1"/>
+    <text x="_Middle+0" y="_Middle+6" value="E" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+16" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+  </render>
+</component>

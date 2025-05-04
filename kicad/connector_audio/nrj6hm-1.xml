@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="NRJ6HM-1"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="8091450f-7068-4d37-a6f6-c3b141ab1202"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="50"/>
+    <meta name="footprint" value="Connector_Audio:Jack_6.35mm_Neutrik_NRJ6HM-1_Horizontal"/>
+    <meta name="datasheet" value="https://www.neutrik.com/en/product/nrj6hm-1"/>
+    <meta name="description" value="Slim Jacks, 6.35mm (1/4in) stereo jack, metal nose with efficient chassis ground connection, T+R+S normalling contact"/>
+    <meta name="keywords" value="audio jack receptacle stereo headphones connector neutrik"/>
+    <meta name="ki_fp_filters" value="Jack*"/>
+    <property name="Reference" type="string" default="J" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="NRJ6HM-1" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pinS" start="_Middle+10x-20y" end="_Middle+20x-20y" edge="end" sym:connection_id="0"/>
+    <connection name="pinSN" start="_Middle+10x-10y" end="_Middle+20x-10y" edge="end" sym:connection_id="1"/>
+    <connection name="pinR" start="_Middle+10x+0y" end="_Middle+20x+0y" edge="end" sym:connection_id="2"/>
+    <connection name="pinRN" start="_Middle+10x+10y" end="_Middle+20x+10y" edge="end" sym:connection_id="3"/>
+    <connection name="pinT" start="_Middle+10x+20y" end="_Middle+20x+20y" edge="end" sym:connection_id="4"/>
+    <connection name="pinTN" start="_Middle+10x+30y" end="_Middle+20x+30y" edge="end" sym:connection_id="5"/>
+  </connections>
+  <render>
+    <rect location="_Middle-25x+20y" width="5" height="10"/>
+    <path start="_Middle+0x+0y" data="M-7.5,20 L-5,22.5 L-2.5,20 L-2.5,-0 L10,-0"/>
+    <path start="_Middle+0x+0y" data="M-5,-19 L-4,-17"/>
+    <path start="_Middle+0x+0y" data="M0,20 L2.5,22.5 L5,20 L10,20"/>
+    <path start="_Middle+0x+0y" data="M2,1 L3,3"/>
+    <path start="_Middle+0x+0y" data="M7,21 L8,23"/>
+    <rect location="_Middle-20x-25y" width="30" height="60"/>
+    <path start="_Middle+0x+0y" data="M10,-20 L-10,-20 L-10,20 L-12.5,22.5 L-15,20"/>
+    <path start="_Middle+0x+0y" data="M10,-10 L-5,-10 L-5,-19 L-6,-17"/>
+    <path start="_Middle+0x+0y" data="M10,10 L2,10 L2,1 L1,3"/>
+    <path start="_Middle+0x+0y" data="M10,30 L7,30 L7,21 L6,23"/>
+    <text x="_Middle+0" y="_Middle-45" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle-35" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle+10x-20y" end="_Middle+20x-20y" sym:connection_id="0"/>
+    <text x="_Middle+16" y="_Middle-22" value="S" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+10x-10y" end="_Middle+20x-10y" sym:connection_id="1"/>
+    <text x="_Middle+16" y="_Middle-12" value="SN" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+10x+0y" end="_Middle+20x+0y" sym:connection_id="2"/>
+    <text x="_Middle+16" y="_Middle-2" value="R" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+10x+10y" end="_Middle+20x+10y" sym:connection_id="3"/>
+    <text x="_Middle+16" y="_Middle+8" value="RN" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle+10x+20y" end="_Middle+20x+20y" sym:connection_id="4"/>
+    <text x="_Middle+16" y="_Middle+18" value="T" align="BottomCentre" size="xxs" sym:connection_id="4" sym:connection_attr="number"/>
+    <line start="_Middle+10x+30y" end="_Middle+20x+30y" sym:connection_id="5"/>
+    <text x="_Middle+16" y="_Middle+28" value="TN" align="BottomCentre" size="xxs" sym:connection_id="5" sym:connection_attr="number"/>
+  </render>
+</component>

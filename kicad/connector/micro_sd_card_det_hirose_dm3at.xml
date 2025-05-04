@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Micro SD Card Det Hirose DM3AT"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="07a9991b-3e37-4d58-b8e7-b40bd1581ecc"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="170"/>
+    <meta name="datasheet" value="https://www.hirose.com/product/en/download_file/key_name/DM3/category/Catalog/doc_file_id/49662/?file_category_id=4&amp;item_id=195&amp;is_series=1"/>
+    <meta name="description" value="Micro SD Card Socket with card detection pins"/>
+    <meta name="keywords" value="connector SD microsd"/>
+    <meta name="ki_fp_filters" value="microSD*"/>
+    <property name="Reference" type="string" default="J" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="Micro_SD_Card_Det_Hirose_DM3AT" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="dat2" start="_Middle-90x-40y" end="_Middle-75x-40y" edge="start" sym:connection_id="0"/>
+    <connection name="dat3_cd" start="_Middle-90x-30y" end="_Middle-75x-30y" edge="start" sym:connection_id="1"/>
+    <connection name="cmd" start="_Middle-90x-20y" end="_Middle-75x-20y" edge="start" sym:connection_id="2"/>
+    <connection name="vdd" start="_Middle-90x-10y" end="_Middle-75x-10y" edge="start" sym:connection_id="3"/>
+    <connection name="clk" start="_Middle-90x+0y" end="_Middle-75x+0y" edge="start" sym:connection_id="4"/>
+    <connection name="vss" start="_Middle-90x+10y" end="_Middle-75x+10y" edge="start" sym:connection_id="5"/>
+    <connection name="dat0" start="_Middle-90x+20y" end="_Middle-75x+20y" edge="start" sym:connection_id="6"/>
+    <connection name="dat1" start="_Middle-90x+30y" end="_Middle-75x+30y" edge="start" sym:connection_id="7"/>
+    <connection name="det_a" start="_Middle-90x+40y" end="_Middle-75x+40y" edge="start" sym:connection_id="8"/>
+    <connection name="det_b" start="_Middle-90x+50y" end="_Middle-75x+50y" edge="start" sym:connection_id="9"/>
+    <connection name="shield" start="_Middle+65x+50y" end="_Middle+80x+50y" edge="end" sym:connection_id="10"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-35,35 L-35,-45 L-5,-45 L10,-60 L15,-60 L15,-55.00000000000001 L25,-55.00000000000001 L30,-60 L80,-60 L80,35 L-35,35"/>
+    <rect location="_Middle-30x-42.5y" width="10" height="5"/>
+    <rect location="_Middle-30x-32.5y" width="10" height="5.0000000000000036"/>
+    <rect location="_Middle-30x-22.5y" width="10" height="5"/>
+    <rect location="_Middle-30x-12.5y" width="10" height="5"/>
+    <rect location="_Middle-30x-2.5y" width="10" height="5"/>
+    <rect location="_Middle-30x+7.5y" width="10" height="5"/>
+    <rect location="_Middle-30x+17.5y" width="10" height="5"/>
+    <rect location="_Middle-30x+27.5y" width="10" height="5.0000000000000036"/>
+    <path start="_Middle+0x+0y" data="M65.00000000000001,-60 L65.00000000000001,-65.00000000000001 L-75,-65.00000000000001 L-75,65.00000000000001 L65.00000000000001,65.00000000000001 L65.00000000000001,35"/>
+    <text x="_Middle-65.00000000000001" y="_Middle-70" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+65.00000000000001" y="_Middle-70" value="$Value" align="CentreRight" size="xxs"/>
+    <line start="_Middle-90x-40y" end="_Middle-75x-40y" sym:connection_id="0"/>
+    <text x="_Middle-71" y="_Middle-40" value="DAT2" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-83.5" y="_Middle-42" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-90x-30y" end="_Middle-75x-30y" sym:connection_id="1"/>
+    <text x="_Middle-71" y="_Middle-30" value="DAT3/CD" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-83.5" y="_Middle-32" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle-90x-20y" end="_Middle-75x-20y" sym:connection_id="2"/>
+    <text x="_Middle-71" y="_Middle-20" value="CMD" align="CentreLeft" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-83.5" y="_Middle-22" value="3" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle-90x-10y" end="_Middle-75x-10y" sym:connection_id="3"/>
+    <text x="_Middle-71" y="_Middle-10" value="VDD" align="CentreLeft" size="xxs" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle-83.5" y="_Middle-12" value="4" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle-90x+0y" end="_Middle-75x+0y" sym:connection_id="4"/>
+    <text x="_Middle-71" y="_Middle+0" value="CLK" align="CentreLeft" size="xxs" sym:connection_id="4" sym:connection_attr="name"/>
+    <text x="_Middle-83.5" y="_Middle-2" value="5" align="BottomCentre" size="xxs" sym:connection_id="4" sym:connection_attr="number"/>
+    <line start="_Middle-90x+10y" end="_Middle-75x+10y" sym:connection_id="5"/>
+    <text x="_Middle-71" y="_Middle+10" value="VSS" align="CentreLeft" size="xxs" sym:connection_id="5" sym:connection_attr="name"/>
+    <text x="_Middle-83.5" y="_Middle+8" value="6" align="BottomCentre" size="xxs" sym:connection_id="5" sym:connection_attr="number"/>
+    <line start="_Middle-90x+20y" end="_Middle-75x+20y" sym:connection_id="6"/>
+    <text x="_Middle-71" y="_Middle+20" value="DAT0" align="CentreLeft" size="xxs" sym:connection_id="6" sym:connection_attr="name"/>
+    <text x="_Middle-83.5" y="_Middle+18" value="7" align="BottomCentre" size="xxs" sym:connection_id="6" sym:connection_attr="number"/>
+    <line start="_Middle-90x+30y" end="_Middle-75x+30y" sym:connection_id="7"/>
+    <text x="_Middle-71" y="_Middle+30" value="DAT1" align="CentreLeft" size="xxs" sym:connection_id="7" sym:connection_attr="name"/>
+    <text x="_Middle-83.5" y="_Middle+28" value="8" align="BottomCentre" size="xxs" sym:connection_id="7" sym:connection_attr="number"/>
+    <line start="_Middle-90x+40y" end="_Middle-75x+40y" sym:connection_id="8"/>
+    <text x="_Middle-71" y="_Middle+40" value="DET_A" align="CentreLeft" size="xxs" sym:connection_id="8" sym:connection_attr="name"/>
+    <text x="_Middle-83.5" y="_Middle+38" value="10" align="BottomCentre" size="xxs" sym:connection_id="8" sym:connection_attr="number"/>
+    <line start="_Middle-90x+50y" end="_Middle-75x+50y" sym:connection_id="9"/>
+    <text x="_Middle-71" y="_Middle+50" value="DET_B" align="CentreLeft" size="xxs" sym:connection_id="9" sym:connection_attr="name"/>
+    <text x="_Middle-83.5" y="_Middle+48" value="9" align="BottomCentre" size="xxs" sym:connection_id="9" sym:connection_attr="number"/>
+    <line start="_Middle+65x+50y" end="_Middle+80x+50y" sym:connection_id="10"/>
+    <text x="_Middle+61" y="_Middle+50" value="SHIELD" align="CentreRight" size="xxs" sym:connection_id="10" sym:connection_attr="name"/>
+    <text x="_Middle+73.5" y="_Middle+48" value="11" align="BottomCentre" size="xxs" sym:connection_id="10" sym:connection_attr="number"/>
+  </render>
+</component>

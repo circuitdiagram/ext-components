@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="DIN Rail Adapter"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="61797339-e119-49c7-9cc5-0e296714c63f"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="80"/>
+    <meta name="description" value="DIN Rail adapter universal, mounting holes without connection"/>
+    <meta name="keywords" value="Mounting holes, DIN rail adapter"/>
+    <meta name="ki_fp_filters" value="DINRailAdapter?3xM3* DINRailAdapter?2xM3*"/>
+    <property name="Reference" type="string" default="DRA" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="DIN_Rail_Adapter" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M40,-10 L-40,-10 L-40,15 L-30,15 L-30,10 L-35,10 L-35,5 L35,5 L35,10 L30,10 L30,15 L40,15 L40,-10 L-40,-10"/>
+    <text x="_Middle+0" y="_Middle-25" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle-15" value="$Value" align="CentreCentre" size="xxs"/>
+  </render>
+</component>

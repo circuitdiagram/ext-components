@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="BPW42"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="5baebf6e-e21a-4b15-a3fd-be55a7c0ee6f"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="40"/>
+    <meta name="footprint" value="LED_THT:LED_D3.0mm_Clear"/>
+    <meta name="datasheet" value="http://www.ges.cz/sheets/b/bpw42.pdf"/>
+    <meta name="description" value="NPN phototransistor"/>
+    <meta name="keywords" value="NPN phototransistor opto"/>
+    <meta name="ki_fp_filters" value="LED*3.0mm*Clear*"/>
+    <property name="Reference" type="string" default="Q" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="BPW42" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="c" start="_Middle+10x-20y" end="_Middle+10x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="e" start="_Middle+10x+10y" end="_Middle+10x+20y" edge="end" sym:connection_id="1"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-15,-12.5 L-7.5,-5 L-7.5,-7.5"/>
+    <path start="_Middle+0x+0y" data="M-12.5,-17.5 L-5,-10 L-5,-12.5"/>
+    <path start="_Middle+0x+0y" data="M-7.5,-5 L-10,-5"/>
+    <path start="_Middle+0x+0y" data="M-5,-10 L-7.5,-10"/>
+    <path start="_Middle+0x+0y" data="M2.5,-7.5 L2.5,7.5 L2.5,7.5"/>
+    <path start="_Middle+0x+0y" data="M2.5,-2.5 L10,-10"/>
+    <path start="_Middle+0x+0y" data="M2.5,2.5 L10,10 L10,10"/>
+    <ellipse centre="_Middle+5x+0y" rx="11.1" ry="11.1"/>
+    <path start="_Middle+0x+0y" data="M5,7 L7,5 L9,9 L5,7 L5,7" fill="true"/>
+    <text x="_Middle+20" y="_Middle-5" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+20" y="_Middle+5" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle+10x-20y" end="_Middle+10x-10y" sym:connection_id="0"/>
+    <text x="_Middle+10" y="_Middle-6" value="C" align="CentreRight" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle+8" y="_Middle-16" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+10x+10y" end="_Middle+10x+20y" sym:connection_id="1"/>
+    <text x="_Middle+10" y="_Middle+6" value="E" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle+8" y="_Middle+16" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+  </render>
+</component>

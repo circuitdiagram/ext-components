@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="NC7SZ125P5X"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="07071377-e748-49ce-bf8f-24578c7a05a5"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="80"/>
+    <meta name="footprint" value="Package_TO_SOT_SMD:SOT-353_SC-70-5"/>
+    <meta name="datasheet" value="https://www.onsemi.com/pdf/datasheet/nc7sz125-d.pdf"/>
+    <meta name="description" value="TinyLogic UHS Buffer, Tri-State Output, SOT-353"/>
+    <meta name="keywords" value="buffer three-state"/>
+    <meta name="ki_fp_filters" value="SOT*353*"/>
+    <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="NC7SZ125P5X" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="a" start="_Middle-40x-10y" end="_Middle-20x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="not_oe" start="_Middle-40x+10y" end="_Middle-20x+10y" edge="start" sym:connection_id="1"/>
+    <connection name="vcc" start="_Middle+0x-40y" end="_Middle+0x-20y" edge="start" sym:connection_id="2"/>
+    <connection name="gnd" start="_Middle+0x+20y" end="_Middle+0x+40y" edge="end" sym:connection_id="3"/>
+    <connection name="y" start="_Middle+20x-10y" end="_Middle+40x-10y" edge="end" sym:connection_id="4"/>
+  </connections>
+  <render>
+    <rect location="_Middle-20x-20y" width="40" height="40"/>
+    <text x="_Middle-20" y="_Middle-25" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+30" y="_Middle-25" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-40x-10y" end="_Middle-20x-10y" sym:connection_id="0"/>
+    <text x="_Middle-16" y="_Middle-10" value="A" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-31" y="_Middle-12" value="2" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-40x+10y" end="_Middle-20x+10y" sym:connection_id="1"/>
+    <text x="_Middle-16" y="_Middle+10" value="~{OE}" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-31" y="_Middle+8" value="1" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+0x-40y" end="_Middle+0x-20y" sym:connection_id="2"/>
+    <text x="_Middle+0" y="_Middle-16" value="VCC" align="CentreRight" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle-31" value="5" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+0x+20y" end="_Middle+0x+40y" sym:connection_id="3"/>
+    <text x="_Middle+0" y="_Middle+16" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+31" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle+20x-10y" end="_Middle+40x-10y" sym:connection_id="4"/>
+    <text x="_Middle+16" y="_Middle-10" value="Y" align="CentreRight" size="xxs" sym:connection_id="4" sym:connection_attr="name"/>
+    <text x="_Middle+31" y="_Middle-12" value="4" align="BottomCentre" size="xxs" sym:connection_id="4" sym:connection_attr="number"/>
+  </render>
+</component>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="IR26-21C L110 TR8"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="8fa4245b-366d-4b9f-b2af-4bc3f46ecddd"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="40"/>
+    <meta name="footprint" value="LED_SMD:LED_1206_3216Metric"/>
+    <meta name="datasheet" value="http://www.everlight.com/file/ProductFile/IR26-21C-L110-TR8.pdf"/>
+    <meta name="description" value="940nm, 20 deg, Infrared LED, 1206"/>
+    <meta name="keywords" value="IR LED"/>
+    <meta name="ki_fp_filters" value="LED*1206*3216Metric*"/>
+    <property name="Reference" type="string" default="D" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="IR26-21C_L110_TR8" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="k" start="_Middle-15x+0y" end="_Middle-5x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="a" start="_Middle+5x+0y" end="_Middle+15x+0y" edge="end" sym:connection_id="1"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-12,3 L-18,9 L-15,9 L-18,9 L-18,6"/>
+    <path start="_Middle+0x+0y" data="M-7,3 L-13,9 L-10,9 L-13,9 L-13,6"/>
+    <path start="_Middle+0x+0y" data="M-5,-0 L5,-0"/>
+    <path start="_Middle+0x+0y" data="M-5,5 L-5,-5"/>
+    <path start="_Middle+0x+0y" data="M5,5 L5,-5 L-5,-0 L5,5"/>
+    <text x="_Middle+0" y="_Middle-10" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+15" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-15x+0y" end="_Middle-5x+0y" sym:connection_id="0"/>
+    <text x="_Middle-1" y="_Middle+0" value="K" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-11" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+5x+0y" end="_Middle+15x+0y" sym:connection_id="1"/>
+    <text x="_Middle+1" y="_Middle+0" value="A" align="CentreRight" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle+11" y="_Middle-2" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+  </render>
+</component>

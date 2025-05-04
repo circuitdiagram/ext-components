@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="IS471F"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="810d0b09-9576-4e01-ab48-36e2b53a6d90"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="100"/>
+    <meta name="footprint" value="OptoDevice:Sharp_IS471F"/>
+    <meta name="datasheet" value="http://www.micropik.com/PDF/tsop17xx.pdf"/>
+    <meta name="description" value="Photo Modules for PCM Remote Control Systems"/>
+    <meta name="keywords" value="opto IR receiver"/>
+    <meta name="ki_fp_filters" value="Sharp*IS471F*"/>
+    <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="IS471F" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="vs" start="_Middle+30x-20y" end="_Middle+40x-20y" edge="end" sym:connection_id="0"/>
+    <connection name="out" start="_Middle+30x+0y" end="_Middle+40x+0y" edge="end" sym:connection_id="1"/>
+    <connection name="glo" start="_Middle+30x+10y" end="_Middle+40x+10y" edge="end" sym:connection_id="2"/>
+    <connection name="gnd" start="_Middle+30x+30y" end="_Middle+40x+30y" edge="end" sym:connection_id="3"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-47.5,7 C-49.487480657279164,5.537766912040143 -50.66102362204724,3.217428816923282 -50.66102362204724,0.750000000000001 C-50.66102362204724,-1.71742881692328 -49.487480657279164,-4.037766912040139 -47.5,-5.499999999999997"/>
+    <rect location="_Middle-31x+16.5y" width="24.5" height="11.5"/>
+    <rect location="_Middle-5x+32y" width="3" height="1"/>
+    <path start="_Middle+0x+0y" data="M-3.5,30 L-3.5,32"/>
+    <path start="_Middle+0x+0y" data="M-2,12.5 L0.5,15 L0.5,30"/>
+    <path start="_Middle+0x+0y" data="M0.5,-20 L-6.5,-20"/>
+    <path start="_Middle+0x+0y" data="M6,23 L8.5,25.500000000000004 L8.5,30"/>
+    <path start="_Middle+0x+0y" data="M10.5,30 L-3.5,30"/>
+    <text x="_Middle-19.5" y="_Middle-5.5" value="DEMOD" align="CentreCentre" size="base"/>
+    <text x="_Middle-19.5" y="_Middle+22" value="OSC" align="CentreCentre" size="base"/>
+    <path start="_Middle+0x+0y" data="M-41.5,-1.5 L-45,-5"/>
+    <path start="_Middle+0x+0y" data="M-41.5,-1.5 L-43.5,-1.5"/>
+    <path start="_Middle+0x+0y" data="M-41.5,-1.5 L-41.5,-3.5"/>
+    <path start="_Middle+0x+0y" data="M-41,2.5 L-44.50000000000001,-1"/>
+    <path start="_Middle+0x+0y" data="M-41,2.5 L-43.00000000000001,2.5"/>
+    <path start="_Middle+0x+0y" data="M-41,2.5 L-41,0.5"/>
+    <path start="_Middle+0x+0y" data="M-40,-2.5 L-33.5,-2.5 L-37,4 L-40,-2.5" fill="true"/>
+    <path start="_Middle+0x+0y" data="M-40,4 L-33.5,4"/>
+    <rect location="_Middle-31x-22y" width="24.5" height="37"/>
+    <path start="_Middle+0x+0y" data="M-31,-5.5 L-37,-5.5 L-37,7 L-31,7"/>
+    <path start="_Middle+0x+0y" data="M-2,7.5 L-2,15"/>
+    <path start="_Middle+0x+0y" data="M-2,10 L0.5,7.5 L0.5,-0 L11,-0"/>
+    <path start="_Middle+0x+0y" data="M-2,11.5 L-6.5,11.5"/>
+    <path start="_Middle+0x+0y" data="M-1.5,14 L-1,14"/>
+    <path start="_Middle+0x+0y" data="M-0.5,14 L-1,14"/>
+    <path start="_Middle+0x+0y" data="M-0.5,14 L-0.5,13"/>
+    <path start="_Middle+0x+0y" data="M0.5,-17.5 L0.5,-20 L16.5,-20"/>
+    <path start="_Middle+0x+0y" data="M0.5,-0 L0.5,-5"/>
+    <rect location="_Middle-2x-17.5y" width="5" height="12.5"/>
+    <path start="_Middle+0x+0y" data="M6,18 L6,25.500000000000004"/>
+    <path start="_Middle+0x+0y" data="M6,20.5 L8.5,18 L8.5,10.5 L11,10.5"/>
+    <path start="_Middle+0x+0y" data="M6,22 L-6.5,22"/>
+    <path start="_Middle+0x+0y" data="M6.5,24.5 L7,24.5"/>
+    <path start="_Middle+0x+0y" data="M7.5,24.5 L7,24.5"/>
+    <path start="_Middle+0x+0y" data="M7.5,24.5 L7.5,23.500000000000004"/>
+    <rect location="_Middle-47.5x-25y" width="77.5" height="60"/>
+    <text x="_Middle-47.5" y="_Middle-30" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+30" y="_Middle-30" value="$Value" align="CentreRight" size="xxs"/>
+    <line start="_Middle+30x-20y" end="_Middle+40x-20y" sym:connection_id="0"/>
+    <text x="_Middle+26" y="_Middle-20" value="Vs" align="CentreRight" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle+36" y="_Middle-22" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+30x+0y" end="_Middle+40x+0y" sym:connection_id="1"/>
+    <text x="_Middle+26" y="_Middle+0" value="OUT" align="CentreRight" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle+36" y="_Middle-2" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+30x+10y" end="_Middle+40x+10y" sym:connection_id="2"/>
+    <text x="_Middle+26" y="_Middle+10" value="GLo" align="CentreRight" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle+36" y="_Middle+8" value="4" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+30x+30y" end="_Middle+40x+30y" sym:connection_id="3"/>
+    <text x="_Middle+26" y="_Middle+30" value="GND" align="CentreRight" size="xxs" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle+36" y="_Middle+28" value="3" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+  </render>
+</component>

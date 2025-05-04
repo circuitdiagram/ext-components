@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="IH1205DH"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="0dc154e3-4148-4a42-9cec-f9383b083d68"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="80"/>
+    <meta name="footprint" value="Converter_DCDC:Converter_DCDC_XP_POWER-IHxxxxDH_THT"/>
+    <meta name="datasheet" value="https://www.xppower.com/pdfs/SF_IH.pdf"/>
+    <meta name="description" value="XP Power 2W, 3000-6000 VDC Isolated DC/DC Converter Module, Dual Output Voltage ±5V, ±200mA, 12V Input Voltage, DIP"/>
+    <meta name="keywords" value="XP_POWER DC/DC isolated Converter module"/>
+    <meta name="ki_fp_filters" value="*XP?POWER?IHxxxxDH*"/>
+    <property name="Reference" type="string" default="PS" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="IH1205DH" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="vin" start="_Middle-40x-10y" end="_Middle-30x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="vin" start="_Middle-40x+10y" end="_Middle-30x+10y" edge="start" sym:connection_id="1"/>
+    <connection name="vout" start="_Middle+30x-10y" end="_Middle+40x-10y" edge="end" sym:connection_id="2"/>
+    <connection name="0v" start="_Middle+30x+0y" end="_Middle+40x+0y" edge="end" sym:connection_id="3"/>
+    <connection name="vout" start="_Middle+30x+10y" end="_Middle+40x+10y" edge="end" sym:connection_id="4"/>
+    <connection name="nc" start="_Middle+0x+10y" end="_Middle+0x+20y" edge="end" sym:connection_id="5"/>
+  </connections>
+  <render>
+    <rect location="_Middle-30x-20y" width="60" height="40"/>
+    <path start="_Middle+0x+0y" data="M0,-20 L0,-15"/>
+    <path start="_Middle+0x+0y" data="M0,-10 L0,-5"/>
+    <path start="_Middle+0x+0y" data="M0,-0 L0,5"/>
+    <path start="_Middle+0x+0y" data="M0,10 L0,15"/>
+    <text x="_Middle-30" y="_Middle-25" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+5" y="_Middle-25" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle-40x-10y" end="_Middle-30x-10y" sym:connection_id="0"/>
+    <text x="_Middle-26" y="_Middle-10" value="+Vin" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-36" y="_Middle-12" value="3" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-40x+10y" end="_Middle-30x+10y" sym:connection_id="1"/>
+    <text x="_Middle-26" y="_Middle+10" value="-Vin" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-36" y="_Middle+8" value="1" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+30x-10y" end="_Middle+40x-10y" sym:connection_id="2"/>
+    <text x="_Middle+26" y="_Middle-10" value="+Vout" align="CentreRight" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle+36" y="_Middle-12" value="5" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+30x+0y" end="_Middle+40x+0y" sym:connection_id="3"/>
+    <text x="_Middle+26" y="_Middle+0" value="0V" align="CentreRight" size="xxs" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle+36" y="_Middle-2" value="6" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle+30x+10y" end="_Middle+40x+10y" sym:connection_id="4"/>
+    <text x="_Middle+26" y="_Middle+10" value="-Vout" align="CentreRight" size="xxs" sym:connection_id="4" sym:connection_attr="name"/>
+    <text x="_Middle+36" y="_Middle+8" value="4" align="BottomCentre" size="xxs" sym:connection_id="4" sym:connection_attr="number"/>
+    <line start="_Middle+0x+10y" end="_Middle+0x+20y" sym:connection_id="5"/>
+    <text x="_Middle+0" y="_Middle+6" value="NC" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="5" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+16" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="5" sym:connection_attr="number"/>
+  </render>
+</component>

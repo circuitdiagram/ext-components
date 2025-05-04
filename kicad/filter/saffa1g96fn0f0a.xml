@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="SAFFA1G96FN0F0A"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="ea905029-956a-4a7a-90a7-0b5ff6ad0664"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="60"/>
+    <meta name="footprint" value="Filter:Filter_1411-5_1.4x1.1mm"/>
+    <meta name="datasheet" value="https://www.murata.com/~/media/webrenewal/support/library/catalog/products/filter/rf/p73e.ashx?la=en"/>
+    <meta name="description" value="Murata 1960MHz SAW filter, SMD 1411"/>
+    <meta name="keywords" value="SAW filter"/>
+    <meta name="ki_fp_filters" value="Filter*1411*1.4x1.1mm*"/>
+    <property name="Reference" type="string" default="FL" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="SAFFA1G96FN0F0A" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin1" start="_Middle-30x-10y" end="_Middle-20x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="pin2" start="_Middle-30x+10y" end="_Middle-20x+10y" edge="start" sym:connection_id="1"/>
+    <connection name="pin5" start="_Middle-30x+10y" end="_Middle-20x+10y" edge="start" sym:connection_id="2"/>
+    <connection name="pin4" start="_Middle+20x-10y" end="_Middle+30x-10y" edge="end" sym:connection_id="3"/>
+    <connection name="pin3" start="_Middle+20x+10y" end="_Middle+30x+10y" edge="end" sym:connection_id="4"/>
+  </connections>
+  <render>
+    <rect location="_Middle-20x-20y" width="40" height="40"/>
+    <path start="_Middle+0x+0y" data="M-6,3 L-5,3"/>
+    <path start="_Middle+0x+0y" data="M-6,5 L-8,5 L-8,-0 L9,-0"/>
+    <path start="_Middle+0x+0y" data="M0,-11 C0.035176366108763624,-8.897647395047173 -1.1284294115786766,-6.958304432234773 -3,-5.999999999999999"/>
+    <path start="_Middle+0x+0y" data="M3,-6 C1.1622148717424956,-6.994033827306337 0.01224861079617856,-8.910644262216866 0,-11"/>
+    <path start="_Middle+0x+0y" data="M6,3 L-5,3"/>
+    <path start="_Middle+0x+0y" data="M6,3 L8,3 L8,8 L-9,8"/>
+    <path start="_Middle+0x+0y" data="M6,5 L-6,5"/>
+    <text x="_Middle+10" y="_Middle+25" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle-25" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-30x-10y" end="_Middle-20x-10y" sym:connection_id="0"/>
+    <text x="_Middle-26" y="_Middle-12" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-30x+10y" end="_Middle-20x+10y" sym:connection_id="1"/>
+    <text x="_Middle-26" y="_Middle+8" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle-30x+10y" end="_Middle-20x+10y" sym:connection_id="2"/>
+    <text x="_Middle-26" y="_Middle+8" value="5" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+20x-10y" end="_Middle+30x-10y" sym:connection_id="3"/>
+    <text x="_Middle+26" y="_Middle-12" value="4" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle+20x+10y" end="_Middle+30x+10y" sym:connection_id="4"/>
+    <text x="_Middle+26" y="_Middle+8" value="3" align="BottomCentre" size="xxs" sym:connection_id="4" sym:connection_attr="number"/>
+  </render>
+</component>

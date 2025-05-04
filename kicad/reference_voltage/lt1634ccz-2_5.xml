@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="LT1634CCZ-2.5"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="c56686ac-f5f4-447b-b691-bb4f852e4d0d"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="30"/>
+    <meta name="footprint" value="Package_TO_SOT_THT:TO-92_Inline"/>
+    <meta name="datasheet" value="https://www.analog.com/media/en/technical-documentation/data-sheets/1634ff.pdf"/>
+    <meta name="description" value="2.5V Micropower Precision Shunt Voltage Reference, TO-92"/>
+    <meta name="keywords" value="voltage reference Micropower"/>
+    <meta name="ki_fp_filters" value="TO?92*"/>
+    <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="LT1634CCZ-2.5" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="a" start="_Middle-15x+0y" end="_Middle-5x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="test" start="_Middle+0x-20y" end="_Middle+0x-10y" edge="start" sym:connection_id="1"/>
+    <connection name="k" start="_Middle+5x+0y" end="_Middle+15x+0y" edge="end" sym:connection_id="2"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-5,-0 L0,-0 L5,-0"/>
+    <path start="_Middle+0x+0y" data="M-5,5 L2.5,-0 L-5,-5 L-5,5"/>
+    <path start="_Middle+0x+0y" data="M0,-10 L0,-1.5"/>
+    <path start="_Middle+0x+0y" data="M0,5 L2.5,5 L2.5,-5 L5,-5"/>
+    <text x="_Middle+5" y="_Middle-15" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+10" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-15x+0y" end="_Middle-5x+0y" sym:connection_id="0"/>
+    <text x="_Middle-1" y="_Middle+0" value="A" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-11" y="_Middle-2" value="3" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+0x-20y" end="_Middle+0x-10y" sym:connection_id="1"/>
+    <text x="_Middle+0" y="_Middle-6" value="Test" align="CentreRight" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle-16" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+5x+0y" end="_Middle+15x+0y" sym:connection_id="2"/>
+    <text x="_Middle+1" y="_Middle+0" value="K" align="CentreRight" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle+11" y="_Middle-2" value="2" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+  </render>
+</component>

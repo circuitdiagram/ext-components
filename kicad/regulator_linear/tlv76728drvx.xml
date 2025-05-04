@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="TLV76728DRVx"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="80ef9def-2609-4186-b901-78178649173c"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="60"/>
+    <meta name="footprint" value="Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm_ThermalVias"/>
+    <meta name="datasheet" value="www.ti.com/lit/gpn/TLV767"/>
+    <meta name="description" value="1A Precision Linear Voltage Regulator, with enable pin, Fixed Output 2.8V, WSON6"/>
+    <meta name="keywords" value="1A Precision Linear Voltage Regulator"/>
+    <meta name="ki_fp_filters" value="WSON*1EP*2x2mm*P0.65*"/>
+    <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="TLV76728DRVx" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="in" start="_Middle-30x-10y" end="_Middle-20x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="en" start="_Middle-30x+0y" end="_Middle-20x+0y" edge="start" sym:connection_id="1"/>
+    <connection name="pad" start="_Middle-10x+20y" end="_Middle-10x+30y" edge="end" sym:connection_id="2"/>
+    <connection name="gnd" start="_Middle+0x+20y" end="_Middle+0x+30y" edge="end" sym:connection_id="3"/>
+    <connection name="gnd" start="_Middle+0x+20y" end="_Middle+0x+30y" edge="end" sym:connection_id="4"/>
+    <connection name="out" start="_Middle+20x-10y" end="_Middle+30x-10y" edge="end" sym:connection_id="5"/>
+    <connection name="sns" start="_Middle+20x+0y" end="_Middle+30x+0y" edge="end" sym:connection_id="6"/>
+  </connections>
+  <render>
+    <rect location="_Middle-20x-20y" width="40" height="40"/>
+    <text x="_Middle+0" y="_Middle-35" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle-25" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-30x-10y" end="_Middle-20x-10y" sym:connection_id="0"/>
+    <text x="_Middle-16" y="_Middle-10" value="IN" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-26" y="_Middle-12" value="6" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-30x+0y" end="_Middle-20x+0y" sym:connection_id="1"/>
+    <text x="_Middle-16" y="_Middle+0" value="EN" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-26" y="_Middle-2" value="4" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle-10x+20y" end="_Middle-10x+30y" sym:connection_id="2"/>
+    <text x="_Middle-10" y="_Middle+16" value="PAD" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-12" y="_Middle+26" value="7" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+0x+20y" end="_Middle+0x+30y" sym:connection_id="3"/>
+    <text x="_Middle+0" y="_Middle+16" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+26" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle+0x+20y" end="_Middle+0x+30y" sym:connection_id="4"/>
+    <text x="_Middle+0" y="_Middle+16" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="4" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+26" value="5" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="4" sym:connection_attr="number"/>
+    <line start="_Middle+20x-10y" end="_Middle+30x-10y" sym:connection_id="5"/>
+    <text x="_Middle+16" y="_Middle-10" value="OUT" align="CentreRight" size="xxs" sym:connection_id="5" sym:connection_attr="name"/>
+    <text x="_Middle+26" y="_Middle-12" value="1" align="BottomCentre" size="xxs" sym:connection_id="5" sym:connection_attr="number"/>
+    <line start="_Middle+20x+0y" end="_Middle+30x+0y" sym:connection_id="6"/>
+    <text x="_Middle+16" y="_Middle+0" value="SNS" align="CentreRight" size="xxs" sym:connection_id="6" sym:connection_attr="name"/>
+    <text x="_Middle+26" y="_Middle-2" value="2" align="BottomCentre" size="xxs" sym:connection_id="6" sym:connection_attr="number"/>
+  </render>
+</component>

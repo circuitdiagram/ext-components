@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="MC100LVELT22DT"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="1e64620c-a463-44aa-b9dc-febf94e0ffaa"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="80"/>
+    <meta name="footprint" value="Package_SO:TSSOP-8_3x3mm_P0.65mm"/>
+    <meta name="datasheet" value="https://www.onsemi.com/pub/Collateral/MC100LVELT22-D.PDF"/>
+    <meta name="description" value="3.3 V Dual LVTTL/LVCMOS to Differential LVPECL Translator, TSSOP-8"/>
+    <meta name="keywords" value="PECL buffer interface"/>
+    <meta name="ki_fp_filters" value="TSSOP*3x3mm*P0.65mm*"/>
+    <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="MC100LVELT22DT" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="d0" start="_Middle-40x-10y" end="_Middle-30x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="d1" start="_Middle-40x+10y" end="_Middle-30x+10y" edge="start" sym:connection_id="1"/>
+    <connection name="vcc" start="_Middle+0x-50y" end="_Middle+0x-40y" edge="start" sym:connection_id="2"/>
+    <connection name="gnd" start="_Middle+0x+40y" end="_Middle+0x+50y" edge="end" sym:connection_id="3"/>
+    <connection name="q0" start="_Middle+30x-20y" end="_Middle+40x-20y" edge="end" sym:connection_id="4"/>
+    <connection name="not_q0" start="_Middle+30x-10y" end="_Middle+40x-10y" edge="end" sym:connection_id="5"/>
+    <connection name="q1" start="_Middle+30x+10y" end="_Middle+40x+10y" edge="end" sym:connection_id="6"/>
+    <connection name="not_q1" start="_Middle+30x+20y" end="_Middle+40x+20y" edge="end" sym:connection_id="7"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M7.5,-12 L7.5,-13.5"/>
+    <path start="_Middle+0x+0y" data="M7.5,18 L7.5,16.5"/>
+    <rect location="_Middle-30x-40y" width="60" height="80"/>
+    <path start="_Middle+0x+0y" data="M-10,-15 L-15,-15 L-15,-10 L-17.5,-10"/>
+    <path start="_Middle+0x+0y" data="M-10,15 L-15,15 L-15,10 L-17.5,10"/>
+    <path start="_Middle+0x+0y" data="M7.5,-16.5 L7.5,-20 L15,-20"/>
+    <ellipse centre="_Middle+7.5x-10y" rx="2" ry="2"/>
+    <path start="_Middle+0x+0y" data="M7.5,13.5 L7.5,10 L15,10"/>
+    <ellipse centre="_Middle+7.5x+20y" rx="2" ry="2"/>
+    <path start="_Middle+0x+0y" data="M15,-10 L9.5,-10"/>
+    <path start="_Middle+0x+0y" data="M15,20 L9.5,20"/>
+    <path start="_Middle+0x+0y" data="M-10,-25 L-10,-5 L10,-15 L-10,-25"/>
+    <path start="_Middle+0x+0y" data="M-10,5 L-10,25 L10,15 L-10,5"/>
+    <text x="_Middle-30" y="_Middle-45" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+5" y="_Middle-45" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle-40x-10y" end="_Middle-30x-10y" sym:connection_id="0"/>
+    <text x="_Middle-26" y="_Middle-10" value="D0" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-36" y="_Middle-12" value="7" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-40x+10y" end="_Middle-30x+10y" sym:connection_id="1"/>
+    <text x="_Middle-26" y="_Middle+10" value="D1" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-36" y="_Middle+8" value="6" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+0x-50y" end="_Middle+0x-40y" sym:connection_id="2"/>
+    <text x="_Middle+0" y="_Middle-36" value="VCC" align="CentreRight" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle-46" value="8" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+0x+40y" end="_Middle+0x+50y" sym:connection_id="3"/>
+    <text x="_Middle+0" y="_Middle+36" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+46" value="5" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle+30x-20y" end="_Middle+40x-20y" sym:connection_id="4"/>
+    <text x="_Middle+26" y="_Middle-20" value="Q0" align="CentreRight" size="xxs" sym:connection_id="4" sym:connection_attr="name"/>
+    <text x="_Middle+36" y="_Middle-22" value="1" align="BottomCentre" size="xxs" sym:connection_id="4" sym:connection_attr="number"/>
+    <line start="_Middle+30x-10y" end="_Middle+40x-10y" sym:connection_id="5"/>
+    <text x="_Middle+26" y="_Middle-10" value="~{Q0}" align="CentreRight" size="xxs" sym:connection_id="5" sym:connection_attr="name"/>
+    <text x="_Middle+36" y="_Middle-12" value="2" align="BottomCentre" size="xxs" sym:connection_id="5" sym:connection_attr="number"/>
+    <line start="_Middle+30x+10y" end="_Middle+40x+10y" sym:connection_id="6"/>
+    <text x="_Middle+26" y="_Middle+10" value="Q1" align="CentreRight" size="xxs" sym:connection_id="6" sym:connection_attr="name"/>
+    <text x="_Middle+36" y="_Middle+8" value="3" align="BottomCentre" size="xxs" sym:connection_id="6" sym:connection_attr="number"/>
+    <line start="_Middle+30x+20y" end="_Middle+40x+20y" sym:connection_id="7"/>
+    <text x="_Middle+26" y="_Middle+20" value="~{Q1}" align="CentreRight" size="xxs" sym:connection_id="7" sym:connection_attr="name"/>
+    <text x="_Middle+36" y="_Middle+18" value="4" align="BottomCentre" size="xxs" sym:connection_id="7" sym:connection_attr="number"/>
+  </render>
+</component>

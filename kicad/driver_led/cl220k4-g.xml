@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="CL220K4-G"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="5cc502a6-b706-401d-bdd3-3284dff2a6eb"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="30"/>
+    <meta name="footprint" value="Package_TO_SOT_SMD:TO-252-2"/>
+    <meta name="datasheet" value="http://ww1.microchip.com/downloads/en/DeviceDoc/20005413A.pdf"/>
+    <meta name="description" value="Temperature Compensated Constant Current LED IC, D-PAK"/>
+    <meta name="keywords" value="Constant Current LED Driver IC"/>
+    <meta name="ki_fp_filters" value="TO?252*"/>
+    <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="CL220K4-G" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="va" start="_Middle+0x-20y" end="_Middle+0x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="nc" start="_Middle+0x+0y" end="_Middle+0x+10y" edge="end" sym:connection_id="1"/>
+    <connection name="vb" start="_Middle+0x+10y" end="_Middle+0x+20y" edge="end" sym:connection_id="2"/>
+  </connections>
+  <render>
+    <rect location="_Middle-10x-10y" width="20" height="20"/>
+    <path start="_Middle+0x+0y" data="M-6,-2 L-2,-2"/>
+    <path start="_Middle+0x+0y" data="M-4,-2 L-6,2 L-2,2 L-4,-2" fill="true"/>
+    <path start="_Middle+0x+0y" data="M-4,2 L-4,8 L4,8 L4,5"/>
+    <path start="_Middle+0x+0y" data="M0,-12 L0,-15"/>
+    <ellipse centre="_Middle+0x-8y" rx="0.5" ry="0.5"/>
+    <path start="_Middle+0x+0y" data="M0,-8 L0,-10"/>
+    <path start="_Middle+0x+0y" data="M0,8 L0,10"/>
+    <ellipse centre="_Middle+0x+8y" rx="0.5" ry="0.5"/>
+    <path start="_Middle+0x+0y" data="M0,12 L0,15"/>
+    <path start="_Middle+0x+0y" data="M4,-5 L4,-8 L-4,-8 L-4,-2"/>
+    <path start="_Middle+0x+0y" data="M4,-3 L4,4 L3,2 L5,2 L4,4" fill="true"/>
+    <ellipse centre="_Middle+4x-2y" rx="3" ry="3"/>
+    <ellipse centre="_Middle+4x+2y" rx="3" ry="3"/>
+    <text x="_Middle+15" y="_Middle-15" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+15" y="_Middle-5" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle+0x-20y" end="_Middle+0x-10y" sym:connection_id="0"/>
+    <text x="_Middle+0" y="_Middle-6" value="VA" align="CentreRight" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle-16" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+0x+0y" end="_Middle+0x+10y" sym:connection_id="1"/>
+    <text x="_Middle+0" y="_Middle-4" value="NC" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+6" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+0x+10y" end="_Middle+0x+20y" sym:connection_id="2"/>
+    <text x="_Middle+0" y="_Middle+6" value="VB" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+16" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+  </render>
+</component>

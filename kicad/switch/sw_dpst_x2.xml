@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="SW DPST x2"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="8057297b-1f94-4be3-b9e7-4891f418bd06"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="40"/>
+    <meta name="description" value="Single Pole Single Throw (SPST) switch, separate symbol"/>
+    <meta name="keywords" value="switch lever"/>
+    <property name="Reference" type="string" default="SW" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="SW_DPST_x2" serialize="value" display="Value"/>
+    <property name="Unit" type="enum" default="Unit_A" serialize="unit" display="Unit">
+      <option>Unit_A</option>
+      <option>Unit_B</option>
+    </property>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="a" start="_Middle-20x+0y" end="_Middle-10x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="b" start="_Middle+10x+0y" end="_Middle+20x+0y" edge="end" sym:connection_id="1"/>
+    <connection name="a" start="_Middle-20x+0y" end="_Middle-10x+0y" edge="start" sym:connection_id="2"/>
+    <connection name="b" start="_Middle+10x+0y" end="_Middle+20x+0y" edge="end" sym:connection_id="3"/>
+  </connections>
+  <render>
+    <ellipse centre="_Middle-8x+0y" rx="2" ry="2"/>
+    <path start="_Middle+0x+0y" data="M-6,-1 L6,-7"/>
+    <ellipse centre="_Middle+8x+0y" rx="2" ry="2"/>
+    <text x="_Middle+0" y="_Middle-12.5" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+10" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-20x+0y" end="_Middle-10x+0y" sym:connection_id="0"/>
+    <g conditions="$Unit==Unit_A">
+      <text x="_Middle-6" y="_Middle+0" value="A" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    </g>
+    <g conditions="$Unit==Unit_A">
+      <text x="_Middle-16" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    </g>
+    <line start="_Middle+10x+0y" end="_Middle+20x+0y" sym:connection_id="1"/>
+    <g conditions="$Unit==Unit_A">
+      <text x="_Middle+6" y="_Middle+0" value="B" align="CentreRight" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    </g>
+    <g conditions="$Unit==Unit_A">
+      <text x="_Middle+16" y="_Middle-2" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    </g>
+    <line start="_Middle-20x+0y" end="_Middle-10x+0y" sym:connection_id="2"/>
+    <g conditions="$Unit==Unit_B">
+      <text x="_Middle-6" y="_Middle+0" value="A" align="CentreLeft" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    </g>
+    <g conditions="$Unit==Unit_B">
+      <text x="_Middle-16" y="_Middle-2" value="3" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    </g>
+    <line start="_Middle+10x+0y" end="_Middle+20x+0y" sym:connection_id="3"/>
+    <g conditions="$Unit==Unit_B">
+      <text x="_Middle+6" y="_Middle+0" value="B" align="CentreRight" size="xxs" sym:connection_id="3" sym:connection_attr="name"/>
+    </g>
+    <g conditions="$Unit==Unit_B">
+      <text x="_Middle+16" y="_Middle-2" value="4" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+    </g>
+  </render>
+</component>

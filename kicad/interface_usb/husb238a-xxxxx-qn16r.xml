@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="HUSB238A-xxxxx-QN16R"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="eb825f1b-9fa2-426b-aa0e-cc4b568f4822"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="130"/>
+    <meta name="footprint" value="Package_DFN_QFN:WQFN-16-1EP_3x3mm_P0.5mm_EP1.75x1.75mm"/>
+    <meta name="datasheet" value="https://www.lcsc.com/datasheet/lcsc_datasheet_2412301710_Hynetek-HUSB238A-BB001-QN16R_C24833806.pdf"/>
+    <meta name="description" value="USB-PD Sink IC Port Controller, VBUS = 3..48V, USB Type-C rev. 2.1, USB-PD rev. 3.1, BC1.2, QC2.0, WQFN-16"/>
+    <meta name="keywords" value="USB-C I2C USB-Power-Delivery Extended-Power-Range Quick-Charge"/>
+    <meta name="ki_fp_filters" value="*WQFN*3x3mm*P0.5mm*EP1.7*x1.7*mm*"/>
+    <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="HUSB238A-xxxxx-QN16R" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="cc1" start="_Middle-60x-60y" end="_Middle-50x-60y" edge="start" sym:connection_id="0"/>
+    <connection name="cc2" start="_Middle-60x-50y" end="_Middle-50x-50y" edge="start" sym:connection_id="1"/>
+    <connection name="d_pos" start="_Middle-60x-30y" end="_Middle-50x-30y" edge="start" sym:connection_id="2"/>
+    <connection name="d_neg" start="_Middle-60x-20y" end="_Middle-50x-20y" edge="start" sym:connection_id="3"/>
+    <connection name="flgin" start="_Middle-60x+20y" end="_Middle-50x+20y" edge="start" sym:connection_id="4"/>
+    <connection name="not_en" start="_Middle-60x+50y" end="_Middle-50x+50y" edge="start" sym:connection_id="5"/>
+    <connection name="vbus" start="_Middle-10x-90y" end="_Middle-10x-80y" edge="start" sym:connection_id="6"/>
+    <connection name="gnd" start="_Middle+0x+70y" end="_Middle+0x+80y" edge="end" sym:connection_id="7"/>
+    <connection name="vdd" start="_Middle+10x-90y" end="_Middle+10x-80y" edge="start" sym:connection_id="8"/>
+    <connection name="gate" start="_Middle+50x-60y" end="_Middle+60x-60y" edge="end" sym:connection_id="9"/>
+    <connection name="not_int" start="_Middle+50x-40y" end="_Middle+60x-40y" edge="end" sym:connection_id="10"/>
+    <connection name="sda_snk_vset" start="_Middle+50x-30y" end="_Middle+60x-30y" edge="end" sym:connection_id="11"/>
+    <connection name="scl_snk_iset" start="_Middle+50x-20y" end="_Middle+60x-20y" edge="end" sym:connection_id="12"/>
+    <connection name="addr_orient" start="_Middle+50x+0y" end="_Middle+60x+0y" edge="end" sym:connection_id="13"/>
+    <connection name="en_hvdcp_out1" start="_Middle+50x+20y" end="_Middle+60x+20y" edge="end" sym:connection_id="14"/>
+    <connection name="fault_out2" start="_Middle+50x+30y" end="_Middle+60x+30y" edge="end" sym:connection_id="15"/>
+    <connection name="not_debug" start="_Middle+50x+50y" end="_Middle+60x+50y" edge="end" sym:connection_id="16"/>
+  </connections>
+  <render>
+    <rect location="_Middle-50x-80y" width="100" height="150"/>
+    <text x="_Middle-44" y="_Middle-88" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+66" y="_Middle-88" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-60x-60y" end="_Middle-50x-60y" sym:connection_id="0"/>
+    <text x="_Middle-46" y="_Middle-60" value="CC1" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-56" y="_Middle-62" value="3" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-60x-50y" end="_Middle-50x-50y" sym:connection_id="1"/>
+    <text x="_Middle-46" y="_Middle-50" value="CC2" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-56" y="_Middle-52" value="4" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle-60x-30y" end="_Middle-50x-30y" sym:connection_id="2"/>
+    <text x="_Middle-46" y="_Middle-30" value="D+" align="CentreLeft" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-56" y="_Middle-32" value="1" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle-60x-20y" end="_Middle-50x-20y" sym:connection_id="3"/>
+    <text x="_Middle-46" y="_Middle-20" value="D-" align="CentreLeft" size="xxs" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle-56" y="_Middle-22" value="2" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle-60x+20y" end="_Middle-50x+20y" sym:connection_id="4"/>
+    <text x="_Middle-46" y="_Middle+20" value="FLGIN" align="CentreLeft" size="xxs" sym:connection_id="4" sym:connection_attr="name"/>
+    <text x="_Middle-56" y="_Middle+18" value="14" align="BottomCentre" size="xxs" sym:connection_id="4" sym:connection_attr="number"/>
+    <line start="_Middle-60x+50y" end="_Middle-50x+50y" sym:connection_id="5"/>
+    <text x="_Middle-46" y="_Middle+50" value="~{EN}" align="CentreLeft" size="xxs" sym:connection_id="5" sym:connection_attr="name"/>
+    <text x="_Middle-56" y="_Middle+48" value="12" align="BottomCentre" size="xxs" sym:connection_id="5" sym:connection_attr="number"/>
+    <line start="_Middle-10x-90y" end="_Middle-10x-80y" sym:connection_id="6"/>
+    <text x="_Middle-10" y="_Middle-76" value="VBUS" align="CentreRight" size="xxs" rotate="270" sym:connection_id="6" sym:connection_attr="name"/>
+    <text x="_Middle-12" y="_Middle-86" value="16" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="6" sym:connection_attr="number"/>
+    <line start="_Middle+0x+70y" end="_Middle+0x+80y" sym:connection_id="7"/>
+    <text x="_Middle+0" y="_Middle+66" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="7" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+76" value="17" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="7" sym:connection_attr="number"/>
+    <line start="_Middle+10x-90y" end="_Middle+10x-80y" sym:connection_id="8"/>
+    <text x="_Middle+10" y="_Middle-76" value="VDD" align="CentreRight" size="xxs" rotate="270" sym:connection_id="8" sym:connection_attr="name"/>
+    <text x="_Middle+8" y="_Middle-86" value="5" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="8" sym:connection_attr="number"/>
+    <line start="_Middle+50x-60y" end="_Middle+60x-60y" sym:connection_id="9"/>
+    <text x="_Middle+46" y="_Middle-60" value="GATE" align="CentreRight" size="xxs" sym:connection_id="9" sym:connection_attr="name"/>
+    <text x="_Middle+56" y="_Middle-62" value="15" align="BottomCentre" size="xxs" sym:connection_id="9" sym:connection_attr="number"/>
+    <line start="_Middle+50x-40y" end="_Middle+60x-40y" sym:connection_id="10"/>
+    <text x="_Middle+46" y="_Middle-40" value="~{INT}" align="CentreRight" size="xxs" sym:connection_id="10" sym:connection_attr="name"/>
+    <text x="_Middle+56" y="_Middle-42" value="11" align="BottomCentre" size="xxs" sym:connection_id="10" sym:connection_attr="number"/>
+    <line start="_Middle+50x-30y" end="_Middle+60x-30y" sym:connection_id="11"/>
+    <text x="_Middle+46" y="_Middle-30" value="SDA/SNK_VSET" align="CentreRight" size="xxs" sym:connection_id="11" sym:connection_attr="name"/>
+    <text x="_Middle+56" y="_Middle-32" value="9" align="BottomCentre" size="xxs" sym:connection_id="11" sym:connection_attr="number"/>
+    <line start="_Middle+50x-20y" end="_Middle+60x-20y" sym:connection_id="12"/>
+    <text x="_Middle+46" y="_Middle-20" value="SCL/SNK_ISET" align="CentreRight" size="xxs" sym:connection_id="12" sym:connection_attr="name"/>
+    <text x="_Middle+56" y="_Middle-22" value="10" align="BottomCentre" size="xxs" sym:connection_id="12" sym:connection_attr="number"/>
+    <line start="_Middle+50x+0y" end="_Middle+60x+0y" sym:connection_id="13"/>
+    <text x="_Middle+46" y="_Middle+0" value="ADDR/ORIENT" align="CentreRight" size="xxs" sym:connection_id="13" sym:connection_attr="name"/>
+    <text x="_Middle+56" y="_Middle-2" value="8" align="BottomCentre" size="xxs" sym:connection_id="13" sym:connection_attr="number"/>
+    <line start="_Middle+50x+20y" end="_Middle+60x+20y" sym:connection_id="14"/>
+    <text x="_Middle+46" y="_Middle+20" value="EN_HVDCP/OUT1" align="CentreRight" size="xxs" sym:connection_id="14" sym:connection_attr="name"/>
+    <text x="_Middle+56" y="_Middle+18" value="7" align="BottomCentre" size="xxs" sym:connection_id="14" sym:connection_attr="number"/>
+    <line start="_Middle+50x+30y" end="_Middle+60x+30y" sym:connection_id="15"/>
+    <text x="_Middle+46" y="_Middle+30" value="FAULT/OUT2" align="CentreRight" size="xxs" sym:connection_id="15" sym:connection_attr="name"/>
+    <text x="_Middle+56" y="_Middle+28" value="13" align="BottomCentre" size="xxs" sym:connection_id="15" sym:connection_attr="number"/>
+    <line start="_Middle+50x+50y" end="_Middle+60x+50y" sym:connection_id="16"/>
+    <text x="_Middle+46" y="_Middle+50" value="~{DEBUG}" align="CentreRight" size="xxs" sym:connection_id="16" sym:connection_attr="name"/>
+    <text x="_Middle+56" y="_Middle+48" value="6" align="BottomCentre" size="xxs" sym:connection_id="16" sym:connection_attr="number"/>
+  </render>
+</component>

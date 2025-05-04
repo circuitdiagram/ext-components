@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="ZMCT103C"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="243ae9f6-ed06-4f5e-bb10-d5f4058368c4"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="40"/>
+    <meta name="footprint" value="Transformer_THT:Transformer_Zeming_ZMCT103C"/>
+    <meta name="datasheet" value="https://5krorwxhmqqirik.leadongcdn.com/ZMCT103C+specification-aidirBqoKomRilSjpimnokp.pdf"/>
+    <meta name="description" value="Qingxian Zeming Langxi Electronic ZMCT103C current transformer 1000:1 10A"/>
+    <meta name="keywords" value="current sense transformer"/>
+    <meta name="ki_fp_filters" value="Transformer*ZMCT103C*"/>
+    <property name="Reference" type="string" default="TR" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="ZMCT103C" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin1" start="_Middle-20x+0y" end="_Middle-5x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="pin2" start="_Middle+5x+0y" end="_Middle+20x+0y" edge="end" sym:connection_id="1"/>
+  </connections>
+  <render>
+    <ellipse centre="_Middle-7x-2.5y" rx="1" ry="1" fill="true"/>
+    <path start="_Middle+0x+0y" data="M-5,-7.5 L5,-7.5"/>
+    <path start="_Middle+0x+0y" data="M-5,-0 C-4.988051834525222,-2.7529529810235664 -2.7529789091790637,-4.978346456693118 0.0000000000000003061645833116259,-4.978346456693118 C2.7529789091790646,-4.978346456693118 4.988051834525222,-2.7529529810235656 5.000000000000001,0.0000000000000002949029909160572"/>
+    <text x="_Middle+0" y="_Middle-15" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+10" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-20x+0y" end="_Middle-5x+0y" sym:connection_id="0"/>
+    <text x="_Middle-13.5" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+5x+0y" end="_Middle+20x+0y" sym:connection_id="1"/>
+    <text x="_Middle+13.5" y="_Middle-2" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+  </render>
+</component>

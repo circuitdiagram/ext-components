@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="LV25-P"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="6ece7808-7572-4a96-8362-08231db5bd1f"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="80"/>
+    <meta name="footprint" value="Sensor_Voltage:LEM_LV25-P"/>
+    <meta name="datasheet" value="https://www.lem.com/sites/default/files/products_datasheets/lv_25-p.pdf"/>
+    <meta name="description" value="LEM Voltage transducer LV 25-P"/>
+    <meta name="keywords" value="Voltage transducer"/>
+    <meta name="ki_fp_filters" value="LEM?LV25?P*"/>
+    <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="LV25-P" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="hv_pos" start="_Middle-40x-10y" end="_Middle-30x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="hv_neg" start="_Middle-40x+10y" end="_Middle-30x+10y" edge="start" sym:connection_id="1"/>
+    <connection name="v_pos" start="_Middle+0x-30y" end="_Middle+0x-20y" edge="start" sym:connection_id="2"/>
+    <connection name="v_neg" start="_Middle+0x+20y" end="_Middle+0x+30y" edge="end" sym:connection_id="3"/>
+    <connection name="m" start="_Middle+30x+0y" end="_Middle+40x+0y" edge="end" sym:connection_id="4"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-11.5,3.5 L-9,3.5 L-10.5,5.5 L-12,3.5" fill="true"/>
+    <path start="_Middle+0x+0y" data="M-10.5,-5 C-9.123446372653683,-4.994134440678133 -8.010629921259794,-3.876566124000754 -8.010629921259794,-2.5 C-8.010629921259794,-1.123433875999246 -9.123446372653683,-0.005865559321867053 -10.5,0"/>
+    <path start="_Middle+0x+0y" data="M-10.5,-10 L-10.5,-5"/>
+    <path start="_Middle+0x+0y" data="M-10.5,-0 L-10.5,10"/>
+    <path start="_Middle+0x+0y" data="M-5.5,7 L-1.5,7"/>
+    <path start="_Middle+0x+0y" data="M-3.5,-6.5 L17,-6.5"/>
+    <path start="_Middle+0x+0y" data="M-3.5,4.5 L-3.5,3"/>
+    <ellipse centre="_Middle-3.5x+7y" rx="2.1999999999999997" ry="2.1999999999999997"/>
+    <path start="_Middle+0x+0y" data="M-3.5,9.5 L-3.5,12"/>
+    <path start="_Middle+0x+0y" data="M-3.5,0.5 C-4.050590596204695,0.49761036690501925 -4.4956692913385785,0.05059578183579516 -4.4956692913385785,-0.4999999999999999 C-4.4956692913385785,-1.050595781835795 -4.050590596204695,-1.4976103669050191 -3.5,-1.5"/>
+    <path start="_Middle+0x+0y" data="M-3.5,-4 C-4.170993053592143,-4.026738244654853 -4.701181102362204,-4.5784744147121925 -4.701181102362204,-5.25 C-4.701181102362204,-5.921525585287807 -4.170993053592144,-6.473261755345146 -3.5000000000000004,-6.5"/>
+    <path start="_Middle+0x+0y" data="M-3.5,-1.5 C-4.170993053592143,-1.5267382446548532 -4.701181102362204,-2.0784744147121925 -4.701181102362204,-2.75 C-4.701181102362204,-3.421525585287807 -4.170993053592144,-3.9732617553451464 -3.5000000000000004,-4"/>
+    <path start="_Middle+0x+0y" data="M-3.5,3 C-4.170993053592145,2.97326175534515 -4.701181102362209,2.4215255852878093 -4.701181102362209,1.7500000000000002 C-4.701181102362209,1.078474414712191 -4.170993053592146,0.5267382446548505 -3.5000000000000004,0.5"/>
+    <path start="_Middle+0x+0y" data="M13,-6.5 L11.5,-8 L11.5,-5 L13,-6.5" fill="true"/>
+    <rect location="_Middle-30x-20y" width="60" height="40"/>
+    <text x="_Middle-25" y="_Middle-25" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+20" y="_Middle-25" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-40x-10y" end="_Middle-30x-10y" sym:connection_id="0"/>
+    <text x="_Middle-26" y="_Middle-10" value="HV+" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-36" y="_Middle-12" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-40x+10y" end="_Middle-30x+10y" sym:connection_id="1"/>
+    <text x="_Middle-26" y="_Middle+10" value="HV-" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-36" y="_Middle+8" value="3" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+0x-30y" end="_Middle+0x-20y" sym:connection_id="2"/>
+    <text x="_Middle+0" y="_Middle-16" value="V+" align="CentreRight" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle-26" value="5" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+0x+20y" end="_Middle+0x+30y" sym:connection_id="3"/>
+    <text x="_Middle+0" y="_Middle+16" value="V-" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+26" value="6" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle+30x+0y" end="_Middle+40x+0y" sym:connection_id="4"/>
+    <text x="_Middle+26" y="_Middle+0" value="M" align="CentreRight" size="xxs" sym:connection_id="4" sym:connection_attr="name"/>
+    <text x="_Middle+36" y="_Middle-2" value="4" align="BottomCentre" size="xxs" sym:connection_id="4" sym:connection_attr="number"/>
+  </render>
+</component>

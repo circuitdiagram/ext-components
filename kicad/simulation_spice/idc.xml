@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="IDC"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="9d6e75e9-a9e3-4e8b-8b01-925627155aa1"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="20"/>
+    <meta name="datasheet" value="https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_Independent_Sources_for"/>
+    <meta name="description" value="Current source, DC"/>
+    <meta name="Sim.Pins" value="1=+ 2=-"/>
+    <meta name="Sim.Type" value="DC"/>
+    <meta name="Sim.Device" value="I"/>
+    <meta name="keywords" value="simulation"/>
+    <property name="Reference" type="string" default="I" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="1" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin1" start="_Middle+0x-20y" end="_Middle+0x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="pin2" start="_Middle+0x+10y" end="_Middle+0x+20y" edge="end" sym:connection_id="1"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-5,-1 L5,-1"/>
+    <path start="_Middle+0x+0y" data="M-3,1 L-5,1"/>
+    <path start="_Middle+0x+0y" data="M1,1 L-1,1"/>
+    <path start="_Middle+0x+0y" data="M5,1 L3,1"/>
+    <path start="_Middle+0x+0y" data="M-1,-7 L0,-5 L1,-7"/>
+    <path start="_Middle+0x+0y" data="M0,-5 L0,-9"/>
+    <ellipse centre="_Middle+0x+0y" rx="10" ry="10"/>
+    <text x="_Middle+10" y="_Middle-10" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+10" y="_Middle+0" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle+0x-20y" end="_Middle+0x-10y" sym:connection_id="0"/>
+    <text x="_Middle-2" y="_Middle-16" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+0x+10y" end="_Middle+0x+20y" sym:connection_id="1"/>
+    <text x="_Middle-2" y="_Middle+16" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+  </render>
+</component>

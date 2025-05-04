@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="IEC 60320 C7 Plug"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="5b48a16f-12fe-48db-ac04-7778af818121"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="60"/>
+    <meta name="description" value="C7 coupler, 2,5 A max"/>
+    <meta name="keywords" value="C7 Plug  IEC 60320"/>
+    <meta name="ki_fp_filters" value="C*7*Plug*"/>
+    <property name="Reference" type="string" default="P" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="IEC_60320_C7_Plug" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="l" start="_Middle+25x-20y" end="_Middle+35x-20y" edge="end" sym:connection_id="0"/>
+    <connection name="n" start="_Middle+25x+20y" end="_Middle+35x+20y" edge="end" sym:connection_id="1"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-5,-2.5 C-3.6194225721784754,-1.1192324384648775 -3.619422572178476,1.1192324384648773 -4.999999999999999,2.5"/>
+    <path start="_Middle+0x+0y" data="M-7.5,-5 L-7.5,-12.5"/>
+    <path start="_Middle+0x+0y" data="M-7.5,5 L-7.5,12.5"/>
+    <path start="_Middle+0x+0y" data="M-5,2.5 L-7.5,5"/>
+    <path start="_Middle+0x+0y" data="M-7.5,-12.5 C-6.423838644889113,-15.728139722530026 -3.402794341480301,-17.905511811023622 -0.000000000000001271346144313708,-17.905511811023622 C3.4027943414802984,-17.905511811023622 6.423838644889111,-15.728139722530027 7.5,-12.500000000000002"/>
+    <path start="_Middle+0x+0y" data="M7.5,12.5 C6.423838644889112,15.728139722530027 3.4027943414803,17.905511811023622 0.0000000000000004840893157481443,17.905511811023622 C-3.4027943414802992,17.905511811023622 -6.423838644889111,15.72813972253003 -7.5,12.500000000000002"/>
+    <path start="_Middle+0x+0y" data="M5,-2.5 L7.5,-5"/>
+    <path start="_Middle+0x+0y" data="M5,2.5 L7.5,5"/>
+    <path start="_Middle+0x+0y" data="M7.5,-5 L7.5,-12.5"/>
+    <path start="_Middle+0x+0y" data="M5,2.5 C3.6194225721784763,1.1192324384648782 3.6194225721784763,-1.119232438464876 4.999999999999999,-2.4999999999999996"/>
+    <path start="_Middle+0x+0y" data="M7.5,5 L7.5,12.5"/>
+    <path start="_Middle+0x+0y" data="M-25,-30 L25,-30 L25,30 L-25,30 L-25,-30"/>
+    <path start="_Middle+0x+0y" data="M-5,-2.5 L-7.5,-5"/>
+    <ellipse centre="_Middle+0x-10y" rx="3.535433070866142" ry="3.535433070866142"/>
+    <ellipse centre="_Middle+0x+10y" rx="3.535433070866142" ry="3.535433070866142"/>
+    <text x="_Middle-23" y="_Middle-34" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+36" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle+25x-20y" end="_Middle+35x-20y" sym:connection_id="0"/>
+    <text x="_Middle+21" y="_Middle-20" value="L" align="CentreRight" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle+31" y="_Middle-22" value="2" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+25x+20y" end="_Middle+35x+20y" sym:connection_id="1"/>
+    <text x="_Middle+21" y="_Middle+20" value="N" align="CentreRight" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle+31" y="_Middle+18" value="1" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+  </render>
+</component>

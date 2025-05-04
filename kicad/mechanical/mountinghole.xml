@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="MountingHole"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="336aab68-4ef6-4796-8e6a-d93c72634417"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="10"/>
+    <meta name="description" value="Mounting Hole without connection"/>
+    <meta name="keywords" value="mounting hole"/>
+    <meta name="ki_fp_filters" value="MountingHole*"/>
+    <property name="Reference" type="string" default="H" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="MountingHole" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+  </connections>
+  <render>
+    <ellipse centre="_Middle+0x+0y" rx="5" ry="5"/>
+    <text x="_Middle+0" y="_Middle-20" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle-12.5" value="$Value" align="CentreCentre" size="xxs"/>
+  </render>
+</component>

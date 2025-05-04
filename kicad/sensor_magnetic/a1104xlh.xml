@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="A1104xLH"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="67d806e6-d212-4f96-9c44-a0c11b776ba3"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="50"/>
+    <meta name="footprint" value="Package_TO_SOT_SMD:SOT-23W"/>
+    <meta name="datasheet" value="https://www.allegromicro.com/-/media/files/datasheets/a110x-datasheet.ashx"/>
+    <meta name="description" value="Hall effect switch, unipolar (south-polarity), Bop=70-350G, Brp=50-330G, 3.8-24V supply, SOT-23W"/>
+    <meta name="keywords" value="A3144"/>
+    <meta name="ki_fp_filters" value="SOT?23*"/>
+    <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="A1104xLH" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="v_cc" start="_Middle-10x-40y" end="_Middle-10x-30y" edge="start" sym:connection_id="0"/>
+    <connection name="gnd" start="_Middle-10x+30y" end="_Middle-10x+40y" edge="end" sym:connection_id="1"/>
+    <connection name="v_out" start="_Middle+20x+0y" end="_Middle+30x+0y" edge="end" sym:connection_id="2"/>
+  </connections>
+  <render>
+    <rect location="_Middle-20x-30y" width="40" height="60"/>
+    <text x="_Middle+0" y="_Middle-45" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+0" y="_Middle-35" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle-10x-40y" end="_Middle-10x-30y" sym:connection_id="0"/>
+    <text x="_Middle-10" y="_Middle-26" value="V_{CC}" align="CentreRight" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-12" y="_Middle-36" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-10x+30y" end="_Middle-10x+40y" sym:connection_id="1"/>
+    <text x="_Middle-10" y="_Middle+26" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-12" y="_Middle+36" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+20x+0y" end="_Middle+30x+0y" sym:connection_id="2"/>
+    <text x="_Middle+16" y="_Middle+0" value="V_{OUT}" align="CentreRight" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle+26" y="_Middle-2" value="2" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+  </render>
+</component>

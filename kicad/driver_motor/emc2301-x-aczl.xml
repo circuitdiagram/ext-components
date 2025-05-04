@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="EMC2301-x-ACZL"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="64fbdba8-3192-41b4-b910-f5dccbc14780"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="100"/>
+    <meta name="footprint" value="Package_SO:MSOP-8_3x3mm_P0.65mm"/>
+    <meta name="datasheet" value="https://ww1.microchip.com/downloads/aemDocuments/documents/MSLD/ProductDocuments/DataSheets/EMC2301-2-3-5-Data-Sheet-DS20006532A.pdf"/>
+    <meta name="description" value="Single RPM-Based PWM Fan Controller, up to 26 kHz, 3.3V power supply, MSOP-8"/>
+    <meta name="keywords" value="DRIVER MOTOR SMBus I2C 4-wire"/>
+    <meta name="ki_fp_filters" value="*MSOP*3x3mm*P0.65mm*"/>
+    <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="EMC2301-x-ACZL" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="smdata" start="_Middle-50x-20y" end="_Middle-40x-20y" edge="start" sym:connection_id="0"/>
+    <connection name="smclk" start="_Middle-50x-10y" end="_Middle-40x-10y" edge="start" sym:connection_id="1"/>
+    <connection name="clk" start="_Middle-50x+10y" end="_Middle-40x+10y" edge="start" sym:connection_id="2"/>
+    <connection name="not_alert" start="_Middle-50x+20y" end="_Middle-40x+20y" edge="start" sym:connection_id="3"/>
+    <connection name="vdd" start="_Middle+0x-50y" end="_Middle+0x-40y" edge="start" sym:connection_id="4"/>
+    <connection name="gnd" start="_Middle+0x+40y" end="_Middle+0x+50y" edge="end" sym:connection_id="5"/>
+    <connection name="pwm" start="_Middle+40x-20y" end="_Middle+50x-20y" edge="end" sym:connection_id="6"/>
+    <connection name="tach" start="_Middle+40x-10y" end="_Middle+50x-10y" edge="end" sym:connection_id="7"/>
+  </connections>
+  <render>
+    <rect location="_Middle-40x-40y" width="80" height="80"/>
+    <text x="_Middle-38" y="_Middle-49" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+33" y="_Middle-49" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-50x-20y" end="_Middle-40x-20y" sym:connection_id="0"/>
+    <text x="_Middle-36" y="_Middle-20" value="SMDATA" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-46" y="_Middle-22" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-50x-10y" end="_Middle-40x-10y" sym:connection_id="1"/>
+    <text x="_Middle-36" y="_Middle-10" value="SMCLK" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-46" y="_Middle-12" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle-50x+10y" end="_Middle-40x+10y" sym:connection_id="2"/>
+    <text x="_Middle-36" y="_Middle+10" value="CLK" align="CentreLeft" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-46" y="_Middle+8" value="7" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle-50x+20y" end="_Middle-40x+20y" sym:connection_id="3"/>
+    <text x="_Middle-36" y="_Middle+20" value="~{ALERT}" align="CentreLeft" size="xxs" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle-46" y="_Middle+18" value="8" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle+0x-50y" end="_Middle+0x-40y" sym:connection_id="4"/>
+    <text x="_Middle+0" y="_Middle-36" value="VDD" align="CentreRight" size="xxs" rotate="270" sym:connection_id="4" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle-46" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="4" sym:connection_attr="number"/>
+    <line start="_Middle+0x+40y" end="_Middle+0x+50y" sym:connection_id="5"/>
+    <text x="_Middle+0" y="_Middle+36" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="5" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+46" value="4" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="5" sym:connection_attr="number"/>
+    <line start="_Middle+40x-20y" end="_Middle+50x-20y" sym:connection_id="6"/>
+    <text x="_Middle+36" y="_Middle-20" value="PWM" align="CentreRight" size="xxs" sym:connection_id="6" sym:connection_attr="name"/>
+    <text x="_Middle+46" y="_Middle-22" value="5" align="BottomCentre" size="xxs" sym:connection_id="6" sym:connection_attr="number"/>
+    <line start="_Middle+40x-10y" end="_Middle+50x-10y" sym:connection_id="7"/>
+    <text x="_Middle+36" y="_Middle-10" value="TACH" align="CentreRight" size="xxs" sym:connection_id="7" sym:connection_attr="name"/>
+    <text x="_Middle+46" y="_Middle-12" value="6" align="BottomCentre" size="xxs" sym:connection_id="7" sym:connection_attr="number"/>
+  </render>
+</component>

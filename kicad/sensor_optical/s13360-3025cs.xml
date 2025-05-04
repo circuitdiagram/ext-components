@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="S13360-3025CS"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="c42902cf-bcdb-4c84-84d4-2a8561ee1628"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="30"/>
+    <meta name="footprint" value="OptoDevice:Hamamatsu_S13360-30CS"/>
+    <meta name="datasheet" value="http://www.hamamatsu.com/resources/pdf/ssd/s13360_series_kapd1052e.pdf"/>
+    <meta name="description" value="Multi-Pixel Photon Counter with 25µm pixel pitch"/>
+    <meta name="keywords" value="opto SiPM MPPC hamamatsu SPAD"/>
+    <meta name="ki_fp_filters" value="Hamamatsu*S13360*30CS*"/>
+    <property name="Reference" type="string" default="D" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="S13360-3025CS" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="k" start="_Middle-15x+0y" end="_Middle-5x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="a" start="_Middle+5x+0y" end="_Middle+15x+0y" edge="end" sym:connection_id="1"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-5,-5 L-5,5"/>
+    <path start="_Middle+0x+0y" data="M-5,-0 L5,-0"/>
+    <path start="_Middle+0x+0y" data="M-3,-7 L-1,-7"/>
+    <path start="_Middle+0x+0y" data="M3,-13 L-3,-7 L-3,-9"/>
+    <path start="_Middle+0x+0y" data="M5,-5 L5,5"/>
+    <path start="_Middle+0x+0y" data="M5,-5 L-5,-0 L5,5"/>
+    <path start="_Middle+0x+0y" data="M8,-13 L2,-7 L2,-9 L2,-7 L4,-7"/>
+    <text x="_Middle+7" y="_Middle-7" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+1" y="_Middle+11" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-15x+0y" end="_Middle-5x+0y" sym:connection_id="0"/>
+    <text x="_Middle-1" y="_Middle+0" value="K" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-11" y="_Middle-2" value="2" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+5x+0y" end="_Middle+15x+0y" sym:connection_id="1"/>
+    <text x="_Middle+1" y="_Middle+0" value="A" align="CentreRight" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle+11" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+  </render>
+</component>

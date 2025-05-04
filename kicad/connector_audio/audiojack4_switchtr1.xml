@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="AudioJack4 SwitchTR1"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="51fde92f-7687-4f35-9ccf-6c0044cf349e"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="60"/>
+    <meta name="description" value="Audio Jack, 4 Poles (Stereo / TRRS), Switched TR1 Poles (Normalling)"/>
+    <meta name="keywords" value="audio jack receptacle stereo headphones phones TRS connector"/>
+    <meta name="ki_fp_filters" value="Jack*"/>
+    <property name="Reference" type="string" default="J" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="AudioJack4_SwitchTR1" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pinS" start="_Middle+10x-20y" end="_Middle+20x-20y" edge="end" sym:connection_id="0"/>
+    <connection name="pinR2" start="_Middle+10x-10y" end="_Middle+20x-10y" edge="end" sym:connection_id="1"/>
+    <connection name="pinR1" start="_Middle+10x+0y" end="_Middle+20x+0y" edge="end" sym:connection_id="2"/>
+    <connection name="pinR1N" start="_Middle+10x+10y" end="_Middle+20x+10y" edge="end" sym:connection_id="3"/>
+    <connection name="pinT" start="_Middle+10x+20y" end="_Middle+20x+20y" edge="end" sym:connection_id="4"/>
+    <connection name="pinTN" start="_Middle+10x+30y" end="_Middle+20x+30y" edge="end" sym:connection_id="5"/>
+  </connections>
+  <render>
+    <rect location="_Middle-35x+20y" width="5" height="10"/>
+    <rect location="_Middle-30x-25y" width="35" height="65"/>
+    <path start="_Middle+0x+0y" data="M5,-10 L10,-10"/>
+    <path start="_Middle+0x+0y" data="M5,20 L10,20"/>
+    <path start="_Middle+0x+0y" data="M10,-20 L5,-20"/>
+    <path start="_Middle+0x+0y" data="M10,-0 L5,-0"/>
+    <path start="_Middle+0x+0y" data="M-12.5,20 L-10,22.5 L-7.5,20 L-7.5,-0 L5,-0"/>
+    <path start="_Middle+0x+0y" data="M-5,20 L-2.5,22.5 L0,20 L5,20"/>
+    <path start="_Middle+0x+0y" data="M-3,1 L-2,3"/>
+    <path start="_Middle+0x+0y" data="M2,21 L3,23"/>
+    <path start="_Middle+0x+0y" data="M5,-20 L-22.5,-20 L-22.5,20 L-25,22.5 L-27.500000000000004,20"/>
+    <path start="_Middle+0x+0y" data="M5,-10 L-15,-10 L-15,20 L-17.5,22.5 L-20,20"/>
+    <path start="_Middle+0x+0y" data="M10,10 L-3,10 L-3,1 L-4,3"/>
+    <path start="_Middle+0x+0y" data="M10,30 L2,30 L2,21 L1,23"/>
+    <text x="_Middle+0" y="_Middle-45" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle-35" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle+10x-20y" end="_Middle+20x-20y" sym:connection_id="0"/>
+    <text x="_Middle+16" y="_Middle-22" value="S" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+10x-10y" end="_Middle+20x-10y" sym:connection_id="1"/>
+    <text x="_Middle+16" y="_Middle-12" value="R2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+10x+0y" end="_Middle+20x+0y" sym:connection_id="2"/>
+    <text x="_Middle+16" y="_Middle-2" value="R1" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+10x+10y" end="_Middle+20x+10y" sym:connection_id="3"/>
+    <text x="_Middle+16" y="_Middle+8" value="R1N" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle+10x+20y" end="_Middle+20x+20y" sym:connection_id="4"/>
+    <text x="_Middle+16" y="_Middle+18" value="T" align="BottomCentre" size="xxs" sym:connection_id="4" sym:connection_attr="number"/>
+    <line start="_Middle+10x+30y" end="_Middle+20x+30y" sym:connection_id="5"/>
+    <text x="_Middle+16" y="_Middle+28" value="TN" align="BottomCentre" size="xxs" sym:connection_id="5" sym:connection_attr="number"/>
+  </render>
+</component>

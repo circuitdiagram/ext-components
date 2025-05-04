@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="TMR 1-2422SM"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="90f18bad-c05d-47d3-8012-e6382adc734d"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="140"/>
+    <meta name="footprint" value="Converter_DCDC:Converter_DCDC_TRACO_TMR-1SM_SMD"/>
+    <meta name="datasheet" value="http://assets.tracopower.com/TMR1SM/documents/tmr1sm-datasheet.pdf"/>
+    <meta name="description" value="±42mA Regulated 1W DC/DC converter with 1.5kV isolation, 18V-36V input, ±12V fixed Output Voltage, SMD"/>
+    <meta name="keywords" value="Murata isolated isolation dc-dc converter transformer"/>
+    <meta name="ki_fp_filters" value="Converter*DCDC*TRACO*TMR-1SM*SMD*"/>
+    <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="TMR_1-2422SM" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="vin" start="_Middle-70x-20y" end="_Middle-60x-20y" edge="start" sym:connection_id="0"/>
+    <connection name="remote_on_off" start="_Middle-70x+0y" end="_Middle-60x+0y" edge="start" sym:connection_id="1"/>
+    <connection name="vin" start="_Middle-70x+20y" end="_Middle-60x+20y" edge="start" sym:connection_id="2"/>
+    <connection name="vout" start="_Middle+60x-20y" end="_Middle+70x-20y" edge="end" sym:connection_id="3"/>
+    <connection name="common" start="_Middle+60x+0y" end="_Middle+70x+0y" edge="end" sym:connection_id="4"/>
+    <connection name="common" start="_Middle+60x+0y" end="_Middle+70x+0y" edge="end" sym:connection_id="5"/>
+    <connection name="vout" start="_Middle+60x+20y" end="_Middle+70x+20y" edge="end" sym:connection_id="6"/>
+  </connections>
+  <render>
+    <rect location="_Middle-60x-30y" width="120" height="60"/>
+    <path start="_Middle+0x+0y" data="M5,-25 L5,-20"/>
+    <path start="_Middle+0x+0y" data="M5,-15 L5,-10"/>
+    <path start="_Middle+0x+0y" data="M5,-5 L5,-0"/>
+    <path start="_Middle+0x+0y" data="M5,5 L5,10"/>
+    <path start="_Middle+0x+0y" data="M5,15 L5,20"/>
+    <path start="_Middle+0x+0y" data="M5,25 L5,30"/>
+    <path start="_Middle+0x+0y" data="M10,-30 L10,-25"/>
+    <path start="_Middle+0x+0y" data="M10,-20 L10,-15"/>
+    <path start="_Middle+0x+0y" data="M10,-10 L10,-5"/>
+    <path start="_Middle+0x+0y" data="M10,-0 L10,5"/>
+    <path start="_Middle+0x+0y" data="M10,10 L10,15"/>
+    <path start="_Middle+0x+0y" data="M10,20 L10,25"/>
+    <text x="_Middle-45" y="_Middle-35" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+60" y="_Middle-35" value="$Value" align="CentreRight" size="xxs"/>
+    <line start="_Middle-70x-20y" end="_Middle-60x-20y" sym:connection_id="0"/>
+    <text x="_Middle-56" y="_Middle-20" value="+VIN" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-66" y="_Middle-22" value="14" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-70x+0y" end="_Middle-60x+0y" sym:connection_id="1"/>
+    <text x="_Middle-56" y="_Middle+0" value="Remote_on/off" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-66" y="_Middle-2" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle-70x+20y" end="_Middle-60x+20y" sym:connection_id="2"/>
+    <text x="_Middle-56" y="_Middle+20" value="-VIN" align="CentreLeft" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-66" y="_Middle+18" value="1" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+60x-20y" end="_Middle+70x-20y" sym:connection_id="3"/>
+    <text x="_Middle+56" y="_Middle-20" value="+VOUT" align="CentreRight" size="xxs" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle+66" y="_Middle-22" value="8" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle+60x+0y" end="_Middle+70x+0y" sym:connection_id="4"/>
+    <text x="_Middle+56" y="_Middle+0" value="Common" align="CentreRight" size="xxs" sym:connection_id="4" sym:connection_attr="name"/>
+    <text x="_Middle+66" y="_Middle-2" value="6" align="BottomCentre" size="xxs" sym:connection_id="4" sym:connection_attr="number"/>
+    <line start="_Middle+60x+0y" end="_Middle+70x+0y" sym:connection_id="5"/>
+    <text x="_Middle+56" y="_Middle+0" value="Common" align="CentreRight" size="xxs" sym:connection_id="5" sym:connection_attr="name"/>
+    <text x="_Middle+66" y="_Middle-2" value="9" align="BottomCentre" size="xxs" sym:connection_id="5" sym:connection_attr="number"/>
+    <line start="_Middle+60x+20y" end="_Middle+70x+20y" sym:connection_id="6"/>
+    <text x="_Middle+56" y="_Middle+20" value="-VOUT" align="CentreRight" size="xxs" sym:connection_id="6" sym:connection_attr="name"/>
+    <text x="_Middle+66" y="_Middle+18" value="7" align="BottomCentre" size="xxs" sym:connection_id="6" sym:connection_attr="number"/>
+  </render>
+</component>

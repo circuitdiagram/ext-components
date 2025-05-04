@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="BC547"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="ef38cb52-bb50-40bc-adfa-347d5f7c0711"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="50"/>
+    <meta name="footprint" value="Package_TO_SOT_THT:TO-92_Inline"/>
+    <meta name="datasheet" value="https://www.onsemi.com/pub/Collateral/BC550-D.pdf"/>
+    <meta name="description" value="0.1A Ic, 45V Vce, Small Signal NPN Transistor, TO-92"/>
+    <meta name="keywords" value="NPN Transistor"/>
+    <meta name="ki_fp_filters" value="TO?92*"/>
+    <property name="Reference" type="string" default="Q" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="BC547" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="b" start="_Middle-20x+0y" end="_Middle-10x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="c" start="_Middle+10x-20y" end="_Middle+10x-10y" edge="start" sym:connection_id="1"/>
+    <connection name="e" start="_Middle+10x+10y" end="_Middle+10x+20y" edge="end" sym:connection_id="2"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-10,-0 L2.5,-0"/>
+    <path start="_Middle+0x+0y" data="M2.5,-7.5 L2.5,7.5"/>
+    <ellipse centre="_Middle+5x+0y" rx="11.1" ry="11.1"/>
+    <path start="_Middle+0x+0y" data="M2.5,-2.5 L10,-10"/>
+    <path start="_Middle+0x+0y" data="M2.5,2.5 L10,10"/>
+    <path start="_Middle+0x+0y" data="M5,7 L7,5 L9,9 L5,7" fill="true"/>
+    <text x="_Middle+20" y="_Middle-7.5" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+20" y="_Middle+0" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle-20x+0y" end="_Middle-10x+0y" sym:connection_id="0"/>
+    <text x="_Middle-6" y="_Middle+0" value="B" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-16" y="_Middle-2" value="2" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+10x-20y" end="_Middle+10x-10y" sym:connection_id="1"/>
+    <text x="_Middle+10" y="_Middle-6" value="C" align="CentreRight" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle+8" y="_Middle-16" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+10x+10y" end="_Middle+10x+20y" sym:connection_id="2"/>
+    <text x="_Middle+10" y="_Middle+6" value="E" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle+8" y="_Middle+16" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+  </render>
+</component>

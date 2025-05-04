@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="KC2520Z"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="e8b3516f-81f1-4342-8fcf-25e883b265c1"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="80"/>
+    <meta name="footprint" value="Oscillator:Oscillator_SMD_Kyocera_KC2520Z-4Pin_2.5x2.0mm"/>
+    <meta name="datasheet" value="https://global.kyocera.com/prdct/electro/product/pdf/clock_z_xz_e.pdf"/>
+    <meta name="description" value="1.8432MHz ~ 125MHz Crystal Oscillator"/>
+    <meta name="keywords" value="xo"/>
+    <meta name="ki_fp_filters" value="Oscillator*SMD*Kyocera*KC2520Z*2.5x2.0mm*"/>
+    <property name="Reference" type="string" default="Y" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="KC2520Z" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="inh" start="_Middle-40x+0y" end="_Middle-30x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="vcc" start="_Middle+0x-30y" end="_Middle+0x-20y" edge="start" sym:connection_id="1"/>
+    <connection name="gnd" start="_Middle+0x+20y" end="_Middle+0x+30y" edge="end" sym:connection_id="2"/>
+    <connection name="clk" start="_Middle+30x+0y" end="_Middle+40x+0y" edge="end" sym:connection_id="3"/>
+  </connections>
+  <render>
+    <rect location="_Middle-30x-20y" width="60" height="40"/>
+    <path start="_Middle+0x+0y" data="M7,-8 L10,-8 L10,-13 L13,-13 L13,-8 L16,-8 L16,-13 L19,-13 L19,-8"/>
+    <text x="_Middle+10" y="_Middle-50" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+25" y="_Middle-40" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-40x+0y" end="_Middle-30x+0y" sym:connection_id="0"/>
+    <text x="_Middle-26" y="_Middle+0" value="INH" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-36" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+0x-30y" end="_Middle+0x-20y" sym:connection_id="1"/>
+    <text x="_Middle+0" y="_Middle-16" value="VCC" align="CentreRight" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle-26" value="4" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+0x+20y" end="_Middle+0x+30y" sym:connection_id="2"/>
+    <text x="_Middle+0" y="_Middle+16" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+26" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+30x+0y" end="_Middle+40x+0y" sym:connection_id="3"/>
+    <text x="_Middle+26" y="_Middle+0" value="CLK" align="CentreRight" size="xxs" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle+36" y="_Middle-2" value="3" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+  </render>
+</component>

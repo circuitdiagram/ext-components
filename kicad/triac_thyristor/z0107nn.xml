@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Z0107NN"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="3733589c-5744-4c4d-9be6-fd63076e3ef3"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="30"/>
+    <meta name="footprint" value="Package_TO_SOT_SMD:SOT-223"/>
+    <meta name="datasheet" value="http://www.st.com/resource/en/datasheet/z01.pdf"/>
+    <meta name="description" value="4Q Triac, 1A RMS, 800V VDRM, 5mA Igt, 10mA Ih, SOT-223"/>
+    <meta name="keywords" value="4Q Triac"/>
+    <meta name="ki_fp_filters" value="SOT*223*"/>
+    <property name="Reference" type="string" default="D" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="Z0107NN" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="g" start="_Middle-15x+10y" end="_Middle-5x+10y" edge="start" sym:connection_id="0"/>
+    <connection name="a2" start="_Middle+0x-15y" end="_Middle+0x-5y" edge="start" sym:connection_id="1"/>
+    <connection name="a4" start="_Middle+0x-15y" end="_Middle+0x-5y" edge="start" sym:connection_id="2"/>
+    <connection name="a1" start="_Middle+0x+5y" end="_Middle+0x+15y" edge="end" sym:connection_id="3"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-10,-5 L10,-5"/>
+    <path start="_Middle+0x+0y" data="M-10,-5 L-5,5 L0,-5"/>
+    <path start="_Middle+0x+0y" data="M-10,5 L10,5"/>
+    <path start="_Middle+0x+0y" data="M-5,10 L-2.5,5"/>
+    <path start="_Middle+0x+0y" data="M0,5 L5,-5 L10,5"/>
+    <text x="_Middle+12.5" y="_Middle-2.5" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+12.5" y="_Middle+5" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle-15x+10y" end="_Middle-5x+10y" sym:connection_id="0"/>
+    <text x="_Middle-1" y="_Middle+10" value="G" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-11" y="_Middle+8" value="3" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+0x-15y" end="_Middle+0x-5y" sym:connection_id="1"/>
+    <text x="_Middle+0" y="_Middle-1" value="A2" align="CentreRight" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle-11" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+0x-15y" end="_Middle+0x-5y" sym:connection_id="2"/>
+    <text x="_Middle+0" y="_Middle-1" value="A4" align="CentreRight" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle-11" value="4" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+0x+5y" end="_Middle+0x+15y" sym:connection_id="3"/>
+    <text x="_Middle+0" y="_Middle+1" value="A1" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+11" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="number"/>
+  </render>
+</component>

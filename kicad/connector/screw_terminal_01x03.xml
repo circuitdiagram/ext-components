@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Screw Terminal 01x03"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="91089384-ffc4-4af5-9e3a-f40f5420ed8a"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="30"/>
+    <meta name="description" value="Generic screw terminal, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+    <meta name="keywords" value="screw terminal"/>
+    <meta name="ki_fp_filters" value="TerminalBlock*:*"/>
+    <property name="Reference" type="string" default="J" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="Screw_Terminal_01x03" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin_1" start="_Middle-20x-10y" end="_Middle-5x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="pin_2" start="_Middle-20x+0y" end="_Middle-5x+0y" edge="start" sym:connection_id="1"/>
+    <connection name="pin_3" start="_Middle-20x+10y" end="_Middle-5x+10y" edge="start" sym:connection_id="2"/>
+  </connections>
+  <render>
+    <rect location="_Middle-5x-15y" width="10" height="30"/>
+    <path start="_Middle+0x+0y" data="M-2.1,-11.3 L1.3,-8"/>
+    <path start="_Middle+0x+0y" data="M-2.1,-1.3 L1.3,2"/>
+    <path start="_Middle+0x+0y" data="M-2.1,8.700000000000001 L1.3,12"/>
+    <path start="_Middle+0x+0y" data="M-1.4000000000000001,-12 L2,-8.700000000000001"/>
+    <path start="_Middle+0x+0y" data="M-1.4000000000000001,-2 L2,1.3"/>
+    <path start="_Middle+0x+0y" data="M-1.4000000000000001,8 L2,11.3"/>
+    <ellipse centre="_Middle+0x-10y" rx="2.5" ry="2.5"/>
+    <ellipse centre="_Middle+0x+0y" rx="2.5" ry="2.5"/>
+    <ellipse centre="_Middle+0x+10y" rx="2.5" ry="2.5"/>
+    <text x="_Middle+0" y="_Middle-20" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+20" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-20x-10y" end="_Middle-5x-10y" sym:connection_id="0"/>
+    <text x="_Middle-1" y="_Middle-10" value="Pin_1" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-13.5" y="_Middle-12" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-20x+0y" end="_Middle-5x+0y" sym:connection_id="1"/>
+    <text x="_Middle-1" y="_Middle+0" value="Pin_2" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-13.5" y="_Middle-2" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle-20x+10y" end="_Middle-5x+10y" sym:connection_id="2"/>
+    <text x="_Middle-1" y="_Middle+10" value="Pin_3" align="CentreLeft" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-13.5" y="_Middle+8" value="3" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+  </render>
+</component>

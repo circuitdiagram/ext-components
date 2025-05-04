@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="PMEG050V150EPD"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="f760c157-52c6-400a-9387-457fc3023622"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="30"/>
+    <meta name="footprint" value="Package_TO_SOT_SMD:Nexperia_CFP15_SOT-1289"/>
+    <meta name="datasheet" value="https://assets.nexperia.com/documents/data-sheet/PMEG050V150EPD.pdf"/>
+    <meta name="description" value="50V, 15A low Vf MEGA Schottky barrier rectifier, SOT-1289"/>
+    <meta name="keywords" value="forward voltage diode"/>
+    <meta name="ki_fp_filters" value="Nexperia*CFP15*SOT?1289*"/>
+    <property name="Reference" type="string" default="D" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="PMEG050V150EPD" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="k" start="_Middle-15x+0y" end="_Middle-5x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="a" start="_Middle+5x+0y" end="_Middle+15x+0y" edge="end" sym:connection_id="1"/>
+    <connection name="a" start="_Middle+5x+0y" end="_Middle+15x+0y" edge="end" sym:connection_id="2"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-7.5,-2.5 L-7.5,-5 L-5,-5 L-5,5 L-2.5,5 L-2.5,2.5"/>
+    <path start="_Middle+0x+0y" data="M5,-5 L5,5 L-5,-0 L5,-5"/>
+    <path start="_Middle+0x+0y" data="M5,-0 L-5,-0"/>
+    <text x="_Middle+0" y="_Middle-10" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+10" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-15x+0y" end="_Middle-5x+0y" sym:connection_id="0"/>
+    <text x="_Middle-1" y="_Middle+0" value="K" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-11" y="_Middle-2" value="3" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+5x+0y" end="_Middle+15x+0y" sym:connection_id="1"/>
+    <text x="_Middle+1" y="_Middle+0" value="A" align="CentreRight" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle+11" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+5x+0y" end="_Middle+15x+0y" sym:connection_id="2"/>
+    <text x="_Middle+1" y="_Middle+0" value="A" align="CentreRight" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle+11" y="_Middle-2" value="2" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+  </render>
+</component>

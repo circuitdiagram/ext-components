@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="PNP Substrate"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="c5aec39f-81ed-4e89-a8a4-85d5c0ffc3db"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="50"/>
+    <meta name="datasheet" value="https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"/>
+    <meta name="description" value="Bipolar transistor symbol for simulation only, with substrate pin"/>
+    <meta name="Sim.Device" value="PNP"/>
+    <meta name="Sim.Type" value="GUMMELPOON"/>
+    <meta name="Sim.Pins" value="1=C 2=B 3=E"/>
+    <meta name="keywords" value="simulation"/>
+    <property name="Reference" type="string" default="Q" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="PNP_Substrate" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="b" start="_Middle-20x+0y" end="_Middle-10x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="c" start="_Middle+10x-20y" end="_Middle+10x-10y" edge="start" sym:connection_id="1"/>
+    <connection name="e" start="_Middle+10x+10y" end="_Middle+10x+20y" edge="end" sym:connection_id="2"/>
+    <connection name="substrate" start="_Middle+20x+0y" end="_Middle+30x+0y" edge="end" sym:connection_id="3"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-10,-0 L2.5,-0"/>
+    <path start="_Middle+0x+0y" data="M2.5,-7.5 L2.5,7.5 L2.5,7.5"/>
+    <path start="_Middle+0x+0y" data="M2.5,-2.5 L10,-10"/>
+    <path start="_Middle+0x+0y" data="M2.5,2.5 L10,10 L10,10"/>
+    <ellipse centre="_Middle+5x+0y" rx="11.1" ry="11.1"/>
+    <path start="_Middle+0x+0y" data="M9,7 L7,9 L5,5 L9,7 L9,7" fill="true"/>
+    <path start="_Middle+0x+0y" data="M10,-0 L20,-0"/>
+    <path start="_Middle+0x+0y" data="M10,-0 L10,-5 L10,-0 L10,5"/>
+    <text x="_Middle+17.5" y="_Middle-17.5" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+17.5" y="_Middle-10" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle-20x+0y" end="_Middle-10x+0y" sym:connection_id="0"/>
+    <text x="_Middle-6" y="_Middle+0" value="B" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-16" y="_Middle-2" value="2" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+10x-20y" end="_Middle+10x-10y" sym:connection_id="1"/>
+    <text x="_Middle+10" y="_Middle-6" value="C" align="CentreRight" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle+8" y="_Middle-16" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+10x+10y" end="_Middle+10x+20y" sym:connection_id="2"/>
+    <text x="_Middle+10" y="_Middle+6" value="E" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle+8" y="_Middle+16" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+20x+0y" end="_Middle+30x+0y" sym:connection_id="3"/>
+    <text x="_Middle+16" y="_Middle+0" value="Substrate" align="CentreRight" size="xxs" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle+26" y="_Middle-2" value="4" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+  </render>
+</component>

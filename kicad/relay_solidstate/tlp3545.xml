@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="TLP3545"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="483be655-e62e-407a-8e88-81818a344ce5"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="60"/>
+    <meta name="footprint" value="Package_DIP:DIP-6_W7.62mm"/>
+    <meta name="datasheet" value="https://toshiba.semicon-storage.com/info/docget.jsp?did=12663&amp;prodName=TLP3545"/>
+    <meta name="description" value="Photo MOSFET optically coupled, ON 3A, 70mohm, OFF state 60V, Isolation 2500 VRMS, DIP-6"/>
+    <meta name="keywords" value="photocouplers photorelay solidstate relay normally opened (1-Form-A)"/>
+    <meta name="ki_fp_filters" value="DIP*W7.62mm*"/>
+    <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="TLP3545" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin1" start="_Middle-30x-10y" end="_Middle-20x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="pin2" start="_Middle-30x+10y" end="_Middle-20x+10y" edge="start" sym:connection_id="1"/>
+    <connection name="pin3" start="_Middle-20x+0y" end="_Middle-10x+0y" edge="start" sym:connection_id="2"/>
+    <connection name="pin6" start="_Middle+20x-10y" end="_Middle+30x-10y" edge="end" sym:connection_id="3"/>
+    <connection name="pin5" start="_Middle+20x+0y" end="_Middle+30x+0y" edge="end" sym:connection_id="4"/>
+    <connection name="pin4" start="_Middle+20x+10y" end="_Middle+30x+10y" edge="end" sym:connection_id="5"/>
+  </connections>
+  <render>
+    <rect location="_Middle-20x-15y" width="40" height="30"/>
+    <path start="_Middle+0x+0y" data="M-20,-10 L-12.5,-10 L-12.5,10 L-20,10"/>
+    <path start="_Middle+0x+0y" data="M-15,2.5 L-10,2.5"/>
+    <path start="_Middle+0x+0y" data="M-12.5,2.5 L-15,-2.5 L-10,-2.5 L-12.5,2.5"/>
+    <path start="_Middle+0x+0y" data="M-7.5,-2 L-2.5,-2 L-4,-1.5 L-4,-2.5 L-2.5,-2"/>
+    <path start="_Middle+0x+0y" data="M-7.5,2 L-2.5,2 L-4,2.5 L-4,1.5 L-2.5,2"/>
+    <path start="_Middle+0x+0y" data="M4,-8.5 L4,-2.5"/>
+    <path start="_Middle+0x+0y" data="M4,2.5 L4,8.5"/>
+    <path start="_Middle+0x+0y" data="M6,-9 L6,-8 L6,-8"/>
+    <path start="_Middle+0x+0y" data="M6,-6 L6,-5 L6,-5"/>
+    <path start="_Middle+0x+0y" data="M6,-3 L6,-2 L6,-2"/>
+    <path start="_Middle+0x+0y" data="M6,2 L6,3"/>
+    <path start="_Middle+0x+0y" data="M6,5 L6,6 L6,6"/>
+    <path start="_Middle+0x+0y" data="M6,8 L6,9 L6,9"/>
+    <path start="_Middle+0x+0y" data="M6.5,-8.5 L11,-8.5 L11,-10 L20,-10"/>
+    <path start="_Middle+0x+0y" data="M6.5,-5.5 L11,-5.5 L11,-2.5"/>
+    <path start="_Middle+0x+0y" data="M6.5,2.5 L11,2.5 L11,-2.5 L6.5,-2.5"/>
+    <path start="_Middle+0x+0y" data="M6.5,5.5 L11,5.5 L11,2.5"/>
+    <path start="_Middle+0x+0y" data="M6.5,8.5 L11,8.5 L11,10 L20,10"/>
+    <path start="_Middle+0x+0y" data="M7,-5.5 L9,-6 L9,-5 L7,-5.5"/>
+    <path start="_Middle+0x+0y" data="M7,5.5 L9,5 L9,6 L7,5.5"/>
+    <ellipse centre="_Middle+11x-2.5y" rx="0.5" ry="0.5"/>
+    <path start="_Middle+0x+0y" data="M11,-0 L20,-0"/>
+    <ellipse centre="_Middle+11x+0y" rx="0.5" ry="0.5"/>
+    <ellipse centre="_Middle+11x+2.5y" rx="0.5" ry="0.5"/>
+    <path start="_Middle+0x+0y" data="M13.5,-6.5 L16.5,-6.5"/>
+    <path start="_Middle+0x+0y" data="M13.5,6.5 L16.5,6.5"/>
+    <ellipse centre="_Middle+15x-10y" rx="0.5" ry="0.5"/>
+    <path start="_Middle+0x+0y" data="M15,-6.5 L13.5,-3.5 L16.5,-3.5 L15,-6.5"/>
+    <ellipse centre="_Middle+15x+0y" rx="0.5" ry="0.5"/>
+    <path start="_Middle+0x+0y" data="M15,6.5 L13.5,3.5 L16.5,3.5 L15,6.5"/>
+    <path start="_Middle+0x+0y" data="M15,10 L15,-10"/>
+    <ellipse centre="_Middle+15x+10y" rx="0.5" ry="0.5"/>
+    <text x="_Middle-15" y="_Middle-20" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle-5" y="_Middle+20" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-30x-10y" end="_Middle-20x-10y" sym:connection_id="0"/>
+    <text x="_Middle-26" y="_Middle-12" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-30x+10y" end="_Middle-20x+10y" sym:connection_id="1"/>
+    <text x="_Middle-26" y="_Middle+8" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle-20x+0y" end="_Middle-10x+0y" sym:connection_id="2"/>
+    <text x="_Middle-16" y="_Middle-2" value="3" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+20x-10y" end="_Middle+30x-10y" sym:connection_id="3"/>
+    <text x="_Middle+26" y="_Middle-12" value="6" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle+20x+0y" end="_Middle+30x+0y" sym:connection_id="4"/>
+    <text x="_Middle+26" y="_Middle-2" value="5" align="BottomCentre" size="xxs" sym:connection_id="4" sym:connection_attr="number"/>
+    <line start="_Middle+20x+10y" end="_Middle+30x+10y" sym:connection_id="5"/>
+    <text x="_Middle+26" y="_Middle+8" value="4" align="BottomCentre" size="xxs" sym:connection_id="5" sym:connection_attr="number"/>
+  </render>
+</component>

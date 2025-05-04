@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="BME280"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="ff01d3b6-d9ba-4ee5-845c-db7d835a5f95"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="100"/>
+    <meta name="footprint" value="Package_LGA:Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering"/>
+    <meta name="datasheet" value="https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme280-ds002.pdf"/>
+    <meta name="description" value="3-in-1 sensor, humidity, pressure, temperature, I2C and SPI interface, 1.71-3.6V, LGA-8"/>
+    <meta name="keywords" value="Bosch pressure humidity temperature environment environmental measurement digital"/>
+    <meta name="ki_fp_filters" value="*LGA*2.5x2.5mm*P0.65mm*Clockwise*"/>
+    <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="BME280" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="vddio" start="_Middle-10x-60y" end="_Middle-10x-40y" edge="start" sym:connection_id="0"/>
+    <connection name="gnd" start="_Middle-10x+40y" end="_Middle-10x+60y" edge="end" sym:connection_id="1"/>
+    <connection name="vdd" start="_Middle+10x-60y" end="_Middle+10x-40y" edge="start" sym:connection_id="2"/>
+    <connection name="gnd" start="_Middle+10x+40y" end="_Middle+10x+60y" edge="end" sym:connection_id="3"/>
+    <connection name="sdo" start="_Middle+40x-30y" end="_Middle+60x-30y" edge="end" sym:connection_id="4"/>
+    <connection name="sck" start="_Middle+40x-10y" end="_Middle+60x-10y" edge="end" sym:connection_id="5"/>
+    <connection name="sdi" start="_Middle+40x+10y" end="_Middle+60x+10y" edge="end" sym:connection_id="6"/>
+    <connection name="csb" start="_Middle+40x+30y" end="_Middle+60x+30y" edge="end" sym:connection_id="7"/>
+  </connections>
+  <render>
+    <rect location="_Middle-40x-40y" width="80" height="80"/>
+    <text x="_Middle-35" y="_Middle-45" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+30" y="_Middle-45" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-10x-60y" end="_Middle-10x-40y" sym:connection_id="0"/>
+    <text x="_Middle-10" y="_Middle-36" value="VDDIO" align="CentreRight" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-12" y="_Middle-51" value="6" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-10x+40y" end="_Middle-10x+60y" sym:connection_id="1"/>
+    <text x="_Middle-10" y="_Middle+36" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-12" y="_Middle+51" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+10x-60y" end="_Middle+10x-40y" sym:connection_id="2"/>
+    <text x="_Middle+10" y="_Middle-36" value="VDD" align="CentreRight" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle+8" y="_Middle-51" value="8" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+10x+40y" end="_Middle+10x+60y" sym:connection_id="3"/>
+    <text x="_Middle+10" y="_Middle+36" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle+8" y="_Middle+51" value="7" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle+40x-30y" end="_Middle+60x-30y" sym:connection_id="4"/>
+    <text x="_Middle+36" y="_Middle-30" value="SDO" align="CentreRight" size="xxs" sym:connection_id="4" sym:connection_attr="name"/>
+    <text x="_Middle+51" y="_Middle-32" value="5" align="BottomCentre" size="xxs" sym:connection_id="4" sym:connection_attr="number"/>
+    <line start="_Middle+40x-10y" end="_Middle+60x-10y" sym:connection_id="5"/>
+    <text x="_Middle+36" y="_Middle-10" value="SCK" align="CentreRight" size="xxs" sym:connection_id="5" sym:connection_attr="name"/>
+    <text x="_Middle+51" y="_Middle-12" value="4" align="BottomCentre" size="xxs" sym:connection_id="5" sym:connection_attr="number"/>
+    <line start="_Middle+40x+10y" end="_Middle+60x+10y" sym:connection_id="6"/>
+    <text x="_Middle+36" y="_Middle+10" value="SDI" align="CentreRight" size="xxs" sym:connection_id="6" sym:connection_attr="name"/>
+    <text x="_Middle+51" y="_Middle+8" value="3" align="BottomCentre" size="xxs" sym:connection_id="6" sym:connection_attr="number"/>
+    <line start="_Middle+40x+30y" end="_Middle+60x+30y" sym:connection_id="7"/>
+    <text x="_Middle+36" y="_Middle+30" value="CSB" align="CentreRight" size="xxs" sym:connection_id="7" sym:connection_attr="name"/>
+    <text x="_Middle+51" y="_Middle+28" value="2" align="BottomCentre" size="xxs" sym:connection_id="7" sym:connection_attr="number"/>
+  </render>
+</component>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="PIC10F204-IOT"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="831c9f9e-85aa-47de-8eda-4b9004c2a604"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="120"/>
+    <meta name="footprint" value="Package_TO_SOT_SMD:SOT-23-6"/>
+    <meta name="datasheet" value="http://ww1.microchip.com/downloads/en/DeviceDoc/41239D.pdf"/>
+    <meta name="description" value="256W Flash, 16B SRAM, SOT-23-6"/>
+    <meta name="keywords" value="FLASH 8-Bit CMOS Microcontroller"/>
+    <meta name="ki_fp_filters" value="SOT*23*6*"/>
+    <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="PIC10F204-IOT" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="gp0" start="_Middle-60x-10y" end="_Middle-40x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="gp1" start="_Middle-60x+10y" end="_Middle-40x+10y" edge="start" sym:connection_id="1"/>
+    <connection name="vdd" start="_Middle+0x-60y" end="_Middle+0x-40y" edge="start" sym:connection_id="2"/>
+    <connection name="vss" start="_Middle+0x+40y" end="_Middle+0x+60y" edge="end" sym:connection_id="3"/>
+    <connection name="gp3" start="_Middle+40x-10y" end="_Middle+60x-10y" edge="end" sym:connection_id="4"/>
+    <connection name="gp2" start="_Middle+40x+10y" end="_Middle+60x+10y" edge="end" sym:connection_id="5"/>
+  </connections>
+  <render>
+    <rect location="_Middle-40x-40y" width="80" height="80"/>
+    <text x="_Middle+5" y="_Middle-55.00000000000001" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+5" y="_Middle-45" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle-60x-10y" end="_Middle-40x-10y" sym:connection_id="0"/>
+    <text x="_Middle-36" y="_Middle-10" value="GP0" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-51" y="_Middle-12" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-60x+10y" end="_Middle-40x+10y" sym:connection_id="1"/>
+    <text x="_Middle-36" y="_Middle+10" value="GP1" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-51" y="_Middle+8" value="3" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+0x-60y" end="_Middle+0x-40y" sym:connection_id="2"/>
+    <text x="_Middle+0" y="_Middle-36" value="VDD" align="CentreRight" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle-51" value="5" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+0x+40y" end="_Middle+0x+60y" sym:connection_id="3"/>
+    <text x="_Middle+0" y="_Middle+36" value="VSS" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+51" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle+40x-10y" end="_Middle+60x-10y" sym:connection_id="4"/>
+    <text x="_Middle+36" y="_Middle-10" value="GP3" align="CentreRight" size="xxs" sym:connection_id="4" sym:connection_attr="name"/>
+    <text x="_Middle+51" y="_Middle-12" value="6" align="BottomCentre" size="xxs" sym:connection_id="4" sym:connection_attr="number"/>
+    <line start="_Middle+40x+10y" end="_Middle+60x+10y" sym:connection_id="5"/>
+    <text x="_Middle+36" y="_Middle+10" value="GP2" align="CentreRight" size="xxs" sym:connection_id="5" sym:connection_attr="name"/>
+    <text x="_Middle+51" y="_Middle+8" value="4" align="BottomCentre" size="xxs" sym:connection_id="5" sym:connection_attr="number"/>
+  </render>
+</component>

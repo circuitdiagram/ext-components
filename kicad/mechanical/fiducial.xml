@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Fiducial"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="0d74e6d3-e141-4c82-86f5-ea98d2eba84f"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="10"/>
+    <meta name="description" value="Fiducial Marker"/>
+    <meta name="keywords" value="fiducial marker"/>
+    <meta name="ki_fp_filters" value="Fiducial*"/>
+    <property name="Reference" type="string" default="FID" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="Fiducial" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+  </connections>
+  <render>
+    <ellipse centre="_Middle+0x+0y" rx="5" ry="5"/>
+    <text x="_Middle+0" y="_Middle-20" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle-12.5" value="$Value" align="CentreCentre" size="xxs"/>
+  </render>
+</component>

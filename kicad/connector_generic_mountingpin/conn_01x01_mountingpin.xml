@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Conn 01x01 MountingPin"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="767c05b0-3b42-4e6a-be84-13a0fb976340"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="30"/>
+    <meta name="description" value="Generic connectable mounting pin connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+    <meta name="keywords" value="connector"/>
+    <meta name="ki_fp_filters" value="Connector*:*_1x??-1MP*"/>
+    <property name="Reference" type="string" default="J" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="Conn_01x01_MountingPin" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin_1" start="_Middle-20x+0y" end="_Middle-5x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="mountpin" start="_Middle+0x+8y" end="_Middle+0x+20y" edge="end" sym:connection_id="1"/>
+  </connections>
+  <render>
+    <rect location="_Middle-5x-5y" width="10" height="10"/>
+    <rect location="_Middle-5x-0.5y" width="5" height="1"/>
+    <path start="_Middle+0x+0y" data="M-4,8 L4,8"/>
+    <text x="_Middle+0" y="_Middle+6.5" value="Mounting" align="CentreCentre" size="base"/>
+    <text x="_Middle+0" y="_Middle-10" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+5" y="_Middle+10" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle-20x+0y" end="_Middle-5x+0y" sym:connection_id="0"/>
+    <text x="_Middle-1" y="_Middle+0" value="Pin_1" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-13.5" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+0x+8y" end="_Middle+0x+20y" sym:connection_id="1"/>
+    <text x="_Middle+0" y="_Middle+4" value="MountPin" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+15" value="MP" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+  </render>
+</component>

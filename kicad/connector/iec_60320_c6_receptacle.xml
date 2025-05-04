@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="IEC 60320 C6 Receptacle"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="f1381923-21c6-4bdb-8e40-911dd30822a1"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="60"/>
+    <meta name="description" value="C6 plug, 2,5A max"/>
+    <meta name="keywords" value="IEC 60320 C6"/>
+    <meta name="ki_fp_filters" value="C*6*Receptacle*"/>
+    <property name="Reference" type="string" default="J" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="IEC_60320_C6_Receptacle" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="l" start="_Middle+25x-20y" end="_Middle+35x-20y" edge="end" sym:connection_id="0"/>
+    <connection name="pe" start="_Middle+25x+0y" end="_Middle+35x+0y" edge="end" sym:connection_id="1"/>
+    <connection name="n" start="_Middle+25x+20y" end="_Middle+35x+20y" edge="end" sym:connection_id="2"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-12.298425196850394,-2.351968503937008 C-9.93455829146949,-1.6129133249292753 -7.359513281828216,-2.0555770630945265 -5.378149015838017,-3.541600262587175 C-3.396784749847818,-5.0276234620798235 -2.250814958509622,-7.375720824649177 -2.2984251968503937,-9.85196850393701"/>
+    <path start="_Middle+0x+0y" data="M-2.2984251968503937,10.148031496062991 C-2.250814958509623,7.671783816775157 -3.3967847498478196,5.323686454205805 -5.378149015838018,3.8376632547131564 C-7.359513281828216,2.351640055220508 -9.93455829146949,1.9089763170552576 -12.298425196850394,2.648031496062991"/>
+    <path start="_Middle+0x+0y" data="M-12.298425196850394,2.648031496062992 C-12.8748031496063,1.0311965610597893 -12.874803149606299,-0.7351335689338032 -12.298425196850392,-2.3519685039370053"/>
+    <path start="_Middle+0x+0y" data="M-2.2984251968503937,-9.851968503937009 C-7.065237673204582,-8.898609010001653 -10.496469285544192,-4.713181882241095 -10.496469285544192,0.1480314960629899 C-10.496469285544192,5.009244874367075 -7.06523767320458,9.194672002127636 -2.298425196850392,10.148031496062991"/>
+    <path start="_Middle+0x+0y" data="M-25,-30 L25,-30 L25,30 L-25,30 L-25,-30"/>
+    <ellipse centre="_Middle-9.8x-9.85y" rx="3.535433070866142" ry="3.535433070866142" fill="true"/>
+    <ellipse centre="_Middle-9.8x+10.15y" rx="3.535433070866142" ry="3.535433070866142" fill="true"/>
+    <ellipse centre="_Middle-0.3x+0.15y" rx="5" ry="5" fill="true"/>
+    <text x="_Middle-23" y="_Middle-34" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+2" y="_Middle+36" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle+25x-20y" end="_Middle+35x-20y" sym:connection_id="0"/>
+    <text x="_Middle+21" y="_Middle-20" value="L" align="CentreRight" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle+31" y="_Middle-22" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+25x+0y" end="_Middle+35x+0y" sym:connection_id="1"/>
+    <text x="_Middle+21" y="_Middle+0" value="PE" align="CentreRight" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle+31" y="_Middle-2" value="3" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+25x+20y" end="_Middle+35x+20y" sym:connection_id="2"/>
+    <text x="_Middle+21" y="_Middle+20" value="N" align="CentreRight" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle+31" y="_Middle+18" value="2" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+  </render>
+</component>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="BAT54A"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="4b67cc76-b007-4f2b-9547-5255d7e1bc18"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="60"/>
+    <meta name="footprint" value="Package_TO_SOT_SMD:SOT-23"/>
+    <meta name="datasheet" value="http://www.diodes.com/_files/datasheets/ds11005.pdf"/>
+    <meta name="description" value="schottky barrier diode"/>
+    <meta name="keywords" value="schottky diode"/>
+    <meta name="ki_fp_filters" value="SOT?23*"/>
+    <property name="Reference" type="string" default="D" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="BAT54A" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin1" start="_Middle-30x+0y" end="_Middle-15x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="pin3" start="_Middle+0x+0y" end="_Middle+0x+20y" edge="end" sym:connection_id="1"/>
+    <connection name="pin2" start="_Middle+15x+0y" end="_Middle+30x+0y" edge="end" sym:connection_id="2"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-17.5,-5 L-17.5,-4"/>
+    <path start="_Middle+0x+0y" data="M-15,-5 L-17.5,-5"/>
+    <path start="_Middle+0x+0y" data="M-15,-0 L-5,-0"/>
+    <path start="_Middle+0x+0y" data="M-15,5 L-15,-5"/>
+    <path start="_Middle+0x+0y" data="M-15,5 L-12.5,5"/>
+    <path start="_Middle+0x+0y" data="M-12.5,5 L-12.5,4"/>
+    <path start="_Middle+0x+0y" data="M-7.5,-5 L-7.5,5 L-15,-0 L-7.5,-5"/>
+    <path start="_Middle+0x+0y" data="M-7.5,-0 L7.5,-0"/>
+    <ellipse centre="_Middle+0x+0y" rx="1" ry="1" fill="true"/>
+    <path start="_Middle+0x+0y" data="M5,-0 L15,-0"/>
+    <path start="_Middle+0x+0y" data="M7.5,-5 L7.5,5 L15,-0 L7.5,-5"/>
+    <path start="_Middle+0x+0y" data="M12.5,5 L12.5,4"/>
+    <path start="_Middle+0x+0y" data="M15,-5 L17.5,-5"/>
+    <path start="_Middle+0x+0y" data="M15,5 L12.5,5"/>
+    <path start="_Middle+0x+0y" data="M15,5 L15,-5"/>
+    <path start="_Middle+0x+0y" data="M17.5,-5 L17.5,-4"/>
+    <text x="_Middle+2.5" y="_Middle+15" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle-25" y="_Middle-12.5" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle-30x+0y" end="_Middle-15x+0y" sym:connection_id="0"/>
+    <text x="_Middle-23.5" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+0x+0y" end="_Middle+0x+20y" sym:connection_id="1"/>
+    <text x="_Middle-2" y="_Middle+11" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+15x+0y" end="_Middle+30x+0y" sym:connection_id="2"/>
+    <text x="_Middle+23.5" y="_Middle-2" value="2" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+  </render>
+</component>

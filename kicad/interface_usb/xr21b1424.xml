@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="XR21B1424"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="0e011a53-14d2-4d34-9062-6d342e8909fd"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="200"/>
+    <meta name="footprint" value="Package_QFP:LQFP-64_10x10mm_P0.5mm"/>
+    <meta name="datasheet" value="https://assets.maxlinear.com/web/documents/xr21b1424.pdf"/>
+    <meta name="description" value="USB 2.0 up to 12Mbps, Quad Channel USB UART/FIFO, RS485 capability, LQFP-64"/>
+    <meta name="keywords" value="USB Quad UART FIFO"/>
+    <meta name="ki_fp_filters" value="LQFP*10x10mm*P0.5mm*"/>
+    <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="XR21B1424" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="usb_d_pos" start="_Middle-100x-180y" end="_Middle-90x-180y" edge="start" sym:connection_id="0"/>
+    <connection name="usb_d_neg" start="_Middle-100x-170y" end="_Middle-90x-170y" edge="start" sym:connection_id="1"/>
+    <connection name="usb_stat1" start="_Middle-100x-150y" end="_Middle-90x-150y" edge="start" sym:connection_id="2"/>
+    <connection name="usb_stat2" start="_Middle-100x-140y" end="_Middle-90x-140y" edge="start" sym:connection_id="3"/>
+    <connection name="not_test" start="_Middle-100x+240y" end="_Middle-90x+240y" edge="start" sym:connection_id="4"/>
+    <connection name="not_reset" start="_Middle-100x+250y" end="_Middle-90x+250y" edge="start" sym:connection_id="5"/>
+    <connection name="vcc" start="_Middle-20x-270y" end="_Middle-20x-260y" edge="start" sym:connection_id="6"/>
+    <connection name="vio" start="_Middle-10x-270y" end="_Middle-10x-260y" edge="start" sym:connection_id="7"/>
+    <connection name="vio" start="_Middle-10x-270y" end="_Middle-10x-260y" edge="start" sym:connection_id="8"/>
+    <connection name="vcc_reg" start="_Middle+0x-270y" end="_Middle+0x-260y" edge="start" sym:connection_id="9"/>
+    <connection name="gnd" start="_Middle+0x+260y" end="_Middle+0x+270y" edge="end" sym:connection_id="10"/>
+    <connection name="gnd" start="_Middle+0x+260y" end="_Middle+0x+270y" edge="end" sym:connection_id="11"/>
+    <connection name="gnd" start="_Middle+0x+260y" end="_Middle+0x+270y" edge="end" sym:connection_id="12"/>
+    <connection name="gnd" start="_Middle+0x+260y" end="_Middle+0x+270y" edge="end" sym:connection_id="13"/>
+    <connection name="gnd" start="_Middle+0x+260y" end="_Middle+0x+270y" edge="end" sym:connection_id="14"/>
+    <connection name="vbus_sense" start="_Middle+10x-270y" end="_Middle+10x-260y" edge="start" sym:connection_id="15"/>
+    <connection name="txa" start="_Middle+90x-250y" end="_Middle+100x-250y" edge="end" sym:connection_id="16"/>
+    <connection name="rxa" start="_Middle+90x-240y" end="_Middle+100x-240y" edge="end" sym:connection_id="17"/>
+    <connection name="gpioa9_rxta" start="_Middle+90x-230y" end="_Middle+100x-230y" edge="end" sym:connection_id="18"/>
+    <connection name="gpioa8_txta" start="_Middle+90x-220y" end="_Middle+100x-220y" edge="end" sym:connection_id="19"/>
+    <connection name="gpioa7_rs485a" start="_Middle+90x-210y" end="_Middle+100x-210y" edge="end" sym:connection_id="20"/>
+    <connection name="gpioa6_clka" start="_Middle+90x-200y" end="_Middle+100x-200y" edge="end" sym:connection_id="21"/>
+    <connection name="gpioa5_rtsa_rs485a" start="_Middle+90x-190y" end="_Middle+100x-190y" edge="end" sym:connection_id="22"/>
+    <connection name="gpioa4_ctsa" start="_Middle+90x-180y" end="_Middle+100x-180y" edge="end" sym:connection_id="23"/>
+    <connection name="gpioa3_dtra" start="_Middle+90x-170y" end="_Middle+100x-170y" edge="end" sym:connection_id="24"/>
+    <connection name="gpioa2_dsra" start="_Middle+90x-160y" end="_Middle+100x-160y" edge="end" sym:connection_id="25"/>
+    <connection name="gpioa1_cda" start="_Middle+90x-150y" end="_Middle+100x-150y" edge="end" sym:connection_id="26"/>
+    <connection name="gpioa0_ria_rwka" start="_Middle+90x-140y" end="_Middle+100x-140y" edge="end" sym:connection_id="27"/>
+    <connection name="txb" start="_Middle+90x-120y" end="_Middle+100x-120y" edge="end" sym:connection_id="28"/>
+    <connection name="rxb" start="_Middle+90x-110y" end="_Middle+100x-110y" edge="end" sym:connection_id="29"/>
+    <connection name="gpiob9_rxtb" start="_Middle+90x-100y" end="_Middle+100x-100y" edge="end" sym:connection_id="30"/>
+    <connection name="gpiob8_txtb" start="_Middle+90x-90y" end="_Middle+100x-90y" edge="end" sym:connection_id="31"/>
+    <connection name="gpiob7_rs485b" start="_Middle+90x-80y" end="_Middle+100x-80y" edge="end" sym:connection_id="32"/>
+    <connection name="gpiob6_clkb" start="_Middle+90x-70y" end="_Middle+100x-70y" edge="end" sym:connection_id="33"/>
+    <connection name="gpiob5_rtsb_rs485b" start="_Middle+90x-60y" end="_Middle+100x-60y" edge="end" sym:connection_id="34"/>
+    <connection name="gpiob4_ctsb" start="_Middle+90x-50y" end="_Middle+100x-50y" edge="end" sym:connection_id="35"/>
+    <connection name="gpiob3_dtrb" start="_Middle+90x-40y" end="_Middle+100x-40y" edge="end" sym:connection_id="36"/>
+    <connection name="gpiob2_dsrb" start="_Middle+90x-30y" end="_Middle+100x-30y" edge="end" sym:connection_id="37"/>
+    <connection name="gpiob1_cdb" start="_Middle+90x-20y" end="_Middle+100x-20y" edge="end" sym:connection_id="38"/>
+    <connection name="gpiob0_rib_rwkb" start="_Middle+90x-10y" end="_Middle+100x-10y" edge="end" sym:connection_id="39"/>
+    <connection name="txc" start="_Middle+90x+10y" end="_Middle+100x+10y" edge="end" sym:connection_id="40"/>
+    <connection name="rxc" start="_Middle+90x+20y" end="_Middle+100x+20y" edge="end" sym:connection_id="41"/>
+    <connection name="gpioc9_rxtc" start="_Middle+90x+30y" end="_Middle+100x+30y" edge="end" sym:connection_id="42"/>
+    <connection name="gpioc8_txtc" start="_Middle+90x+40y" end="_Middle+100x+40y" edge="end" sym:connection_id="43"/>
+    <connection name="gpioc7_rs485c" start="_Middle+90x+50y" end="_Middle+100x+50y" edge="end" sym:connection_id="44"/>
+    <connection name="gpioc6_clkc" start="_Middle+90x+60y" end="_Middle+100x+60y" edge="end" sym:connection_id="45"/>
+    <connection name="gpioc5_rtsc_rs485c" start="_Middle+90x+70y" end="_Middle+100x+70y" edge="end" sym:connection_id="46"/>
+    <connection name="gpioc4_ctsc" start="_Middle+90x+80y" end="_Middle+100x+80y" edge="end" sym:connection_id="47"/>
+    <connection name="gpioc3_dtrc" start="_Middle+90x+90y" end="_Middle+100x+90y" edge="end" sym:connection_id="48"/>
+    <connection name="gpioc2_dsrc" start="_Middle+90x+100y" end="_Middle+100x+100y" edge="end" sym:connection_id="49"/>
+    <connection name="gpioc1_cdc" start="_Middle+90x+110y" end="_Middle+100x+110y" edge="end" sym:connection_id="50"/>
+    <connection name="gpioc0_ric_rwkc" start="_Middle+90x+120y" end="_Middle+100x+120y" edge="end" sym:connection_id="51"/>
+    <connection name="txd" start="_Middle+90x+140y" end="_Middle+100x+140y" edge="end" sym:connection_id="52"/>
+    <connection name="rxd" start="_Middle+90x+150y" end="_Middle+100x+150y" edge="end" sym:connection_id="53"/>
+    <connection name="gpiod9_rxtd" start="_Middle+90x+160y" end="_Middle+100x+160y" edge="end" sym:connection_id="54"/>
+    <connection name="gpiod8_txtd" start="_Middle+90x+170y" end="_Middle+100x+170y" edge="end" sym:connection_id="55"/>
+    <connection name="gpiod7_rs485d" start="_Middle+90x+180y" end="_Middle+100x+180y" edge="end" sym:connection_id="56"/>
+    <connection name="gpiod6_clkd" start="_Middle+90x+190y" end="_Middle+100x+190y" edge="end" sym:connection_id="57"/>
+    <connection name="gpiod5_rtsd_rs485d" start="_Middle+90x+200y" end="_Middle+100x+200y" edge="end" sym:connection_id="58"/>
+    <connection name="gpiod4_ctsd" start="_Middle+90x+210y" end="_Middle+100x+210y" edge="end" sym:connection_id="59"/>
+    <connection name="gpiod3_dtrd" start="_Middle+90x+220y" end="_Middle+100x+220y" edge="end" sym:connection_id="60"/>
+    <connection name="gpiod2_dsrd" start="_Middle+90x+230y" end="_Middle+100x+230y" edge="end" sym:connection_id="61"/>
+    <connection name="gpiod1_cdd" start="_Middle+90x+240y" end="_Middle+100x+240y" edge="end" sym:connection_id="62"/>
+    <connection name="gpiod0_rid_rwkd" start="_Middle+90x+250y" end="_Middle+100x+250y" edge="end" sym:connection_id="63"/>
+  </connections>
+  <render>
+    <rect location="_Middle-90x-260y" width="180" height="520.0000000000001"/>
+    <text x="_Middle-85" y="_Middle-265" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+45" y="_Middle-265" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle-100x-180y" end="_Middle-90x-180y" sym:connection_id="0"/>
+    <text x="_Middle-86" y="_Middle-180" value="USB_D+" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-96" y="_Middle-182" value="9" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-100x-170y" end="_Middle-90x-170y" sym:connection_id="1"/>
+    <text x="_Middle-86" y="_Middle-170" value="USB_D-" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-96" y="_Middle-172" value="10" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle-100x-150y" end="_Middle-90x-150y" sym:connection_id="2"/>
+    <text x="_Middle-86" y="_Middle-150" value="USB_STAT1" align="CentreLeft" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-96" y="_Middle-152" value="25" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle-100x-140y" end="_Middle-90x-140y" sym:connection_id="3"/>
+    <text x="_Middle-86" y="_Middle-140" value="USB_STAT2" align="CentreLeft" size="xxs" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle-96" y="_Middle-142" value="18" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle-100x+240y" end="_Middle-90x+240y" sym:connection_id="4"/>
+    <text x="_Middle-86" y="_Middle+240" value="~{TEST}" align="CentreLeft" size="xxs" sym:connection_id="4" sym:connection_attr="name"/>
+    <text x="_Middle-96" y="_Middle+238" value="32" align="BottomCentre" size="xxs" sym:connection_id="4" sym:connection_attr="number"/>
+    <line start="_Middle-100x+250y" end="_Middle-90x+250y" sym:connection_id="5"/>
+    <text x="_Middle-86" y="_Middle+250" value="~{RESET}" align="CentreLeft" size="xxs" sym:connection_id="5" sym:connection_attr="name"/>
+    <text x="_Middle-96" y="_Middle+248" value="17" align="BottomCentre" size="xxs" sym:connection_id="5" sym:connection_attr="number"/>
+    <line start="_Middle-20x-270y" end="_Middle-20x-260y" sym:connection_id="6"/>
+    <text x="_Middle-20" y="_Middle-256" value="VCC" align="CentreRight" size="xxs" rotate="270" sym:connection_id="6" sym:connection_attr="name"/>
+    <text x="_Middle-22" y="_Middle-266" value="12" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="6" sym:connection_attr="number"/>
+    <line start="_Middle-10x-270y" end="_Middle-10x-260y" sym:connection_id="7"/>
+    <text x="_Middle-10" y="_Middle-256" value="VIO" align="CentreRight" size="xxs" rotate="270" sym:connection_id="7" sym:connection_attr="name"/>
+    <text x="_Middle-12" y="_Middle-266" value="11" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="7" sym:connection_attr="number"/>
+    <line start="_Middle-10x-270y" end="_Middle-10x-260y" sym:connection_id="8"/>
+    <text x="_Middle-10" y="_Middle-256" value="VIO" align="CentreRight" size="xxs" rotate="270" sym:connection_id="8" sym:connection_attr="name"/>
+    <text x="_Middle-12" y="_Middle-266" value="38" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="8" sym:connection_attr="number"/>
+    <line start="_Middle+0x-270y" end="_Middle+0x-260y" sym:connection_id="9"/>
+    <text x="_Middle+0" y="_Middle-256" value="VCC_REG" align="CentreRight" size="xxs" rotate="270" sym:connection_id="9" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle-266" value="13" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="9" sym:connection_attr="number"/>
+    <line start="_Middle+0x+260y" end="_Middle+0x+270y" sym:connection_id="10"/>
+    <text x="_Middle+0" y="_Middle+256" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="10" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+266" value="14" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="10" sym:connection_attr="number"/>
+    <line start="_Middle+0x+260y" end="_Middle+0x+270y" sym:connection_id="11"/>
+    <text x="_Middle+0" y="_Middle+256" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="11" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+266" value="15" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="11" sym:connection_attr="number"/>
+    <line start="_Middle+0x+260y" end="_Middle+0x+270y" sym:connection_id="12"/>
+    <text x="_Middle+0" y="_Middle+256" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="12" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+266" value="21" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="12" sym:connection_attr="number"/>
+    <line start="_Middle+0x+260y" end="_Middle+0x+270y" sym:connection_id="13"/>
+    <text x="_Middle+0" y="_Middle+256" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="13" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+266" value="39" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="13" sym:connection_attr="number"/>
+    <line start="_Middle+0x+260y" end="_Middle+0x+270y" sym:connection_id="14"/>
+    <text x="_Middle+0" y="_Middle+256" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="14" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+266" value="8" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="14" sym:connection_attr="number"/>
+    <line start="_Middle+10x-270y" end="_Middle+10x-260y" sym:connection_id="15"/>
+    <text x="_Middle+10" y="_Middle-256" value="VBUS_SENSE" align="CentreRight" size="xxs" rotate="270" sym:connection_id="15" sym:connection_attr="name"/>
+    <text x="_Middle+8" y="_Middle-266" value="16" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="15" sym:connection_attr="number"/>
+    <line start="_Middle+90x-250y" end="_Middle+100x-250y" sym:connection_id="16"/>
+    <text x="_Middle+86" y="_Middle-250" value="TXA" align="CentreRight" size="xxs" sym:connection_id="16" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle-252" value="64" align="BottomCentre" size="xxs" sym:connection_id="16" sym:connection_attr="number"/>
+    <line start="_Middle+90x-240y" end="_Middle+100x-240y" sym:connection_id="17"/>
+    <text x="_Middle+86" y="_Middle-240" value="RXA" align="CentreRight" size="xxs" sym:connection_id="17" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle-242" value="1" align="BottomCentre" size="xxs" sym:connection_id="17" sym:connection_attr="number"/>
+    <line start="_Middle+90x-230y" end="_Middle+100x-230y" sym:connection_id="18"/>
+    <text x="_Middle+86" y="_Middle-230" value="GPIOA9/RXTA" align="CentreRight" size="xxs" sym:connection_id="18" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle-232" value="60" align="BottomCentre" size="xxs" sym:connection_id="18" sym:connection_attr="number"/>
+    <line start="_Middle+90x-220y" end="_Middle+100x-220y" sym:connection_id="19"/>
+    <text x="_Middle+86" y="_Middle-220.00000000000003" value="GPIOA8/TXTA" align="CentreRight" size="xxs" sym:connection_id="19" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle-222.00000000000003" value="61" align="BottomCentre" size="xxs" sym:connection_id="19" sym:connection_attr="number"/>
+    <line start="_Middle+90x-210y" end="_Middle+100x-210y" sym:connection_id="20"/>
+    <text x="_Middle+86" y="_Middle-210.00000000000003" value="GPIOA7/RS485A" align="CentreRight" size="xxs" sym:connection_id="20" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle-212.00000000000003" value="62" align="BottomCentre" size="xxs" sym:connection_id="20" sym:connection_attr="number"/>
+    <line start="_Middle+90x-200y" end="_Middle+100x-200y" sym:connection_id="21"/>
+    <text x="_Middle+86" y="_Middle-200" value="GPIOA6/CLKA" align="CentreRight" size="xxs" sym:connection_id="21" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle-202" value="63" align="BottomCentre" size="xxs" sym:connection_id="21" sym:connection_attr="number"/>
+    <line start="_Middle+90x-190y" end="_Middle+100x-190y" sym:connection_id="22"/>
+    <text x="_Middle+86" y="_Middle-190" value="GPIOA5/~{RTSA}/RS485A" align="CentreRight" size="xxs" sym:connection_id="22" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle-192" value="2" align="BottomCentre" size="xxs" sym:connection_id="22" sym:connection_attr="number"/>
+    <line start="_Middle+90x-180y" end="_Middle+100x-180y" sym:connection_id="23"/>
+    <text x="_Middle+86" y="_Middle-180" value="GPIOA4/~{CTSA}" align="CentreRight" size="xxs" sym:connection_id="23" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle-182" value="3" align="BottomCentre" size="xxs" sym:connection_id="23" sym:connection_attr="number"/>
+    <line start="_Middle+90x-170y" end="_Middle+100x-170y" sym:connection_id="24"/>
+    <text x="_Middle+86" y="_Middle-170" value="GPIOA3/~{DTRA}" align="CentreRight" size="xxs" sym:connection_id="24" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle-172" value="4" align="BottomCentre" size="xxs" sym:connection_id="24" sym:connection_attr="number"/>
+    <line start="_Middle+90x-160y" end="_Middle+100x-160y" sym:connection_id="25"/>
+    <text x="_Middle+86" y="_Middle-160" value="GPIOA2/~{DSRA}" align="CentreRight" size="xxs" sym:connection_id="25" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle-162" value="5" align="BottomCentre" size="xxs" sym:connection_id="25" sym:connection_attr="number"/>
+    <line start="_Middle+90x-150y" end="_Middle+100x-150y" sym:connection_id="26"/>
+    <text x="_Middle+86" y="_Middle-150" value="GPIOA1/~{CDA}" align="CentreRight" size="xxs" sym:connection_id="26" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle-152" value="6" align="BottomCentre" size="xxs" sym:connection_id="26" sym:connection_attr="number"/>
+    <line start="_Middle+90x-140y" end="_Middle+100x-140y" sym:connection_id="27"/>
+    <text x="_Middle+86" y="_Middle-140" value="GPIOA0/~{RIA}/~{RWKA}" align="CentreRight" size="xxs" sym:connection_id="27" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle-142" value="7" align="BottomCentre" size="xxs" sym:connection_id="27" sym:connection_attr="number"/>
+    <line start="_Middle+90x-120y" end="_Middle+100x-120y" sym:connection_id="28"/>
+    <text x="_Middle+86" y="_Middle-120" value="TXB" align="CentreRight" size="xxs" sym:connection_id="28" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle-122" value="40" align="BottomCentre" size="xxs" sym:connection_id="28" sym:connection_attr="number"/>
+    <line start="_Middle+90x-110y" end="_Middle+100x-110y" sym:connection_id="29"/>
+    <text x="_Middle+86" y="_Middle-110.00000000000001" value="RXB" align="CentreRight" size="xxs" sym:connection_id="29" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle-112.00000000000001" value="41" align="BottomCentre" size="xxs" sym:connection_id="29" sym:connection_attr="number"/>
+    <line start="_Middle+90x-100y" end="_Middle+100x-100y" sym:connection_id="30"/>
+    <text x="_Middle+86" y="_Middle-100" value="GPIOB9/RXTB" align="CentreRight" size="xxs" sym:connection_id="30" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle-102" value="34" align="BottomCentre" size="xxs" sym:connection_id="30" sym:connection_attr="number"/>
+    <line start="_Middle+90x-90y" end="_Middle+100x-90y" sym:connection_id="31"/>
+    <text x="_Middle+86" y="_Middle-90" value="GPIOB8/TXTB" align="CentreRight" size="xxs" sym:connection_id="31" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle-92" value="35" align="BottomCentre" size="xxs" sym:connection_id="31" sym:connection_attr="number"/>
+    <line start="_Middle+90x-80y" end="_Middle+100x-80y" sym:connection_id="32"/>
+    <text x="_Middle+86" y="_Middle-80" value="GPIOB7/RS485B" align="CentreRight" size="xxs" sym:connection_id="32" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle-82" value="36" align="BottomCentre" size="xxs" sym:connection_id="32" sym:connection_attr="number"/>
+    <line start="_Middle+90x-70y" end="_Middle+100x-70y" sym:connection_id="33"/>
+    <text x="_Middle+86" y="_Middle-70" value="GPIOB6/CLKB" align="CentreRight" size="xxs" sym:connection_id="33" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle-72" value="37" align="BottomCentre" size="xxs" sym:connection_id="33" sym:connection_attr="number"/>
+    <line start="_Middle+90x-60y" end="_Middle+100x-60y" sym:connection_id="34"/>
+    <text x="_Middle+86" y="_Middle-60" value="GPIOB5/~{RTSB}/RS485B" align="CentreRight" size="xxs" sym:connection_id="34" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle-62" value="42" align="BottomCentre" size="xxs" sym:connection_id="34" sym:connection_attr="number"/>
+    <line start="_Middle+90x-50y" end="_Middle+100x-50y" sym:connection_id="35"/>
+    <text x="_Middle+86" y="_Middle-50" value="GPIOB4/~{CTSB}" align="CentreRight" size="xxs" sym:connection_id="35" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle-52" value="43" align="BottomCentre" size="xxs" sym:connection_id="35" sym:connection_attr="number"/>
+    <line start="_Middle+90x-40y" end="_Middle+100x-40y" sym:connection_id="36"/>
+    <text x="_Middle+86" y="_Middle-40" value="GPIOB3/~{DTRB}" align="CentreRight" size="xxs" sym:connection_id="36" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle-42" value="44" align="BottomCentre" size="xxs" sym:connection_id="36" sym:connection_attr="number"/>
+    <line start="_Middle+90x-30y" end="_Middle+100x-30y" sym:connection_id="37"/>
+    <text x="_Middle+86" y="_Middle-30" value="GPIOB2/~{DSRB}" align="CentreRight" size="xxs" sym:connection_id="37" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle-32" value="45" align="BottomCentre" size="xxs" sym:connection_id="37" sym:connection_attr="number"/>
+    <line start="_Middle+90x-20y" end="_Middle+100x-20y" sym:connection_id="38"/>
+    <text x="_Middle+86" y="_Middle-20" value="GPIOB1/~{CDB}" align="CentreRight" size="xxs" sym:connection_id="38" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle-22" value="46" align="BottomCentre" size="xxs" sym:connection_id="38" sym:connection_attr="number"/>
+    <line start="_Middle+90x-10y" end="_Middle+100x-10y" sym:connection_id="39"/>
+    <text x="_Middle+86" y="_Middle-10" value="GPIOB0/~{RIB}/~{RWKB}" align="CentreRight" size="xxs" sym:connection_id="39" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle-12" value="47" align="BottomCentre" size="xxs" sym:connection_id="39" sym:connection_attr="number"/>
+    <line start="_Middle+90x+10y" end="_Middle+100x+10y" sym:connection_id="40"/>
+    <text x="_Middle+86" y="_Middle+10" value="TXC" align="CentreRight" size="xxs" sym:connection_id="40" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle+8" value="24" align="BottomCentre" size="xxs" sym:connection_id="40" sym:connection_attr="number"/>
+    <line start="_Middle+90x+20y" end="_Middle+100x+20y" sym:connection_id="41"/>
+    <text x="_Middle+86" y="_Middle+20" value="RXC" align="CentreRight" size="xxs" sym:connection_id="41" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle+18" value="26" align="BottomCentre" size="xxs" sym:connection_id="41" sym:connection_attr="number"/>
+    <line start="_Middle+90x+30y" end="_Middle+100x+30y" sym:connection_id="42"/>
+    <text x="_Middle+86" y="_Middle+30" value="GPIOC9/RXTC" align="CentreRight" size="xxs" sym:connection_id="42" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle+28" value="19" align="BottomCentre" size="xxs" sym:connection_id="42" sym:connection_attr="number"/>
+    <line start="_Middle+90x+40y" end="_Middle+100x+40y" sym:connection_id="43"/>
+    <text x="_Middle+86" y="_Middle+40" value="GPIOC8/TXTC" align="CentreRight" size="xxs" sym:connection_id="43" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle+38" value="20" align="BottomCentre" size="xxs" sym:connection_id="43" sym:connection_attr="number"/>
+    <line start="_Middle+90x+50y" end="_Middle+100x+50y" sym:connection_id="44"/>
+    <text x="_Middle+86" y="_Middle+50" value="GPIOC7/RS485C" align="CentreRight" size="xxs" sym:connection_id="44" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle+48" value="22" align="BottomCentre" size="xxs" sym:connection_id="44" sym:connection_attr="number"/>
+    <line start="_Middle+90x+60y" end="_Middle+100x+60y" sym:connection_id="45"/>
+    <text x="_Middle+86" y="_Middle+60" value="GPIOC6/CLKC" align="CentreRight" size="xxs" sym:connection_id="45" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle+58" value="23" align="BottomCentre" size="xxs" sym:connection_id="45" sym:connection_attr="number"/>
+    <line start="_Middle+90x+70y" end="_Middle+100x+70y" sym:connection_id="46"/>
+    <text x="_Middle+86" y="_Middle+70" value="GPIOC5/~{RTSC}/RS485C" align="CentreRight" size="xxs" sym:connection_id="46" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle+68" value="27" align="BottomCentre" size="xxs" sym:connection_id="46" sym:connection_attr="number"/>
+    <line start="_Middle+90x+80y" end="_Middle+100x+80y" sym:connection_id="47"/>
+    <text x="_Middle+86" y="_Middle+80" value="GPIOC4/~{CTSC}" align="CentreRight" size="xxs" sym:connection_id="47" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle+78" value="28" align="BottomCentre" size="xxs" sym:connection_id="47" sym:connection_attr="number"/>
+    <line start="_Middle+90x+90y" end="_Middle+100x+90y" sym:connection_id="48"/>
+    <text x="_Middle+86" y="_Middle+90" value="GPIOC3/~{DTRC}" align="CentreRight" size="xxs" sym:connection_id="48" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle+88" value="29" align="BottomCentre" size="xxs" sym:connection_id="48" sym:connection_attr="number"/>
+    <line start="_Middle+90x+100y" end="_Middle+100x+100y" sym:connection_id="49"/>
+    <text x="_Middle+86" y="_Middle+100" value="GPIOC2/~{DSRC}" align="CentreRight" size="xxs" sym:connection_id="49" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle+98" value="30" align="BottomCentre" size="xxs" sym:connection_id="49" sym:connection_attr="number"/>
+    <line start="_Middle+90x+110y" end="_Middle+100x+110y" sym:connection_id="50"/>
+    <text x="_Middle+86" y="_Middle+110.00000000000001" value="GPIOC1/~{CDC}" align="CentreRight" size="xxs" sym:connection_id="50" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle+108.00000000000001" value="31" align="BottomCentre" size="xxs" sym:connection_id="50" sym:connection_attr="number"/>
+    <line start="_Middle+90x+120y" end="_Middle+100x+120y" sym:connection_id="51"/>
+    <text x="_Middle+86" y="_Middle+120" value="GPIOC0/~{RIC}/~{RWKC}" align="CentreRight" size="xxs" sym:connection_id="51" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle+118" value="33" align="BottomCentre" size="xxs" sym:connection_id="51" sym:connection_attr="number"/>
+    <line start="_Middle+90x+140y" end="_Middle+100x+140y" sym:connection_id="52"/>
+    <text x="_Middle+86" y="_Middle+140" value="TXD" align="CentreRight" size="xxs" sym:connection_id="52" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle+138" value="52" align="BottomCentre" size="xxs" sym:connection_id="52" sym:connection_attr="number"/>
+    <line start="_Middle+90x+150y" end="_Middle+100x+150y" sym:connection_id="53"/>
+    <text x="_Middle+86" y="_Middle+150" value="RXD" align="CentreRight" size="xxs" sym:connection_id="53" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle+148" value="53" align="BottomCentre" size="xxs" sym:connection_id="53" sym:connection_attr="number"/>
+    <line start="_Middle+90x+160y" end="_Middle+100x+160y" sym:connection_id="54"/>
+    <text x="_Middle+86" y="_Middle+160" value="GPIOD9/RXTD" align="CentreRight" size="xxs" sym:connection_id="54" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle+158" value="48" align="BottomCentre" size="xxs" sym:connection_id="54" sym:connection_attr="number"/>
+    <line start="_Middle+90x+170y" end="_Middle+100x+170y" sym:connection_id="55"/>
+    <text x="_Middle+86" y="_Middle+170" value="GPIOD8/TXTD" align="CentreRight" size="xxs" sym:connection_id="55" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle+168" value="49" align="BottomCentre" size="xxs" sym:connection_id="55" sym:connection_attr="number"/>
+    <line start="_Middle+90x+180y" end="_Middle+100x+180y" sym:connection_id="56"/>
+    <text x="_Middle+86" y="_Middle+180" value="GPIOD7/RS485D" align="CentreRight" size="xxs" sym:connection_id="56" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle+178" value="50" align="BottomCentre" size="xxs" sym:connection_id="56" sym:connection_attr="number"/>
+    <line start="_Middle+90x+190y" end="_Middle+100x+190y" sym:connection_id="57"/>
+    <text x="_Middle+86" y="_Middle+190" value="GPIOD6/CLKD" align="CentreRight" size="xxs" sym:connection_id="57" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle+188" value="51" align="BottomCentre" size="xxs" sym:connection_id="57" sym:connection_attr="number"/>
+    <line start="_Middle+90x+200y" end="_Middle+100x+200y" sym:connection_id="58"/>
+    <text x="_Middle+86" y="_Middle+200" value="GPIOD5/~{RTSD}/RS485D" align="CentreRight" size="xxs" sym:connection_id="58" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle+198" value="54" align="BottomCentre" size="xxs" sym:connection_id="58" sym:connection_attr="number"/>
+    <line start="_Middle+90x+210y" end="_Middle+100x+210y" sym:connection_id="59"/>
+    <text x="_Middle+86" y="_Middle+210.00000000000003" value="GPIOD4/~{CTSD}" align="CentreRight" size="xxs" sym:connection_id="59" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle+208.00000000000003" value="55" align="BottomCentre" size="xxs" sym:connection_id="59" sym:connection_attr="number"/>
+    <line start="_Middle+90x+220y" end="_Middle+100x+220y" sym:connection_id="60"/>
+    <text x="_Middle+86" y="_Middle+220.00000000000003" value="GPIOD3/~{DTRD}" align="CentreRight" size="xxs" sym:connection_id="60" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle+218.00000000000003" value="56" align="BottomCentre" size="xxs" sym:connection_id="60" sym:connection_attr="number"/>
+    <line start="_Middle+90x+230y" end="_Middle+100x+230y" sym:connection_id="61"/>
+    <text x="_Middle+86" y="_Middle+230" value="GPIOD2/~{DSRD}" align="CentreRight" size="xxs" sym:connection_id="61" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle+228" value="57" align="BottomCentre" size="xxs" sym:connection_id="61" sym:connection_attr="number"/>
+    <line start="_Middle+90x+240y" end="_Middle+100x+240y" sym:connection_id="62"/>
+    <text x="_Middle+86" y="_Middle+240" value="GPIOD1/~{CDD}" align="CentreRight" size="xxs" sym:connection_id="62" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle+238" value="58" align="BottomCentre" size="xxs" sym:connection_id="62" sym:connection_attr="number"/>
+    <line start="_Middle+90x+250y" end="_Middle+100x+250y" sym:connection_id="63"/>
+    <text x="_Middle+86" y="_Middle+250" value="GPIOD0/~{RID}/~{RWKD}" align="CentreRight" size="xxs" sym:connection_id="63" sym:connection_attr="name"/>
+    <text x="_Middle+96" y="_Middle+248" value="59" align="BottomCentre" size="xxs" sym:connection_id="63" sym:connection_attr="number"/>
+  </render>
+</component>

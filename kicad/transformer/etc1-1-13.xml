@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="ETC1-1-13"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="d7c39fba-667d-4add-8c61-fdb6ad26ec86"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="40"/>
+    <meta name="footprint" value="Transformer_SMD:Transformer_MACOM_SM-22"/>
+    <meta name="datasheet" value="https://cdn.macom.com/datasheets/ETC1-1-13.pdf"/>
+    <meta name="description" value="4.5-4000MHz 1:1 RF Transformer, Balanced Transmission Line, SM-22"/>
+    <meta name="keywords" value="MACOM RF Transformer"/>
+    <meta name="ki_fp_filters" value="Transformer*MACOM*SM?22*"/>
+    <property name="Reference" type="string" default="TR" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="ETC1-1-13" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin1" start="_Middle-20x-10y" end="_Middle-10x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="pin2" start="_Middle-20x+10y" end="_Middle-10x+10y" edge="start" sym:connection_id="1"/>
+    <connection name="pin5" start="_Middle+10x-10y" end="_Middle+20x-10y" edge="end" sym:connection_id="2"/>
+    <connection name="mp" start="_Middle+15x+0y" end="_Middle+20x+0y" edge="end" sym:connection_id="3"/>
+    <connection name="pin3" start="_Middle+10x+10y" end="_Middle+20x+10y" edge="end" sym:connection_id="4"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M15,-3 L15,3"/>
+    <text x="_Middle+13.5" y="_Middle+0" value="Mounting" align="CentreCentre" size="base"/>
+    <ellipse centre="_Middle-12x-6y" rx="1" ry="1" fill="true"/>
+    <path start="_Middle+0x+0y" data="M-11,-2 L-9,-2"/>
+    <path start="_Middle+0x+0y" data="M-11,2 L-9,2"/>
+    <path start="_Middle+0x+0y" data="M-10,-8 L-10,-10"/>
+    <path start="_Middle+0x+0y" data="M-10,8 L-10,10"/>
+    <path start="_Middle+0x+0y" data="M-6,-8 C-6.004779266189962,-6.898818807590609 -6.89880843632841,-6.008661417322843 -8,-6.008661417322843 C-9.10119156367159,-6.008661417322843 -9.995220733810038,-6.898818807590609 -10,-7.999999999999999"/>
+    <path start="_Middle+0x+0y" data="M-10,8 C-9.995220733810038,6.898818807590609 -9.10119156367159,6.008661417322843 -8,6.008661417322843 C-6.89880843632841,6.008661417322843 -6.004779266189962,6.898818807590609 -6,7.999999999999999"/>
+    <path start="_Middle+0x+0y" data="M-7,-2 L-5,-2"/>
+    <path start="_Middle+0x+0y" data="M-7,2 L-5,2"/>
+    <path start="_Middle+0x+0y" data="M-2,-8 C-2.0047792661899617,-6.898818807590609 -2.8988084363284097,-6.008661417322843 -4,-6.008661417322843 C-5.101191563671589,-6.008661417322843 -5.995220733810038,-6.898818807590609 -6,-7.999999999999999"/>
+    <path start="_Middle+0x+0y" data="M-6,8 C-5.995220733810038,6.898818807590609 -5.101191563671589,6.008661417322843 -4,6.008661417322843 C-2.8988084363284097,6.008661417322843 -2.0047792661899617,6.898818807590609 -2,7.999999999999999"/>
+    <path start="_Middle+0x+0y" data="M-3,-2 L-1,-2"/>
+    <path start="_Middle+0x+0y" data="M-3,2 L-1,2"/>
+    <path start="_Middle+0x+0y" data="M2,-8 C1.9952207338100385,-6.898818807590609 1.1011915636715903,-6.008661417322843 0.00000000000000012246583332465035,-6.008661417322843 C-1.1011915636715899,-6.008661417322843 -1.995220733810038,-6.898818807590609 -1.9999999999999998,-7.999999999999999"/>
+    <path start="_Middle+0x+0y" data="M-2,8 C-1.9952207338100383,6.898818807590609 -1.1011915636715899,6.008661417322843 0.00000000000000012246583332465035,6.008661417322843 C1.1011915636715903,6.008661417322843 1.9952207338100383,6.898818807590609 1.9999999999999998,7.999999999999999"/>
+    <path start="_Middle+0x+0y" data="M1,-2 L3,-2"/>
+    <path start="_Middle+0x+0y" data="M1,2 L3,2"/>
+    <path start="_Middle+0x+0y" data="M6,-8 C5.995220733810038,-6.898818807590609 5.10119156367159,-6.008661417322843 4,-6.008661417322843 C2.89880843632841,-6.008661417322843 2.0047792661899617,-6.898818807590609 2,-7.999999999999999"/>
+    <path start="_Middle+0x+0y" data="M2,8 C2.0047792661899617,6.898818807590609 2.89880843632841,6.008661417322843 4,6.008661417322843 C5.10119156367159,6.008661417322843 5.995220733810038,6.898818807590609 6,7.999999999999999"/>
+    <path start="_Middle+0x+0y" data="M5,-2 L7,-2"/>
+    <path start="_Middle+0x+0y" data="M5,2 L7,2"/>
+    <path start="_Middle+0x+0y" data="M10,-8 C9.995220733810038,-6.898818807590609 9.101191563671591,-6.008661417322843 8,-6.008661417322843 C6.898808436328411,-6.008661417322843 6.004779266189962,-6.898818807590609 6,-7.999999999999999"/>
+    <path start="_Middle+0x+0y" data="M6,8 C6.004779266189962,6.898818807590609 6.898808436328411,6.008661417322843 8,6.008661417322843 C9.101191563671591,6.008661417322843 9.995220733810038,6.898818807590609 10,7.999999999999999"/>
+    <path start="_Middle+0x+0y" data="M9,-2 L11,-2"/>
+    <path start="_Middle+0x+0y" data="M9,2 L11,2"/>
+    <path start="_Middle+0x+0y" data="M10,-10 L10,-8"/>
+    <path start="_Middle+0x+0y" data="M10,8 L10,10"/>
+    <ellipse centre="_Middle+12x-6y" rx="1" ry="1" fill="true"/>
+    <text x="_Middle+0" y="_Middle-15" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+15" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-20x-10y" end="_Middle-10x-10y" sym:connection_id="0"/>
+    <text x="_Middle-16" y="_Middle-12" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-20x+10y" end="_Middle-10x+10y" sym:connection_id="1"/>
+    <text x="_Middle-16" y="_Middle+8" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+10x-10y" end="_Middle+20x-10y" sym:connection_id="2"/>
+    <text x="_Middle+16" y="_Middle-12" value="5" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+15x+0y" end="_Middle+20x+0y" sym:connection_id="3"/>
+    <text x="_Middle+11" y="_Middle+0" value="MP" align="CentreRight" size="xxs" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle+18.5" y="_Middle-2" value="4" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle+10x+10y" end="_Middle+20x+10y" sym:connection_id="4"/>
+    <text x="_Middle+16" y="_Middle+8" value="3" align="BottomCentre" size="xxs" sym:connection_id="4" sym:connection_attr="number"/>
+  </render>
+</component>

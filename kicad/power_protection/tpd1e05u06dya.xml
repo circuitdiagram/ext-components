@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="TPD1E05U06DYA"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="98463e44-c782-4a91-8f6e-fcd300d0e1ea"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="40"/>
+    <meta name="footprint" value="Diode_SMD:D_SOD-523"/>
+    <meta name="datasheet" value="https://www.ti.com/lit/ds/symlink/tpd1e05u06.pdf"/>
+    <meta name="description" value="1-Channel ESD Protection for Super-Speed USB 3.0 Interface, SOD-523"/>
+    <meta name="keywords" value="ESD protection USB 3.0"/>
+    <meta name="ki_fp_filters" value="*SOD*523*"/>
+    <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="TPD1E05U06DYA" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="i_o" start="_Middle+0x+10y" end="_Middle+0x+20y" edge="end" sym:connection_id="0"/>
+    <connection name="gnd" start="_Middle+10x+0y" end="_Middle+20x+0y" edge="end" sym:connection_id="1"/>
+  </connections>
+  <render>
+    <rect location="_Middle-12x-7.5y" width="24" height="19.5"/>
+    <path start="_Middle+0x+0y" data="M-10,8 L-10,-0"/>
+    <path start="_Middle+0x+0y" data="M-7.5,8 L-2.5,5.5 L-2.5,10.5 L-7.5,8"/>
+    <path start="_Middle+0x+0y" data="M-7.5,10.5 L-7.5,5.5"/>
+    <path start="_Middle+0x+0y" data="M-4,-0 L-10,-0"/>
+    <path start="_Middle+0x+0y" data="M-3,-3 L-3,-3"/>
+    <path start="_Middle+0x+0y" data="M-3,-0 L2,-2.5 L2,2.5 L-3,-0"/>
+    <path start="_Middle+0x+0y" data="M-3,3 L-3,-3"/>
+    <path start="_Middle+0x+0y" data="M-2.5,8 L-10,8"/>
+    <path start="_Middle+0x+0y" data="M-2.5,8 L2.5,8"/>
+    <path start="_Middle+0x+0y" data="M-1.5,-3 L-3,-3"/>
+    <ellipse centre="_Middle+0x+8y" rx="0.8" ry="0.8" fill="true"/>
+    <path start="_Middle+0x+0y" data="M0,10 L0,8"/>
+    <path start="_Middle+0x+0y" data="M3,8 L8,5.5 L8,10.5 L3,8"/>
+    <path start="_Middle+0x+0y" data="M3,10.5 L3,5.5"/>
+    <path start="_Middle+0x+0y" data="M3.5,-0 L-4,-0"/>
+    <path start="_Middle+0x+0y" data="M3.5,-0 L-4,-0"/>
+    <path start="_Middle+0x+0y" data="M3.5,-0 L10,-0"/>
+    <ellipse centre="_Middle+10x+0y" rx="0.8" ry="0.8" fill="true"/>
+    <path start="_Middle+0x+0y" data="M10,8 L2.5,8"/>
+    <path start="_Middle+0x+0y" data="M10,8 L2.5,8"/>
+    <path start="_Middle+0x+0y" data="M10,8 L10,-0"/>
+    <text x="_Middle-10" y="_Middle-12.5" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+5" y="_Middle-12.5" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle+0x+10y" end="_Middle+0x+20y" sym:connection_id="0"/>
+    <text x="_Middle+0" y="_Middle+6" value="I/O" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+16" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+10x+0y" end="_Middle+20x+0y" sym:connection_id="1"/>
+    <text x="_Middle+6" y="_Middle+0" value="GND" align="CentreRight" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle+16" y="_Middle-2" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+  </render>
+</component>

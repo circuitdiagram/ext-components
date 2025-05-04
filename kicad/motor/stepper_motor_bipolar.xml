@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Stepper Motor bipolar"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="0822067b-3e56-42fc-92f8-5e78f9268dd0"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="50"/>
+    <meta name="datasheet" value="http://www.infineon.com/dgdl/Application-Note-TLE8110EE_driving_UniPolarStepperMotor_V1.1.pdf?fileId=db3a30431be39b97011be5d0aa0a00b0"/>
+    <meta name="description" value="4-wire bipolar stepper motor"/>
+    <meta name="keywords" value="bipolar stepper motor"/>
+    <meta name="ki_fp_filters" value="PinHeader*P2.54mm*Vertical* TerminalBlock* Motor*"/>
+    <property name="Reference" type="string" default="M" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="Stepper_Motor_bipolar" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin3" start="_Middle-30x-10y" end="_Middle-20x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="pin4" start="_Middle-30x+10y" end="_Middle-20x+10y" edge="start" sym:connection_id="1"/>
+    <connection name="pin1" start="_Middle-10x-30y" end="_Middle-10x-20y" edge="start" sym:connection_id="2"/>
+    <connection name="neg" start="_Middle+10x-30y" end="_Middle+10x-20y" edge="start" sym:connection_id="3"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-5,7 L-5,-8 L0,2 L5,-8 L5,7"/>
+    <path start="_Middle+0x+0y" data="M-20,-10 L-17.5,-10"/>
+    <path start="_Middle+0x+0y" data="M-20,10 L-17.5,10"/>
+    <path start="_Middle+0x+0y" data="M-17.5,-10 C-16.12344637265358,-9.99413444067828 -15.010629921259525,-8.876566124000858 -15.010629921259525,-7.5 C-15.010629921259525,-6.123433875999142 -16.12344637265358,-5.00586555932172 -17.5,-5"/>
+    <path start="_Middle+0x+0y" data="M-17.5,-5 C-16.12344637265368,-4.994134440678133 -15.010629921259792,-3.876566124000754 -15.010629921259792,-2.5 C-15.010629921259792,-1.123433875999246 -16.12344637265368,-0.005865559321867053 -17.5,0"/>
+    <path start="_Middle+0x+0y" data="M-17.5,-0 C-16.12344637265368,0.005865559321867053 -15.010629921259792,1.123433875999246 -15.010629921259792,2.5 C-15.010629921259792,3.876566124000754 -16.12344637265368,4.994134440678133 -17.5,5"/>
+    <path start="_Middle+0x+0y" data="M-17.5,5 C-16.123446372653746,5.005865559321954 -15.01062992125995,6.123433875999307 -15.01062992125995,7.5 C-15.01062992125995,8.876566124000693 -16.123446372653746,9.994134440678046 -17.5,10"/>
+    <path start="_Middle+0x+0y" data="M-10,-20 L-10,-17.5"/>
+    <path start="_Middle+0x+0y" data="M-5,-17.5 C-5.005865559321954,-16.123446372653746 -6.123433875999307,-15.01062992125995 -7.5,-15.01062992125995 C-8.876566124000693,-15.01062992125995 -9.994134440678046,-16.123446372653746 -10,-17.5"/>
+    <path start="_Middle+0x+0y" data="M0,-17.5 C-0.005865559321867053,-16.12344637265368 -1.1234338759992457,-15.010629921259792 -2.5,-15.010629921259792 C-3.876566124000754,-15.010629921259792 -4.994134440678133,-16.12344637265368 -5,-17.5"/>
+    <ellipse centre="_Middle+0x+0y" rx="12.8" ry="12.8"/>
+    <path start="_Middle+0x+0y" data="M5,-17.5 C4.994134440678133,-16.12344637265368 3.876566124000754,-15.010629921259792 2.5,-15.010629921259792 C1.1234338759992462,-15.010629921259792 0.005865559321866609,-16.12344637265368 0,-17.5"/>
+    <path start="_Middle+0x+0y" data="M10,-17.5 C9.99413444067828,-16.12344637265358 8.876566124000858,-15.010629921259525 7.5,-15.010629921259525 C6.123433875999142,-15.010629921259525 5.00586555932172,-16.12344637265358 5,-17.5"/>
+    <path start="_Middle+0x+0y" data="M10,-20 L10,-17.5"/>
+    <text x="_Middle+15" y="_Middle-10" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+15" y="_Middle-5" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle-30x-10y" end="_Middle-20x-10y" sym:connection_id="0"/>
+    <text x="_Middle-26" y="_Middle-12" value="3" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-30x+10y" end="_Middle-20x+10y" sym:connection_id="1"/>
+    <text x="_Middle-26" y="_Middle+8" value="4" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle-10x-30y" end="_Middle-10x-20y" sym:connection_id="2"/>
+    <text x="_Middle-12" y="_Middle-26" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+10x-30y" end="_Middle+10x-20y" sym:connection_id="3"/>
+    <text x="_Middle+10" y="_Middle-16" value="-" align="CentreRight" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle+8" y="_Middle-26" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="number"/>
+  </render>
+</component>

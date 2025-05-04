@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="GSOURCE"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="6ae01e36-70fe-4b7e-8e81-95d029f5dc6e"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="40"/>
+    <meta name="datasheet" value="https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#subsec_Gxxxx__Linear_Voltage_Controlled"/>
+    <meta name="description" value="Voltage-controlled current source symbol for simulation only"/>
+    <meta name="Sim.Device" value="SPICE"/>
+    <meta name="keywords" value="simulation vccs dependent"/>
+    <property name="Reference" type="string" default="G" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="GSOURCE" serialize="value" display="Value"/>
+    <property name="Sim_Params" type="string" default="type=&quot;G&quot; model=&quot;1&quot;" serialize="sim_params" display="Sim_Params"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="c_pos" start="_Middle-20x-20y" end="_Middle-20x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="c_neg" start="_Middle-20x+10y" end="_Middle-20x+20y" edge="end" sym:connection_id="1"/>
+    <connection name="n_pos" start="_Middle+0x-20y" end="_Middle+0x-10y" edge="start" sym:connection_id="2"/>
+    <connection name="n_neg" start="_Middle+0x+10y" end="_Middle+0x+20y" edge="end" sym:connection_id="3"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M0,-8 L0,-4"/>
+    <path start="_Middle+0x+0y" data="M1,-6 L0,-4 L-1,-6"/>
+    <ellipse centre="_Middle-20x+0y" rx="10" ry="10"/>
+    <path start="_Middle+0x+0y" data="M-19,-15 L-17,-15"/>
+    <path start="_Middle+0x+0y" data="M-19,15 L-17,15"/>
+    <path start="_Middle+0x+0y" data="M-18,-16 L-18,-14"/>
+    <path start="_Middle+0x+0y" data="M0,-10 L-10,-0 L0,10 L10,-0 L0,-10"/>
+    <text x="_Middle-20" y="_Middle+0" value="V" align="CentreCentre" size="base"/>
+    <text x="_Middle+10" y="_Middle-10" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+10" y="_Middle+0" value="$Value" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+10" y="_Middle+10" value="$Sim.Params" align="CentreLeft" size="xxs"/>
+    <line start="_Middle-20x-20y" end="_Middle-20x-10y" sym:connection_id="0"/>
+    <text x="_Middle-20" y="_Middle-6" value="C+" align="CentreRight" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-22" y="_Middle-16" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-20x+10y" end="_Middle-20x+20y" sym:connection_id="1"/>
+    <text x="_Middle-20" y="_Middle+6" value="C-" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-22" y="_Middle+16" value="4" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+0x-20y" end="_Middle+0x-10y" sym:connection_id="2"/>
+    <text x="_Middle+0" y="_Middle-6" value="N+" align="CentreRight" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle-16" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+0x+10y" end="_Middle+0x+20y" sym:connection_id="3"/>
+    <text x="_Middle+0" y="_Middle+6" value="N-" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+16" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="number"/>
+  </render>
+</component>

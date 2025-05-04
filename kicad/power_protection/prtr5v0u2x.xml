@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="PRTR5V0U2X"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="e59977d6-b56a-4583-8f52-14526a4f3651"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="100"/>
+    <meta name="footprint" value="Package_TO_SOT_SMD:SOT-143"/>
+    <meta name="datasheet" value="https://assets.nexperia.com/documents/data-sheet/PRTR5V0U2X.pdf"/>
+    <meta name="description" value="Ultra low capacitance double rail-to-rail ESD protection diode, SOT-143"/>
+    <meta name="keywords" value="ESD protection diode"/>
+    <meta name="ki_fp_filters" value="SOT?143*"/>
+    <property name="Reference" type="string" default="D" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="PRTR5V0U2X" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="i_o1" start="_Middle-50x+0y" end="_Middle-30x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="vcc" start="_Middle+0x-50y" end="_Middle+0x-30y" edge="start" sym:connection_id="1"/>
+    <connection name="gnd" start="_Middle+0x+30y" end="_Middle+0x+50y" edge="end" sym:connection_id="2"/>
+    <connection name="i_o2" start="_Middle+30x+0y" end="_Middle+50x+0y" edge="end" sym:connection_id="3"/>
+  </connections>
+  <render>
+    <rect location="_Middle-30x-30y" width="60" height="60"/>
+    <path start="_Middle+0x+0y" data="M-14,-11 L-6,-11 L-10,-19 L-14,-11"/>
+    <path start="_Middle+0x+0y" data="M-14,19 L-6,19 L-10,11 L-14,19"/>
+    <rect location="_Middle-10x-25y" width="20" height="50"/>
+    <ellipse centre="_Middle-10x+0y" rx="1" ry="1" fill="true"/>
+    <path start="_Middle+0x+0y" data="M-10,-0 L-30,-0"/>
+    <path start="_Middle+0x+0y" data="M-6,-19 L-14,-19"/>
+    <path start="_Middle+0x+0y" data="M-6,11 L-14,11"/>
+    <path start="_Middle+0x+0y" data="M-4,4 L4,4 L0,-4 L-4,4"/>
+    <ellipse centre="_Middle+0x-25y" rx="1" ry="1" fill="true"/>
+    <ellipse centre="_Middle+0x+25y" rx="1" ry="1" fill="true"/>
+    <path start="_Middle+0x+0y" data="M0,30 L0,-30"/>
+    <path start="_Middle+0x+0y" data="M4,-4 L-4,-4 L-4,-2"/>
+    <path start="_Middle+0x+0y" data="M6,-19 L14,-19"/>
+    <path start="_Middle+0x+0y" data="M6,11 L14,11"/>
+    <path start="_Middle+0x+0y" data="M10,-0 L30,-0"/>
+    <ellipse centre="_Middle+10x+0y" rx="1" ry="1" fill="true"/>
+    <path start="_Middle+0x+0y" data="M14,-11 L6,-11 L10,-19 L14,-11"/>
+    <path start="_Middle+0x+0y" data="M14,19 L6,19 L10,11 L14,19"/>
+    <text x="_Middle+11" y="_Middle-34" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+32" y="_Middle+37" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-50x+0y" end="_Middle-30x+0y" sym:connection_id="0"/>
+    <text x="_Middle-26" y="_Middle+0" value="I/O1" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-41" y="_Middle-2" value="2" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+0x-50y" end="_Middle+0x-30y" sym:connection_id="1"/>
+    <text x="_Middle+0" y="_Middle-26" value="VCC" align="CentreRight" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle-41" value="4" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+0x+30y" end="_Middle+0x+50y" sym:connection_id="2"/>
+    <text x="_Middle+0" y="_Middle+26" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+41" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+30x+0y" end="_Middle+50x+0y" sym:connection_id="3"/>
+    <text x="_Middle+26" y="_Middle+0" value="I/O2" align="CentreRight" size="xxs" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle+41" y="_Middle-2" value="3" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+  </render>
+</component>

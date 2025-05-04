@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="SW DIP x03"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="ad061546-2a25-4672-ae46-90ef3e701751"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="60"/>
+    <meta name="description" value="3x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"/>
+    <meta name="keywords" value="dip switch"/>
+    <meta name="ki_fp_filters" value="SW?DIP?x3*"/>
+    <property name="Reference" type="string" default="SW" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="SW_DIP_x03" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin1" start="_Middle-30x-10y" end="_Middle-10x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="pin2" start="_Middle-30x+0y" end="_Middle-10x+0y" edge="start" sym:connection_id="1"/>
+    <connection name="pin3" start="_Middle-30x+10y" end="_Middle-10x+10y" edge="start" sym:connection_id="2"/>
+    <connection name="pin6" start="_Middle+10x-10y" end="_Middle+30x-10y" edge="end" sym:connection_id="3"/>
+    <connection name="pin5" start="_Middle+10x+0y" end="_Middle+30x+0y" edge="end" sym:connection_id="4"/>
+    <connection name="pin4" start="_Middle+10x+10y" end="_Middle+30x+10y" edge="end" sym:connection_id="5"/>
+  </connections>
+  <render>
+    <ellipse centre="_Middle-8x-10y" rx="2" ry="2"/>
+    <ellipse centre="_Middle-8x+0y" rx="2" ry="2"/>
+    <ellipse centre="_Middle-8x+10y" rx="2" ry="2"/>
+    <path start="_Middle+0x+0y" data="M-6,-10.5 L9.3,-14.600000000000001"/>
+    <path start="_Middle+0x+0y" data="M-6,-0.5 L9.3,-4.6000000000000005"/>
+    <path start="_Middle+0x+0y" data="M-6,9.5 L9.3,5.3999999999999995"/>
+    <ellipse centre="_Middle+8x-10y" rx="2" ry="2"/>
+    <ellipse centre="_Middle+8x+0y" rx="2" ry="2"/>
+    <ellipse centre="_Middle+8x+10y" rx="2" ry="2"/>
+    <rect location="_Middle-15x-20y" width="30" height="40"/>
+    <text x="_Middle+0" y="_Middle-25" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+25" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-30x-10y" end="_Middle-10x-10y" sym:connection_id="0"/>
+    <text x="_Middle-21" y="_Middle-12" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-30x+0y" end="_Middle-10x+0y" sym:connection_id="1"/>
+    <text x="_Middle-21" y="_Middle-2" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle-30x+10y" end="_Middle-10x+10y" sym:connection_id="2"/>
+    <text x="_Middle-21" y="_Middle+8" value="3" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+10x-10y" end="_Middle+30x-10y" sym:connection_id="3"/>
+    <text x="_Middle+21" y="_Middle-12" value="6" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle+10x+0y" end="_Middle+30x+0y" sym:connection_id="4"/>
+    <text x="_Middle+21" y="_Middle-2" value="5" align="BottomCentre" size="xxs" sym:connection_id="4" sym:connection_attr="number"/>
+    <line start="_Middle+10x+10y" end="_Middle+30x+10y" sym:connection_id="5"/>
+    <text x="_Middle+21" y="_Middle+8" value="4" align="BottomCentre" size="xxs" sym:connection_id="5" sym:connection_attr="number"/>
+  </render>
+</component>

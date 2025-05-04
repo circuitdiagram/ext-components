@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="TPS62933P"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="dcfd75e2-4f0c-4104-aeb6-ed1debcbc151"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="60"/>
+    <meta name="footprint" value="Package_TO_SOT_SMD:SOT-583-8"/>
+    <meta name="datasheet" value="https://www.ti.com/lit/ds/symlink/tps62933.pdf"/>
+    <meta name="description" value="3.8-30V, 3A Synchronous Buck Converters with pulse frequency modulation (PFM) and power good, SOT583-8"/>
+    <meta name="keywords" value="synchronous buck converter pulse frequency modulation power good"/>
+    <meta name="ki_fp_filters" value="SOT?583*"/>
+    <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="TPS62933P" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="vin" start="_Middle-30x-30y" end="_Middle-20x-30y" edge="start" sym:connection_id="0"/>
+    <connection name="en" start="_Middle-30x-20y" end="_Middle-20x-20y" edge="start" sym:connection_id="1"/>
+    <connection name="pg" start="_Middle-30x+10y" end="_Middle-20x+10y" edge="start" sym:connection_id="2"/>
+    <connection name="rt" start="_Middle-30x+20y" end="_Middle-20x+20y" edge="start" sym:connection_id="3"/>
+    <connection name="gnd" start="_Middle+0x+40y" end="_Middle+0x+50y" edge="end" sym:connection_id="4"/>
+    <connection name="bst" start="_Middle+20x-30y" end="_Middle+30x-30y" edge="end" sym:connection_id="5"/>
+    <connection name="sw" start="_Middle+20x+0y" end="_Middle+30x+0y" edge="end" sym:connection_id="6"/>
+    <connection name="fb" start="_Middle+20x+30y" end="_Middle+30x+30y" edge="end" sym:connection_id="7"/>
+  </connections>
+  <render>
+    <rect location="_Middle-20x-40y" width="40" height="80"/>
+    <text x="_Middle+0" y="_Middle-55.00000000000001" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle-45" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-30x-30y" end="_Middle-20x-30y" sym:connection_id="0"/>
+    <text x="_Middle-16" y="_Middle-30" value="VIN" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-26" y="_Middle-32" value="3" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-30x-20y" end="_Middle-20x-20y" sym:connection_id="1"/>
+    <text x="_Middle-16" y="_Middle-20" value="EN" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-26" y="_Middle-22" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle-30x+10y" end="_Middle-20x+10y" sym:connection_id="2"/>
+    <text x="_Middle-16" y="_Middle+10" value="PG" align="CentreLeft" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-26" y="_Middle+8" value="7" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle-30x+20y" end="_Middle-20x+20y" sym:connection_id="3"/>
+    <text x="_Middle-16" y="_Middle+20" value="RT" align="CentreLeft" size="xxs" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle-26" y="_Middle+18" value="1" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle+0x+40y" end="_Middle+0x+50y" sym:connection_id="4"/>
+    <text x="_Middle+0" y="_Middle+36" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="4" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+46" value="4" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="4" sym:connection_attr="number"/>
+    <line start="_Middle+20x-30y" end="_Middle+30x-30y" sym:connection_id="5"/>
+    <text x="_Middle+16" y="_Middle-30" value="BST" align="CentreRight" size="xxs" sym:connection_id="5" sym:connection_attr="name"/>
+    <text x="_Middle+26" y="_Middle-32" value="6" align="BottomCentre" size="xxs" sym:connection_id="5" sym:connection_attr="number"/>
+    <line start="_Middle+20x+0y" end="_Middle+30x+0y" sym:connection_id="6"/>
+    <text x="_Middle+16" y="_Middle+0" value="SW" align="CentreRight" size="xxs" sym:connection_id="6" sym:connection_attr="name"/>
+    <text x="_Middle+26" y="_Middle-2" value="5" align="BottomCentre" size="xxs" sym:connection_id="6" sym:connection_attr="number"/>
+    <line start="_Middle+20x+30y" end="_Middle+30x+30y" sym:connection_id="7"/>
+    <text x="_Middle+16" y="_Middle+30" value="FB" align="CentreRight" size="xxs" sym:connection_id="7" sym:connection_attr="name"/>
+    <text x="_Middle+26" y="_Middle+28" value="8" align="BottomCentre" size="xxs" sym:connection_id="7" sym:connection_attr="number"/>
+  </render>
+</component>

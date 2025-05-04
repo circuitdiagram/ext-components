@@ -2,7 +2,7 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="D Dual Series KCA Split"/>
-    <meta name="version" value="0.3.1"/>
+    <meta name="version" value="0.3.2"/>
     <meta name="guid" value="e0635f26-dc66-4e6e-af94-8940d254416b"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
@@ -12,6 +12,10 @@
     <property name="Reference" type="string" default="D" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="D_Dual_Series_KCA_Split" serialize="value" display="Value"/>
     <property name="ki_locked" type="string" default="" serialize="ki_locked" display="ki_locked"/>
+    <property name="Unit" type="enum" default="Unit_A" serialize="unit" display="Unit">
+      <option>Unit_A</option>
+      <option>Unit_B</option>
+    </property>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -37,10 +41,18 @@
     <text x="_Middle+1" y="_Middle+0" value="common" align="CentreRight" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle+11" y="_Middle-2" value="2" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
     <line start="_Middle-15x+0y" end="_Middle-5x+0y" sym:connection_id="1"/>
-    <text x="_Middle-1" y="_Middle+0" value="A" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
-    <text x="_Middle-11" y="_Middle-2" value="3" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <g conditions="$Unit==Unit_A">
+      <text x="_Middle-1" y="_Middle+0" value="A" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    </g>
+    <g conditions="$Unit==Unit_A">
+      <text x="_Middle-11" y="_Middle-2" value="3" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    </g>
     <line start="_Middle-15x+0y" end="_Middle-5x+0y" sym:connection_id="2"/>
-    <text x="_Middle-1" y="_Middle+0" value="K" align="CentreLeft" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
-    <text x="_Middle-11" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <g conditions="$Unit==Unit_B">
+      <text x="_Middle-1" y="_Middle+0" value="K" align="CentreLeft" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    </g>
+    <g conditions="$Unit==Unit_B">
+      <text x="_Middle-11" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    </g>
   </render>
 </component>

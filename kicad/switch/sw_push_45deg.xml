@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="SW Push 45deg"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="a2d9a465-d0f5-48de-b1f5-aee6efbf1053"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="30"/>
+    <meta name="description" value="Push button switch, normally open, two pins, 45° tilted"/>
+    <meta name="keywords" value="switch normally-open pushbutton push-button"/>
+    <property name="Reference" type="string" default="SW" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="SW_Push_45deg" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="1" start="_Middle-10x-10y" end="_Middle-10x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="2" start="_Middle+10x+10y" end="_Middle+10x+10y" edge="end" sym:connection_id="1"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-10,-10 L-6,-6 L-6,-6"/>
+    <ellipse centre="_Middle-4.6x-4.6y" rx="2" ry="2"/>
+    <path start="_Middle+0x+0y" data="M-2,-10 L10,2"/>
+    <path start="_Middle+0x+0y" data="M4,-4 L8,-8"/>
+    <ellipse centre="_Middle+4.5x+4.7y" rx="2" ry="2"/>
+    <path start="_Middle+0x+0y" data="M6,6 L10,10 L10,10 L10,10"/>
+    <text x="_Middle+12" y="_Middle-4" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+15" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-10x-10y" end="_Middle-10x-10y" sym:connection_id="0"/>
+    <text x="_Middle-6" y="_Middle-10" value="1" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-11" y="_Middle-12" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+10x+10y" end="_Middle+10x+10y" sym:connection_id="1"/>
+    <text x="_Middle+6" y="_Middle+10" value="2" align="CentreRight" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle+11" y="_Middle+8" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+  </render>
+</component>

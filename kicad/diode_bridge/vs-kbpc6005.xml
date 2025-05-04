@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="VS-KBPC6005"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="a786a353-2b60-4464-945e-efe8f14b8fea"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="60"/>
+    <meta name="footprint" value="Diode_THT:Diode_Bridge_Vishay_KBPC6"/>
+    <meta name="datasheet" value="http://www.vishay.com/docs/93585/vs-kbpc1series.pdf"/>
+    <meta name="description" value="Single-Phase Bridge Rectifier, 20V Vrms, 6.0A If, KBPC6 package"/>
+    <meta name="keywords" value="rectifier acdc"/>
+    <meta name="ki_fp_filters" value="D*Bridge*Vishay*KBPC6*"/>
+    <property name="Reference" type="string" default="D" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="VS-KBPC6005" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="neg" start="_Middle-30x+0y" end="_Middle-20x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="pin4" start="_Middle+0x-30y" end="_Middle+0x-20y" edge="start" sym:connection_id="1"/>
+    <connection name="pin2" start="_Middle+0x+20y" end="_Middle+0x+30y" edge="end" sym:connection_id="2"/>
+    <connection name="pos" start="_Middle+20x+0y" end="_Middle+30x+0y" edge="end" sym:connection_id="3"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-20,-0 L0,20 L20,-0 L0,-20 L-20,-0"/>
+    <path start="_Middle+0x+0y" data="M-15,-10 L-10,-5 L-7.5,-12.5 L-15,-10"/>
+    <path start="_Middle+0x+0y" data="M-10,-15 L-5,-10"/>
+    <path start="_Middle+0x+0y" data="M-10,5 L-15,10 L-7.5,12.5 L-10,5"/>
+    <path start="_Middle+0x+0y" data="M-5,10 L-10,15"/>
+    <path start="_Middle+0x+0y" data="M5,-10 L10,-15 L12.5,-7.5 L5,-10"/>
+    <path start="_Middle+0x+0y" data="M10,-5 L15,-10"/>
+    <path start="_Middle+0x+0y" data="M10,5 L15,10"/>
+    <path start="_Middle+0x+0y" data="M12.5,7.5 L5,10 L10,15 L12.5,7.5"/>
+    <text x="_Middle+10" y="_Middle-27.500000000000004" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+10" y="_Middle-20" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle-30x+0y" end="_Middle-20x+0y" sym:connection_id="0"/>
+    <text x="_Middle-16" y="_Middle+0" value="-" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-26" y="_Middle-2" value="3" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+0x-30y" end="_Middle+0x-20y" sym:connection_id="1"/>
+    <text x="_Middle-2" y="_Middle-26" value="4" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+0x+20y" end="_Middle+0x+30y" sym:connection_id="2"/>
+    <text x="_Middle-2" y="_Middle+26" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+20x+0y" end="_Middle+30x+0y" sym:connection_id="3"/>
+    <text x="_Middle+16" y="_Middle+0" value="+" align="CentreRight" size="xxs" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle+26" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+  </render>
+</component>

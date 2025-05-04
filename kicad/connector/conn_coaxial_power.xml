@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Conn Coaxial Power"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="e998c373-edfe-4333-8f1b-18521e57f10a"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="30"/>
+    <meta name="description" value="coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"/>
+    <meta name="keywords" value="BNC SMA SMB SMC LEMO coaxial connector CINCH RCA"/>
+    <meta name="ki_fp_filters" value="*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO*"/>
+    <property name="Reference" type="string" default="J" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="Conn_Coaxial_Power" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="in" start="_Middle+0x-10y" end="_Middle+0x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="ext" start="_Middle+0x+10y" end="_Middle+0x+20y" edge="end" sym:connection_id="1"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M4,2 C4.648972657945316,2.8655531444396223 4.999846239692479,3.9181738896811127 5,5"/>
+    <path start="_Middle+0x+0y" data="M0,-0 L0,5"/>
+    <path start="_Middle+0x+0y" data="M5,5 C4.988051834525222,7.752952981023566 2.7529789091790646,9.978346456693117 0.0000000000000003061645833116259,9.978346456693117 C-2.7529789091790637,9.978346456693117 -4.988051834525221,7.752952981023567 -5.000000000000001,5"/>
+    <path start="_Middle+0x+0y" data="M-5,5 C-4.99984623969248,3.918173889681114 -4.648972657945316,2.865553144439623 -4,2.000000000000001"/>
+    <ellipse centre="_Middle+0x+5y" rx="2" ry="2" fill="true"/>
+    <path start="_Middle+0x+0y" data="M0,10 L0,12"/>
+    <text x="_Middle-20" y="_Middle+5" value="$Reference" align="CentreCentre" size="xxs" rotate="90"/>
+    <text x="_Middle-12.5" y="_Middle+5" value="$Value" align="CentreCentre" size="xxs" rotate="90"/>
+    <line start="_Middle+0x-10y" end="_Middle+0x+0y" sym:connection_id="0"/>
+    <text x="_Middle+0" y="_Middle+4" value="In" align="CentreRight" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle-6" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+0x+10y" end="_Middle+0x+20y" sym:connection_id="1"/>
+    <text x="_Middle+0" y="_Middle+6" value="Ext" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+16" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+  </render>
+</component>

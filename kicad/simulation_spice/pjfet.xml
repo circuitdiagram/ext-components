@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="PJFET"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="7b9fa4ee-7e91-41ef-8bdb-c79dfe278c16"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="50"/>
+    <meta name="datasheet" value="https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_JFETs"/>
+    <meta name="description" value="P-JFET transistor, for simulation only"/>
+    <meta name="Sim.Device" value="PJFET"/>
+    <meta name="Sim.Type" value="SHICHMANHODGES"/>
+    <meta name="Sim.Pins" value="1=D 2=G 3=S"/>
+    <meta name="keywords" value="transistor PJFET P-JFET"/>
+    <property name="Reference" type="string" default="Q" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="PJFET" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="g" start="_Middle-20x+0y" end="_Middle+1x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="d" start="_Middle+10x-20y" end="_Middle+10x-10y" edge="start" sym:connection_id="1"/>
+    <connection name="s" start="_Middle+10x+10y" end="_Middle+10x+20y" edge="end" sym:connection_id="2"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-4.5,-0 L-0.5,-1.5 L-0.5,1.5 L-4.5,-0" fill="true"/>
+    <path start="_Middle+0x+0y" data="M1,-7.5 L1,7.5 L1,7.5"/>
+    <ellipse centre="_Middle+5x+0y" rx="11.1" ry="11.1"/>
+    <path start="_Middle+0x+0y" data="M10,-10 L10,-5.5 L1,-5.5"/>
+    <path start="_Middle+0x+0y" data="M10,10 L10,5 L1,5"/>
+    <text x="_Middle+20" y="_Middle-5" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+20" y="_Middle+5" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle-20x+0y" end="_Middle+1x+0y" sym:connection_id="0"/>
+    <text x="_Middle+5" y="_Middle+0" value="G" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-10.5" y="_Middle-2" value="2" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+10x-20y" end="_Middle+10x-10y" sym:connection_id="1"/>
+    <text x="_Middle+10" y="_Middle-6" value="D" align="CentreRight" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle+8" y="_Middle-16" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+10x+10y" end="_Middle+10x+20y" sym:connection_id="2"/>
+    <text x="_Middle+10" y="_Middle+6" value="S" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle+8" y="_Middle+16" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+  </render>
+</component>

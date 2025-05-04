@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="PCA82C251"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="6700ddca-a08c-4a4c-9276-1d18b603d34d"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="80"/>
+    <meta name="footprint" value="Package_SO:SO-8_3.9x4.9mm_P1.27mm"/>
+    <meta name="datasheet" value="http://www.nxp.com/docs/en/data-sheet/PCA82C251.pdf"/>
+    <meta name="description" value="CAN Transceiver for 24V Systems, SO-8"/>
+    <meta name="keywords" value="BUS CAN"/>
+    <meta name="ki_fp_filters" value="SO*3.9x4.9mm*P1.27mm*"/>
+    <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="PCA82C251" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="vcc" start="_Middle-40x-30y" end="_Middle-20x-30y" edge="start" sym:connection_id="0"/>
+    <connection name="txd" start="_Middle-40x-10y" end="_Middle-20x-10y" edge="start" sym:connection_id="1"/>
+    <connection name="rsl" start="_Middle-40x+10y" end="_Middle-20x+10y" edge="start" sym:connection_id="2"/>
+    <connection name="rxd" start="_Middle-40x+30y" end="_Middle-20x+30y" edge="start" sym:connection_id="3"/>
+    <connection name="vref" start="_Middle+20x-30y" end="_Middle+40x-30y" edge="end" sym:connection_id="4"/>
+    <connection name="can_pos" start="_Middle+20x-10y" end="_Middle+40x-10y" edge="end" sym:connection_id="5"/>
+    <connection name="can_neg" start="_Middle+20x+0y" end="_Middle+40x+0y" edge="end" sym:connection_id="6"/>
+    <connection name="gnd" start="_Middle+20x+30y" end="_Middle+40x+30y" edge="end" sym:connection_id="7"/>
+  </connections>
+  <render>
+    <rect location="_Middle-20x-40y" width="40" height="80"/>
+    <path start="_Middle+0x+0y" data="M-20,10 L-6,10 L-6,-4"/>
+    <path start="_Middle+0x+0y" data="M-10,-18 L-10,-2 L6,-10 L-10,-18"/>
+    <path start="_Middle+0x+0y" data="M-10,-10 L-20,-10"/>
+    <path start="_Middle+0x+0y" data="M-10,30 L-20,30"/>
+    <path start="_Middle+0x+0y" data="M-10,30 L5,22.5 L5,37.5 L-10,30"/>
+    <path start="_Middle+0x+0y" data="M-5,-35 L-5,-25 L15,-25 L15,-35 L-5,-35"/>
+    <path start="_Middle+0x+0y" data="M-4,-15 L15,-15 L15,35 L5,35"/>
+    <path start="_Middle+0x+0y" data="M-4,-5 L9,-5 L9,26 L5,26"/>
+    <path start="_Middle+0x+0y" data="M9,-0 L20,-0"/>
+    <ellipse centre="_Middle+9x+0y" rx="0.5" ry="0.5"/>
+    <path start="_Middle+0x+0y" data="M15,-30 L20,-30"/>
+    <path start="_Middle+0x+0y" data="M15,-10 L20,-10"/>
+    <ellipse centre="_Middle+15x-10y" rx="0.5" ry="0.5"/>
+    <text x="_Middle+5" y="_Middle-30" value="Volt" align="CentreCentre" size="base"/>
+    <text x="_Middle-20" y="_Middle-55.00000000000001" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle-20" y="_Middle-45" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle-40x-30y" end="_Middle-20x-30y" sym:connection_id="0"/>
+    <text x="_Middle-16" y="_Middle-30" value="VCC" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-31" y="_Middle-32" value="3" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-40x-10y" end="_Middle-20x-10y" sym:connection_id="1"/>
+    <text x="_Middle-16" y="_Middle-10" value="TxD" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-31" y="_Middle-12" value="1" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle-40x+10y" end="_Middle-20x+10y" sym:connection_id="2"/>
+    <text x="_Middle-16" y="_Middle+10" value="Rsl" align="CentreLeft" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-31" y="_Middle+8" value="8" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle-40x+30y" end="_Middle-20x+30y" sym:connection_id="3"/>
+    <text x="_Middle-16" y="_Middle+30" value="RxD" align="CentreLeft" size="xxs" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle-31" y="_Middle+28" value="4" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle+20x-30y" end="_Middle+40x-30y" sym:connection_id="4"/>
+    <text x="_Middle+16" y="_Middle-30" value="Vref" align="CentreRight" size="xxs" sym:connection_id="4" sym:connection_attr="name"/>
+    <text x="_Middle+31" y="_Middle-32" value="5" align="BottomCentre" size="xxs" sym:connection_id="4" sym:connection_attr="number"/>
+    <line start="_Middle+20x-10y" end="_Middle+40x-10y" sym:connection_id="5"/>
+    <text x="_Middle+16" y="_Middle-10" value="CAN+" align="CentreRight" size="xxs" sym:connection_id="5" sym:connection_attr="name"/>
+    <text x="_Middle+31" y="_Middle-12" value="7" align="BottomCentre" size="xxs" sym:connection_id="5" sym:connection_attr="number"/>
+    <line start="_Middle+20x+0y" end="_Middle+40x+0y" sym:connection_id="6"/>
+    <text x="_Middle+16" y="_Middle+0" value="CAN-" align="CentreRight" size="xxs" sym:connection_id="6" sym:connection_attr="name"/>
+    <text x="_Middle+31" y="_Middle-2" value="6" align="BottomCentre" size="xxs" sym:connection_id="6" sym:connection_attr="number"/>
+    <line start="_Middle+20x+30y" end="_Middle+40x+30y" sym:connection_id="7"/>
+    <text x="_Middle+16" y="_Middle+30" value="GND" align="CentreRight" size="xxs" sym:connection_id="7" sym:connection_attr="name"/>
+    <text x="_Middle+31" y="_Middle+28" value="2" align="BottomCentre" size="xxs" sym:connection_id="7" sym:connection_attr="number"/>
+  </render>
+</component>

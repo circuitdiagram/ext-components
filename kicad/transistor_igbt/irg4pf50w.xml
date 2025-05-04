@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="IRG4PF50W"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="d1cd742e-8b7a-4926-99fe-165bc7960351"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="50"/>
+    <meta name="footprint" value="Package_TO_SOT_THT:TO-247-3_Vertical"/>
+    <meta name="datasheet" value="http://www.irf.com/product-info/datasheets/data/irg4pf50w.pdf"/>
+    <meta name="description" value="28A, 900V, N-Channel IGBT"/>
+    <meta name="keywords" value="N-Channel IGBT Power Transistor"/>
+    <meta name="ki_fp_filters" value="TO?247*"/>
+    <property name="Reference" type="string" default="Q" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="IRG4PF50W" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="g" start="_Middle-20x+0y" end="_Middle+0x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="c" start="_Middle+10x-20y" end="_Middle+10x-10y" edge="start" sym:connection_id="1"/>
+    <connection name="e" start="_Middle+10x+10y" end="_Middle+10x+20y" edge="end" sym:connection_id="2"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M0,-0 L1,-0"/>
+    <path start="_Middle+0x+0y" data="M1,-7.5 L1,7.5 L1,7.5"/>
+    <path start="_Middle+0x+0y" data="M3,-8 L3,-4"/>
+    <path start="_Middle+0x+0y" data="M3,-2 L3,2"/>
+    <path start="_Middle+0x+0y" data="M3,4 L3,8"/>
+    <ellipse centre="_Middle+5x+0y" rx="11.1" ry="11.1"/>
+    <path start="_Middle+0x+0y" data="M5.5,8.5 L6.5,6.5 L10,9.5 L5.5,8.5" fill="true"/>
+    <path start="_Middle+0x+0y" data="M8.5,-7.5 L7.5,-9.5 L4,-6.5 L8.5,-7.5" fill="true"/>
+    <path start="_Middle+0x+0y" data="M10,-9.5 L3,-6"/>
+    <path start="_Middle+0x+0y" data="M10,3.5 L3,-0"/>
+    <path start="_Middle+0x+0y" data="M10,9.5 L3,6"/>
+    <text x="_Middle+20" y="_Middle-7.5" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+20" y="_Middle+0" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle-20x+0y" end="_Middle+0x+0y" sym:connection_id="0"/>
+    <text x="_Middle+4" y="_Middle+0" value="G" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-11" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+10x-20y" end="_Middle+10x-10y" sym:connection_id="1"/>
+    <text x="_Middle+10" y="_Middle-6" value="C" align="CentreRight" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle+8" y="_Middle-16" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+10x+10y" end="_Middle+10x+20y" sym:connection_id="2"/>
+    <text x="_Middle+10" y="_Middle+6" value="E" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle+8" y="_Middle+16" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+  </render>
+</component>

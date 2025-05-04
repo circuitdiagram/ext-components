@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="SN65LVDT2DBV"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="28d558ea-fb6b-473c-8106-536f6ad55334"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="100"/>
+    <meta name="footprint" value="Package_TO_SOT_SMD:SOT-23-5"/>
+    <meta name="datasheet" value="https://www.ti.com/lit/ds/symlink/sn65lvdt2.pdf"/>
+    <meta name="description" value="High-Speed Differential Line Receiver, 110 Ω Terminated, 630Mbps, SOT-23-5"/>
+    <meta name="keywords" value="LVDS Receiver TI"/>
+    <meta name="ki_fp_filters" value="SOT?23*"/>
+    <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="SN65LVDT2DBV" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="a" start="_Middle-50x-10y" end="_Middle-40x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="b" start="_Middle-50x+10y" end="_Middle-40x+10y" edge="start" sym:connection_id="1"/>
+    <connection name="v_cc" start="_Middle+0x-40y" end="_Middle+0x-30y" edge="start" sym:connection_id="2"/>
+    <connection name="gnd" start="_Middle+0x+30y" end="_Middle+0x+40y" edge="end" sym:connection_id="3"/>
+    <connection name="r" start="_Middle+40x+0y" end="_Middle+50x+0y" edge="end" sym:connection_id="4"/>
+  </connections>
+  <render>
+    <rect location="_Middle-20.5x-3.5y" width="3" height="8"/>
+    <path start="_Middle+0x+0y" data="M-19,-5.5 L-19,-3.5"/>
+    <path start="_Middle+0x+0y" data="M-19,4.5 L-19,6.5"/>
+    <rect location="_Middle-40x-30y" width="80" height="60"/>
+    <ellipse centre="_Middle-12.5x+6.5y" rx="2" ry="2"/>
+    <text x="_Middle+0" y="_Middle+0.5" value="R" align="CentreCentre" size="base"/>
+    <path start="_Middle+0x+0y" data="M-22.5,-5.5 L-10.5,-5.5"/>
+    <path start="_Middle+0x+0y" data="M-22.5,6.5 L-15,6.5"/>
+    <path start="_Middle+0x+0y" data="M-10,15.5 L-10,-14.5 L20,0.5 L-10,15.5"/>
+    <path start="_Middle+0x+0y" data="M23,0.5 L20,0.5"/>
+    <text x="_Middle-35" y="_Middle-35" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+5" y="_Middle-35" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle-50x-10y" end="_Middle-40x-10y" sym:connection_id="0"/>
+    <text x="_Middle-36" y="_Middle-10" value="A" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-46" y="_Middle-12" value="3" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-50x+10y" end="_Middle-40x+10y" sym:connection_id="1"/>
+    <text x="_Middle-36" y="_Middle+10" value="B" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-46" y="_Middle+8" value="4" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+0x-40y" end="_Middle+0x-30y" sym:connection_id="2"/>
+    <text x="_Middle+0" y="_Middle-26" value="V_{CC}" align="CentreRight" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle-36" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+0x+30y" end="_Middle+0x+40y" sym:connection_id="3"/>
+    <text x="_Middle+0" y="_Middle+26" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+36" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle+40x+0y" end="_Middle+50x+0y" sym:connection_id="4"/>
+    <text x="_Middle+36" y="_Middle+0" value="R" align="CentreRight" size="xxs" sym:connection_id="4" sym:connection_attr="name"/>
+    <text x="_Middle+46" y="_Middle-2" value="5" align="BottomCentre" size="xxs" sym:connection_id="4" sym:connection_attr="number"/>
+  </render>
+</component>

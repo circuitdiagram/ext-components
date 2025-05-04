@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="ISFFM"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="ceade5fa-1c08-41ae-973c-379dc1580704"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="20"/>
+    <meta name="datasheet" value="https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_Independent_Sources_for"/>
+    <meta name="description" value="Current source, single-frequency FM"/>
+    <meta name="Sim.Pins" value="1=1 2=2"/>
+    <meta name="Sim.Device" value="SPICE"/>
+    <meta name="keywords" value="simulation frequency modulated"/>
+    <property name="Reference" type="string" default="I" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="ISFFM" serialize="value" display="Value"/>
+    <property name="Sim_Params" type="string" default="type=&quot;I&quot; model=&quot;sffm(0 1 100k 5 1k)&quot; lib=&quot;&quot;" serialize="sim_params" display="Sim_Params"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin1" start="_Middle+0x-20y" end="_Middle+0x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="pin2" start="_Middle+0x+10y" end="_Middle+0x+20y" edge="end" sym:connection_id="1"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-8,-1 L-8,-0"/>
+    <path start="_Middle+0x+0y" data="M-8,-1 C-7.997610366905019,-1.5505905962046953 -7.550595781835795,-1.9956692913385785 -7,-1.9956692913385785 C-6.449404218164204,-1.9956692913385785 -6.002389633094981,-1.550590596204695 -6,-1"/>
+    <path start="_Middle+0x+0y" data="M-6,1 L-6,-1"/>
+    <path start="_Middle+0x+0y" data="M-4,1 C-4.002389633094981,1.550590596204695 -4.449404218164204,1.9956692913385785 -5,1.9956692913385785 C-5.550595781835795,1.9956692913385785 -5.997610366905019,1.5505905962046953 -6,1"/>
+    <path start="_Middle+0x+0y" data="M-4,-0 L-4,1"/>
+    <path start="_Middle+0x+0y" data="M-4,-0 C-3.9952207338100383,-1.1011811924093906 -3.10119156367159,-1.9913385826771568 -1.9999999999999998,-1.9913385826771568 C-0.8988084363284097,-1.9913385826771568 -0.004779266189961717,-1.1011811924093904 -0.0000000000000002220446049250313,-0.000000000000000026020852139652106"/>
+    <path start="_Middle+0x+0y" data="M-1,-7 L0,-5 L1,-7"/>
+    <path start="_Middle+0x+0y" data="M0,-5 L0,-9"/>
+    <ellipse centre="_Middle+0x+0y" rx="10" ry="10"/>
+    <path start="_Middle+0x+0y" data="M4,-0 C3.9952207338100383,1.1011811924093904 3.1011915636715903,1.9913385826771568 2,1.9913385826771568 C0.8988084363284101,1.9913385826771568 0.004779266189961939,1.1011811924093906 0.0000000000000002220446049250313,0.0000000000000002706168622523819"/>
+    <path start="_Middle+0x+0y" data="M4,-1 L4,-0"/>
+    <path start="_Middle+0x+0y" data="M4,-1 C4.002389633094981,-1.5505905962046953 4.449404218164205,-1.9956692913385785 5,-1.9956692913385785 C5.550595781835796,-1.9956692913385785 5.997610366905019,-1.550590596204695 6,-1"/>
+    <path start="_Middle+0x+0y" data="M6,-1 L6,1"/>
+    <path start="_Middle+0x+0y" data="M8,1 C7.997610366905019,1.550590596204695 7.550595781835796,1.9956692913385785 7,1.9956692913385785 C6.449404218164205,1.9956692913385785 6.002389633094981,1.5505905962046953 6,1"/>
+    <path start="_Middle+0x+0y" data="M8,1 L8,-0"/>
+    <text x="_Middle+10" y="_Middle-10" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+10" y="_Middle+0" value="$Value" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+10" y="_Middle+10" value="$Sim.Params" align="CentreLeft" size="xxs"/>
+    <line start="_Middle+0x-20y" end="_Middle+0x-10y" sym:connection_id="0"/>
+    <text x="_Middle-2" y="_Middle-16" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+0x+10y" end="_Middle+0x+20y" sym:connection_id="1"/>
+    <text x="_Middle-2" y="_Middle+16" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+  </render>
+</component>

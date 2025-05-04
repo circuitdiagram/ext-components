@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="TestPoint"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="03afe5e6-c811-4fca-8aa8-5f5166531f40"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="10"/>
+    <meta name="description" value="test point"/>
+    <meta name="keywords" value="test point tp"/>
+    <meta name="ki_fp_filters" value="Pin* Test*"/>
+    <property name="Reference" type="string" default="TP" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="TestPoint" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="1" start="_Middle+0x-10y" end="_Middle+0x+0y" edge="end" sym:connection_id="0"/>
+  </connections>
+  <render>
+    <ellipse centre="_Middle+0x-13y" rx="3" ry="3"/>
+    <text x="_Middle+0" y="_Middle-27" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle-20" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle+0x-10y" end="_Middle+0x+0y" sym:connection_id="0"/>
+    <text x="_Middle+0" y="_Middle-14" value="1" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle-4" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
+  </render>
+</component>

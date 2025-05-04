@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="SP0502BAHT"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="2be638fb-8619-41c8-9470-287d2472e7fb"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="50"/>
+    <meta name="footprint" value="Package_TO_SOT_SMD:SOT-23"/>
+    <meta name="datasheet" value="http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf"/>
+    <meta name="description" value="TVS Diode Array, 5.5V Standoff, 2 Channels, SOT-23 package"/>
+    <meta name="keywords" value="usb esd protection suppression transient"/>
+    <meta name="ki_fp_filters" value="SOT?23*"/>
+    <property name="Reference" type="string" default="D" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="SP0502BAHT" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="a" start="_Middle+0x+10y" end="_Middle+0x+20y" edge="end" sym:connection_id="0"/>
+    <connection name="k" start="_Middle-10x-20y" end="_Middle-10x-10y" edge="start" sym:connection_id="1"/>
+    <connection name="k" start="_Middle+10x-20y" end="_Middle+10x-10y" edge="start" sym:connection_id="2"/>
+  </connections>
+  <render>
+    <rect location="_Middle-17.5x-10y" width="35" height="20"/>
+    <path start="_Middle+0x+0y" data="M-13,-4 L-13,-5 L-7.5,-5 L-7,-5"/>
+    <path start="_Middle+0x+0y" data="M-10,-10 L-10,-5"/>
+    <path start="_Middle+0x+0y" data="M-10,-5 L-10,5 L10,5 L10,-5"/>
+    <path start="_Middle+0x+0y" data="M-10,-5 L-7.5,-0 L-12.5,-0 L-10,-5"/>
+    <path start="_Middle+0x+0y" data="M0,5 L0,10"/>
+    <ellipse centre="_Middle+0x+5y" rx="1" ry="1" fill="true"/>
+    <path start="_Middle+0x+0y" data="M7,-4 L7,-5 L12.5,-5 L13,-5"/>
+    <path start="_Middle+0x+0y" data="M10,-10 L10,-5"/>
+    <path start="_Middle+0x+0y" data="M10,-5 L7.5,-0 L12.5,-0 L10,-5"/>
+    <text x="_Middle+22.5" y="_Middle-10" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+22.5" y="_Middle-2.5" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle+0x+10y" end="_Middle+0x+20y" sym:connection_id="0"/>
+    <text x="_Middle+0" y="_Middle+6" value="A" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+16" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-10x-20y" end="_Middle-10x-10y" sym:connection_id="1"/>
+    <text x="_Middle-10" y="_Middle-6" value="K" align="CentreRight" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-12" y="_Middle-16" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+10x-20y" end="_Middle+10x-10y" sym:connection_id="2"/>
+    <text x="_Middle+10" y="_Middle-6" value="K" align="CentreRight" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle+8" y="_Middle-16" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+  </render>
+</component>

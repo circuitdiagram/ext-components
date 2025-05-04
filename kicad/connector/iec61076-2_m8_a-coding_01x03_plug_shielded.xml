@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="IEC61076-2 M8 A-coding 01x03 Plug Shielded"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="38dac87d-c0c7-45be-9a8e-63a28210a8e1"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="70"/>
+    <meta name="description" value="IEC 61076-2 3 ways shielded M8 A-coding plug connector"/>
+    <meta name="keywords" value="M8"/>
+    <meta name="ki_fp_filters" value="*M8*03*"/>
+    <property name="Reference" type="string" default="J" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="IEC61076-2_M8_A-coding_01x03_Plug_Shielded" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin3" start="_Middle-40x-20y" end="_Middle-30x-20y" edge="start" sym:connection_id="0"/>
+    <connection name="pin4" start="_Middle-40x-10y" end="_Middle-30x-10y" edge="start" sym:connection_id="1"/>
+    <connection name="pin1" start="_Middle-40x+10y" end="_Middle-30x+10y" edge="start" sym:connection_id="2"/>
+    <connection name="pinSH" start="_Middle+0x+25y" end="_Middle+0x+40y" edge="end" sym:connection_id="3"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-30,10 L-13.5,10"/>
+    <path start="_Middle+0x+0y" data="M-14,-10 L-30,-10"/>
+    <ellipse centre="_Middle-10x-10y" rx="3" ry="3" fill="true"/>
+    <ellipse centre="_Middle-9.5x+10y" rx="3" ry="3" fill="true"/>
+    <path start="_Middle+0x+0y" data="M0.4503937007874016,-20.04251968503937 L7.450393700787402,-13.042519685039371"/>
+    <ellipse centre="_Middle+0.45x-0.04y" rx="25" ry="25"/>
+    <path start="_Middle+0x+0y" data="M0.5,-20 L-30,-20"/>
+    <ellipse centre="_Middle+10.5x-10y" rx="3" ry="3" fill="true"/>
+    <path start="_Middle+0x+0y" data="M15.950393700787403,19.45748031496063 C14.059927367823944,17.79009774020571 13.859115898485555,14.91351176642296 15.49957850841831,12.999638721501414 C17.140041118351064,11.085765676579866 20.013497246576353,10.844266214994555 21.950393700787398,12.45748031496063"/>
+    <text x="_Middle+0" y="_Middle-30" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+30" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-40x-20y" end="_Middle-30x-20y" sym:connection_id="0"/>
+    <text x="_Middle-36" y="_Middle-22" value="3" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-40x-10y" end="_Middle-30x-10y" sym:connection_id="1"/>
+    <text x="_Middle-36" y="_Middle-12" value="4" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle-40x+10y" end="_Middle-30x+10y" sym:connection_id="2"/>
+    <text x="_Middle-36" y="_Middle+8" value="1" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+0x+25y" end="_Middle+0x+40y" sym:connection_id="3"/>
+    <text x="_Middle-2" y="_Middle+33.5" value="SH" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="number"/>
+  </render>
+</component>

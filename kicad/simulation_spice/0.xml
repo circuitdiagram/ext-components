@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="0"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="64d77784-e37e-472c-8244-529bdd5690fd"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="10"/>
+    <meta name="Reference" value="#GND"/>
+    <meta name="datasheet" value="https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#subsec_Circuit_elements__device"/>
+    <meta name="description" value="0V reference potential for simulation"/>
+    <meta name="keywords" value="simulation"/>
+    <property name="Value" type="string" default="0" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin1" start="_Middle+0x+0y" end="_Middle+0x+0y" edge="start" sym:connection_id="0"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-5,-0 L0,5 L5,-0 L-5,-0"/>
+    <text x="_Middle+0" y="_Middle+10" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle+0x+0y" end="_Middle+0x+0y" sym:connection_id="0"/>
+    <text x="_Middle-1" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+  </render>
+</component>

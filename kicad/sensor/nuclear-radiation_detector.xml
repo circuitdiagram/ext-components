@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Nuclear-Radiation Detector"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="5276e11b-2429-4790-b8a9-41498226ce50"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="50"/>
+    <meta name="description" value="Generic radiation detector"/>
+    <meta name="keywords" value="nuclear ionising radiation sensor geiger mueller muller tube neutron counter ionization chamber"/>
+    <property name="Reference" type="string" default="V" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="Nuclear-Radiation_Detector" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="1" start="_Middle+0x-20y" end="_Middle+0x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="2" start="_Middle+0x+10y" end="_Middle+0x+20y" edge="end" sym:connection_id="1"/>
+  </connections>
+  <render>
+    <text x="_Middle+8" y="_Middle-12.5" value="+" align="CentreCentre" size="base"/>
+    <path start="_Middle+0x+0y" data="M-13,-15 C-12.431834534144759,-15.189458149916822 -11.805390877804275,-15.041611350245226 -11.381889763779524,-14.618110236220476 C-10.958388649754774,-14.194609122195725 -10.810541850083178,-13.568165465855241 -11.000000000000002,-12.999999999999998"/>
+    <path start="_Middle+0x+0y" data="M-10,-14 L-12,-12 L-8,-10 L-10,-14" fill="true"/>
+    <path start="_Middle+0x+0y" data="M-4.5,-6 L4.5,-6"/>
+    <path start="_Middle+0x+0y" data="M-4.5,6 L4.5,6"/>
+    <path start="_Middle+0x+0y" data="M0,-10 L0,-6"/>
+    <ellipse centre="_Middle+0x+0y" rx="11.1" ry="11.1"/>
+    <path start="_Middle+0x+0y" data="M0,6 L0,10"/>
+    <ellipse centre="_Middle+5.5x+3.5y" rx="1" ry="1" fill="true"/>
+    <path start="_Middle+0x+0y" data="M-21,-15 C-20.431834534144755,-15.189458149916836 -19.805390877804264,-15.041611350245244 -19.381889763779512,-14.61811023622049 C-18.958388649754756,-14.194609122195736 -18.810541850083165,-13.568165465855243 -19,-13"/>
+    <path start="_Middle+0x+0y" data="M-17,-11 C-17.56816546585524,-10.810541850083178 -18.194609122195725,-10.958388649754774 -18.618110236220474,-11.381889763779524 C-19.041611350245226,-11.805390877804275 -19.189458149916824,-12.431834534144759 -19,-13"/>
+    <path start="_Middle+0x+0y" data="M-17,-19 C-16.43183453414476,-19.189458149916806 -15.805390877804287,-19.041611350245205 -15.381889763779542,-18.618110236220456 C-14.958388649754797,-18.19460912219571 -14.810541850083194,-17.56816546585524 -15,-17"/>
+    <path start="_Middle+0x+0y" data="M-17,-11 C-16.43183453414476,-11.189458149916813 -15.805390877804282,-11.041611350245214 -15.381889763779533,-10.618110236220467 C-14.958388649754786,-10.194609122195718 -14.810541850083187,-9.568165465855241 -15,-9"/>
+    <path start="_Middle+0x+0y" data="M-14,-10 L-16,-8 L-12,-6 L-14,-10" fill="true"/>
+    <path start="_Middle+0x+0y" data="M-13,-15 C-13.568165465855241,-14.810541850083181 -14.194609122195722,-14.958388649754779 -14.618110236220472,-15.381889763779528 C-15.041611350245221,-15.805390877804278 -15.189458149916819,-16.43183453414476 -15,-17"/>
+    <text x="_Middle+20" y="_Middle-5" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+20" y="_Middle+5" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle+0x-20y" end="_Middle+0x-10y" sym:connection_id="0"/>
+    <text x="_Middle+0" y="_Middle-6" value="1" align="CentreRight" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle-16" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+0x+10y" end="_Middle+0x+20y" sym:connection_id="1"/>
+    <text x="_Middle+0" y="_Middle+6" value="2" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+16" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+  </render>
+</component>

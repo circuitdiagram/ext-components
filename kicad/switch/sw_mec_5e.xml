@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="SW MEC 5E"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="ae0ef86d-454e-410f-89ce-43b00487b2b1"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="40"/>
+    <meta name="datasheet" value="http://www.apem.com/int/index.php?controller=attachment&amp;id_attachment=1371"/>
+    <meta name="description" value="MEC 5E single pole normally-open tactile switch"/>
+    <meta name="keywords" value="switch normally-open pushbutton push-button"/>
+    <meta name="ki_fp_filters" value="SW*MEC*5G*"/>
+    <property name="Reference" type="string" default="SW" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="SW_MEC_5E" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="1" start="_Middle-20x-10y" end="_Middle-10x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="2" start="_Middle-20x+0y" end="_Middle-10x+0y" edge="start" sym:connection_id="1"/>
+    <connection name="a" start="_Middle+10x-10y" end="_Middle+20x-10y" edge="end" sym:connection_id="2"/>
+    <connection name="k" start="_Middle+10x+0y" end="_Middle+20x+0y" edge="end" sym:connection_id="3"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-10,-0 L-10,-10 L-9,-10"/>
+    <path start="_Middle+0x+0y" data="M-9,-15 L9,-15"/>
+    <ellipse centre="_Middle-7x-10y" rx="2" ry="2"/>
+    <path start="_Middle+0x+0y" data="M0,-15 L0,-22"/>
+    <ellipse centre="_Middle+7x-10y" rx="2" ry="2"/>
+    <path start="_Middle+0x+0y" data="M10,-0 L10,-10 L9,-10"/>
+    <text x="_Middle+2.5" y="_Middle-22.5" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+12.5" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-20x-10y" end="_Middle-10x-10y" sym:connection_id="0"/>
+    <text x="_Middle-6" y="_Middle-10" value="1" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-16" y="_Middle-12" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-20x+0y" end="_Middle-10x+0y" sym:connection_id="1"/>
+    <text x="_Middle-6" y="_Middle+0" value="2" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-16" y="_Middle-2" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+10x-10y" end="_Middle+20x-10y" sym:connection_id="2"/>
+    <text x="_Middle+6" y="_Middle-10" value="A" align="CentreRight" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle+16" y="_Middle-12" value="4" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+10x+0y" end="_Middle+20x+0y" sym:connection_id="3"/>
+    <text x="_Middle+6" y="_Middle+0" value="K" align="CentreRight" size="xxs" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle+16" y="_Middle-2" value="3" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+  </render>
+</component>

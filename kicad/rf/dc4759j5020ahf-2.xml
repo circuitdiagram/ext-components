@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="DC4759J5020AHF-2"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="107e429a-6d2d-44c8-b4e9-e3750e5d76e8"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="80"/>
+    <meta name="footprint" value="RF_Converter:Anaren_0805_2012Metric-6"/>
+    <meta name="datasheet" value="https://cdn.anaren.com/product-documents/Xinger/DirectionalCouplers/DC4759J5020AHF/DC4759J5020AHF_DataSheet(Rev_E).pdf"/>
+    <meta name="description" value="4.7-5.9GHz 20dB Directional Coupler, Configuration 2, Anaren 0805"/>
+    <meta name="keywords" value="RF coupler"/>
+    <meta name="ki_fp_filters" value="Anaren*0805*2012Metric*"/>
+    <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="DC4759J5020AHF-2" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="input" start="_Middle-40x-10y" end="_Middle-30x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="isolated" start="_Middle-40x+10y" end="_Middle-30x+10y" edge="start" sym:connection_id="1"/>
+    <connection name="gnd" start="_Middle+0x+20y" end="_Middle+0x+30y" edge="end" sym:connection_id="2"/>
+    <connection name="gnd" start="_Middle+0x+20y" end="_Middle+0x+30y" edge="end" sym:connection_id="3"/>
+    <connection name="direct" start="_Middle+30x-10y" end="_Middle+40x-10y" edge="end" sym:connection_id="4"/>
+    <connection name="coupled" start="_Middle+30x+10y" end="_Middle+40x+10y" edge="end" sym:connection_id="5"/>
+  </connections>
+  <render>
+    <rect location="_Middle-30x-20y" width="60" height="40"/>
+    <path start="_Middle+0x+0y" data="M-15,-5 L15,-5"/>
+    <path start="_Middle+0x+0y" data="M-15,5 L15,5"/>
+    <path start="_Middle+0x+0y" data="M-10,-7 L-8,-5"/>
+    <path start="_Middle+0x+0y" data="M-10,5 L-8,7"/>
+    <path start="_Middle+0x+0y" data="M-8,-5 L-10,-3"/>
+    <path start="_Middle+0x+0y" data="M-8,3 L-10,5"/>
+    <path start="_Middle+0x+0y" data="M-5,-5 L5,5"/>
+    <path start="_Middle+0x+0y" data="M5,-5 L-5,5"/>
+    <path start="_Middle+0x+0y" data="M8,-7 L10,-5"/>
+    <path start="_Middle+0x+0y" data="M9,3 L11,5"/>
+    <path start="_Middle+0x+0y" data="M10,-5 L8,-3"/>
+    <path start="_Middle+0x+0y" data="M11,5 L9,7"/>
+    <text x="_Middle-25" y="_Middle-25" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+20" y="_Middle-25" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-40x-10y" end="_Middle-30x-10y" sym:connection_id="0"/>
+    <text x="_Middle-26" y="_Middle-10" value="Input" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-36" y="_Middle-12" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-40x+10y" end="_Middle-30x+10y" sym:connection_id="1"/>
+    <text x="_Middle-26" y="_Middle+10" value="Isolated" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-36" y="_Middle+8" value="5" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+0x+20y" end="_Middle+0x+30y" sym:connection_id="2"/>
+    <text x="_Middle+0" y="_Middle+16" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+26" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+0x+20y" end="_Middle+0x+30y" sym:connection_id="3"/>
+    <text x="_Middle+0" y="_Middle+16" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+26" value="4" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle+30x-10y" end="_Middle+40x-10y" sym:connection_id="4"/>
+    <text x="_Middle+26" y="_Middle-10" value="Direct" align="CentreRight" size="xxs" sym:connection_id="4" sym:connection_attr="name"/>
+    <text x="_Middle+36" y="_Middle-12" value="6" align="BottomCentre" size="xxs" sym:connection_id="4" sym:connection_attr="number"/>
+    <line start="_Middle+30x+10y" end="_Middle+40x+10y" sym:connection_id="5"/>
+    <text x="_Middle+26" y="_Middle+10" value="Coupled" align="CentreRight" size="xxs" sym:connection_id="5" sym:connection_attr="name"/>
+    <text x="_Middle+36" y="_Middle+8" value="2" align="BottomCentre" size="xxs" sym:connection_id="5" sym:connection_attr="number"/>
+  </render>
+</component>

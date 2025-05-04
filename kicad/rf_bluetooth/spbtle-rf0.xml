@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="SPBTLE-RF0"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="8ed04e19-525e-4d77-95de-81c6afa92acb"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="160"/>
+    <meta name="footprint" value="RF_Module:ST_SPBTLE"/>
+    <meta name="datasheet" value="http://www.st.com/resource/en/datasheet/spbtle-rf0.pdf"/>
+    <meta name="description" value="Very Low Power network processor module for BLE v4.1"/>
+    <meta name="keywords" value="BLE bluetooth module low-power"/>
+    <meta name="ki_fp_filters" value="ST*SPBTLE*"/>
+    <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="SPBTLE-RF0" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="not_bt_reset" start="_Middle-80x-20y" end="_Middle-65x-20y" edge="start" sym:connection_id="0"/>
+    <connection name="nc_ext_lpclk" start="_Middle-80x+10y" end="_Middle-65x+10y" edge="start" sym:connection_id="1"/>
+    <connection name="nc_gpio2" start="_Middle-80x+20y" end="_Middle-65x+20y" edge="start" sym:connection_id="2"/>
+    <connection name="nc_ana_test" start="_Middle-80x+30y" end="_Middle-65x+30y" edge="start" sym:connection_id="3"/>
+    <connection name="vin" start="_Middle+0x-50y" end="_Middle+0x-35y" edge="start" sym:connection_id="4"/>
+    <connection name="gnd" start="_Middle+0x+45y" end="_Middle+0x+60y" edge="end" sym:connection_id="5"/>
+    <connection name="spi_irq" start="_Middle+65x-20y" end="_Middle+80x-20y" edge="end" sym:connection_id="6"/>
+    <connection name="spi_clk" start="_Middle+65x+0y" end="_Middle+80x+0y" edge="end" sym:connection_id="7"/>
+    <connection name="spi_miso" start="_Middle+65x+10y" end="_Middle+80x+10y" edge="end" sym:connection_id="8"/>
+    <connection name="spi_mosi" start="_Middle+65x+20y" end="_Middle+80x+20y" edge="end" sym:connection_id="9"/>
+    <connection name="spi_cs" start="_Middle+65x+30y" end="_Middle+80x+30y" edge="end" sym:connection_id="10"/>
+  </connections>
+  <render>
+    <rect location="_Middle-65x-35y" width="130.00000000000003" height="80"/>
+    <text x="_Middle-55.00000000000001" y="_Middle-50" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle-55.00000000000001" y="_Middle-40" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle-80x-20y" end="_Middle-65x-20y" sym:connection_id="0"/>
+    <text x="_Middle-61" y="_Middle-20" value="~{BT_RESET}" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-73.5" y="_Middle-22" value="11" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-80x+10y" end="_Middle-65x+10y" sym:connection_id="1"/>
+    <text x="_Middle-61" y="_Middle+10" value="NC/EXT_LPCLK" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-73.5" y="_Middle+8" value="1" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle-80x+20y" end="_Middle-65x+20y" sym:connection_id="2"/>
+    <text x="_Middle-61" y="_Middle+20" value="NC/GPIO2" align="CentreLeft" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-73.5" y="_Middle+18" value="2" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle-80x+30y" end="_Middle-65x+30y" sym:connection_id="3"/>
+    <text x="_Middle-61" y="_Middle+30" value="NC/ANA_TEST" align="CentreLeft" size="xxs" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle-73.5" y="_Middle+28" value="3" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle+0x-50y" end="_Middle+0x-35y" sym:connection_id="4"/>
+    <text x="_Middle+0" y="_Middle-31" value="VIN" align="CentreRight" size="xxs" rotate="270" sym:connection_id="4" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle-43.5" value="5" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="4" sym:connection_attr="number"/>
+    <line start="_Middle+0x+45y" end="_Middle+0x+60y" sym:connection_id="5"/>
+    <text x="_Middle+0" y="_Middle+41" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="5" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+53.5" value="6" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="5" sym:connection_attr="number"/>
+    <line start="_Middle+65x-20y" end="_Middle+80x-20y" sym:connection_id="6"/>
+    <text x="_Middle+61" y="_Middle-20" value="SPI_IRQ" align="CentreRight" size="xxs" sym:connection_id="6" sym:connection_attr="name"/>
+    <text x="_Middle+73.5" y="_Middle-22" value="4" align="BottomCentre" size="xxs" sym:connection_id="6" sym:connection_attr="number"/>
+    <line start="_Middle+65x+0y" end="_Middle+80x+0y" sym:connection_id="7"/>
+    <text x="_Middle+61" y="_Middle+0" value="SPI_CLK" align="CentreRight" size="xxs" sym:connection_id="7" sym:connection_attr="name"/>
+    <text x="_Middle+73.5" y="_Middle-2" value="7" align="BottomCentre" size="xxs" sym:connection_id="7" sym:connection_attr="number"/>
+    <line start="_Middle+65x+10y" end="_Middle+80x+10y" sym:connection_id="8"/>
+    <text x="_Middle+61" y="_Middle+10" value="SPI_MISO" align="CentreRight" size="xxs" sym:connection_id="8" sym:connection_attr="name"/>
+    <text x="_Middle+73.5" y="_Middle+8" value="8" align="BottomCentre" size="xxs" sym:connection_id="8" sym:connection_attr="number"/>
+    <line start="_Middle+65x+20y" end="_Middle+80x+20y" sym:connection_id="9"/>
+    <text x="_Middle+61" y="_Middle+20" value="SPI_MOSI" align="CentreRight" size="xxs" sym:connection_id="9" sym:connection_attr="name"/>
+    <text x="_Middle+73.5" y="_Middle+18" value="9" align="BottomCentre" size="xxs" sym:connection_id="9" sym:connection_attr="number"/>
+    <line start="_Middle+65x+30y" end="_Middle+80x+30y" sym:connection_id="10"/>
+    <text x="_Middle+61" y="_Middle+30" value="SPI_~{CS}" align="CentreRight" size="xxs" sym:connection_id="10" sym:connection_attr="name"/>
+    <text x="_Middle+73.5" y="_Middle+28" value="10" align="BottomCentre" size="xxs" sym:connection_id="10" sym:connection_attr="number"/>
+  </render>
+</component>

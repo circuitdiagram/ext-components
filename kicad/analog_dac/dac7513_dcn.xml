@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="DAC7513 DCN"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="5350a14a-d576-4659-9ba5-bab4f87291c6"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="120"/>
+    <meta name="footprint" value="Package_TO_SOT_SMD:SOT-23-8"/>
+    <meta name="datasheet" value="http://www.ti.com.cn/cn/lit/ds/symlink/dac7513.pdf"/>
+    <meta name="description" value="Low-Power, Rail-to-Rail Output, 12-Bit Serial Input DAC"/>
+    <meta name="keywords" value="TI DAC 12 bit"/>
+    <meta name="ki_fp_filters" value="SOT?23*"/>
+    <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="DAC7513_DCN" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="din" start="_Middle-60x-20y" end="_Middle-45x-20y" edge="start" sym:connection_id="0"/>
+    <connection name="sclk" start="_Middle-60x+0y" end="_Middle-45x+0y" edge="start" sym:connection_id="1"/>
+    <connection name="not_sync" start="_Middle-60x+20y" end="_Middle-45x+20y" edge="start" sym:connection_id="2"/>
+    <connection name="vcc" start="_Middle+0x-50y" end="_Middle+0x-35y" edge="start" sym:connection_id="3"/>
+    <connection name="gnd" start="_Middle+0x+35y" end="_Middle+0x+50y" edge="end" sym:connection_id="4"/>
+    <connection name="vout" start="_Middle+45x-20y" end="_Middle+60x-20y" edge="end" sym:connection_id="5"/>
+    <connection name="vfb" start="_Middle+45x+0y" end="_Middle+60x+0y" edge="end" sym:connection_id="6"/>
+    <connection name="vref" start="_Middle+45x+20y" end="_Middle+60x+20y" edge="end" sym:connection_id="7"/>
+  </connections>
+  <render>
+    <rect location="_Middle-45x-35y" width="90" height="70"/>
+    <text x="_Middle-10" y="_Middle-47.5" value="$Reference" align="CentreRight" size="xxs"/>
+    <text x="_Middle-10" y="_Middle-40" value="$Value" align="CentreRight" size="xxs"/>
+    <line start="_Middle-60x-20y" end="_Middle-45x-20y" sym:connection_id="0"/>
+    <text x="_Middle-41" y="_Middle-20" value="DIN" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-53.5" y="_Middle-22" value="6" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-60x+0y" end="_Middle-45x+0y" sym:connection_id="1"/>
+    <text x="_Middle-41" y="_Middle+0" value="SCLK" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-53.5" y="_Middle-2" value="7" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle-60x+20y" end="_Middle-45x+20y" sym:connection_id="2"/>
+    <text x="_Middle-41" y="_Middle+20" value="~{SYNC}" align="CentreLeft" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-53.5" y="_Middle+18" value="8" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+0x-50y" end="_Middle+0x-35y" sym:connection_id="3"/>
+    <text x="_Middle+0" y="_Middle-31" value="VCC" align="CentreRight" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle-43.5" value="4" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle+0x+35y" end="_Middle+0x+50y" sym:connection_id="4"/>
+    <text x="_Middle+0" y="_Middle+31" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="4" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+43.5" value="5" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="4" sym:connection_attr="number"/>
+    <line start="_Middle+45x-20y" end="_Middle+60x-20y" sym:connection_id="5"/>
+    <text x="_Middle+41" y="_Middle-20" value="VOUT" align="CentreRight" size="xxs" sym:connection_id="5" sym:connection_attr="name"/>
+    <text x="_Middle+53.5" y="_Middle-22" value="1" align="BottomCentre" size="xxs" sym:connection_id="5" sym:connection_attr="number"/>
+    <line start="_Middle+45x+0y" end="_Middle+60x+0y" sym:connection_id="6"/>
+    <text x="_Middle+41" y="_Middle+0" value="VFB" align="CentreRight" size="xxs" sym:connection_id="6" sym:connection_attr="name"/>
+    <text x="_Middle+53.5" y="_Middle-2" value="2" align="BottomCentre" size="xxs" sym:connection_id="6" sym:connection_attr="number"/>
+    <line start="_Middle+45x+20y" end="_Middle+60x+20y" sym:connection_id="7"/>
+    <text x="_Middle+41" y="_Middle+20" value="VREF" align="CentreRight" size="xxs" sym:connection_id="7" sym:connection_attr="name"/>
+    <text x="_Middle+53.5" y="_Middle+18" value="3" align="BottomCentre" size="xxs" sym:connection_id="7" sym:connection_attr="number"/>
+  </render>
+</component>

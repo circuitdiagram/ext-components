@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Barrel Jack"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="f1967ec8-6801-4b32-a551-7cd6e440faa4"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="50"/>
+    <meta name="description" value="DC Barrel Jack"/>
+    <meta name="keywords" value="DC power barrel jack connector"/>
+    <meta name="ki_fp_filters" value="BarrelJack*"/>
+    <property name="Reference" type="string" default="J" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="Barrel_Jack" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin1" start="_Middle+20x-10y" end="_Middle+30x-10y" edge="end" sym:connection_id="0"/>
+    <connection name="pin2" start="_Middle+20x+10y" end="_Middle+30x+10y" edge="end" sym:connection_id="1"/>
+  </connections>
+  <render>
+    <rect location="_Middle-20x-15y" width="40" height="30"/>
+    <path start="_Middle+0x+0y" data="M-15,10 L-10,10 L-5,5 L0,10 L10,10 L20,10"/>
+    <path start="_Middle+0x+0y" data="M-13,-7.5 C-14.376553627346315,-7.505865559321867 -15.489370078740206,-8.623433875999245 -15.489370078740206,-10 C-15.489370078740208,-11.376566124000753 -14.376553627346315,-12.494134440678133 -12.999999999999998,-12.5"/>
+    <path start="_Middle+0x+0y" data="M-13,-7.5 C-14.376553627346315,-7.505865559321867 -15.489370078740206,-8.623433875999245 -15.489370078740206,-10 C-15.489370078740208,-11.376566124000753 -14.376553627346315,-12.494134440678133 -12.999999999999998,-12.5" fill="true"/>
+    <rect location="_Middle-13x-12.5y" width="27.5" height="5"/>
+    <path start="_Middle+0x+0y" data="M20,-10 L15,-10"/>
+    <text x="_Middle+0" y="_Middle-21" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+20" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle+20x-10y" end="_Middle+30x-10y" sym:connection_id="0"/>
+    <text x="_Middle+26" y="_Middle-12" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+20x+10y" end="_Middle+30x+10y" sym:connection_id="1"/>
+    <text x="_Middle+26" y="_Middle+8" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+  </render>
+</component>

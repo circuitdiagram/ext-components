@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="SMAJ12CA"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="6811e228-4c31-4f97-9df8-b2cadf0dfbaa"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="30"/>
+    <meta name="footprint" value="Diode_SMD:D_SMA"/>
+    <meta name="datasheet" value="https://www.littelfuse.com/media?resourcetype=datasheets&amp;itemid=75e32973-b177-4ee3-a0ff-cedaf1abdb93&amp;filename=smaj-datasheet"/>
+    <meta name="description" value="400W bidirectional Transient Voltage Suppressor, 12.0Vr, SMA(DO-214AC)"/>
+    <meta name="keywords" value="bidirectional diode TVS voltage suppressor"/>
+    <meta name="ki_fp_filters" value="D*SMA*"/>
+    <property name="Reference" type="string" default="D" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="SMAJ12CA" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="a1" start="_Middle-15x+0y" end="_Middle-5x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="a2" start="_Middle+5x+0y" end="_Middle+15x+0y" edge="end" sym:connection_id="1"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-10,5 L0,-0 L-10,-5 L-10,5"/>
+    <path start="_Middle+0x+0y" data="M2,-5 L0,-5 L0,5 L-2,5"/>
+    <path start="_Middle+0x+0y" data="M5,-0 L-5,-0"/>
+    <path start="_Middle+0x+0y" data="M10,-5 L10,5 L0,-0 L10,-5"/>
+    <text x="_Middle+0" y="_Middle-10" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+10" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-15x+0y" end="_Middle-5x+0y" sym:connection_id="0"/>
+    <text x="_Middle-1" y="_Middle+0" value="A1" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-11" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+5x+0y" end="_Middle+15x+0y" sym:connection_id="1"/>
+    <text x="_Middle+1" y="_Middle+0" value="A2" align="CentreRight" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle+11" y="_Middle-2" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+  </render>
+</component>

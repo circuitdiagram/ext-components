@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="C3D16065D"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="2dac4222-ad12-48c2-9760-e3013479752c"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="40"/>
+    <meta name="footprint" value="Package_TO_SOT_THT:TO-247-3_Vertical"/>
+    <meta name="datasheet" value="https://www.wolfspeed.com/media/downloads/99/C3D16065D.pdf"/>
+    <meta name="description" value="650V, 16A, SiC Schottky Diode, TO-247-3"/>
+    <meta name="keywords" value="sic diode"/>
+    <meta name="ki_fp_filters" value="TO?247*"/>
+    <property name="Reference" type="string" default="D" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="C3D16065D" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="a1" start="_Middle-20x-10y" end="_Middle-10x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="a2" start="_Middle-20x+10y" end="_Middle-10x+10y" edge="start" sym:connection_id="1"/>
+    <connection name="k" start="_Middle+10x+0y" end="_Middle+20x+0y" edge="end" sym:connection_id="2"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-10,-10 L0,-10"/>
+    <path start="_Middle+0x+0y" data="M-10,-5 L-10,-15 L0,-10 L-10,-5"/>
+    <path start="_Middle+0x+0y" data="M-10,10 L0,10"/>
+    <path start="_Middle+0x+0y" data="M-10,10 L0,10"/>
+    <path start="_Middle+0x+0y" data="M-10,15 L-10,5 L0,10 L-10,15"/>
+    <path start="_Middle+0x+0y" data="M-10,15 L-10,5 L0,10 L-10,15"/>
+    <path start="_Middle+0x+0y" data="M0,-10 L10,-10 L10,10 L0,10"/>
+    <path start="_Middle+0x+0y" data="M2.5,-7.5 L2.5,-5 L0,-5 L0,-15 L-2.5,-15 L-2.5,-12.5"/>
+    <path start="_Middle+0x+0y" data="M2.5,12.5 L2.5,15 L0,15 L0,5 L-2.5,5 L-2.5,7.5"/>
+    <path start="_Middle+0x+0y" data="M2.5,12.5 L2.5,15 L0,15 L0,5 L-2.5,5 L-2.5,7.5"/>
+    <ellipse centre="_Middle+10x+0y" rx="1" ry="1" fill="true"/>
+    <text x="_Middle+0" y="_Middle-20" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+20" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-20x-10y" end="_Middle-10x-10y" sym:connection_id="0"/>
+    <text x="_Middle-6" y="_Middle-10" value="A1" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-16" y="_Middle-12" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-20x+10y" end="_Middle-10x+10y" sym:connection_id="1"/>
+    <text x="_Middle-6" y="_Middle+10" value="A2" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-16" y="_Middle+8" value="3" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+10x+0y" end="_Middle+20x+0y" sym:connection_id="2"/>
+    <text x="_Middle+6" y="_Middle+0" value="K" align="CentreRight" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle+16" y="_Middle-2" value="2" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+  </render>
+</component>

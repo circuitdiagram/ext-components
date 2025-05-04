@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="LM4990ITL"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="7d73d61c-c8fd-4320-b8c4-104dc4a95805"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="60"/>
+    <meta name="footprint" value="Package_BGA:Texas_DSBGA-9_1.4715x1.4715mm_Layout3x3_P0.5mm"/>
+    <meta name="datasheet" value="http://www.ti.com/lit/ds/symlink/lm4990.pdf"/>
+    <meta name="description" value="Boomer 2 Watt Audio Power Amplifier with Selectable Shutdown Logic Level, DSBGA-9"/>
+    <meta name="keywords" value="audio amplifier class d"/>
+    <meta name="ki_fp_filters" value="*DSBGA*1.4715x1.4715mm*P0.5mm*"/>
+    <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="LM4990ITL" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pos" start="_Middle-30x-10y" end="_Middle-20x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="neg" start="_Middle-30x+10y" end="_Middle-20x+10y" edge="start" sym:connection_id="1"/>
+    <connection name="v_pos" start="_Middle-10x-30y" end="_Middle-10x-15y" edge="start" sym:connection_id="2"/>
+    <connection name="gnd" start="_Middle-10x+15y" end="_Middle-10x+30y" edge="end" sym:connection_id="3"/>
+    <connection name="gnd" start="_Middle-10x+15y" end="_Middle-10x+30y" edge="end" sym:connection_id="4"/>
+    <connection name="not_shdn" start="_Middle+0x-30y" end="_Middle+0x-10y" edge="start" sym:connection_id="5"/>
+    <connection name="byp" start="_Middle+0x+10y" end="_Middle+0x+30y" edge="end" sym:connection_id="6"/>
+    <connection name="pinC2" start="_Middle+20x-10y" end="_Middle+30x-10y" edge="end" sym:connection_id="7"/>
+    <connection name="pinA2" start="_Middle+20x+10y" end="_Middle+30x+10y" edge="end" sym:connection_id="8"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-20,-20 L20,-0 L-20,20 L-20,-20"/>
+    <path start="_Middle+0x+0y" data="M15,2.5 L15,10 L20,10"/>
+    <path start="_Middle+0x+0y" data="M20,-10 L15,-10 L15,-2.5"/>
+    <path start="_Middle+0x+0y" data="M15,13 L19,13"/>
+    <path start="_Middle+0x+0y" data="M17,-15 L17,-11"/>
+    <path start="_Middle+0x+0y" data="M19,-13 L15,-13"/>
+    <text x="_Middle+20" y="_Middle-30" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+20" y="_Middle-20" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-30x-10y" end="_Middle-20x-10y" sym:connection_id="0"/>
+    <text x="_Middle-16" y="_Middle-10" value="+" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-26" y="_Middle-12" value="A3" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-30x+10y" end="_Middle-20x+10y" sym:connection_id="1"/>
+    <text x="_Middle-16" y="_Middle+10" value="-" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-26" y="_Middle+8" value="A1" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle-10x-30y" end="_Middle-10x-15y" sym:connection_id="2"/>
+    <text x="_Middle-10" y="_Middle-11" value="V+" align="CentreRight" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-12" y="_Middle-23.5" value="B3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle-10x+15y" end="_Middle-10x+30y" sym:connection_id="3"/>
+    <text x="_Middle-10" y="_Middle+11" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle-12" y="_Middle+23.5" value="B1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle-10x+15y" end="_Middle-10x+30y" sym:connection_id="4"/>
+    <text x="_Middle-10" y="_Middle+11" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="4" sym:connection_attr="name"/>
+    <text x="_Middle-12" y="_Middle+23.5" value="B2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="4" sym:connection_attr="number"/>
+    <line start="_Middle+0x-30y" end="_Middle+0x-10y" sym:connection_id="5"/>
+    <text x="_Middle+0" y="_Middle-6" value="~{SHDN}" align="CentreRight" size="xxs" rotate="270" sym:connection_id="5" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle-21" value="C3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="5" sym:connection_attr="number"/>
+    <line start="_Middle+0x+10y" end="_Middle+0x+30y" sym:connection_id="6"/>
+    <text x="_Middle+0" y="_Middle+6" value="BYP" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="6" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+21" value="C1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="6" sym:connection_attr="number"/>
+    <line start="_Middle+20x-10y" end="_Middle+30x-10y" sym:connection_id="7"/>
+    <text x="_Middle+26" y="_Middle-12" value="C2" align="BottomCentre" size="xxs" sym:connection_id="7" sym:connection_attr="number"/>
+    <line start="_Middle+20x+10y" end="_Middle+30x+10y" sym:connection_id="8"/>
+    <text x="_Middle+26" y="_Middle+8" value="A2" align="BottomCentre" size="xxs" sym:connection_id="8" sym:connection_attr="number"/>
+  </render>
+</component>

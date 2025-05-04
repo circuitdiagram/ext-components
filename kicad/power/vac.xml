@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="VAC"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="69f14dc1-2e43-48a1-ab94-2b743c189832"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="10"/>
+    <meta name="Reference" value="#PWR"/>
+    <meta name="description" value="Power symbol creates a global label with name &quot;VAC&quot;"/>
+    <meta name="keywords" value="global power"/>
+    <property name="Value" type="string" default="VAC" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin1" start="_Middle+0x+0y" end="_Middle+0x+0y" edge="end" sym:connection_id="0"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-5,-12.5 C-4.994134440678133,-13.876553627346317 -3.876566124000754,-14.989370078740206 -2.5,-14.989370078740206 C-1.1234338759992457,-14.989370078740206 -0.005865559321867053,-13.876553627346315 0,-12.5"/>
+    <ellipse centre="_Middle+0x-12.5y" rx="7.5" ry="7.5"/>
+    <path start="_Middle+0x+0y" data="M0,-0 L0,-5"/>
+    <path start="_Middle+0x+0y" data="M5,-12.5 C4.994134440678133,-11.123446372653685 3.876566124000754,-10.010629921259794 2.5,-10.010629921259794 C1.1234338759992462,-10.010629921259794 0.005865559321866609,-11.123446372653683 0,-12.5"/>
+    <text x="_Middle+0" y="_Middle-25" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle+0x+0y" end="_Middle+0x+0y" sym:connection_id="0"/>
+    <text x="_Middle-2" y="_Middle+1" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
+  </render>
+</component>

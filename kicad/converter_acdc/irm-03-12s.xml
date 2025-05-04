@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="IRM-03-12S"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="d1ba2586-afeb-4579-8493-18371436f247"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="80"/>
+    <meta name="footprint" value="Converter_ACDC:Converter_ACDC_MeanWell_IRM-03-xx_SMD"/>
+    <meta name="datasheet" value="https://www.meanwell.com/Upload/PDF/IRM-03/IRM-03-SPEC.PDF"/>
+    <meta name="description" value="12V, 250mA, 3W, Isolated, AC-DC, IRM03-SMD"/>
+    <meta name="keywords" value="Miniature Module-type Power Supply MeanWell"/>
+    <meta name="ki_fp_filters" value="Converter*ACDC*MeanWell*IRM*03*SMD*"/>
+    <property name="Reference" type="string" default="PS" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="IRM-03-12S" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="ac_l" start="_Middle-40x-10y" end="_Middle-30x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="ac_n" start="_Middle-40x+10y" end="_Middle-30x+10y" edge="start" sym:connection_id="1"/>
+    <connection name="vo" start="_Middle+30x-10y" end="_Middle+40x-10y" edge="end" sym:connection_id="2"/>
+    <connection name="vo" start="_Middle+30x+10y" end="_Middle+40x+10y" edge="end" sym:connection_id="3"/>
+  </connections>
+  <render>
+    <rect location="_Middle-30x-20y" width="60" height="40"/>
+    <path start="_Middle+0x+0y" data="M-21,2.5 L-11,2.5"/>
+    <path start="_Middle+0x+0y" data="M-16,-2.5 C-16.485014481997002,-1.5673917549218865 -17.44881153614849,-0.9822834645669296 -18.5,-0.9822834645669296 C-19.55118846385151,-0.9822834645669296 -20.514985518002995,-1.5673917549218856 -21,-2.499999999999999"/>
+    <path start="_Middle+0x+0y" data="M-16,-2.5 C-15.493283157014972,-3.4049078422948575 -14.537121093224627,-3.965354330708662 -13.5,-3.965354330708662 C-12.462878906775371,-3.965354330708662 -11.506716842985028,-3.4049078422948567 -11,-2.5"/>
+    <path start="_Middle+0x+0y" data="M0,-20 L0,-15"/>
+    <path start="_Middle+0x+0y" data="M0,-10 L0,-5"/>
+    <path start="_Middle+0x+0y" data="M0,-0 L0,5"/>
+    <path start="_Middle+0x+0y" data="M0,10 L0,15"/>
+    <path start="_Middle+0x+0y" data="M11,-2.5 L13,-2.5"/>
+    <path start="_Middle+0x+0y" data="M11,2.5 L21,2.5"/>
+    <path start="_Middle+0x+0y" data="M15,-2.5 L17,-2.5"/>
+    <path start="_Middle+0x+0y" data="M19,-2.5 L21,-2.5"/>
+    <text x="_Middle+0" y="_Middle-25" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+25" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-40x-10y" end="_Middle-30x-10y" sym:connection_id="0"/>
+    <text x="_Middle-26" y="_Middle-10" value="AC/L" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-36" y="_Middle-12" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-40x+10y" end="_Middle-30x+10y" sym:connection_id="1"/>
+    <text x="_Middle-26" y="_Middle+10" value="AC/N" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-36" y="_Middle+8" value="3" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+30x-10y" end="_Middle+40x-10y" sym:connection_id="2"/>
+    <text x="_Middle+26" y="_Middle-10" value="+Vo" align="CentreRight" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle+36" y="_Middle-12" value="16" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+30x+10y" end="_Middle+40x+10y" sym:connection_id="3"/>
+    <text x="_Middle+26" y="_Middle+10" value="-Vo" align="CentreRight" size="xxs" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle+36" y="_Middle+8" value="14" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+  </render>
+</component>

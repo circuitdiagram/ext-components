@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="LTST-C235KGKRKT"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="aa0d99ae-7165-4a4a-8dca-84218f247174"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="60"/>
+    <meta name="footprint" value="LED_SMD:LED_LiteOn_LTST-C235KGKRKT"/>
+    <meta name="datasheet" value="https://optoelectronics.liteon.com/upload/download/DS22-2009-0219/LTST-C235KGKRKT.pdf"/>
+    <meta name="description" value="LED dual red/green, 4-pin, down-facing"/>
+    <meta name="keywords" value="diode bicolor down-facing reverse"/>
+    <meta name="ki_fp_filters" value="*LTST*C235K*"/>
+    <property name="Reference" type="string" default="D" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="LTST-C235KGKRKT" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="a1" start="_Middle-30x-10y" end="_Middle-20x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="a2" start="_Middle-30x+10y" end="_Middle-20x+10y" edge="start" sym:connection_id="1"/>
+    <connection name="k1" start="_Middle+20x-10y" end="_Middle+30x-10y" edge="end" sym:connection_id="2"/>
+    <connection name="k2" start="_Middle+20x+10y" end="_Middle+30x+10y" edge="end" sym:connection_id="3"/>
+  </connections>
+  <render>
+    <text x="_Middle-10" y="_Middle-5" value="R" align="CentreCentre" size="base"/>
+    <text x="_Middle-10" y="_Middle+5" value="G" align="CentreCentre" size="base"/>
+    <path start="_Middle+0x+0y" data="M-20,-10 L8,-10"/>
+    <path start="_Middle+0x+0y" data="M-20,10 L8,10"/>
+    <path start="_Middle+0x+0y" data="M-5,-15 L-5,-5 L5,-10 L-5,-15"/>
+    <path start="_Middle+0x+0y" data="M-5,5 L-5,15 L5,10 L-5,5"/>
+    <ellipse centre="_Middle+0x+0y" rx="20" ry="20"/>
+    <path start="_Middle+0x+0y" data="M5,-20 L11,-26 L8,-26 L11,-26 L11,-23"/>
+    <path start="_Middle+0x+0y" data="M5,-15 L5,-5"/>
+    <path start="_Middle+0x+0y" data="M5,5 L5,15"/>
+    <path start="_Middle+0x+0y" data="M10,-15 L16,-21 L13,-21 L16,-21 L16,-18"/>
+    <path start="_Middle+0x+0y" data="M20,-10 L7.5,-10"/>
+    <path start="_Middle+0x+0y" data="M20,10 L7.5,10"/>
+    <text x="_Middle-20" y="_Middle-25" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+22.5" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-30x-10y" end="_Middle-20x-10y" sym:connection_id="0"/>
+    <text x="_Middle-16" y="_Middle-10" value="A1" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-26" y="_Middle-12" value="3" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-30x+10y" end="_Middle-20x+10y" sym:connection_id="1"/>
+    <text x="_Middle-16" y="_Middle+10" value="A2" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-26" y="_Middle+8" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+20x-10y" end="_Middle+30x-10y" sym:connection_id="2"/>
+    <text x="_Middle+16" y="_Middle-10" value="K1" align="CentreRight" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle+26" y="_Middle-12" value="4" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+20x+10y" end="_Middle+30x+10y" sym:connection_id="3"/>
+    <text x="_Middle+16" y="_Middle+10" value="K2" align="CentreRight" size="xxs" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle+26" y="_Middle+8" value="1" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+  </render>
+</component>

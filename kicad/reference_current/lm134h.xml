@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="LM134H"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="beedb86a-8ff0-4cf9-9c1d-ac8065cb018c"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="30"/>
+    <meta name="footprint" value="Package_TO_SOT_THT:TO-46-3"/>
+    <meta name="datasheet" value="http://www.ti.com/lit/ds/symlink/lm134.pdf"/>
+    <meta name="description" value="1μA to 10mA 3-Terminal Adjustable Current Source, TO-46"/>
+    <meta name="keywords" value="Adjustable Current Source 10mA"/>
+    <meta name="ki_fp_filters" value="TO?46*"/>
+    <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="LM134H" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin2" start="_Middle+0x-20y" end="_Middle+0x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="pin3" start="_Middle+0x+10y" end="_Middle+0x+20y" edge="end" sym:connection_id="1"/>
+    <connection name="pin1" start="_Middle+10x+0y" end="_Middle+20x+0y" edge="end" sym:connection_id="2"/>
+  </connections>
+  <render>
+    <rect location="_Middle-10x-12.5y" width="20" height="25"/>
+    <path start="_Middle+0x+0y" data="M-4.5,9.5 L-1.5,9.5"/>
+    <path start="_Middle+0x+0y" data="M-4,-9.5 L-1,-9.5"/>
+    <path start="_Middle+0x+0y" data="M-2.5,-11 L-2.5,-8"/>
+    <path start="_Middle+0x+0y" data="M0,-15 L0,-7.5"/>
+    <path start="_Middle+0x+0y" data="M0,-5.5 L0,5.5"/>
+    <ellipse centre="_Middle+0x-2.5y" rx="5" ry="5"/>
+    <ellipse centre="_Middle+0x+2.5y" rx="5" ry="5"/>
+    <path start="_Middle+0x+0y" data="M0,5.5 L-1,3.5 L1,3.5 L0,5.5"/>
+    <path start="_Middle+0x+0y" data="M0,7.5 L0,15"/>
+    <path start="_Middle+0x+0y" data="M5,-0 L8.5,-1 L8.5,1 L5,-0"/>
+    <path start="_Middle+0x+0y" data="M10,-0 L5,-0"/>
+    <text x="_Middle+2.5" y="_Middle-25" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+2.5" y="_Middle-17.5" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle+0x-20y" end="_Middle+0x-10y" sym:connection_id="0"/>
+    <text x="_Middle-2" y="_Middle-16" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+0x+10y" end="_Middle+0x+20y" sym:connection_id="1"/>
+    <text x="_Middle-2" y="_Middle+16" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+10x+0y" end="_Middle+20x+0y" sym:connection_id="2"/>
+    <text x="_Middle+16" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+  </render>
+</component>

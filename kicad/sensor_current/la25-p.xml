@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="LA25-P"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="d053f187-826f-495a-99ae-ee53c61a22a1"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="70"/>
+    <meta name="footprint" value="Sensor_Current:LEM_LA25-P"/>
+    <meta name="datasheet" value="https://www.lem.com/sites/default/files/products_datasheets/la_25-p.pdf"/>
+    <meta name="description" value="Current Transducer, 25A, Bipolar, ±15V"/>
+    <meta name="keywords" value="current transducer"/>
+    <meta name="ki_fp_filters" value="LEM*LA25*P*"/>
+    <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="LA25-P" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pos" start="_Middle+0x-30y" end="_Middle+0x-20y" edge="start" sym:connection_id="0"/>
+    <connection name="neg" start="_Middle+0x+20y" end="_Middle+0x+30y" edge="end" sym:connection_id="1"/>
+    <connection name="m" start="_Middle+30x+0y" end="_Middle+40x+0y" edge="end" sym:connection_id="2"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-21,-1.5 L-18.5,-1.5 L-20,0.5 L-21.500000000000004,-1.5" fill="true"/>
+    <path start="_Middle+0x+0y" data="M-20,-10 C-18.623446372653746,-9.994134440678046 -17.51062992125995,-8.876566124000693 -17.51062992125995,-7.5 C-17.51062992125995,-6.123433875999307 -18.623446372653746,-5.005865559321955 -20,-5"/>
+    <path start="_Middle+0x+0y" data="M-20,-15 L-20,-10"/>
+    <path start="_Middle+0x+0y" data="M-20,-5 L-20,5"/>
+    <path start="_Middle+0x+0y" data="M-15,10 L-5,10"/>
+    <path start="_Middle+0x+0y" data="M-10,-10 L15.5,-10"/>
+    <path start="_Middle+0x+0y" data="M-10,5 L-10,-0.5"/>
+    <ellipse centre="_Middle-10x+10y" rx="5" ry="5"/>
+    <path start="_Middle+0x+0y" data="M-10,15 L-10,17"/>
+    <path start="_Middle+0x+0y" data="M-10,-3 C-10.550590596204655,-3.002389633095037 -10.995669291338476,-3.4494042181642444 -10.995669291338476,-4 C-10.995669291338476,-4.550595781835756 -10.550590596204655,-4.997610366904963 -10,-5"/>
+    <path start="_Middle+0x+0y" data="M-10,-7.5 C-10.670993053592145,-7.52673824465485 -11.20118110236221,-8.07847441471219 -11.20118110236221,-8.75 C-11.20118110236221,-9.421525585287808 -10.670993053592145,-9.973261755345149 -10,-10"/>
+    <path start="_Middle+0x+0y" data="M-10,-5 C-10.670993053592138,-5.026738244654862 -11.201181102362188,-5.578474414712199 -11.201181102362188,-6.25 C-11.201181102362188,-6.9215255852878 -10.670993053592138,-7.4732617553451375 -10,-7.5"/>
+    <path start="_Middle+0x+0y" data="M-10,-0.5 C-10.67099305359215,-0.5267382446548428 -11.201181102362222,-1.0784744147121854 -11.201181102362222,-1.7499999999999998 C-11.201181102362224,-2.4215255852878146 -10.67099305359215,-2.973261755345157 -10,-3"/>
+    <path start="_Middle+0x+0y" data="M8.5,-10 L7,-11.5 L7,-8.5 L8.5,-10" fill="true"/>
+    <rect location="_Middle-30x-20y" width="60" height="40"/>
+    <text x="_Middle-25" y="_Middle-25" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+20" y="_Middle-25" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle+0x-30y" end="_Middle+0x-20y" sym:connection_id="0"/>
+    <text x="_Middle+0" y="_Middle-16" value="+" align="CentreRight" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle-26" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+0x+20y" end="_Middle+0x+30y" sym:connection_id="1"/>
+    <text x="_Middle+0" y="_Middle+16" value="-" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+26" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+30x+0y" end="_Middle+40x+0y" sym:connection_id="2"/>
+    <text x="_Middle+26" y="_Middle+0" value="M" align="CentreRight" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle+36" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+  </render>
+</component>

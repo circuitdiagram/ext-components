@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="004-0-0075"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="4e83c058-212c-4bbb-8930-36807881c959"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="120"/>
+    <meta name="datasheet" value="https://rmtplusstoragesenseair.blob.core.windows.net/docs/publicerat/PSP103.pdf"/>
+    <meta name="description" value="S8 Commercial, CO2 sensor, 400-2000 PPM, 1kHz PWM output, Modbus, THT"/>
+    <meta name="keywords" value="Senseair co2 gas sensor pwm modbus"/>
+    <meta name="ki_fp_filters" value="Senseair*S8*"/>
+    <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="004-0-0075" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="uart_r_t" start="_Middle-60x-20y" end="_Middle-50x-20y" edge="start" sym:connection_id="0"/>
+    <connection name="uart_txd" start="_Middle-60x-10y" end="_Middle-50x-10y" edge="start" sym:connection_id="1"/>
+    <connection name="uart_rxd" start="_Middle-60x+0y" end="_Middle-50x+0y" edge="start" sym:connection_id="2"/>
+    <connection name="bcal_in" start="_Middle-60x+20y" end="_Middle-50x+20y" edge="start" sym:connection_id="3"/>
+    <connection name="g_pos" start="_Middle+0x-40y" end="_Middle+0x-30y" edge="start" sym:connection_id="4"/>
+    <connection name="g0" start="_Middle+0x+30y" end="_Middle+0x+40y" edge="end" sym:connection_id="5"/>
+    <connection name="alarm_oc" start="_Middle+50x-20y" end="_Middle+60x-20y" edge="end" sym:connection_id="6"/>
+    <connection name="pwm_1khz" start="_Middle+50x+0y" end="_Middle+60x+0y" edge="end" sym:connection_id="7"/>
+    <connection name="dvcc_out" start="_Middle+50x+20y" end="_Middle+60x+20y" edge="end" sym:connection_id="8"/>
+  </connections>
+  <render>
+    <rect location="_Middle-50x-30y" width="100" height="60"/>
+    <text x="_Middle-45" y="_Middle-35" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+30" y="_Middle-35" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-60x-20y" end="_Middle-50x-20y" sym:connection_id="0"/>
+    <text x="_Middle-46" y="_Middle-20" value="UART_R/T" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-56" y="_Middle-22" value="6" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-60x-10y" end="_Middle-50x-10y" sym:connection_id="1"/>
+    <text x="_Middle-46" y="_Middle-10" value="UART_TXD" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-56" y="_Middle-12" value="7" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle-60x+0y" end="_Middle-50x+0y" sym:connection_id="2"/>
+    <text x="_Middle-46" y="_Middle+0" value="UART_RXD" align="CentreLeft" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-56" y="_Middle-2" value="8" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle-60x+20y" end="_Middle-50x+20y" sym:connection_id="3"/>
+    <text x="_Middle-46" y="_Middle+20" value="BCAL_IN" align="CentreLeft" size="xxs" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle-56" y="_Middle+18" value="5" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle+0x-40y" end="_Middle+0x-30y" sym:connection_id="4"/>
+    <text x="_Middle+0" y="_Middle-26" value="G+" align="CentreRight" size="xxs" rotate="270" sym:connection_id="4" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle-36" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="4" sym:connection_attr="number"/>
+    <line start="_Middle+0x+30y" end="_Middle+0x+40y" sym:connection_id="5"/>
+    <text x="_Middle+0" y="_Middle+26" value="G0" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="5" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+36" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="5" sym:connection_attr="number"/>
+    <line start="_Middle+50x-20y" end="_Middle+60x-20y" sym:connection_id="6"/>
+    <text x="_Middle+46" y="_Middle-20" value="ALARM_OC" align="CentreRight" size="xxs" sym:connection_id="6" sym:connection_attr="name"/>
+    <text x="_Middle+56" y="_Middle-22" value="3" align="BottomCentre" size="xxs" sym:connection_id="6" sym:connection_attr="number"/>
+    <line start="_Middle+50x+0y" end="_Middle+60x+0y" sym:connection_id="7"/>
+    <text x="_Middle+46" y="_Middle+0" value="PWM_1KHZ" align="CentreRight" size="xxs" sym:connection_id="7" sym:connection_attr="name"/>
+    <text x="_Middle+56" y="_Middle-2" value="4" align="BottomCentre" size="xxs" sym:connection_id="7" sym:connection_attr="number"/>
+    <line start="_Middle+50x+20y" end="_Middle+60x+20y" sym:connection_id="8"/>
+    <text x="_Middle+46" y="_Middle+20" value="DVCC_OUT" align="CentreRight" size="xxs" sym:connection_id="8" sym:connection_attr="name"/>
+    <text x="_Middle+56" y="_Middle+18" value="9" align="BottomCentre" size="xxs" sym:connection_id="8" sym:connection_attr="number"/>
+  </render>
+</component>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Conn 02x02 Row Letter Last Shielded"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="2a96d30a-327b-4b06-9e66-07b64a1f1a4b"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="50"/>
+    <meta name="description" value="Generic shielded connector, double row, 02x02, row letter last pin numbering scheme (pin number consists of a letter for the row and a number for the pin index in this row. 1a, ..., Na; 1b, ..., Nb)), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+    <meta name="keywords" value="connector"/>
+    <meta name="ki_fp_filters" value="Connector*:*_2x??-1SH*"/>
+    <property name="Reference" type="string" default="J" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="Conn_02x02_Row_Letter_Last_Shielded" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin_1a" start="_Middle-20x+0y" end="_Middle-4x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="pin_2a" start="_Middle-20x+10y" end="_Middle-4x+10y" edge="start" sym:connection_id="1"/>
+    <connection name="shield" start="_Middle+5x+15y" end="_Middle+5x+30y" edge="end" sym:connection_id="2"/>
+    <connection name="pin_1b" start="_Middle+14x+0y" end="_Middle+30x+0y" edge="end" sym:connection_id="3"/>
+    <connection name="pin_2b" start="_Middle+14x+10y" end="_Middle+30x+10y" edge="end" sym:connection_id="4"/>
+  </connections>
+  <render>
+    <rect location="_Middle-5x-5y" width="20" height="20"/>
+    <rect location="_Middle-4x-4y" width="18" height="18"/>
+    <rect location="_Middle-4x-0.5y" width="5" height="1"/>
+    <rect location="_Middle-4x+9.5y" width="5" height="1"/>
+    <rect location="_Middle+9x-0.5y" width="5" height="1"/>
+    <rect location="_Middle+9x+9.5y" width="5" height="1"/>
+    <text x="_Middle+6" y="_Middle-9" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+9" y="_Middle+19" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle-20x+0y" end="_Middle-4x+0y" sym:connection_id="0"/>
+    <text x="_Middle+0" y="_Middle+0" value="Pin_1a" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-13" y="_Middle-2" value="1a" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-20x+10y" end="_Middle-4x+10y" sym:connection_id="1"/>
+    <text x="_Middle+0" y="_Middle+10" value="Pin_2a" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-13" y="_Middle+8" value="2a" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+5x+15y" end="_Middle+5x+30y" sym:connection_id="2"/>
+    <text x="_Middle+5" y="_Middle+11" value="Shield" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle+3" y="_Middle+23.5" value="SH" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+14x+0y" end="_Middle+30x+0y" sym:connection_id="3"/>
+    <text x="_Middle+10" y="_Middle+0" value="Pin_1b" align="CentreRight" size="xxs" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle+23" y="_Middle-2" value="1b" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle+14x+10y" end="_Middle+30x+10y" sym:connection_id="4"/>
+    <text x="_Middle+10" y="_Middle+10" value="Pin_2b" align="CentreRight" size="xxs" sym:connection_id="4" sym:connection_attr="name"/>
+    <text x="_Middle+23" y="_Middle+8" value="2b" align="BottomCentre" size="xxs" sym:connection_id="4" sym:connection_attr="number"/>
+  </render>
+</component>

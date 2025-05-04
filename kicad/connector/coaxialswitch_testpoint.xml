@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="CoaxialSwitch Testpoint"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="abd1a7e6-4bb4-440e-b1e4-aa6fc7ef584b"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="40"/>
+    <meta name="description" value="Subminiature Coaxial Switch testpoint"/>
+    <meta name="keywords" value="Coaxial Switch RF testpoint"/>
+    <meta name="ki_fp_filters" value="CoaxialSwitch*"/>
+    <property name="Reference" type="string" default="TP" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="CoaxialSwitch_Testpoint" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="c" start="_Middle-20x-5y" end="_Middle-10x-5y" edge="start" sym:connection_id="0"/>
+    <connection name="a" start="_Middle+10x-5y" end="_Middle+20x-5y" edge="end" sym:connection_id="1"/>
+    <connection name="g" start="_Middle+10x+5y" end="_Middle+20x+5y" edge="end" sym:connection_id="2"/>
+  </connections>
+  <render>
+    <rect location="_Middle-10x+0y" width="0" height="10"/>
+    <rect location="_Middle-10x+10y" width="20" height="0"/>
+    <rect location="_Middle-10x+0y" width="20" height="0"/>
+    <rect location="_Middle+10x+0y" width="0" height="10"/>
+    <path start="_Middle+0x+0y" data="M-10,-2.5 L10,-2.5"/>
+    <ellipse centre="_Middle-8x-5y" rx="2" ry="2"/>
+    <path start="_Middle+0x+0y" data="M0,-2.5 L0,-10"/>
+    <ellipse centre="_Middle+8x-5y" rx="2" ry="2"/>
+    <text x="_Middle+0" y="_Middle+15" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle-15" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-20x-5y" end="_Middle-10x-5y" sym:connection_id="0"/>
+    <text x="_Middle-6" y="_Middle-5" value="C" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-16" y="_Middle-7" value="C" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+10x-5y" end="_Middle+20x-5y" sym:connection_id="1"/>
+    <text x="_Middle+6" y="_Middle-5" value="A" align="CentreRight" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle+16" y="_Middle-7" value="A" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+10x+5y" end="_Middle+20x+5y" sym:connection_id="2"/>
+    <text x="_Middle+6" y="_Middle+5" value="G" align="CentreRight" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle+16" y="_Middle+3" value="G" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+  </render>
+</component>

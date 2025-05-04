@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="CAP003DG"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="601aa24c-9852-40a3-beaf-8bfc3fd1f444"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="40"/>
+    <meta name="footprint" value="Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"/>
+    <meta name="datasheet" value="https://ac-dc.power.com/sites/default/files/product-docs/capzero_family_datasheet.pdf"/>
+    <meta name="description" value="CapZero Automatic Capacitor Discarger, 825V, &lt;=750nF, 1.02MOhm, SOIC-8"/>
+    <meta name="keywords" value="Automatic Capacitor Discarger"/>
+    <meta name="ki_fp_filters" value="SOIC*3.9x4.9mm*P1.27mm*"/>
+    <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="CAP003DG" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin1" start="_Middle-10x-30y" end="_Middle-10x-20y" edge="start" sym:connection_id="0"/>
+    <connection name="pin5" start="_Middle-10x+20y" end="_Middle-10x+30y" edge="end" sym:connection_id="1"/>
+    <connection name="pin4" start="_Middle+0x-30y" end="_Middle+0x-20y" edge="start" sym:connection_id="2"/>
+    <connection name="pin8" start="_Middle+0x+20y" end="_Middle+0x+30y" edge="end" sym:connection_id="3"/>
+    <connection name="pin2" start="_Middle+10x-30y" end="_Middle+10x-20y" edge="start" sym:connection_id="4"/>
+    <connection name="pin3" start="_Middle+10x-30y" end="_Middle+10x-20y" edge="start" sym:connection_id="5"/>
+    <connection name="pin6" start="_Middle+10x+20y" end="_Middle+10x+30y" edge="end" sym:connection_id="6"/>
+    <connection name="pin7" start="_Middle+10x+20y" end="_Middle+10x+30y" edge="end" sym:connection_id="7"/>
+  </connections>
+  <render>
+    <rect location="_Middle-20x-20y" width="40" height="40"/>
+    <rect location="_Middle-15x-10y" width="15" height="20"/>
+    <path start="_Middle+0x+0y" data="M3.5,-9 L3.5,-2"/>
+    <path start="_Middle+0x+0y" data="M3.5,-8.5 L0,-8.5"/>
+    <path start="_Middle+0x+0y" data="M3.5,2 L3.5,9"/>
+    <path start="_Middle+0x+0y" data="M3.5,8.5 L0,8.5"/>
+    <path start="_Middle+0x+0y" data="M5,-9 L5,-8 L5,-8"/>
+    <path start="_Middle+0x+0y" data="M5,-8.5 L10,-8.5"/>
+    <path start="_Middle+0x+0y" data="M5,-6 L5,-5 L5,-5"/>
+    <path start="_Middle+0x+0y" data="M5,-3 L5,-2 L5,-2"/>
+    <path start="_Middle+0x+0y" data="M5,5 L5,6 L5,6"/>
+    <path start="_Middle+0x+0y" data="M5,8 L5,9 L5,9"/>
+    <path start="_Middle+0x+0y" data="M5,8.5 L10,8.5"/>
+    <path start="_Middle+0x+0y" data="M5.5,-5.5 L10,-5.5 L10,-2.5"/>
+    <path start="_Middle+0x+0y" data="M5.5,2.5 L10,2.5 L10,-2.5 L5.5,-2.5"/>
+    <path start="_Middle+0x+0y" data="M5.5,5.5 L10,5.5 L10,2.5"/>
+    <path start="_Middle+0x+0y" data="M6,-5.5 L8,-6 L8,-5 L6,-5.5"/>
+    <path start="_Middle+0x+0y" data="M6,5.5 L8,5 L8,6 L6,5.5"/>
+    <path start="_Middle+0x+0y" data="M9.5,-0 L0,-0"/>
+    <path start="_Middle+0x+0y" data="M10,-8.5 L10,-20 L10,-12.5"/>
+    <ellipse centre="_Middle+10x-2.5y" rx="0.5" ry="0.5"/>
+    <ellipse centre="_Middle+10x+0y" rx="0.5" ry="0.5"/>
+    <ellipse centre="_Middle+10x+2.5y" rx="0.5" ry="0.5"/>
+    <path start="_Middle+0x+0y" data="M10,8.5 L10,20"/>
+    <path start="_Middle+0x+0y" data="M5,2 L5,3"/>
+    <text x="_Middle+15" y="_Middle-35" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+15" y="_Middle-25" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle-10x-30y" end="_Middle-10x-20y" sym:connection_id="0"/>
+    <text x="_Middle-12" y="_Middle-26" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-10x+20y" end="_Middle-10x+30y" sym:connection_id="1"/>
+    <text x="_Middle-12" y="_Middle+26" value="5" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+0x-30y" end="_Middle+0x-20y" sym:connection_id="2"/>
+    <text x="_Middle-2" y="_Middle-26" value="4" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+0x+20y" end="_Middle+0x+30y" sym:connection_id="3"/>
+    <text x="_Middle-2" y="_Middle+26" value="8" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle+10x-30y" end="_Middle+10x-20y" sym:connection_id="4"/>
+    <text x="_Middle+8" y="_Middle-26" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="4" sym:connection_attr="number"/>
+    <line start="_Middle+10x-30y" end="_Middle+10x-20y" sym:connection_id="5"/>
+    <text x="_Middle+8" y="_Middle-26" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="5" sym:connection_attr="number"/>
+    <line start="_Middle+10x+20y" end="_Middle+10x+30y" sym:connection_id="6"/>
+    <text x="_Middle+8" y="_Middle+26" value="6" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="6" sym:connection_attr="number"/>
+    <line start="_Middle+10x+20y" end="_Middle+10x+30y" sym:connection_id="7"/>
+    <text x="_Middle+8" y="_Middle+26" value="7" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="7" sym:connection_attr="number"/>
+  </render>
+</component>

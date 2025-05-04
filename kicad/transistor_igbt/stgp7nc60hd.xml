@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="STGP7NC60HD"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="55779218-9c51-4669-a63f-94dea97a78bc"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="50"/>
+    <meta name="footprint" value="Package_TO_SOT_THT:TO-220-3_Vertical"/>
+    <meta name="datasheet" value="http://www.farnell.com/datasheets/2309889.pdf"/>
+    <meta name="description" value="25A, 600V, N-Channel IGBT, TO-220"/>
+    <meta name="keywords" value="N-Channel very fast IGBT with ultrafast diode Power Transistor"/>
+    <meta name="ki_fp_filters" value="TO?220*"/>
+    <property name="Reference" type="string" default="Q" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="STGP7NC60HD" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="g" start="_Middle-20x+0y" end="_Middle-5x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="c" start="_Middle+10x-20y" end="_Middle+10x-10y" edge="start" sym:connection_id="1"/>
+    <connection name="e" start="_Middle+10x+10y" end="_Middle+10x+20y" edge="end" sym:connection_id="2"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-5,-0 L-4,-0"/>
+    <ellipse centre="_Middle+4x+0y" rx="12.1" ry="12.1"/>
+    <path start="_Middle+0x+0y" data="M5,-9.5 L10,-9.5"/>
+    <path start="_Middle+0x+0y" data="M5,9.5 L10,9.5"/>
+    <path start="_Middle+0x+0y" data="M8,-2.5 L12,-2.5"/>
+    <path start="_Middle+0x+0y" data="M10,-15 L10,15"/>
+    <path start="_Middle+0x+0y" data="M10,-2.5 L8,2.5 L12,2.5 L10,-2.5" fill="true"/>
+    <path start="_Middle+0x+0y" data="M-4,-7.5 L-4,7.5 L-4,7.5"/>
+    <path start="_Middle+0x+0y" data="M-2,-8 L-2,-4"/>
+    <path start="_Middle+0x+0y" data="M-2,-2 L-2,2"/>
+    <path start="_Middle+0x+0y" data="M-2,4 L-2,8"/>
+    <path start="_Middle+0x+0y" data="M-0.5,8 L0.5,6 L4,9 L-0.5,8" fill="true"/>
+    <path start="_Middle+0x+0y" data="M3.5,-7.5 L2.5,-9.5 L-1,-6.5 L3.5,-7.5" fill="true"/>
+    <path start="_Middle+0x+0y" data="M5,-9.5 L-2,-6"/>
+    <path start="_Middle+0x+0y" data="M5,3.5 L-2,-0"/>
+    <path start="_Middle+0x+0y" data="M5,9.5 L-2,6"/>
+    <text x="_Middle+25" y="_Middle-7.5" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+25" y="_Middle+0" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle-20x+0y" end="_Middle-5x+0y" sym:connection_id="0"/>
+    <text x="_Middle-1" y="_Middle+0" value="G" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-13.5" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+10x-20y" end="_Middle+10x-10y" sym:connection_id="1"/>
+    <text x="_Middle+10" y="_Middle-6" value="C" align="CentreRight" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle+8" y="_Middle-16" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+10x+10y" end="_Middle+10x+20y" sym:connection_id="2"/>
+    <text x="_Middle+10" y="_Middle+6" value="E" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle+8" y="_Middle+16" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+  </render>
+</component>

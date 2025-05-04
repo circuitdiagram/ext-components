@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="CS2000-CP"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="c4bb75dc-3b6e-4097-a572-a6228b23e625"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="140"/>
+    <meta name="footprint" value="Package_SO:MSOP-10_3x3mm_P0.5mm"/>
+    <meta name="datasheet" value="https://statics.cirrus.com/pubs/proDatasheet/CS2000-CP_F3.pdf"/>
+    <meta name="description" value="Fractional-N Clock Synthesizer &amp; Clock Multiplier, MSOP-10"/>
+    <meta name="keywords" value="Clock Synthesizer Multiplier"/>
+    <meta name="ki_fp_filters" value="MSOP*3x3mm*P0.5mm*"/>
+    <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="CS2000-CP" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="sda_cdin" start="_Middle-70x-40y" end="_Middle-60x-40y" edge="start" sym:connection_id="0"/>
+    <connection name="scl_cclk" start="_Middle-70x-30y" end="_Middle-60x-30y" edge="start" sym:connection_id="1"/>
+    <connection name="ad0_cs" start="_Middle-70x-20y" end="_Middle-60x-20y" edge="start" sym:connection_id="2"/>
+    <connection name="clk_in" start="_Middle-70x+0y" end="_Middle-60x+0y" edge="start" sym:connection_id="3"/>
+    <connection name="xti_ref_clk" start="_Middle-70x+20y" end="_Middle-60x+20y" edge="start" sym:connection_id="4"/>
+    <connection name="xto" start="_Middle-70x+30y" end="_Middle-60x+30y" edge="start" sym:connection_id="5"/>
+    <connection name="vd" start="_Middle+0x-60y" end="_Middle+0x-50y" edge="start" sym:connection_id="6"/>
+    <connection name="gnd" start="_Middle+0x+40y" end="_Middle+0x+50y" edge="end" sym:connection_id="7"/>
+    <connection name="clk_out" start="_Middle+60x-10y" end="_Middle+70x-10y" edge="end" sym:connection_id="8"/>
+    <connection name="aux_out" start="_Middle+60x+0y" end="_Middle+70x+0y" edge="end" sym:connection_id="9"/>
+  </connections>
+  <render>
+    <rect location="_Middle-60x-50y" width="120" height="90"/>
+    <text x="_Middle-50" y="_Middle-55.00000000000001" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+30" y="_Middle-55.00000000000001" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-70x-40y" end="_Middle-60x-40y" sym:connection_id="0"/>
+    <text x="_Middle-56" y="_Middle-40" value="SDA/CDIN" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-66" y="_Middle-42" value="10" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-70x-30y" end="_Middle-60x-30y" sym:connection_id="1"/>
+    <text x="_Middle-56" y="_Middle-30" value="SCL/CCLK" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-66" y="_Middle-32" value="9" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle-70x-20y" end="_Middle-60x-20y" sym:connection_id="2"/>
+    <text x="_Middle-56" y="_Middle-20" value="AD0/~{CS}" align="CentreLeft" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-66" y="_Middle-22" value="8" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle-70x+0y" end="_Middle-60x+0y" sym:connection_id="3"/>
+    <text x="_Middle-56" y="_Middle+0" value="CLK_IN" align="CentreLeft" size="xxs" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle-66" y="_Middle-2" value="5" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle-70x+20y" end="_Middle-60x+20y" sym:connection_id="4"/>
+    <text x="_Middle-56" y="_Middle+20" value="XTI/REF_CLK" align="CentreLeft" size="xxs" sym:connection_id="4" sym:connection_attr="name"/>
+    <text x="_Middle-66" y="_Middle+18" value="7" align="BottomCentre" size="xxs" sym:connection_id="4" sym:connection_attr="number"/>
+    <line start="_Middle-70x+30y" end="_Middle-60x+30y" sym:connection_id="5"/>
+    <text x="_Middle-56" y="_Middle+30" value="XTO" align="CentreLeft" size="xxs" sym:connection_id="5" sym:connection_attr="name"/>
+    <text x="_Middle-66" y="_Middle+28" value="6" align="BottomCentre" size="xxs" sym:connection_id="5" sym:connection_attr="number"/>
+    <line start="_Middle+0x-60y" end="_Middle+0x-50y" sym:connection_id="6"/>
+    <text x="_Middle+0" y="_Middle-46" value="VD" align="CentreRight" size="xxs" rotate="270" sym:connection_id="6" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle-56" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="6" sym:connection_attr="number"/>
+    <line start="_Middle+0x+40y" end="_Middle+0x+50y" sym:connection_id="7"/>
+    <text x="_Middle+0" y="_Middle+36" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="7" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+46" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="7" sym:connection_attr="number"/>
+    <line start="_Middle+60x-10y" end="_Middle+70x-10y" sym:connection_id="8"/>
+    <text x="_Middle+56" y="_Middle-10" value="CLK_OUT" align="CentreRight" size="xxs" sym:connection_id="8" sym:connection_attr="name"/>
+    <text x="_Middle+66" y="_Middle-12" value="3" align="BottomCentre" size="xxs" sym:connection_id="8" sym:connection_attr="number"/>
+    <line start="_Middle+60x+0y" end="_Middle+70x+0y" sym:connection_id="9"/>
+    <text x="_Middle+56" y="_Middle+0" value="AUX_OUT" align="CentreRight" size="xxs" sym:connection_id="9" sym:connection_attr="name"/>
+    <text x="_Middle+66" y="_Middle-2" value="4" align="BottomCentre" size="xxs" sym:connection_id="9" sym:connection_attr="number"/>
+  </render>
+</component>

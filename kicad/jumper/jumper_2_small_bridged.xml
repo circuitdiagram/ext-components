@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Jumper 2 Small Bridged"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="185589ea-0448-4776-9327-64b540d80d07"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="20"/>
+    <meta name="description" value="Jumper, 2-pole, small symbol, bridged"/>
+    <meta name="keywords" value="Jumper SPST"/>
+    <meta name="ki_fp_filters" value="Jumper* TestPoint*2Pads* TestPoint*Bridge*"/>
+    <property name="Reference" type="string" default="JP" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="Jumper_2_Small_Bridged" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="a" start="_Middle-10x+0y" end="_Middle-5x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="b" start="_Middle+5x+0y" end="_Middle+10x+0y" edge="end" sym:connection_id="1"/>
+  </connections>
+  <render>
+    <ellipse centre="_Middle-4x+0y" rx="1" ry="1"/>
+    <ellipse centre="_Middle+4x+0y" rx="1" ry="1"/>
+    <path start="_Middle+0x+0y" data="M-3,-1 C-1.3430789261578528,-2.656692913385828 1.3430789261578533,-2.656692913385827 3.0000000000000004,-1"/>
+    <text x="_Middle+0" y="_Middle-8" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+9" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-10x+0y" end="_Middle-5x+0y" sym:connection_id="0"/>
+    <text x="_Middle-1" y="_Middle+0" value="A" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-8.5" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+5x+0y" end="_Middle+10x+0y" sym:connection_id="1"/>
+    <text x="_Middle+1" y="_Middle+0" value="B" align="CentreRight" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle+8.5" y="_Middle-2" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+  </render>
+</component>

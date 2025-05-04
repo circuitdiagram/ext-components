@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="NC4MBV"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="2333b880-649a-4635-8900-98694e158106"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="60"/>
+    <meta name="footprint" value="Connector_Audio:Jack_XLR_Neutrik_NC4MBV_Vertical"/>
+    <meta name="datasheet" value="https://www.neutrik.com/en/product/nc4mbv"/>
+    <meta name="description" value="B Series, 4 pole male XLR receptacle, grounding: separate ground contact to mating connector shell and front panel, vertical PCB mount"/>
+    <meta name="keywords" value="xlr connector neutrik"/>
+    <meta name="ki_fp_filters" value="Jack*XLR*"/>
+    <property name="Reference" type="string" default="J" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="NC4MBV" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin1" start="_Middle-30x+0y" end="_Middle-20x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="pin2" start="_Middle-30x+10y" end="_Middle-20x+10y" edge="start" sym:connection_id="1"/>
+    <connection name="pinG" start="_Middle+0x+20y" end="_Middle+0x+30y" edge="end" sym:connection_id="2"/>
+    <connection name="pin4" start="_Middle+20x+0y" end="_Middle+30x+0y" edge="end" sym:connection_id="3"/>
+    <connection name="pin3" start="_Middle+20x+10y" end="_Middle+30x+10y" edge="end" sym:connection_id="4"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-20,-0 L-18,-0"/>
+    <path start="_Middle+0x+0y" data="M-20,10 L-17.5,10"/>
+    <path start="_Middle+0x+0y" data="M-18,10 L-14,10"/>
+    <ellipse centre="_Middle-14x+0y" rx="4" ry="4"/>
+    <ellipse centre="_Middle-10x+10y" rx="4" ry="4"/>
+    <ellipse centre="_Middle+0x+0y" rx="20" ry="20"/>
+    <ellipse centre="_Middle+10x+10y" rx="4" ry="4"/>
+    <ellipse centre="_Middle+14x+0y" rx="4" ry="4"/>
+    <path start="_Middle+0x+0y" data="M17,10 L14,10"/>
+    <path start="_Middle+0x+0y" data="M20,-0 L18,-0"/>
+    <path start="_Middle+0x+0y" data="M20,10 L17.5,10"/>
+    <text x="_Middle-14" y="_Middle-7" value="1" align="CentreCentre" size="base"/>
+    <text x="_Middle-8" y="_Middle+3" value="2" align="CentreCentre" size="base"/>
+    <text x="_Middle+8" y="_Middle+3" value="3" align="CentreCentre" size="base"/>
+    <text x="_Middle+14" y="_Middle-7" value="4" align="CentreCentre" size="base"/>
+    <text x="_Middle+0" y="_Middle-35" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle-25" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-30x+0y" end="_Middle-20x+0y" sym:connection_id="0"/>
+    <text x="_Middle-26" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-30x+10y" end="_Middle-20x+10y" sym:connection_id="1"/>
+    <text x="_Middle-26" y="_Middle+8" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+0x+20y" end="_Middle+0x+30y" sym:connection_id="2"/>
+    <text x="_Middle-2" y="_Middle+26" value="G" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+20x+0y" end="_Middle+30x+0y" sym:connection_id="3"/>
+    <text x="_Middle+26" y="_Middle-2" value="4" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle+20x+10y" end="_Middle+30x+10y" sym:connection_id="4"/>
+    <text x="_Middle+26" y="_Middle+8" value="3" align="BottomCentre" size="xxs" sym:connection_id="4" sym:connection_attr="number"/>
+  </render>
+</component>

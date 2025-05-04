@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="PLT5 488"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="1866be24-8d49-4547-ad21-cf90a477dc97"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="50"/>
+    <meta name="footprint" value="OptoDevice:LaserDiode_TO56-3"/>
+    <meta name="datasheet" value="https://look.ams-osram.com/m/451ee5087173918f/original/PLT5-488.pdf"/>
+    <meta name="description" value="60mW, Cyan Laser Diode (488nm), TO-56"/>
+    <meta name="keywords" value="opto laserdiode"/>
+    <meta name="ki_fp_filters" value="LaserDiode*TO56*"/>
+    <property name="Reference" type="string" default="LD" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="PLT5_488" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin2" start="_Middle-20x+0y" end="_Middle-10x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="pin1" start="_Middle+20x-10y" end="_Middle+30x-10y" edge="end" sym:connection_id="1"/>
+    <connection name="pin3" start="_Middle+20x+10y" end="_Middle+30x+10y" edge="end" sym:connection_id="2"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-10,-0 L-6,-0"/>
+    <rect location="_Middle-9x-24y" width="26" height="41"/>
+    <path start="_Middle+0x+0y" data="M-6,-21 L0,-15"/>
+    <path start="_Middle+0x+0y" data="M-6,-19 L0,-17"/>
+    <path start="_Middle+0x+0y" data="M-6,-17 L0,-19"/>
+    <path start="_Middle+0x+0y" data="M-6,-15 L0,-21"/>
+    <ellipse centre="_Middle-6x+0y" rx="1" ry="1" fill="true"/>
+    <path start="_Middle+0x+0y" data="M-4,-21 L-2,-15"/>
+    <path start="_Middle+0x+0y" data="M-3,-18 L-3,-22"/>
+    <path start="_Middle+0x+0y" data="M-3,-18 L-3,-14"/>
+    <path start="_Middle+0x+0y" data="M-2.5,-8 L-2.5,-5 L-1,-5"/>
+    <path start="_Middle+0x+0y" data="M-2.5,5.5 L-2.5,8.5"/>
+    <path start="_Middle+0x+0y" data="M-2,5.5 C-1.6051890868747534,5.526371493281195 -1.2984251968503921,5.85430932184259 -1.2984251968503921,6.25 C-1.2984251968503921,6.64569067815741 -1.6051890868747534,6.973628506718805 -1.9999999999999998,7"/>
+    <path start="_Middle+0x+0y" data="M-2,-21 L-4,-15"/>
+    <path start="_Middle+0x+0y" data="M0,-8 C0.8259630295369731,-7.996524074964948 1.4937007874017763,-7.3259703434244745 1.4937007874017763,-6.5 C1.4937007874017763,-5.6740296565755255 0.8259630295369731,-5.003475925035052 0.0000000000000000719910242530375,-5"/>
+    <path start="_Middle+0x+0y" data="M0,5.5 C0.8259630295368998,5.503475925035155 1.4937007874015897,6.174029656575598 1.4937007874015897,7 C1.4937007874015897,7.825970343424402 0.8259630295368998,8.496524074964846 -0.0000000000000000026020852139652106,8.5"/>
+    <path start="_Middle+0x+0y" data="M0,-8 L0,-5"/>
+    <path start="_Middle+0x+0y" data="M0,5.5 L0,8.5"/>
+    <path start="_Middle+0x+0y" data="M3,-18 L-7,-18"/>
+    <path start="_Middle+0x+0y" data="M4,-16 L10,-22 L10,-20 L10,-22 L8,-22"/>
+    <path start="_Middle+0x+0y" data="M4,-15 L4,-5"/>
+    <path start="_Middle+0x+0y" data="M4,3 L6,3"/>
+    <path start="_Middle+0x+0y" data="M4,5 L4,15"/>
+    <path start="_Middle+0x+0y" data="M9,-16 L15,-22 L15,-20"/>
+    <path start="_Middle+0x+0y" data="M10,-3 L4,3 L4,1"/>
+    <path start="_Middle+0x+0y" data="M15,-22 L13,-22"/>
+    <path start="_Middle+0x+0y" data="M15,-3 L9,3 L9,1 L9,3 L11,3"/>
+    <path start="_Middle+0x+0y" data="M20,-10 L-6,-10 L-6,10 L20,10"/>
+    <path start="_Middle+0x+0y" data="M14,-5 L14,-15 L4,-10 L14,-5"/>
+    <path start="_Middle+0x+0y" data="M14,15 L14,5 L4,10 L14,15"/>
+    <text x="_Middle+0" y="_Middle-27.500000000000004" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+22.5" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-20x+0y" end="_Middle-10x+0y" sym:connection_id="0"/>
+    <text x="_Middle-16" y="_Middle-2" value="2" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+20x-10y" end="_Middle+30x-10y" sym:connection_id="1"/>
+    <text x="_Middle+26" y="_Middle-12" value="1" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+20x+10y" end="_Middle+30x+10y" sym:connection_id="2"/>
+    <text x="_Middle+26" y="_Middle+8" value="3" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+  </render>
+</component>

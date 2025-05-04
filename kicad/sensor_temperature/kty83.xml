@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="KTY83"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="eac30962-9a42-4761-a078-bea0613e2ec9"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="30"/>
+    <meta name="footprint" value="Diode_THT:D_DO-34_SOD68_P7.62mm_Horizontal"/>
+    <meta name="datasheet" value="https://www.nxp.com/docs/en/data-sheet/KTY83_SER.pdf"/>
+    <meta name="description" value="KTY83 series silicon temperature sensors, polarized, SOD68"/>
+    <meta name="keywords" value="silicon temperature sensors diode"/>
+    <meta name="ki_fp_filters" value="*DO?34*SOD68*"/>
+    <property name="Reference" type="string" default="TH" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="KTY83" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="k" start="_Middle-15x+0y" end="_Middle-5x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="a" start="_Middle+5x+0y" end="_Middle+15x+0y" edge="end" sym:connection_id="1"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-10.3,4.7 C-10.08753611870771,4.745867504343474 -9.90736314888121,4.885667354670229 -9.810157460973059,5.080078730486529 C-9.712951773064908,5.274490106302829 -9.709215674699404,5.502508392360083 -9.799999999999999,5.7"/>
+    <path start="_Middle+0x+0y" data="M-9.799999999999999,3.2 C-9.799961973257288,2.6477310021286673 -9.352268997871333,2.2000380267427113 -8.799999999999999,2.1999999999999997"/>
+    <path start="_Middle+0x+0y" data="M-8.799999999999999,2.1999999999999997 C-8.24773100212867,2.200038026742721 -7.800038026742721,2.6477310021286717 -7.800000000000001,3.2000000000000006"/>
+    <path start="_Middle+0x+0y" data="M-8.799999999999999,4.2 C-9.35226899787133,4.199961973257281 -9.79996197325728,3.7522689978713295 -9.799999999999999,3.2"/>
+    <path start="_Middle+0x+0y" data="M-8.799999999999999,6.7 C-9.352268997871331,6.699961973257286 -9.799961973257286,6.252268997871331 -9.799999999999999,5.7"/>
+    <path start="_Middle+0x+0y" data="M-7.800000000000001,5.7 C-7.800038026742719,6.2522689978713295 -8.24773100212867,6.699961973257282 -8.8,6.7"/>
+    <path start="_Middle+0x+0y" data="M-6.300000000000001,3.2 C-6.817079325185174,4.053550891894228 -7.836907459766442,4.461482145726736 -8.799999999999999,4.199999999999999"/>
+    <path start="_Middle+0x+0y" data="M-7.800000000000001,5.6000000000000005 L-7.800000000000001,3.2"/>
+    <path start="_Middle+0x+0y" data="M-5,-5 L-5,5"/>
+    <path start="_Middle+0x+0y" data="M5,-0 L-5,-0"/>
+    <path start="_Middle+0x+0y" data="M5,5 L5,-5 L-5,-0 L5,5"/>
+    <text x="_Middle+0" y="_Middle-10" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+12.5" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-15x+0y" end="_Middle-5x+0y" sym:connection_id="0"/>
+    <text x="_Middle-1" y="_Middle+0" value="K" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-11" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+5x+0y" end="_Middle+15x+0y" sym:connection_id="1"/>
+    <text x="_Middle+1" y="_Middle+0" value="A" align="CentreRight" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle+11" y="_Middle-2" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+  </render>
+</component>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="SW NKK GW12LJPCF"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="3ff11761-d8c8-4ae5-9f47-a38b01904fba"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="40"/>
+    <meta name="footprint" value="Button_Switch_THT:SW_NKK_GW12LJP"/>
+    <meta name="datasheet" value="http://www.nkkswitches.com/pdf/gwillum.pdf"/>
+    <meta name="description" value="Switch, single pole double throw, illuminated paddle, red and green LEDs"/>
+    <meta name="keywords" value="switch single-pole double-throw spdt ON-ON illuminated red green"/>
+    <meta name="ki_fp_filters" value="SW*NKK*GW12LJP*"/>
+    <property name="Reference" type="string" default="SW" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="SW_NKK_GW12LJPCF" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="kr" start="_Middle-20x+0y" end="_Middle-10x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="kg" start="_Middle-20x+20y" end="_Middle-10x+20y" edge="start" sym:connection_id="1"/>
+    <connection name="a" start="_Middle+10x+10y" end="_Middle+20x+10y" edge="end" sym:connection_id="2"/>
+    <connection name="b" start="_Middle-20x-20y" end="_Middle-10x-20y" edge="start" sym:connection_id="3"/>
+    <connection name="a" start="_Middle+10x-30y" end="_Middle+20x-30y" edge="end" sym:connection_id="4"/>
+    <connection name="c" start="_Middle+10x-10y" end="_Middle+20x-10y" edge="end" sym:connection_id="5"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-10,-0 L10,-0"/>
+    <path start="_Middle+0x+0y" data="M-10,20 L10,20"/>
+    <ellipse centre="_Middle-8x-20y" rx="2" ry="2"/>
+    <ellipse centre="_Middle+8x-10y" rx="2" ry="2"/>
+    <text x="_Middle+3.5" y="_Middle+8.5" value="RED" align="CentreCentre" size="base"/>
+    <text x="_Middle+4.5" y="_Middle+28.5" value="GREEN" align="CentreCentre" size="base"/>
+    <path start="_Middle+0x+0y" data="M-7,4.5 L-11,8.5 L-8.5,8.5 L-11,8.5 L-11,6"/>
+    <path start="_Middle+0x+0y" data="M-7,24.5 L-11,28.5 L-8.5,28.5 L-11,28.5 L-11,26"/>
+    <path start="_Middle+0x+0y" data="M-6,-21 L6.2,-28.8"/>
+    <path start="_Middle+0x+0y" data="M-5,5 L-5,-5"/>
+    <path start="_Middle+0x+0y" data="M-5,25 L-5,15"/>
+    <path start="_Middle+0x+0y" data="M-2,4.5 L-6,8.5 L-3.5,8.5 L-6,8.5 L-6,6"/>
+    <path start="_Middle+0x+0y" data="M-2,24.5 L-6,28.5 L-3.5,28.5 L-6,28.5 L-6,26"/>
+    <ellipse centre="_Middle+8x-30y" rx="2" ry="2"/>
+    <path start="_Middle+0x+0y" data="M10,-0 L10,20"/>
+    <ellipse centre="_Middle+10x+10y" rx="1" ry="1" fill="true"/>
+    <rect location="_Middle-12.5x-35y" width="25" height="67.5"/>
+    <path start="_Middle+0x+0y" data="M5,5 L5,-5 L-5,-0 L5,5" fill="true"/>
+    <path start="_Middle+0x+0y" data="M5,25 L5,15 L-5,20 L5,25" fill="true"/>
+    <text x="_Middle+0" y="_Middle-40" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+40" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-20x+0y" end="_Middle-10x+0y" sym:connection_id="0"/>
+    <text x="_Middle-6" y="_Middle+0" value="KR" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-16" y="_Middle-2" value="4" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-20x+20y" end="_Middle-10x+20y" sym:connection_id="1"/>
+    <text x="_Middle-6" y="_Middle+20" value="KG" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-16" y="_Middle+18" value="6" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+10x+10y" end="_Middle+20x+10y" sym:connection_id="2"/>
+    <text x="_Middle+6" y="_Middle+10" value="A" align="CentreRight" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle+16" y="_Middle+8" value="5" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle-20x-20y" end="_Middle-10x-20y" sym:connection_id="3"/>
+    <text x="_Middle-6" y="_Middle-20" value="B" align="CentreLeft" size="xxs" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle-16" y="_Middle-22" value="2" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle+10x-30y" end="_Middle+20x-30y" sym:connection_id="4"/>
+    <text x="_Middle+6" y="_Middle-30" value="A" align="CentreRight" size="xxs" sym:connection_id="4" sym:connection_attr="name"/>
+    <text x="_Middle+16" y="_Middle-32" value="1" align="BottomCentre" size="xxs" sym:connection_id="4" sym:connection_attr="number"/>
+    <line start="_Middle+10x-10y" end="_Middle+20x-10y" sym:connection_id="5"/>
+    <text x="_Middle+6" y="_Middle-10" value="C" align="CentreRight" size="xxs" sym:connection_id="5" sym:connection_attr="name"/>
+    <text x="_Middle+16" y="_Middle-12" value="3" align="BottomCentre" size="xxs" sym:connection_id="5" sym:connection_attr="number"/>
+  </render>
+</component>

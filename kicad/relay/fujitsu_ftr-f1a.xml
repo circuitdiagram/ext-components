@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Fujitsu FTR-F1A"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="9f63266d-b419-4ee3-9030-82d1435ec344"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="60"/>
+    <meta name="footprint" value="Relay_THT:Relay_DPST_Fujitsu_FTR-F1A"/>
+    <meta name="datasheet" value="https://www.fcl.fujitsu.com/downloads/MICRO/fcai/relays/ftr-f1.pdf"/>
+    <meta name="description" value="Fujitsu Low Profile Power Relay"/>
+    <meta name="keywords" value="double pole single throw relay"/>
+    <meta name="ki_fp_filters" value="*Relay*DPST*Fujitsu*FTR*F1A*"/>
+    <property name="Reference" type="string" default="K" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="Fujitsu_FTR-F1A" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin5" start="_Middle-30x-20y" end="_Middle-20x-20y" edge="start" sym:connection_id="0"/>
+    <connection name="pin7" start="_Middle-30x+0y" end="_Middle-20x+0y" edge="start" sym:connection_id="1"/>
+    <connection name="pin2" start="_Middle-30x+20y" end="_Middle-20x+20y" edge="start" sym:connection_id="2"/>
+    <connection name="pin4" start="_Middle+20x-20y" end="_Middle+30x-20y" edge="end" sym:connection_id="3"/>
+    <connection name="pin8" start="_Middle+20x+0y" end="_Middle+30x+0y" edge="end" sym:connection_id="4"/>
+    <connection name="pin1" start="_Middle+20x+20y" end="_Middle+30x+20y" edge="end" sym:connection_id="5"/>
+  </connections>
+  <render>
+    <rect location="_Middle-5x-30y" width="10" height="20"/>
+    <path start="_Middle+0x+0y" data="M-5,-30 L5,-10"/>
+    <path start="_Middle+0x+0y" data="M-20,-20 L-5,-20 L-6,-20"/>
+    <path start="_Middle+0x+0y" data="M-10,-0 L-20,-0"/>
+    <path start="_Middle+0x+0y" data="M-10,-0 L15,-7"/>
+    <path start="_Middle+0x+0y" data="M-10,20 L-20,20"/>
+    <path start="_Middle+0x+0y" data="M-10,20 L15,13"/>
+    <path start="_Middle+0x+0y" data="M0,-7.5 L0,-5"/>
+    <path start="_Middle+0x+0y" data="M0,-2.5 L0,-0"/>
+    <path start="_Middle+0x+0y" data="M0,2.5 L0,5"/>
+    <path start="_Middle+0x+0y" data="M0,7.5 L0,10"/>
+    <path start="_Middle+0x+0y" data="M0,12.5 L0,15"/>
+    <rect location="_Middle-20x-35y" width="40" height="70"/>
+    <path start="_Middle+0x+0y" data="M20,-20 L5,-20"/>
+    <path start="_Middle+0x+0y" data="M20,-0 L10,-0 L12.5,-2.5 L15,-0"/>
+    <path start="_Middle+0x+0y" data="M20,20 L10,20 L12.5,17.5 L15,20"/>
+    <text x="_Middle+0" y="_Middle-50" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle-40" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-30x-20y" end="_Middle-20x-20y" sym:connection_id="0"/>
+    <text x="_Middle-26" y="_Middle-22" value="5" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-30x+0y" end="_Middle-20x+0y" sym:connection_id="1"/>
+    <text x="_Middle-26" y="_Middle-2" value="7" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle-30x+20y" end="_Middle-20x+20y" sym:connection_id="2"/>
+    <text x="_Middle-26" y="_Middle+18" value="2" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+20x-20y" end="_Middle+30x-20y" sym:connection_id="3"/>
+    <text x="_Middle+26" y="_Middle-22" value="4" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle+20x+0y" end="_Middle+30x+0y" sym:connection_id="4"/>
+    <text x="_Middle+26" y="_Middle-2" value="8" align="BottomCentre" size="xxs" sym:connection_id="4" sym:connection_attr="number"/>
+    <line start="_Middle+20x+20y" end="_Middle+30x+20y" sym:connection_id="5"/>
+    <text x="_Middle+26" y="_Middle+18" value="1" align="BottomCentre" size="xxs" sym:connection_id="5" sym:connection_attr="number"/>
+  </render>
+</component>

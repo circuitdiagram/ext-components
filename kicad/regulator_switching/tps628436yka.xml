@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="TPS628436YKA"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="fb29a160-2f89-4135-89be-2d776864beda"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="80"/>
+    <meta name="footprint" value="Package_BGA:Texas_DSBGA-6_0.757x1.01mm_Layout2x3_P0.35mm"/>
+    <meta name="datasheet" value="https://www.ti.com/lit/ds/symlink/tps62843.pdf"/>
+    <meta name="description" value="600mA Step-Down Converter with DCS-Control, ultra-low Iq, 1.8-5.5 Vin, 0.4-0.8 Vout, WLCSP-6"/>
+    <meta name="keywords" value="TI buck regulator"/>
+    <meta name="ki_fp_filters" value="Texas*0.757x1.01mm*Layout2x3*P0.35mm*"/>
+    <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="TPS628436YKA" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="vin" start="_Middle-40x-30y" end="_Middle-30x-30y" edge="start" sym:connection_id="0"/>
+    <connection name="en" start="_Middle-40x-20y" end="_Middle-30x-20y" edge="start" sym:connection_id="1"/>
+    <connection name="vset" start="_Middle-40x+0y" end="_Middle-30x+0y" edge="start" sym:connection_id="2"/>
+    <connection name="gnd" start="_Middle+0x+30y" end="_Middle+0x+40y" edge="end" sym:connection_id="3"/>
+    <connection name="sw" start="_Middle+30x-30y" end="_Middle+40x-30y" edge="end" sym:connection_id="4"/>
+    <connection name="vos" start="_Middle+30x-20y" end="_Middle+40x-20y" edge="end" sym:connection_id="5"/>
+  </connections>
+  <render>
+    <rect location="_Middle-30x-40y" width="60" height="70"/>
+    <text x="_Middle-30" y="_Middle-45" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle-5" y="_Middle-45" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle-40x-30y" end="_Middle-30x-30y" sym:connection_id="0"/>
+    <text x="_Middle-26" y="_Middle-30" value="VIN" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-36" y="_Middle-32" value="B1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-40x-20y" end="_Middle-30x-20y" sym:connection_id="1"/>
+    <text x="_Middle-26" y="_Middle-20" value="EN" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-36" y="_Middle-22" value="C2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle-40x+0y" end="_Middle-30x+0y" sym:connection_id="2"/>
+    <text x="_Middle-26" y="_Middle+0" value="VSET" align="CentreLeft" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-36" y="_Middle-2" value="C1" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+0x+30y" end="_Middle+0x+40y" sym:connection_id="3"/>
+    <text x="_Middle+0" y="_Middle+26" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+36" value="A1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle+30x-30y" end="_Middle+40x-30y" sym:connection_id="4"/>
+    <text x="_Middle+26" y="_Middle-30" value="SW" align="CentreRight" size="xxs" sym:connection_id="4" sym:connection_attr="name"/>
+    <text x="_Middle+36" y="_Middle-32" value="B2" align="BottomCentre" size="xxs" sym:connection_id="4" sym:connection_attr="number"/>
+    <line start="_Middle+30x-20y" end="_Middle+40x-20y" sym:connection_id="5"/>
+    <text x="_Middle+26" y="_Middle-20" value="VOS" align="CentreRight" size="xxs" sym:connection_id="5" sym:connection_attr="name"/>
+    <text x="_Middle+36" y="_Middle-22" value="A2" align="BottomCentre" size="xxs" sym:connection_id="5" sym:connection_attr="number"/>
+  </render>
+</component>

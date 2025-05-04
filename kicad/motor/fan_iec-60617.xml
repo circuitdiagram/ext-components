@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Fan IEC-60617"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="3f914286-9cdf-4d5f-af09-a21ffdb0d74e"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="30"/>
+    <meta name="description" value="Fan according to IEC 60617"/>
+    <meta name="keywords" value="fan motor iec 60617"/>
+    <meta name="ki_fp_filters" value="PinHeader*P2.54mm* TerminalBlock*"/>
+    <property name="Reference" type="string" default="M" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="Fan_IEC-60617" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pos" start="_Middle+0x-30y" end="_Middle+0x-20y" edge="start" sym:connection_id="0"/>
+    <connection name="neg" start="_Middle+0x+10y" end="_Middle+0x+20y" edge="end" sym:connection_id="1"/>
+  </connections>
+  <render>
+    <rect location="_Middle-13x-17y" width="26" height="26"/>
+    <path start="_Middle+0x+0y" data="M-3,-1 C-2.204338249319168,-1.795642951434575 -1.7573385518590996,-2.874777654121636 -1.7573385518590996,-4 C-1.7573385518590996,-5.125222345878364 -2.204338249319168,-6.204357048565425 -3.0000000000000004,-7"/>
+    <path start="_Middle+0x+0y" data="M-3,-7 L3,-1"/>
+    <path start="_Middle+0x+0y" data="M-3,-1 L3,-7"/>
+    <path start="_Middle+0x+0y" data="M0,-18 L0,-20"/>
+    <path start="_Middle+0x+0y" data="M0,-16.8 L0,-18.2"/>
+    <path start="_Middle+0x+0y" data="M0,8.799999999999999 L0,10.4"/>
+    <path start="_Middle+0x+0y" data="M0,20 L0,18"/>
+    <path start="_Middle+0x+0y" data="M3,-7 C2.204338249319168,-6.204357048565425 1.7573385518590996,-5.125222345878364 1.7573385518590996,-4.000000000000001 C1.7573385518590996,-2.8747776541216368 2.204338249319167,-1.7956429514345755 2.999999999999999,-1.0000000000000009"/>
+    <text x="_Middle+15" y="_Middle-15" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+15" y="_Middle-10" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle+0x-30y" end="_Middle+0x-20y" sym:connection_id="0"/>
+    <text x="_Middle+0" y="_Middle-16" value="+" align="CentreRight" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle-26" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+0x+10y" end="_Middle+0x+20y" sym:connection_id="1"/>
+    <text x="_Middle+0" y="_Middle+6" value="-" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+16" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+  </render>
+</component>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="ADCMP354"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="4de6d256-cd01-4a54-b56e-38384848586b"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="70"/>
+    <meta name="footprint" value="Package_TO_SOT_SMD:Analog_KS-4"/>
+    <meta name="datasheet" value="https://www.analog.com/media/en/technical-documentation/data-sheets/ADCMP350_354_356.pdf"/>
+    <meta name="description" value="Single-input comparator, internal 0.6V reference, Active-High Open-Drain output, KS-4"/>
+    <meta name="keywords" value="cmp collector"/>
+    <meta name="ki_fp_filters" value="Analog*KS?4*"/>
+    <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="ADCMP354" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="vin" start="_Middle-20x+0y" end="_Middle-10x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="vcc" start="_Middle+0x-30y" end="_Middle+0x-15y" edge="start" sym:connection_id="1"/>
+    <connection name="gnd" start="_Middle+0x+15y" end="_Middle+0x+30y" edge="end" sym:connection_id="2"/>
+    <connection name="pin3" start="_Middle+30x+0y" end="_Middle+50x+0y" edge="end" sym:connection_id="3"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-10,-20 L30,-0 L-10,20 L-10,-20"/>
+    <path start="_Middle+0x+0y" data="M4,-0 L2,-0"/>
+    <path start="_Middle+0x+0y" data="M4,5 L6.5,5 L11.5,-5 L14,-5"/>
+    <path start="_Middle+0x+0y" data="M7,-0 L5,-0"/>
+    <path start="_Middle+0x+0y" data="M8,-0 L10,-0"/>
+    <path start="_Middle+0x+0y" data="M11,-0 L13,-0"/>
+    <path start="_Middle+0x+0y" data="M14,-0 L16,-0"/>
+    <path start="_Middle+0x+0y" data="M19,2 L21,2 L19,-0 L21,-2 L23,-0 L21,2 L23,2"/>
+    <text x="_Middle+12.5" y="_Middle-20" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+12.5" y="_Middle+20" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle-20x+0y" end="_Middle-10x+0y" sym:connection_id="0"/>
+    <text x="_Middle-6" y="_Middle+0" value="VIN" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-16" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+0x-30y" end="_Middle+0x-15y" sym:connection_id="1"/>
+    <text x="_Middle+0" y="_Middle-11" value="VCC" align="CentreRight" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle-23.5" value="4" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+0x+15y" end="_Middle+0x+30y" sym:connection_id="2"/>
+    <text x="_Middle+0" y="_Middle+11" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+23.5" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+30x+0y" end="_Middle+50x+0y" sym:connection_id="3"/>
+    <text x="_Middle+41" y="_Middle-2" value="3" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+  </render>
+</component>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="TDA7052A"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="77723be4-e596-46af-a813-07f5d8e4f07b"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="60"/>
+    <meta name="datasheet" value="http://www.nxp.com/docs/en/data-sheet/TDA7052A_AT.pdf"/>
+    <meta name="description" value="1W BTL mono audio amplifier with DC volume control, DIP-8/SOIC-8"/>
+    <meta name="keywords" value="audio amplifier"/>
+    <meta name="ki_fp_filters" value="SOIC*7.5x9mm*P1.27mm* DIP*W7.62mm*"/>
+    <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="TDA7052A" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pos" start="_Middle-30x-10y" end="_Middle-20x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="v" start="_Middle-30x+10y" end="_Middle-20x+10y" edge="start" sym:connection_id="1"/>
+    <connection name="vp" start="_Middle-10x-30y" end="_Middle-10x-15y" edge="start" sym:connection_id="2"/>
+    <connection name="gnd" start="_Middle-10x+15y" end="_Middle-10x+30y" edge="end" sym:connection_id="3"/>
+    <connection name="nc" start="_Middle+0x-10y" end="_Middle+0x+0y" edge="start" sym:connection_id="4"/>
+    <connection name="gnd" start="_Middle+0x+10y" end="_Middle+0x+30y" edge="end" sym:connection_id="5"/>
+    <connection name="pin5" start="_Middle+10x-10y" end="_Middle+30x-10y" edge="end" sym:connection_id="6"/>
+    <connection name="pin8" start="_Middle+10x+10y" end="_Middle+30x+10y" edge="end" sym:connection_id="7"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M5,12.5 L10,12.5"/>
+    <path start="_Middle+0x+0y" data="M10,-10 L10,-5"/>
+    <path start="_Middle+0x+0y" data="M10,5 L10,10"/>
+    <path start="_Middle+0x+0y" data="M20,-0 L-20,-20 L-20,20 L20,-0"/>
+    <path start="_Middle+0x+0y" data="M7,-15 L7,-11"/>
+    <path start="_Middle+0x+0y" data="M9,-13 L5,-13"/>
+    <text x="_Middle+20" y="_Middle-30" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+20" y="_Middle-20" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-30x-10y" end="_Middle-20x-10y" sym:connection_id="0"/>
+    <text x="_Middle-16" y="_Middle-10" value="+" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-26" y="_Middle-12" value="2" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-30x+10y" end="_Middle-20x+10y" sym:connection_id="1"/>
+    <text x="_Middle-16" y="_Middle+10" value="V" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-26" y="_Middle+8" value="4" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle-10x-30y" end="_Middle-10x-15y" sym:connection_id="2"/>
+    <text x="_Middle-10" y="_Middle-11" value="VP" align="CentreRight" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-12" y="_Middle-23.5" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle-10x+15y" end="_Middle-10x+30y" sym:connection_id="3"/>
+    <text x="_Middle-10" y="_Middle+11" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle-12" y="_Middle+23.5" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle+0x-10y" end="_Middle+0x+0y" sym:connection_id="4"/>
+    <text x="_Middle+0" y="_Middle+4" value="NC" align="CentreRight" size="xxs" rotate="270" sym:connection_id="4" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle-6" value="7" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="4" sym:connection_attr="number"/>
+    <line start="_Middle+0x+10y" end="_Middle+0x+30y" sym:connection_id="5"/>
+    <text x="_Middle+0" y="_Middle+6" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="5" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+21" value="6" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="5" sym:connection_attr="number"/>
+    <line start="_Middle+10x-10y" end="_Middle+30x-10y" sym:connection_id="6"/>
+    <text x="_Middle+21" y="_Middle-12" value="5" align="BottomCentre" size="xxs" sym:connection_id="6" sym:connection_attr="number"/>
+    <line start="_Middle+10x+10y" end="_Middle+30x+10y" sym:connection_id="7"/>
+    <text x="_Middle+21" y="_Middle+8" value="8" align="BottomCentre" size="xxs" sym:connection_id="7" sym:connection_attr="number"/>
+  </render>
+</component>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="ADR1399KHZ"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="949a1a38-f68f-4968-919d-976ab8aabf7a"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="40"/>
+    <meta name="footprint" value="Package_TO_SOT_THT:Analog_TO-46-4_ThermalShield"/>
+    <meta name="datasheet" value="https://www.analog.com/media/en/technical-documentation/data-sheets/adr1399.pdf"/>
+    <meta name="description" value="Oven-Compensated, Buried Zener, 7.05 V Voltage Reference, TO-46-4"/>
+    <meta name="keywords" value="Zener diode device voltage reference"/>
+    <meta name="ki_fp_filters" value="Analog*TO?46*"/>
+    <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="ADR1399KHZ" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin3" start="_Middle-10x-20y" end="_Middle-10x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="pin4" start="_Middle-10x+10y" end="_Middle-10x+20y" edge="end" sym:connection_id="1"/>
+    <connection name="pin1" start="_Middle+10x-20y" end="_Middle+10x-10y" edge="start" sym:connection_id="2"/>
+    <connection name="pin2" start="_Middle+10x+10y" end="_Middle+10x+20y" edge="end" sym:connection_id="3"/>
+  </connections>
+  <render>
+    <text x="_Middle-5" y="_Middle-7.5" value="+" align="CentreCentre" size="base"/>
+    <rect location="_Middle-15x-10y" width="30" height="20"/>
+    <path start="_Middle+0x+0y" data="M-10,10 L-10,6 L-8,6 L-8,4 L-12,4 L-12,2 L-8,2 L-8,-0 L-12,-0 L-12,-2 L-8,-2 L-8,-4 L-12,-4 L-12,-6 L-10,-6 L-10,-10"/>
+    <path start="_Middle+0x+0y" data="M7,-3 L13,-3 L13,-2"/>
+    <path start="_Middle+0x+0y" data="M7,3 L13,3 L10,-3 L7,3"/>
+    <path start="_Middle+0x+0y" data="M10,-10 L10,10"/>
+    <text x="_Middle-5" y="_Middle+7.5" value="-" align="CentreCentre" size="base"/>
+    <text x="_Middle+15" y="_Middle-5" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+15" y="_Middle+5" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle-10x-20y" end="_Middle-10x-10y" sym:connection_id="0"/>
+    <text x="_Middle-12" y="_Middle-16" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-10x+10y" end="_Middle-10x+20y" sym:connection_id="1"/>
+    <text x="_Middle-12" y="_Middle+16" value="4" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+10x-20y" end="_Middle+10x-10y" sym:connection_id="2"/>
+    <text x="_Middle+8" y="_Middle-16" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+10x+10y" end="_Middle+10x+20y" sym:connection_id="3"/>
+    <text x="_Middle+8" y="_Middle+16" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="number"/>
+  </render>
+</component>

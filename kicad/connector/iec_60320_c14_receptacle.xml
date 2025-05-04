@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="IEC 60320 C14 Receptacle"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="29a0e34a-6284-455a-a3b7-6a2b64e76ae0"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="60"/>
+    <meta name="description" value="C14 Plug, 10A max"/>
+    <meta name="keywords" value="Plug C14 IEC320"/>
+    <meta name="ki_fp_filters" value="C*14*Receptacle*"/>
+    <property name="Reference" type="string" default="J" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="IEC_60320_C14_Receptacle" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="l" start="_Middle+25x-20y" end="_Middle+35x-20y" edge="end" sym:connection_id="0"/>
+    <connection name="pe" start="_Middle+25x+0y" end="_Middle+35x+0y" edge="end" sym:connection_id="1"/>
+    <connection name="n" start="_Middle+25x+20y" end="_Middle+35x+20y" edge="end" sym:connection_id="2"/>
+  </connections>
+  <render>
+    <rect location="_Middle-25x-30y" width="50" height="60"/>
+    <path start="_Middle+0x+0y" data="M-19,25 L-21,23 L-21,-23 L-19,-25 L1,-25 L11,-15 L11,15 L1,25 L-19,25"/>
+    <rect location="_Middle-15.5x+13y" width="10" height="4"/>
+    <rect location="_Middle-15x-17y" width="10" height="4"/>
+    <rect location="_Middle-2x-2y" width="10" height="4"/>
+    <text x="_Middle-23" y="_Middle-34" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+36" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle+25x-20y" end="_Middle+35x-20y" sym:connection_id="0"/>
+    <text x="_Middle+21" y="_Middle-20" value="L" align="CentreRight" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle+31" y="_Middle-22" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+25x+0y" end="_Middle+35x+0y" sym:connection_id="1"/>
+    <text x="_Middle+21" y="_Middle+0" value="PE" align="CentreRight" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle+31" y="_Middle-2" value="3" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+25x+20y" end="_Middle+35x+20y" sym:connection_id="2"/>
+    <text x="_Middle+21" y="_Middle+20" value="N" align="CentreRight" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle+31" y="_Middle+18" value="2" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+  </render>
+</component>

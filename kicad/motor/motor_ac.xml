@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Motor AC"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="8fc5e10f-9d06-445d-98e4-03418f843388"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="20"/>
+    <meta name="description" value="AC Motor"/>
+    <meta name="keywords" value="AC Motor"/>
+    <meta name="ki_fp_filters" value="PinHeader*P2.54mm* TerminalBlock*"/>
+    <property name="Reference" type="string" default="M" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="Motor_AC" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin1" start="_Middle+0x-20y" end="_Middle+0x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="pin2" start="_Middle+0x+20y" end="_Middle+0x+30y" edge="end" sym:connection_id="1"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-4,8 L-4,-4 L0,4 L4,-4 L4,8"/>
+    <path start="_Middle+0x+0y" data="M0,12 C-0.5633895216375575,13.332619412997182 -1.9673557294754227,14.104784543775093 -3.394488188976378,13.866929133858267 C-4.821620648477333,13.62907372394144 -5.899264856720315,12.443306857150056 -6,11"/>
+    <path start="_Middle+0x+0y" data="M0,12 C0.5283771511632556,10.622656222549418 1.9531887823517078,9.807486843618593 3.408331560017301,10.050010639896191 C4.863474337682894,10.29253443617379 5.946889865910622,11.525741675007312 6,13"/>
+    <path start="_Middle+0x+0y" data="M0,-8 L0,-10"/>
+    <path start="_Middle+0x+0y" data="M0,-6.800000000000001 L0,-8.200000000000001"/>
+    <ellipse centre="_Middle+0x+6y" rx="12.8" ry="12.8"/>
+    <path start="_Middle+0x+0y" data="M0,18.8 L0,20.400000000000002"/>
+    <path start="_Middle+0x+0y" data="M0,30 L0,28"/>
+    <text x="_Middle+10" y="_Middle-10" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+10" y="_Middle+20" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle+0x-20y" end="_Middle+0x-10y" sym:connection_id="0"/>
+    <text x="_Middle-2" y="_Middle-16" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+0x+20y" end="_Middle+0x+30y" sym:connection_id="1"/>
+    <text x="_Middle-2" y="_Middle+26" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+  </render>
+</component>

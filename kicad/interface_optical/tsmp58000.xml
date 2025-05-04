@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="TSMP58000"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="76e44918-4896-490f-b3df-f85aac999927"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="90"/>
+    <meta name="footprint" value="OptoDevice:Vishay_MINICAST-3Pin"/>
+    <meta name="datasheet" value="http://www.vishay.com/docs/82485/tsmp58000.pdf"/>
+    <meta name="description" value="Photo Module (Amplify&amp;Condition) for PCM Remote Control Systems"/>
+    <meta name="keywords" value="opto IR receiver"/>
+    <meta name="ki_fp_filters" value="Vishay*MINICAST*"/>
+    <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="TSMP58000" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="vs" start="_Middle+30x-20y" end="_Middle+40x-20y" edge="end" sym:connection_id="0"/>
+    <connection name="out" start="_Middle+30x+0y" end="_Middle+40x+0y" edge="end" sym:connection_id="1"/>
+    <connection name="gnd" start="_Middle+30x+20y" end="_Middle+40x+20y" edge="end" sym:connection_id="2"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-40.50000000000001,7 C-42.487480657279164,5.537766912040139 -43.66102362204724,3.2174288169232788 -43.66102362204724,0.750000000000001 C-43.66102362204724,-1.717428816923277 -42.487480657279164,-4.037766912040137 -40.50000000000001,-5.499999999999998"/>
+    <path start="_Middle+0x+0y" data="M7.5,-20 L0.5,-20"/>
+    <path start="_Middle+0x+0y" data="M7.5,20 L0.5,20"/>
+    <text x="_Middle-11.5" y="_Middle+0" value="CONDITION" align="CentreCentre" size="base"/>
+    <path start="_Middle+0x+0y" data="M-34.5,-1.5 L-38,-5"/>
+    <path start="_Middle+0x+0y" data="M-34.5,-1.5 L-36.50000000000001,-1.5"/>
+    <path start="_Middle+0x+0y" data="M-34.5,-1.5 L-34.5,-3.5"/>
+    <path start="_Middle+0x+0y" data="M-34,2.5 L-37.5,-1"/>
+    <path start="_Middle+0x+0y" data="M-34,2.5 L-36,2.5"/>
+    <path start="_Middle+0x+0y" data="M-34,2.5 L-34,0.5"/>
+    <path start="_Middle+0x+0y" data="M-33,-2.5 L-26.5,-2.5 L-30,4 L-33,-2.5" fill="true"/>
+    <path start="_Middle+0x+0y" data="M-33,4 L-26.5,4"/>
+    <rect location="_Middle-24x-23.5y" width="24.5" height="47.00000000000001"/>
+    <path start="_Middle+0x+0y" data="M-24,-5.5 L-30,-5.5 L-30,7 L-24,7"/>
+    <path start="_Middle+0x+0y" data="M5,7.5 L5,15"/>
+    <path start="_Middle+0x+0y" data="M5,10 L7.5,7.5 L7.5,-0 L10,-0"/>
+    <path start="_Middle+0x+0y" data="M5,11.5 L0.5,11.5"/>
+    <path start="_Middle+0x+0y" data="M5,12.5 L7.5,15 L7.5,20 L10,20"/>
+    <path start="_Middle+0x+0y" data="M5.5,14 L6,14"/>
+    <path start="_Middle+0x+0y" data="M6.5,14 L6,14"/>
+    <path start="_Middle+0x+0y" data="M6.5,14 L6.5,13"/>
+    <path start="_Middle+0x+0y" data="M7.5,-17.5 L7.5,-20 L10,-20"/>
+    <path start="_Middle+0x+0y" data="M7.5,-0 L7.5,-5"/>
+    <rect location="_Middle+5x-17.5y" width="5" height="12.5"/>
+    <rect location="_Middle-40x-25y" width="70" height="50"/>
+    <text x="_Middle-40" y="_Middle-30" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle-40" y="_Middle+30" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle+30x-20y" end="_Middle+40x-20y" sym:connection_id="0"/>
+    <text x="_Middle+26" y="_Middle-20" value="Vs" align="CentreRight" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle+36" y="_Middle-22" value="3" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+30x+0y" end="_Middle+40x+0y" sym:connection_id="1"/>
+    <text x="_Middle+26" y="_Middle+0" value="OUT" align="CentreRight" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle+36" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+30x+20y" end="_Middle+40x+20y" sym:connection_id="2"/>
+    <text x="_Middle+26" y="_Middle+20" value="GND" align="CentreRight" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle+36" y="_Middle+18" value="2" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+  </render>
+</component>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="MGJ3T05150505MC"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="ae30a14d-40f3-4179-a8d3-543ac6a05563"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="100"/>
+    <meta name="footprint" value="Converter_DCDC:Converter_DCDC_Murata_MGJ3"/>
+    <meta name="datasheet" value="https://power.murata.com/datasheet?/data/power/ncl/kdc_mgj3.pdf"/>
+    <meta name="description" value="5.2kVDC Isolated 3W Gate Drive, 4.5-9V Vin, +15V/-5V or +15V/-10V or +20V/-5V Vout"/>
+    <meta name="keywords" value="DC/DC converter"/>
+    <meta name="ki_fp_filters" value="Converter*DCDC*Murata*MGJ3*"/>
+    <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="MGJ3T05150505MC" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="vin" start="_Middle-50x-30y" end="_Middle-40x-30y" edge="start" sym:connection_id="0"/>
+    <connection name="not_dis_sync" start="_Middle-50x+0y" end="_Middle-40x+0y" edge="start" sym:connection_id="1"/>
+    <connection name="vin" start="_Middle-50x+30y" end="_Middle-40x+30y" edge="start" sym:connection_id="2"/>
+    <connection name="pin10" start="_Middle+40x-30y" end="_Middle+50x-30y" edge="end" sym:connection_id="3"/>
+    <connection name="pin9" start="_Middle+40x-10y" end="_Middle+50x-10y" edge="end" sym:connection_id="4"/>
+    <connection name="pin8" start="_Middle+40x+10y" end="_Middle+50x+10y" edge="end" sym:connection_id="5"/>
+    <connection name="pin7" start="_Middle+40x+30y" end="_Middle+50x+30y" edge="end" sym:connection_id="6"/>
+  </connections>
+  <render>
+    <text x="_Middle+25" y="_Middle-35" value="IGBT: +15V" align="CentreCentre" size="base"/>
+    <text x="_Middle+25" y="_Middle-30" value="SiC: +20V" align="CentreCentre" size="base"/>
+    <text x="_Middle+25" y="_Middle-25" value="MOSFET: +15V" align="CentreCentre" size="base"/>
+    <text x="_Middle+25" y="_Middle-15" value="IGBT: 0V" align="CentreCentre" size="base"/>
+    <text x="_Middle+25" y="_Middle-10" value="SiC: NC" align="CentreCentre" size="base"/>
+    <text x="_Middle+25" y="_Middle-5" value="MOSFET: 0V" align="CentreCentre" size="base"/>
+    <text x="_Middle+25" y="_Middle+5" value="IGBT: -10V" align="CentreCentre" size="base"/>
+    <text x="_Middle+25" y="_Middle+10" value="SiC: -5V" align="CentreCentre" size="base"/>
+    <text x="_Middle+25" y="_Middle+15" value="MOSFET: NC" align="CentreCentre" size="base"/>
+    <text x="_Middle+25" y="_Middle+25" value="IGBT: NC" align="CentreCentre" size="base"/>
+    <text x="_Middle+25" y="_Middle+30" value="SiC: 0V" align="CentreCentre" size="base"/>
+    <text x="_Middle+25" y="_Middle+35" value="MOSFET: -5V" align="CentreCentre" size="base"/>
+    <rect location="_Middle-40x-40y" width="80" height="80"/>
+    <path start="_Middle+0x+0y" data="M0,-40 L0,-35"/>
+    <path start="_Middle+0x+0y" data="M0,-30 L0,-25"/>
+    <path start="_Middle+0x+0y" data="M0,-20 L0,-15"/>
+    <path start="_Middle+0x+0y" data="M0,-10 L0,-5"/>
+    <path start="_Middle+0x+0y" data="M0,-0 L0,5"/>
+    <path start="_Middle+0x+0y" data="M0,10 L0,15"/>
+    <path start="_Middle+0x+0y" data="M0,20 L0,25"/>
+    <path start="_Middle+0x+0y" data="M0,30 L0,35"/>
+    <text x="_Middle+0" y="_Middle-55.00000000000001" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle-45" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-50x-30y" end="_Middle-40x-30y" sym:connection_id="0"/>
+    <text x="_Middle-36" y="_Middle-30" value="+Vin" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-46" y="_Middle-32" value="16" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-50x+0y" end="_Middle-40x+0y" sym:connection_id="1"/>
+    <text x="_Middle-36" y="_Middle+0" value="~{Dis}/Sync" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-46" y="_Middle-2" value="3" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle-50x+30y" end="_Middle-40x+30y" sym:connection_id="2"/>
+    <text x="_Middle-36" y="_Middle+30" value="-Vin" align="CentreLeft" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-46" y="_Middle+28" value="1" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+40x-30y" end="_Middle+50x-30y" sym:connection_id="3"/>
+    <text x="_Middle+46" y="_Middle-32" value="10" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle+40x-10y" end="_Middle+50x-10y" sym:connection_id="4"/>
+    <text x="_Middle+46" y="_Middle-12" value="9" align="BottomCentre" size="xxs" sym:connection_id="4" sym:connection_attr="number"/>
+    <line start="_Middle+40x+10y" end="_Middle+50x+10y" sym:connection_id="5"/>
+    <text x="_Middle+46" y="_Middle+8" value="8" align="BottomCentre" size="xxs" sym:connection_id="5" sym:connection_attr="number"/>
+    <line start="_Middle+40x+30y" end="_Middle+50x+30y" sym:connection_id="6"/>
+    <text x="_Middle+46" y="_Middle+28" value="7" align="BottomCentre" size="xxs" sym:connection_id="6" sym:connection_attr="number"/>
+  </render>
+</component>

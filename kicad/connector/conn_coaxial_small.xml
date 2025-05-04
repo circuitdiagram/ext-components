@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Conn Coaxial Small"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="dea750ab-aa4e-4295-b308-0c2cfe3e078f"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="20"/>
+    <meta name="description" value="small coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"/>
+    <meta name="keywords" value="BNC SMA SMB SMC LEMO coaxial connector CINCH RCA MCX MMCX U.FL UMRF"/>
+    <meta name="ki_fp_filters" value="*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO* *UMRF* *MCX* *U.FL*"/>
+    <property name="Reference" type="string" default="J" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="Conn_Coaxial_Small" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="in" start="_Middle-10x+0y" end="_Middle-5x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="ext" start="_Middle+5x+0y" end="_Middle+10x+0y" edge="end" sym:connection_id="1"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-10,-0 L-2,-0"/>
+    <ellipse centre="_Middle+0x+0y" rx="2" ry="2"/>
+    <path start="_Middle+0x+0y" data="M5.308661417322835,-0.015354330708661417 C5.315375943374112,2.4261495466547522 3.6560172078216153,4.557452390957985 1.287401574803151,5.149606299212601 C-1.081214058215313,5.741760207467217 -3.54832016337492,4.64207357334201 -4.691338582677165,2.4846456692913383"/>
+    <path start="_Middle+0x+0y" data="M-4.691338582677165,-2.484645669291339 C-3.548459173974935,-4.6422903912773 -1.081244165875403,-5.742161436054805 1.2874942104908125,-5.149976841963252 C3.656232586857028,-4.557792247871698 5.315600631755438,-2.4262754398447077 5.308661417322835,0.01535433070866013"/>
+    <text x="_Middle+1" y="_Middle-12" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+15" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-10x+0y" end="_Middle-5x+0y" sym:connection_id="0"/>
+    <text x="_Middle-1" y="_Middle+0" value="In" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-8.5" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+5x+0y" end="_Middle+10x+0y" sym:connection_id="1"/>
+    <text x="_Middle+1" y="_Middle+0" value="Ext" align="CentreRight" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle+8.5" y="_Middle-2" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+  </render>
+</component>

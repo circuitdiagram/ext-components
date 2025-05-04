@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="RJ45 Halo HFJ11-x2450HRL"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="f9073f32-78fb-4f50-b929-f09b1e53943a"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="160"/>
+    <meta name="footprint" value="Connector_RJ:RJ45_HALO_HFJ11-x2450HRL_Horizontal"/>
+    <meta name="datasheet" value="https://www.haloelectronics.com/pdf/fastjack-100baset.pdf"/>
+    <meta name="description" value="Halo HFJ11, 10/100 Base-TX, no LED, RJ45, Shielded"/>
+    <meta name="keywords" value="FastJack socket"/>
+    <meta name="ki_fp_filters" value="RJ45*HALO*HFJ11*x2450HRL*"/>
+    <property name="Reference" type="string" default="J" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="RJ45_Halo_HFJ11-x2450HRL" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="td_pos" start="_Middle-80x-30y" end="_Middle-70x-30y" edge="start" sym:connection_id="0"/>
+    <connection name="tct" start="_Middle-80x-20y" end="_Middle-70x-20y" edge="start" sym:connection_id="1"/>
+    <connection name="td_neg" start="_Middle-80x-10y" end="_Middle-70x-10y" edge="start" sym:connection_id="2"/>
+    <connection name="rd_pos" start="_Middle-80x+0y" end="_Middle-70x+0y" edge="start" sym:connection_id="3"/>
+    <connection name="rct" start="_Middle-80x+10y" end="_Middle-70x+10y" edge="start" sym:connection_id="4"/>
+    <connection name="rd_neg" start="_Middle-80x+20y" end="_Middle-70x+20y" edge="start" sym:connection_id="5"/>
+    <connection name="" start="_Middle+40x+30y" end="_Middle+40x+40y" edge="end" sym:connection_id="6"/>
+    <connection name="" start="_Middle+60x+30y" end="_Middle+60x+40y" edge="end" sym:connection_id="7"/>
+    <connection name="nc" start="_Middle+80x+0y" end="_Middle+80x+0y" edge="start" sym:connection_id="8"/>
+  </connections>
+  <render>
+    <ellipse centre="_Middle-5x-20y" rx="0.00039370078740157485" ry="0.00039370078740157485"/>
+    <path start="_Middle+0x+0y" data="M-5,-20 L-5,22.5"/>
+    <ellipse centre="_Middle-5x+10y" rx="0.00039370078740157485" ry="0.00039370078740157485"/>
+    <path start="_Middle+0x+0y" data="M2.5,20 L2.5,25"/>
+    <path start="_Middle+0x+0y" data="M5,20 L5,25"/>
+    <path start="_Middle+0x+0y" data="M12,-20 L10,-20"/>
+    <ellipse centre="_Middle+12x-20y" rx="0.00039370078740157485" ry="0.00039370078740157485"/>
+    <path start="_Middle+0x+0y" data="M12,10 L10,10"/>
+    <ellipse centre="_Middle+12x+10y" rx="0.00039370078740157485" ry="0.00039370078740157485"/>
+    <path start="_Middle+0x+0y" data="M14.5,-22.5 L12,-22.5 L12,-17.5 L14.5,-17.5"/>
+    <path start="_Middle+0x+0y" data="M14.5,7.5 L12,7.5 L12,12.5 L14.5,12.5"/>
+    <text x="_Middle-32.50000000000001" y="_Middle-7.5" value="XMIT" align="CentreCentre" size="base"/>
+    <text x="_Middle-32.50000000000001" y="_Middle+22.5" value="RCV" align="CentreCentre" size="base"/>
+    <text x="_Middle+18.5" y="_Middle-27.500000000000004" value="C1" align="CentreCentre" size="base"/>
+    <text x="_Middle+18.5" y="_Middle-22.5" value="C4" align="CentreCentre" size="base"/>
+    <text x="_Middle+18.5" y="_Middle-17.5" value="C5" align="CentreCentre" size="base"/>
+    <text x="_Middle+18.5" y="_Middle-12.5" value="C2" align="CentreCentre" size="base"/>
+    <text x="_Middle+18.5" y="_Middle+2.5" value="C3" align="CentreCentre" size="base"/>
+    <text x="_Middle+18.5" y="_Middle+7.5" value="C7" align="CentreCentre" size="base"/>
+    <text x="_Middle+18.5" y="_Middle+12.5" value="C8" align="CentreCentre" size="base"/>
+    <text x="_Middle+18.5" y="_Middle+17.5" value="C6" align="CentreCentre" size="base"/>
+    <text x="_Middle+40" y="_Middle+12.5" value="C1" align="CentreCentre" size="base"/>
+    <rect location="_Middle-70x-35y" width="150" height="65"/>
+    <path start="_Middle+0x+0y" data="M-50,-30 L-51.5,-30"/>
+    <path start="_Middle+0x+0y" data="M-50,-20 L-51.5,-20"/>
+    <path start="_Middle+0x+0y" data="M-50,-10 L-51.5,-10"/>
+    <path start="_Middle+0x+0y" data="M-50,-0 L-51.5,-0"/>
+    <path start="_Middle+0x+0y" data="M-50,10 L-51.5,10"/>
+    <path start="_Middle+0x+0y" data="M-50,20 L-51.5,20"/>
+    <path start="_Middle+0x+0y" data="M-40,-30 L-35,-30 L-35,-27.500000000000004"/>
+    <path start="_Middle+0x+0y" data="M-40,-0 L-35,-0 L-35,2.5"/>
+    <path start="_Middle+0x+0y" data="M-35,-12.5 L-35,-10 L-40,-10"/>
+    <path start="_Middle+0x+0y" data="M-35,17.5 L-35,20 L-40,20"/>
+    <path start="_Middle+0x+0y" data="M-25,-27.500000000000004 L14.5,-27.500000000000004"/>
+    <path start="_Middle+0x+0y" data="M-25,-12.5 L14.5,-12.5"/>
+    <path start="_Middle+0x+0y" data="M-25,17.5 L14.5,17.5"/>
+    <path start="_Middle+0x+0y" data="M-24.5,2.5 L14.5,2.5"/>
+    <path start="_Middle+0x+0y" data="M-20,10 L-40,10"/>
+    <path start="_Middle+0x+0y" data="M-19.5,-20 L-40,-20"/>
+    <path start="_Middle+0x+0y" data="M-8.5,-20 L-1.5,-20"/>
+    <path start="_Middle+0x+0y" data="M-8.5,10 L-1.5,10"/>
+    <path start="_Middle+0x+0y" data="M2.5,22.5 L-5,22.5"/>
+    <path start="_Middle+0x+0y" data="M29,-12.5 L34,-12.5"/>
+    <path start="_Middle+0x+0y" data="M29,-7.5 L34,-7.5"/>
+    <path start="_Middle+0x+0y" data="M29,-2.5 L34,-2.5"/>
+    <path start="_Middle+0x+0y" data="M29,3 L34,3"/>
+    <path start="_Middle+0x+0y" data="M29,8 L34,8"/>
+    <path start="_Middle+0x+0y" data="M34,-22.5 L29,-22.5"/>
+    <path start="_Middle+0x+0y" data="M34,-17.5 L29,-17.5"/>
+    <path start="_Middle+0x+0y" data="M34,13 L29,13"/>
+    <path start="_Middle+0x+0y" data="M40,22.5 L5,22.5"/>
+    <path start="_Middle+0x+0y" data="M40,22.5 L40,30"/>
+    <text x="_Middle+13" y="_Middle+25.500000000000004" value="1000pF" align="CentreCentre" size="base"/>
+    <path start="_Middle+0x+0y" data="M-50,-0 C-48.62344637265393,0.005865559322218328 -47.51062992126043,1.123433875999494 -47.51062992126043,2.5 C-47.51062992126043,3.8765661240005063 -48.62344637265393,4.994134440677781 -50,5"/>
+    <path start="_Middle+0x+0y" data="M-49.98937007874016,-30 C-48.61281645139388,-29.994134440678074 -47.50000000000006,-28.876566124000714 -47.50000000000006,-27.5 C-47.50000000000006,-26.123433875999286 -48.61281645139388,-25.005865559321926 -49.98937007874016,-25"/>
+    <path start="_Middle+0x+0y" data="M-49.98937007874016,5 C-48.6128164513937,5.005865559321663 -47.49999999999958,6.123433875999101 -47.49999999999958,7.5 C-47.49999999999958,8.876566124000899 -48.6128164513937,9.994134440678337 -49.98937007874016,10"/>
+    <path start="_Middle+0x+0y" data="M-49.98937007874016,10 C-48.61281645139384,10.005865559321867 -47.49999999999995,11.123433875999247 -47.49999999999995,12.5 C-47.49999999999995,13.876566124000753 -48.61281645139384,14.994134440678133 -49.98937007874016,15"/>
+    <path start="_Middle+0x+0y" data="M-49.98937007874016,15 C-48.61281645139384,15.005865559321867 -47.49999999999995,16.123433875999247 -47.49999999999995,17.5 C-47.49999999999995,18.876566124000753 -48.61281645139384,19.99413444067813 -49.98937007874016,20"/>
+    <path start="_Middle+0x+0y" data="M-49.97874015748032,-25 C-48.602186530134,-24.99413444067813 -47.48937007874011,-23.876566124000753 -47.48937007874011,-22.5 C-47.48937007874011,-21.123433875999247 -48.602186530134,-20.00586555932187 -49.97874015748032,-20"/>
+    <path start="_Middle+0x+0y" data="M-49.97874015748032,-20 C-48.602186530134,-19.99413444067813 -47.48937007874011,-18.876566124000753 -47.48937007874011,-17.5 C-47.48937007874011,-16.123433875999247 -48.602186530134,-15.005865559321867 -49.97874015748032,-15"/>
+    <path start="_Middle+0x+0y" data="M-49.97874015748032,-15 C-48.60218653013386,-14.994134440678337 -47.48937007873974,-13.876566124000899 -47.48937007873974,-12.5 C-47.48937007873974,-11.123433875999101 -48.60218653013386,-10.005865559321663 -49.97874015748032,-10"/>
+    <path start="_Middle+0x+0y" data="M-40.02125984251968,-25 C-41.397813469863685,-25.00586555932512 -42.510629921253994,-26.123433876001542 -42.510629921253994,-27.5 C-42.510629921253994,-28.876566123998458 -41.397813469863685,-29.99413444067488 -40.02125984251968,-30"/>
+    <path start="_Middle+0x+0y" data="M-40.02125984251968,-20 C-41.39781346986596,-20.005865559321926 -42.510629921259785,-21.123433875999286 -42.510629921259785,-22.5 C-42.510629921259785,-23.876566124000714 -41.39781346986596,-24.994134440678074 -40.02125984251968,-25"/>
+    <path start="_Middle+0x+0y" data="M-40.02125984251968,-15 C-41.39781346986596,-15.005865559321926 -42.510629921259785,-16.123433875999286 -42.510629921259785,-17.5 C-42.510629921259785,-18.876566124000714 -41.39781346986596,-19.994134440678074 -40.02125984251968,-20"/>
+    <path start="_Middle+0x+0y" data="M-40.02125984251968,5 C-41.39781346986584,4.9941344406778985 -42.510629921259465,3.876566124000589 -42.510629921259465,2.5000000000000004 C-42.510629921259465,1.1234338759994116 -41.39781346986584,0.005865559322101976 -40.02125984251968,0"/>
+    <path start="_Middle+0x+0y" data="M-40.02125984251968,10 C-41.397813469866044,9.994134440678192 -42.51062992126,8.876566124000796 -42.51062992126,7.5 C-42.51062992126,6.123433875999204 -41.397813469866044,5.005865559321808 -40.02125984251968,5"/>
+    <path start="_Middle+0x+0y" data="M-40.02125984251968,15 C-41.39781346986614,14.994134440678339 -42.51062992126026,13.876566124000899 -42.51062992126026,12.5 C-42.51062992126026,11.123433875999101 -41.39781346986614,10.005865559321663 -40.02125984251968,10"/>
+    <path start="_Middle+0x+0y" data="M-40.01062992125984,-10 C-41.38718354860599,-10.005865559322102 -42.49999999999962,-11.12343387599941 -42.49999999999962,-12.5 C-42.49999999999962,-13.876566124000588 -41.387183548606,-14.994134440677898 -40.01062992125984,-15"/>
+    <path start="_Middle+0x+0y" data="M-40.01062992125984,20 C-41.38718354860616,19.994134440678135 -42.50000000000005,18.876566124000753 -42.50000000000005,17.5 C-42.50000000000005,16.123433875999247 -41.38718354860616,15.005865559321867 -40.01062992125984,15"/>
+    <path start="_Middle+0x+0y" data="M-30,-27.48937007874016 C-30.005865559321926,-26.112816451393883 -31.123433875999286,-25.000000000000057 -32.5,-25.000000000000057 C-33.87656612400071,-25.000000000000057 -34.994134440678074,-26.112816451393883 -35,-27.48937007874016"/>
+    <path start="_Middle+0x+0y" data="M-35,-13.010629921259843 C-34.994134440677165,-14.387183548605472 -33.87656612400007,-15.499999999998298 -32.5,-15.499999999998298 C-31.12343387599993,-15.499999999998298 -30.005865559322835,-14.387183548605472 -30,-13.010629921259843"/>
+    <path start="_Middle+0x+0y" data="M-35,16.98937007874016 C-34.99413444067904,15.612816451393197 -33.87656612400139,14.499999999998305 -32.5,14.499999999998305 C-31.123433875998604,14.499999999998305 -30.00586555932096,15.612816451393197 -30,16.98937007874016"/>
+    <path start="_Middle+0x+0y" data="M-29.75,2.760629921259843 C-29.75586555932187,4.13718354860616 -30.873433875999247,5.250000000000051 -32.25,5.250000000000051 C-33.62656612400075,5.250000000000051 -34.74413444067813,4.13718354860616 -34.75,2.7606299212598433"/>
+    <path start="_Middle+0x+0y" data="M-25,-27.500000000000004 C-25.005865559321926,-26.123446372653728 -26.123433875999286,-25.010629921259902 -27.5,-25.010629921259902 C-28.876566124000714,-25.010629921259902 -29.994134440678074,-26.123446372653728 -30,-27.500000000000004"/>
+    <path start="_Middle+0x+0y" data="M-30,-13.021259842519685 C-29.99413444067813,-14.397813469866001 -28.876566124000753,-15.510629921259891 -27.5,-15.510629921259891 C-26.123433875999247,-15.510629921259891 -25.00586555932187,-14.397813469866001 -25,-13.021259842519685"/>
+    <path start="_Middle+0x+0y" data="M-30,16.978740157480313 C-29.99413444067904,15.602186530133352 -28.876566124001396,14.48937007873846 -27.5,14.48937007873846 C-26.123433875998604,14.48937007873846 -25.00586555932096,15.602186530133352 -25,16.978740157480313"/>
+    <path start="_Middle+0x+0y" data="M-24.75,2.75 C-24.75586555932187,4.126553627346317 -25.873433875999247,5.239370078740208 -27.25,5.239370078740208 C-28.626566124000753,5.239370078740208 -29.744134440678135,4.126553627346317 -29.75,2.7500000000000004"/>
+    <rect location="_Middle-19.5x-22.5y" width="11" height="5"/>
+    <rect location="_Middle-19.5x+7.5y" width="11" height="5"/>
+    <rect location="_Middle-1.5x-22.5y" width="11" height="5"/>
+    <rect location="_Middle-1.5x+7.5y" width="11" height="5"/>
+    <path start="_Middle+0x+0y" data="M29,18 L29,-27.500000000000004 L60,-27.500000000000004 L60,-17.5 L64,-17.5 L64,-12 L69,-12 L69,2.5 L64,2.5 L64,8 L60,8 L60,18 L29,18"/>
+    <path start="_Middle+0x+0y" data="M60,30 L60,18"/>
+    <text x="_Middle-14" y="_Middle-20" value="75" align="CentreCentre" size="base"/>
+    <text x="_Middle-14" y="_Middle+10" value="75" align="CentreCentre" size="base"/>
+    <text x="_Middle+4" y="_Middle-20" value="75" align="CentreCentre" size="base"/>
+    <text x="_Middle+4" y="_Middle+10" value="75" align="CentreCentre" size="base"/>
+    <text x="_Middle+75" y="_Middle-40" value="$Reference" align="CentreRight" size="xxs"/>
+    <text x="_Middle-70" y="_Middle-40" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle-80x-30y" end="_Middle-70x-30y" sym:connection_id="0"/>
+    <text x="_Middle-66" y="_Middle-30" value="TD+" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-76" y="_Middle-32" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-80x-20y" end="_Middle-70x-20y" sym:connection_id="1"/>
+    <text x="_Middle-66" y="_Middle-20" value="TCT" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-76" y="_Middle-22" value="4" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle-80x-10y" end="_Middle-70x-10y" sym:connection_id="2"/>
+    <text x="_Middle-66" y="_Middle-10" value="TD-" align="CentreLeft" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-76" y="_Middle-12" value="2" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle-80x+0y" end="_Middle-70x+0y" sym:connection_id="3"/>
+    <text x="_Middle-66" y="_Middle+0" value="RD+" align="CentreLeft" size="xxs" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle-76" y="_Middle-2" value="3" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle-80x+10y" end="_Middle-70x+10y" sym:connection_id="4"/>
+    <text x="_Middle-66" y="_Middle+10" value="RCT" align="CentreLeft" size="xxs" sym:connection_id="4" sym:connection_attr="name"/>
+    <text x="_Middle-76" y="_Middle+8" value="5" align="BottomCentre" size="xxs" sym:connection_id="4" sym:connection_attr="number"/>
+    <line start="_Middle-80x+20y" end="_Middle-70x+20y" sym:connection_id="5"/>
+    <text x="_Middle-66" y="_Middle+20" value="RD-" align="CentreLeft" size="xxs" sym:connection_id="5" sym:connection_attr="name"/>
+    <text x="_Middle-76" y="_Middle+18" value="6" align="BottomCentre" size="xxs" sym:connection_id="5" sym:connection_attr="number"/>
+    <line start="_Middle+40x+30y" end="_Middle+40x+40y" sym:connection_id="6"/>
+    <text x="_Middle+40" y="_Middle+26" value="" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="6" sym:connection_attr="name"/>
+    <text x="_Middle+38" y="_Middle+36" value="8" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="6" sym:connection_attr="number"/>
+    <line start="_Middle+60x+30y" end="_Middle+60x+40y" sym:connection_id="7"/>
+    <text x="_Middle+60" y="_Middle+26" value="" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="7" sym:connection_attr="name"/>
+    <text x="_Middle+58" y="_Middle+36" value="SH" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="7" sym:connection_attr="number"/>
+    <line start="_Middle+80x+0y" end="_Middle+80x+0y" sym:connection_id="8"/>
+    <text x="_Middle+84" y="_Middle+0" value="NC" align="CentreLeft" size="xxs" sym:connection_id="8" sym:connection_attr="name"/>
+    <text x="_Middle+79" y="_Middle-2" value="7" align="BottomCentre" size="xxs" sym:connection_id="8" sym:connection_attr="number"/>
+  </render>
+</component>

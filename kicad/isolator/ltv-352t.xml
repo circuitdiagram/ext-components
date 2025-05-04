@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="LTV-352T"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="e3811cac-f765-405f-bb68-068ff9d08fe8"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="80"/>
+    <meta name="footprint" value="Package_SO:SO-4_4.4x3.6mm_P2.54mm"/>
+    <meta name="datasheet" value="http://optoelectronics.liteon.com/upload/download/DS70-2001-002/S_110_LTV-352T%2020140520.pdf"/>
+    <meta name="description" value="DC Darlington Optocoupler, Vce 300V, CTR 1000%, SO-4"/>
+    <meta name="keywords" value="NPN Darlington DC Optocoupler"/>
+    <meta name="ki_fp_filters" value="SO*4.4x3.6mm*P2.54mm*"/>
+    <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="LTV-352T" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin1" start="_Middle-40x-10y" end="_Middle-30x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="pin2" start="_Middle-40x+10y" end="_Middle-30x+10y" edge="start" sym:connection_id="1"/>
+    <connection name="pin4" start="_Middle+30x-10y" end="_Middle+40x-10y" edge="end" sym:connection_id="2"/>
+    <connection name="pin3" start="_Middle+30x+10y" end="_Middle+40x+10y" edge="end" sym:connection_id="3"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M7,1 L7,10 L8,10"/>
+    <rect location="_Middle+8x+9y" width="5" height="2"/>
+    <path start="_Middle+0x+0y" data="M16,10 L13,10"/>
+    <rect location="_Middle-30x-15y" width="60" height="30"/>
+    <path start="_Middle+0x+0y" data="M-30,-10 L-12.5,-10 L-12.5,-2.5"/>
+    <path start="_Middle+0x+0y" data="M-15,2.5 L-10,2.5"/>
+    <path start="_Middle+0x+0y" data="M-12.5,-3.5 L-12.5,10 L-30,10"/>
+    <path start="_Middle+0x+0y" data="M-12.5,2.5 L-15,-2.5 L-10,-2.5 L-12.5,2.5"/>
+    <path start="_Middle+0x+0y" data="M-7,-4 L-2,-4 L-3.5,-3.5 L-3.5,-4.5 L-2,-4"/>
+    <path start="_Middle+0x+0y" data="M-7,-0 L-2,-0 L-3.5,0.5 L-3.5,-0.5 L-2,-0"/>
+    <path start="_Middle+0x+0y" data="M2,-8.5 L2,-0.5"/>
+    <path start="_Middle+0x+0y" data="M2,-5 L7,-10"/>
+    <path start="_Middle+0x+0y" data="M2,-4 L7,1"/>
+    <path start="_Middle+0x+0y" data="M6,-0 L5,-2 L4,-1 L6,-0"/>
+    <path start="_Middle+0x+0y" data="M7,-10 L30,-10"/>
+    <ellipse centre="_Middle+7x+1.5y" rx="0.5" ry="0.5"/>
+    <path start="_Middle+0x+0y" data="M11,-2.5 L11,5.5 L11,5.5"/>
+    <path start="_Middle+0x+0y" data="M11,1 L16,-4"/>
+    <path start="_Middle+0x+0y" data="M11,1.5 L7,1.5"/>
+    <path start="_Middle+0x+0y" data="M11,2 L16,7"/>
+    <path start="_Middle+0x+0y" data="M15,6 L14,4 L13,5 L15,6"/>
+    <ellipse centre="_Middle+16x-10y" rx="0.5" ry="0.5"/>
+    <path start="_Middle+0x+0y" data="M16,-4 L16,-10"/>
+    <path start="_Middle+0x+0y" data="M16,7 L16,10"/>
+    <path start="_Middle+0x+0y" data="M16,10 L30,10"/>
+    <ellipse centre="_Middle+16x+10y" rx="0.5" ry="0.5"/>
+    <path start="_Middle+0x+0y" data="M17.5,-2.5 L22.5,-2.5"/>
+    <ellipse centre="_Middle+20x-10y" rx="0.5" ry="0.5"/>
+    <path start="_Middle+0x+0y" data="M20,-3 L20,10"/>
+    <path start="_Middle+0x+0y" data="M20,-2.5 L20,-10"/>
+    <path start="_Middle+0x+0y" data="M20,-2.5 L17.5,2.5 L22.5,2.5 L20,-2.5"/>
+    <ellipse centre="_Middle+20x+10y" rx="0.5" ry="0.5"/>
+    <text x="_Middle-30" y="_Middle-20" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+0" y="_Middle-20" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle-40x-10y" end="_Middle-30x-10y" sym:connection_id="0"/>
+    <text x="_Middle-36" y="_Middle-12" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-40x+10y" end="_Middle-30x+10y" sym:connection_id="1"/>
+    <text x="_Middle-36" y="_Middle+8" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+30x-10y" end="_Middle+40x-10y" sym:connection_id="2"/>
+    <text x="_Middle+36" y="_Middle-12" value="4" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+30x+10y" end="_Middle+40x+10y" sym:connection_id="3"/>
+    <text x="_Middle+36" y="_Middle+8" value="3" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+  </render>
+</component>

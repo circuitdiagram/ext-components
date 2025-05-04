@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Fan Tacho"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="72c75868-922e-4a56-ad51-f2e51918e411"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="50"/>
+    <meta name="datasheet" value="http://www.hardwarecanucks.com/forum/attachments/new-builds/16287d1330775095-help-chassis-power-fan-connectors-motherboard-asus_p8z68.jpg"/>
+    <meta name="description" value="Fan, tacho output, 3-pin connector"/>
+    <meta name="keywords" value="Fan Motor tacho"/>
+    <meta name="ki_fp_filters" value="FanPinHeader*P2.54mm*Vertical* PinHeader*P2.54mm*Vertical* TerminalBlock*"/>
+    <property name="Reference" type="string" default="M" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="Fan_Tacho" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="tacho" start="_Middle-30x+0y" end="_Middle-20x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="pos" start="_Middle+0x-20y" end="_Middle+0x-10y" edge="start" sym:connection_id="1"/>
+    <connection name="neg" start="_Middle+0x+20y" end="_Middle+0x+30y" edge="end" sym:connection_id="2"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-20,2 L-21,1.5"/>
+    <path start="_Middle+0x+0y" data="M-20,2 L-20.5,3"/>
+    <path start="_Middle+0x+0y" data="M-18,4 C-18.00477926618996,5.10118119240939 -18.89880843632841,5.991338582677157 -20,5.991338582677157 C-21.10119156367159,5.991338582677157 -21.995220733810037,5.101181192409391 -22,4"/>
+    <path start="_Middle+0x+0y" data="M-22,4 C-21.999923946514553,2.8954620042573453 -21.104537995742657,2.000076053485448 -20,2"/>
+    <path start="_Middle+0x+0y" data="M-16,-0 L-16,6 L-13,6"/>
+    <path start="_Middle+0x+0y" data="M-16,-0 L-20,-0"/>
+    <path start="_Middle+0x+0y" data="M0,-5 C2.0724816741151884,-1.4684987074857818 2.0702373158798117,2.908352469073039 -0.005865028196188504,6.43772645400224 C-2.081967372272188,9.96710043893144 -5.906402375674534,12.095604177156753 -9.999999999999996,12"/>
+    <path start="_Middle+0x+0y" data="M0,-8 L0,-10"/>
+    <path start="_Middle+0x+0y" data="M0,-6.800000000000001 L0,-8.200000000000001"/>
+    <ellipse centre="_Middle+0x+6y" rx="12.8" ry="12.8"/>
+    <path start="_Middle+0x+0y" data="M-10,12 C-8.106129125352158,8.21229241072192 -4.23479346269852,5.8196850393700785 0.0000000000000006845996076656402,5.8196850393700785 C4.234793462698522,5.8196850393700785 8.106129125352158,8.21229241072192 10,11.999999999999998"/>
+    <path start="_Middle+0x+0y" data="M0,18.8 L0,20.400000000000002"/>
+    <path start="_Middle+0x+0y" data="M0,30 L0,28"/>
+    <path start="_Middle+0x+0y" data="M10,12 C5.959717141984318,11.966662554381523 2.233462013472675,9.814995666813768 0.1848875540752246,6.332419085838101 C-1.8636869053222256,2.849842504862435 -1.9338784798320852,-1.4524500027063687 0,-5.000000000000002"/>
+    <text x="_Middle+10" y="_Middle-10" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+10" y="_Middle+20" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle-30x+0y" end="_Middle-20x+0y" sym:connection_id="0"/>
+    <text x="_Middle-16" y="_Middle+0" value="Tacho" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-26" y="_Middle-2" value="3" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+0x-20y" end="_Middle+0x-10y" sym:connection_id="1"/>
+    <text x="_Middle+0" y="_Middle-6" value="+" align="CentreRight" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle-16" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+0x+20y" end="_Middle+0x+30y" sym:connection_id="2"/>
+    <text x="_Middle+0" y="_Middle+16" value="-" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+26" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+  </render>
+</component>

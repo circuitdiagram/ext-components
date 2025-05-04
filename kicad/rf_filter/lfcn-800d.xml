@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="LFCN-800D"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="8ca62d50-6557-4ea9-ae2e-aed791d6c83c"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="80"/>
+    <meta name="footprint" value="Filter:Filter_Mini-Circuits_FV1206"/>
+    <meta name="datasheet" value="https://www.minicircuits.com/pdfs/LFCN-800D+.pdf"/>
+    <meta name="description" value="800MHz 50 Ohm Passive Low Pass Filter, DC cabable, FV1206"/>
+    <meta name="keywords" value="Mini-Circuits low pass filter"/>
+    <meta name="ki_fp_filters" value="Filter*Mini?Circuits*FV1206*"/>
+    <property name="Reference" type="string" default="FL" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="LFCN-800D" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="in" start="_Middle-40x+0y" end="_Middle-30x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="gnd" start="_Middle+0x+30y" end="_Middle+0x+40y" edge="end" sym:connection_id="1"/>
+    <connection name="gnd" start="_Middle+0x+30y" end="_Middle+0x+40y" edge="end" sym:connection_id="2"/>
+    <connection name="out" start="_Middle+30x+0y" end="_Middle+40x+0y" edge="end" sym:connection_id="3"/>
+  </connections>
+  <render>
+    <rect location="_Middle-30x-30y" width="60" height="60"/>
+    <path start="_Middle+0x+0y" data="M-15,-10 C-13.32819621090581,-12.507594564451216 -10.513794685922544,-14.013779527559059 -7.499999999999999,-14.013779527559059 C-4.486205314077454,-14.013779527559059 -1.6718037890941897,-12.507594564451216 0.0000000000000008881784197001252,-10"/>
+    <path start="_Middle+0x+0y" data="M-15,5 C-13.328196210905809,2.4924054355487826 -10.513794685922544,0.9862204724409409 -7.499999999999999,0.9862204724409409 C-4.486205314077454,0.9862204724409409 -1.6718037890941897,2.4924054355487844 0.0000000000000008881784197001252,4.999999999999999"/>
+    <path start="_Middle+0x+0y" data="M-5,-5 L5,-15"/>
+    <path start="_Middle+0x+0y" data="M15,-10 C13.328196210905809,-7.492405435548784 10.513794685922546,-5.986220472440943 7.500000000000001,-5.986220472440943 C4.486205314077455,-5.986220472440943 1.6718037890941897,-7.492405435548785 -0.0000000000000008881784197001252,-10"/>
+    <path start="_Middle+0x+0y" data="M15,5 C13.328196210905809,7.5075945644512165 10.513794685922546,9.013779527559059 7.500000000000001,9.013779527559059 C4.486205314077455,9.013779527559059 1.6718037890941897,7.507594564451216 -0.0000000000000008881784197001252,5"/>
+    <text x="_Middle+0" y="_Middle-42.5" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle-35" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-40x+0y" end="_Middle-30x+0y" sym:connection_id="0"/>
+    <text x="_Middle-26" y="_Middle+0" value="IN" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-36" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+0x+30y" end="_Middle+0x+40y" sym:connection_id="1"/>
+    <text x="_Middle+0" y="_Middle+26" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+36" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+0x+30y" end="_Middle+0x+40y" sym:connection_id="2"/>
+    <text x="_Middle+0" y="_Middle+26" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+36" value="4" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+30x+0y" end="_Middle+40x+0y" sym:connection_id="3"/>
+    <text x="_Middle+26" y="_Middle+0" value="OUT" align="CentreRight" size="xxs" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle+36" y="_Middle-2" value="3" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+  </render>
+</component>

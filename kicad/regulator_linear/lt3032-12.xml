@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="LT3032-12"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="30ed0f0f-61b1-4b47-b12e-31e7afc0c600"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="80"/>
+    <meta name="footprint" value="Package_DFN_QFN:Linear_DE14MA"/>
+    <meta name="datasheet" value="https://www.analog.com/media/en/technical-documentation/data-sheets/3032ff.pdf"/>
+    <meta name="description" value="150mA, Dual Low Dropout Linear Regulator, Positive/Negative Low Noise, 12V Output, DFN-14"/>
+    <meta name="keywords" value="LDO low noise"/>
+    <meta name="ki_fp_filters" value="Linear*DE14MA*"/>
+    <property name="ki_locked" type="string" default="" serialize="ki_locked" display="ki_locked"/>
+    <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="LT3032-12" serialize="value" display="Value"/>
+    <property name="Unit" type="enum" default="Unit_A" serialize="unit" display="Unit">
+      <option>Unit_A</option>
+      <option>Unit_B</option>
+    </property>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="inp" start="_Middle-40x-10y" end="_Middle-30x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="not_shdnp" start="_Middle-40x+10y" end="_Middle-30x+10y" edge="start" sym:connection_id="1"/>
+    <connection name="gnd" start="_Middle+0x+20y" end="_Middle+0x+30y" edge="end" sym:connection_id="2"/>
+    <connection name="nc" start="_Middle+20x+0y" end="_Middle+30x+0y" edge="end" sym:connection_id="3"/>
+    <connection name="nc" start="_Middle+20x+20y" end="_Middle+30x+20y" edge="end" sym:connection_id="4"/>
+    <connection name="outp" start="_Middle+30x-10y" end="_Middle+40x-10y" edge="end" sym:connection_id="5"/>
+    <connection name="bypp" start="_Middle+30x+10y" end="_Middle+40x+10y" edge="end" sym:connection_id="6"/>
+    <connection name="inn" start="_Middle-40x-10y" end="_Middle-30x-10y" edge="start" sym:connection_id="7"/>
+    <connection name="inn" start="_Middle-40x-10y" end="_Middle-30x-10y" edge="start" sym:connection_id="8"/>
+    <connection name="not_shdnn" start="_Middle-40x+10y" end="_Middle-30x+10y" edge="start" sym:connection_id="9"/>
+    <connection name="gnd" start="_Middle+0x+20y" end="_Middle+0x+30y" edge="end" sym:connection_id="10"/>
+    <connection name="nc" start="_Middle+20x+0y" end="_Middle+30x+0y" edge="end" sym:connection_id="11"/>
+    <connection name="outn" start="_Middle+30x-10y" end="_Middle+40x-10y" edge="end" sym:connection_id="12"/>
+    <connection name="bypn" start="_Middle+30x+10y" end="_Middle+40x+10y" edge="end" sym:connection_id="13"/>
+  </connections>
+  <render>
+    <rect location="_Middle-30x-20y" width="60" height="40"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_locked" align="CentreCentre" size="xxs"/>
+    <text x="_Middle-25" y="_Middle-25" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+5" y="_Middle-25" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle-40x-10y" end="_Middle-30x-10y" sym:connection_id="0"/>
+    <g conditions="$Unit==Unit_A">
+      <text x="_Middle-26" y="_Middle-10" value="INP" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    </g>
+    <g conditions="$Unit==Unit_A">
+      <text x="_Middle-36" y="_Middle-12" value="14" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    </g>
+    <line start="_Middle-40x+10y" end="_Middle-30x+10y" sym:connection_id="1"/>
+    <g conditions="$Unit==Unit_A">
+      <text x="_Middle-26" y="_Middle+10" value="~{SHDNP}" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    </g>
+    <g conditions="$Unit==Unit_A">
+      <text x="_Middle-36" y="_Middle+8" value="12" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    </g>
+    <line start="_Middle+0x+20y" end="_Middle+0x+30y" sym:connection_id="2"/>
+    <g conditions="$Unit==Unit_A">
+      <text x="_Middle+0" y="_Middle+16" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
+    </g>
+    <g conditions="$Unit==Unit_A">
+      <text x="_Middle-2" y="_Middle+26" value="4" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+    </g>
+    <line start="_Middle+20x+0y" end="_Middle+30x+0y" sym:connection_id="3"/>
+    <g conditions="$Unit==Unit_A">
+      <text x="_Middle+16" y="_Middle+0" value="NC" align="CentreRight" size="xxs" sym:connection_id="3" sym:connection_attr="name"/>
+    </g>
+    <g conditions="$Unit==Unit_A">
+      <text x="_Middle+26" y="_Middle-2" value="2" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+    </g>
+    <line start="_Middle+20x+20y" end="_Middle+30x+20y" sym:connection_id="4"/>
+    <g conditions="$Unit==Unit_A">
+      <text x="_Middle+16" y="_Middle+20" value="NC" align="CentreRight" size="xxs" sym:connection_id="4" sym:connection_attr="name"/>
+    </g>
+    <g conditions="$Unit==Unit_A">
+      <text x="_Middle+26" y="_Middle+18" value="13" align="BottomCentre" size="xxs" sym:connection_id="4" sym:connection_attr="number"/>
+    </g>
+    <line start="_Middle+30x-10y" end="_Middle+40x-10y" sym:connection_id="5"/>
+    <g conditions="$Unit==Unit_A">
+      <text x="_Middle+26" y="_Middle-10" value="OUTP" align="CentreRight" size="xxs" sym:connection_id="5" sym:connection_attr="name"/>
+    </g>
+    <g conditions="$Unit==Unit_A">
+      <text x="_Middle+36" y="_Middle-12" value="1" align="BottomCentre" size="xxs" sym:connection_id="5" sym:connection_attr="number"/>
+    </g>
+    <line start="_Middle+30x+10y" end="_Middle+40x+10y" sym:connection_id="6"/>
+    <g conditions="$Unit==Unit_A">
+      <text x="_Middle+26" y="_Middle+10" value="BYPP" align="CentreRight" size="xxs" sym:connection_id="6" sym:connection_attr="name"/>
+    </g>
+    <g conditions="$Unit==Unit_A">
+      <text x="_Middle+36" y="_Middle+8" value="3" align="BottomCentre" size="xxs" sym:connection_id="6" sym:connection_attr="number"/>
+    </g>
+    <line start="_Middle-40x-10y" end="_Middle-30x-10y" sym:connection_id="7"/>
+    <g conditions="$Unit==Unit_B">
+      <text x="_Middle-26" y="_Middle-10" value="INN" align="CentreLeft" size="xxs" sym:connection_id="7" sym:connection_attr="name"/>
+    </g>
+    <g conditions="$Unit==Unit_B">
+      <text x="_Middle-36" y="_Middle-12" value="6" align="BottomCentre" size="xxs" sym:connection_id="7" sym:connection_attr="number"/>
+    </g>
+    <line start="_Middle-40x-10y" end="_Middle-30x-10y" sym:connection_id="8"/>
+    <g conditions="$Unit==Unit_B">
+      <text x="_Middle-26" y="_Middle-10" value="INN" align="CentreLeft" size="xxs" sym:connection_id="8" sym:connection_attr="name"/>
+    </g>
+    <g conditions="$Unit==Unit_B">
+      <text x="_Middle-36" y="_Middle-12" value="9" align="BottomCentre" size="xxs" sym:connection_id="8" sym:connection_attr="number"/>
+    </g>
+    <line start="_Middle-40x+10y" end="_Middle-30x+10y" sym:connection_id="9"/>
+    <g conditions="$Unit==Unit_B">
+      <text x="_Middle-26" y="_Middle+10" value="~{SHDNN}" align="CentreLeft" size="xxs" sym:connection_id="9" sym:connection_attr="name"/>
+    </g>
+    <g conditions="$Unit==Unit_B">
+      <text x="_Middle-36" y="_Middle+8" value="10" align="BottomCentre" size="xxs" sym:connection_id="9" sym:connection_attr="number"/>
+    </g>
+    <line start="_Middle+0x+20y" end="_Middle+0x+30y" sym:connection_id="10"/>
+    <g conditions="$Unit==Unit_B">
+      <text x="_Middle+0" y="_Middle+16" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="10" sym:connection_attr="name"/>
+    </g>
+    <g conditions="$Unit==Unit_B">
+      <text x="_Middle-2" y="_Middle+26" value="5" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="10" sym:connection_attr="number"/>
+    </g>
+    <line start="_Middle+20x+0y" end="_Middle+30x+0y" sym:connection_id="11"/>
+    <g conditions="$Unit==Unit_B">
+      <text x="_Middle+16" y="_Middle+0" value="NC" align="CentreRight" size="xxs" sym:connection_id="11" sym:connection_attr="name"/>
+    </g>
+    <g conditions="$Unit==Unit_B">
+      <text x="_Middle+26" y="_Middle-2" value="8" align="BottomCentre" size="xxs" sym:connection_id="11" sym:connection_attr="number"/>
+    </g>
+    <line start="_Middle+30x-10y" end="_Middle+40x-10y" sym:connection_id="12"/>
+    <g conditions="$Unit==Unit_B">
+      <text x="_Middle+26" y="_Middle-10" value="OUTN" align="CentreRight" size="xxs" sym:connection_id="12" sym:connection_attr="name"/>
+    </g>
+    <g conditions="$Unit==Unit_B">
+      <text x="_Middle+36" y="_Middle-12" value="7" align="BottomCentre" size="xxs" sym:connection_id="12" sym:connection_attr="number"/>
+    </g>
+    <line start="_Middle+30x+10y" end="_Middle+40x+10y" sym:connection_id="13"/>
+    <g conditions="$Unit==Unit_B">
+      <text x="_Middle+26" y="_Middle+10" value="BYPN" align="CentreRight" size="xxs" sym:connection_id="13" sym:connection_attr="name"/>
+    </g>
+    <g conditions="$Unit==Unit_B">
+      <text x="_Middle+36" y="_Middle+8" value="11" align="BottomCentre" size="xxs" sym:connection_id="13" sym:connection_attr="number"/>
+    </g>
+  </render>
+</component>

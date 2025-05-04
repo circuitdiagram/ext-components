@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="DTD114T"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="51da55e9-474b-469e-aafb-8445babced07"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="50"/>
+    <meta name="description" value="Digital NPN Transistor, 10k/NONE, SOT-23"/>
+    <meta name="keywords" value="ROHM Digital NPN Transistor"/>
+    <meta name="ki_fp_filters" value="SOT?23* SC?59*"/>
+    <property name="Reference" type="string" default="Q" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="DTD114T" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="b" start="_Middle-25x+0y" end="_Middle-15x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="c" start="_Middle+10x-20y" end="_Middle+10x-10y" edge="start" sym:connection_id="1"/>
+    <connection name="e" start="_Middle+10x+10y" end="_Middle+10x+20y" edge="end" sym:connection_id="2"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M10,9 L10,10"/>
+    <text x="_Middle-12" y="_Middle-3.5" value="10k" align="CentreCentre" size="base"/>
+    <path start="_Middle+0x+0y" data="M-13.5,-0 L-15,-0"/>
+    <path start="_Middle+0x+0y" data="M-5,-12.5 L2.5,-12.5"/>
+    <path start="_Middle+0x+0y" data="M-5,12.5 L2.5,12.5"/>
+    <path start="_Middle+0x+0y" data="M-5,12.5 C-11.88230531283531,12.470021065042191 -17.445669291337882,6.882370605803091 -17.445669291337882,0.0000000000000015308230218339246 C-17.445669291337886,-6.882370605803088 -11.882305312835319,-12.470021065042186 -5.000000000000007,-12.499999999999996"/>
+    <path start="_Middle+0x+0y" data="M0,-0 L-7.5,-0 L-8,-2 L-9,2 L-10,-2 L-11,2 L-12,-2 L-13,2 L-13.5,-0"/>
+    <path start="_Middle+0x+0y" data="M0,1 L10,-9"/>
+    <path start="_Middle+0x+0y" data="M0.5,-6 L0.5,6.5" fill="true"/>
+    <path start="_Middle+0x+0y" data="M2.5,-12.5 C9.382305312835312,-12.470021065042191 14.945669291337884,-6.882370605803089 14.945669291337884,0 C14.945669291337884,6.882370605803089 9.382305312835312,12.47002106504219 2.5000000000000004,12.499999999999996"/>
+    <path start="_Middle+0x+0y" data="M3.5,4.5 L5.5,2.5 L7.5,6.5 L3.5,4.5" fill="true"/>
+    <path start="_Middle+0x+0y" data="M10,-9 L10,-10"/>
+    <path start="_Middle+0x+0y" data="M10,9 L0,-1 L0,-1"/>
+    <text x="_Middle+20" y="_Middle-7.5" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+20" y="_Middle+0" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle-25x+0y" end="_Middle-15x+0y" sym:connection_id="0"/>
+    <text x="_Middle-11" y="_Middle+0" value="B" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-21" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+10x-20y" end="_Middle+10x-10y" sym:connection_id="1"/>
+    <text x="_Middle+10" y="_Middle-6" value="C" align="CentreRight" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle+8" y="_Middle-16" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+10x+10y" end="_Middle+10x+20y" sym:connection_id="2"/>
+    <text x="_Middle+10" y="_Middle+6" value="E" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle+8" y="_Middle+16" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+  </render>
+</component>

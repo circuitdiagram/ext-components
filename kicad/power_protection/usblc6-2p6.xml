@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="USBLC6-2P6"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="507843e2-dcc2-4897-8040-00f6476a710d"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="40"/>
+    <meta name="footprint" value="Package_TO_SOT_SMD:SOT-666"/>
+    <meta name="datasheet" value="https://www.st.com/resource/en/datasheet/usblc6-2.pdf"/>
+    <meta name="description" value="Very low capacitance ESD protection diode, 2 data-line, SOT-666"/>
+    <meta name="keywords" value="usb ethernet video"/>
+    <meta name="ki_fp_filters" value="SOT?666*"/>
+    <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="USBLC6-2P6" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="i_o1" start="_Middle-20x+0y" end="_Middle-10x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="i_o2" start="_Middle-20x+10y" end="_Middle-10x+10y" edge="start" sym:connection_id="1"/>
+    <connection name="vbus" start="_Middle+0x-20y" end="_Middle+0x-10y" edge="start" sym:connection_id="2"/>
+    <connection name="gnd" start="_Middle+0x+20y" end="_Middle+0x+30y" edge="end" sym:connection_id="3"/>
+    <connection name="i_o1" start="_Middle+10x+0y" end="_Middle+20x+0y" edge="end" sym:connection_id="4"/>
+    <connection name="i_o2" start="_Middle+10x+10y" end="_Middle+20x+10y" edge="end" sym:connection_id="5"/>
+  </connections>
+  <render>
+    <ellipse centre="_Middle-6x+0y" rx="0.00039370078740157485" ry="0.00039370078740157485"/>
+    <ellipse centre="_Middle-2x-8y" rx="0.00039370078740157485" ry="0.00039370078740157485"/>
+    <ellipse centre="_Middle-2x+18y" rx="0.00039370078740157485" ry="0.00039370078740157485"/>
+    <ellipse centre="_Middle+2x-8y" rx="0.00039370078740157485" ry="0.00039370078740157485"/>
+    <ellipse centre="_Middle+2x+18y" rx="0.00039370078740157485" ry="0.00039370078740157485"/>
+    <ellipse centre="_Middle+6x+10y" rx="0.00039370078740157485" ry="0.00039370078740157485"/>
+    <path start="_Middle+0x+0y" data="M-10,-0 L10,-0"/>
+    <path start="_Middle+0x+0y" data="M-10,10 L10,10"/>
+    <path start="_Middle+0x+0y" data="M-8,-2 L-4,-2 L-6,-6 L-8,-2"/>
+    <path start="_Middle+0x+0y" data="M-8,12 L-4,12"/>
+    <path start="_Middle+0x+0y" data="M-4,-6 L-8,-6"/>
+    <path start="_Middle+0x+0y" data="M-4,16 L-8,16 L-6,12 L-4,16"/>
+    <path start="_Middle+0x+0y" data="M-2,4.5 L-2,3 L2,3"/>
+    <path start="_Middle+0x+0y" data="M0,-10 L-2,-8 L2,-8 L0,-6 L0,16 L-2,18 L2,18 L0,20"/>
+    <path start="_Middle+0x+0y" data="M2,7 L-2,7 L0,3 L2,7"/>
+    <path start="_Middle+0x+0y" data="M4,-6 L8,-6"/>
+    <path start="_Middle+0x+0y" data="M4,12 L8,12"/>
+    <path start="_Middle+0x+0y" data="M8,-2 L4,-2 L6,-6 L8,-2"/>
+    <path start="_Middle+0x+0y" data="M8,16 L4,16 L6,12 L8,16"/>
+    <rect location="_Middle-10x-11y" width="20" height="32"/>
+    <path start="_Middle+0x+0y" data="M-2,-8 L-6,-8 L-6,18 L-2,18"/>
+    <path start="_Middle+0x+0y" data="M2,18 L6,18 L6,-8 L2,-8"/>
+    <text x="_Middle+2.5" y="_Middle-22.5" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+2.5" y="_Middle-15" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle-20x+0y" end="_Middle-10x+0y" sym:connection_id="0"/>
+    <text x="_Middle-6" y="_Middle+0" value="I/O1" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-16" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-20x+10y" end="_Middle-10x+10y" sym:connection_id="1"/>
+    <text x="_Middle-6" y="_Middle+10" value="I/O2" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-16" y="_Middle+8" value="3" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+0x-20y" end="_Middle+0x-10y" sym:connection_id="2"/>
+    <text x="_Middle+0" y="_Middle-6" value="VBUS" align="CentreRight" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle-16" value="5" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+0x+20y" end="_Middle+0x+30y" sym:connection_id="3"/>
+    <text x="_Middle+0" y="_Middle+16" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+26" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle+10x+0y" end="_Middle+20x+0y" sym:connection_id="4"/>
+    <text x="_Middle+6" y="_Middle+0" value="I/O1" align="CentreRight" size="xxs" sym:connection_id="4" sym:connection_attr="name"/>
+    <text x="_Middle+16" y="_Middle-2" value="6" align="BottomCentre" size="xxs" sym:connection_id="4" sym:connection_attr="number"/>
+    <line start="_Middle+10x+10y" end="_Middle+20x+10y" sym:connection_id="5"/>
+    <text x="_Middle+6" y="_Middle+10" value="I/O2" align="CentreRight" size="xxs" sym:connection_id="5" sym:connection_attr="name"/>
+    <text x="_Middle+16" y="_Middle+8" value="4" align="BottomCentre" size="xxs" sym:connection_id="5" sym:connection_attr="number"/>
+  </render>
+</component>

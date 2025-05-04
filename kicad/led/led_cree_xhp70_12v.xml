@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="LED Cree XHP70 12V"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="dcb0b6d2-a160-4971-be8d-3a26d2f96f28"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="70"/>
+    <meta name="footprint" value="LED_SMD:LED_Cree-XHP70_12V"/>
+    <meta name="datasheet" value="http://www.cree.com/%7E/media/Files/Cree/LED%20Components%20and%20Modules/XLamp/Data%20and%20Binning/ds%20XHP70.pdf"/>
+    <meta name="description" value="XLamp® XHP70 LED, 12V footprint (all 4 LEDs in series)"/>
+    <meta name="keywords" value="led diode"/>
+    <meta name="ki_fp_filters" value="LED?Cree?XHP70?12V*"/>
+    <property name="Reference" type="string" default="D" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="LED_Cree_XHP70_12V" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="k" start="_Middle-35x+0y" end="_Middle-25x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="pad" start="_Middle+0x+10y" end="_Middle+0x+20y" edge="end" sym:connection_id="1"/>
+    <connection name="a" start="_Middle+25x+0y" end="_Middle+35x+0y" edge="end" sym:connection_id="2"/>
+  </connections>
+  <render>
+    <ellipse centre="_Middle-27x+0y" rx="1" ry="1" fill="true"/>
+    <path start="_Middle+0x+0y" data="M-27,-0 L-27,12 L27,12 L27,-0"/>
+    <path start="_Middle+0x+0y" data="M-25,-0 L25,-0"/>
+    <path start="_Middle+0x+0y" data="M-24.5,5 L-24.5,-5"/>
+    <path start="_Middle+0x+0y" data="M-23,-5.5 L-17,-11.5 L-20,-11.5 L-17,-11.5 L-17,-8.5"/>
+    <path start="_Middle+0x+0y" data="M-18,-5.5 L-12,-11.5 L-15,-11.5 L-12,-11.5 L-12,-8.5"/>
+    <path start="_Middle+0x+0y" data="M-16,15 L-16,9 L-10,12 L-16,15 L-16,14"/>
+    <path start="_Middle+0x+0y" data="M-14.5,5 L-14.5,-5 L-24.5,-0 L-14.5,5"/>
+    <path start="_Middle+0x+0y" data="M-12.5,5 L-12.5,-5"/>
+    <path start="_Middle+0x+0y" data="M-11,-5.5 L-5,-11.5 L-8,-11.5 L-5,-11.5 L-5,-8.5"/>
+    <path start="_Middle+0x+0y" data="M-9,16 L-10,15 L-10,9 L-11,8"/>
+    <path start="_Middle+0x+0y" data="M-6,-5.5 L0,-11.5 L-3,-11.5 L0,-11.5 L0,-8.5"/>
+    <path start="_Middle+0x+0y" data="M-2.5,5 L-2.5,-5 L-12.5,-0 L-2.5,5"/>
+    <path start="_Middle+0x+0y" data="M0,-0 L0,18"/>
+    <ellipse centre="_Middle+0x+0y" rx="1.4000000000000001" ry="1.4000000000000001" fill="true"/>
+    <ellipse centre="_Middle+0x+12y" rx="1.4000000000000001" ry="1.4000000000000001" fill="true"/>
+    <path start="_Middle+0x+0y" data="M0,15 L0,18"/>
+    <path start="_Middle+0x+0y" data="M3,5 L3,-5"/>
+    <path start="_Middle+0x+0y" data="M4.5,-5.5 L10.5,-11.5 L7.5,-11.5 L10.5,-11.5 L10.5,-8.5"/>
+    <path start="_Middle+0x+0y" data="M9.5,-5.5 L15.5,-11.5 L12.5,-11.5 L15.5,-11.5 L15.5,-8.5"/>
+    <path start="_Middle+0x+0y" data="M10,15 L10,9 L16,12 L10,15 L10,14"/>
+    <path start="_Middle+0x+0y" data="M13,5 L13,-5 L3,-0 L13,5"/>
+    <path start="_Middle+0x+0y" data="M14.5,5 L14.5,-5"/>
+    <path start="_Middle+0x+0y" data="M16,-5.5 L22,-11.5 L19,-11.5 L22,-11.5 L22,-8.5"/>
+    <path start="_Middle+0x+0y" data="M17,16 L16,15 L16,9 L15,8"/>
+    <path start="_Middle+0x+0y" data="M21,-5.5 L27,-11.5 L24,-11.5 L27,-11.5 L27,-8.5"/>
+    <path start="_Middle+0x+0y" data="M24.5,5 L24.5,-5 L14.5,-0 L24.5,5"/>
+    <ellipse centre="_Middle+27x+0y" rx="1" ry="1" fill="true"/>
+    <text x="_Middle+0" y="_Middle-25" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle-17.5" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-35x+0y" end="_Middle-25x+0y" sym:connection_id="0"/>
+    <text x="_Middle-21" y="_Middle+0" value="K" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-31" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+0x+10y" end="_Middle+0x+20y" sym:connection_id="1"/>
+    <text x="_Middle+0" y="_Middle+6" value="PAD" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+16" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+25x+0y" end="_Middle+35x+0y" sym:connection_id="2"/>
+    <text x="_Middle+21" y="_Middle+0" value="A" align="CentreRight" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle+31" y="_Middle-2" value="2" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+  </render>
+</component>

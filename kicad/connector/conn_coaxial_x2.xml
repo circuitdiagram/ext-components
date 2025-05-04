@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Conn Coaxial x2"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="8165df9b-e1c2-4eff-9eaa-cef1d312d2d7"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="40"/>
+    <meta name="description" value="double coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"/>
+    <meta name="keywords" value="BNC SMA SMB SMC LEMO coaxial connector CINCH RCA"/>
+    <meta name="ki_fp_filters" value="*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO*"/>
+    <property name="Reference" type="string" default="J" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="Conn_Coaxial_x2" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="in1" start="_Middle-20x-10y" end="_Middle-10x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="in2" start="_Middle-20x+10y" end="_Middle-10x+10y" edge="start" sym:connection_id="1"/>
+    <connection name="ext" start="_Middle+0x+20y" end="_Middle+0x+30y" edge="end" sym:connection_id="2"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-10,-10 L-2,-10"/>
+    <path start="_Middle+0x+0y" data="M-10,10 L-2,10"/>
+    <path start="_Middle+0x+0y" data="M7,-10 C7.027081364690339,-6.428639318250365 4.409528973100147,-3.3873567822144484 0.8739606299519798,-2.882275590336138 C-2.661607713196188,-2.377194398457828 -6.0260171192128285,-4.563910963407056 -7,-8"/>
+    <path start="_Middle+0x+0y" data="M7,10 C7.027081364690339,13.571360681749635 4.409528973100147,16.612643217785553 0.8739606299519798,17.11772440966386 C-2.661607713196188,17.622805601542172 -6.0260171192128285,15.436089036592943 -7,12"/>
+    <path start="_Middle+0x+0y" data="M-7,-12 C-6.026926092364724,-15.437091937161199 -2.662034222610051,-17.624891280120643 0.8742440947646886,-17.119708663352824 C4.410522412139428,-16.614526046585006 7.02823479107527,-13.572068953812629 7,-10.000000000000002"/>
+    <path start="_Middle+0x+0y" data="M-7,8 C-6.026926092364724,4.562908062838802 -2.662034222610051,2.375108719879356 0.8742440947646886,2.8802913366471756 C4.410522412139428,3.385473953414995 7.02823479107527,6.427931046187371 7,9.999999999999998"/>
+    <ellipse centre="_Middle+0x-10y" rx="2" ry="2"/>
+    <path start="_Middle+0x+0y" data="M0,-3 L0,2.5"/>
+    <ellipse centre="_Middle+0x+10y" rx="2" ry="2"/>
+    <path start="_Middle+0x+0y" data="M0,20 L0,17"/>
+    <text x="_Middle+0" y="_Middle-22.5" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+11.5" y="_Middle+0" value="$Value" align="CentreCentre" size="xxs" rotate="90"/>
+    <line start="_Middle-20x-10y" end="_Middle-10x-10y" sym:connection_id="0"/>
+    <text x="_Middle-6" y="_Middle-10" value="IN1" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-16" y="_Middle-12" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-20x+10y" end="_Middle-10x+10y" sym:connection_id="1"/>
+    <text x="_Middle-6" y="_Middle+10" value="IN2" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-16" y="_Middle+8" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+0x+20y" end="_Middle+0x+30y" sym:connection_id="2"/>
+    <text x="_Middle+0" y="_Middle+16" value="EXT" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+26" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+  </render>
+</component>

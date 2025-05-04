@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="P300PL154M275xC472"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="8c73be85-3c5d-4e18-9215-948959f3489b"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="60"/>
+    <meta name="footprint" value="Filter:Filter_KEMET_PZB300_24.0x12.5mm_P10.0mm"/>
+    <meta name="datasheet" value="https://content.kemet.com/datasheets/KEM_F3019_PZB300X2_2XY2_275.pdf"/>
+    <meta name="description" value="EMI suppression capacitor PZB300 series, metallized paper, X2 and Y2 classes, 275 VAC, Cx 0.15uF, Cy 4.7nF, legacy P/N: PZB300MC23xxx"/>
+    <meta name="keywords" value="suppressor filter cap"/>
+    <meta name="ki_fp_filters" value="Filter*PZB300*"/>
+    <property name="Reference" type="string" default="FL" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="P300PL154M275xC472" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="1" start="_Middle-30x-10y" end="_Middle-20x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="3" start="_Middle+0x+0y" end="_Middle+0x+10y" edge="end" sym:connection_id="1"/>
+    <connection name="2" start="_Middle+20x-10y" end="_Middle+30x-10y" edge="end" sym:connection_id="2"/>
+  </connections>
+  <render>
+    <rect location="_Middle-22x-16.25y" width="44" height="18.750000000000004"/>
+    <rect location="_Middle-19x-7y" width="8" height="1"/>
+    <rect location="_Middle-19x-3.5y" width="8" height="1"/>
+    <ellipse centre="_Middle-15x-10y" rx="1" ry="1" fill="true"/>
+    <path start="_Middle+0x+0y" data="M-15,-10 L-22,-10"/>
+    <path start="_Middle+0x+0y" data="M-15,-2.5 L-15,-0 L15,-0 L15,-3"/>
+    <rect location="_Middle-2x-14y" width="1" height="8"/>
+    <path start="_Middle+0x+0y" data="M-2,-10 L-15,-10 L-15,-7"/>
+    <ellipse centre="_Middle+0x+0y" rx="1" ry="1" fill="true"/>
+    <rect location="_Middle+1x-14y" width="1" height="8"/>
+    <path start="_Middle+0x+0y" data="M2,-10 L15,-10 L15,-7"/>
+    <rect location="_Middle+11x-4y" width="8" height="1"/>
+    <path start="_Middle+0x+0y" data="M15,-10 L22,-10"/>
+    <ellipse centre="_Middle+15x-10y" rx="1" ry="1" fill="true"/>
+    <rect location="_Middle+11x-7y" width="8" height="1"/>
+    <text x="_Middle-7" y="_Middle-4" value="Cy" align="CentreCentre" size="base"/>
+    <text x="_Middle+6" y="_Middle-13" value="Cx" align="CentreCentre" size="base"/>
+    <text x="_Middle+7" y="_Middle-4" value="Cy" align="CentreCentre" size="base"/>
+    <text x="_Middle+0" y="_Middle-29" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle-21" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-30x-10y" end="_Middle-20x-10y" sym:connection_id="0"/>
+    <text x="_Middle-16" y="_Middle-10" value="1" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-26" y="_Middle-12" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+0x+0y" end="_Middle+0x+10y" sym:connection_id="1"/>
+    <text x="_Middle+0" y="_Middle-4" value="3" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+6" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+20x-10y" end="_Middle+30x-10y" sym:connection_id="2"/>
+    <text x="_Middle+16" y="_Middle-10" value="2" align="CentreRight" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle+26" y="_Middle-12" value="2" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+  </render>
+</component>

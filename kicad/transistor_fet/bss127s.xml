@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="BSS127S"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="3753a585-e9b2-4fb6-950b-9191bc26871a"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="50"/>
+    <meta name="footprint" value="Package_TO_SOT_SMD:SOT-23"/>
+    <meta name="datasheet" value="http://www.diodes.com/assets/Datasheets/BSS127.pdf"/>
+    <meta name="description" value="0.07A Id, 600V Vds, N-Channel MOSFET, SOT-23"/>
+    <meta name="keywords" value="N-Channel MOSFET"/>
+    <meta name="ki_fp_filters" value="SOT?23*"/>
+    <property name="Reference" type="string" default="Q" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="BSS127S" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="g" start="_Middle-20x+0y" end="_Middle-10x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="d" start="_Middle+10x-20y" end="_Middle+10x-10y" edge="start" sym:connection_id="1"/>
+    <connection name="s" start="_Middle+10x+10y" end="_Middle+10x+20y" edge="end" sym:connection_id="2"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M1,-7.5 L1,7.5"/>
+    <path start="_Middle+0x+0y" data="M1,-0 L-10,-0"/>
+    <path start="_Middle+0x+0y" data="M3,-9 L3,-5"/>
+    <path start="_Middle+0x+0y" data="M3,-2 L3,2"/>
+    <path start="_Middle+0x+0y" data="M3,5 L3,9"/>
+    <path start="_Middle+0x+0y" data="M3,7 L13,7 L13,-7 L3,-7"/>
+    <path start="_Middle+0x+0y" data="M4,-0 L8,-1.5 L8,1.5 L4,-0" fill="true"/>
+    <ellipse centre="_Middle+6.5x+0y" rx="11" ry="11"/>
+    <path start="_Middle+0x+0y" data="M10,-10 L10,-7"/>
+    <ellipse centre="_Middle+10x-7y" rx="1" ry="1" fill="true"/>
+    <ellipse centre="_Middle+10x+7y" rx="1" ry="1" fill="true"/>
+    <path start="_Middle+0x+0y" data="M10,10 L10,-0 L3,-0"/>
+    <path start="_Middle+0x+0y" data="M11,-2 L11.5,-1.5 L14.5,-1.5 L15,-1"/>
+    <path start="_Middle+0x+0y" data="M13,-1.5 L11.5,1 L14.5,1 L13,-1.5"/>
+    <text x="_Middle+20" y="_Middle-7.5" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+20" y="_Middle+0" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle-20x+0y" end="_Middle-10x+0y" sym:connection_id="0"/>
+    <text x="_Middle-6" y="_Middle+0" value="G" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-16" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+10x-20y" end="_Middle+10x-10y" sym:connection_id="1"/>
+    <text x="_Middle+10" y="_Middle-6" value="D" align="CentreRight" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle+8" y="_Middle-16" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+10x+10y" end="_Middle+10x+20y" sym:connection_id="2"/>
+    <text x="_Middle+10" y="_Middle+6" value="S" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle+8" y="_Middle+16" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+  </render>
+</component>

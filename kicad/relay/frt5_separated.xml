@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="FRT5 separated"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="0d6db44f-be32-4c72-ae5d-049954e7e4f9"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="40"/>
+    <meta name="footprint" value="Relay_THT:Relay_DPDT_FRT5"/>
+    <meta name="datasheet" value="https://www.elpro.org/de/index.php?controller=attachment&amp;id_attachment=8663"/>
+    <meta name="description" value="FORWARD INDUSTRIAL, Miniature Dual Pole Relay, DIP-like package, separate subsymbols"/>
+    <meta name="keywords" value="relay monostable"/>
+    <meta name="ki_fp_filters" value="Relay*DPDT*FRT5*"/>
+    <property name="Reference" type="string" default="K" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="FRT5_separated" serialize="value" display="Value"/>
+    <property name="Unit" type="enum" default="Unit_A" serialize="unit" display="Unit">
+      <option>Unit_A</option>
+      <option>Unit_B</option>
+      <option>Unit_C</option>
+    </property>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin1" start="_Middle+0x-30y" end="_Middle+0x-20y" edge="start" sym:connection_id="0"/>
+    <connection name="pin10" start="_Middle+0x+20y" end="_Middle+0x+30y" edge="end" sym:connection_id="1"/>
+    <connection name="pin2" start="_Middle-10x-30y" end="_Middle-10x-20y" edge="start" sym:connection_id="2"/>
+    <connection name="pin3" start="_Middle+0x+20y" end="_Middle+0x+30y" edge="end" sym:connection_id="3"/>
+    <connection name="pin4" start="_Middle+10x-30y" end="_Middle+10x-20y" edge="start" sym:connection_id="4"/>
+    <connection name="pin9" start="_Middle-10x-30y" end="_Middle-10x-20y" edge="start" sym:connection_id="5"/>
+    <connection name="pin8" start="_Middle+0x+20y" end="_Middle+0x+30y" edge="end" sym:connection_id="6"/>
+    <connection name="pin7" start="_Middle+10x-30y" end="_Middle+10x-20y" edge="start" sym:connection_id="7"/>
+  </connections>
+  <render>
+    <g conditions="$Unit==Unit_A">
+      <text x="_Middle+3.5" y="_Middle-11.5" value="+" align="CentreCentre" size="base"/>
+    </g>
+    <rect location="_Middle-12.5x-7.5y" width="25" height="15"/>
+    <path start="_Middle+0x+0y" data="M-10,7.5 L10,-7.5"/>
+    <path start="_Middle+0x+0y" data="M0,-20 L0,-7.5"/>
+    <path start="_Middle+0x+0y" data="M0,20 L0,7.5"/>
+    <path start="_Middle+0x+0y" data="M-12.5,-0 L-10,-0"/>
+    <path start="_Middle+0x+0y" data="M-10,-20 L-10,-10 L-7.5,-12.5 L-10,-15" fill="true"/>
+    <path start="_Middle+0x+0y" data="M-7.5,-0 L-5,-0"/>
+    <path start="_Middle+0x+0y" data="M0,10 L-7.5,-15"/>
+    <path start="_Middle+0x+0y" data="M0,10 L0,20"/>
+    <path start="_Middle+0x+0y" data="M10,-20 L10,-10 L7.5,-12.5 L10,-15"/>
+    <path start="_Middle+0x+0y" data="M-12.5,-0 L-10,-0"/>
+    <path start="_Middle+0x+0y" data="M-10,-20 L-10,-10 L-7.5,-12.5 L-10,-15" fill="true"/>
+    <path start="_Middle+0x+0y" data="M-7.5,-0 L-5,-0"/>
+    <path start="_Middle+0x+0y" data="M0,10 L-7.5,-15"/>
+    <path start="_Middle+0x+0y" data="M0,10 L0,20"/>
+    <path start="_Middle+0x+0y" data="M10,-20 L10,-10 L7.5,-12.5 L10,-15"/>
+    <text x="_Middle+20" y="_Middle-10" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+20" y="_Middle+0" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle+0x-30y" end="_Middle+0x-20y" sym:connection_id="0"/>
+    <g conditions="$Unit==Unit_A">
+      <text x="_Middle-2" y="_Middle-26" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
+    </g>
+    <line start="_Middle+0x+20y" end="_Middle+0x+30y" sym:connection_id="1"/>
+    <g conditions="$Unit==Unit_A">
+      <text x="_Middle-2" y="_Middle+26" value="10" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    </g>
+    <line start="_Middle-10x-30y" end="_Middle-10x-20y" sym:connection_id="2"/>
+    <g conditions="$Unit==Unit_B">
+      <text x="_Middle-12" y="_Middle-26" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+    </g>
+    <line start="_Middle+0x+20y" end="_Middle+0x+30y" sym:connection_id="3"/>
+    <g conditions="$Unit==Unit_B">
+      <text x="_Middle-2" y="_Middle+26" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="number"/>
+    </g>
+    <line start="_Middle+10x-30y" end="_Middle+10x-20y" sym:connection_id="4"/>
+    <g conditions="$Unit==Unit_B">
+      <text x="_Middle+8" y="_Middle-26" value="4" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="4" sym:connection_attr="number"/>
+    </g>
+    <line start="_Middle-10x-30y" end="_Middle-10x-20y" sym:connection_id="5"/>
+    <g conditions="$Unit==Unit_C">
+      <text x="_Middle-12" y="_Middle-26" value="9" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="5" sym:connection_attr="number"/>
+    </g>
+    <line start="_Middle+0x+20y" end="_Middle+0x+30y" sym:connection_id="6"/>
+    <g conditions="$Unit==Unit_C">
+      <text x="_Middle-2" y="_Middle+26" value="8" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="6" sym:connection_attr="number"/>
+    </g>
+    <line start="_Middle+10x-30y" end="_Middle+10x-20y" sym:connection_id="7"/>
+    <g conditions="$Unit==Unit_C">
+      <text x="_Middle+8" y="_Middle-26" value="7" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="7" sym:connection_attr="number"/>
+    </g>
+  </render>
+</component>

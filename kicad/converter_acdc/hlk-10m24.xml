@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="HLK-10M24"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="70560920-0c4a-4b20-a8c9-412a3ef5d4c4"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="80"/>
+    <meta name="footprint" value="Converter_ACDC:Converter_ACDC_Hi-Link_HLK-10Mxx"/>
+    <meta name="datasheet" value="http://h.hlktech.com/download/ACDC%E7%94%B5%E6%BA%90%E6%A8%A1%E5%9D%9710W%E7%B3%BB%E5%88%97/1/%E6%B5%B7%E5%87%8C%E7%A7%9110W%E7%B3%BB%E5%88%97%E7%94%B5%E6%BA%90%E6%A8%A1%E5%9D%97%E8%A7%84%E6%A0%BC%E4%B9%A6V1.8.pdf"/>
+    <meta name="description" value="Compact AC/DC board mount power module 10W 24V"/>
+    <meta name="keywords" value="AC/DC module power supply"/>
+    <meta name="ki_fp_filters" value="Converter*ACDC*Hi?Link*HLK?10M*"/>
+    <property name="Reference" type="string" default="PS" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="HLK-10M24" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="ac_l" start="_Middle-40x-10y" end="_Middle-30x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="ac_n" start="_Middle-40x+10y" end="_Middle-30x+10y" edge="start" sym:connection_id="1"/>
+    <connection name="vout" start="_Middle+30x-10y" end="_Middle+40x-10y" edge="end" sym:connection_id="2"/>
+    <connection name="vout" start="_Middle+30x+10y" end="_Middle+40x+10y" edge="end" sym:connection_id="3"/>
+  </connections>
+  <render>
+    <rect location="_Middle-30x-15y" width="60" height="30"/>
+    <path start="_Middle+0x+0y" data="M-21,2.5 L-11,2.5"/>
+    <path start="_Middle+0x+0y" data="M-16,-2.5 C-16.485014481997002,-1.5673917549218865 -17.44881153614849,-0.9822834645669296 -18.5,-0.9822834645669296 C-19.55118846385151,-0.9822834645669296 -20.514985518002995,-1.5673917549218856 -21,-2.499999999999999"/>
+    <path start="_Middle+0x+0y" data="M-16,-2.5 C-15.493283157014972,-3.4049078422948575 -14.537121093224627,-3.965354330708662 -13.5,-3.965354330708662 C-12.462878906775371,-3.965354330708662 -11.506716842985028,-3.4049078422948567 -11,-2.5"/>
+    <path start="_Middle+0x+0y" data="M0,-15 L0,-12.5"/>
+    <path start="_Middle+0x+0y" data="M0,-10 L0,-7.5"/>
+    <path start="_Middle+0x+0y" data="M0,-5 L0,-2.5"/>
+    <path start="_Middle+0x+0y" data="M0,-0 L0,2.5"/>
+    <path start="_Middle+0x+0y" data="M0,5 L0,7.5"/>
+    <path start="_Middle+0x+0y" data="M0,10 L0,12.5"/>
+    <path start="_Middle+0x+0y" data="M11,-2.5 L13,-2.5"/>
+    <path start="_Middle+0x+0y" data="M11,2.5 L21,2.5"/>
+    <path start="_Middle+0x+0y" data="M15,-2.5 L17,-2.5"/>
+    <path start="_Middle+0x+0y" data="M19,-2.5 L21,-2.5"/>
+    <text x="_Middle+0" y="_Middle-20" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+20" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-40x-10y" end="_Middle-30x-10y" sym:connection_id="0"/>
+    <text x="_Middle-26" y="_Middle-10" value="AC/L" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-36" y="_Middle-12" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-40x+10y" end="_Middle-30x+10y" sym:connection_id="1"/>
+    <text x="_Middle-26" y="_Middle+10" value="AC/N" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-36" y="_Middle+8" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+30x-10y" end="_Middle+40x-10y" sym:connection_id="2"/>
+    <text x="_Middle+26" y="_Middle-10" value="+Vout" align="CentreRight" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle+36" y="_Middle-12" value="4" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+30x+10y" end="_Middle+40x+10y" sym:connection_id="3"/>
+    <text x="_Middle+26" y="_Middle+10" value="-Vout" align="CentreRight" size="xxs" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle+36" y="_Middle+8" value="3" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+  </render>
+</component>

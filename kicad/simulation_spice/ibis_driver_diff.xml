@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="IBIS DRIVER DIFF"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="aa75a35f-7a16-4780-9a5b-0d0302a48035"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="50"/>
+    <meta name="datasheet" value="https://ibis.org"/>
+    <meta name="description" value="Driver model for IBIS files. Pin 3 can be used to monitor the die potential."/>
+    <meta name="Sim_Name" value=""/>
+    <meta name="Sim_Library" value=""/>
+    <meta name="Ibis_Pin" value=""/>
+    <meta name="Ibis_Model" value=""/>
+    <meta name="Ibis_Diff" value="1"/>
+    <meta name="Sim.Device" value="IBIS"/>
+    <meta name="Sim.Type" value="IBISDRIVERDC"/>
+    <meta name="Sim.Pins" value="1=1 2=2 3=3"/>
+    <meta name="keywords" value="Simulation IBIS"/>
+    <property name="Reference" type="string" default="U?" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="IBIS_DRIVER_DIFF" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="ref" start="_Middle+0x+10y" end="_Middle+0x+20y" edge="end" sym:connection_id="0"/>
+    <connection name="pos" start="_Middle+15x-10y" end="_Middle+30x-10y" edge="end" sym:connection_id="1"/>
+    <connection name="neg" start="_Middle+15x+10y" end="_Middle+30x+10y" edge="end" sym:connection_id="2"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M15,-10 L15,-2.5"/>
+    <path start="_Middle+0x+0y" data="M15,10 L15,2.5"/>
+    <path start="_Middle+0x+0y" data="M20,-0 L-20,-20 L-20,20 L20,-0"/>
+    <text x="_Middle+0" y="_Middle-35" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle-25" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle+0x+10y" end="_Middle+0x+20y" sym:connection_id="0"/>
+    <text x="_Middle+0" y="_Middle+6" value="REF" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+16" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+15x-10y" end="_Middle+30x-10y" sym:connection_id="1"/>
+    <text x="_Middle+11" y="_Middle-10" value="+" align="CentreRight" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle+23.5" y="_Middle-12" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+15x+10y" end="_Middle+30x+10y" sym:connection_id="2"/>
+    <text x="_Middle+11" y="_Middle+10" value="-" align="CentreRight" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle+23.5" y="_Middle+8" value="3" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+  </render>
+</component>

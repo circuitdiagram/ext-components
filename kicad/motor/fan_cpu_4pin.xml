@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Fan CPU 4pin"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="f0a2981c-bf85-49de-8148-a72ce9b157f9"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="50"/>
+    <meta name="datasheet" value="http://www.formfactors.org/developer%5Cspecs%5Crev1_2_public.pdf"/>
+    <meta name="description" value="CPU Fan, tacho output, PWM input, 4-pin connector"/>
+    <meta name="keywords" value="Fan Motor tacho PWM"/>
+    <meta name="ki_fp_filters" value="FanPinHeader*P2.54mm*Vertical* PinHeader*P2.54mm*Vertical* TerminalBlock*"/>
+    <property name="Reference" type="string" default="M" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="Fan_CPU_4pin" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="tacho" start="_Middle-30x-10y" end="_Middle-20x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="pwm" start="_Middle-30x+10y" end="_Middle-20x+10y" edge="start" sym:connection_id="1"/>
+    <connection name="pos" start="_Middle+0x-30y" end="_Middle+0x-20y" edge="start" sym:connection_id="2"/>
+    <connection name="neg" start="_Middle+0x+10y" end="_Middle+0x+20y" edge="end" sym:connection_id="3"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-20,-8 L-21,-8.5"/>
+    <path start="_Middle+0x+0y" data="M-20,-8 L-20.5,-7"/>
+    <path start="_Middle+0x+0y" data="M-18,-6 C-18.004779266189512,-4.89881880759029 -18.898808436328093,-4.008661417322028 -20,-4.008661417322028 C-21.101191563671907,-4.008661417322028 -21.995220733810488,-4.89881880759029 -22,-6"/>
+    <path start="_Middle+0x+0y" data="M-22,-6 C-21.99992394651457,-7.104537995742661 -21.104537995742664,-7.999923946514567 -20,-8"/>
+    <path start="_Middle+0x+0y" data="M-16,-10 L-16,-4 L-13,-4"/>
+    <path start="_Middle+0x+0y" data="M-21,13 L-20,13 L-20,12 L-19,12 L-19,13 L-17,13 L-17,12 L-16,12 L-16,13 L-14,13"/>
+    <path start="_Middle+0x+0y" data="M-16,-10 L-20,-10"/>
+    <path start="_Middle+0x+0y" data="M-10,4 L-16,4 L-16,10 L-20,10"/>
+    <path start="_Middle+0x+0y" data="M0,-15 C2.0724816741151884,-11.468498707485782 2.0702373158798117,-7.091647530926961 -0.005865028196188504,-3.56227354599776 C-2.081967372272188,-0.03289956106855918 -5.906402375674534,2.095604177156753 -9.999999999999996,2"/>
+    <path start="_Middle+0x+0y" data="M0,-18 L0,-20"/>
+    <path start="_Middle+0x+0y" data="M0,-16.8 L0,-18.2"/>
+    <ellipse centre="_Middle+0x-4y" rx="12.8" ry="12.8"/>
+    <path start="_Middle+0x+0y" data="M-10,2 C-8.10612912535216,-1.7877075892780816 -4.234793462698522,-4.180314960629923 0.0000000000000006845996076656401,-4.180314960629923 C4.234793462698524,-4.180314960629923 8.10612912535216,-1.787707589278078 10,2.000000000000001"/>
+    <path start="_Middle+0x+0y" data="M0,8.799999999999999 L0,10.4"/>
+    <path start="_Middle+0x+0y" data="M0,20 L0,18"/>
+    <path start="_Middle+0x+0y" data="M10,2 C5.9597171419843225,1.9666625543815215 2.23346201347268,-0.18500433318623166 0.18488755407523172,-3.6675809141618965 C-1.8636869053222167,-7.150157495137561 -1.9338784798320798,-11.452450002706358 -0.0000000000000017763568394002505,-14.999999999999993"/>
+    <text x="_Middle+10" y="_Middle-20" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+10" y="_Middle+10" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle-30x-10y" end="_Middle-20x-10y" sym:connection_id="0"/>
+    <text x="_Middle-16" y="_Middle-10" value="Tacho" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-26" y="_Middle-12" value="3" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-30x+10y" end="_Middle-20x+10y" sym:connection_id="1"/>
+    <text x="_Middle-16" y="_Middle+10" value="PWM" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-26" y="_Middle+8" value="4" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+0x-30y" end="_Middle+0x-20y" sym:connection_id="2"/>
+    <text x="_Middle+0" y="_Middle-16" value="+" align="CentreRight" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle-26" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+0x+10y" end="_Middle+0x+20y" sym:connection_id="3"/>
+    <text x="_Middle+0" y="_Middle+6" value="-" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+16" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="number"/>
+  </render>
+</component>

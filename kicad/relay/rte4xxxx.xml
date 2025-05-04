@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="RTE4xxxx"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="7d0f0bd1-19e1-4284-b726-6b335c4b2d00"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="130"/>
+    <meta name="footprint" value="Relay_THT:Relay_DPST_Schrack-RT2-FormA_RM5mm"/>
+    <meta name="datasheet" value="http://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&amp;DocId=Data+Sheet%7FRT2%7F1014%7Fpdf%7FEnglish%7FENG_DS_RT2_1014.pdf%7F6-1393243-3"/>
+    <meta name="description" value="Schrack RT2 relay, monostable dual pole normally open, DC or AC coil"/>
+    <meta name="keywords" value="TE DPST NO monostable"/>
+    <meta name="ki_fp_filters" value="Relay*DPST*RT2*FormA*"/>
+    <property name="Reference" type="string" default="K" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="RTE4xxxx" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pinA1" start="_Middle-40x-30y" end="_Middle-40x-20y" edge="start" sym:connection_id="0"/>
+    <connection name="pinA2" start="_Middle-40x+20y" end="_Middle-40x+30y" edge="end" sym:connection_id="1"/>
+    <connection name="pin11" start="_Middle+0x+20y" end="_Middle+0x+30y" edge="end" sym:connection_id="2"/>
+    <connection name="pin14" start="_Middle+10x-30y" end="_Middle+10x-20y" edge="start" sym:connection_id="3"/>
+    <connection name="pin21" start="_Middle+40x+20y" end="_Middle+40x+30y" edge="end" sym:connection_id="4"/>
+    <connection name="pin24" start="_Middle+50x-30y" end="_Middle+50x-20y" edge="start" sym:connection_id="5"/>
+  </connections>
+  <render>
+    <rect location="_Middle-60x-20y" width="120" height="40"/>
+    <rect location="_Middle-52.5x-7.5y" width="25.000000000000004" height="15"/>
+    <path start="_Middle+0x+0y" data="M-50,7.5 L-30,-7.5"/>
+    <path start="_Middle+0x+0y" data="M-40,-20 L-40,-7.5"/>
+    <path start="_Middle+0x+0y" data="M-40,20 L-40,7.5"/>
+    <path start="_Middle+0x+0y" data="M-27.500000000000004,-0 L-25,-0"/>
+    <path start="_Middle+0x+0y" data="M-22.5,-0 L-20,-0"/>
+    <path start="_Middle+0x+0y" data="M-17.5,-0 L-15,-0"/>
+    <path start="_Middle+0x+0y" data="M-12.5,-0 L-10,-0"/>
+    <path start="_Middle+0x+0y" data="M-7.5,-0 L-5,-0"/>
+    <path start="_Middle+0x+0y" data="M-2.5,-0 L0,-0"/>
+    <path start="_Middle+0x+0y" data="M0,10 L-7.5,-15"/>
+    <path start="_Middle+0x+0y" data="M0,10 L0,20"/>
+    <path start="_Middle+0x+0y" data="M2.5,-0 L5,-0"/>
+    <path start="_Middle+0x+0y" data="M7.5,-0 L10,-0"/>
+    <path start="_Middle+0x+0y" data="M10,-20 L10,-10 L7.5,-12.5 L10,-15"/>
+    <path start="_Middle+0x+0y" data="M12.5,-0 L15,-0"/>
+    <path start="_Middle+0x+0y" data="M17.5,-0 L20,-0"/>
+    <path start="_Middle+0x+0y" data="M22.5,-0 L25,-0"/>
+    <path start="_Middle+0x+0y" data="M27.500000000000004,-0 L30,-0"/>
+    <path start="_Middle+0x+0y" data="M32.50000000000001,-0 L35,-0"/>
+    <path start="_Middle+0x+0y" data="M40,10 L32.50000000000001,-15"/>
+    <path start="_Middle+0x+0y" data="M40,10 L40,20"/>
+    <path start="_Middle+0x+0y" data="M50,-20 L50,-10 L47.5,-12.5 L50,-15"/>
+    <text x="_Middle+65.00000000000001" y="_Middle-15" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+65.00000000000001" y="_Middle-5" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle-40x-30y" end="_Middle-40x-20y" sym:connection_id="0"/>
+    <text x="_Middle-42" y="_Middle-26" value="A1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-40x+20y" end="_Middle-40x+30y" sym:connection_id="1"/>
+    <text x="_Middle-42" y="_Middle+26" value="A2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+0x+20y" end="_Middle+0x+30y" sym:connection_id="2"/>
+    <text x="_Middle-2" y="_Middle+26" value="11" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+10x-30y" end="_Middle+10x-20y" sym:connection_id="3"/>
+    <text x="_Middle+8" y="_Middle-26" value="14" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle+40x+20y" end="_Middle+40x+30y" sym:connection_id="4"/>
+    <text x="_Middle+38" y="_Middle+26" value="21" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="4" sym:connection_attr="number"/>
+    <line start="_Middle+50x-30y" end="_Middle+50x-20y" sym:connection_id="5"/>
+    <text x="_Middle+48" y="_Middle-26" value="24" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="5" sym:connection_attr="number"/>
+  </render>
+</component>

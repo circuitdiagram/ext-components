@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="CST2"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="f452171f-eb30-4558-9638-a8e4d2632a48"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="60"/>
+    <meta name="footprint" value="Transformer_SMD:Transformer_Coilcraft_CST2"/>
+    <meta name="datasheet" value="https://www.coilcraft.com/pdfs/cst.pdf"/>
+    <meta name="description" value="Coilcraft Current Sense Transformer, SMD, 20A, 1:20 to 1:125"/>
+    <meta name="keywords" value="current sense transformer"/>
+    <meta name="ki_fp_filters" value="Transformer*Coilcraft*CST2*"/>
+    <property name="Reference" type="string" default="T" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="CST2" serialize="value" display="Value"/>
+    <property name="ki_locked" type="string" default="" serialize="ki_locked" display="ki_locked"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="1" start="_Middle-30x+0y" end="_Middle-20x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="8" start="_Middle-20x-20y" end="_Middle-5x-20y" edge="start" sym:connection_id="1"/>
+    <connection name="7" start="_Middle+5x-20y" end="_Middle+20x-20y" edge="end" sym:connection_id="2"/>
+    <connection name="3" start="_Middle+20x+0y" end="_Middle+30x+0y" edge="end" sym:connection_id="3"/>
+    <connection name="5" start="_Middle-10x-20y" end="_Middle+0x-20y" edge="start" sym:connection_id="4"/>
+    <connection name="2" start="_Middle-10x+0y" end="_Middle+0x+0y" edge="start" sym:connection_id="5"/>
+    <connection name="6" start="_Middle+0x-20y" end="_Middle+10x-20y" edge="end" sym:connection_id="6"/>
+    <connection name="4" start="_Middle+0x+0y" end="_Middle+10x+0y" edge="end" sym:connection_id="7"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-20,-12.5 L20,-12.5"/>
+    <path start="_Middle+0x+0y" data="M-20,-7.5 L20,-7.5"/>
+    <ellipse centre="_Middle-15x+0y" rx="1" ry="1" fill="true"/>
+    <path start="_Middle+0x+0y" data="M-20,-0 C-19.98805183452493,-2.7529529810233613 -17.75297890917886,-4.978346456692596 -15,-4.978346456692596 C-12.24702109082114,-4.978346456692596 -10.011948165475067,-2.7529529810233604 -10,0.00000000000000013877787807814457"/>
+    <ellipse centre="_Middle-7x-17.5y" rx="1" ry="1" fill="true"/>
+    <path start="_Middle+0x+0y" data="M-10,-0 C-9.988051834525223,-2.7529529810235664 -7.752978909179063,-4.978346456693118 -5,-4.978346456693118 C-2.2470210908209354,-4.978346456693118 -0.011948165474778172,-2.7529529810235656 0.0000000000000008881784197001252,0.0000000000000002949029909160572"/>
+    <path start="_Middle+0x+0y" data="M5,-20 C4.988051834525222,-17.24704701897643 2.7529789091790646,-15.021653543306881 0.0000000000000003061645833116259,-15.021653543306881 C-2.7529789091790637,-15.021653543306881 -4.988051834525221,-17.24704701897643 -5.000000000000001,-20"/>
+    <path start="_Middle+0x+0y" data="M0,-0 C0.011948165474778172,-2.7529529810235664 2.2470210908209363,-4.978346456693118 5,-4.978346456693118 C7.752978909179065,-4.978346456693118 9.988051834525223,-2.7529529810235656 10,0.0000000000000002949029909160572"/>
+    <path start="_Middle+0x+0y" data="M10,-0 C10.011948165474548,-2.7529529810237294 12.247021090820773,-4.978346456693536 15,-4.978346456693536 C17.752978909179227,-4.978346456693536 19.98805183452545,-2.7529529810237285 20,0.000000000000000881239525796218"/>
+    <text x="_Middle+0" y="_Middle-25" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+5" value="$Value" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_locked" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-30x+0y" end="_Middle-20x+0y" sym:connection_id="0"/>
+    <text x="_Middle-16" y="_Middle+0" value="1" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-26" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-20x-20y" end="_Middle-5x-20y" sym:connection_id="1"/>
+    <text x="_Middle-1" y="_Middle-20" value="8" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-13.5" y="_Middle-22" value="8" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+5x-20y" end="_Middle+20x-20y" sym:connection_id="2"/>
+    <text x="_Middle+1" y="_Middle-20" value="7" align="CentreRight" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle+13.5" y="_Middle-22" value="7" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+20x+0y" end="_Middle+30x+0y" sym:connection_id="3"/>
+    <text x="_Middle+16" y="_Middle+0" value="3" align="CentreRight" size="xxs" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle+26" y="_Middle-2" value="3" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle-10x-20y" end="_Middle+0x-20y" sym:connection_id="4"/>
+    <text x="_Middle+4" y="_Middle-20" value="5" align="CentreLeft" size="xxs" sym:connection_id="4" sym:connection_attr="name"/>
+    <text x="_Middle-6" y="_Middle-22" value="5" align="BottomCentre" size="xxs" sym:connection_id="4" sym:connection_attr="number"/>
+    <line start="_Middle-10x+0y" end="_Middle+0x+0y" sym:connection_id="5"/>
+    <text x="_Middle+4" y="_Middle+0" value="2" align="CentreLeft" size="xxs" sym:connection_id="5" sym:connection_attr="name"/>
+    <text x="_Middle-6" y="_Middle-2" value="2" align="BottomCentre" size="xxs" sym:connection_id="5" sym:connection_attr="number"/>
+    <line start="_Middle+0x-20y" end="_Middle+10x-20y" sym:connection_id="6"/>
+    <text x="_Middle-4" y="_Middle-20" value="6" align="CentreRight" size="xxs" sym:connection_id="6" sym:connection_attr="name"/>
+    <text x="_Middle+6" y="_Middle-22" value="6" align="BottomCentre" size="xxs" sym:connection_id="6" sym:connection_attr="number"/>
+    <line start="_Middle+0x+0y" end="_Middle+10x+0y" sym:connection_id="7"/>
+    <text x="_Middle-4" y="_Middle+0" value="4" align="CentreRight" size="xxs" sym:connection_id="7" sym:connection_attr="name"/>
+    <text x="_Middle+6" y="_Middle-2" value="4" align="BottomCentre" size="xxs" sym:connection_id="7" sym:connection_attr="number"/>
+  </render>
+</component>

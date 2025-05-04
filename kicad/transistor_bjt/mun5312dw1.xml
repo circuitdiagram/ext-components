@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="MUN5312DW1"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="4c061e0d-3ca5-4b36-9bd0-dfbc8c7dfe1c"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="60"/>
+    <meta name="footprint" value="Package_TO_SOT_SMD:SOT-363_SC-70-6"/>
+    <meta name="datasheet" value="https://www.onsemi.com/download/data-sheet/pdf/dtc124ep-d.pdf"/>
+    <meta name="description" value="Complementary Bias Resistor Transistors, Ic 100mA, Vce 50V, Vin(fwd) 40V, R1 = 22kohms, R2 = 22kohms, SOT-363"/>
+    <meta name="keywords" value="BRT Digital Transistor NPN PNP"/>
+    <meta name="ki_fp_filters" value="SOT*363*"/>
+    <property name="Reference" type="string" default="Q" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="MUN5312DW1" serialize="value" display="Value"/>
+    <property name="Unit" type="enum" default="Unit_A" serialize="unit" display="Unit">
+      <option>Unit_A</option>
+      <option>Unit_B</option>
+    </property>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="b1" start="_Middle-35x+0y" end="_Middle-25x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="c1" start="_Middle+5x-20y" end="_Middle+5x-10y" edge="start" sym:connection_id="1"/>
+    <connection name="e1" start="_Middle+5x+10y" end="_Middle+5x+20y" edge="end" sym:connection_id="2"/>
+    <connection name="b2" start="_Middle-35x+0y" end="_Middle-25x+0y" edge="start" sym:connection_id="3"/>
+    <connection name="c2" start="_Middle+5x-20y" end="_Middle+5x-10y" edge="start" sym:connection_id="4"/>
+    <connection name="e2" start="_Middle+5x+10y" end="_Middle+5x+20y" edge="end" sym:connection_id="5"/>
+  </connections>
+  <render>
+    <rect location="_Middle-25x-2y" width="6" height="4"/>
+    <rect location="_Middle-17x+3y" width="4" height="6"/>
+    <ellipse centre="_Middle-15x+0y" rx="1" ry="1" fill="true"/>
+    <path start="_Middle+0x+0y" data="M-15,3 L-15,-0"/>
+    <path start="_Middle+0x+0y" data="M-15,9 L-15,12 L5,12"/>
+    <path start="_Middle+0x+0y" data="M-3,-0 L-19,-0"/>
+    <path start="_Middle+0x+0y" data="M-2.5,-7.5 L-2.5,7.5"/>
+    <path start="_Middle+0x+0y" data="M-2.5,-2.5 L5,-10"/>
+    <path start="_Middle+0x+0y" data="M-2.5,2.5 L5,10"/>
+    <ellipse centre="_Middle+5x+12y" rx="1" ry="1" fill="true"/>
+    <ellipse centre="_Middle+0x+0y" rx="11.1" ry="11.1"/>
+    <path start="_Middle+0x+0y" data="M0,7 L2,5 L4,9 L0,7" fill="true"/>
+    <ellipse centre="_Middle+0x+0y" rx="11.1" ry="11.1"/>
+    <path start="_Middle+0x+0y" data="M4,7 L2,9 L0,5 L4,7" fill="true"/>
+    <text x="_Middle+20" y="_Middle-5" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+20" y="_Middle+5" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle-35x+0y" end="_Middle-25x+0y" sym:connection_id="0"/>
+    <g conditions="$Unit==Unit_A">
+      <text x="_Middle-21" y="_Middle+0" value="B1" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    </g>
+    <g conditions="$Unit==Unit_A">
+      <text x="_Middle-31" y="_Middle-2" value="2" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    </g>
+    <line start="_Middle+5x-20y" end="_Middle+5x-10y" sym:connection_id="1"/>
+    <g conditions="$Unit==Unit_A">
+      <text x="_Middle+5" y="_Middle-6" value="C1" align="CentreRight" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
+    </g>
+    <g conditions="$Unit==Unit_A">
+      <text x="_Middle+3" y="_Middle-16" value="6" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    </g>
+    <line start="_Middle+5x+10y" end="_Middle+5x+20y" sym:connection_id="2"/>
+    <g conditions="$Unit==Unit_A">
+      <text x="_Middle+5" y="_Middle+6" value="E1" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
+    </g>
+    <g conditions="$Unit==Unit_A">
+      <text x="_Middle+3" y="_Middle+16" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+    </g>
+    <line start="_Middle-35x+0y" end="_Middle-25x+0y" sym:connection_id="3"/>
+    <g conditions="$Unit==Unit_B">
+      <text x="_Middle-21" y="_Middle+0" value="B2" align="CentreLeft" size="xxs" sym:connection_id="3" sym:connection_attr="name"/>
+    </g>
+    <g conditions="$Unit==Unit_B">
+      <text x="_Middle-31" y="_Middle-2" value="5" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+    </g>
+    <line start="_Middle+5x-20y" end="_Middle+5x-10y" sym:connection_id="4"/>
+    <g conditions="$Unit==Unit_B">
+      <text x="_Middle+5" y="_Middle-6" value="C2" align="CentreRight" size="xxs" rotate="270" sym:connection_id="4" sym:connection_attr="name"/>
+    </g>
+    <g conditions="$Unit==Unit_B">
+      <text x="_Middle+3" y="_Middle-16" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="4" sym:connection_attr="number"/>
+    </g>
+    <line start="_Middle+5x+10y" end="_Middle+5x+20y" sym:connection_id="5"/>
+    <g conditions="$Unit==Unit_B">
+      <text x="_Middle+5" y="_Middle+6" value="E2" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="5" sym:connection_attr="name"/>
+    </g>
+    <g conditions="$Unit==Unit_B">
+      <text x="_Middle+3" y="_Middle+16" value="4" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="5" sym:connection_attr="number"/>
+    </g>
+  </render>
+</component>
