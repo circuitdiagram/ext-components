@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="C Small US"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="a6a18330-afa7-4587-bbe6-ffca9552f854"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="20"/>
+    <meta name="description" value="capacitor, small US symbol"/>
+    <meta name="keywords" value="cap capacitor"/>
+    <meta name="ki_fp_filters" value="C_*"/>
+    <property name="Reference" type="string" default="C" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="C_Small_US" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin1" start="_Middle+0x-10y" end="_Middle+0x-2y" edge="start" sym:connection_id="0"/>
+    <connection name="pin2" start="_Middle+0x+2y" end="_Middle+0x+10y" edge="end" sym:connection_id="1"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-6,-2 L6,-2"/>
+    <path start="_Middle+0x+0y" data="M-6,3 C-2.260073229035347,0.9601049868766385 2.260073229035348,0.9601049868766403 6,3"/>
+    <text x="_Middle+1" y="_Middle-7" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+1" y="_Middle+8" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle+0x-10y" end="_Middle+0x-2y" sym:connection_id="0"/>
+    <text x="_Middle-2" y="_Middle-7" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+0x+2y" end="_Middle+0x+10y" sym:connection_id="1"/>
+    <text x="_Middle-2" y="_Middle+7" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+  </render>
+</component>
