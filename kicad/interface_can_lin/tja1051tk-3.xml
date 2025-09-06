@@ -2,16 +2,16 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="TJA1051TK-3"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.2.0"/>
     <meta name="guid" value="0bd8d2c8-835a-4e71-8cb8-8f05003a0557"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
     <meta name="minsize" value="100"/>
-    <meta name="footprint" value="Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm"/>
-    <meta name="datasheet" value="http://www.nxp.com/docs/en/data-sheet/TJA1051.pdf"/>
-    <meta name="description" value="High-Speed CAN Transceiver, separate VIO, silent mode, DFN-8"/>
-    <meta name="keywords" value="High-Speed CAN Transceiver HVSON-8"/>
-    <meta name="ki_fp_filters" value="DFN*1EP*3x3mm*P0.65mm*"/>
+    <meta name="footprint" value="Package_SON:HVSON-8-1EP_3x3mm_P0.65mm_EP1.6x2.4mm"/>
+    <meta name="datasheet" value="https://www.nxp.com/docs/en/data-sheet/TJA1051.pdf"/>
+    <meta name="description" value="High-Speed CAN Transceiver, separate VIO, silent mode, VSON-8 (DFN-8)"/>
+    <meta name="keywords" value="TJA1051TK/3"/>
+    <meta name="ki_fp_filters" value="*VSON*3x3mm*P0.65mm*EP1.6*x2.4*"/>
     <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="TJA1051TK-3" serialize="value" display="Value"/>
     <flags>
@@ -27,7 +27,7 @@
     <connection name="s" start="_Middle-50x+20y" end="_Middle-40x+20y" edge="start" sym:connection_id="3"/>
     <connection name="vcc" start="_Middle+0x-40y" end="_Middle+0x-30y" edge="start" sym:connection_id="4"/>
     <connection name="gnd" start="_Middle+0x+30y" end="_Middle+0x+40y" edge="end" sym:connection_id="5"/>
-    <connection name="gnd" start="_Middle+10x+30y" end="_Middle+10x+40y" edge="end" sym:connection_id="6"/>
+    <connection name="gnd" start="_Middle+0x+30y" end="_Middle+0x+40y" edge="end" sym:connection_id="6"/>
     <connection name="canh" start="_Middle+40x-10y" end="_Middle+50x-10y" edge="end" sym:connection_id="7"/>
     <connection name="canl" start="_Middle+40x+10y" end="_Middle+50x+10y" edge="end" sym:connection_id="8"/>
   </connections>
@@ -53,9 +53,9 @@
     <line start="_Middle+0x+30y" end="_Middle+0x+40y" sym:connection_id="5"/>
     <text x="_Middle+0" y="_Middle+26" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="5" sym:connection_attr="name"/>
     <text x="_Middle-2" y="_Middle+36" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="5" sym:connection_attr="number"/>
-    <line start="_Middle+10x+30y" end="_Middle+10x+40y" sym:connection_id="6"/>
-    <text x="_Middle+10" y="_Middle+26" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="6" sym:connection_attr="name"/>
-    <text x="_Middle+8" y="_Middle+36" value="9" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="6" sym:connection_attr="number"/>
+    <line start="_Middle+0x+30y" end="_Middle+0x+40y" sym:connection_id="6"/>
+    <text x="_Middle+0" y="_Middle+26" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="6" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+36" value="9" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="6" sym:connection_attr="number"/>
     <line start="_Middle+40x-10y" end="_Middle+50x-10y" sym:connection_id="7"/>
     <text x="_Middle+36" y="_Middle-10" value="CANH" align="CentreRight" size="xxs" sym:connection_id="7" sym:connection_attr="name"/>
     <text x="_Middle+46" y="_Middle-12" value="7" align="BottomCentre" size="xxs" sym:connection_id="7" sym:connection_attr="number"/>

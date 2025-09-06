@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="D SiPM OnSemi MicroFJ-300xx"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="90dcce6e-dfce-4d28-8344-d3c37dbf2813"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="90"/>
+    <meta name="footprint" value="Package_CSP:OnSemi_ODCSP8_BGA-8_3.16x3.16mm_Layout3x3_P1.26mm"/>
+    <meta name="datasheet" value="https://www.onsemi.com/pdf/datasheet/microj-series-d.pdf"/>
+    <meta name="description" value="SiPM, OnSemi J-Series 3x3mm with fast output, 20/35um microcell size, 24.2..24.7Vbr, ODCSP-8"/>
+    <meta name="keywords" value="SiPM MPPC SPAD photon counting"/>
+    <meta name="ki_fp_filters" value="*BGA*3.16x3.16mm*Layout3x3*P1.26mm*"/>
+    <property name="Reference" type="string" default="D4" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="D_SiPM_OnSemi_MicroFJ-300xx" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="a" start="_Middle+0x-20y" end="_Middle+0x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="c" start="_Middle+0x+10y" end="_Middle+0x+20y" edge="end" sym:connection_id="1"/>
+    <connection name="c" start="_Middle+0x+10y" end="_Middle+0x+20y" edge="end" sym:connection_id="2"/>
+    <connection name="f" start="_Middle+6x+0y" end="_Middle+10x+0y" edge="end" sym:connection_id="3"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-15,-15 L-9,-9 L-11,-9 L-9,-9 L-9,-11"/>
+    <path start="_Middle+0x+0y" data="M-15,-10 L-9,-4 L-11,-4"/>
+    <path start="_Middle+0x+0y" data="M-9,-4 L-9,-6"/>
+    <path start="_Middle+0x+0y" data="M-5,-5 L5,-5"/>
+    <path start="_Middle+0x+0y" data="M-5,-5 L0,5 L5,-5"/>
+    <path start="_Middle+0x+0y" data="M-5,5 L5,5"/>
+    <path start="_Middle+0x+0y" data="M0,-5 L0,-10"/>
+    <path start="_Middle+0x+0y" data="M0,10 L0,5"/>
+    <path start="_Middle+0x+0y" data="M5,-0 L3,-0"/>
+    <path start="_Middle+0x+0y" data="M5,2 L5,-2"/>
+    <path start="_Middle+0x+0y" data="M6,2 L6,-2"/>
+    <text x="_Middle+10" y="_Middle-15" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+65.00000000000001" y="_Middle+15" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle+0x-20y" end="_Middle+0x-10y" sym:connection_id="0"/>
+    <text x="_Middle+0" y="_Middle-6" value="A" align="CentreRight" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle-16" value="B1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+0x+10y" end="_Middle+0x+20y" sym:connection_id="1"/>
+    <text x="_Middle+0" y="_Middle+6" value="C" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+16" value="A1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+0x+10y" end="_Middle+0x+20y" sym:connection_id="2"/>
+    <text x="_Middle+0" y="_Middle+6" value="C" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+16" value="C3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+6x+0y" end="_Middle+10x+0y" sym:connection_id="3"/>
+    <text x="_Middle+2" y="_Middle+0" value="F" align="CentreRight" size="xxs" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle+9" y="_Middle-2" value="B3" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+  </render>
+</component>

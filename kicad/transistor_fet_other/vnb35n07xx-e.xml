@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="VNB35N07xx-E"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="70428306-4aa5-4001-9c60-fe3823373f40"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="90"/>
+    <meta name="footprint" value="Package_TO_SOT_SMD:TO-263-2"/>
+    <meta name="datasheet" value="https://www.st.com/resource/en/datasheet/vnp35n07-e.pdf"/>
+    <meta name="description" value="Fully autoprotected Power MOSFET, OMNIFET, 35A Ilim, 70V Vclamp, 0.028 ohms Rds(on), diagnostic/fault feedback, TO-263-2 (D2PAK)"/>
+    <meta name="keywords" value="N-Channel VIPower ESD VNB35N07-E"/>
+    <meta name="ki_fp_filters" value="*TO*263*"/>
+    <property name="Reference" type="string" default="Q" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="VNB35N07xx-E" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="input" start="_Middle-70x+0y" end="_Middle-60x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="drain" start="_Middle+0x-30y" end="_Middle+0x-20y" edge="start" sym:connection_id="1"/>
+    <connection name="source" start="_Middle+0x+20y" end="_Middle+0x+30y" edge="end" sym:connection_id="2"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M0,-10.5 L0,-20"/>
+    <path start="_Middle+0x+0y" data="M0,20 L0,10.5"/>
+    <rect location="_Middle-60x-20y" width="72.5" height="40"/>
+    <rect location="_Middle-44x-7.5y" width="23" height="14.5"/>
+    <path start="_Middle+0x+0y" data="M-44,-0 L-60,-0"/>
+    <path start="_Middle+0x+0y" data="M-38.1,15.5 L-52,15.5 L-52,-0"/>
+    <ellipse centre="_Middle-37x+15.5y" rx="1" ry="1"/>
+    <path start="_Middle+0x+0y" data="M-36,15 L-28.6,11.799999999999999"/>
+    <ellipse centre="_Middle-28x+15.5y" rx="1" ry="1"/>
+    <path start="_Middle+0x+0y" data="M-22,15.5 L-26.900000000000002,15.5"/>
+    <path start="_Middle+0x+0y" data="M-22,15.5 L-21,13.5 L-20,15.5 L-19,17.5 L-18,15.5"/>
+    <path start="_Middle+0x+0y" data="M-21,-0 L-9,-0"/>
+    <path start="_Middle+0x+0y" data="M-18,15.5 L-17,13.5 L-16,15.5 L-15,17.5 L-14,15.5"/>
+    <path start="_Middle+0x+0y" data="M-14,15.5 L-13,13.5 L-12,15.5 L-11,17.5 L-10,15.5"/>
+    <path start="_Middle+0x+0y" data="M-9,-7.5 L-9,7.5"/>
+    <path start="_Middle+0x+0y" data="M-7,-9 L-7,-5"/>
+    <path start="_Middle+0x+0y" data="M-7,-2 L-7,2"/>
+    <path start="_Middle+0x+0y" data="M-7,5 L-7,9"/>
+    <path start="_Middle+0x+0y" data="M-7,7 L3,7 L3,-7 L-7,-7"/>
+    <path start="_Middle+0x+0y" data="M-6,-0 L-2,-1.5 L-2,1.5 L-6,-0" fill="true"/>
+    <ellipse centre="_Middle-3.5x+0y" rx="11" ry="11"/>
+    <path start="_Middle+0x+0y" data="M0,-10 L0,-7"/>
+    <ellipse centre="_Middle+0x-7y" rx="1" ry="1" fill="true"/>
+    <ellipse centre="_Middle+0x+7y" rx="1" ry="1" fill="true"/>
+    <path start="_Middle+0x+0y" data="M0,10 L0,-0 L-7,-0"/>
+    <path start="_Middle+0x+0y" data="M0,15.5 L-10,15.5"/>
+    <path start="_Middle+0x+0y" data="M1,-2 L1.5,-1.5 L4.5,-1.5 L5,-1"/>
+    <path start="_Middle+0x+0y" data="M3,-1.5 L1.5,1 L4.5,1 L3,-1.5"/>
+    <ellipse centre="_Middle-52x+0y" rx="1.0999999999999999" ry="1.0999999999999999" fill="true"/>
+    <path start="_Middle+0x+0y" data="M-32.6,8.3 L-32.6,7.1"/>
+    <path start="_Middle+0x+0y" data="M-32.6,10.799999999999999 L-32.6,9.799999999999999"/>
+    <path start="_Middle+0x+0y" data="M-32.6,13.3 L-32.6,12.3"/>
+    <ellipse centre="_Middle+0x+15.5y" rx="1.0999999999999999" ry="1.0999999999999999" fill="true"/>
+    <text x="_Middle-32.50000000000001" y="_Middle+0" value="Gate
+Control
+&amp; Logic" align="CentreCentre" size="base"/>
+    <text x="_Middle-70" y="_Middle-37" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle-70" y="_Middle-27" value="$Value" align="CentreLeft" size="xxs"/>
+    <line start="_Middle-70x+0y" end="_Middle-60x+0y" sym:connection_id="0"/>
+    <text x="_Middle-56" y="_Middle+0" value="INPUT" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-66" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+0x-30y" end="_Middle+0x-20y" sym:connection_id="1"/>
+    <text x="_Middle+0" y="_Middle-16" value="DRAIN" align="CentreRight" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle-26" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+0x+20y" end="_Middle+0x+30y" sym:connection_id="2"/>
+    <text x="_Middle+0" y="_Middle+16" value="SOURCE" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+26" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+  </render>
+</component>

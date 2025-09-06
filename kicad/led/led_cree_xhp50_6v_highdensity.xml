@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="LED Cree XHP50 6V HighDensity"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="218f179f-55fa-4156-bd44-14dfacd2a4f9"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="60"/>
+    <meta name="footprint" value="LED_SMD:LED_Cree-XHP50_6V_HighDensity"/>
+    <meta name="datasheet" value="https://downloads.cree-led.com/files/ds/x/XLamp-XHP50.3.pdf"/>
+    <meta name="description" value="XLamp® XHP50 LED, 6V, 2x2 serial LEDs in parallel, high density"/>
+    <meta name="keywords" value="led diode"/>
+    <meta name="ki_fp_filters" value="LED?Cree?XHP50?6V*"/>
+    <property name="Reference" type="string" default="D" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="LED_Cree_XHP50_6V_HighDensity" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="k" start="_Middle-30x+0y" end="_Middle-20x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="pad" start="_Middle+0x+40y" end="_Middle+0x+50y" edge="end" sym:connection_id="1"/>
+    <connection name="a" start="_Middle+20x+0y" end="_Middle+30x+0y" edge="end" sym:connection_id="2"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-25,30 L-25,40 L25,40 L25,30"/>
+    <ellipse centre="_Middle-15x-10y" rx="1" ry="1" fill="true"/>
+    <ellipse centre="_Middle-15x+0y" rx="1" ry="1" fill="true"/>
+    <ellipse centre="_Middle-15x+15y" rx="1" ry="1" fill="true"/>
+    <path start="_Middle+0x+0y" data="M3,-24 L2,-25 L2,-31 L1,-32"/>
+    <path start="_Middle+0x+0y" data="M3,31 L2,30 L2,24 L1,23"/>
+    <ellipse centre="_Middle+15x-10y" rx="1" ry="1" fill="true"/>
+    <ellipse centre="_Middle+15x+0y" rx="1" ry="1" fill="true"/>
+    <ellipse centre="_Middle+15x+15y" rx="1" ry="1" fill="true"/>
+    <rect location="_Middle-20x-35y" width="40" height="70"/>
+    <path start="_Middle+0x+0y" data="M-20,-0 L-15,-0"/>
+    <rect location="_Middle-15x-28y" width="30" height="55"/>
+    <path start="_Middle+0x+0y" data="M-15,-10 L15,-10"/>
+    <path start="_Middle+0x+0y" data="M-15,15 L15,15"/>
+    <path start="_Middle+0x+0y" data="M-11,-15 L-11,-5"/>
+    <path start="_Middle+0x+0y" data="M-11,-10 L-1,-15 L-1,-5 L-11,-10"/>
+    <path start="_Middle+0x+0y" data="M-11,10 L-11,20"/>
+    <path start="_Middle+0x+0y" data="M-11,15 L-1,10 L-1,20 L-11,15"/>
+    <path start="_Middle+0x+0y" data="M-10,-16 L-4,-22"/>
+    <path start="_Middle+0x+0y" data="M-10,9 L-4,3"/>
+    <path start="_Middle+0x+0y" data="M-7,-22 L-4,-22 L-4,-19"/>
+    <path start="_Middle+0x+0y" data="M-7,3 L-4,3 L-4,6"/>
+    <path start="_Middle+0x+0y" data="M-5,-16 L1,-22"/>
+    <path start="_Middle+0x+0y" data="M-5,9 L1,3"/>
+    <path start="_Middle+0x+0y" data="M-4,-31 L2,-28 L-4,-25 L-4,-31"/>
+    <path start="_Middle+0x+0y" data="M-4,24 L2,27 L-4,30 L-4,24"/>
+    <path start="_Middle+0x+0y" data="M-2,-22 L1,-22 L1,-19"/>
+    <path start="_Middle+0x+0y" data="M-2,3 L1,3 L1,6"/>
+    <path start="_Middle+0x+0y" data="M1,-15 L1,-5"/>
+    <path start="_Middle+0x+0y" data="M1,-10 L11,-15 L11,-5 L1,-10"/>
+    <path start="_Middle+0x+0y" data="M1,10 L1,20"/>
+    <path start="_Middle+0x+0y" data="M1,15 L11,10 L11,20 L1,15"/>
+    <path start="_Middle+0x+0y" data="M2,-16 L8,-22"/>
+    <path start="_Middle+0x+0y" data="M2,9 L8,3"/>
+    <path start="_Middle+0x+0y" data="M5,-22 L8,-22 L8,-19"/>
+    <path start="_Middle+0x+0y" data="M5,3 L8,3 L8,6"/>
+    <path start="_Middle+0x+0y" data="M7,-16 L13,-22"/>
+    <path start="_Middle+0x+0y" data="M7,9 L13,3"/>
+    <path start="_Middle+0x+0y" data="M10,-22 L13,-22 L13,-19"/>
+    <path start="_Middle+0x+0y" data="M10,3 L13,3 L13,6"/>
+    <path start="_Middle+0x+0y" data="M15,-0 L20,-0"/>
+    <text x="_Middle+0" y="_Middle-50" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle-40" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-30x+0y" end="_Middle-20x+0y" sym:connection_id="0"/>
+    <text x="_Middle-16" y="_Middle+0" value="K" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-26" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+0x+40y" end="_Middle+0x+50y" sym:connection_id="1"/>
+    <text x="_Middle+0" y="_Middle+36" value="PAD" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+46" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+20x+0y" end="_Middle+30x+0y" sym:connection_id="2"/>
+    <text x="_Middle+16" y="_Middle+0" value="A" align="CentreRight" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle+26" y="_Middle-2" value="2" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+  </render>
+</component>

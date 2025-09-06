@@ -2,15 +2,15 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="TOS06-12SIL"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.2.0"/>
     <meta name="guid" value="03ac9063-cd07-46a0-bd4c-7e17b69e2d01"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
     <meta name="minsize" value="100"/>
     <meta name="footprint" value="Converter_DCDC:Converter_DCDC_TRACO_TOS06-12SIL_THT"/>
     <meta name="datasheet" value="https://www.tracopower.com/products/tos06sil.pdf"/>
-    <meta name="description" value="6A step-down regulator, 0.75-5.0VDC output voltage, 8.3-14.0VDC input voltage"/>
-    <meta name="keywords" value="Traco non-isolated not-isolated pol dc-dc converter regulator single 6A"/>
+    <meta name="description" value="6A step-down regulator, 0.75-5.0VDC output voltage, 8.3-14.0VDC input voltage, SIP-9"/>
+    <meta name="keywords" value="Traco non-isolated pol dcdc converter single"/>
     <meta name="ki_fp_filters" value="Converter*DCDC*TRACO*TOS06*12SIL*THT*"/>
     <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="TOS06-12SIL" serialize="value" display="Value"/>
@@ -22,7 +22,7 @@
   </declaration>
   <connections>
     <connection name="vin" start="_Middle-50x-10y" end="_Middle-40x-10y" edge="start" sym:connection_id="0"/>
-    <connection name="on_off" start="_Middle-50x+10y" end="_Middle-40x+10y" edge="start" sym:connection_id="1"/>
+    <connection name="remote" start="_Middle-50x+10y" end="_Middle-40x+10y" edge="start" sym:connection_id="1"/>
     <connection name="gnd" start="_Middle+0x+20y" end="_Middle+0x+30y" edge="end" sym:connection_id="2"/>
     <connection name="vout" start="_Middle+40x-10y" end="_Middle+50x-10y" edge="end" sym:connection_id="3"/>
     <connection name="trim" start="_Middle+40x+10y" end="_Middle+50x+10y" edge="end" sym:connection_id="4"/>
@@ -35,7 +35,7 @@
     <text x="_Middle-36" y="_Middle-10" value="+Vin" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-46" y="_Middle-12" value="4" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
     <line start="_Middle-50x+10y" end="_Middle-40x+10y" sym:connection_id="1"/>
-    <text x="_Middle-36" y="_Middle+10" value="ON/~{OFF}" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-36" y="_Middle+10" value="Remote" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
     <text x="_Middle-46" y="_Middle+8" value="5" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
     <line start="_Middle+0x+20y" end="_Middle+0x+30y" sym:connection_id="2"/>
     <text x="_Middle+0" y="_Middle+16" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>

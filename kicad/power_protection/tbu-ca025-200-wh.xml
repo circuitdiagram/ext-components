@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="TBU-CA025-200-WH"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="d120d647-e417-4b42-903a-401579a1166d"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="30"/>
+    <meta name="footprint" value="Fuse:Fuse_Bourns_TBU-CA"/>
+    <meta name="datasheet" value="https://www.bourns.com/data/global/pdfs/TBU-CA.pdf"/>
+    <meta name="description" value="low capacitance single bidirectional high-speed protection, 250V 200mA 4.2ohm, https://www.bourns.com/data/global/pdfs/TBU-CA.pdf"/>
+    <meta name="keywords" value="high speed bidirectional protection"/>
+    <meta name="ki_fp_filters" value="*Bourns*TBU?CA*"/>
+    <property name="Reference" type="string" default="F" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="TBU-CA025-200-WH" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="2" start="_Middle-5x-10y" end="_Middle-5x-5y" edge="start" sym:connection_id="0"/>
+    <connection name="pin1" start="_Middle+0x-15y" end="_Middle+0x-10y" edge="start" sym:connection_id="1"/>
+    <connection name="pin3" start="_Middle+0x+10y" end="_Middle+0x+15y" edge="end" sym:connection_id="2"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-6,-10 L-6,-6 L6,6 L6,10"/>
+    <rect location="_Middle-3x-10y" width="6" height="20"/>
+    <path start="_Middle+0x+0y" data="M0,-10 L0,10"/>
+    <text x="_Middle-10" y="_Middle+0" value="$Reference" align="CentreCentre" size="xxs" rotate="90"/>
+    <text x="_Middle+10" y="_Middle+0" value="$Value" align="CentreCentre" size="xxs" rotate="90"/>
+    <line start="_Middle-5x-10y" end="_Middle-5x-5y" sym:connection_id="0"/>
+    <text x="_Middle-5" y="_Middle-1" value="2" align="CentreRight" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-7" y="_Middle-8.5" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+0x-15y" end="_Middle+0x-10y" sym:connection_id="1"/>
+    <text x="_Middle-2" y="_Middle-13.5" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+0x+10y" end="_Middle+0x+15y" sym:connection_id="2"/>
+    <text x="_Middle-2" y="_Middle+13.5" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+  </render>
+</component>

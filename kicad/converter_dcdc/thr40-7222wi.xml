@@ -2,7 +2,7 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="THR40-7222WI"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.2.0"/>
     <meta name="guid" value="fb1b3d0c-7080-4910-bbcc-ac19c676885d"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
@@ -10,7 +10,7 @@
     <meta name="footprint" value="Converter_DCDC:Converter_DCDC_TRACO_THR40-72xxWI_THT"/>
     <meta name="datasheet" value="https://www.tracopower.com/products/thr40wi.pdf"/>
     <meta name="description" value="40W DC/DC industrial converter regulated, 36-160V input, ±12V fixed output voltage, 1.67A each output, 3.0kVAC isolation, 2”x1”"/>
-    <meta name="keywords" value="Traco isolated dual"/>
+    <meta name="keywords" value="Traco isolated dc-dc 62368-1 dual"/>
     <meta name="ki_fp_filters" value="Converter*DCDC*TRACO*THR40*72xxWI*THT*"/>
     <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="THR40-7222WI" serialize="value" display="Value"/>
@@ -21,8 +21,8 @@
     </flags>
   </declaration>
   <connections>
-    <connection name="onoff" start="_Middle-40x+0y" end="_Middle-30x+0y" edge="start" sym:connection_id="0"/>
-    <connection name="vin" start="_Middle-40x-10y" end="_Middle-30x-10y" edge="start" sym:connection_id="1"/>
+    <connection name="vin" start="_Middle-40x-10y" end="_Middle-30x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="remote" start="_Middle-40x+0y" end="_Middle-30x+0y" edge="start" sym:connection_id="1"/>
     <connection name="vin" start="_Middle-40x+10y" end="_Middle-30x+10y" edge="start" sym:connection_id="2"/>
     <connection name="vout" start="_Middle+30x-10y" end="_Middle+40x-10y" edge="end" sym:connection_id="3"/>
     <connection name="com" start="_Middle+30x+0y" end="_Middle+40x+0y" edge="end" sym:connection_id="4"/>
@@ -36,12 +36,12 @@
     <path start="_Middle+0x+0y" data="M0,10 L0,15"/>
     <text x="_Middle-27" y="_Middle-25" value="$Reference" align="CentreCentre" size="xxs"/>
     <text x="_Middle+9" y="_Middle-25" value="$Value" align="CentreCentre" size="xxs"/>
-    <line start="_Middle-40x+0y" end="_Middle-30x+0y" sym:connection_id="0"/>
-    <text x="_Middle-26" y="_Middle+0" value="OnOff" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
-    <text x="_Middle-36" y="_Middle-2" value="3" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
-    <line start="_Middle-40x-10y" end="_Middle-30x-10y" sym:connection_id="1"/>
-    <text x="_Middle-26" y="_Middle-10" value="+Vin" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
-    <text x="_Middle-36" y="_Middle-12" value="1" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle-40x-10y" end="_Middle-30x-10y" sym:connection_id="0"/>
+    <text x="_Middle-26" y="_Middle-10" value="+Vin" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-36" y="_Middle-12" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-40x+0y" end="_Middle-30x+0y" sym:connection_id="1"/>
+    <text x="_Middle-26" y="_Middle+0" value="Remote" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-36" y="_Middle-2" value="3" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
     <line start="_Middle-40x+10y" end="_Middle-30x+10y" sym:connection_id="2"/>
     <text x="_Middle-26" y="_Middle+10" value="-Vin" align="CentreLeft" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
     <text x="_Middle-36" y="_Middle+8" value="2" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
