@@ -2,11 +2,11 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="Q PNP BRT BEC"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.2.0"/>
     <meta name="guid" value="fb15a743-93e2-4e7a-8670-768f8086bd01"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
-    <meta name="minsize" value="60"/>
+    <meta name="minsize" value="50"/>
     <meta name="description" value="PNP bias resistor transistor, base/emitter/collector"/>
     <meta name="keywords" value="BJT"/>
     <property name="Reference" type="string" default="Q" serialize="reference" display="Reference"/>
@@ -18,9 +18,9 @@
     </flags>
   </declaration>
   <connections>
-    <connection name="b" start="_Middle-35x+0y" end="_Middle-25x+0y" edge="start" sym:connection_id="0"/>
-    <connection name="c" start="_Middle+5x-20y" end="_Middle+5x-10y" edge="start" sym:connection_id="1"/>
-    <connection name="e" start="_Middle+5x+10y" end="_Middle+5x+20y" edge="end" sym:connection_id="2"/>
+    <connection name="pin1" start="_Middle-35x+0y" end="_Middle-25x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="pin2" start="_Middle+5x+10y" end="_Middle+5x+20y" edge="end" sym:connection_id="1"/>
+    <connection name="pin3" start="_Middle+5x-20y" end="_Middle+5x-10y" edge="start" sym:connection_id="2"/>
   </connections>
   <render>
     <rect location="_Middle-25x-2y" width="6" height="4"/>
@@ -35,16 +35,13 @@
     <path start="_Middle+0x+0y" data="M4,7 L2,9 L0,5 L4,7" fill="true"/>
     <ellipse centre="_Middle+5x+12y" rx="1" ry="1" fill="true"/>
     <ellipse centre="_Middle+0x+0y" rx="11.1" ry="11.1"/>
-    <text x="_Middle+15" y="_Middle-5" value="$Reference" align="CentreLeft" size="xxs"/>
-    <text x="_Middle+15" y="_Middle+5" value="$Value" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+11.55" y="_Middle+1.25" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+11.55" y="_Middle+9.25" value="$Value" align="CentreLeft" size="xxs"/>
     <line start="_Middle-35x+0y" end="_Middle-25x+0y" sym:connection_id="0"/>
-    <text x="_Middle-21" y="_Middle+0" value="B" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-31" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
-    <line start="_Middle+5x-20y" end="_Middle+5x-10y" sym:connection_id="1"/>
-    <text x="_Middle+5" y="_Middle-6" value="C" align="CentreRight" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
-    <text x="_Middle+3" y="_Middle-16" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
-    <line start="_Middle+5x+10y" end="_Middle+5x+20y" sym:connection_id="2"/>
-    <text x="_Middle+5" y="_Middle+6" value="E" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
-    <text x="_Middle+3" y="_Middle+16" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+5x+10y" end="_Middle+5x+20y" sym:connection_id="1"/>
+    <text x="_Middle+3" y="_Middle+16" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+5x-20y" end="_Middle+5x-10y" sym:connection_id="2"/>
+    <text x="_Middle+3" y="_Middle-16" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
   </render>
 </component>

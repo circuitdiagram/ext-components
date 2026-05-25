@@ -6,7 +6,7 @@
     <meta name="guid" value="97efdc47-e911-454a-86b4-bbf5aaa8252c"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
-    <meta name="minsize" value="40"/>
+    <meta name="minsize" value="50"/>
     <meta name="description" value="Audio Jack, Dual, 2 Poles (Mono / TS), Switched Pole (Normalling)"/>
     <meta name="keywords" value="audio jack dual receptacle mono headphones phone TS connector"/>
     <meta name="ki_fp_filters" value="Jack*"/>
@@ -23,14 +23,18 @@
     </flags>
   </declaration>
   <connections>
-    <connection name="pinS1" start="_Middle+10x-20y" end="_Middle+20x-20y" edge="end" sym:connection_id="0"/>
-    <connection name="pinSN1" start="_Middle+10x-10y" end="_Middle+20x-10y" edge="end" sym:connection_id="1"/>
-    <connection name="pinT1" start="_Middle+10x+0y" end="_Middle+20x+0y" edge="end" sym:connection_id="2"/>
-    <connection name="pinTN1" start="_Middle+10x+10y" end="_Middle+20x+10y" edge="end" sym:connection_id="3"/>
-    <connection name="pinS2" start="_Middle+10x-20y" end="_Middle+20x-20y" edge="end" sym:connection_id="4"/>
-    <connection name="pinSN2" start="_Middle+10x-10y" end="_Middle+20x-10y" edge="end" sym:connection_id="5"/>
-    <connection name="pinT2" start="_Middle+10x+0y" end="_Middle+20x+0y" edge="end" sym:connection_id="6"/>
-    <connection name="pinTN2" start="_Middle+10x+10y" end="_Middle+20x+10y" edge="end" sym:connection_id="7"/>
+    <g conditions="$Unit==Unit_A">
+      <connection name="pinS1" start="_Middle+10x-20y" end="_Middle+20x-20y" edge="end" sym:connection_id="0"/>
+      <connection name="pinSN1" start="_Middle+10x-10y" end="_Middle+20x-10y" edge="end" sym:connection_id="1"/>
+      <connection name="pinT1" start="_Middle+10x+0y" end="_Middle+20x+0y" edge="end" sym:connection_id="2"/>
+      <connection name="pinTN1" start="_Middle+10x+10y" end="_Middle+20x+10y" edge="end" sym:connection_id="3"/>
+    </g>
+    <g conditions="$Unit==Unit_B">
+      <connection name="pinS2" start="_Middle+10x-20y" end="_Middle+20x-20y" edge="end" sym:connection_id="4"/>
+      <connection name="pinSN2" start="_Middle+10x-10y" end="_Middle+20x-10y" edge="end" sym:connection_id="5"/>
+      <connection name="pinT2" start="_Middle+10x+0y" end="_Middle+20x+0y" edge="end" sym:connection_id="6"/>
+      <connection name="pinTN2" start="_Middle+10x+10y" end="_Middle+20x+10y" edge="end" sym:connection_id="7"/>
+    </g>
   </connections>
   <render>
     <rect location="_Middle-20x+0y" width="5" height="10"/>
@@ -45,38 +49,26 @@
     <path start="_Middle+0x+0y" data="M5,10 L2,10 L2,1 L1,3"/>
     <path start="_Middle+0x+0y" data="M10,-20 L5,-20"/>
     <path start="_Middle+0x+0y" data="M10,-0 L5,-0"/>
-    <text x="_Middle+0" y="_Middle-45" value="$Reference" align="CentreCentre" size="xxs"/>
-    <text x="_Middle+0" y="_Middle-35" value="$Value" align="CentreCentre" size="xxs"/>
-    <line start="_Middle+10x-20y" end="_Middle+20x-20y" sym:connection_id="0"/>
+    <text x="_Middle-26" y="_Middle-5" value="$Reference" align="CentreRight" size="xxs"/>
+    <text x="_Middle-26" y="_Middle+3" value="$Value" align="CentreRight" size="xxs"/>
     <g conditions="$Unit==Unit_A">
+      <line start="_Middle+10x-20y" end="_Middle+20x-20y" sym:connection_id="0"/>
       <text x="_Middle+16" y="_Middle-22" value="S1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
-    </g>
-    <line start="_Middle+10x-10y" end="_Middle+20x-10y" sym:connection_id="1"/>
-    <g conditions="$Unit==Unit_A">
+      <line start="_Middle+10x-10y" end="_Middle+20x-10y" sym:connection_id="1"/>
       <text x="_Middle+16" y="_Middle-12" value="SN1" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
-    </g>
-    <line start="_Middle+10x+0y" end="_Middle+20x+0y" sym:connection_id="2"/>
-    <g conditions="$Unit==Unit_A">
+      <line start="_Middle+10x+0y" end="_Middle+20x+0y" sym:connection_id="2"/>
       <text x="_Middle+16" y="_Middle-2" value="T1" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
-    </g>
-    <line start="_Middle+10x+10y" end="_Middle+20x+10y" sym:connection_id="3"/>
-    <g conditions="$Unit==Unit_A">
+      <line start="_Middle+10x+10y" end="_Middle+20x+10y" sym:connection_id="3"/>
       <text x="_Middle+16" y="_Middle+8" value="TN1" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
     </g>
-    <line start="_Middle+10x-20y" end="_Middle+20x-20y" sym:connection_id="4"/>
     <g conditions="$Unit==Unit_B">
+      <line start="_Middle+10x-20y" end="_Middle+20x-20y" sym:connection_id="4"/>
       <text x="_Middle+16" y="_Middle-22" value="S2" align="BottomCentre" size="xxs" sym:connection_id="4" sym:connection_attr="number"/>
-    </g>
-    <line start="_Middle+10x-10y" end="_Middle+20x-10y" sym:connection_id="5"/>
-    <g conditions="$Unit==Unit_B">
+      <line start="_Middle+10x-10y" end="_Middle+20x-10y" sym:connection_id="5"/>
       <text x="_Middle+16" y="_Middle-12" value="SN2" align="BottomCentre" size="xxs" sym:connection_id="5" sym:connection_attr="number"/>
-    </g>
-    <line start="_Middle+10x+0y" end="_Middle+20x+0y" sym:connection_id="6"/>
-    <g conditions="$Unit==Unit_B">
+      <line start="_Middle+10x+0y" end="_Middle+20x+0y" sym:connection_id="6"/>
       <text x="_Middle+16" y="_Middle-2" value="T2" align="BottomCentre" size="xxs" sym:connection_id="6" sym:connection_attr="number"/>
-    </g>
-    <line start="_Middle+10x+10y" end="_Middle+20x+10y" sym:connection_id="7"/>
-    <g conditions="$Unit==Unit_B">
+      <line start="_Middle+10x+10y" end="_Middle+20x+10y" sym:connection_id="7"/>
       <text x="_Middle+16" y="_Middle+8" value="TN2" align="BottomCentre" size="xxs" sym:connection_id="7" sym:connection_attr="number"/>
     </g>
   </render>

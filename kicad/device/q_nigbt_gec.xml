@@ -2,11 +2,11 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="Q NIGBT GEC"/>
-    <meta name="version" value="0.3.1"/>
+    <meta name="version" value="0.4.1"/>
     <meta name="guid" value="9e3eb488-4843-4206-b2c6-ef2b2d427b87"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
-    <meta name="minsize" value="50"/>
+    <meta name="minsize" value="40"/>
     <meta name="description" value="N-IGBT transistor, gate/emitter/collector"/>
     <meta name="keywords" value="transistor IGBT N-IGBT"/>
     <property name="Reference" type="string" default="Q" serialize="reference" display="Reference"/>
@@ -18,9 +18,9 @@
     </flags>
   </declaration>
   <connections>
-    <connection name="g" start="_Middle-20x+0y" end="_Middle+1x+0y" edge="start" sym:connection_id="0"/>
-    <connection name="c" start="_Middle+10x-20y" end="_Middle+10x-10y" edge="start" sym:connection_id="1"/>
-    <connection name="e" start="_Middle+10x+10y" end="_Middle+10x+20y" edge="end" sym:connection_id="2"/>
+    <connection name="pin1" start="_Middle-20x+0y" end="_Middle+1x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="pin2" start="_Middle+10x+10y" end="_Middle+10x+20y" edge="end" sym:connection_id="1"/>
+    <connection name="pin3" start="_Middle+10x-20y" end="_Middle+10x-10y" edge="start" sym:connection_id="2"/>
   </connections>
   <render>
     <path start="_Middle+0x+0y" data="M1,-7.5 L1,7.5 L1,7.5"/>
@@ -33,16 +33,13 @@
     <path start="_Middle+0x+0y" data="M10,-9.5 L3,-6"/>
     <path start="_Middle+0x+0y" data="M10,3.5 L3,-0"/>
     <path start="_Middle+0x+0y" data="M10,9.5 L3,6"/>
-    <text x="_Middle+20" y="_Middle-5" value="$Reference" align="CentreLeft" size="xxs"/>
-    <text x="_Middle+20" y="_Middle+5" value="$Value" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+16.55" y="_Middle+0" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+16.55" y="_Middle+8" value="$Value" align="CentreLeft" size="xxs"/>
     <line start="_Middle-20x+0y" end="_Middle+1x+0y" sym:connection_id="0"/>
-    <text x="_Middle+5" y="_Middle+0" value="G" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-10.5" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
-    <line start="_Middle+10x-20y" end="_Middle+10x-10y" sym:connection_id="1"/>
-    <text x="_Middle+10" y="_Middle-6" value="C" align="CentreRight" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
-    <text x="_Middle+8" y="_Middle-16" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
-    <line start="_Middle+10x+10y" end="_Middle+10x+20y" sym:connection_id="2"/>
-    <text x="_Middle+10" y="_Middle+6" value="E" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
-    <text x="_Middle+8" y="_Middle+16" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+10x+10y" end="_Middle+10x+20y" sym:connection_id="1"/>
+    <text x="_Middle+8" y="_Middle+16" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+10x-20y" end="_Middle+10x-10y" sym:connection_id="2"/>
+    <text x="_Middle+8" y="_Middle-16" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
   </render>
 </component>
