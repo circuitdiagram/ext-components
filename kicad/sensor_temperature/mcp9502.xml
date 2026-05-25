@@ -6,7 +6,7 @@
     <meta name="guid" value="cf9dba98-43bc-4d41-b777-4813b23ada1c"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
-    <meta name="minsize" value="70"/>
+    <meta name="minsize" value="60"/>
     <meta name="footprint" value="Package_TO_SOT_SMD:SOT-23-5"/>
     <meta name="datasheet" value="http://ww1.microchip.com/downloads/en/DeviceDoc/20002268B.pdf"/>
     <meta name="description" value="Temperature Switch with Selectable Hysteresis, Push-Pull, Active-High Output (Hot Option), SOT-23-5"/>
@@ -21,10 +21,10 @@
     </flags>
   </declaration>
   <connections>
-    <connection name="vdd" start="_Middle+0x-40y" end="_Middle+0x-30y" edge="start" sym:connection_id="0"/>
-    <connection name="gnd" start="_Middle+0x+30y" end="_Middle+0x+40y" edge="end" sym:connection_id="1"/>
-    <connection name="gnd" start="_Middle+10x+30y" end="_Middle+10x+40y" edge="end" sym:connection_id="2"/>
-    <connection name="hyst" start="_Middle+20x-40y" end="_Middle+20x-30y" edge="start" sym:connection_id="3"/>
+    <connection name="gnd" start="_Middle+0x+30y" end="_Middle+0x+40y" edge="end" sym:connection_id="0"/>
+    <connection name="gnd" start="_Middle+10x+30y" end="_Middle+10x+40y" edge="end" sym:connection_id="1"/>
+    <connection name="hyst" start="_Middle+20x-40y" end="_Middle+20x-30y" edge="start" sym:connection_id="2"/>
+    <connection name="vdd" start="_Middle+0x-40y" end="_Middle+0x-30y" edge="start" sym:connection_id="3"/>
     <connection name="out" start="_Middle+30x+0y" end="_Middle+40x+0y" edge="end" sym:connection_id="4"/>
   </connections>
   <render>
@@ -53,20 +53,20 @@
     <path start="_Middle+0x+0y" data="M14.5,-0 L16.5,-0"/>
     <path start="_Middle+0x+0y" data="M15,-0 L2.5,-7.5 L2.5,7.5 L15,-0"/>
     <path start="_Middle+0x+0y" data="M19.5,-13.5 L19.5,-7.5 L8.5,-7.5 L8.5,-4"/>
-    <text x="_Middle-25" y="_Middle+0" value="$Reference" align="CentreCentre" size="xxs" rotate="90"/>
-    <text x="_Middle-15" y="_Middle+0" value="$Value" align="CentreCentre" size="xxs" rotate="90"/>
-    <line start="_Middle+0x-40y" end="_Middle+0x-30y" sym:connection_id="0"/>
-    <text x="_Middle+0" y="_Middle-26" value="VDD" align="CentreRight" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="name"/>
-    <text x="_Middle-2" y="_Middle-36" value="4" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
-    <line start="_Middle+0x+30y" end="_Middle+0x+40y" sym:connection_id="1"/>
-    <text x="_Middle+0" y="_Middle+26" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
-    <text x="_Middle-2" y="_Middle+36" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
-    <line start="_Middle+10x+30y" end="_Middle+10x+40y" sym:connection_id="2"/>
-    <text x="_Middle+10" y="_Middle+26" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
-    <text x="_Middle+8" y="_Middle+36" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
-    <line start="_Middle+20x-40y" end="_Middle+20x-30y" sym:connection_id="3"/>
-    <text x="_Middle+20" y="_Middle-26" value="Hyst" align="CentreRight" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="name"/>
-    <text x="_Middle+18" y="_Middle-36" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="number"/>
+    <text x="_Middle-16" y="_Middle+0" value="$Reference" align="CentreRight" size="xxs"/>
+    <text x="_Middle-16" y="_Middle+8" value="$Value" align="CentreRight" size="xxs"/>
+    <line start="_Middle+0x+30y" end="_Middle+0x+40y" sym:connection_id="0"/>
+    <text x="_Middle+0" y="_Middle+26" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+36" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+10x+30y" end="_Middle+10x+40y" sym:connection_id="1"/>
+    <text x="_Middle+10" y="_Middle+26" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle+8" y="_Middle+36" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+20x-40y" end="_Middle+20x-30y" sym:connection_id="2"/>
+    <text x="_Middle+20" y="_Middle-26" value="Hyst" align="CentreRight" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle+18" y="_Middle-36" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+0x-40y" end="_Middle+0x-30y" sym:connection_id="3"/>
+    <text x="_Middle+0" y="_Middle-26" value="VDD" align="CentreRight" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle-36" value="4" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="number"/>
     <line start="_Middle+30x+0y" end="_Middle+40x+0y" sym:connection_id="4"/>
     <text x="_Middle+26" y="_Middle+0" value="Out" align="CentreRight" size="xxs" sym:connection_id="4" sym:connection_attr="name"/>
     <text x="_Middle+36" y="_Middle-2" value="5" align="BottomCentre" size="xxs" sym:connection_id="4" sym:connection_attr="number"/>

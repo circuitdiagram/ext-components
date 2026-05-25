@@ -2,7 +2,7 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="D Radiation Filled"/>
-    <meta name="version" value="0.2.1"/>
+    <meta name="version" value="0.3.1"/>
     <meta name="guid" value="3e5a631c-58da-4eb5-a5c4-8b9ef432be6b"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
@@ -18,8 +18,8 @@
     </flags>
   </declaration>
   <connections>
-    <connection name="k" start="_Middle-20x+0y" end="_Middle-10x+0y" edge="start" sym:connection_id="0"/>
-    <connection name="a" start="_Middle+0x+0y" end="_Middle+10x+0y" edge="end" sym:connection_id="1"/>
+    <connection name="pin1" start="_Middle-20x+0y" end="_Middle-10x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="pin2" start="_Middle+0x+0y" end="_Middle+10x+0y" edge="end" sym:connection_id="1"/>
   </connections>
   <render>
     <path start="_Middle+0x+0y" data="M-10,-5 L-10,5"/>
@@ -37,13 +37,11 @@
     <path start="_Middle+0x+0y" data="M1,-18 C0.5696043265161697,-18.86086021552818 0.7383387694992121,-19.900543493908664 1.4188976377952724,-20.581102362204728 C2.0994565060913333,-21.26166123050079 3.1391397844718165,-21.43039567348383 4,-21"/>
     <path start="_Middle+0x+0y" data="M5,-16 C5.430395673483826,-15.139139784471817 5.261661230500781,-14.099456506091338 4.581102362204723,-13.418897637795279 C3.900543493908663,-12.738338769499219 2.8608602155281835,-12.569604326516174 2,-13"/>
     <path start="_Middle+0x+0y" data="M5,-16 C4.569604326516178,-16.860860215528184 4.738338769499222,-17.90054349390866 5.41889763779528,-18.58110236220472 C6.099456506091339,-19.261661230500778 7.139139784471816,-19.430395673483822 7.999999999999999,-19"/>
-    <text x="_Middle-5" y="_Middle+9" value="$Reference" align="CentreCentre" size="xxs"/>
-    <text x="_Middle-5" y="_Middle+16" value="$Value" align="CentreCentre" size="xxs"/>
+    <text x="_Middle-1.0000000000000004" y="_Middle-35.236100099493726" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle-1.0000000000000004" y="_Middle-27.23610009949373" value="$Value" align="CentreCentre" size="xxs"/>
     <line start="_Middle-20x+0y" end="_Middle-10x+0y" sym:connection_id="0"/>
-    <text x="_Middle-6" y="_Middle+0" value="K" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-16" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
     <line start="_Middle+0x+0y" end="_Middle+10x+0y" sym:connection_id="1"/>
-    <text x="_Middle-4" y="_Middle+0" value="A" align="CentreRight" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
     <text x="_Middle+6" y="_Middle-2" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
   </render>
 </component>

@@ -6,7 +6,7 @@
     <meta name="guid" value="0bbae8ba-8062-4d7d-87c3-94874da87010"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
-    <meta name="minsize" value="50"/>
+    <meta name="minsize" value="20"/>
     <meta name="description" value="Inductor, rotated by 45°"/>
     <meta name="keywords" value="inductor choke coil reactor magnetic inductor"/>
     <meta name="ki_fp_filters" value="L_* Choke_* Inductor_* *Coil*"/>
@@ -19,8 +19,8 @@
     </flags>
   </declaration>
   <connections>
-    <connection name="pin2" start="_Middle-10x-10y" end="_Middle-10x-10y" edge="start" sym:connection_id="0"/>
-    <connection name="pin1" start="_Middle+10x+10y" end="_Middle+10x+10y" edge="end" sym:connection_id="1"/>
+    <connection name="pin1" start="_Middle+10x+10y" end="_Middle+10x+10y" edge="end" sym:connection_id="0"/>
+    <connection name="pin2" start="_Middle-10x-10y" end="_Middle-10x-10y" edge="start" sym:connection_id="1"/>
   </connections>
   <render>
     <path start="_Middle+0x+0y" data="M-5,-5 L-10,-10"/>
@@ -29,11 +29,11 @@
     <path start="_Middle+0x+0y" data="M-2.5,-2.5 C-1.8058249341438264,-3.1673235637854757 -0.7052911422281776,-3.1564722445903772 -0.024409448818899948,-2.4755905511811 C0.6564722445903777,-1.7947088577718224 0.6673235637854757,-0.6941750658561736 -0.0000000000000002220446049250313,0"/>
     <path start="_Middle+0x+0y" data="M0,-0 C0.6960437673883326,-0.6554215092285465 1.7869543012733982,-0.6390299506951076 2.462992125984253,0.03700787401574712 C3.1390299506951083,0.713045698726602 3.1554215092285465,1.8039562326116674 2.5,2.5"/>
     <path start="_Middle+0x+0y" data="M2.5,2.5 C3.1976984693560926,1.8555238428018244 4.27980041701629,1.8769701376998733 4.9514151396582085,2.5485848603417915 C5.623029862300127,3.22019958298371 5.644476157198175,4.302301530643907 5,5"/>
-    <text x="_Middle+20" y="_Middle-10" value="$Reference" align="CentreCentre" size="xxs"/>
-    <text x="_Middle+32.50000000000001" y="_Middle-2.5" value="$Value" align="CentreCentre" size="xxs"/>
-    <line start="_Middle-10x-10y" end="_Middle-10x-10y" sym:connection_id="0"/>
-    <text x="_Middle-11" y="_Middle-12" value="2" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
-    <line start="_Middle+10x+10y" end="_Middle+10x+10y" sym:connection_id="1"/>
-    <text x="_Middle+11" y="_Middle+8" value="1" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <text x="_Middle+0" y="_Middle-24" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle-16" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle+10x+10y" end="_Middle+10x+10y" sym:connection_id="0"/>
+    <text x="_Middle+11" y="_Middle+8" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-10x-10y" end="_Middle-10x-10y" sym:connection_id="1"/>
+    <text x="_Middle-11" y="_Middle-12" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
   </render>
 </component>

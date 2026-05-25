@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Potentiometer"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="195a85d3-fa11-419a-93ee-f907f0569814"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="30"/>
+    <meta name="Value" value="Potentiometer"/>
+    <meta name="description" value="Potentiometer for Simulation"/>
+    <meta name="Sim.Device" value="R"/>
+    <meta name="Sim.Pins" value="1=r0 2=wiper 3=r1"/>
+    <meta name="Sim.Type" value="POT"/>
+    <meta name="keywords" value="resistor variable spice sim"/>
+    <property name="Reference" type="string" default="R" serialize="reference" display="Reference"/>
+    <property name="Sim_Params" type="string" default="r=1k pos=0.4" serialize="sim_params" display="Sim_Params">
+      <formatting>
+        <format value="Sim.Params: $Sim_Params "/>
+      </formatting>
+    </property>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="pin1" start="_Middle+0x-15y" end="_Middle+0x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="pin2" start="_Middle+10x+0y" end="_Middle+15x+0y" edge="end" sym:connection_id="1"/>
+    <connection name="pin3" start="_Middle+0x+10y" end="_Middle+0x+15y" edge="end" sym:connection_id="2"/>
+  </connections>
+  <render>
+    <rect location="_Middle-4x-10y" width="8" height="20"/>
+    <path start="_Middle+0x+0y" data="M4.5,-0 L9,-2 L9,2 L4.5,-0" fill="true"/>
+    <path start="_Middle+0x+0y" data="M10,-0 L6,-0"/>
+    <text x="_Middle+0" y="_Middle+0" value="SPICE" align="CentreCentre" size="xxs" rotate="90"/>
+    <text x="_Middle-10" y="_Middle+0" value="$Reference" align="CentreRight" size="xxs"/>
+    <text x="_Middle-10" y="_Middle+8" value="$Sim_Params" align="CentreRight" size="xxs"/>
+    <line start="_Middle+0x-15y" end="_Middle+0x-10y" sym:connection_id="0"/>
+    <text x="_Middle-2" y="_Middle-13.5" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+10x+0y" end="_Middle+15x+0y" sym:connection_id="1"/>
+    <text x="_Middle+13.5" y="_Middle-2" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+0x+10y" end="_Middle+0x+15y" sym:connection_id="2"/>
+    <text x="_Middle-2" y="_Middle+13.5" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+  </render>
+</component>
