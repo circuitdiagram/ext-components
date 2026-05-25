@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Circulator Left 4Port"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="921c551c-7c7e-41d6-bffd-4346ea2b04c1"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="120"/>
+    <meta name="description" value="4 Port RF Circulator, Right Handed"/>
+    <meta name="keywords" value="Microwave Reflection SWR"/>
+    <property name="Reference" type="string" default="FL" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="Circulator_Left_4Port" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="" start="_Middle-40x+0y" end="_Middle-25x+0y" edge="start" sym:connection_id="0"/>
+    <connection name="" start="_Middle-40x-20y" end="_Middle-25x-20y" edge="start" sym:connection_id="1"/>
+    <connection name="" start="_Middle+25x-20y" end="_Middle+40x-20y" edge="end" sym:connection_id="2"/>
+    <connection name="" start="_Middle+25x+0y" end="_Middle+40x+0y" edge="end" sym:connection_id="3"/>
+    <connection name="gnd" start="_Middle+0x+25y" end="_Middle+0x+40y" edge="end" sym:connection_id="4"/>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M-25,-20 L-20,-15"/>
+    <path start="_Middle+0x+0y" data="M0,-7.5 C4.142017484034968,-7.499714799429602 7.4997147994296,-4.1420174840349695 7.500000000000001,-0.0000000000000004510281037539698"/>
+    <path start="_Middle+0x+0y" data="M-7.5,-0 C-7.4997147994296,-4.1420174840349695 -4.142017484034968,-7.499714799429601 0.000000000000000008348356728138384,-7.500000000000001"/>
+    <path start="_Middle+0x+0y" data="M25,-20 L20,-15"/>
+    <path start="_Middle+0x+0y" data="M-10,-0 L-5,-0 L-7.5,2.5 L-10,-0" fill="true"/>
+    <ellipse centre="_Middle+0x+0y" rx="25" ry="25"/>
+    <text x="_Middle+38" y="_Middle-42" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+74" y="_Middle-34" value="$Value" align="CentreCentre" size="xxs"/>
+    <line start="_Middle-40x+0y" end="_Middle-25x+0y" sym:connection_id="0"/>
+    <text x="_Middle-21" y="_Middle+0" value="" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-33.5" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-40x-20y" end="_Middle-25x-20y" sym:connection_id="1"/>
+    <text x="_Middle-21" y="_Middle-20" value="" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-33.5" y="_Middle-22" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+25x-20y" end="_Middle+40x-20y" sym:connection_id="2"/>
+    <text x="_Middle+21" y="_Middle-20" value="" align="CentreRight" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle+33.5" y="_Middle-22" value="3" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+25x+0y" end="_Middle+40x+0y" sym:connection_id="3"/>
+    <text x="_Middle+21" y="_Middle+0" value="" align="CentreRight" size="xxs" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle+33.5" y="_Middle-2" value="4" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle+0x+25y" end="_Middle+0x+40y" sym:connection_id="4"/>
+    <text x="_Middle+0" y="_Middle+21" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="4" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+33.5" value="5" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="4" sym:connection_attr="number"/>
+  </render>
+</component>

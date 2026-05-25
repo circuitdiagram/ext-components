@@ -2,7 +2,7 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="AudioPlug2"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.2.0"/>
     <meta name="guid" value="d4e93901-1b69-4ea0-ae3c-87a5273f851c"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
@@ -19,8 +19,8 @@
     </flags>
   </declaration>
   <connections>
-    <connection name="pinS" start="_Middle+50x-10y" end="_Middle+60x-10y" edge="end" sym:connection_id="0"/>
-    <connection name="pinT" start="_Middle+50x+10y" end="_Middle+60x+10y" edge="end" sym:connection_id="1"/>
+    <connection name="" start="_Middle+50x-10y" end="_Middle+60x-10y" edge="end" sym:connection_id="0"/>
+    <connection name="" start="_Middle+50x+10y" end="_Middle+60x+10y" edge="end" sym:connection_id="1"/>
   </connections>
   <render>
     <text x="_Middle-35" y="_Middle+0" value="T" align="CentreCentre" size="base"/>
@@ -31,8 +31,10 @@
     <text x="_Middle+40" y="_Middle-25" value="$Reference" align="CentreCentre" size="xxs"/>
     <text x="_Middle+40" y="_Middle+25" value="$Value" align="CentreCentre" size="xxs"/>
     <line start="_Middle+50x-10y" end="_Middle+60x-10y" sym:connection_id="0"/>
+    <text x="_Middle+46" y="_Middle-10" value="" align="CentreRight" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle+56" y="_Middle-12" value="S" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
     <line start="_Middle+50x+10y" end="_Middle+60x+10y" sym:connection_id="1"/>
+    <text x="_Middle+46" y="_Middle+10" value="" align="CentreRight" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
     <text x="_Middle+56" y="_Middle+8" value="T" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
   </render>
 </component>

@@ -2,7 +2,7 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="HFCN-1200D"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.2.0"/>
     <meta name="guid" value="e5fdb9e7-c5c4-4e52-a977-7e6bf77a1209"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
@@ -23,8 +23,7 @@
   <connections>
     <connection name="in" start="_Middle-40x+0y" end="_Middle-30x+0y" edge="start" sym:connection_id="0"/>
     <connection name="gnd" start="_Middle+0x+30y" end="_Middle+0x+40y" edge="end" sym:connection_id="1"/>
-    <connection name="gnd" start="_Middle+0x+30y" end="_Middle+0x+40y" edge="end" sym:connection_id="2"/>
-    <connection name="out" start="_Middle+30x+0y" end="_Middle+40x+0y" edge="end" sym:connection_id="3"/>
+    <connection name="out" start="_Middle+30x+0y" end="_Middle+40x+0y" edge="end" sym:connection_id="2"/>
   </connections>
   <render>
     <rect location="_Middle-30x-30y" width="60" height="60"/>
@@ -41,11 +40,8 @@
     <line start="_Middle+0x+30y" end="_Middle+0x+40y" sym:connection_id="1"/>
     <text x="_Middle+0" y="_Middle+26" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
     <text x="_Middle-2" y="_Middle+36" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
-    <line start="_Middle+0x+30y" end="_Middle+0x+40y" sym:connection_id="2"/>
-    <text x="_Middle+0" y="_Middle+26" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
-    <text x="_Middle-2" y="_Middle+36" value="4" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
-    <line start="_Middle+30x+0y" end="_Middle+40x+0y" sym:connection_id="3"/>
-    <text x="_Middle+26" y="_Middle+0" value="OUT" align="CentreRight" size="xxs" sym:connection_id="3" sym:connection_attr="name"/>
-    <text x="_Middle+36" y="_Middle-2" value="3" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle+30x+0y" end="_Middle+40x+0y" sym:connection_id="2"/>
+    <text x="_Middle+26" y="_Middle+0" value="OUT" align="CentreRight" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle+36" y="_Middle-2" value="3" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
   </render>
 </component>

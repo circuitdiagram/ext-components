@@ -2,7 +2,7 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="Micro SD Card Det2"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.2.0"/>
     <meta name="guid" value="4a367170-d48e-42aa-829f-f1eb4d50ce36"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
@@ -28,8 +28,8 @@
     <connection name="vss" start="_Middle-90x+10y" end="_Middle-75x+10y" edge="start" sym:connection_id="5"/>
     <connection name="dat0" start="_Middle-90x+20y" end="_Middle-75x+20y" edge="start" sym:connection_id="6"/>
     <connection name="dat1" start="_Middle-90x+30y" end="_Middle-75x+30y" edge="start" sym:connection_id="7"/>
-    <connection name="det_a" start="_Middle-90x+40y" end="_Middle-75x+40y" edge="start" sym:connection_id="8"/>
-    <connection name="det_b" start="_Middle-90x+50y" end="_Middle-75x+50y" edge="start" sym:connection_id="9"/>
+    <connection name="det_b" start="_Middle-90x+50y" end="_Middle-75x+50y" edge="start" sym:connection_id="8"/>
+    <connection name="det_a" start="_Middle-90x+40y" end="_Middle-75x+40y" edge="start" sym:connection_id="9"/>
     <connection name="shield" start="_Middle+65x+50y" end="_Middle+80x+50y" edge="end" sym:connection_id="10"/>
   </connections>
   <render>
@@ -69,14 +69,14 @@
     <line start="_Middle-90x+30y" end="_Middle-75x+30y" sym:connection_id="7"/>
     <text x="_Middle-71" y="_Middle+30" value="DAT1" align="CentreLeft" size="xxs" sym:connection_id="7" sym:connection_attr="name"/>
     <text x="_Middle-83.5" y="_Middle+28" value="8" align="BottomCentre" size="xxs" sym:connection_id="7" sym:connection_attr="number"/>
-    <line start="_Middle-90x+40y" end="_Middle-75x+40y" sym:connection_id="8"/>
-    <text x="_Middle-71" y="_Middle+40" value="DET_A" align="CentreLeft" size="xxs" sym:connection_id="8" sym:connection_attr="name"/>
-    <text x="_Middle-83.5" y="_Middle+38" value="10" align="BottomCentre" size="xxs" sym:connection_id="8" sym:connection_attr="number"/>
-    <line start="_Middle-90x+50y" end="_Middle-75x+50y" sym:connection_id="9"/>
-    <text x="_Middle-71" y="_Middle+50" value="DET_B" align="CentreLeft" size="xxs" sym:connection_id="9" sym:connection_attr="name"/>
-    <text x="_Middle-83.5" y="_Middle+48" value="9" align="BottomCentre" size="xxs" sym:connection_id="9" sym:connection_attr="number"/>
+    <line start="_Middle-90x+50y" end="_Middle-75x+50y" sym:connection_id="8"/>
+    <text x="_Middle-71" y="_Middle+50" value="DET_B" align="CentreLeft" size="xxs" sym:connection_id="8" sym:connection_attr="name"/>
+    <text x="_Middle-83.5" y="_Middle+48" value="9" align="BottomCentre" size="xxs" sym:connection_id="8" sym:connection_attr="number"/>
+    <line start="_Middle-90x+40y" end="_Middle-75x+40y" sym:connection_id="9"/>
+    <text x="_Middle-71" y="_Middle+40" value="DET_A" align="CentreLeft" size="xxs" sym:connection_id="9" sym:connection_attr="name"/>
+    <text x="_Middle-83.5" y="_Middle+38" value="10" align="BottomCentre" size="xxs" sym:connection_id="9" sym:connection_attr="number"/>
     <line start="_Middle+65x+50y" end="_Middle+80x+50y" sym:connection_id="10"/>
     <text x="_Middle+61" y="_Middle+50" value="SHIELD" align="CentreRight" size="xxs" sym:connection_id="10" sym:connection_attr="name"/>
-    <text x="_Middle+73.5" y="_Middle+48" value="11" align="BottomCentre" size="xxs" sym:connection_id="10" sym:connection_attr="number"/>
+    <text x="_Middle+73.5" y="_Middle+48" value="SH" align="BottomCentre" size="xxs" sym:connection_id="10" sym:connection_attr="number"/>
   </render>
 </component>
