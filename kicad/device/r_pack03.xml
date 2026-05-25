@@ -2,11 +2,11 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="R Pack03"/>
-    <meta name="version" value="0.3.1"/>
+    <meta name="version" value="0.4.1"/>
     <meta name="guid" value="2df9911a-3e0b-4127-b843-3e52e46cb9aa"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
-    <meta name="minsize" value="50"/>
+    <meta name="minsize" value="40"/>
     <meta name="description" value="3 resistor network, parallel topology"/>
     <meta name="keywords" value="R network parallel topology isolated"/>
     <meta name="ki_fp_filters" value="DIP* SOIC* R*Array*Concave* R*Array*Convex*"/>
@@ -19,12 +19,12 @@
     </flags>
   </declaration>
   <connections>
-    <connection name="r1_2" start="_Middle-10x-20y" end="_Middle-10x-10y" edge="start" sym:connection_id="0"/>
-    <connection name="r1_1" start="_Middle-10x+10y" end="_Middle-10x+20y" edge="end" sym:connection_id="1"/>
-    <connection name="r2_2" start="_Middle+0x-20y" end="_Middle+0x-10y" edge="start" sym:connection_id="2"/>
-    <connection name="r2_1" start="_Middle+0x+10y" end="_Middle+0x+20y" edge="end" sym:connection_id="3"/>
-    <connection name="r3_2" start="_Middle+10x-20y" end="_Middle+10x-10y" edge="start" sym:connection_id="4"/>
-    <connection name="r3_1" start="_Middle+10x+10y" end="_Middle+10x+20y" edge="end" sym:connection_id="5"/>
+    <connection name="pin1" start="_Middle-10x+10y" end="_Middle-10x+20y" edge="end" sym:connection_id="0"/>
+    <connection name="pin2" start="_Middle+0x+10y" end="_Middle+0x+20y" edge="end" sym:connection_id="1"/>
+    <connection name="pin3" start="_Middle+10x+10y" end="_Middle+10x+20y" edge="end" sym:connection_id="2"/>
+    <connection name="pin4" start="_Middle+10x-20y" end="_Middle+10x-10y" edge="start" sym:connection_id="3"/>
+    <connection name="pin5" start="_Middle+0x-20y" end="_Middle+0x-10y" edge="start" sym:connection_id="4"/>
+    <connection name="pin6" start="_Middle-10x-20y" end="_Middle-10x-10y" edge="start" sym:connection_id="5"/>
   </connections>
   <render>
     <rect location="_Middle-15x-9.5y" width="30" height="19"/>
@@ -37,25 +37,19 @@
     <rect location="_Middle+7.5x-7.5y" width="5" height="15"/>
     <path start="_Middle+0x+0y" data="M10,-7.5 L10,-10"/>
     <path start="_Middle+0x+0y" data="M10,10 L10,7.5"/>
-    <text x="_Middle-20" y="_Middle+0" value="$Reference" align="CentreCentre" size="xxs" rotate="90"/>
-    <text x="_Middle+20" y="_Middle+0" value="$Value" align="CentreCentre" size="xxs" rotate="90"/>
-    <line start="_Middle-10x-20y" end="_Middle-10x-10y" sym:connection_id="0"/>
-    <text x="_Middle-10" y="_Middle-6" value="R1.2" align="CentreRight" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="name"/>
-    <text x="_Middle-12" y="_Middle-16" value="6" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
-    <line start="_Middle-10x+10y" end="_Middle-10x+20y" sym:connection_id="1"/>
-    <text x="_Middle-10" y="_Middle+6" value="R1.1" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
-    <text x="_Middle-12" y="_Middle+16" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
-    <line start="_Middle+0x-20y" end="_Middle+0x-10y" sym:connection_id="2"/>
-    <text x="_Middle+0" y="_Middle-6" value="R2.2" align="CentreRight" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
-    <text x="_Middle-2" y="_Middle-16" value="5" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
-    <line start="_Middle+0x+10y" end="_Middle+0x+20y" sym:connection_id="3"/>
-    <text x="_Middle+0" y="_Middle+6" value="R2.1" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="name"/>
-    <text x="_Middle-2" y="_Middle+16" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="number"/>
-    <line start="_Middle+10x-20y" end="_Middle+10x-10y" sym:connection_id="4"/>
-    <text x="_Middle+10" y="_Middle-6" value="R3.2" align="CentreRight" size="xxs" rotate="270" sym:connection_id="4" sym:connection_attr="name"/>
-    <text x="_Middle+8" y="_Middle-16" value="4" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="4" sym:connection_attr="number"/>
-    <line start="_Middle+10x+10y" end="_Middle+10x+20y" sym:connection_id="5"/>
-    <text x="_Middle+10" y="_Middle+6" value="R3.1" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="5" sym:connection_attr="name"/>
-    <text x="_Middle+8" y="_Middle+16" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="5" sym:connection_attr="number"/>
+    <text x="_Middle-21" y="_Middle+0" value="$Reference" align="CentreRight" size="xxs"/>
+    <text x="_Middle-21" y="_Middle+8" value="$Value" align="CentreRight" size="xxs"/>
+    <line start="_Middle-10x+10y" end="_Middle-10x+20y" sym:connection_id="0"/>
+    <text x="_Middle-12" y="_Middle+16" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+0x+10y" end="_Middle+0x+20y" sym:connection_id="1"/>
+    <text x="_Middle-2" y="_Middle+16" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+10x+10y" end="_Middle+10x+20y" sym:connection_id="2"/>
+    <text x="_Middle+8" y="_Middle+16" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+10x-20y" end="_Middle+10x-10y" sym:connection_id="3"/>
+    <text x="_Middle+8" y="_Middle-16" value="4" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle+0x-20y" end="_Middle+0x-10y" sym:connection_id="4"/>
+    <text x="_Middle-2" y="_Middle-16" value="5" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="4" sym:connection_attr="number"/>
+    <line start="_Middle-10x-20y" end="_Middle-10x-10y" sym:connection_id="5"/>
+    <text x="_Middle-12" y="_Middle-16" value="6" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="5" sym:connection_attr="number"/>
   </render>
 </component>

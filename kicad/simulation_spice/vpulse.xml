@@ -6,7 +6,7 @@
     <meta name="guid" value="cd2e4463-4300-42ce-b0b6-6747edea1ac5"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
-    <meta name="minsize" value="20"/>
+    <meta name="minsize" value="30"/>
     <meta name="datasheet" value="https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_Independent_Sources_for"/>
     <meta name="description" value="Voltage source, pulse"/>
     <meta name="Sim.Pins" value="1=+ 2=-"/>
@@ -28,11 +28,11 @@
   </connections>
   <render>
     <path start="_Middle+0x+0y" data="M-8,3 L-5.5,3 L-4.5,-3 L-0.5,-3 L0.5,3 L4.5,3 L5.5,-3 L8,-3"/>
-    <text x="_Middle+0" y="_Middle-7.5" value="+" align="CentreCentre" size="base"/>
+    <text x="_Middle+0" y="_Middle-7.5" value="+" align="CentreCentre" size="xs"/>
     <ellipse centre="_Middle+0x+0y" rx="10" ry="10"/>
-    <text x="_Middle+10" y="_Middle-10" value="$Reference" align="CentreLeft" size="xxs"/>
-    <text x="_Middle+10" y="_Middle+0" value="$Value" align="CentreLeft" size="xxs"/>
-    <text x="_Middle+10" y="_Middle+10" value="$Sim.Params" align="CentreLeft" size="xxs"/>
+    <text x="_Middle-14" y="_Middle-1.25" value="$Reference" align="CentreRight" size="xxs"/>
+    <text x="_Middle-14" y="_Middle+6.75" value="$Value" align="CentreRight" size="xxs"/>
+    <text x="_Middle-14" y="_Middle+14.75" value="$Sim_Params" align="CentreRight" size="xxs"/>
     <line start="_Middle+0x-20y" end="_Middle+0x-10y" sym:connection_id="0"/>
     <text x="_Middle-2" y="_Middle-16" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
     <line start="_Middle+0x+10y" end="_Middle+0x+20y" sym:connection_id="1"/>

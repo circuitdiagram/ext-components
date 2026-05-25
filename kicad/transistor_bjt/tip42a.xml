@@ -2,11 +2,13 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="TIP42A"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.1.1"/>
     <meta name="guid" value="d4d62f7c-b36a-412a-bd0f-d24f5587fa3b"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
-    <meta name="minsize" value="50"/>
+    <meta name="minsize" value="40"/>
+    <meta name="Sim.Device" value="PNP"/>
+    <meta name="Sim.Pins" value="1=B 2=C 3=E"/>
     <meta name="footprint" value="Package_TO_SOT_THT:TO-220-3_Vertical"/>
     <meta name="datasheet" value="https://www.centralsemi.com/get_document.php?cmp=1&amp;mergetype=pd&amp;mergepath=pd&amp;pdf_id=TIP42.PDF"/>
     <meta name="description" value="-6A Ic, -60V Vce, Power PNP Transistor, TO-220"/>
@@ -32,8 +34,8 @@
     <path start="_Middle+0x+0y" data="M2.5,2.5 L10,10"/>
     <ellipse centre="_Middle+5x+0y" rx="11.1" ry="11.1"/>
     <path start="_Middle+0x+0y" data="M9,7 L7,9 L5,5 L9,7" fill="true"/>
-    <text x="_Middle+25" y="_Middle-7.5" value="$Reference" align="CentreLeft" size="xxs"/>
-    <text x="_Middle+25" y="_Middle+0" value="$Value" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+16.55" y="_Middle+0" value="$Reference" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+16.55" y="_Middle+8" value="$Value" align="CentreLeft" size="xxs"/>
     <line start="_Middle-20x+0y" end="_Middle-10x+0y" sym:connection_id="0"/>
     <text x="_Middle-6" y="_Middle+0" value="B" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-16" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>

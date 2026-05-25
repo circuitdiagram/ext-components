@@ -2,11 +2,11 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="LM334M"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.2.0"/>
     <meta name="guid" value="a519440c-7518-4407-8cb9-93e783f6d87d"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
-    <meta name="minsize" value="30"/>
+    <meta name="minsize" value="40"/>
     <meta name="footprint" value="Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"/>
     <meta name="datasheet" value="http://www.ti.com/lit/ds/symlink/lm134.pdf"/>
     <meta name="description" value="1μA to 10mA 3-Terminal Adjustable Current Source, SO-8"/>
@@ -21,12 +21,9 @@
     </flags>
   </declaration>
   <connections>
-    <connection name="pin4" start="_Middle+0x-20y" end="_Middle+0x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="pin1" start="_Middle+10x+0y" end="_Middle+20x+0y" edge="end" sym:connection_id="0"/>
     <connection name="pin2" start="_Middle+0x+10y" end="_Middle+0x+20y" edge="end" sym:connection_id="1"/>
-    <connection name="pin3" start="_Middle+0x+10y" end="_Middle+0x+20y" edge="end" sym:connection_id="2"/>
-    <connection name="pin6" start="_Middle+0x+10y" end="_Middle+0x+20y" edge="end" sym:connection_id="3"/>
-    <connection name="pin7" start="_Middle+0x+10y" end="_Middle+0x+20y" edge="end" sym:connection_id="4"/>
-    <connection name="pin1" start="_Middle+10x+0y" end="_Middle+20x+0y" edge="end" sym:connection_id="5"/>
+    <connection name="pin4" start="_Middle+0x-20y" end="_Middle+0x-10y" edge="start" sym:connection_id="2"/>
   </connections>
   <render>
     <rect location="_Middle-9x-12y" width="19" height="23"/>
@@ -41,19 +38,13 @@
     <path start="_Middle+0x+0y" data="M0,7.5 L0,12.5"/>
     <path start="_Middle+0x+0y" data="M5,-0 L8.5,-1 L8.5,1 L5,-0"/>
     <path start="_Middle+0x+0y" data="M20,-0 L5,-0"/>
-    <text x="_Middle+2.5" y="_Middle-25" value="$Reference" align="CentreLeft" size="xxs"/>
-    <text x="_Middle+2.5" y="_Middle-17.5" value="$Value" align="CentreLeft" size="xxs"/>
-    <line start="_Middle+0x-20y" end="_Middle+0x-10y" sym:connection_id="0"/>
-    <text x="_Middle-2" y="_Middle-16" value="4" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
+    <text x="_Middle-15" y="_Middle-1.25" value="$Reference" align="CentreRight" size="xxs"/>
+    <text x="_Middle-15" y="_Middle+6.75" value="$Value" align="CentreRight" size="xxs"/>
+    <line start="_Middle+10x+0y" end="_Middle+20x+0y" sym:connection_id="0"/>
+    <text x="_Middle+16" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
     <line start="_Middle+0x+10y" end="_Middle+0x+20y" sym:connection_id="1"/>
     <text x="_Middle-2" y="_Middle+16" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
-    <line start="_Middle+0x+10y" end="_Middle+0x+20y" sym:connection_id="2"/>
-    <text x="_Middle-2" y="_Middle+16" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
-    <line start="_Middle+0x+10y" end="_Middle+0x+20y" sym:connection_id="3"/>
-    <text x="_Middle-2" y="_Middle+16" value="6" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="number"/>
-    <line start="_Middle+0x+10y" end="_Middle+0x+20y" sym:connection_id="4"/>
-    <text x="_Middle-2" y="_Middle+16" value="7" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="4" sym:connection_attr="number"/>
-    <line start="_Middle+10x+0y" end="_Middle+20x+0y" sym:connection_id="5"/>
-    <text x="_Middle+16" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="5" sym:connection_attr="number"/>
+    <line start="_Middle+0x-20y" end="_Middle+0x-10y" sym:connection_id="2"/>
+    <text x="_Middle-2" y="_Middle-16" value="4" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
   </render>
 </component>
