@@ -2,7 +2,7 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="SP0504BAHT"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.1.1"/>
     <meta name="guid" value="bd6187e3-b96d-4b64-9b7a-66f4d65e3818"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
@@ -11,9 +11,9 @@
     <meta name="datasheet" value="http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf"/>
     <meta name="description" value="TVS Diode Array, 5.5V Standoff, 4 Channels, SOT-23-5 package"/>
     <meta name="keywords" value="usb esd protection suppression transient"/>
-    <meta name="ki_fp_filters" value="SOT?23*"/>
     <property name="Reference" type="string" default="D" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="SP0504BAHT" serialize="value" display="Value"/>
+    <property name="ki_fp_filters" type="string" default="SOT?23*" serialize="ki_fp_filters" display="ki_fp_filters"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -49,6 +49,11 @@
     <path start="_Middle+0x+0y" data="M20,-5 L17.5,-0 L22.5,-0 L20,-5"/>
     <text x="_Middle+30" y="_Middle-10" value="$Reference" align="CentreLeft" size="xxs"/>
     <text x="_Middle+30" y="_Middle-2.5" value="$Value" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+30" y="_Middle+5" value="$Footprint" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+12.5" y="_Middle-12.5" value="$Datasheet" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_fp_filters" align="CentreCentre" size="xxs"/>
     <line start="_Middle+0x+10y" end="_Middle+0x+20y" sym:connection_id="0"/>
     <text x="_Middle+0" y="_Middle+6" value="A" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-2" y="_Middle+16" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>

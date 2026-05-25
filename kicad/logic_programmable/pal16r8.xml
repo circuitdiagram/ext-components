@@ -2,7 +2,7 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="PAL16R8"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.1.1"/>
     <meta name="guid" value="097cbca7-627f-489d-911a-4f5bdab0cb1e"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
@@ -10,9 +10,9 @@
     <meta name="datasheet" value="https://docs.rs-online.com/53eb/0900766b8002a354.pdf"/>
     <meta name="description" value="Programmable Array Logic (PAL), 8 Registered Outputs, DIP-20 / PLCC-20"/>
     <meta name="keywords" value="Obsolete Monolithic-Memories AMD PLD 16R8 PAL16R8-7PC PAL16R8-7JC PAL16R8D/2PC PAL16R8B-2CN PAL16R8ACN"/>
-    <meta name="ki_fp_filters" value="DIP*W7.62mm* *PLCC*"/>
     <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="PAL16R8" serialize="value" display="Value"/>
+    <property name="ki_fp_filters" type="string" default="DIP*W7.62mm* *PLCC*" serialize="ki_fp_filters" display="ki_fp_filters"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -45,6 +45,11 @@
     <rect location="_Middle-30x-60y" width="60" height="110"/>
     <text x="_Middle-29" y="_Middle-66" value="$Reference" align="CentreLeft" size="xxs"/>
     <text x="_Middle+5" y="_Middle-66" value="$Value" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Footprint" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+85" value="$Datasheet" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+1" y="_Middle+76" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_fp_filters" align="CentreCentre" size="xxs"/>
     <line start="_Middle+0x+50y" end="_Middle+0x+60y" sym:connection_id="0"/>
     <text x="_Middle+0" y="_Middle+46" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-2" y="_Middle+56" value="10" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>

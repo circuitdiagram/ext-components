@@ -2,16 +2,16 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="L Iron Small"/>
-    <meta name="version" value="0.2.1"/>
+    <meta name="version" value="0.3.1"/>
     <meta name="guid" value="b95076e4-32c4-469c-b298-69e863bb86cb"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
     <meta name="minsize" value="10"/>
     <meta name="description" value="Inductor with iron core, small symbol"/>
     <meta name="keywords" value="inductor choke coil reactor magnetic"/>
-    <meta name="ki_fp_filters" value="Choke_* *Coil* Inductor_* L_*"/>
     <property name="Reference" type="string" default="L" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="L_Iron_Small" serialize="value" display="Value"/>
+    <property name="ki_fp_filters" type="string" default="Choke_* *Coil* Inductor_* L_*" serialize="ki_fp_filters" display="ki_fp_filters"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -19,8 +19,8 @@
     </flags>
   </declaration>
   <connections>
-    <connection name="pin1" start="_Middle+0x-10y" end="_Middle+0x-8y" edge="start" sym:connection_id="0"/>
-    <connection name="pin2" start="_Middle+0x+8y" end="_Middle+0x+10y" edge="end" sym:connection_id="1"/>
+    <connection name="" start="_Middle+0x-10y" end="_Middle+0x-8y" edge="start" sym:connection_id="0"/>
+    <connection name="" start="_Middle+0x+8y" end="_Middle+0x+10y" edge="end" sym:connection_id="1"/>
   </connections>
   <render>
     <path start="_Middle+0x+0y" data="M0,-8 C1.1011811924094703,-7.99522073381015 1.9913385826773606,-7.101191563671669 1.9913385826773606,-6 C1.9913385826773606,-4.898808436328331 1.1011811924094703,-4.00477926618985 0.00000000000000005377642775528102,-4"/>
@@ -31,9 +31,16 @@
     <path start="_Middle+0x+0y" data="M4,8 L4,-8"/>
     <text x="_Middle+5" y="_Middle-4" value="$Reference" align="CentreLeft" size="xxs"/>
     <text x="_Middle+5" y="_Middle+5" value="$Value" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Footprint" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Datasheet" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_fp_filters" align="CentreCentre" size="xxs"/>
     <line start="_Middle+0x-10y" end="_Middle+0x-8y" sym:connection_id="0"/>
+    <text x="_Middle+0" y="_Middle-4" value="" align="CentreRight" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-2" y="_Middle-10" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
     <line start="_Middle+0x+8y" end="_Middle+0x+10y" sym:connection_id="1"/>
+    <text x="_Middle+0" y="_Middle+4" value="" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
     <text x="_Middle-2" y="_Middle+10" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
   </render>
 </component>

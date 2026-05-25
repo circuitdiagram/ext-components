@@ -2,18 +2,18 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="D3V3X8U9LP3810"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.1.1"/>
     <meta name="guid" value="10938bb6-efb5-43cf-8b87-75200e54a6bc"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
-    <meta name="minsize" value="80"/>
+    <meta name="minsize" value="180"/>
     <meta name="footprint" value="Package_DFN_QFN:Diodes_UDFN3810-9_TYPE_B"/>
     <meta name="datasheet" value="https://www.diodes.com/assets/Datasheets/D3V3X8U9LP3810.pdf"/>
     <meta name="description" value="3V3 Reverse Working, 8 channel low capacitance 0.45pF, TVS diode array, 5.5-7V Breakdown, U-DFN3810-9"/>
     <meta name="keywords" value="ESD protection suppression transient"/>
-    <meta name="ki_fp_filters" value="Diodes?UDFN3810?9?TYPE_B*"/>
     <property name="Reference" type="string" default="D" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="D3V3X8U9LP3810" serialize="value" display="Value"/>
+    <property name="ki_fp_filters" type="string" default="Diodes?UDFN3810?9?TYPE_B*" serialize="ki_fp_filters" display="ki_fp_filters"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -66,6 +66,11 @@
     <path start="_Middle+0x+0y" data="M37.5,2.5 L42.5,2.5 L40,-2.5 L37.5,2.5"/>
     <text x="_Middle-10" y="_Middle+15" value="$Reference" align="CentreRight" size="xxs"/>
     <text x="_Middle+10" y="_Middle+15" value="$Value" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+99" y="_Middle+38" value="$Footprint" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+135" y="_Middle+29" value="$Datasheet" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+9" y="_Middle+45" value="$Description" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_fp_filters" align="CentreCentre" size="xxs"/>
     <line start="_Middle+0x+10y" end="_Middle+0x+20y" sym:connection_id="0"/>
     <text x="_Middle+0" y="_Middle+6" value="GND" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-2" y="_Middle+16" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>

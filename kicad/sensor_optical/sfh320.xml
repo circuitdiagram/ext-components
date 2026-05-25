@@ -2,18 +2,18 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="SFH320"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.1.1"/>
     <meta name="guid" value="f83203d3-6eb6-434d-b69a-45ee477a17ec"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
-    <meta name="minsize" value="40"/>
+    <meta name="minsize" value="70"/>
     <meta name="footprint" value="LED_SMD:LED_PLCC-2_3.4x3.0mm_KA"/>
     <meta name="datasheet" value="https://look.ams-osram.com/m/5397c5d8583a26cf/original/SFH-320.pdf"/>
     <meta name="description" value="Silicon NPN Phototransistor, PLCC-2"/>
     <meta name="keywords" value="npn phototransistor"/>
-    <meta name="ki_fp_filters" value="LED?SMD:LED?PLCC?2?3.4x3.0mm?KA*"/>
     <property name="Reference" type="string" default="Q" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="SFH320" serialize="value" display="Value"/>
+    <property name="ki_fp_filters" type="string" default="LED?SMD:LED?PLCC?2?3.4x3.0mm?KA*" serialize="ki_fp_filters" display="ki_fp_filters"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -36,6 +36,11 @@
     <path start="_Middle+0x+0y" data="M5,7 L7,5 L9,9 L5,7" fill="true"/>
     <text x="_Middle+20" y="_Middle-5" value="$Reference" align="CentreLeft" size="xxs"/>
     <text x="_Middle+20" y="_Middle+5" value="$Value" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+48" y="_Middle+14" value="$Footprint" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Datasheet" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_fp_filters" align="CentreCentre" size="xxs"/>
     <line start="_Middle+10x-20y" end="_Middle+10x-10y" sym:connection_id="0"/>
     <text x="_Middle+10" y="_Middle-6" value="C" align="CentreRight" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle+8" y="_Middle-16" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>

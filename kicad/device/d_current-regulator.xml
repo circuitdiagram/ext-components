@@ -2,16 +2,16 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="D Current-regulator"/>
-    <meta name="version" value="0.2.1"/>
+    <meta name="version" value="0.2.2"/>
     <meta name="guid" value="50bee128-13dc-4e45-87fc-051e7ba64959"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
     <meta name="minsize" value="30"/>
     <meta name="description" value="Constant-current diode / current limiting diode / current regulator diode, IEC60747-3:2013"/>
     <meta name="keywords" value="diode constant-current current limit regulator"/>
-    <meta name="ki_fp_filters" value="TO-???* D_*"/>
     <property name="Reference" type="string" default="D" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="D_Current-regulator" serialize="value" display="Value"/>
+    <property name="ki_fp_filters" type="string" default="TO-???* D_*" serialize="ki_fp_filters" display="ki_fp_filters"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -29,6 +29,11 @@
     <ellipse centre="_Middle+0x+0y" rx="5" ry="5"/>
     <text x="_Middle+0" y="_Middle-10" value="$Reference" align="CentreCentre" size="xxs"/>
     <text x="_Middle+0" y="_Middle+10" value="$Value" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0.5" y="_Middle+0" value="$Footprint" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Datasheet" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_fp_filters" align="CentreCentre" size="xxs"/>
     <line start="_Middle-15x+0y" end="_Middle-5x+0y" sym:connection_id="0"/>
     <text x="_Middle-1" y="_Middle+0" value="K" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-11" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>

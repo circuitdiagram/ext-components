@@ -2,7 +2,7 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="LMT01DQX"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.1.1"/>
     <meta name="guid" value="5cd29f50-d90f-4859-ae03-049ac1b7b348"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
@@ -11,9 +11,9 @@
     <meta name="datasheet" value="https://www.ti.com/lit/ds/symlink/lmt01.pdf"/>
     <meta name="description" value="0.5°C Accurate 2-Pin Digital Output Temperature Sensor With Pulse Count Interface. DQX (WSON-2) package"/>
     <meta name="keywords" value="Digital Temperature Pulse Count "/>
-    <meta name="ki_fp_filters" value="Texas?DQX*"/>
     <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="LMT01DQX" serialize="value" display="Value"/>
+    <property name="ki_fp_filters" type="string" default="Texas?DQX*" serialize="ki_fp_filters" display="ki_fp_filters"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -38,6 +38,11 @@
     <rect location="_Middle-20x-20y" width="40" height="40"/>
     <text x="_Middle-15" y="_Middle-25" value="$Reference" align="CentreCentre" size="xxs"/>
     <text x="_Middle+25" y="_Middle+25" value="$Value" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+40" value="$Footprint" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+50" value="$Datasheet" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_fp_filters" align="CentreCentre" size="xxs"/>
     <line start="_Middle+0x-30y" end="_Middle+0x-20y" sym:connection_id="0"/>
     <text x="_Middle+0" y="_Middle-16" value="VP" align="CentreRight" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-2" y="_Middle-26" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>

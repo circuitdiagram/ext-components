@@ -2,7 +2,7 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="Motor Servo"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.1.1"/>
     <meta name="guid" value="726464d2-c3a3-416c-b578-c0669d19e9ef"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
@@ -10,9 +10,9 @@
     <meta name="datasheet" value="http://forums.parallax.com/uploads/attachments/46831/74481.png"/>
     <meta name="description" value="Servo Motor (Futaba, HiTec, JR connector)"/>
     <meta name="keywords" value="Servo Motor"/>
-    <meta name="ki_fp_filters" value="PinHeader*P2.54mm*"/>
     <property name="Reference" type="string" default="M" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="Motor_Servo" serialize="value" display="Value"/>
+    <property name="ki_fp_filters" type="string" default="PinHeader*P2.54mm*" serialize="ki_fp_filters" display="ki_fp_filters"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -41,6 +41,11 @@
     <path start="_Middle+0x+0y" data="M30,-12.5 L16.5,4"/>
     <text x="_Middle-20" y="_Middle-17.5" value="$Reference" align="CentreLeft" size="xxs"/>
     <text x="_Middle-20" y="_Middle+16" value="$Value" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+19" value="$Footprint" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+19" value="$Datasheet" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_fp_filters" align="CentreCentre" size="xxs"/>
     <line start="_Middle-30x-10y" end="_Middle-20x-10y" sym:connection_id="0"/>
     <text x="_Middle-16" y="_Middle-10" value="PWM" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-26" y="_Middle-12" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>

@@ -2,7 +2,7 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="ZMPT101K"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.2.0"/>
     <meta name="guid" value="c1c4f9b3-b224-4e16-9fe6-bb7939e0edbc"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
@@ -10,9 +10,9 @@
     <meta name="footprint" value="Transformer_THT:Transformer_Zeming_ZMPT101K"/>
     <meta name="datasheet" value="https://5krorwxhmqqirik.leadongcdn.com/ZMPT101K+specification-aidikBqoKomRilSkopqmikp.pdf"/>
     <meta name="description" value="Qingxian Zeming Langxi Electronic ZMPT101K voltage transformer 1000:1000 2mA:2mA"/>
-    <meta name="ki_fp_filters" value="Transformer*ZMPT101K*"/>
     <property name="Reference" type="string" default="TR" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="ZMPT101K" serialize="value" display="Value"/>
+    <property name="ki_fp_filters" type="string" default="Transformer*ZMPT101K*" serialize="ki_fp_filters" display="ki_fp_filters"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -20,10 +20,10 @@
     </flags>
   </declaration>
   <connections>
-    <connection name="pin1" start="_Middle-20x-10y" end="_Middle-10x-10y" edge="start" sym:connection_id="0"/>
-    <connection name="pin2" start="_Middle-20x+10y" end="_Middle-10x+10y" edge="start" sym:connection_id="1"/>
-    <connection name="pin4" start="_Middle+10x-10y" end="_Middle+20x-10y" edge="end" sym:connection_id="2"/>
-    <connection name="pin3" start="_Middle+10x+10y" end="_Middle+20x+10y" edge="end" sym:connection_id="3"/>
+    <connection name="" start="_Middle-20x-10y" end="_Middle-10x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="" start="_Middle-20x+10y" end="_Middle-10x+10y" edge="start" sym:connection_id="1"/>
+    <connection name="" start="_Middle+10x+10y" end="_Middle+20x+10y" edge="end" sym:connection_id="2"/>
+    <connection name="" start="_Middle+10x-10y" end="_Middle+20x-10y" edge="end" sym:connection_id="3"/>
   </connections>
   <render>
     <path start="_Middle+0x+0y" data="M-5,-10 L-10,-10"/>
@@ -43,13 +43,21 @@
     <path start="_Middle+0x+0y" data="M5,10 C3.6234463726537456,9.994134440678046 2.5106299212599517,8.876566124000693 2.510629921259951,7.5 C2.5106299212599508,6.123433875999308 3.6234463726537465,5.005865559321954 5,5"/>
     <text x="_Middle+0" y="_Middle-17.5" value="$Reference" align="CentreCentre" size="xxs"/>
     <text x="_Middle+0" y="_Middle+17.5" value="$Value" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+27.500000000000004" value="$Footprint" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+7.5" y="_Middle-30" value="$Datasheet" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_fp_filters" align="CentreCentre" size="xxs"/>
     <line start="_Middle-20x-10y" end="_Middle-10x-10y" sym:connection_id="0"/>
+    <text x="_Middle-6" y="_Middle-10" value="" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-16" y="_Middle-12" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
     <line start="_Middle-20x+10y" end="_Middle-10x+10y" sym:connection_id="1"/>
+    <text x="_Middle-6" y="_Middle+10" value="" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
     <text x="_Middle-16" y="_Middle+8" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
-    <line start="_Middle+10x-10y" end="_Middle+20x-10y" sym:connection_id="2"/>
-    <text x="_Middle+16" y="_Middle-12" value="4" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
-    <line start="_Middle+10x+10y" end="_Middle+20x+10y" sym:connection_id="3"/>
-    <text x="_Middle+16" y="_Middle+8" value="3" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle+10x+10y" end="_Middle+20x+10y" sym:connection_id="2"/>
+    <text x="_Middle+6" y="_Middle+10" value="" align="CentreRight" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle+16" y="_Middle+8" value="3" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+10x-10y" end="_Middle+20x-10y" sym:connection_id="3"/>
+    <text x="_Middle+6" y="_Middle-10" value="" align="CentreRight" size="xxs" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle+16" y="_Middle-12" value="4" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
   </render>
 </component>

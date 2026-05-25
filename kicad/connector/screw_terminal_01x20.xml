@@ -2,16 +2,16 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="Screw Terminal 01x20"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.1.1"/>
     <meta name="guid" value="4be592cc-2734-42c8-a304-0639e246a6e6"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
     <meta name="minsize" value="30"/>
     <meta name="description" value="Generic screw terminal, single row, 01x20, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
     <meta name="keywords" value="screw terminal"/>
-    <meta name="ki_fp_filters" value="TerminalBlock*:*"/>
     <property name="Reference" type="string" default="J" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="Screw_Terminal_01x20" serialize="value" display="Value"/>
+    <property name="ki_fp_filters" type="string" default="TerminalBlock*:*" serialize="ki_fp_filters" display="ki_fp_filters"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -104,6 +104,11 @@
     <ellipse centre="_Middle+0x+100y" rx="2.5" ry="2.5"/>
     <text x="_Middle+0" y="_Middle-100" value="$Reference" align="CentreCentre" size="xxs"/>
     <text x="_Middle+0" y="_Middle+110.00000000000001" value="$Value" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Footprint" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Datasheet" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_fp_filters" align="CentreCentre" size="xxs"/>
     <line start="_Middle-20x-90y" end="_Middle-5x-90y" sym:connection_id="0"/>
     <text x="_Middle-1" y="_Middle-90" value="Pin_1" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-13.5" y="_Middle-92" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>

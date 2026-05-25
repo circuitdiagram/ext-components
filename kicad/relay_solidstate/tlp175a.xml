@@ -2,7 +2,7 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="TLP175A"/>
-    <meta name="version" value="0.1.1"/>
+    <meta name="version" value="0.2.1"/>
     <meta name="guid" value="65be18f6-15c9-467d-b4b0-34f6f000f18e"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
@@ -11,9 +11,9 @@
     <meta name="datasheet" value="https://toshiba.semicon-storage.com/info/docget.jsp?did=13665&amp;prodName=TLP175A"/>
     <meta name="description" value="MOSFET Photorelay 1-Form-A, Voff 60V, Ion 100mA, SOIC-4-6 (MFSOP-4-6)"/>
     <meta name="keywords" value="MOSFET Output Photorelay 1-Form-A"/>
-    <meta name="ki_fp_filters" value="Toshiba?SOIC*6?4.4x3.6mm?P1.27mm*"/>
     <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="TLP175A" serialize="value" display="Value"/>
+    <property name="ki_fp_filters" type="string" default="Toshiba?SOIC*6?4.4x3.6mm?P1.27mm*" serialize="ki_fp_filters" display="ki_fp_filters"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -21,10 +21,10 @@
     </flags>
   </declaration>
   <connections>
-    <connection name="pin1" start="_Middle-30x-10y" end="_Middle-20x-10y" edge="start" sym:connection_id="0"/>
-    <connection name="pin3" start="_Middle-30x+10y" end="_Middle-20x+10y" edge="start" sym:connection_id="1"/>
-    <connection name="pin6" start="_Middle+20x-10y" end="_Middle+30x-10y" edge="end" sym:connection_id="2"/>
-    <connection name="pin4" start="_Middle+20x+10y" end="_Middle+30x+10y" edge="end" sym:connection_id="3"/>
+    <connection name="" start="_Middle-30x-10y" end="_Middle-20x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="" start="_Middle-30x+10y" end="_Middle-20x+10y" edge="start" sym:connection_id="1"/>
+    <connection name="" start="_Middle+20x+10y" end="_Middle+30x+10y" edge="end" sym:connection_id="2"/>
+    <connection name="" start="_Middle+20x-10y" end="_Middle+30x-10y" edge="end" sym:connection_id="3"/>
   </connections>
   <render>
     <rect location="_Middle-20x-15y" width="40" height="30"/>
@@ -62,13 +62,22 @@
     <ellipse centre="_Middle+15x+10y" rx="0.5" ry="0.5"/>
     <text x="_Middle-20" y="_Middle-19.5" value="$Reference" align="CentreLeft" size="xxs"/>
     <text x="_Middle-20" y="_Middle+20" value="$Value" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+30" value="$Footprint" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Datasheet" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_fp_filters" align="CentreCentre" size="xxs"/>
     <line start="_Middle-30x-10y" end="_Middle-20x-10y" sym:connection_id="0"/>
+    <text x="_Middle-16" y="_Middle-10" value="" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-26" y="_Middle-12" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
     <line start="_Middle-30x+10y" end="_Middle-20x+10y" sym:connection_id="1"/>
+    <text x="_Middle-16" y="_Middle+10" value="" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
     <text x="_Middle-26" y="_Middle+8" value="3" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
-    <line start="_Middle+20x-10y" end="_Middle+30x-10y" sym:connection_id="2"/>
-    <text x="_Middle+26" y="_Middle-12" value="6" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
-    <line start="_Middle+20x+10y" end="_Middle+30x+10y" sym:connection_id="3"/>
-    <text x="_Middle+26" y="_Middle+8" value="4" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle+20x+10y" end="_Middle+30x+10y" sym:connection_id="2"/>
+    <text x="_Middle+16" y="_Middle+10" value="" align="CentreRight" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle+26" y="_Middle+8" value="4" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+20x-10y" end="_Middle+30x-10y" sym:connection_id="3"/>
+    <text x="_Middle+16" y="_Middle-10" value="" align="CentreRight" size="xxs" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle+26" y="_Middle-12" value="6" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
   </render>
 </component>

@@ -2,18 +2,18 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="MCP120-xxxGxTO"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.1.1"/>
     <meta name="guid" value="d8c9a4d5-a61b-4dd1-b99e-f17f3fa0c449"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
-    <meta name="minsize" value="60"/>
+    <meta name="minsize" value="90"/>
     <meta name="footprint" value="Package_TO_SOT_THT:TO-92_Inline"/>
     <meta name="datasheet" value="http://ww1.microchip.com/downloads/en/DeviceDoc/11184d.pdf"/>
     <meta name="description" value="Microcontroller supervisory circuit, TO-92"/>
     <meta name="keywords" value="supervisory circuit"/>
-    <meta name="ki_fp_filters" value="TO*92*Inline*"/>
     <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="MCP120-xxxGxTO" serialize="value" display="Value"/>
+    <property name="ki_fp_filters" type="string" default="TO*92*Inline*" serialize="ki_fp_filters" display="ki_fp_filters"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -29,6 +29,11 @@
     <rect location="_Middle-20x-30y" width="40" height="60"/>
     <text x="_Middle-20" y="_Middle-35" value="$Reference" align="CentreCentre" size="xxs"/>
     <text x="_Middle+35" y="_Middle-35" value="$Value" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+65.00000000000001" y="_Middle+35" value="$Footprint" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Datasheet" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_fp_filters" align="CentreCentre" size="xxs"/>
     <line start="_Middle+0x-40y" end="_Middle+0x-30y" sym:connection_id="0"/>
     <text x="_Middle+0" y="_Middle-26" value="VDD" align="CentreRight" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-2" y="_Middle-36" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>

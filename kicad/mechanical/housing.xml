@@ -2,16 +2,16 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="Housing"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.1.1"/>
     <meta name="guid" value="eeeed921-7752-46c7-9e45-e7d2728d7e39"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
     <meta name="minsize" value="40"/>
     <meta name="description" value="Housing"/>
     <meta name="keywords" value="housing enclosure"/>
-    <meta name="ki_fp_filters" value="Enclosure* Housing*"/>
     <property name="Reference" type="string" default="N" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="Housing" serialize="value" display="Value"/>
+    <property name="ki_fp_filters" type="string" default="Enclosure* Housing*" serialize="ki_fp_filters" display="ki_fp_filters"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -50,5 +50,10 @@
     <path start="_Middle+0x+0y" data="M-2.5,-0 L-2.5,17.5"/>
     <text x="_Middle+15" y="_Middle+0" value="$Reference" align="CentreLeft" size="xxs"/>
     <text x="_Middle+15" y="_Middle+7.5" value="$Value" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+5" y="_Middle-5" value="$Footprint" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+5" y="_Middle-5" value="$Datasheet" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_fp_filters" align="CentreCentre" size="xxs"/>
   </render>
 </component>

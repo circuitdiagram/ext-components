@@ -2,16 +2,16 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="SYM LASER Large"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.1.1"/>
     <meta name="guid" value="28991472-89a4-4e48-ad1c-1bd0c1a722b4"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
     <meta name="minsize" value="40"/>
-    <meta name="Reference" value="#SYM"/>
-    <meta name="Value" value="SYM_LASER_Large"/>
     <meta name="description" value="Laser radiation warning symbol, large"/>
-    <meta name="Sim.Enable" value="0"/>
     <meta name="keywords" value="symbol logo laser warning"/>
+    <property name="Reference" type="string" default="#SYM" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="SYM_LASER_Large" serialize="value" display="Value"/>
+    <property name="Sim_Enable" type="string" default="0" serialize="sim_enable" display="Sim_Enable"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -30,5 +30,12 @@
     <path start="_Middle+0x+0y" data="M0,16.5 L0,2"/>
     <path start="_Middle+0x+0y" data="M2,5 L-2,14"/>
     <path start="_Middle+0x+0y" data="M5.5,14.5 L-5.5,4.5"/>
+    <text x="_Middle+0" y="_Middle-20" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+26.5" value="$Value" align="CentreCentre" size="xxs"/>
+    <text x="_Middle-1" y="_Middle+17.5" value="$Footprint" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+3" y="_Middle+20" value="$Datasheet" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Sim.Enable" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
   </render>
 </component>

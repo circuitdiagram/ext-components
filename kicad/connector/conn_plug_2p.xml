@@ -2,16 +2,16 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="Conn Plug 2P"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.1.1"/>
     <meta name="guid" value="599c6f7d-6911-4283-b06f-78f1bcaef7a4"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
     <meta name="minsize" value="70"/>
     <meta name="description" value="2 Pins non-protected generic plug"/>
     <meta name="keywords" value="2P mains plug wall"/>
-    <meta name="ki_fp_filters" value="CEE*7/2* CEE*7/16* CEE*7/17* NEMA*1?15* SN?441011*Type?11*"/>
     <property name="Reference" type="string" default="P" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="Conn_Plug_2P" serialize="value" display="Value"/>
+    <property name="ki_fp_filters" type="string" default="CEE*7/2* CEE*7/16* CEE*7/17* NEMA*1?15* SN?441011*Type?11*" serialize="ki_fp_filters" display="ki_fp_filters"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -29,6 +29,11 @@
     <ellipse centre="_Middle+12.5x+0y" rx="2.5" ry="2.5"/>
     <text x="_Middle-28" y="_Middle-34" value="$Reference" align="CentreCentre" size="xxs"/>
     <text x="_Middle+1" y="_Middle+35" value="$Value" align="CentreCentre" size="xxs"/>
+    <text x="_Middle-18" y="_Middle+1" value="$Footprint" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Datasheet" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_fp_filters" align="CentreCentre" size="xxs"/>
     <line start="_Middle+30x-20y" end="_Middle+40x-20y" sym:connection_id="0"/>
     <text x="_Middle+26" y="_Middle-20" value="L" align="CentreRight" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle+36" y="_Middle-22" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>

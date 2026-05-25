@@ -2,7 +2,7 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="BNX025"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.1.1"/>
     <meta name="guid" value="973c899a-79bc-458f-bbe0-6917dc343726"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
@@ -11,9 +11,9 @@
     <meta name="datasheet" value="https://www.murata.com/en-us/products/productdetail.aspx?cate=luNoiseSupprFilteBlockType&amp;partno=BNX025H01%23"/>
     <meta name="description" value="EMI Filter SMD, Murata BNX025"/>
     <meta name="keywords" value="EMI Filter SMD Murata"/>
-    <meta name="ki_fp_filters" value="Filter*Murata*BNX025*"/>
     <property name="Reference" type="string" default="FL" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="BNX025" serialize="value" display="Value"/>
+    <property name="ki_fp_filters" type="string" default="Filter*Murata*BNX025*" serialize="ki_fp_filters" display="ki_fp_filters"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -22,8 +22,8 @@
   </declaration>
   <connections>
     <connection name="b" start="_Middle-40x-10y" end="_Middle-30x-10y" edge="start" sym:connection_id="0"/>
-    <connection name="psg" start="_Middle-40x+10y" end="_Middle-30x+10y" edge="start" sym:connection_id="1"/>
-    <connection name="cb" start="_Middle+30x-10y" end="_Middle+40x-10y" edge="end" sym:connection_id="2"/>
+    <connection name="cb" start="_Middle+30x-10y" end="_Middle+40x-10y" edge="end" sym:connection_id="1"/>
+    <connection name="psg" start="_Middle-40x+10y" end="_Middle-30x+10y" edge="start" sym:connection_id="2"/>
     <connection name="cg" start="_Middle+30x+10y" end="_Middle+40x+10y" edge="end" sym:connection_id="3"/>
   </connections>
   <render>
@@ -59,15 +59,20 @@
     <rect location="_Middle+11.5x-5.5y" width="8" height="1"/>
     <text x="_Middle-25" y="_Middle-20" value="$Reference" align="CentreCentre" size="xxs"/>
     <text x="_Middle+30" y="_Middle-20" value="$Value" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+20" value="$Footprint" align="CentreCentre" size="xxs"/>
+    <text x="_Middle-2.5" y="_Middle+2.5" value="$Datasheet" align="CentreCentre" size="xxs" rotate="90"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_fp_filters" align="CentreCentre" size="xxs"/>
     <line start="_Middle-40x-10y" end="_Middle-30x-10y" sym:connection_id="0"/>
     <text x="_Middle-26" y="_Middle-10" value="B" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-36" y="_Middle-12" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
-    <line start="_Middle-40x+10y" end="_Middle-30x+10y" sym:connection_id="1"/>
-    <text x="_Middle-26" y="_Middle+10" value="PSG" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
-    <text x="_Middle-36" y="_Middle+8" value="3" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
-    <line start="_Middle+30x-10y" end="_Middle+40x-10y" sym:connection_id="2"/>
-    <text x="_Middle+26" y="_Middle-10" value="CB" align="CentreRight" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
-    <text x="_Middle+36" y="_Middle-12" value="2" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+30x-10y" end="_Middle+40x-10y" sym:connection_id="1"/>
+    <text x="_Middle+26" y="_Middle-10" value="CB" align="CentreRight" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle+36" y="_Middle-12" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle-40x+10y" end="_Middle-30x+10y" sym:connection_id="2"/>
+    <text x="_Middle-26" y="_Middle+10" value="PSG" align="CentreLeft" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-36" y="_Middle+8" value="3" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
     <line start="_Middle+30x+10y" end="_Middle+40x+10y" sym:connection_id="3"/>
     <text x="_Middle+26" y="_Middle+10" value="CG" align="CentreRight" size="xxs" sym:connection_id="3" sym:connection_attr="name"/>
     <text x="_Middle+36" y="_Middle+8" value="4" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>

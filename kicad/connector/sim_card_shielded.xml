@@ -2,16 +2,16 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="SIM Card Shielded"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.1.1"/>
     <meta name="guid" value="6c54404d-7d9d-4624-86f1-542927468baf"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
     <meta name="minsize" value="110"/>
     <meta name="description" value="SIM Card"/>
     <meta name="keywords" value="SIM card UICC"/>
-    <meta name="ki_fp_filters" value="*SIM*Card*Holder*"/>
     <property name="Reference" type="string" default="J" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="SIM_Card_Shielded" serialize="value" display="Value"/>
+    <property name="ki_fp_filters" type="string" default="*SIM*Card*Holder*" serialize="ki_fp_filters" display="ki_fp_filters"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -37,6 +37,11 @@
     <rect location="_Middle+15x+5y" width="15" height="5"/>
     <text x="_Middle-10" y="_Middle-50" value="$Reference" align="CentreRight" size="xxs"/>
     <text x="_Middle-5" y="_Middle-40" value="$Value" align="CentreRight" size="xxs"/>
+    <text x="_Middle+0" y="_Middle-35" value="$Footprint" align="CentreCentre" size="xxs"/>
+    <text x="_Middle-5" y="_Middle+0" value="$Datasheet" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_fp_filters" align="CentreCentre" size="xxs"/>
     <line start="_Middle-50x-30y" end="_Middle-40x-30y" sym:connection_id="0"/>
     <text x="_Middle-36" y="_Middle-30" value="VCC" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-46" y="_Middle-32" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>

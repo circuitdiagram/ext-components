@@ -2,7 +2,7 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="STM32G031J 4-6 Mx"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.1.1"/>
     <meta name="guid" value="73823ff2-72a6-4733-afcf-ae00da5d650f"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
@@ -11,9 +11,9 @@
     <meta name="datasheet" value="https://www.st.com/resource/en/datasheet/stm32g031j4.pdf"/>
     <meta name="description" value="STMicroelectronics Arm Cortex-M0+ MCU, 16-32KB flash, 8KB RAM, 64 MHz, 1.7-3.6V, 6 GPIO, SO8N"/>
     <meta name="keywords" value="Arm Cortex-M0+ STM32G0 STM32G0x1"/>
-    <meta name="ki_fp_filters" value="SO*3.9x4.9mm*P1.27mm*"/>
     <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="STM32G031J_4-6_Mx" serialize="value" display="Value"/>
+    <property name="ki_fp_filters" type="string" default="SO*3.9x4.9mm*P1.27mm*" serialize="ki_fp_filters" display="ki_fp_filters"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -34,6 +34,11 @@
     <rect location="_Middle-110x-40y" width="220.00000000000003" height="80"/>
     <text x="_Middle-110.00000000000001" y="_Middle-45" value="$Reference" align="CentreLeft" size="xxs"/>
     <text x="_Middle+10" y="_Middle-45" value="$Value" align="CentreLeft" size="xxs"/>
+    <text x="_Middle-110.00000000000001" y="_Middle+40" value="$Footprint" align="CentreRight" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Datasheet" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_fp_filters" align="CentreCentre" size="xxs"/>
     <line start="_Middle-120x-20y" end="_Middle-110x-20y" sym:connection_id="0"/>
     <text x="_Middle-106" y="_Middle-20" value="PB7/PB8/PB9/PC14" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-116" y="_Middle-22" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>

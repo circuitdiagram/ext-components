@@ -2,17 +2,17 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="Conn 01x28 Pin"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.1.1"/>
     <meta name="guid" value="7f8de973-b523-437f-b1ab-46f2fe8c9f5a"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
     <meta name="minsize" value="20"/>
     <meta name="description" value="Generic connector, single row, 01x28, script generated"/>
     <meta name="keywords" value="connector"/>
-    <meta name="ki_fp_filters" value="Connector*:*_1x??_*"/>
     <property name="Reference" type="string" default="J" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="Conn_01x28_Pin" serialize="value" display="Value"/>
     <property name="ki_locked" type="string" default="" serialize="ki_locked" display="ki_locked"/>
+    <property name="ki_fp_filters" type="string" default="Connector*:*_1x??_*" serialize="ki_fp_filters" display="ki_fp_filters"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -108,7 +108,12 @@
     <path start="_Middle+0x+0y" data="M5,140 L3.4000000000000004,140"/>
     <text x="_Middle+0" y="_Middle-140" value="$Reference" align="CentreCentre" size="xxs"/>
     <text x="_Middle+0" y="_Middle+150" value="$Value" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Footprint" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Datasheet" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Description" align="CentreCentre" size="xxs"/>
     <text x="_Middle+0" y="_Middle+0" value="$ki_locked" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_fp_filters" align="CentreCentre" size="xxs"/>
     <line start="_Middle+5x-130y" end="_Middle+20x-130y" sym:connection_id="0"/>
     <text x="_Middle+1" y="_Middle-130.00000000000003" value="Pin_1" align="CentreRight" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle+13.5" y="_Middle-132.00000000000003" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>

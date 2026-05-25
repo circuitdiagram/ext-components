@@ -2,7 +2,7 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="Fan Tacho PWM"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.1.1"/>
     <meta name="guid" value="fe07ab24-e488-4988-8906-d879a98970fa"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
@@ -10,9 +10,9 @@
     <meta name="datasheet" value="http://www.formfactors.org/developer%5Cspecs%5Crev1_2_public.pdf"/>
     <meta name="description" value="Fan, tacho output, PWM input, 4-pin connector"/>
     <meta name="keywords" value="Fan Motor tacho PWM"/>
-    <meta name="ki_fp_filters" value="FanPinHeader*P2.54mm*Vertical* PinHeader*P2.54mm*Vertical* TerminalBlock*"/>
     <property name="Reference" type="string" default="M" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="Fan_Tacho_PWM" serialize="value" display="Value"/>
+    <property name="ki_fp_filters" type="string" default="FanPinHeader*P2.54mm*Vertical* PinHeader*P2.54mm*Vertical* TerminalBlock*" serialize="ki_fp_filters" display="ki_fp_filters"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -20,10 +20,10 @@
     </flags>
   </declaration>
   <connections>
-    <connection name="tacho" start="_Middle-30x-10y" end="_Middle-20x-10y" edge="start" sym:connection_id="0"/>
-    <connection name="pwm" start="_Middle-30x+10y" end="_Middle-20x+10y" edge="start" sym:connection_id="1"/>
-    <connection name="pos" start="_Middle+0x-30y" end="_Middle+0x-20y" edge="start" sym:connection_id="2"/>
-    <connection name="neg" start="_Middle+0x+10y" end="_Middle+0x+20y" edge="end" sym:connection_id="3"/>
+    <connection name="neg" start="_Middle+0x+10y" end="_Middle+0x+20y" edge="end" sym:connection_id="0"/>
+    <connection name="pos" start="_Middle+0x-30y" end="_Middle+0x-20y" edge="start" sym:connection_id="1"/>
+    <connection name="tacho" start="_Middle-30x-10y" end="_Middle-20x-10y" edge="start" sym:connection_id="2"/>
+    <connection name="pwm" start="_Middle-30x+10y" end="_Middle-20x+10y" edge="start" sym:connection_id="3"/>
   </connections>
   <render>
     <path start="_Middle+0x+0y" data="M-20,-8 L-21,-8.5"/>
@@ -44,17 +44,22 @@
     <path start="_Middle+0x+0y" data="M10,2 C5.9597171419843225,1.9666625543815215 2.23346201347268,-0.18500433318623166 0.18488755407523172,-3.6675809141618965 C-1.8636869053222167,-7.150157495137561 -1.9338784798320798,-11.452450002706358 -0.0000000000000017763568394002505,-14.999999999999993"/>
     <text x="_Middle+10" y="_Middle-20" value="$Reference" align="CentreLeft" size="xxs"/>
     <text x="_Middle+10" y="_Middle+10" value="$Value" align="CentreLeft" size="xxs"/>
-    <line start="_Middle-30x-10y" end="_Middle-20x-10y" sym:connection_id="0"/>
-    <text x="_Middle-16" y="_Middle-10" value="Tacho" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
-    <text x="_Middle-26" y="_Middle-12" value="3" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
-    <line start="_Middle-30x+10y" end="_Middle-20x+10y" sym:connection_id="1"/>
-    <text x="_Middle-16" y="_Middle+10" value="PWM" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
-    <text x="_Middle-26" y="_Middle+8" value="4" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
-    <line start="_Middle+0x-30y" end="_Middle+0x-20y" sym:connection_id="2"/>
-    <text x="_Middle+0" y="_Middle-16" value="+" align="CentreRight" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
-    <text x="_Middle-2" y="_Middle-26" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
-    <line start="_Middle+0x+10y" end="_Middle+0x+20y" sym:connection_id="3"/>
-    <text x="_Middle+0" y="_Middle+6" value="-" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="name"/>
-    <text x="_Middle-2" y="_Middle+16" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="number"/>
+    <text x="_Middle+0" y="_Middle-1" value="$Footprint" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle-1" value="$Datasheet" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_fp_filters" align="CentreCentre" size="xxs"/>
+    <line start="_Middle+0x+10y" end="_Middle+0x+20y" sym:connection_id="0"/>
+    <text x="_Middle+0" y="_Middle+6" value="-" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+16" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+0x-30y" end="_Middle+0x-20y" sym:connection_id="1"/>
+    <text x="_Middle+0" y="_Middle-16" value="+" align="CentreRight" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle-26" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle-30x-10y" end="_Middle-20x-10y" sym:connection_id="2"/>
+    <text x="_Middle-16" y="_Middle-10" value="Tacho" align="CentreLeft" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-26" y="_Middle-12" value="3" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle-30x+10y" end="_Middle-20x+10y" sym:connection_id="3"/>
+    <text x="_Middle-16" y="_Middle+10" value="PWM" align="CentreLeft" size="xxs" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle-26" y="_Middle+8" value="4" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
   </render>
 </component>

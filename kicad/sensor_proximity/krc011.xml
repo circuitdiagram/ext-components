@@ -2,7 +2,7 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="KRC011"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.1.1"/>
     <meta name="guid" value="9ff3ea80-5da4-4800-9e23-138ff39ac5b6"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
@@ -11,9 +11,9 @@
     <meta name="datasheet" value="http://www.kingbright.com/attachments/file/psearch/000/00/00/KRC011(Ver.15).pdf"/>
     <meta name="description" value="Subminiature Reflective Optical Sensor"/>
     <meta name="keywords" value="Reflective Optical Sensor Opto"/>
-    <meta name="ki_fp_filters" value="Kingbright?KRC011*"/>
     <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="KRC011" serialize="value" display="Value"/>
+    <property name="ki_fp_filters" type="string" default="Kingbright?KRC011*" serialize="ki_fp_filters" display="ki_fp_filters"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -56,6 +56,11 @@
     <path start="_Middle+0x+0y" data="M15,5 L15,10 L20,10"/>
     <text x="_Middle-15" y="_Middle-20" value="$Reference" align="CentreCentre" size="xxs"/>
     <text x="_Middle+30" y="_Middle-20" value="$Value" align="CentreRight" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+20" value="$Footprint" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle-10" value="$Datasheet" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_fp_filters" align="CentreCentre" size="xxs"/>
     <line start="_Middle-30x-10y" end="_Middle-20x-10y" sym:connection_id="0"/>
     <text x="_Middle-16" y="_Middle-10" value="A" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-26" y="_Middle-12" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>

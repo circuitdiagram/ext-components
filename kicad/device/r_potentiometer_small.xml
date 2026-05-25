@@ -2,16 +2,19 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="R Potentiometer Small"/>
-    <meta name="version" value="0.3.1"/>
+    <meta name="version" value="0.3.2"/>
     <meta name="guid" value="b511f279-9eae-4614-8019-b0ebf04e50d4"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
     <meta name="minsize" value="30"/>
     <meta name="description" value="Potentiometer"/>
     <meta name="keywords" value="resistor variable"/>
-    <meta name="ki_fp_filters" value="Potentiometer*"/>
     <property name="Reference" type="string" default="RV" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="R_Potentiometer_Small" serialize="value" display="Value"/>
+    <property name="Sim_Device" type="string" default="R" serialize="sim_device" display="Sim_Device"/>
+    <property name="Sim_Type" type="string" default="POT" serialize="sim_type" display="Sim_Type"/>
+    <property name="Sim_Pins" type="string" default="1=r0 2=wiper 3=r1" serialize="sim_pins" display="Sim_Pins"/>
+    <property name="ki_fp_filters" type="string" default="Potentiometer*" serialize="ki_fp_filters" display="ki_fp_filters"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -20,22 +23,30 @@
   </declaration>
   <connections>
     <connection name="1" start="_Middle+0x-10y" end="_Middle+0x-7.5y" edge="start" sym:connection_id="0"/>
-    <connection name="3" start="_Middle+0x+7.5y" end="_Middle+0x+10y" edge="end" sym:connection_id="1"/>
-    <connection name="2" start="_Middle+6.1x+0y" end="_Middle+10x+0y" edge="end" sym:connection_id="2"/>
+    <connection name="2" start="_Middle+6.1x+0y" end="_Middle+10x+0y" edge="end" sym:connection_id="1"/>
+    <connection name="3" start="_Middle+0x+7.5y" end="_Middle+0x+10y" edge="end" sym:connection_id="2"/>
   </connections>
   <render>
     <rect location="_Middle-3x-7.1y" width="6" height="14.2"/>
     <path start="_Middle+0x+0y" data="M3.5,-0 L2.5,-0 L6.5,-1.5 L6.5,1.5 L2.5,-0 L3.5,-0" fill="true"/>
     <text x="_Middle-17.5" y="_Middle+0" value="$Reference" align="CentreCentre" size="xxs" rotate="90"/>
     <text x="_Middle-10" y="_Middle+0" value="$Value" align="CentreCentre" size="xxs" rotate="90"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Footprint" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Datasheet" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Sim.Device" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Sim.Type" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Sim.Pins" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_fp_filters" align="CentreCentre" size="xxs"/>
     <line start="_Middle+0x-10y" end="_Middle+0x-7.5y" sym:connection_id="0"/>
     <text x="_Middle+0" y="_Middle-3.5" value="1" align="CentreRight" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-2" y="_Middle-9.75" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
-    <line start="_Middle+0x+7.5y" end="_Middle+0x+10y" sym:connection_id="1"/>
-    <text x="_Middle+0" y="_Middle+3.5" value="3" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
-    <text x="_Middle-2" y="_Middle+9.75" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
-    <line start="_Middle+6.1x+0y" end="_Middle+10x+0y" sym:connection_id="2"/>
-    <text x="_Middle+2.0999999999999996" y="_Middle+0" value="2" align="CentreRight" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
-    <text x="_Middle+9.05" y="_Middle-2" value="2" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+6.1x+0y" end="_Middle+10x+0y" sym:connection_id="1"/>
+    <text x="_Middle+2.0999999999999996" y="_Middle+0" value="2" align="CentreRight" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle+9.05" y="_Middle-2" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+0x+7.5y" end="_Middle+0x+10y" sym:connection_id="2"/>
+    <text x="_Middle+0" y="_Middle+3.5" value="3" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+9.75" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
   </render>
 </component>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Mechanical Shape"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="6a4bc597-8d95-4c02-a083-9a43e6b7bacb"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="20"/>
+    <meta name="description" value="Mechanical shape, non-electric, board outlines"/>
+    <meta name="keywords" value="Mechanical Shape Outline"/>
+    <property name="Reference" type="string" default="S" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="Mechanical_Shape" serialize="value" display="Value"/>
+    <property name="ki_fp_filters" type="string" default="*Shape* *Outline*" serialize="ki_fp_filters" display="ki_fp_filters"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M5,-10 L-5,-10 L-10,-5 L-10,5 L-5,10 L5,10 L10,5 L10,-5 L5,-10"/>
+    <text x="_Middle+0" y="_Middle-25" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle-15" value="$Value" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+20" value="$Footprint" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle-15" value="$Datasheet" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_fp_filters" align="CentreCentre" size="xxs"/>
+  </render>
+</component>

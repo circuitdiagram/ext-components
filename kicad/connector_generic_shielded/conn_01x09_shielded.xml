@@ -2,16 +2,16 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="Conn 01x09 Shielded"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.1.1"/>
     <meta name="guid" value="6e6833fd-a095-4b20-88ce-2989ae342d76"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
     <meta name="minsize" value="30"/>
     <meta name="description" value="Generic shielded connector, single row, 01x09, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
     <meta name="keywords" value="connector"/>
-    <meta name="ki_fp_filters" value="Connector*:*_1x??-1SH*"/>
     <property name="Reference" type="string" default="J" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="Conn_01x09_Shielded" serialize="value" display="Value"/>
+    <property name="ki_fp_filters" type="string" default="Connector*:*_1x??-1SH*" serialize="ki_fp_filters" display="ki_fp_filters"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -44,6 +44,11 @@
     <rect location="_Middle-4x+39.5y" width="5" height="1.000000000000007"/>
     <text x="_Middle+1" y="_Middle-49" value="$Reference" align="CentreCentre" size="xxs"/>
     <text x="_Middle+4" y="_Middle+49" value="$Value" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Footprint" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Datasheet" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_fp_filters" align="CentreCentre" size="xxs"/>
     <line start="_Middle-20x-40y" end="_Middle-4x-40y" sym:connection_id="0"/>
     <text x="_Middle+0" y="_Middle-40" value="Pin_1" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-13" y="_Middle-42" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>

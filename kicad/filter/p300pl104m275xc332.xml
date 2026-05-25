@@ -2,7 +2,7 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="P300PL104M275xC332"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.1.1"/>
     <meta name="guid" value="4ba230ae-8a07-4287-aa81-9702cb1684ef"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
@@ -11,9 +11,9 @@
     <meta name="datasheet" value="https://content.kemet.com/datasheets/KEM_F3019_PZB300X2_2XY2_275.pdf"/>
     <meta name="description" value="EMI suppression capacitor PZB300 series, metallized paper, X2 and Y2 classes, 275 VAC, Cx 0.10uF, Cy 3.3nF, legacy P/N: PZB300MC12xxx"/>
     <meta name="keywords" value="suppressor filter cap"/>
-    <meta name="ki_fp_filters" value="Filter*PZB300*"/>
     <property name="Reference" type="string" default="FL" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="P300PL104M275xC332" serialize="value" display="Value"/>
+    <property name="ki_fp_filters" type="string" default="Filter*PZB300*" serialize="ki_fp_filters" display="ki_fp_filters"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -22,8 +22,8 @@
   </declaration>
   <connections>
     <connection name="1" start="_Middle-30x-10y" end="_Middle-20x-10y" edge="start" sym:connection_id="0"/>
-    <connection name="3" start="_Middle+0x+0y" end="_Middle+0x+10y" edge="end" sym:connection_id="1"/>
-    <connection name="2" start="_Middle+20x-10y" end="_Middle+30x-10y" edge="end" sym:connection_id="2"/>
+    <connection name="2" start="_Middle+20x-10y" end="_Middle+30x-10y" edge="end" sym:connection_id="1"/>
+    <connection name="3" start="_Middle+0x+0y" end="_Middle+0x+10y" edge="end" sym:connection_id="2"/>
   </connections>
   <render>
     <rect location="_Middle-22x-16.25y" width="44" height="18.750000000000004"/>
@@ -46,14 +46,19 @@
     <text x="_Middle+7" y="_Middle-4" value="Cy" align="CentreCentre" size="base"/>
     <text x="_Middle+0" y="_Middle-29" value="$Reference" align="CentreCentre" size="xxs"/>
     <text x="_Middle+0" y="_Middle-21" value="$Value" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+9" y="_Middle-18.5" value="$Footprint" align="CentreCentre" size="xxs"/>
+    <text x="_Middle-1" y="_Middle-8" value="$Datasheet" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle-8" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_fp_filters" align="CentreCentre" size="xxs"/>
     <line start="_Middle-30x-10y" end="_Middle-20x-10y" sym:connection_id="0"/>
     <text x="_Middle-16" y="_Middle-10" value="1" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-26" y="_Middle-12" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
-    <line start="_Middle+0x+0y" end="_Middle+0x+10y" sym:connection_id="1"/>
-    <text x="_Middle+0" y="_Middle-4" value="3" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
-    <text x="_Middle-2" y="_Middle+6" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
-    <line start="_Middle+20x-10y" end="_Middle+30x-10y" sym:connection_id="2"/>
-    <text x="_Middle+16" y="_Middle-10" value="2" align="CentreRight" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
-    <text x="_Middle+26" y="_Middle-12" value="2" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+20x-10y" end="_Middle+30x-10y" sym:connection_id="1"/>
+    <text x="_Middle+16" y="_Middle-10" value="2" align="CentreRight" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle+26" y="_Middle-12" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+0x+0y" end="_Middle+0x+10y" sym:connection_id="2"/>
+    <text x="_Middle+0" y="_Middle-4" value="3" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+6" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
   </render>
 </component>

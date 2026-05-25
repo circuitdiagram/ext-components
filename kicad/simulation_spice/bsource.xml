@@ -2,17 +2,17 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="BSOURCE"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.1.1"/>
     <meta name="guid" value="c1868e15-a70f-471e-ac45-06138f116352"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
     <meta name="minsize" value="30"/>
     <meta name="datasheet" value="https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_Non_linear_Dependent_Sources"/>
     <meta name="description" value="Arbitrary behavioral voltage or current source for simulation only"/>
-    <meta name="Sim.Device" value="SPICE"/>
     <meta name="keywords" value="simulation dependent"/>
     <property name="Reference" type="string" default="B" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="BSOURCE" serialize="value" display="Value"/>
+    <property name="Sim_Device" type="string" default="SPICE" serialize="sim_device" display="Sim_Device"/>
     <property name="Sim_Params" type="string" default="type=&quot;B&quot; model=&quot;v=1&quot;" serialize="sim_params" display="Sim_Params"/>
     <flags>
       <option>NoResize</option>
@@ -32,7 +32,12 @@
     <path start="_Middle+0x+0y" data="M0,-4 L0,-8"/>
     <text x="_Middle+10" y="_Middle-10" value="$Reference" align="CentreLeft" size="xxs"/>
     <text x="_Middle+10" y="_Middle+0" value="$Value" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Footprint" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+65.00000000000001" value="$Datasheet" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Sim.Device" align="CentreCentre" size="xxs"/>
     <text x="_Middle+10" y="_Middle+10" value="$Sim.Params" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
     <line start="_Middle+0x-20y" end="_Middle+0x-10y" sym:connection_id="0"/>
     <text x="_Middle+0" y="_Middle-6" value="N+" align="CentreRight" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-2" y="_Middle-16" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>

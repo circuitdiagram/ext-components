@@ -2,7 +2,7 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="Filter EMI LCL"/>
-    <meta name="version" value="0.3.1"/>
+    <meta name="version" value="0.3.2"/>
     <meta name="guid" value="00ce81fa-b051-49b5-aa75-55e8419014a0"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
@@ -10,9 +10,9 @@
     <meta name="datasheet" value="http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb"/>
     <meta name="description" value="EMI T-filter (LCL)"/>
     <meta name="keywords" value="EMI T-filter"/>
-    <meta name="ki_fp_filters" value="Filter* Resonator*"/>
     <property name="Reference" type="string" default="FL" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="Filter_EMI_LCL" serialize="value" display="Value"/>
+    <property name="ki_fp_filters" type="string" default="Filter* Resonator*" serialize="ki_fp_filters" display="ki_fp_filters"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -42,6 +42,11 @@
     <path start="_Middle+0x+0y" data="M16,-10 C16.004779266189963,-11.101181192409392 16.89880843632841,-11.991338582677157 18,-11.991338582677157 C19.10119156367159,-11.991338582677157 19.995220733810037,-11.101181192409392 20,-10"/>
     <text x="_Middle+0" y="_Middle-27.500000000000004" value="$Reference" align="CentreCentre" size="xxs"/>
     <text x="_Middle+0" y="_Middle-20" value="$Value" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Footprint" align="CentreCentre" size="xxs" rotate="90"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Datasheet" align="CentreCentre" size="xxs" rotate="90"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_fp_filters" align="CentreCentre" size="xxs"/>
     <line start="_Middle-30x-10y" end="_Middle-20x-10y" sym:connection_id="0"/>
     <text x="_Middle-16" y="_Middle-10" value="1" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-26" y="_Middle-12" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>

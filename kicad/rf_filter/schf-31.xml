@@ -2,7 +2,7 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="SCHF-31"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.1.1"/>
     <meta name="guid" value="c7c79270-7adc-4c83-8d43-1d90dc00443b"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
@@ -11,9 +11,9 @@
     <meta name="datasheet" value="https://www.minicircuits.com/pdfs/SCHF-31+.pdf"/>
     <meta name="description" value="High Pass Filter, 31 to 1500 MHz, 50 Ohm, Mini-Circuits YY161"/>
     <meta name="keywords" value="highpass filter rf"/>
-    <meta name="ki_fp_filters" value="Mini?Circuits*YY161*"/>
     <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="SCHF-31" serialize="value" display="Value"/>
+    <property name="ki_fp_filters" type="string" default="Mini?Circuits*YY161*" serialize="ki_fp_filters" display="ki_fp_filters"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -42,6 +42,11 @@
     <path start="_Middle+0x+0y" data="M10,10 C9.988051834525223,12.752952981023565 7.752978909179065,14.978346456693117 5,14.978346456693117 C2.2470210908209363,14.978346456693117 0.01194816547477906,12.752952981023565 -0.0000000000000008881784197001252,10"/>
     <text x="_Middle-25" y="_Middle-30" value="$Reference" align="CentreCentre" size="xxs"/>
     <text x="_Middle+25" y="_Middle-30" value="$Value" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+50" value="$Footprint" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle-10" value="$Datasheet" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_fp_filters" align="CentreCentre" size="xxs"/>
     <line start="_Middle-40x+0y" end="_Middle-25x+0y" sym:connection_id="0"/>
     <text x="_Middle-21" y="_Middle+0" value="IN" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-33.5" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>

@@ -2,7 +2,7 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="CL220N5-G"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.1.1"/>
     <meta name="guid" value="6daf4bf9-8d31-48f0-826c-e419537d9fbe"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
@@ -11,9 +11,9 @@
     <meta name="datasheet" value="http://ww1.microchip.com/downloads/en/DeviceDoc/20005413A.pdf"/>
     <meta name="description" value="Temperature Compensated Constant Current LED IC, TO-220"/>
     <meta name="keywords" value="Constant Current LED Driver IC"/>
-    <meta name="ki_fp_filters" value="TO?220*"/>
     <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="CL220N5-G" serialize="value" display="Value"/>
+    <property name="ki_fp_filters" type="string" default="TO?220*" serialize="ki_fp_filters" display="ki_fp_filters"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -41,6 +41,11 @@
     <ellipse centre="_Middle+4x+2y" rx="3" ry="3"/>
     <text x="_Middle+15" y="_Middle-15" value="$Reference" align="CentreLeft" size="xxs"/>
     <text x="_Middle+15" y="_Middle-5" value="$Value" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+15" y="_Middle+5" value="$Footprint" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Datasheet" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_fp_filters" align="CentreCentre" size="xxs"/>
     <line start="_Middle+0x-20y" end="_Middle+0x-10y" sym:connection_id="0"/>
     <text x="_Middle+0" y="_Middle-6" value="VA" align="CentreRight" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-2" y="_Middle-16" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>

@@ -2,7 +2,7 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="CK KMS2xxGP"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.1.1"/>
     <meta name="guid" value="2c35a49b-7c86-48c6-8f67-6fe2b861ba4c"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
@@ -11,9 +11,9 @@
     <meta name="datasheet" value="https://www.ckswitches.com/media/1482/kms.pdf"/>
     <meta name="description" value="Microminiature SMT Side Actuated, 4.2 x 2.8 x 1.42mm, with pegs, with shield pin"/>
     <meta name="keywords" value="switch normally-open pushbutton push-button"/>
-    <meta name="ki_fp_filters" value="*SW*KMS2*GP*"/>
     <property name="Reference" type="string" default="SW" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="CK_KMS2xxGP" serialize="value" display="Value"/>
+    <property name="ki_fp_filters" type="string" default="*SW*KMS2*GP*" serialize="ki_fp_filters" display="ki_fp_filters"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -35,6 +35,11 @@
     <rect location="_Middle-12x-10y" width="24" height="15"/>
     <text x="_Middle+17" y="_Middle-8" value="$Reference" align="CentreLeft" size="xxs"/>
     <text x="_Middle+0" y="_Middle-18" value="$Value" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle-20" value="$Footprint" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle-20" value="$Datasheet" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_fp_filters" align="CentreCentre" size="xxs"/>
     <line start="_Middle-20x+0y" end="_Middle-10x+0y" sym:connection_id="0"/>
     <text x="_Middle-6" y="_Middle+0" value="1" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-16" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>

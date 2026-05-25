@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Potentiometer"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="a4e03caf-b866-4f3c-8942-daaad272e0f6"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="30"/>
+    <meta name="description" value="Potentiometer for Simulation"/>
+    <meta name="keywords" value="resistor variable spice sim"/>
+    <property name="Reference" type="string" default="R" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="Potentiometer" serialize="value" display="Value"/>
+    <property name="Sim_Device" type="string" default="R" serialize="sim_device" display="Sim_Device"/>
+    <property name="Sim_Pins" type="string" default="1=r0 2=wiper 3=r1" serialize="sim_pins" display="Sim_Pins"/>
+    <property name="Sim_Params" type="string" default="r=1k pos=0.4" serialize="sim_params" display="Sim_Params"/>
+    <property name="Sim_Type" type="string" default="POT" serialize="sim_type" display="Sim_Type"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+    <connection name="1" start="_Middle+0x-15y" end="_Middle+0x-10y" edge="start" sym:connection_id="0"/>
+    <connection name="2" start="_Middle+10x+0y" end="_Middle+15x+0y" edge="end" sym:connection_id="1"/>
+    <connection name="3" start="_Middle+0x+10y" end="_Middle+0x+15y" edge="end" sym:connection_id="2"/>
+  </connections>
+  <render>
+    <rect location="_Middle-4x-10y" width="8" height="20"/>
+    <path start="_Middle+0x+0y" data="M4.5,-0 L9,-2 L9,2 L4.5,-0" fill="true"/>
+    <path start="_Middle+0x+0y" data="M10,-0 L6,-0"/>
+    <text x="_Middle+0" y="_Middle+0" value="SPICE" align="CentreCentre" size="base"/>
+    <text x="_Middle+7" y="_Middle-9" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle-10" y="_Middle+0" value="$Value" align="CentreCentre" size="xxs" rotate="90"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Footprint" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Datasheet" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+55.00000000000001" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+79" value="$Sim.Device" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+72" value="$Sim.Pins" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+5" y="_Middle+8" value="$Sim.Params" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Sim.Type" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
+    <line start="_Middle+0x-15y" end="_Middle+0x-10y" sym:connection_id="0"/>
+    <text x="_Middle+0" y="_Middle-6" value="1" align="CentreRight" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle-13.5" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+10x+0y" end="_Middle+15x+0y" sym:connection_id="1"/>
+    <text x="_Middle+6" y="_Middle+0" value="2" align="CentreRight" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle+13.5" y="_Middle-2" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+0x+10y" end="_Middle+0x+15y" sym:connection_id="2"/>
+    <text x="_Middle+0" y="_Middle+6" value="3" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+13.5" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+  </render>
+</component>

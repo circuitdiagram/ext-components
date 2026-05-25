@@ -2,7 +2,7 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="LED Cree XHP70 6V"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.1.1"/>
     <meta name="guid" value="f7daf5f5-426d-41d8-8936-e034e26d5172"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
@@ -11,9 +11,9 @@
     <meta name="datasheet" value="http://www.cree.com/%7E/media/Files/Cree/LED%20Components%20and%20Modules/XLamp/Data%20and%20Binning/ds%20XHP70.pdf"/>
     <meta name="description" value="XLamp® XHP70 LED, 6V footprint (2x2 serial LEDs in parallel)"/>
     <meta name="keywords" value="led diode"/>
-    <meta name="ki_fp_filters" value="LED?Cree?XHP70?6V*"/>
     <property name="Reference" type="string" default="D" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="LED_Cree_XHP70_6V" serialize="value" display="Value"/>
+    <property name="ki_fp_filters" type="string" default="LED?Cree?XHP70?6V*" serialize="ki_fp_filters" display="ki_fp_filters"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -22,8 +22,8 @@
   </declaration>
   <connections>
     <connection name="k" start="_Middle-25x+0y" end="_Middle-15x+0y" edge="start" sym:connection_id="0"/>
-    <connection name="pad" start="_Middle+0x+30y" end="_Middle+0x+40y" edge="end" sym:connection_id="1"/>
-    <connection name="a" start="_Middle+15x+0y" end="_Middle+25x+0y" edge="end" sym:connection_id="2"/>
+    <connection name="a" start="_Middle+15x+0y" end="_Middle+25x+0y" edge="end" sym:connection_id="1"/>
+    <connection name="pad" start="_Middle+0x+30y" end="_Middle+0x+40y" edge="end" sym:connection_id="2"/>
   </connections>
   <render>
     <path start="_Middle+0x+0y" data="M-19,20 L-19,30 L19,30 L19,20"/>
@@ -58,14 +58,19 @@
     <ellipse centre="_Middle+15x+10y" rx="1.4000000000000001" ry="1.4000000000000001" fill="true"/>
     <text x="_Middle+0" y="_Middle-45" value="$Reference" align="CentreCentre" size="xxs"/>
     <text x="_Middle+0" y="_Middle-37.5" value="$Value" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle-52.50000000000001" value="$Footprint" align="CentreCentre" size="xxs"/>
+    <text x="_Middle-7.5" y="_Middle+10" value="$Datasheet" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_fp_filters" align="CentreCentre" size="xxs"/>
     <line start="_Middle-25x+0y" end="_Middle-15x+0y" sym:connection_id="0"/>
     <text x="_Middle-11" y="_Middle+0" value="K" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-21" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
-    <line start="_Middle+0x+30y" end="_Middle+0x+40y" sym:connection_id="1"/>
-    <text x="_Middle+0" y="_Middle+26" value="PAD" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
-    <text x="_Middle-2" y="_Middle+36" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
-    <line start="_Middle+15x+0y" end="_Middle+25x+0y" sym:connection_id="2"/>
-    <text x="_Middle+11" y="_Middle+0" value="A" align="CentreRight" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
-    <text x="_Middle+21" y="_Middle-2" value="2" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+15x+0y" end="_Middle+25x+0y" sym:connection_id="1"/>
+    <text x="_Middle+11" y="_Middle+0" value="A" align="CentreRight" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle+21" y="_Middle-2" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle+0x+30y" end="_Middle+0x+40y" sym:connection_id="2"/>
+    <text x="_Middle+0" y="_Middle+26" value="PAD" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-2" y="_Middle+36" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
   </render>
 </component>

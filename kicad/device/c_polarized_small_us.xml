@@ -2,16 +2,16 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="C Polarized Small US"/>
-    <meta name="version" value="0.2.1"/>
+    <meta name="version" value="0.3.1"/>
     <meta name="guid" value="62594f69-fe7f-4bba-9690-17c5628e8a34"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
     <meta name="minsize" value="20"/>
     <meta name="description" value="Polarized capacitor, small US symbol"/>
     <meta name="keywords" value="cap capacitor"/>
-    <meta name="ki_fp_filters" value="CP_*"/>
     <property name="Reference" type="string" default="C" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="C_Polarized_Small_US" serialize="value" display="Value"/>
+    <property name="ki_fp_filters" type="string" default="CP_*" serialize="ki_fp_filters" display="ki_fp_filters"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -19,8 +19,8 @@
     </flags>
   </declaration>
   <connections>
-    <connection name="pin1" start="_Middle+0x-10y" end="_Middle+0x-2y" edge="start" sym:connection_id="0"/>
-    <connection name="pin2" start="_Middle+0x+2y" end="_Middle+0x+10y" edge="end" sym:connection_id="1"/>
+    <connection name="" start="_Middle+0x-10y" end="_Middle+0x-2y" edge="start" sym:connection_id="0"/>
+    <connection name="" start="_Middle+0x+2y" end="_Middle+0x+10y" edge="end" sym:connection_id="1"/>
   </connections>
   <render>
     <path start="_Middle+0x+0y" data="M-6,-2 L6,-2"/>
@@ -29,9 +29,16 @@
     <path start="_Middle+0x+0y" data="M-6,3 C-2.260073229035347,0.9601049868766385 2.260073229035348,0.9601049868766403 6,3"/>
     <text x="_Middle+1" y="_Middle-7" value="$Reference" align="CentreLeft" size="xxs"/>
     <text x="_Middle+1" y="_Middle+8" value="$Value" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Footprint" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Datasheet" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_fp_filters" align="CentreCentre" size="xxs"/>
     <line start="_Middle+0x-10y" end="_Middle+0x-2y" sym:connection_id="0"/>
+    <text x="_Middle+0" y="_Middle+2" value="" align="CentreRight" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-2" y="_Middle-7" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>
     <line start="_Middle+0x+2y" end="_Middle+0x+10y" sym:connection_id="1"/>
+    <text x="_Middle+0" y="_Middle-2" value="" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
     <text x="_Middle-2" y="_Middle+7" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
   </render>
 </component>

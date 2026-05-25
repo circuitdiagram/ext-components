@@ -2,16 +2,16 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="L Coupled Small 1324"/>
-    <meta name="version" value="0.4.1"/>
+    <meta name="version" value="0.4.2"/>
     <meta name="guid" value="054c6d03-f007-451a-b1cc-6702c2ef06be"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
     <meta name="minsize" value="20"/>
     <meta name="description" value="Coupled inductor, small symbol"/>
     <meta name="keywords" value="inductor choke coil reactor magnetic coupled"/>
-    <meta name="ki_fp_filters" value="Choke_* *Coil* Inductor_* L_*"/>
     <property name="Reference" type="string" default="L" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="L_Coupled_Small_1324" serialize="value" display="Value"/>
+    <property name="ki_fp_filters" type="string" default="Choke_* *Coil* Inductor_* L_*" serialize="ki_fp_filters" display="ki_fp_filters"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -37,6 +37,11 @@
     <path start="_Middle+0x+0y" data="M4,5 C4.004779266189849,3.89881880759053 4.898808436328331,3.0086614173226396 6,3.008661417322639 C7.101191563671669,3.0086614173226387 7.99522073381015,3.898818807590529 8,4.999999999999999"/>
     <text x="_Middle+0" y="_Middle-12.5" value="$Reference" align="CentreCentre" size="xxs"/>
     <text x="_Middle+0" y="_Middle+12.5" value="$Value" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Footprint" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Datasheet" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_fp_filters" align="CentreCentre" size="xxs"/>
     <line start="_Middle-10x-5y" end="_Middle-8x-5y" sym:connection_id="0"/>
     <text x="_Middle-4" y="_Middle-5" value="1" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-10" y="_Middle-7" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>

@@ -2,7 +2,7 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="BUZ31"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.1.1"/>
     <meta name="guid" value="405a50f5-c333-4eeb-b79d-4ac5bfb67bfa"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
@@ -11,9 +11,9 @@
     <meta name="datasheet" value="https://www.mouser.com/ds/2/196/Buz31%20H_%20Rev%202.5-57290.pdf"/>
     <meta name="description" value="14.5A Id, 200V Vds, SIPMOS Power Transistor, N-Channel MOSFET, 0.2 ohms Rds, normal level (Vgs(th) = 2.1 .. 3.0 .. 4.0V), TO-220"/>
     <meta name="keywords" value="Obsolete avalanche-rated Infineon-BUZ31H-halogen-free Siemens-C67078-S.1304-A2"/>
-    <meta name="ki_fp_filters" value="TO?220*"/>
     <property name="Reference" type="string" default="Q" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="BUZ31" serialize="value" display="Value"/>
+    <property name="ki_fp_filters" type="string" default="TO?220*" serialize="ki_fp_filters" display="ki_fp_filters"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -42,6 +42,11 @@
     <path start="_Middle+0x+0y" data="M13,-1.5 L11.5,1 L14.5,1 L13,-1.5"/>
     <text x="_Middle+20" y="_Middle-7.5" value="$Reference" align="CentreLeft" size="xxs"/>
     <text x="_Middle+20" y="_Middle+0" value="$Value" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+20" y="_Middle+7.5" value="$Footprint" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+20" y="_Middle+15" value="$Datasheet" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_fp_filters" align="CentreCentre" size="xxs"/>
     <line start="_Middle-20x+0y" end="_Middle-10x+0y" sym:connection_id="0"/>
     <text x="_Middle-6" y="_Middle+0" value="G" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-16" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>

@@ -2,7 +2,7 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="ASMB-MTB0-0A3A2"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.1.1"/>
     <meta name="guid" value="6cebc04d-9a87-4621-a5b1-22b7aa072a6c"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
@@ -11,9 +11,9 @@
     <meta name="datasheet" value="https://docs.broadcom.com/docs/AV02-4186EN"/>
     <meta name="description" value="Tricolor Black Surface LED, Common Anode Pin 1, PLCC-4"/>
     <meta name="keywords" value="led rgb diode"/>
-    <meta name="ki_fp_filters" value="*Avago*PLCC4*3.2x2.8mm*"/>
     <property name="Reference" type="string" default="D" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="ASMB-MTB0-0A3A2" serialize="value" display="Value"/>
+    <property name="ki_fp_filters" type="string" default="*Avago*PLCC4*3.2x2.8mm*" serialize="ki_fp_filters" display="ki_fp_filters"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -21,10 +21,10 @@
     </flags>
   </declaration>
   <connections>
-    <connection name="rk" start="_Middle-20x-20y" end="_Middle-10x-20y" edge="start" sym:connection_id="0"/>
-    <connection name="gk" start="_Middle-20x+0y" end="_Middle-10x+0y" edge="start" sym:connection_id="1"/>
-    <connection name="bk" start="_Middle-20x+20y" end="_Middle-10x+20y" edge="start" sym:connection_id="2"/>
-    <connection name="a" start="_Middle+10x+0y" end="_Middle+20x+0y" edge="end" sym:connection_id="3"/>
+    <connection name="a" start="_Middle+10x+0y" end="_Middle+20x+0y" edge="end" sym:connection_id="0"/>
+    <connection name="bk" start="_Middle-20x+20y" end="_Middle-10x+20y" edge="start" sym:connection_id="1"/>
+    <connection name="gk" start="_Middle-20x+0y" end="_Middle-10x+0y" edge="start" sym:connection_id="2"/>
+    <connection name="rk" start="_Middle-20x-20y" end="_Middle-10x-20y" edge="start" sym:connection_id="3"/>
   </connections>
   <render>
     <text x="_Middle-7.5" y="_Middle-15" value="R" align="CentreCentre" size="base"/>
@@ -51,17 +51,22 @@
     <path start="_Middle+0x+0y" data="M10,-0 L-10,-0"/>
     <text x="_Middle+0" y="_Middle-40" value="$Reference" align="CentreCentre" size="xxs"/>
     <text x="_Middle+0" y="_Middle+40" value="$Value" align="CentreCentre" size="xxs"/>
-    <line start="_Middle-20x-20y" end="_Middle-10x-20y" sym:connection_id="0"/>
-    <text x="_Middle-6" y="_Middle-20" value="RK" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
-    <text x="_Middle-16" y="_Middle-22" value="4" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
-    <line start="_Middle-20x+0y" end="_Middle-10x+0y" sym:connection_id="1"/>
-    <text x="_Middle-6" y="_Middle+0" value="GK" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
-    <text x="_Middle-16" y="_Middle-2" value="3" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
-    <line start="_Middle-20x+20y" end="_Middle-10x+20y" sym:connection_id="2"/>
-    <text x="_Middle-6" y="_Middle+20" value="BK" align="CentreLeft" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
-    <text x="_Middle-16" y="_Middle+18" value="2" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
-    <line start="_Middle+10x+0y" end="_Middle+20x+0y" sym:connection_id="3"/>
-    <text x="_Middle+6" y="_Middle+0" value="A" align="CentreRight" size="xxs" sym:connection_id="3" sym:connection_attr="name"/>
-    <text x="_Middle+16" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+    <text x="_Middle+0" y="_Middle-50" value="$Footprint" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+45" value="$Datasheet" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_fp_filters" align="CentreCentre" size="xxs"/>
+    <line start="_Middle+10x+0y" end="_Middle+20x+0y" sym:connection_id="0"/>
+    <text x="_Middle+6" y="_Middle+0" value="A" align="CentreRight" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle+16" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle-20x+20y" end="_Middle-10x+20y" sym:connection_id="1"/>
+    <text x="_Middle-6" y="_Middle+20" value="BK" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle-16" y="_Middle+18" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <line start="_Middle-20x+0y" end="_Middle-10x+0y" sym:connection_id="2"/>
+    <text x="_Middle-6" y="_Middle+0" value="GK" align="CentreLeft" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle-16" y="_Middle-2" value="3" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle-20x-20y" end="_Middle-10x-20y" sym:connection_id="3"/>
+    <text x="_Middle-6" y="_Middle-20" value="RK" align="CentreLeft" size="xxs" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle-16" y="_Middle-22" value="4" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
   </render>
 </component>

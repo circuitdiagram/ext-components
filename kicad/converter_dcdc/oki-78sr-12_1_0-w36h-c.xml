@@ -2,7 +2,7 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="OKI-78SR-12 1.0-W36H-C"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.1.1"/>
     <meta name="guid" value="e9354f36-450d-4e94-8b8c-13c32b5a74bc"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
@@ -11,9 +11,9 @@
     <meta name="datasheet" value="https://power.murata.com/data/power/oki-78sr.pdf"/>
     <meta name="description" value="1.0A Step-Down DC/DC-Regulator, 15-36V input, 12V fixed Output Voltage, LM78xx replacement, -40°C to +85°C, OKI-78SR_Horizontal"/>
     <meta name="keywords" value="dc-dc murata Step-Down DC/DC-Regulator"/>
-    <meta name="ki_fp_filters" value="Converter*DCDC*Murata*OKI*78SR*Horizontal*"/>
     <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="OKI-78SR-12_1.0-W36H-C" serialize="value" display="Value"/>
+    <property name="ki_fp_filters" type="string" default="Converter*DCDC*Murata*OKI*78SR*Horizontal*" serialize="ki_fp_filters" display="ki_fp_filters"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -29,6 +29,11 @@
     <rect location="_Middle-20x-7.5y" width="40" height="27.5"/>
     <text x="_Middle-15" y="_Middle-12.5" value="$Reference" align="CentreCentre" size="xxs"/>
     <text x="_Middle+0" y="_Middle-12.5" value="$Value" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+5" y="_Middle+25" value="$Footprint" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Datasheet" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_fp_filters" align="CentreCentre" size="xxs"/>
     <line start="_Middle-30x+0y" end="_Middle-20x+0y" sym:connection_id="0"/>
     <text x="_Middle-16" y="_Middle+0" value="IN" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-26" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>

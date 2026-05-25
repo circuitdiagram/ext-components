@@ -2,16 +2,16 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="Resonator Small"/>
-    <meta name="version" value="0.3.1"/>
+    <meta name="version" value="0.3.2"/>
     <meta name="guid" value="c6041dcf-ed62-4c0b-922c-cc90464918a2"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
     <meta name="minsize" value="30"/>
     <meta name="description" value="Three pin ceramic resonator, small symbol"/>
     <meta name="keywords" value="ceramic resonator"/>
-    <meta name="ki_fp_filters" value="Filter* Resonator*"/>
     <property name="Reference" type="string" default="Y" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="Resonator_Small" serialize="value" display="Value"/>
+    <property name="ki_fp_filters" type="string" default="Filter* Resonator*" serialize="ki_fp_filters" display="ki_fp_filters"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -43,6 +43,11 @@
     <ellipse centre="_Middle+10x+0y" rx="1" ry="1" fill="true"/>
     <text x="_Middle+12.5" y="_Middle-7.5" value="$Reference" align="CentreLeft" size="xxs"/>
     <text x="_Middle+12.5" y="_Middle+0" value="$Value" align="CentreLeft" size="xxs"/>
+    <text x="_Middle-2.5" y="_Middle+0" value="$Footprint" align="CentreCentre" size="xxs"/>
+    <text x="_Middle-2.5" y="_Middle+0" value="$Datasheet" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_fp_filters" align="CentreCentre" size="xxs"/>
     <line start="_Middle-10x-10y" end="_Middle-10x-5y" sym:connection_id="0"/>
     <text x="_Middle-10" y="_Middle-1" value="1" align="CentreRight" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-12" y="_Middle-8.5" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>

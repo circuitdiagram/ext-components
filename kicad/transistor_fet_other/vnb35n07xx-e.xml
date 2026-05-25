@@ -2,7 +2,7 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="VNB35N07xx-E"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.1.1"/>
     <meta name="guid" value="70428306-4aa5-4001-9c60-fe3823373f40"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
@@ -11,9 +11,9 @@
     <meta name="datasheet" value="https://www.st.com/resource/en/datasheet/vnp35n07-e.pdf"/>
     <meta name="description" value="Fully autoprotected Power MOSFET, OMNIFET, 35A Ilim, 70V Vclamp, 0.028 ohms Rds(on), diagnostic/fault feedback, TO-263-2 (D2PAK)"/>
     <meta name="keywords" value="N-Channel VIPower ESD VNB35N07-E"/>
-    <meta name="ki_fp_filters" value="*TO*263*"/>
     <property name="Reference" type="string" default="Q" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="VNB35N07xx-E" serialize="value" display="Value"/>
+    <property name="ki_fp_filters" type="string" default="*TO*263*" serialize="ki_fp_filters" display="ki_fp_filters"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -64,6 +64,11 @@ Control
 &amp; Logic" align="CentreCentre" size="base"/>
     <text x="_Middle-70" y="_Middle-37" value="$Reference" align="CentreLeft" size="xxs"/>
     <text x="_Middle-70" y="_Middle-27" value="$Value" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+70" value="$Footprint" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+51.00000000000001" value="$Datasheet" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+61" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_fp_filters" align="CentreCentre" size="xxs"/>
     <line start="_Middle-70x+0y" end="_Middle-60x+0y" sym:connection_id="0"/>
     <text x="_Middle-56" y="_Middle+0" value="INPUT" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-66" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>

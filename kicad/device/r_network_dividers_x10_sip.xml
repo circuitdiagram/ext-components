@@ -2,7 +2,7 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="R Network Dividers x10 SIP"/>
-    <meta name="version" value="0.3.1"/>
+    <meta name="version" value="0.3.2"/>
     <meta name="guid" value="0ecbeedf-22a8-4ebd-9cc8-96e9c3b491de"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
@@ -11,9 +11,9 @@
     <meta name="datasheet" value="http://www.vishay.com/docs/31509/csc.pdf"/>
     <meta name="description" value="10 voltage divider network, dual terminator, SIP package"/>
     <meta name="keywords" value="R network divider topology"/>
-    <meta name="ki_fp_filters" value="R?Array?SIP*"/>
     <property name="Reference" type="string" default="RN" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="R_Network_Dividers_x10_SIP" serialize="value" display="Value"/>
+    <property name="ki_fp_filters" type="string" default="R?Array?SIP*" serialize="ki_fp_filters" display="ki_fp_filters"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -127,6 +127,11 @@
     <path start="_Middle+0x+0y" data="M90,16.6 L90,-20"/>
     <text x="_Middle-110.00000000000001" y="_Middle+0" value="$Reference" align="CentreCentre" size="xxs" rotate="90"/>
     <text x="_Middle+100" y="_Middle+0" value="$Value" align="CentreCentre" size="xxs" rotate="90"/>
+    <text x="_Middle+107.5" y="_Middle+0" value="$Footprint" align="CentreCentre" size="xxs" rotate="90"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Datasheet" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_fp_filters" align="CentreCentre" size="xxs"/>
     <line start="_Middle-100x-30y" end="_Middle-100x-20y" sym:connection_id="0"/>
     <text x="_Middle-100" y="_Middle-16" value="COM1" align="CentreRight" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-102" y="_Middle-26" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>

@@ -2,7 +2,7 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="Choke CommonMode PulseElectronics PH9455x356NL"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.1.1"/>
     <meta name="guid" value="65561337-af60-4da7-9af5-6e30eed9e320"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
@@ -11,9 +11,9 @@
     <meta name="datasheet" value="https://productfinder.pulseelectronics.com/api/open/product-attachments/datasheet/ph9455.105nl"/>
     <meta name="description" value="Common mode choke, 4A, 380VAC, 35mH, 80 mOhm, PH9455x356NL"/>
     <meta name="keywords" value="common-mode common mode choke powerline power line filter"/>
-    <meta name="ki_fp_filters" value="L*CommonMode*PulseElectronics*PH9455xxx6NL?2*"/>
     <property name="Reference" type="string" default="FL" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="Choke_CommonMode_PulseElectronics_PH9455x356NL" serialize="value" display="Value"/>
+    <property name="ki_fp_filters" type="string" default="L*CommonMode*PulseElectronics*PH9455xxx6NL?2*" serialize="ki_fp_filters" display="ki_fp_filters"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -23,8 +23,8 @@
   <connections>
     <connection name="1" start="_Middle-20x-10y" end="_Middle-10x-10y" edge="start" sym:connection_id="0"/>
     <connection name="2" start="_Middle-20x+10y" end="_Middle-10x+10y" edge="start" sym:connection_id="1"/>
-    <connection name="4" start="_Middle+10x-10y" end="_Middle+20x-10y" edge="end" sym:connection_id="2"/>
-    <connection name="3" start="_Middle+10x+10y" end="_Middle+20x+10y" edge="end" sym:connection_id="3"/>
+    <connection name="3" start="_Middle+10x+10y" end="_Middle+20x+10y" edge="end" sym:connection_id="2"/>
+    <connection name="4" start="_Middle+10x-10y" end="_Middle+20x-10y" edge="end" sym:connection_id="3"/>
   </connections>
   <render>
     <ellipse centre="_Middle-12x-6y" rx="1" ry="1" fill="true"/>
@@ -47,17 +47,22 @@
     <path start="_Middle+0x+0y" data="M10,8 L10,10"/>
     <text x="_Middle+0" y="_Middle-20" value="$Reference" align="CentreCentre" size="xxs"/>
     <text x="_Middle+0" y="_Middle+20" value="$Value" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Footprint" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Datasheet" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_fp_filters" align="CentreCentre" size="xxs"/>
     <line start="_Middle-20x-10y" end="_Middle-10x-10y" sym:connection_id="0"/>
     <text x="_Middle-6" y="_Middle-10" value="1" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-16" y="_Middle-12" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
     <line start="_Middle-20x+10y" end="_Middle-10x+10y" sym:connection_id="1"/>
     <text x="_Middle-6" y="_Middle+10" value="2" align="CentreLeft" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
     <text x="_Middle-16" y="_Middle+8" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
-    <line start="_Middle+10x-10y" end="_Middle+20x-10y" sym:connection_id="2"/>
-    <text x="_Middle+6" y="_Middle-10" value="4" align="CentreRight" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
-    <text x="_Middle+16" y="_Middle-12" value="4" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
-    <line start="_Middle+10x+10y" end="_Middle+20x+10y" sym:connection_id="3"/>
-    <text x="_Middle+6" y="_Middle+10" value="3" align="CentreRight" size="xxs" sym:connection_id="3" sym:connection_attr="name"/>
-    <text x="_Middle+16" y="_Middle+8" value="3" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle+10x+10y" end="_Middle+20x+10y" sym:connection_id="2"/>
+    <text x="_Middle+6" y="_Middle+10" value="3" align="CentreRight" size="xxs" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle+16" y="_Middle+8" value="3" align="BottomCentre" size="xxs" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+10x-10y" end="_Middle+20x-10y" sym:connection_id="3"/>
+    <text x="_Middle+6" y="_Middle-10" value="4" align="CentreRight" size="xxs" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle+16" y="_Middle-12" value="4" align="BottomCentre" size="xxs" sym:connection_id="3" sym:connection_attr="number"/>
   </render>
 </component>

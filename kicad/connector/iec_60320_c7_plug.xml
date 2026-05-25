@@ -2,16 +2,16 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="IEC 60320 C7 Plug"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.1.1"/>
     <meta name="guid" value="5b48a16f-12fe-48db-ac04-7778af818121"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
-    <meta name="minsize" value="60"/>
+    <meta name="minsize" value="100"/>
     <meta name="description" value="C7 coupler, 2,5 A max"/>
     <meta name="keywords" value="C7 Plug  IEC 60320"/>
-    <meta name="ki_fp_filters" value="C*7*Plug*"/>
     <property name="Reference" type="string" default="P" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="IEC_60320_C7_Plug" serialize="value" display="Value"/>
+    <property name="ki_fp_filters" type="string" default="C*7*Plug*" serialize="ki_fp_filters" display="ki_fp_filters"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -19,8 +19,8 @@
     </flags>
   </declaration>
   <connections>
-    <connection name="l" start="_Middle+25x-20y" end="_Middle+35x-20y" edge="end" sym:connection_id="0"/>
-    <connection name="n" start="_Middle+25x+20y" end="_Middle+35x+20y" edge="end" sym:connection_id="1"/>
+    <connection name="n" start="_Middle+25x+20y" end="_Middle+35x+20y" edge="end" sym:connection_id="0"/>
+    <connection name="l" start="_Middle+25x-20y" end="_Middle+35x-20y" edge="end" sym:connection_id="1"/>
   </connections>
   <render>
     <path start="_Middle+0x+0y" data="M-5,-2.5 C-3.6194225721784754,-1.1192324384648775 -3.619422572178476,1.1192324384648773 -4.999999999999999,2.5"/>
@@ -40,11 +40,16 @@
     <ellipse centre="_Middle+0x+10y" rx="3.535433070866142" ry="3.535433070866142"/>
     <text x="_Middle-23" y="_Middle-34" value="$Reference" align="CentreCentre" size="xxs"/>
     <text x="_Middle+0" y="_Middle+36" value="$Value" align="CentreCentre" size="xxs"/>
-    <line start="_Middle+25x-20y" end="_Middle+35x-20y" sym:connection_id="0"/>
-    <text x="_Middle+21" y="_Middle-20" value="L" align="CentreRight" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
-    <text x="_Middle+31" y="_Middle-22" value="2" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
-    <line start="_Middle+25x+20y" end="_Middle+35x+20y" sym:connection_id="1"/>
-    <text x="_Middle+21" y="_Middle+20" value="N" align="CentreRight" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
-    <text x="_Middle+31" y="_Middle+18" value="1" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
+    <text x="_Middle-62" y="_Middle-21" value="$Footprint" align="CentreCentre" size="xxs"/>
+    <text x="_Middle-62" y="_Middle-21" value="$Datasheet" align="CentreCentre" size="xxs"/>
+    <text x="_Middle-62" y="_Middle-21" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_fp_filters" align="CentreCentre" size="xxs"/>
+    <line start="_Middle+25x+20y" end="_Middle+35x+20y" sym:connection_id="0"/>
+    <text x="_Middle+21" y="_Middle+20" value="N" align="CentreRight" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
+    <text x="_Middle+31" y="_Middle+18" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
+    <line start="_Middle+25x-20y" end="_Middle+35x-20y" sym:connection_id="1"/>
+    <text x="_Middle+21" y="_Middle-20" value="L" align="CentreRight" size="xxs" sym:connection_id="1" sym:connection_attr="name"/>
+    <text x="_Middle+31" y="_Middle-22" value="2" align="BottomCentre" size="xxs" sym:connection_id="1" sym:connection_attr="number"/>
   </render>
 </component>

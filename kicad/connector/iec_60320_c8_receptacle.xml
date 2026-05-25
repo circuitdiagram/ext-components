@@ -2,16 +2,16 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="IEC 60320 C8 Receptacle"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.1.1"/>
     <meta name="guid" value="56873668-ac80-44f4-9efd-3f27a89045b0"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
     <meta name="minsize" value="60"/>
     <meta name="description" value="C8 coupler, 2,5 A max"/>
     <meta name="keywords" value="C8 Receptacle  IEC 60320"/>
-    <meta name="ki_fp_filters" value="C*8*Receptacle*"/>
     <property name="Reference" type="string" default="J" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="IEC_60320_C8_Receptacle" serialize="value" display="Value"/>
+    <property name="ki_fp_filters" type="string" default="C*8*Receptacle*" serialize="ki_fp_filters" display="ki_fp_filters"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -40,6 +40,11 @@
     <ellipse centre="_Middle+0x+10y" rx="3.535433070866142" ry="3.535433070866142" fill="true"/>
     <text x="_Middle-23" y="_Middle-34" value="$Reference" align="CentreCentre" size="xxs"/>
     <text x="_Middle+1" y="_Middle+36" value="$Value" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Footprint" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Datasheet" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_fp_filters" align="CentreCentre" size="xxs"/>
     <line start="_Middle+25x-20y" end="_Middle+35x-20y" sym:connection_id="0"/>
     <text x="_Middle+21" y="_Middle-20" value="L" align="CentreRight" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle+31" y="_Middle-22" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>

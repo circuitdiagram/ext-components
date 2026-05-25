@@ -2,16 +2,16 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="SYM Radio Waves Large"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.1.1"/>
     <meta name="guid" value="5d016667-5640-4058-b1b5-c2dc6b0936ff"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
     <meta name="minsize" value="40"/>
-    <meta name="Reference" value="#SYM"/>
-    <meta name="Value" value="SYM_Radio_Waves_Large"/>
     <meta name="description" value="Radio waves warning symbol, large"/>
-    <meta name="Sim.Enable" value="0"/>
     <meta name="keywords" value="symbol logo radio waves warning radiation"/>
+    <property name="Reference" type="string" default="#SYM" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="SYM_Radio_Waves_Large" serialize="value" display="Value"/>
+    <property name="Sim_Enable" type="string" default="0" serialize="sim_enable" display="Sim_Enable"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -30,5 +30,12 @@
     <path start="_Middle+0x+0y" data="M-3,7 C-3.8073490813648303,5.788881517763036 -3.8073490813648303,4.211118482236965 -3.0000000000000013,3.0000000000000004"/>
     <ellipse centre="_Middle+0x+5y" rx="2" ry="2" fill="true"/>
     <path start="_Middle+0x+0y" data="M5,2 C6.108136482939633,3.8465041918972727 6.108136482939633,6.153495808102727 5,8"/>
+    <text x="_Middle+0" y="_Middle-20" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+25" value="$Value" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+20" value="$Footprint" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+3" y="_Middle+20" value="$Datasheet" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Sim.Enable" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
   </render>
 </component>

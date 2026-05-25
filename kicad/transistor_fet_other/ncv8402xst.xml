@@ -2,7 +2,7 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="NCV8402xST"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.1.1"/>
     <meta name="guid" value="00795646-1cb2-411f-a358-8ed0a0ad1130"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
@@ -11,9 +11,9 @@
     <meta name="datasheet" value="https://www.onsemi.com/pub/Collateral/NCV8402-D.PDF"/>
     <meta name="description" value="Self-Protected Low Side Driver with Temperature and Current Limit, SOT−223"/>
     <meta name="keywords" value="MOSFET ESD Overcurrent NCV8402STT1G-obsolete NCV8402STT3G-obsolete NCV8402ASTT1G NCV8402ASTT3G"/>
-    <meta name="ki_fp_filters" value="SOT?223*"/>
     <property name="Reference" type="string" default="Q" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="NCV8402xST" serialize="value" display="Value"/>
+    <property name="ki_fp_filters" type="string" default="SOT?223*" serialize="ki_fp_filters" display="ki_fp_filters"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -23,8 +23,8 @@
   <connections>
     <connection name="g" start="_Middle-50x+0y" end="_Middle-40x+0y" edge="start" sym:connection_id="0"/>
     <connection name="d" start="_Middle+30x-40y" end="_Middle+30x-30y" edge="start" sym:connection_id="1"/>
-    <connection name="d" start="_Middle+30x-40y" end="_Middle+30x-30y" edge="start" sym:connection_id="2"/>
-    <connection name="s" start="_Middle+30x+30y" end="_Middle+30x+40y" edge="end" sym:connection_id="3"/>
+    <connection name="s" start="_Middle+30x+30y" end="_Middle+30x+40y" edge="end" sym:connection_id="2"/>
+    <connection name="d" start="_Middle+30x-40y" end="_Middle+30x-30y" edge="start" sym:connection_id="3"/>
   </connections>
   <render>
     <rect location="_Middle-40x-30y" width="80" height="60"/>
@@ -72,17 +72,22 @@
     <ellipse centre="_Middle+30x+23y" rx="1.0999999999999999" ry="1.0999999999999999" fill="true"/>
     <text x="_Middle-39" y="_Middle-45" value="$Reference" align="CentreLeft" size="xxs"/>
     <text x="_Middle-39" y="_Middle-36" value="$Value" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+56" value="$Footprint" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+72" value="$Datasheet" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+64" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_fp_filters" align="CentreCentre" size="xxs"/>
     <line start="_Middle-50x+0y" end="_Middle-40x+0y" sym:connection_id="0"/>
     <text x="_Middle-36" y="_Middle+0" value="G" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-46" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>
     <line start="_Middle+30x-40y" end="_Middle+30x-30y" sym:connection_id="1"/>
     <text x="_Middle+30" y="_Middle-26" value="D" align="CentreRight" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="name"/>
     <text x="_Middle+28" y="_Middle-36" value="2" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="1" sym:connection_attr="number"/>
-    <line start="_Middle+30x-40y" end="_Middle+30x-30y" sym:connection_id="2"/>
-    <text x="_Middle+30" y="_Middle-26" value="D" align="CentreRight" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
-    <text x="_Middle+28" y="_Middle-36" value="4" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
-    <line start="_Middle+30x+30y" end="_Middle+30x+40y" sym:connection_id="3"/>
-    <text x="_Middle+30" y="_Middle+26" value="S" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="name"/>
-    <text x="_Middle+28" y="_Middle+36" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="number"/>
+    <line start="_Middle+30x+30y" end="_Middle+30x+40y" sym:connection_id="2"/>
+    <text x="_Middle+30" y="_Middle+26" value="S" align="CentreLeft" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="name"/>
+    <text x="_Middle+28" y="_Middle+36" value="3" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="2" sym:connection_attr="number"/>
+    <line start="_Middle+30x-40y" end="_Middle+30x-30y" sym:connection_id="3"/>
+    <text x="_Middle+30" y="_Middle-26" value="D" align="CentreRight" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="name"/>
+    <text x="_Middle+28" y="_Middle-36" value="4" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="3" sym:connection_attr="number"/>
   </render>
 </component>

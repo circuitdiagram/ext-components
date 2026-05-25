@@ -2,16 +2,16 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="Jumper 2 Small Open"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.1.1"/>
     <meta name="guid" value="89a6dc67-dcb7-448a-b143-9bba09e2a157"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
     <meta name="minsize" value="20"/>
     <meta name="description" value="Jumper, 2-pole, small symbol, open"/>
     <meta name="keywords" value="Jumper SPST"/>
-    <meta name="ki_fp_filters" value="Jumper* TestPoint*2Pads* TestPoint*Bridge*"/>
     <property name="Reference" type="string" default="JP" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="Jumper_2_Small_Open" serialize="value" display="Value"/>
+    <property name="ki_fp_filters" type="string" default="Jumper* TestPoint*2Pads* TestPoint*Bridge*" serialize="ki_fp_filters" display="ki_fp_filters"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -25,9 +25,14 @@
   <render>
     <ellipse centre="_Middle-4x+0y" rx="1" ry="1"/>
     <ellipse centre="_Middle+4x+0y" rx="1" ry="1"/>
-    <path start="_Middle+0x+0y" data="M-3,-4.014173228346457 C-1.220999063109238,-5.343832020997376 1.2209990631092373,-5.343832020997376 3,-4.014173228346457"/>
+    <path start="_Middle+0x+0y" data="M-3,-3.0141732283464564 C-1.2209990631092373,-4.343832020997375 1.2209990631092378,-4.343832020997375 3.000000000000001,-3.0141732283464564"/>
     <text x="_Middle+0" y="_Middle-11" value="$Reference" align="CentreCentre" size="xxs"/>
     <text x="_Middle+0" y="_Middle+9" value="$Value" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Footprint" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Datasheet" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_fp_filters" align="CentreCentre" size="xxs"/>
     <line start="_Middle-10x+0y" end="_Middle-5x+0y" sym:connection_id="0"/>
     <text x="_Middle-1" y="_Middle+0" value="A" align="CentreLeft" size="xxs" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-8.5" y="_Middle-2" value="1" align="BottomCentre" size="xxs" sym:connection_id="0" sym:connection_attr="number"/>

@@ -2,16 +2,16 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="Fan ALT"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.1.1"/>
     <meta name="guid" value="338887ad-7c81-45b5-9f9f-2d2b05153beb"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
     <meta name="minsize" value="40"/>
     <meta name="description" value="Fan without PWM or tach, alternative symbol"/>
     <meta name="keywords" value="Fan Motor"/>
-    <meta name="ki_fp_filters" value="PinHeader*P2.54mm* TerminalBlock*"/>
     <property name="Reference" type="string" default="M" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="Fan_ALT" serialize="value" display="Value"/>
+    <property name="ki_fp_filters" type="string" default="PinHeader*P2.54mm* TerminalBlock*" serialize="ki_fp_filters" display="ki_fp_filters"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -36,6 +36,11 @@
     <path start="_Middle+0x+0y" data="M0,-0 C-3.1433070866141755,-5.588317523301709 -3.1433070866141755,-12.411682476698283 -0.000000000000003552713678800501,-17.999999999999996"/>
     <text x="_Middle+15" y="_Middle-20" value="$Reference" align="CentreLeft" size="xxs"/>
     <text x="_Middle+15" y="_Middle-10" value="$Value" align="CentreLeft" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+5" value="$Footprint" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+5" value="$Datasheet" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_fp_filters" align="CentreCentre" size="xxs"/>
     <line start="_Middle+0x-30y" end="_Middle+0x-20y" sym:connection_id="0"/>
     <text x="_Middle+0" y="_Middle-16" value="+" align="CentreRight" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-2" y="_Middle-26" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>

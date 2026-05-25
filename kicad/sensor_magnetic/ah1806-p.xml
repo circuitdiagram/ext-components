@@ -2,7 +2,7 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="AH1806-P"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.1.1"/>
     <meta name="guid" value="77f147da-2f59-4fcd-b38b-94a57a72955b"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
@@ -10,9 +10,9 @@
     <meta name="datasheet" value="https://www.diodes.com/assets/Datasheets/AH1806.pdf"/>
     <meta name="description" value="High Sensitivity Micropower Omnipolar Hall-Effect Switch, SIP-3"/>
     <meta name="keywords" value="hall switch"/>
-    <meta name="ki_fp_filters" value="Diodes*SIP*4.1x1.5mm*P1.27mm* Diodes*SIP*4.1x1.5mm*P2.65mm*"/>
     <property name="Reference" type="string" default="U" serialize="reference" display="Reference"/>
     <property name="Value" type="string" default="AH1806-P" serialize="value" display="Value"/>
+    <property name="ki_fp_filters" type="string" default="Diodes*SIP*4.1x1.5mm*P1.27mm* Diodes*SIP*4.1x1.5mm*P2.65mm*" serialize="ki_fp_filters" display="ki_fp_filters"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -28,6 +28,11 @@
     <rect location="_Middle-20x-30y" width="40" height="60"/>
     <text x="_Middle-20" y="_Middle-35" value="$Reference" align="CentreCentre" size="xxs"/>
     <text x="_Middle+30" y="_Middle-35" value="$Value" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Footprint" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Datasheet" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_fp_filters" align="CentreCentre" size="xxs"/>
     <line start="_Middle+0x-40y" end="_Middle+0x-30y" sym:connection_id="0"/>
     <text x="_Middle+0" y="_Middle-26" value="VDD" align="CentreRight" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="name"/>
     <text x="_Middle-2" y="_Middle-36" value="1" align="BottomCentre" size="xxs" rotate="270" sym:connection_id="0" sym:connection_attr="number"/>

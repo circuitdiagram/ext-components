@@ -2,16 +2,16 @@
 <component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
   <declaration>
     <meta name="name" value="SYM Hot Small"/>
-    <meta name="version" value="0.1.0"/>
+    <meta name="version" value="0.1.1"/>
     <meta name="guid" value="f5f176f5-f429-4c58-810c-a50c3f8e3559"/>
     <meta name="author" value="KiCad Libraries"/>
     <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
     <meta name="minsize" value="20"/>
-    <meta name="Reference" value="#SYM"/>
-    <meta name="Value" value="SYM_Hot_Small"/>
     <meta name="description" value="Hot surface warning symbol, small"/>
-    <meta name="Sim.Enable" value="0"/>
     <meta name="keywords" value="symbol logo hot surface warning heat"/>
+    <property name="Reference" type="string" default="#SYM" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="SYM_Hot_Small" serialize="value" display="Value"/>
+    <property name="Sim_Enable" type="string" default="0" serialize="sim_enable" display="Sim_Enable"/>
     <flags>
       <option>NoResize</option>
       <option>HorizontalOnly</option>
@@ -29,5 +29,12 @@
     <path start="_Middle+0x+0y" data="M0,1 C-0.6666666666666665,0.1111111111111115 -0.6666666666666665,-1.1111111111111105 -0.0000000000000004440892098500626,-1.9999999999999993"/>
     <path start="_Middle+0x+0y" data="M3,1 C2.3333333333333335,0.1111111111111115 2.3333333333333335,-1.1111111111111105 2.9999999999999996,-1.9999999999999993"/>
     <path start="_Middle+0x+0y" data="M5,5.5 L-5,5.5"/>
+    <text x="_Middle+0" y="_Middle-14" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+12.5" value="$Value" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+17.5" value="$Footprint" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+3" y="_Middle+20" value="$Datasheet" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Description" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Sim.Enable" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+0" value="$ki_keywords" align="CentreCentre" size="xxs"/>
   </render>
 </component>
