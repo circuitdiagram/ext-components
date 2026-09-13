@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Annotation Number"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="31cfc74d-85e3-4290-977b-ef52b8f375b4"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="10"/>
+    <meta name="Reference" value="#SYM"/>
+    <meta name="description" value="Generic annotation marker: intended for having a single digit as the value, tying a textbox to an item in the schematic."/>
+    <property name="Value" type="string" default="X" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+  </connections>
+  <render>
+    <ellipse centre="_Middle+0x+0y" rx="3.535433070866142" ry="3.535433070866142"/>
+    <text x="_Middle+0" y="_Middle+0" value="$Value" align="CentreCentre" size="xxs"/>
+  </render>
+</component>

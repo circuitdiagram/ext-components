@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Battery"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="73ccbf61-a4ad-45e8-bbb3-ef00a66b4f6c"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="60"/>
+    <meta name="description" value="Single cell or battery package"/>
+    <meta name="keywords" value="AA AAA 18650"/>
+    <property name="Reference" type="string" default="BT" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="Battery" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+  </connections>
+  <render>
+    <path start="_Middle+0x+0y" data="M30,-20 L-20,-20"/>
+    <path start="_Middle+0x+0y" data="M30,-5 L32.50000000000001,-5"/>
+    <path start="_Middle+0x+0y" data="M30,5 L32.50000000000001,5"/>
+    <path start="_Middle+0x+0y" data="M30,20 L-20,20"/>
+    <rect location="_Middle-20x-20y" width="50" height="40"/>
+    <text x="_Middle+1" y="_Middle-5" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle+5" value="$Value" align="CentreCentre" size="xxs"/>
+  </render>
+</component>
