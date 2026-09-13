@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.5" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml" xmlns:sym="http://schemas.circuit-diagram.org/component/2024/symbol/xml">
+  <declaration>
+    <meta name="name" value="Fuse"/>
+    <meta name="version" value="0.1.0"/>
+    <meta name="guid" value="ca1f1998-125f-45ef-959d-c07d8cae3756"/>
+    <meta name="author" value="KiCad Libraries"/>
+    <meta name="license" value="Creative Commons CC-BY-SA 4.0 with Electronic Designs Exception"/>
+    <meta name="minsize" value="30"/>
+    <meta name="description" value="Generic non resettable Fuse"/>
+    <property name="Reference" type="string" default="F" serialize="reference" display="Reference"/>
+    <property name="Value" type="string" default="Fuse" serialize="value" display="Value"/>
+    <flags>
+      <option>NoResize</option>
+      <option>HorizontalOnly</option>
+      <option>MiddleMustAlign</option>
+    </flags>
+  </declaration>
+  <connections>
+  </connections>
+  <render>
+    <rect location="_Middle-12x-3y" width="5" height="6"/>
+    <path start="_Middle+0x+0y" data="M-9,-0 L10,-0"/>
+    <rect location="_Middle+7x-3y" width="5" height="6"/>
+    <rect location="_Middle-10x-2.5y" width="20" height="5"/>
+    <text x="_Middle+0" y="_Middle-17" value="$Reference" align="CentreCentre" size="xxs"/>
+    <text x="_Middle+0" y="_Middle-9" value="$Value" align="CentreCentre" size="xxs"/>
+  </render>
+</component>
